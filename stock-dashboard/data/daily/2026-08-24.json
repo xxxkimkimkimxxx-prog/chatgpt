@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-24",
+  "generatedAtJST": "2026-08-24 06:32",
+  "marketStance": "中立〜やや強気。ただし指数追随より原油・海運・銀行のテーマ選別を優先。日経225先物9月限は06:00時点66,010円で前日比-80円。米株は8/21にS&P500 +0.43%、Nasdaq +0.43%、Dow +0.98%と反発した一方、週間では主要指数が下落。米長期金利高と今週8/26のNVIDIA決算、Jackson Holeを警戒する。",
+  "macroSummary": "8/21の米国株は反発したが、米10年債利回りは約4.7%近辺で高止まり。ドルは財政懸念で軟化し、円は日本の物価上昇と9月BOJ利上げ観測で支えられている。最大の即時材料はイラン情勢と原油高で、Brentは8/21終値94.39ドル、WTI87.06ドル。米国はイラン取引国への追加制裁を警告しており、ホルムズ海峡の物流制約が続く。今週は8/26 NVIDIA決算がAI・半導体の方向性を左右するため、半導体の高値追いは慎重。",
+  "hotSectors": ["鉱業・石油（原油高・イラン制裁）", "海運（ホルムズ・紅海物流制約と運賃上昇思惑）", "銀行（BOJ9月利上げ観測・国内金利高）"],
+  "coldSectors": ["高PER半導体・AI（NVIDIA決算前、米長期金利高）", "原油高のコスト負担が大きい空運・陸運・一部消費", "金利上昇に弱い高バリュエーション成長株"],
+  "holdingsReview": [
+    {"code":"2342","name":"トランスジェニックグループ","quantity":300,"averageCost":260,"lastClose":257,"unrealizedPnlReference":-900,"stance":"保有継続だが新規買い増しは見送り","catalyst":"8/12発表1Qは売上+14.4%、営業利益約3.6倍。通期営業利益計画への進捗率は約62.9%。","risk":"決算翌日に+12.1%急騰済みで材料の初動は消化。8/21出来高48,500株と流動性低下。","levels":"253円が8/21安値、259〜261円が直近上値帯。253円明確割れは弱化、260〜264円を出来高付きで回復なら改善。"},
+    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119,"lastClose":125,"unrealizedPnlReference":6000,"stance":"利益保護優先で保有","catalyst":"8/10に福岡証券取引所本則市場への重複上場承認。6/30に復配方針を公表。","risk":"8/19に年初来高値137円まで急騰後、125円へ反落。小型株で値幅が大きい。","levels":"122円が8/20-21の直近安値帯、129円が8/21高値、137円が年初来高値。122円割れ定着は利益縮小警戒、129円突破なら137円再試行。"},
+    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"lastClose":3095,"unrealizedPnlReference":-10290,"stance":"配当材料を踏まえ保有優先、ただし3,000円割れは再評価","catalyst":"8/13発表上期は売上+17.4%、営業利益+12.8%、最終利益約2倍。年間配当予想を60円から475円へ増額し特別配当415円を含む。8/21終値基準予想配当利回り約15.35%。","risk":"決算翌日急騰後8/17に大きく売られ、値動きが荒い。2Q売上営業利益率は前年同期31.7%から25.8%へ低下。","levels":"3,059円が8/21安値、3,167円が高値。3,000円前後が心理節目。3,167円突破なら取得単価3,146.45円を明確回復、3,000円割れ定着なら配当目的を含め再評価。"}
+  ],
+  "daytradeCandidates": [
+    {"rank":1,"code":"1605","name":"INPEX","sector":"鉱業","probability":68,"confidence":"高","catalyst":"Brent94.39ドル、WTI87.06ドル。対イラン追加制裁とホルムズ物流制約。8/21株価+2.20%で高値引け。","risks":"原油材料は既に複数日織り込み。8/14終値3,782円から8/21終値3,954円へ約4.5%上昇。原油反落で逆回転。","entryCondition":"寄り後に3,954円（前日高値・終値）を維持または一度押してVWAP回復。石油資源開発等の同業も強いこと。","skipCondition":"大幅GU後に3,954円を割り、VWAP下で出来高増加。原油先物が急反落。","morningCheck":"9:00-9:10の高安、VWAP、3,954円攻防、原油、鉱業セクター、板・スプレッド。"},
+    {"rank":2,"code":"9107","name":"川崎汽船","sector":"海運業","probability":62,"confidence":"中","catalyst":"対イラン制裁強化とホルムズ・紅海の物流制約による運賃上昇思惑。8/21は+7.28%、出来高956万株で上場来高値更新。","risks":"7連騰かつ8/21だけで+7.28%と事前織り込み・過熱が非常に強い。寄り天リスク大。","entryCondition":"高値追い禁止。3,410円前日高値を一度消化し、VWAP上で押し目形成または3,410円再突破を出来高付きで確認。","skipCondition":"GU率が高く、寄り直後に前日高値3,410円を維持できずVWAP割れ。同業の日本郵船・商船三井が弱い。","morningCheck":"GU率、3,410円、VWAP、海運3社連動、寄り5分出来高。"},
+    {"rank":3,"code":"8306","name":"三菱UFJフィナンシャル・グループ","sector":"銀行業","probability":59,"confidence":"中","catalyst":"日本の物価上昇と9月BOJ利上げ観測、国内長期金利高。8/21は+1.27%。","risks":"金利上昇が株式市場全体のバリュエーションを圧迫。7月高値3,813円からは調整中。","entryCondition":"3,524円（8/21高値）突破か、3,480〜3,500円付近の押しからVWAP回復。銀行指数・他メガバンクも同時高。","skipCondition":"3,444円（8/21安値）割れ、銀行株が指数に劣後、国内金利低下。","morningCheck":"3,524/3,444円、VWAP、10年JGB、三井住友FG・みずほFGの連動。"}
+  ],
+  "swingCandidates": [
+    {"rank":1,"code":"1605","name":"INPEX","sector":"鉱業","probability":65,"confidence":"高","catalyst":"原油高に加え8/7発表の最大1,400億円・5,000万株の自己株取得が下支え材料。","risks":"地政学プレミアム剥落時の原油急落。3月年初来高値4,955円からは下。","entryCondition":"3,850〜3,950円帯の押し目で原油が崩れず、終値ベースで上昇トレンド維持。","skipCondition":"WTI急落または3,800円を終値で明確に割る。","holdingPeriod":"3日〜3週間","invalidCondition":"イラン緊張緩和で原油が急落し、3,800円割れが定着。"},
+    {"rank":2,"code":"8306","name":"三菱UFJフィナンシャル・グループ","sector":"銀行業","probability":61,"confidence":"中","catalyst":"9月BOJ利上げ観測と国内金利上昇による利ざや改善期待。","risks":"利上げ織り込み後の材料出尽くし、株式市場全体のリスクオフ。","entryCondition":"3,450〜3,550円で下げ止まり、3,600円方向へ切り返す形を確認。","skipCondition":"3,400円割れまたはBOJ利上げ期待が大幅後退。","holdingPeriod":"1〜4週間","invalidCondition":"国内金利低下と銀行株の相対弱化が同時進行。"},
+    {"rank":3,"code":"3659","name":"ネクソン","sector":"情報・通信業","probability":58,"confidence":"中","catalyst":"上期大幅増益と年間475円配当への増額。既保有のため新規候補というより保有管理枠。","risks":"決算後の急騰・急落でボラティリティが高く、利益率低下も要確認。","entryCondition":"新規買い増しは3,167円突破・定着または3,000円近辺で明確な反発確認後。","skipCondition":"3,000円割れ定着。","holdingPeriod":"配当権利・次回業績確認までを基本に数週〜数か月","invalidCondition":"配当条件の変更、業績モメンタム悪化、3,000円割れ定着。"}
+  ],
+  "riskPlan": {"dailyLossLimitYen":50000,"perTradeLossLimitYen":10000,"singleNameCapitalLimitYen":1500000,"todayPolicy":"指数は中立。原油・海運は強材料だが過熱も大きいので寄り付き成行で追わない。9:00-9:10のVWAP・出来高・同業連動確認を必須とし、INPEXを最優先。川崎汽船は高値追い禁止。保有3銘柄は新規候補より先に管理。","previousBusinessDayRealizedPnl":"GitHubのperformance-summaryは8月累計+42,500円のみで、8/21単日確定値は未登録。","consecutiveStopLosses":"GitHub正本に未登録のため不明。新規取引前に当日実績で更新する。"},
+  "sources": [
+    {"name":"JPX 2026年8月カレンダー","url":"https://www.jpx.co.jp/calendar/202608.html"},
+    {"name":"Reuters - Oil rises as Trump threatens sanctions on Iran partners","url":"https://www.reuters.com/business/energy/oil-set-second-weekly-rise-unsettled-us-iran-war-crimps-supply-2026-08-21/"},
+    {"name":"Reuters - Nvidia earnings, Jackson Hole to test stock rally","url":"https://www.reuters.com/business/wall-st-week-ahead-nvidia-earnings-jackson-hole-test-pillars-stock-rally-2026-08-21/"},
+    {"name":"Reuters - Dollar falls to three-month low","url":"https://www.reuters.com/business/dollar-wobbles-investors-balk-us-treasurys-rescue-efforts-2026-08-21/"},
+    {"name":"NEXON IR","url":"https://www.nexon.co.jp/ir/"},
+    {"name":"トランスジェニックグループ IR","url":"https://www.transgenic-group.co.jp/ir/library/financial/"},
+    {"name":"篠崎屋 IR","url":"https://shinozakiya.com/irinfo/library/ir2026/"}
+  ]
+}
