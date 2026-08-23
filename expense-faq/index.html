@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f3558">
+  <title>経費ナビ｜経費精算FAQ</title>
+  <style>
+    :root{
+      --navy:#0f3558;--navy2:#174c78;--teal:#0f8b8d;--teal2:#e7f6f5;
+      --ink:#17212b;--muted:#66727f;--bg:#f4f7fa;--paper:#fff;--line:#dce4eb;
+      --amber:#c97816;--amber2:#fff4df;--red:#b53a48;--red2:#fff0f2;--green:#2f7d5b;
+      --shadow:0 12px 34px rgba(26,54,82,.09);--r:22px;
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Noto Sans JP",sans-serif;line-height:1.6}
+    button,input{font:inherit} button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 28px));margin:auto}
+    header{background:linear-gradient(135deg,var(--navy) 0%,#164a73 64%,#126c77 100%);color:white;padding:28px 0 34px;position:relative;overflow:hidden}
+    header:after{content:"?";position:absolute;right:4vw;top:-70px;font-size:250px;font-weight:900;color:rgba(255,255,255,.055);line-height:1}
+    .topline{display:flex;justify-content:space-between;gap:16px;align-items:center;position:relative;z-index:1}.brand{font-weight:900;letter-spacing:.02em}.brand small{display:block;font-size:11px;opacity:.72;letter-spacing:.12em}.status{font-size:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 11px;backdrop-filter:blur(8px)}
+    .hero{position:relative;z-index:1;margin-top:28px;display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:end}.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.08;margin:0 0 12px}.hero p{margin:0;max-width:720px;color:rgba(255,255,255,.82)}
+    .heroStats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.heroStat{border-radius:16px;padding:13px 12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}.heroStat b{display:block;font-size:21px}.heroStat span{font-size:11px;color:rgba(255,255,255,.72)}
+    .notice{margin-top:-14px;position:relative;z-index:4}.noticeBox{background:var(--amber2);border:1px solid #f0d4a4;border-radius:16px;padding:12px 14px;box-shadow:var(--shadow);font-size:13px}.noticeBox b{color:#8a5312}
+    .searchPanel{margin-top:18px;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow)}
+    .sectionTitle{display:flex;justify-content:space-between;gap:10px;align-items:flex-end;margin-bottom:11px}.sectionTitle h2{font-size:20px;margin:0}.sectionTitle p{margin:0;font-size:12px;color:var(--muted)}
+    .searchLine{display:flex;gap:8px}.searchLine input{width:100%;border:1px solid var(--line);background:#fff;border-radius:14px;padding:13px 14px;outline:none}.searchLine input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(15,139,141,.12)}.reset{border:1px solid var(--line);background:#fff;border-radius:14px;padding:0 14px;color:var(--muted)}
+    .quick{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}.quick button,.chips button{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:8px 11px;font-size:12px}.quick button:hover,.chips button:hover{border-color:#aab9c6}.quick button.active,.chips button.active{background:var(--navy);border-color:var(--navy);color:white}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:0 8px 22px rgba(26,54,82,.055)}
+    .flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;position:relative}.flow:before{content:"";position:absolute;top:26px;left:5%;right:5%;height:2px;background:#dbe5ec;z-index:0}.step{position:relative;z-index:1;border:0;background:transparent;padding:0;color:var(--muted);min-width:0}.step .num{width:52px;height:52px;border-radius:17px;margin:auto;background:#edf2f6;border:1px solid #d9e2e9;display:grid;place-items:center;font-weight:900;color:var(--navy);transition:.18s}.step span{display:block;font-size:11px;margin-top:7px;white-space:normal}.step.active .num{background:var(--teal);border-color:var(--teal);color:white;transform:translateY(-2px);box-shadow:0 7px 14px rgba(15,139,141,.22)}.step.active span{color:var(--teal);font-weight:800}
+    .scenarioGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.scenario{border:1px solid var(--line);background:#fff;border-radius:15px;padding:12px;text-align:left}.scenario b{display:block;font-size:14px}.scenario span{display:block;font-size:11px;color:var(--muted);margin-top:2px}.scenario:hover{border-color:#9eb1c1;background:#fbfdff}
+    .content{display:grid;grid-template-columns:250px minmax(0,1fr);gap:16px;margin:18px auto 42px}.side{position:sticky;top:14px;align-self:start}.sideBox{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:15px;box-shadow:0 7px 18px rgba(26,54,82,.04)}.sideBox+.sideBox{margin-top:11px}.side h3{font-size:13px;margin:0 0 9px}.chips{display:flex;gap:7px;flex-wrap:wrap}.side .chips{display:grid}.side .chips button{text-align:left;border-radius:11px}.ruleMini{font-size:12px;color:var(--muted)}.ruleMini strong{color:var(--ink)}
+    .resultHead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:11px}.resultHead h2{margin:0;font-size:21px}.resultHead small{color:var(--muted)}
+    .faqList{display:grid;gap:10px}.faq{background:var(--paper);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 18px rgba(26,54,82,.035)}.faqHead{width:100%;border:0;background:#fff;padding:16px;text-align:left;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}.faqHead:hover{background:#fbfcfd}.faqQ{min-width:0}.meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:5px}.tag{font-size:10px;border-radius:999px;padding:3px 7px;background:#eef3f7;color:#506171;font-weight:750}.tag.flowtag{background:var(--teal2);color:#0c7476}.tag.warn{background:var(--amber2);color:#8a5312}.faqQ strong{font-size:16px;display:block}.chev{width:32px;height:32px;border-radius:10px;background:#f1f5f8;display:grid;place-items:center;color:var(--navy);font-weight:900;transition:.18s}.faq.open .chev{transform:rotate(45deg);background:var(--navy);color:#fff}.faqBody{display:none;border-top:1px solid var(--line);padding:15px 16px 17px}.faq.open .faqBody{display:block}.answer{font-size:14px}.ruleBox{margin-top:12px;border-left:4px solid var(--amber);background:#fffaf0;border-radius:0 12px 12px 0;padding:10px 12px}.ruleBox b{font-size:12px}.ruleBox p{margin:3px 0 0;font-size:12px;color:#72552e}.actions{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:12px}.help{font-size:11px;color:var(--muted)}.vote{display:flex;gap:6px}.vote button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:6px 8px;font-size:11px}.vote button.done{background:var(--teal2);border-color:#a7d9d7;color:#0d7475}
+    .empty{padding:38px 18px;text-align:center;border:1px dashed #b8c5cf;border-radius:18px;background:#fff;color:var(--muted)}
+    .bottomCta{background:linear-gradient(135deg,#f0f7fb,#eef8f6);border:1px solid #d5e5e8;border-radius:18px;padding:16px;margin-top:14px;display:flex;justify-content:space-between;gap:16px;align-items:center}.bottomCta b{display:block}.bottomCta span{font-size:12px;color:var(--muted)}.bottomCta button{border:0;background:var(--navy);color:white;border-radius:12px;padding:10px 13px}.bottomCta button:disabled{opacity:.55;cursor:not-allowed}
+    footer{padding:0 0 38px;color:var(--muted);font-size:11px}.foot{border-top:1px solid var(--line);padding-top:15px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.content{grid-template-columns:1fr}.side{position:static}.side{display:grid;grid-template-columns:1fr 1fr;gap:10px}.sideBox+.sideBox{margin-top:0}.side .chips{display:flex}.flow{overflow-x:auto;padding-bottom:5px;grid-template-columns:repeat(7,minmax(78px,1fr))}.flow:before{display:none}}
+    @media(max-width:560px){.wrap{width:min(100% - 18px,1160px)}header{padding-top:18px}.topline{align-items:flex-start}.status{max-width:155px;text-align:center}.hero{margin-top:22px}.heroStats{grid-template-columns:1fr 1fr}.heroStats .heroStat:last-child{grid-column:1/-1}.searchPanel,.panel{padding:14px}.searchLine{display:grid;grid-template-columns:1fr auto}.grid2{gap:11px}.scenarioGrid{grid-template-columns:1fr 1fr}.side{grid-template-columns:1fr}.faqHead{padding:14px}.faqQ strong{font-size:15px}.bottomCta{align-items:flex-start;flex-direction:column}.bottomCta button{width:100%}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topline"><div class="brand"><small>EXPENSE SUPPORT PORTAL</small>経費ナビ</div><div class="status">試作版 · 規程データ未連携</div></div>
+    <div class="hero">
+      <div><h1>経費精算で<br>迷わない。</h1><p>キーワードで直接探すことも、申請の流れに沿って確認することもできます。FAQごとに根拠となる規程・条項を紐づける前提の試作ページです。</p></div>
+      <div class="heroStats"><div class="heroStat"><b>10</b><span>試作FAQ</span></div><div class="heroStat"><b>7</b><span>申請ステップ</span></div><div class="heroStat"><b>1画面</b><span>検索＋フローナビ</span></div></div>
+    </div>
+  </div>
+</header>
+<div class="notice"><div class="wrap"><div class="noticeBox"><b>現在はUI・情報設計の試作です。</b> 実際の旅費規程・交際費規程・経費精算ルールが未連携のため、金額上限や正式な条件は記載していません。</div></div></div>
+<main>
+  <div class="wrap searchPanel">
+    <div class="sectionTitle"><div><h2>まず検索</h2><p>困っている言葉をそのまま入力してください</p></div><p id="searchHint">例：タクシー、領収書、差戻し、宿泊</p></div>
+    <div class="searchLine"><input id="q" type="search" placeholder="何に困っていますか？"><button class="reset" id="reset" type="button">解除</button></div>
+    <div class="quick" id="quick"><button type="button" data-query="領収書">領収書</button><button type="button" data-query="タクシー">タクシー</button><button type="button" data-query="宿泊">宿泊</button><button type="button" data-query="差戻し">差戻し</button><button type="button" data-query="経費タイプ">経費タイプ</button><button type="button" data-query="支払日">支払日</button></div>
+  </div>
+  <div class="wrap grid2">
+    <section class="panel">
+      <div class="sectionTitle"><div><h2>流れから探す</h2><p>今いる工程を選ぶとFAQを絞れます</p></div></div>
+      <div class="flow" id="flow"></div>
+    </section>
+    <section class="panel">
+      <div class="sectionTitle"><div><h2>よくある場面から</h2><p>質問文が思いつかなくても大丈夫</p></div></div>
+      <div class="scenarioGrid">
+        <button class="scenario" type="button" data-query="出張"><b>🧳 出張に行く</b><span>交通・宿泊・証憑</span></button>
+        <button class="scenario" type="button" data-query="会食"><b>🍽️ 会食する</b><span>事前申請・交際費</span></button>
+        <button class="scenario" type="button" data-query="紛失"><b>🧾 領収書をなくした</b><span>再発行・代替証憑</span></button>
+        <button class="scenario" type="button" data-query="差戻し"><b>↩️ 差し戻された</b><span>修正・再申請</span></button>
+      </div>
+    </section>
+  </div>
+  <div class="wrap content">
+    <aside class="side">
+      <div class="sideBox"><h3>カテゴリ</h3><div class="chips" id="categories"></div></div>
+      <div class="sideBox"><h3>規程とのつながり</h3><div class="ruleMini"><strong>FAQ → 規程 → 条項</strong><br>回答本文と根拠を分離して管理。規程改定時の更新漏れを減らす設計です。</div></div>
+    </aside>
+    <section>
+      <div class="resultHead"><h2>FAQ</h2><small id="resultCount"></small></div>
+      <div class="faqList" id="faqList"></div>
+      <div class="bottomCta"><div><b>解決しない場合</b><span>将来は「問い合わせ」や「Concur起票」への導線をここに接続できます。</span></div><button type="button" disabled title="試作版のため未接続">問い合わせへ（試作）</button></div>
+    </section>
+  </div>
+</main>
+<footer class="wrap"><div class="foot">試作版 / 2026-08-24　正式公開時は社内規程・Concur運用・問い合わせ先を確認のうえ反映してください。</div></footer>
+<script>
+const steps=['支出前','支払時','証憑保存','起票','承認','経理確認','支払'];
+const categories=['すべて','交通費','出張','交際費','証憑','Concur操作','承認・差戻し','その他'];
+const faqs=[
+{id:1,q:'新幹線・特急は利用できますか？',cat:'交通費',flow:'支出前',a:'業務上必要な場合に利用する想定です。実際の利用条件・座席種別・上限は旅費規程を確認してください。',rule:'旅費規程（仮）',clause:'第○条',keys:'新幹線 特急 指定席 グリーン車 交通費 出張'},
+{id:2,q:'タクシーはどんな場合に使えますか？',cat:'交通費',flow:'支払時',a:'公共交通機関の利用が困難、深夜・早朝、緊急対応など業務上の必要性がある場合を想定しています。具体条件は規程確認が必要です。',rule:'旅費規程（仮）',clause:'第○条',keys:'タクシー 深夜 早朝 緊急 交通費'},
+{id:3,q:'領収書を紛失した場合はどうすればよいですか？',cat:'証憑',flow:'証憑保存',a:'まず再発行の可否を確認し、難しい場合は所定の紛失理由・代替証憑の手続きを行う想定です。会社ルール確定後に正式化します。',rule:'経費精算規程（仮）',clause:'第○条',keys:'領収書 紛失 再発行 証憑 レシート'},
+{id:4,q:'領収書とレシートはどちらを添付しますか？',cat:'証憑',flow:'証憑保存',a:'支払内容・日付・金額・支払先が確認できる証憑を添付する想定です。インボイス要件や社内ルールに応じて必要項目を確認してください。',rule:'経費精算規程（仮）',clause:'第○条',keys:'領収書 レシート インボイス 証憑 添付'},
+{id:5,q:'Concurでどの経費タイプを選べばよいですか？',cat:'Concur操作',flow:'起票',a:'支出目的に最も近い経費タイプを選択します。正式版では経費タイプ定義と紐づけ、迷いやすい支出例から逆引きできるようにします。',rule:'経費タイプ定義（仮）',clause:'経費タイプ一覧',keys:'Concur 経費タイプ 勘定科目 起票 選択'},
+{id:6,q:'申請を差し戻されたらどうすればよいですか？',cat:'承認・差戻し',flow:'承認',a:'差戻しコメントを確認し、該当箇所を修正して再申請します。正式版では差戻し理由ごとに修正ポイントへ直接案内できる構成にします。',rule:'経費精算運用ルール（仮）',clause:'差戻し対応',keys:'差戻し 差し戻し 再申請 コメント 承認 Concur'},
+{id:7,q:'会食費・交際費は事前申請が必要ですか？',cat:'交際費',flow:'支出前',a:'金額・参加者・目的等により事前承認が必要となる想定です。具体的な基準は交際費規程を反映して正式化します。',rule:'交際費規程（仮）',clause:'第○条',keys:'会食 交際費 飲食 事前申請 承認'},
+{id:8,q:'出張の宿泊費に上限はありますか？',cat:'出張',flow:'支出前',a:'地域・役職等に応じた上限設定がある前提で、正式版では該当する規程値をここに表示します。現時点では規程未連携のため金額は仮置きしていません。',rule:'旅費規程（仮）',clause:'宿泊費条項',keys:'出張 宿泊 ホテル 上限 旅費'},
+{id:9,q:'いつまでに経費申請すればよいですか？',cat:'その他',flow:'起票',a:'月次締め・支払スケジュールに合わせた申請期限を表示する想定です。正式な締切日は社内運用ルールを反映してください。',rule:'経費精算運用ルール（仮）',clause:'申請期限',keys:'申請期限 締め日 支払日 月末 いつまで'},
+{id:10,q:'申請後、いつ振り込まれますか？',cat:'その他',flow:'支払',a:'承認完了日と支払サイクルに基づいて支払予定日を案内する想定です。実際の支払日程は社内運用ルールを反映します。',rule:'経費精算運用ルール（仮）',clause:'支払スケジュール',keys:'振込 支払日 入金 いつ 経費精算'}
+];
+const state={q:'',flow:'',cat:'すべて'};
+const qEl=document.getElementById('q'),listEl=document.getElementById('faqList'),countEl=document.getElementById('resultCount');
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function buildFlow(){document.getElementById('flow').innerHTML=steps.map((s,i)=>`<button class="step ${state.flow===s?'active':''}" type="button" data-flow="${esc(s)}"><span class="num">${i+1}</span><span>${esc(s)}</span></button>`).join('')}
+function buildCats(){document.getElementById('categories').innerHTML=categories.map(c=>`<button type="button" class="${state.cat===c?'active':''}" data-cat="${esc(c)}">${esc(c)}</button>`).join('')}
+function filtered(){const needle=state.q.trim().toLowerCase();return faqs.filter(f=>{const text=(f.q+' '+f.a+' '+f.cat+' '+f.flow+' '+f.keys+' '+f.rule+' '+f.clause).toLowerCase();return(!needle||text.includes(needle))&&(!state.flow||f.flow===state.flow)&&(state.cat==='すべて'||f.cat===state.cat)})}
+function render(){buildFlow();buildCats();const rows=filtered();countEl.textContent=`${rows.length}件 / 全${faqs.length}件`;if(!rows.length){listEl.innerHTML='<div class="empty"><b>該当するFAQがありません</b><br><small>別の言葉で検索するか、フィルターを解除してください。</small></div>';return}listEl.innerHTML=rows.map(f=>`<article class="faq" data-id="${f.id}"><button class="faqHead" type="button" aria-expanded="false"><div class="faqQ"><div class="meta"><span class="tag">${esc(f.cat)}</span><span class="tag flowtag">${esc(f.flow)}</span><span class="tag warn">要規程確認</span></div><strong>${esc(f.q)}</strong></div><span class="chev">＋</span></button><div class="faqBody"><div class="answer">${esc(f.a)}</div><div class="ruleBox"><b>根拠規程（試作）</b><p>${esc(f.rule)} ｜ ${esc(f.clause)}<br>※正式な規程・条項は未連携です。</p></div><div class="actions"><span class="help">この回答は役に立ちましたか？</span><div class="vote"><button type="button" data-vote="yes">はい</button><button type="button" data-vote="no">いいえ</button></div></div></div></article>`).join('')}
+function reset(){state.q='';state.flow='';state.cat='すべて';qEl.value='';document.querySelectorAll('#quick button').forEach(b=>b.classList.remove('active'));render()}
+qEl.addEventListener('input',()=>{state.q=qEl.value;state.flow='';render()});
+document.getElementById('reset').addEventListener('click',reset);
+document.getElementById('flow').addEventListener('click',e=>{const b=e.target.closest('[data-flow]');if(!b)return;const v=b.dataset.flow;state.flow=state.flow===v?'':v;state.q='';qEl.value='';render()});
+document.getElementById('categories').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(!b)return;state.cat=b.dataset.cat;render()});
+document.querySelectorAll('[data-query]').forEach(b=>b.addEventListener('click',()=>{state.q=b.dataset.query;state.flow='';state.cat='すべて';qEl.value=state.q;document.querySelectorAll('#quick button').forEach(x=>x.classList.toggle('active',x===b));render();document.querySelector('.resultHead').scrollIntoView({behavior:'smooth',block:'start'})}));
+listEl.addEventListener('click',e=>{const head=e.target.closest('.faqHead');if(head){const faq=head.closest('.faq');faq.classList.toggle('open');head.setAttribute('aria-expanded',faq.classList.contains('open'));return}const vote=e.target.closest('[data-vote]');if(vote){vote.parentElement.querySelectorAll('button').forEach(x=>x.classList.remove('done'));vote.classList.add('done');vote.textContent=vote.dataset.vote==='yes'?'✓ ありがとう':'✓ 受付'}});
+render();
+</script>
+</body>
+</html>
