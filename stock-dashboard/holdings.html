@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>保有銘柄管理 | 日本株トレードダッシュボード</title>
+<style>
+:root{--bg:#07101d;--panel:#0d1828;--panel2:#111f32;--line:#22324a;--text:#edf4ff;--muted:#94a5bd;--cyan:#53d3ff;--green:#4dde9b;--red:#ff6b7a;--yellow:#ffd166;--purple:#b79cff;--shadow:0 18px 45px rgba(0,0,0,.28);--radius:20px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top right,#132845 0,#07101d 38%,#050b14 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic UI","Noto Sans JP",sans-serif;line-height:1.5}button,input,select,textarea{font:inherit}.wrap{width:min(1180px,calc(100% - 24px));margin:auto}.muted{color:var(--muted)}.pos{color:var(--green)}.neg{color:var(--red)}.warn{color:var(--yellow)}a{color:inherit;text-decoration:none}
+header{padding:18px 0 10px}.hero{background:linear-gradient(135deg,rgba(83,211,255,.13),rgba(183,156,255,.08) 50%,rgba(77,222,155,.07));border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:var(--shadow)}.eyebrow{font-size:12px;font-weight:900;letter-spacing:.12em;color:var(--cyan)}h1{margin:6px 0 8px;font-size:clamp(28px,6vw,48px);line-height:1.05}.hero p{margin:0;color:var(--muted)}.heroTop{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.back{border:1px solid var(--line);background:#0d1828;border-radius:999px;padding:9px 12px;font-size:12px;font-weight:800;color:#cfe6ff;white-space:nowrap}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.kpi{background:rgba(7,16,29,.55);border:1px solid var(--line);border-radius:16px;padding:13px}.kpi span{display:block;font-size:11px;color:var(--muted)}.kpi b{display:block;margin-top:3px;font-size:22px}.kpi small{font-size:10px;color:var(--muted)}
+main{padding:10px 0 45px}.sectionHead{display:flex;justify-content:space-between;gap:10px;align-items:end;margin:16px 2px 10px}.sectionHead h2{margin:0;font-size:20px}.sectionHead p{margin:2px 0 0;font-size:12px;color:var(--muted)}.actions{display:flex;gap:7px}.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:9px 11px;font-weight:800;font-size:12px}.btn.primary{background:var(--cyan);border-color:var(--cyan);color:#04101b}.btn.danger{color:#ffdfe3;border-color:#633642;background:#2a1820}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:linear-gradient(180deg,rgba(17,31,50,.96),rgba(10,21,36,.96));border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:0 10px 25px rgba(0,0,0,.12)}.cardTop{display:flex;justify-content:space-between;gap:10px}.name{font-size:18px;font-weight:950}.code{font-size:11px;color:var(--muted)}.badge{display:inline-flex;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:900;background:#16283f;color:#a9bdd7;border:1px solid #29415f}.badge.swing{color:#d2c4ff;border-color:#594c82;background:#241d3d}.badge.long{color:#a9ffd4;border-color:#28684c;background:#102c22}.badge.day{color:#7de1ff;border-color:#285c6b;background:#163449}.priceBlock{margin:13px 0;padding:12px;border:1px solid var(--line);border-radius:14px;background:#0a1525}.priceMain{display:flex;justify-content:space-between;align-items:end;gap:10px}.priceMain b{font-size:27px}.pnl{font-size:16px;font-weight:950;text-align:right}.sub{font-size:10px;color:var(--muted)}.kv{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.mini{border-radius:11px;padding:9px;background:#101e31}.mini span{display:block;font-size:9px;color:var(--muted)}.mini b{font-size:12px}.thesis{margin-top:10px;border-top:1px dashed #2a3c56;padding-top:10px;font-size:11px}.thesis div{margin:5px 0}.thesis strong{color:var(--cyan)}.cardBtns{display:flex;gap:7px;margin-top:12px}.cardBtns button{flex:1}
+.empty{padding:38px 18px;text-align:center;border:1px dashed #39506e;border-radius:18px;color:var(--muted);grid-column:1/-1}.notice{margin-top:12px;padding:12px 14px;border:1px solid #3d536f;border-radius:14px;background:#0b1727;color:#aac0dc;font-size:11px}
+.modal{position:fixed;inset:0;background:rgba(2,7,13,.78);display:none;align-items:flex-end;justify-content:center;z-index:50;padding:12px}.modal.open{display:flex}.sheet{width:min(760px,100%);max-height:92vh;overflow:auto;background:#0d1828;border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:var(--shadow)}.sheet h3{margin:0 0 12px}.formGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:10px;color:var(--muted);font-weight:800}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#091524;color:var(--text);border-radius:12px;padding:10px 11px;outline:none}.field textarea{min-height:72px;resize:vertical}.modalBtns{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
+.portfolioBar{height:13px;background:#172539;border-radius:999px;overflow:hidden;margin-top:10px;display:flex}.portfolioBar i{display:block;height:100%}.alloc{display:flex;gap:8px;flex-wrap:wrap;margin-top:9px}.alloc span{font-size:10px;color:var(--muted)}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.kpis{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.wrap{width:min(100% - 18px,1180px)}.hero{padding:18px}.heroTop{display:block}.back{display:inline-block;margin-top:12px}.grid{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}.sectionHead{align-items:flex-start;flex-direction:column}.formGrid{grid-template-columns:1fr}.field.full{grid-column:auto}.priceMain b{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <section class="hero">
+    <div class="heroTop">
+      <div><div class="eyebrow">HOLDINGS · PORTFOLIO</div><h1>保有銘柄管理</h1><p>実際に握っている銘柄を、損益だけでなく「保有理由・撤退条件・次の材料」まで管理します。</p></div>
+      <a class="back" href="./">← メインダッシュボード</a>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><span>保有銘柄</span><b id="kCount">0</b><small>現在登録中</small></div>
+      <div class="kpi"><span>取得総額</span><b id="kCost">¥0</b><small>平均取得単価 × 株数</small></div>
+      <div class="kpi"><span>評価額</span><b id="kValue">¥0</b><small>現在値 × 株数</small></div>
+      <div class="kpi"><span>含み損益</span><b id="kPnl">¥0</b><small id="kPnlPct">0.00%</small></div>
+    </div>
+    <div class="portfolioBar" id="portfolioBar"></div><div class="alloc" id="alloc"></div>
+  </section>
+</header>
+<main class="wrap">
+  <div class="sectionHead"><div><h2>保有一覧</h2><p>現在値は手入力です。相場連携は次段階で追加予定。</p></div><div class="actions"><button class="btn primary" id="addBtn">＋ 保有銘柄を追加</button></div></div>
+  <div id="grid" class="grid"></div>
+  <div class="notice">重要：デイトレ目的で買った銘柄を含み損だけを理由に「長期保有」へ変更しないでください。保有目的を変更する場合は、変更理由・新しい撤退条件・想定期間を必ず更新してください。</div>
+</main>
+<div class="modal" id="modal"><div class="sheet"><h3 id="modalTitle">保有銘柄を追加</h3>
+  <div class="formGrid">
+    <div class="field"><label>証券コード</label><input id="fCode" inputmode="numeric" placeholder="3659"></div>
+    <div class="field"><label>銘柄名</label><input id="fName" placeholder="ネクソン"></div>
+    <div class="field"><label>株数</label><input id="fShares" type="number" min="1" step="1" value="100"></div>
+    <div class="field"><label>平均取得単価</label><input id="fAvg" type="number" min="0" step="0.01"></div>
+    <div class="field"><label>現在値</label><input id="fCurrent" type="number" min="0" step="0.01"></div>
+    <div class="field"><label>保有目的</label><select id="fType"><option value="swing">スイング</option><option value="long">中長期</option><option value="day">デイトレ持越し</option></select></div>
+    <div class="field"><label>購入日</label><input id="fDate" type="date"></div>
+    <div class="field"><label>想定保有期限</label><input id="fHorizon" placeholder="数日〜1か月"></div>
+    <div class="field"><label>損切り・撤退価格</label><input id="fStop" type="number" min="0" step="0.01"></div>
+    <div class="field"><label>利益確定目標</label><input id="fTarget" type="number" min="0" step="0.01"></div>
+    <div class="field"><label>年間1株配当（任意）</label><input id="fDividend" type="number" min="0" step="0.01"></div>
+    <div class="field"><label>次のイベント日（任意）</label><input id="fEventDate" type="date"></div>
+    <div class="field full"><label>保有理由 / 投資仮説</label><textarea id="fThesis" placeholder="なぜ今も保有するのか"></textarea></div>
+    <div class="field full"><label>次の材料・注目イベント</label><textarea id="fCatalyst" placeholder="決算、新作、権利日、業界材料など"></textarea></div>
+    <div class="field full"><label>撤退条件（価格以外）</label><textarea id="fInvalid" placeholder="材料否定、業種崩れ、決算悪化など"></textarea></div>
+    <div class="field full"><label>配当・優待メモ</label><textarea id="fBenefit" placeholder="配当、権利確定月、株主優待など"></textarea></div>
+  </div>
+  <div class="modalBtns"><button class="btn" id="cancelBtn">キャンセル</button><button class="btn primary" id="saveBtn">保存</button></div>
+</div></div>
+<script>
+const KEY='jp_stock_holdings_v1';
+const seed=[{id:'nexon-3659',code:'3659',name:'ネクソン',shares:200,avg:3146.45,current:'',type:'swing',date:'2026-08-17',horizon:'数日〜1か月',stop:'',target:'',dividend:'',eventDate:'',thesis:'好決算・新作期待などを踏まえたスイング。',catalyst:'次の決算・新作動向・市場のゲーム株評価を確認。',invalid:'材料否定、業績期待の悪化、チャートの重要支持線割れ。',benefit:'配当目的で保有する場合は権利確定日を別途確認。'}];
+let holdings=load();let editingId=null;
+function load(){try{const x=JSON.parse(localStorage.getItem(KEY));if(Array.isArray(x))return x;}catch(e){} localStorage.setItem(KEY,JSON.stringify(seed));return [...seed]}
+function save(){localStorage.setItem(KEY,JSON.stringify(holdings));render()}
+function yen(n){return '¥'+Math.round(Number(n)||0).toLocaleString('ja-JP')}
+function pct(n){return (Number(n)||0).toFixed(2)+'%'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+function typeLabel(t){return t==='long'?'中長期':t==='day'?'デイトレ持越し':'スイング'}
+function render(){
+ const g=document.getElementById('grid');g.innerHTML='';
+ let totalCost=0,totalValue=0;
+ holdings.forEach(h=>{totalCost+=(+h.avg||0)*(+h.shares||0);if(h.current!=='')totalValue+=(+h.current||0)*(+h.shares||0)});
+ const hasCurrent=holdings.some(h=>h.current!=='');const pnl=hasCurrent?totalValue-totalCost:0;const pp=totalCost&&hasCurrent?pnl/totalCost*100:0;
+ kCount.textContent=holdings.length;kCost.textContent=yen(totalCost);kValue.textContent=hasCurrent?yen(totalValue):'未入力';kPnl.textContent=hasCurrent?(pnl>=0?'+':'')+yen(pnl).replace('¥','¥'):'未計算';kPnl.className=hasCurrent?(pnl>=0?'pos':'neg'):'';kPnlPct.textContent=hasCurrent?(pp>=0?'+':'')+pct(pp):'現在値を入力';
+ const bar=document.getElementById('portfolioBar'),alloc=document.getElementById('alloc');bar.innerHTML='';alloc.innerHTML='';const shades=['#53d3ff','#b79cff','#4dde9b','#ffd166','#ff8aa0','#73a6ff'];
+ holdings.forEach((h,i)=>{const c=(+h.avg||0)*(+h.shares||0),w=totalCost?c/totalCost*100:0;const el=document.createElement('i');el.style.width=w+'%';el.style.background=shades[i%shades.length];bar.appendChild(el);const lab=document.createElement('span');lab.textContent=`● ${h.name||h.code} ${w.toFixed(1)}%`;lab.style.color=shades[i%shades.length];alloc.appendChild(lab)});
+ if(!holdings.length){g.innerHTML='<div class="empty">保有銘柄がありません。<br>「＋ 保有銘柄を追加」から登録してください。</div>';return}
+ holdings.forEach(h=>{const cost=(+h.avg||0)*(+h.shares||0);const val=h.current!==''?(+h.current||0)*(+h.shares||0):null;const p=val===null?null:val-cost;const pp2=p===null||!cost?null:p/cost*100;const d=h.current&&h.dividend?(+h.dividend)/(+h.current)*100:null;const risk=h.stop?((+h.avg)-(+h.stop))*(+h.shares):null;const reward=h.target?((+h.target)-(+h.avg))*(+h.shares):null;const rr=risk&&risk>0&&reward!==null?reward/risk:null;
+   const c=document.createElement('article');c.className='card';c.innerHTML=`<div class="cardTop"><div><div class="name">${esc(h.name||'名称未入力')}</div><div class="code">${esc(h.code||'—')} · ${esc(typeLabel(h.type))}</div></div><span class="badge ${esc(h.type)}">${esc(typeLabel(h.type))}</span></div>
+   <div class="priceBlock"><div class="priceMain"><div><div class="sub">現在値</div><b>${h.current!==''?yen(h.current):'未入力'}</b><div class="sub">平均取得 ${yen(h.avg)} / ${Number(h.shares||0).toLocaleString()}株</div></div><div class="pnl ${p===null?'muted':p>=0?'pos':'neg'}">${p===null?'—':(p>=0?'+':'')+yen(p)}<div class="sub">${pp2===null?'含み損益未計算':(pp2>=0?'+':'')+pct(pp2)}</div></div></div></div>
+   <div class="kv"><div class="mini"><span>取得総額</span><b>${yen(cost)}</b></div><div class="mini"><span>評価額</span><b>${val===null?'—':yen(val)}</b></div><div class="mini"><span>撤退価格</span><b>${h.stop?yen(h.stop):'未設定'}</b></div><div class="mini"><span>利確目標</span><b>${h.target?yen(h.target):'未設定'}</b></div><div class="mini"><span>想定下振れ</span><b>${risk!==null?yen(risk):'—'}</b></div><div class="mini"><span>想定RR</span><b>${rr!==null?rr.toFixed(2):'—'}</b></div><div class="mini"><span>配当利回り</span><b>${d!==null?d.toFixed(2)+'%':'—'}</b></div><div class="mini"><span>想定保有</span><b>${esc(h.horizon||'—')}</b></div></div>
+   <div class="thesis"><div><strong>保有理由：</strong>${esc(h.thesis||'未入力')}</div><div><strong>次の材料：</strong>${esc(h.catalyst||'未入力')}</div><div><strong>撤退条件：</strong>${esc(h.invalid||'未入力')}</div>${h.benefit?`<div><strong>配当・優待：</strong>${esc(h.benefit)}</div>`:''}${h.eventDate?`<div><strong>次イベント：</strong>${esc(h.eventDate)}</div>`:''}</div>
+   <div class="cardBtns"><button class="btn" data-edit="${esc(h.id)}">編集</button><button class="btn danger" data-del="${esc(h.id)}">削除</button></div>`;g.appendChild(c)});
+ document.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>openEdit(b.dataset.edit));document.querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{if(confirm('この保有銘柄を削除しますか？')){holdings=holdings.filter(h=>h.id!==b.dataset.del);save()}})
+}
+const ids=['Code','Name','Shares','Avg','Current','Type','Date','Horizon','Stop','Target','Dividend','EventDate','Thesis','Catalyst','Invalid','Benefit'];
+function openNew(){editingId=null;modalTitle.textContent='保有銘柄を追加';ids.forEach(x=>document.getElementById('f'+x).value='');fShares.value=100;fType.value='swing';modal.classList.add('open')}
+function openEdit(id){const h=holdings.find(x=>x.id===id);if(!h)return;editingId=id;modalTitle.textContent='保有銘柄を編集';const map={Code:'code',Name:'name',Shares:'shares',Avg:'avg',Current:'current',Type:'type',Date:'date',Horizon:'horizon',Stop:'stop',Target:'target',Dividend:'dividend',EventDate:'eventDate',Thesis:'thesis',Catalyst:'catalyst',Invalid:'invalid',Benefit:'benefit'};Object.entries(map).forEach(([a,b])=>document.getElementById('f'+a).value=h[b]??'');modal.classList.add('open')}
+function closeModal(){modal.classList.remove('open')}
+addBtn.onclick=openNew;cancelBtn.onclick=closeModal;modal.onclick=e=>{if(e.target===modal)closeModal()};
+saveBtn.onclick=()=>{const obj={id:editingId||('h-'+Date.now()),code:fCode.value.trim(),name:fName.value.trim(),shares:+fShares.value||0,avg:+fAvg.value||0,current:fCurrent.value===''?'':+fCurrent.value,type:fType.value,date:fDate.value,horizon:fHorizon.value.trim(),stop:fStop.value===''?'':+fStop.value,target:fTarget.value===''?'':+fTarget.value,dividend:fDividend.value===''?'':+fDividend.value,eventDate:fEventDate.value,thesis:fThesis.value.trim(),catalyst:fCatalyst.value.trim(),invalid:fInvalid.value.trim(),benefit:fBenefit.value.trim()};if(!obj.name&&!obj.code){alert('銘柄名または証券コードを入力してください');return}if(!obj.shares||!obj.avg){alert('株数と平均取得単価を入力してください');return}if(editingId)holdings=holdings.map(h=>h.id===editingId?obj:h);else holdings.push(obj);save();closeModal()};
+render();
+</script>
+</body></html>
