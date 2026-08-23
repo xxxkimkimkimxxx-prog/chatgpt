@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0f766e" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'" />
+  <title>銀行入出金照合ツール｜画面サンプル</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./formal.css" />
+  <link rel="stylesheet" href="./simple.css" />
+  <link rel="stylesheet" href="./demo.css" />
+</head>
+<body>
+  <header class="simple-header">
+    <div class="simple-header-inner">
+      <div class="simple-brand"><div class="simple-logo">照</div><div><strong>銀行入出金照合ツール</strong><span>現在の画面サンプル</span></div></div>
+      <nav class="help-nav"><a href="./index.html">ツール本体</a><a href="./manual.html">使い方</a></nav>
+    </div>
+  </header>
+
+  <main class="demo-shell">
+    <section class="demo-intro">
+      <div><p>現在のUI</p><h1>照合後の画面は、こんな見た目です</h1><span>すべて架空のダミーデータです。実際の銀行・社内データは使用していません。</span></div>
+      <div class="demo-badge">サンプル表示</div>
+    </section>
+
+    <nav class="demo-nav">
+      <a href="#overview">全体</a><a href="#candidate">確認が必要</a><a href="#conflict">候補が複数</a><a href="#manual">手動で照合</a><a href="#matched">照合済み</a><a href="#daily">日別確認</a><a href="#settings">設定</a>
+    </nav>
+
+    <section id="overview" class="demo-section">
+      <div class="demo-heading"><div><span>SCREEN 01</span><h2>全体</h2><p>まず見る画面。照合がどこまで終わったかを一目で確認します。</p></div><div class="purpose">見るだけでOK</div></div>
+      <div class="sample-frame">
+        <div class="simple-kpis kpi-grid six">
+          <div class="kpi"><span>銀行明細</span><strong>428</strong></div><div class="kpi"><span>当社明細</span><strong>451</strong></div><div class="kpi success"><span>照合率</span><strong>96.7%</strong></div><div class="kpi warn"><span>確認が必要</span><strong>7</strong></div><div class="kpi orange"><span>候補が複数</span><strong>3</strong></div><div class="kpi danger"><span>未照合</span><strong>4</strong></div>
+        </div>
+        <div class="overview-grid">
+          <div class="panel"><h3>照合の進み具合</h3><div class="demo-progress"><span></span></div><div class="progress-text"><b>414 / 428件</b><span>あと14件</span></div></div>
+          <div class="panel"><h3>次にやること</h3><div class="todo-row"><span class="dot warn-dot"></span><b>確認が必要な候補</b><strong>7件</strong></div><div class="todo-row"><span class="dot orange-dot"></span><b>候補が複数</b><strong>3件</strong></div><div class="todo-row"><span class="dot red-dot"></span><b>未照合</b><strong>4件</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="candidate" class="demo-section">
+      <div class="demo-heading"><div><span>SCREEN 02</span><h2>確認が必要</h2><p>自動で見つかった1対多・多対1候補を確認して、問題なければ照合します。</p></div><div class="purpose">内容確認 → 照合</div></div>
+      <div class="sample-frame">
+        <div class="screen-toolbar"><div><h3>確認が必要な候補</h3><p>金額は一致しています。相手先や日付を確認してください。</p></div><button class="demo-primary">選択した候補を照合</button></div>
+        <div class="candidate-card-demo">
+          <div class="candidate-top"><label><input type="checkbox" /> 候補 C-001</label><span class="tag amber">1対多</span></div>
+          <div class="candidate-sum"><b>銀行 ¥1,250,000</b><span>＝</span><b>当社 ¥1,250,000</b><em>差額 ¥0</em></div>
+          <div class="two-col"><div><small>銀行</small><div class="row-line"><b>8/05</b><span>ABCショウジ</span><strong>¥1,250,000</strong></div></div><div><small>当社</small><div class="row-line"><b>8/04</b><span>ABC商事 売掛入金①</span><strong>¥800,000</strong></div><div class="row-line"><b>8/05</b><span>ABC商事 売掛入金②</span><strong>¥450,000</strong></div></div></div>
+          <div class="candidate-actions"><button class="demo-soft">除外</button><button class="demo-primary">この候補を照合</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conflict" class="demo-section">
+      <div class="demo-heading"><div><span>SCREEN 03</span><h2>候補が複数</h2><p>同じ銀行明細に複数の組み合わせが見つかった場合。自動決定せず、人が選びます。</p></div><div class="purpose warning">ここは要判断</div></div>
+      <div class="sample-frame">
+        <div class="notice-box">この銀行明細には <b>2つの候補</b> があります。正しい方だけ選択してください。</div>
+        <div class="bank-focus"><span>銀行明細</span><b>8/12　XYZカブシキガイシャ</b><strong>¥980,000</strong></div>
+        <div class="choice-grid">
+          <div class="choice-card selected"><div><span>候補 A</span><b>当社2件の合計</b></div><strong>¥980,000</strong><p>8/11 ¥600,000 + 8/12 ¥380,000</p><button class="demo-primary">こちらを照合</button></div>
+          <div class="choice-card"><div><span>候補 B</span><b>当社3件の合計</b></div><strong>¥980,000</strong><p>8/10 ¥300,000 + 8/12 ¥280,000 + 8/12 ¥400,000</p><button class="demo-soft">こちらを照合</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="manual" class="demo-section">
+      <div class="demo-heading"><div><span>SCREEN 04</span><h2>手動で照合</h2><p>自動候補が出なかった明細を、銀行側と当社側から自分で選びます。</p></div><div class="purpose">最後の調整用</div></div>
+      <div class="sample-frame">
+        <div class="manual-summary"><div><span>銀行選択</span><b>2件 / ¥730,000</b></div><div class="equal">＝</div><div><span>当社選択</span><b>3件 / ¥730,000</b></div><div class="match-ok">差額 ¥0</div><button class="demo-primary">選択明細を照合</button></div>
+        <div class="two-col tables"><div><h4>銀行未照合</h4><table><thead><tr><th></th><th>日付</th><th>摘要</th><th>金額</th></tr></thead><tbody><tr class="picked"><td>✓</td><td>8/18</td><td>DEFサービス</td><td>¥500,000</td></tr><tr class="picked"><td>✓</td><td>8/18</td><td>DEFサービス</td><td>¥230,000</td></tr><tr><td></td><td>8/19</td><td>GHI株式会社</td><td>¥120,000</td></tr></tbody></table></div><div><h4>当社未処理</h4><table><thead><tr><th></th><th>日付</th><th>摘要</th><th>金額</th></tr></thead><tbody><tr class="picked"><td>✓</td><td>8/18</td><td>DEF売掛①</td><td>¥300,000</td></tr><tr class="picked"><td>✓</td><td>8/18</td><td>DEF売掛②</td><td>¥250,000</td></tr><tr class="picked"><td>✓</td><td>8/18</td><td>DEF売掛③</td><td>¥180,000</td></tr></tbody></table></div></div>
+      </div>
+    </section>
+
+    <section id="matched" class="demo-section">
+      <div class="demo-heading"><div><span>SCREEN 05</span><h2>照合済み</h2><p>完了した照合をグループ単位で確認します。間違いがあれば戻せます。</p></div><div class="purpose">確認・取消</div></div>
+      <div class="sample-frame">
+        <div class="screen-toolbar"><div><h3>照合済み一覧</h3><p>照合グループごとにまとまって表示されます。</p></div><button class="demo-danger">選択した照合を戻す</button></div>
+        <div class="matched-row"><div class="match-check">☑</div><div><span class="tag green">1対1</span><b>M-0128</b><p>銀行 8/20 JKL株式会社 ↔ 当社 8/20 JKL株式会社</p></div><strong>¥1,540,000</strong><span class="done">照合済み</span></div>
+        <div class="matched-row"><div class="match-check">☐</div><div><span class="tag green">1対多</span><b>M-0127</b><p>銀行1件 ↔ 当社2件</p></div><strong>¥860,000</strong><span class="done">照合済み</span></div>
+      </div>
+    </section>
+
+    <section id="daily" class="demo-section">
+      <div class="demo-heading"><div><span>SCREEN 06</span><h2>日別確認</h2><p>銀行と当社の入金・出金の合計を日ごとに比較します。</p></div><div class="purpose">月次チェック</div></div>
+      <div class="sample-frame"><div class="table-scroll"><table class="daily-demo"><thead><tr><th>日付</th><th>銀行 入金</th><th>当社 入金</th><th>入金差額</th><th>銀行 出金</th><th>当社 出金</th><th>出金差額</th></tr></thead><tbody><tr><td>8/20</td><td>¥8,240,000</td><td>¥8,240,000</td><td class="zero">¥0</td><td>¥3,140,000</td><td>¥3,140,000</td><td class="zero">¥0</td></tr><tr class="attention"><td>8/21</td><td>¥6,830,000</td><td>¥6,710,000</td><td>¥120,000</td><td>¥1,200,000</td><td>¥1,200,000</td><td class="zero">¥0</td></tr><tr><td>8/22</td><td>¥9,510,000</td><td>¥9,510,000</td><td class="zero">¥0</td><td>¥2,820,000</td><td>¥2,820,000</td><td class="zero">¥0</td></tr></tbody><tfoot><tr><th>月合計</th><th>¥24,580,000</th><th>¥24,460,000</th><th>¥120,000</th><th>¥7,160,000</th><th>¥7,160,000</th><th>¥0</th></tr></tfoot></table></div></div>
+    </section>
+
+    <section id="settings" class="demo-section">
+      <div class="demo-heading"><div><span>SCREEN 07</span><h2>設定</h2><p>普段は触らない補助機能です。通常操作からは目立たない場所に置いています。</p></div><div class="purpose muted">必要な人だけ</div></div>
+      <div class="sample-frame settings-demo"><div class="setting-card"><h3>名寄せ</h3><p>銀行と社内で名前の表記が違う場合に対応関係を登録します。</p><div class="alias-demo"><span>カ）ABCショウジ</span><b>→</b><span>株式会社ABC商事</span></div><button class="demo-soft">新しく登録</button></div><div class="setting-card"><h3>候補除外</h3><p>今後表示しなくてよい誤候補を管理します。</p><div class="excluded">C-0042　¥350,000　除外済み</div></div></div>
+    </section>
+
+    <section class="demo-footer-card"><b>このサンプルを見て、違和感がある画面だけ教えてください。</b><p>「候補画面はもっとExcelっぽく」「手動照合は左右を広く」「色が地味」など、感覚的な指示で大丈夫です。</p><a href="./index.html">実際のツールへ戻る →</a></section>
+  </main>
+</body>
+</html>
