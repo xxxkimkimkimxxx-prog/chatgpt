@@ -6,55 +6,124 @@
   <meta name="theme-color" content="#0f766e" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'; worker-src 'self' blob:" />
   <meta name="referrer" content="no-referrer" />
-  <title>銀行入出金照合ツール Web版 v20.5.3</title>
+  <title>銀行入出金照合ツール</title>
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./formal.css" />
+  <link rel="stylesheet" href="./simple.css" />
   <script src="./vendor/xlsx.full.min.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand"><div class="logo">照</div><div><div class="brand-title">銀行入出金照合ツール</div><div class="brand-sub">Web版 v20.5.3 · Excel版 v20.5.3 を基準仕様</div></div></div>
-    <div class="top-utility"><a class="manual-link" href="./security.html">🛡️ 安全性</a><a class="manual-link" href="./manual.html">📘 操作マニュアル</a><div class="privacy-pill">🔒 外部通信禁止 · ブラウザ内処理</div></div>
-  </header>
-  <main class="app-shell">
-    <section class="hero-card compact"><div><div class="eyebrow">MONTHLY BANK RECONCILIATION</div><h1>月次の銀行入出金照合を、Webで完結。</h1><p>銀行RAWと当社RAWを読み込み、1対1 → 1対多／多対1 → 複数候補 → 手動照合 → 月次確定まで管理します。</p></div><div class="hero-badge"><strong id="monthBadge">対象月 未設定</strong><span id="saveStateLabel">ローカルDB：未保存</span></div></section>
-    <div class="first-guide"><span><strong>初めて使う方へ：</strong>「対象月を選ぶ → 銀行RAW → 当社RAW → 自動照合」の順に進めれば大丈夫です。</span><a href="./manual.html#quickstart">5分で分かる基本操作 →</a></div>
-
-    <section class="control-card">
-      <div class="control-head"><div><div class="step">基本設定</div><h2>v20.5.3 基準</h2></div><div class="header-actions"><button class="ghost-btn" id="restoreBtn" type="button">保存済み月を復元</button><button class="danger-btn" id="deleteMonthBtn" type="button">対象月の端末保存を削除</button><button class="danger-btn" id="deleteAllLocalBtn" type="button">全端末保存を削除</button><button class="danger-btn" id="newMonthBtn" type="button">新しい月を開始</button></div></div>
-      <div class="settings-grid settings-six">
-        <label>対象月<input id="targetMonth" type="month" /></label>
-        <label>1対1日付探索範囲<select id="businessDayTolerance"><option value="0">同一営業日</option><option value="1">±1営業日</option><option value="3">±3営業日</option><option value="5" selected>±5営業日</option><option value="10">±10営業日</option></select></label>
-        <label>対象G/L勘定<input id="targetGl" value="1111020001" inputmode="numeric" /></label>
-        <label>通常探索 最大明細<select id="maxComboItems"><option value="10">10</option><option value="20">20</option><option value="30" selected>30</option></select></label>
-        <label>詳細再探索 最大明細<select id="deepMaxItems"><option value="40">40</option><option value="60" selected>60</option></select></label>
-        <label>社内同士取消<select id="companyCancelMode"><option value="on" selected>有効</option><option value="off">無効</option></select></label>
+  <header class="simple-header">
+    <div class="simple-header-inner">
+      <div class="simple-brand">
+        <div class="simple-logo">照</div>
+        <div><strong>銀行入出金照合ツール</strong><span>Web版 v20.5.3</span></div>
       </div>
-      <div class="setting-note">社内側の日付基準は「転記日付」。同月再取込は明細フィンガープリントで差分追加し、既存の照合結果を保持します。端末保存はこのブラウザ内のIndexedDBのみで、GitHubや外部サーバーへRAWデータを送信しません。</div>
+      <nav class="help-nav"><a href="./manual.html">使い方</a><a href="./security.html">安全性</a></nav>
+    </div>
+  </header>
+
+  <main class="simple-shell">
+    <section class="welcome-panel">
+      <div>
+        <p class="welcome-label">月次照合</p>
+        <h1>銀行データと当社データを<br>かんたんに照合します</h1>
+        <p class="welcome-copy">下の4ステップを上から順番に進めてください。通常は詳細設定を変更する必要はありません。</p>
+      </div>
+      <div class="privacy-note"><span>🔒</span><div><b>データはこのPC内で処理</b><small>銀行RAW・当社RAWを外部へ送信しません</small></div></div>
     </section>
 
-    <section class="upload-grid">
-      <article class="upload-card"><div class="upload-head"><div><div class="step">01</div><h2>銀行RAW</h2></div><span class="status-badge" id="bankStatus">未読込</span></div><label class="dropzone"><input id="bankFile" type="file" accept=".xlsx,.xls,.csv,.txt" hidden /><span class="drop-icon">🏦</span><strong>銀行ファイルを選択</strong><small>日付・概要・振込人名・出金・入金を自動認識</small></label><div class="mapping hidden" id="bankMapping"></div></article>
-      <article class="upload-card"><div class="upload-head"><div><div class="step">01</div><h2>当社RAW</h2></div><span class="status-badge" id="companyStatus">未読込</span></div><label class="dropzone"><input id="companyFile" type="file" accept=".xlsx,.xls,.csv,.txt" hidden /><span class="drop-icon">🏢</span><strong>当社ファイルを選択</strong><small>転記日付・国内通貨額・貸借区分・G/L勘定を自動認識</small></label><div class="mapping hidden" id="companyMapping"></div></article>
+    <section class="step-flow" aria-label="基本操作の流れ">
+      <div class="flow-step"><span>1</span><b>対象月</b></div><i>→</i>
+      <div class="flow-step"><span>2</span><b>銀行データ</b></div><i>→</i>
+      <div class="flow-step"><span>3</span><b>当社データ</b></div><i>→</i>
+      <div class="flow-step"><span>4</span><b>照合開始</b></div>
     </section>
 
-    <section class="control-card"><div class="control-head"><div><div class="step">02</div><h2>自動照合</h2></div><div class="header-actions"><button class="secondary-btn" id="deepSearchBtn" type="button" disabled>探索上限を詳細再探索</button><button class="primary-btn" id="runBtn" type="button" disabled>自動照合を実行</button></div></div><div class="run-note" id="runNote">対象月を設定し、銀行RAWと当社RAWを読み込んでください。</div><div class="progress-wrap hidden" id="progressWrap"><div class="progress-bar"><div id="progressBar"></div></div><span id="progressText">処理中...</span></div></section>
+    <section class="main-card month-card">
+      <div class="card-step">STEP 1</div>
+      <div class="card-title-row"><div><h2>対象月を選ぶ</h2><p>今回照合する月を選択してください。</p></div><div class="month-state"><strong id="monthBadge">対象月 未設定</strong><span id="saveStateLabel">保存データなし</span></div></div>
+      <div class="month-action-row"><label class="month-input-label">対象月<input id="targetMonth" type="month" /></label><button class="soft-btn" id="restoreBtn" type="button">前回の続きから開く</button></div>
 
-    <section class="workspace hidden" id="workspace">
-      <div class="kpi-grid six"><div class="kpi"><span>銀行明細</span><strong id="kpiBank">0</strong></div><div class="kpi"><span>当社明細</span><strong id="kpiCompany">0</strong></div><div class="kpi success"><span>銀行進捗率</span><strong id="kpiRate">0%</strong></div><div class="kpi warn"><span>要確認候補</span><strong id="kpiCandidates">0</strong></div><div class="kpi orange"><span>複数候補明細</span><strong id="kpiConflicts">0</strong></div><div class="kpi danger"><span>銀行未照合</span><strong id="kpiUnmatched">0</strong></div></div>
-      <div class="workspace-bar"><div class="tabs" id="tabs"><button class="tab active" data-tab="summary">ダッシュボード</button><button class="tab" data-tab="candidates">候補組</button><button class="tab" data-tab="conflicts">複数候補有</button><button class="tab" data-tab="manual">手動照合</button><button class="tab" data-tab="matched">照合済み</button><button class="tab" data-tab="daily">日別集計</button><button class="tab" data-tab="masters">名寄せ・除外</button></div><div class="workspace-actions"><input id="globalSearch" type="search" placeholder="日付・金額・摘要・番号を検索" /><button class="secondary-btn" id="exportBtn" type="button">Excel出力</button></div></div>
+      <details class="advanced-box">
+        <summary>詳細設定 <span>通常は変更不要</span></summary>
+        <div class="advanced-grid">
+          <label>1対1の日付範囲<select id="businessDayTolerance"><option value="0">同一営業日</option><option value="1">±1営業日</option><option value="3">±3営業日</option><option value="5" selected>±5営業日</option><option value="10">±10営業日</option></select><small>通常は±5営業日のままでOK</small></label>
+          <label>対象G/L勘定<input id="targetGl" value="1111020001" inputmode="numeric" /><small>通常は変更しません</small></label>
+          <label>通常探索の最大明細<select id="maxComboItems"><option value="10">10</option><option value="20">20</option><option value="30" selected>30</option></select><small>組み合わせ候補を探す範囲</small></label>
+          <label>詳細探索の最大明細<select id="deepMaxItems"><option value="40">40</option><option value="60" selected>60</option></select><small>通常探索で見つからない時だけ使用</small></label>
+          <label>社内同士の取消<select id="companyCancelMode"><option value="on" selected>自動で処理する</option><option value="off">処理しない</option></select><small>通常は自動のままでOK</small></label>
+        </div>
+        <div class="advanced-actions">
+          <button class="soft-btn" id="newMonthBtn" type="button">新しい月に切り替える</button>
+          <button class="danger-link-btn" id="deleteMonthBtn" type="button">選択月の保存データを削除</button>
+          <button class="danger-link-btn" id="deleteAllLocalBtn" type="button">このPCの保存データをすべて削除</button>
+        </div>
+      </details>
+    </section>
 
-      <section class="tab-panel active" id="tab-summary"><div class="summary-grid"><article class="summary-card"><div class="summary-title">照合進捗</div><div class="big-progress"><div id="matchProgress"></div></div><div class="summary-stats" id="summaryStats"></div></article><article class="summary-card"><div class="summary-title">月次確定チェック</div><div id="closeChecklist"></div><button class="primary-btn full-btn" id="closeMonthBtn" type="button">07 月次照合を確定</button></article><article class="summary-card full"><div class="summary-title">処理ログ</div><div class="log-box" id="logBox"></div></article></div></section>
+    <section class="upload-grid simple-upload-grid">
+      <article class="main-card upload-card simple-upload-card">
+        <div class="card-step">STEP 2</div>
+        <div class="upload-head"><div><h2>銀行データを入れる</h2><p>銀行から取得したExcelまたはCSVを選択します。</p></div><span class="status-badge" id="bankStatus">未読込</span></div>
+        <label class="simple-dropzone"><input id="bankFile" type="file" accept=".xlsx,.xls,.csv,.txt" hidden /><span class="file-icon">🏦</span><strong>銀行ファイルを選ぶ</strong><small>Excel / CSV</small></label>
+        <div class="mapping hidden" id="bankMapping"></div>
+      </article>
 
-      <section class="tab-panel" id="tab-candidates"><div class="section-head"><div><h3>候補組</h3><p>競合のない1対多・多対1候補。親行を開くと明細を確認できます。</p></div><button class="primary-btn small" id="batchCandidateBtn" type="button">選択候補を一括照合</button></div><div id="candidateList" class="candidate-list"></div></section>
-      <section class="tab-panel" id="tab-conflicts"><div class="section-head"><div><h3>複数候補有</h3><p>1対1競合と、1対多／多対1の競合候補を統合表示します。</p></div><button class="primary-btn small" id="batchConflictBtn" type="button">選択候補を一括照合</button></div><div id="conflictList" class="candidate-list"></div></section>
-      <section class="tab-panel" id="tab-manual"><div class="section-head"><div><h3>手動照合</h3><p>件数制限なし。銀行側・当社側を複数選択して合計一致を確認します。</p></div><button class="primary-btn small" id="manualMatchBtn" type="button">選択明細を照合</button></div><div class="manual-sums" id="manualSums"></div><div class="split-grid"><div><h4>銀行未照合</h4><div class="table-wrap"><table id="bankUnmatchedTable"></table></div></div><div><h4>当社未処理</h4><div class="table-wrap"><table id="companyUnmatchedTable"></table></div></div></div></section>
-      <section class="tab-panel" id="tab-matched"><div class="section-head"><div><h3>照合済み一覧</h3><p>親行で複数選択し、まとめて照合を戻せます。</p></div><button class="danger-btn small" id="batchUndoBtn" type="button">選択照合を戻す</button></div><div id="matchedList" class="matched-list"></div></section>
-      <section class="tab-panel" id="tab-daily"><div class="section-head"><div><h3>日付別 入出金チェック</h3><p>銀行RAW／当社RAWの入金・出金・合算を比較します。</p></div></div><div class="table-wrap"><table id="dailyTable"></table></div></section>
-      <section class="tab-panel" id="tab-masters"><div class="summary-grid"><article class="summary-card"><div class="summary-title">名寄せマスタ</div><p class="small-note">銀行表記と当社表記の対応を登録すると候補判定の補助情報として使用します。</p><div class="inline-form"><input id="aliasBank" placeholder="銀行表記"/><input id="aliasCompany" placeholder="当社表記"/><select id="aliasDirection"><option>入金</option><option>出金</option></select><button id="addAliasBtn" class="primary-btn small">登録</button></div><div id="aliasList" class="master-list"></div></article><article class="summary-card"><div class="summary-title">候補除外履歴</div><p class="small-note">候補カードの「除外」から登録。以後同じ候補組を自動表示しません。</p><div id="exclusionList" class="master-list"></div></article></div></section>
+      <article class="main-card upload-card simple-upload-card">
+        <div class="card-step">STEP 3</div>
+        <div class="upload-head"><div><h2>当社データを入れる</h2><p>社内システムから出力したデータを選択します。</p></div><span class="status-badge" id="companyStatus">未読込</span></div>
+        <label class="simple-dropzone"><input id="companyFile" type="file" accept=".xlsx,.xls,.csv,.txt" hidden /><span class="file-icon">🏢</span><strong>当社ファイルを選ぶ</strong><small>Excel / CSV</small></label>
+        <div class="mapping hidden" id="companyMapping"></div>
+      </article>
+    </section>
+
+    <section class="main-card run-card">
+      <div class="card-step">STEP 4</div>
+      <div class="run-main-row"><div><h2>照合を開始する</h2><p id="runNote">対象月を設定し、銀行データと当社データを読み込んでください。</p></div><button class="run-big-btn" id="runBtn" type="button" disabled>照合を開始</button></div>
+      <div class="progress-wrap hidden" id="progressWrap"><div class="progress-bar"><div id="progressBar"></div></div><span id="progressText">処理中...</span></div>
+      <details class="deep-search-box"><summary>通常の照合で見つからない明細を詳しく探す</summary><p>通常の探索で「探索上限」になった明細だけを、より広い範囲で再検索します。</p><button class="soft-btn" id="deepSearchBtn" type="button" disabled>詳しく再検索する</button></details>
+    </section>
+
+    <section class="workspace hidden simple-workspace" id="workspace">
+      <div class="result-header"><div><p class="welcome-label">照合結果</p><h2>確認するところだけ見ればOKです</h2></div><button class="soft-btn" id="exportBtn" type="button">結果をExcelで保存</button></div>
+
+      <div class="kpi-grid six simple-kpis">
+        <div class="kpi"><span>銀行明細</span><strong id="kpiBank">0</strong></div>
+        <div class="kpi"><span>当社明細</span><strong id="kpiCompany">0</strong></div>
+        <div class="kpi success"><span>照合できた割合</span><strong id="kpiRate">0%</strong></div>
+        <div class="kpi warn"><span>確認が必要</span><strong id="kpiCandidates">0</strong></div>
+        <div class="kpi orange"><span>候補が複数</span><strong id="kpiConflicts">0</strong></div>
+        <div class="kpi danger"><span>未照合</span><strong id="kpiUnmatched">0</strong></div>
+      </div>
+
+      <div class="workspace-bar simple-workspace-bar">
+        <div class="tabs" id="tabs">
+          <button class="tab active" data-tab="summary">全体</button>
+          <button class="tab" data-tab="candidates">確認が必要</button>
+          <button class="tab" data-tab="conflicts">候補が複数</button>
+          <button class="tab" data-tab="manual">手動で照合</button>
+          <button class="tab" data-tab="matched">照合済み</button>
+          <button class="tab" data-tab="daily">日別確認</button>
+          <button class="tab" data-tab="masters">設定</button>
+        </div>
+        <input id="globalSearch" type="search" placeholder="日付・金額・摘要で検索" />
+      </div>
+
+      <section class="tab-panel active" id="tab-summary">
+        <div class="summary-grid"><article class="summary-card"><div class="summary-title">照合の進み具合</div><div class="big-progress"><div id="matchProgress"></div></div><div class="summary-stats" id="summaryStats"></div></article><article class="summary-card"><div class="summary-title">月次確定前の確認</div><div id="closeChecklist"></div><button class="primary-btn full-btn" id="closeMonthBtn" type="button">月次照合を確定する</button></article><article class="summary-card full"><details><summary class="log-summary">処理履歴を見る</summary><div class="log-box" id="logBox"></div></details></article></div>
+      </section>
+
+      <section class="tab-panel" id="tab-candidates"><div class="section-head"><div><h3>確認が必要な候補</h3><p>金額が一致する組み合わせ候補です。中身を確認してから照合してください。</p></div><button class="primary-btn small" id="batchCandidateBtn" type="button">チェックした候補で照合</button></div><div id="candidateList" class="candidate-list"></div></section>
+      <section class="tab-panel" id="tab-conflicts"><div class="section-head"><div><h3>候補が複数ある明細</h3><p>どの組み合わせが正しいか自動で1つに決められなかった明細です。</p></div><button class="primary-btn small" id="batchConflictBtn" type="button">チェックした候補で照合</button></div><div id="conflictList" class="candidate-list"></div></section>
+      <section class="tab-panel" id="tab-manual"><div class="section-head"><div><h3>手動で照合</h3><p>銀行側と当社側から明細を選び、合計金額が一致するものを照合します。</p></div><button class="primary-btn small" id="manualMatchBtn" type="button">選んだ明細を照合</button></div><div class="manual-sums" id="manualSums"></div><div class="split-grid"><div><h4>銀行の未照合</h4><div class="table-wrap"><table id="bankUnmatchedTable"></table></div></div><div><h4>当社の未処理</h4><div class="table-wrap"><table id="companyUnmatchedTable"></table></div></div></div></section>
+      <section class="tab-panel" id="tab-matched"><div class="section-head"><div><h3>照合済み</h3><p>すでに照合した組み合わせです。間違いがあれば元に戻せます。</p></div><button class="danger-btn small" id="batchUndoBtn" type="button">選んだ照合を元に戻す</button></div><div id="matchedList" class="matched-list"></div></section>
+      <section class="tab-panel" id="tab-daily"><div class="section-head"><div><h3>日別の入出金確認</h3><p>銀行と当社の入金・出金を日付ごとに比較します。</p></div></div><div class="table-wrap"><table id="dailyTable"></table></div></section>
+      <section class="tab-panel" id="tab-masters"><div class="summary-grid"><article class="summary-card"><div class="summary-title">表記ゆれを覚えさせる</div><p class="small-note">同じ相手先なのに銀行と当社で名前が違う場合だけ登録します。</p><div class="inline-form"><input id="aliasBank" placeholder="銀行側の名前"/><input id="aliasCompany" placeholder="当社側の名前"/><select id="aliasDirection"><option>入金</option><option>出金</option></select><button id="addAliasBtn" class="primary-btn small">登録</button></div><div id="aliasList" class="master-list"></div></article><article class="summary-card"><div class="summary-title">今後表示しない候補</div><p class="small-note">「これは違う」と除外した候補の履歴です。</p><div id="exclusionList" class="master-list"></div></article></div></section>
     </section>
   </main>
-  <footer><strong>データ保護：</strong>RAWファイルの内容はブラウザ内で処理します。月次DBはこの端末のIndexedDBへ保存されます。CSPによりアプリ本体からの外部通信を禁止し、GitHubリポジトリへRAWデータを保存する処理はありません。<a href="./security.html">安全性の詳しい説明</a></footer>
+
+  <footer class="simple-footer"><span>銀行RAW・当社RAWは外部サーバーへ送信しません。</span><a href="./security.html">安全性について詳しく見る</a></footer>
   <script src="./app.js"></script>
   <script src="./security.js"></script>
 </body>
