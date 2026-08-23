@@ -1,284 +1,134 @@
-const $ = (id) => document.getElementById(id);
-const yen = (n) => new Intl.NumberFormat('ja-JP',{style:'currency',currency:'JPY',maximumFractionDigits:0}).format(Number(n)||0);
-const num = (v) => {
-  if (typeof v === 'number') return Number.isFinite(v) ? v : 0;
-  let s = String(v ?? '').trim();
-  if (!s) return 0;
-  const neg = /^\(.*\)$/.test(s);
-  s = s.replace(/[¥￥,\s]/g,'').replace(/[()]/g,'');
-  const n = Number(s);
-  return Number.isFinite(n) ? (neg ? -n : n) : 0;
-};
+const $ = id => document.getElementById(id);
+const APP_VERSION = '20.5.3-web.1';
+const DB_NAME = 'bank-reconciliation-v2053';
+const DB_STORE = 'months';
+const yen = n => new Intl.NumberFormat('ja-JP',{style:'currency',currency:'JPY',maximumFractionDigits:0}).format(Number(n)||0);
+const esc = s => String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num = v => { if(typeof v==='number') return Number.isFinite(v)?v:0; let s=String(v??'').trim(); if(!s)return 0; const neg=/^\(.*\)$/.test(s); s=s.replace(/[¥￥,\s]/g,'').replace(/[()]/g,''); const n=Number(s); return Number.isFinite(n)?(neg?-n:n):0; };
+const norm = s => String(s??'').normalize('NFKC').toUpperCase().replace(/[\s　・･\-‐‑‒–—―_.,，。()（）\[\]【】「」『』]/g,'');
+const sixKey = s => { const m=String(s??'').match(/(?:^|\D)(\d{6})(?!\d)/); return m?m[1]:''; };
+const hash = s => { let h=2166136261; for(let i=0;i<s.length;i++){h^=s.charCodeAt(i); h=Math.imul(h,16777619);} return (h>>>0).toString(36); };
+const nowIso = () => new Date().toISOString();
 
 const state = {
+  targetMonth:'', locked:false,
   bank:{file:null,headers:[],rawRows:[],rows:[],mapping:{}},
   company:{file:null,headers:[],rawRows:[],rows:[],mapping:{}},
-  matches:[], candidates:[], logs:[], runSeq:0
+  matches:[], candidates:[], aliases:[], exclusions:[], logs:[], holidays:[], deepLimitRows:[],
+  counters:{match:0,candidate:0}
 };
 
-function log(msg){
-  const t = new Date().toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
-  state.logs.unshift(`[${t}] ${msg}`);
-  state.logs = state.logs.slice(0,80);
-  renderLog();
-}
-function renderLog(){ $('logBox').innerHTML = state.logs.map(x=>`<div>${escapeHtml(x)}</div>`).join('') || '<div>まだ処理はありません。</div>'; }
-function escapeHtml(s){ return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
-
+function log(msg){ state.logs.unshift(`[${new Date().toLocaleTimeString('ja-JP')}] ${msg}`); state.logs=state.logs.slice(0,120); renderLog(); scheduleSave(); }
+function renderLog(){ const el=$('logBox'); if(el) el.innerHTML=state.logs.map(x=>`<div>${esc(x)}</div>`).join('')||'<div>処理履歴はありません。</div>'; }
 function parseDate(v){
-  if (v == null || v === '') return '';
-  if (typeof v === 'number' && window.XLSX?.SSF){
-    const d = XLSX.SSF.parse_date_code(v);
-    if (d) return `${d.y}-${String(d.m).padStart(2,'0')}-${String(d.d).padStart(2,'0')}`;
-  }
-  let s = String(v).trim();
-  const jp = s.match(/(\d{4})\D+(\d{1,2})\D+(\d{1,2})/);
-  if (jp) return `${jp[1]}-${String(jp[2]).padStart(2,'0')}-${String(jp[3]).padStart(2,'0')}`;
-  const d = new Date(s);
-  if (!Number.isNaN(d.getTime())) return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
-  return '';
+  if(v==null||v==='') return '';
+  if(typeof v==='number' && window.XLSX?.SSF){ const d=XLSX.SSF.parse_date_code(v); if(d) return `${d.y}-${String(d.m).padStart(2,'0')}-${String(d.d).padStart(2,'0')}`; }
+  const s=String(v).trim(); const m=s.match(/(20\d{2})\D+(\d{1,2})\D+(\d{1,2})/); if(m)return `${m[1]}-${String(m[2]).padStart(2,'0')}-${String(m[3]).padStart(2,'0')}`;
+  const d=new Date(s); if(Number.isNaN(d.getTime()))return ''; return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 }
-function dayDiff(a,b){
-  if (!a || !b) return Infinity;
-  const x = new Date(`${a}T00:00:00`), y = new Date(`${b}T00:00:00`);
-  return Math.abs(Math.round((x-y)/86400000));
-}
-function sameDirection(a,b){ return (a>=0 && b>=0) || (a<0 && b<0); }
+function monthOf(d){return d?d.slice(0,7):'';}
+function isBusinessDay(d){ const x=new Date(`${d}T00:00:00`); const day=x.getDay(); return day!==0&&day!==6&&!state.holidays.includes(d); }
+function businessDayDiff(a,b){ if(!a||!b)return 9999; if(a===b)return 0; let x=new Date(`${a}T00:00:00`), y=new Date(`${b}T00:00:00`); const step=x<y?1:-1; let n=0,guard=0; while(x.toDateString()!==y.toDateString()&&guard++<370){ x.setDate(x.getDate()+step); const ds=`${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,'0')}-${String(x.getDate()).padStart(2,'0')}`; if(isBusinessDay(ds))n++; } return n; }
+function sameMonth(row){return !state.targetMonth||monthOf(row.date)===state.targetMonth;}
 
+function openDB(){ return new Promise((resolve,reject)=>{ const r=indexedDB.open(DB_NAME,1); r.onupgradeneeded=()=>{const db=r.result;if(!db.objectStoreNames.contains(DB_STORE))db.createObjectStore(DB_STORE);}; r.onsuccess=()=>resolve(r.result); r.onerror=()=>reject(r.error); }); }
+async function saveMonth(){ if(!state.targetMonth)return; try{ const db=await openDB(); const tx=db.transaction(DB_STORE,'readwrite'); const payload={version:APP_VERSION,targetMonth:state.targetMonth,locked:state.locked,bankRows:state.bank.rows,companyRows:state.company.rows,matches:state.matches,candidates:state.candidates,aliases:state.aliases,exclusions:state.exclusions,logs:state.logs,counters:state.counters,holidays:state.holidays,savedAt:nowIso()}; tx.objectStore(DB_STORE).put(payload,state.targetMonth); await new Promise((res,rej)=>{tx.oncomplete=res;tx.onerror=()=>rej(tx.error);}); $('saveStateLabel').textContent=`ローカルDB：${new Date().toLocaleTimeString('ja-JP')} 保存`; }catch(e){console.error(e);$('saveStateLabel').textContent='ローカルDB：保存エラー';} }
+let saveTimer=null; function scheduleSave(){clearTimeout(saveTimer);saveTimer=setTimeout(saveMonth,300);}
+async function loadMonth(month){ const db=await openDB(); const tx=db.transaction(DB_STORE,'readonly'); const req=tx.objectStore(DB_STORE).get(month); return await new Promise((res,rej)=>{req.onsuccess=()=>res(req.result||null);req.onerror=()=>rej(req.error);}); }
+async function restoreCurrent(){ const month=$('targetMonth').value||state.targetMonth; if(!month){alert('対象月を選択してください。');return;} const p=await loadMonth(month); if(!p){alert(`${month} の保存済みデータはありません。`);return;} state.targetMonth=month;state.locked=!!p.locked;state.bank.rows=p.bankRows||[];state.company.rows=p.companyRows||[];state.matches=p.matches||[];state.candidates=p.candidates||[];state.aliases=p.aliases||[];state.exclusions=p.exclusions||[];state.logs=p.logs||[];state.counters=p.counters||{match:0,candidate:0};state.holidays=p.holidays||[]; $('workspace').classList.remove('hidden'); $('monthBadge').textContent=`対象月 ${month}${state.locked?'（確定済）':''}`; setStatus('bank',`DB ${state.bank.rows.length.toLocaleString()}件`,true); setStatus('company',`DB ${state.company.rows.length.toLocaleString()}件`,true); updateReady(); renderAll(); log(`${month} の保存済み月次DBを復元しました。`); }
+
+function setStatus(side,text,ok=false){const el=$(side+'Status');el.textContent=text;el.classList.toggle('ok',ok);}
+function findHeader(headers,regs,exclude=[]){ return headers.find(h=>regs.some(r=>r.test(h))&&!exclude.some(r=>r.test(h)))||''; }
+function optionList(headers,sel,blank=true){return `${blank?'<option value="">未使用</option>':''}`+headers.map(h=>`<option value="${esc(h)}" ${h===sel?'selected':''}>${esc(h)}</option>`).join('');}
+function findHeaderRow(matrix,side){ const wanted=side==='bank'?[/日付/,/出金|入金/,/概要|振込/]:[/転記日付/,/国内通貨額|金額/,/貸借区分|G\/L勘定/]; let best={i:0,score:-1}; for(let i=0;i<Math.min(25,matrix.length);i++){const vals=(matrix[i]||[]).map(v=>String(v??''));const s=wanted.reduce((a,r)=>a+(vals.some(v=>r.test(v))?1:0),0);if(s>best.score)best={i,score:s};}return best.i; }
 async function readFile(side,file){
-  if (!window.XLSX){ alert('Excel読込ライブラリを読み込めませんでした。ネットワーク接続を確認してください。'); return; }
-  const buf = await file.arrayBuffer();
-  const wb = XLSX.read(buf,{type:'array',cellDates:false});
-  const ws = wb.Sheets[wb.SheetNames[0]];
-  const matrix = XLSX.utils.sheet_to_json(ws,{header:1,defval:'',raw:true});
-  const headerIndex = findHeaderRow(matrix);
-  const headers = (matrix[headerIndex]||[]).map((v,i)=>String(v||`列${i+1}`).trim());
-  const rawRows = matrix.slice(headerIndex+1).filter(r=>r.some(v=>String(v??'').trim()!==''))
-    .map(r=>Object.fromEntries(headers.map((h,i)=>[h,r[i]??''])));
-  state[side].file=file; state[side].headers=headers; state[side].rawRows=rawRows;
-  buildMapping(side);
-  setStatus(side,`${rawRows.length.toLocaleString()}件`,true);
-  log(`${side==='bank'?'銀行':'当社'}RAWを読み込み：${file.name} / ${rawRows.length.toLocaleString()}件`);
-  updateReady();
+  if(state.locked){alert('対象月は確定済みです。新しい月を開始するか確定を解除してください。');return;}
+  if(!window.XLSX){alert('Excel読込ライブラリを読み込めません。');return;}
+  const wb=XLSX.read(await file.arrayBuffer(),{type:'array',cellDates:false}); const ws=wb.Sheets[wb.SheetNames[0]]; const matrix=XLSX.utils.sheet_to_json(ws,{header:1,defval:'',raw:true}); const hi=findHeaderRow(matrix,side); const headers=(matrix[hi]||[]).map((v,i)=>String(v||`列${i+1}`).trim()); const rawRows=matrix.slice(hi+1).filter(r=>r.some(v=>String(v??'').trim()!=='')).map((r,idx)=>({__rawRow:hi+2+idx,...Object.fromEntries(headers.map((h,i)=>[h,r[i]??'']))}));
+  state[side].file=file;state[side].headers=headers;state[side].rawRows=rawRows;buildMapping(side);setStatus(side,`${rawRows.length.toLocaleString()}行 読込`,true);log(`${side==='bank'?'銀行':'当社'}RAW読込：${file.name} / ${rawRows.length.toLocaleString()}行`);updateReady();
 }
-function findHeaderRow(matrix){
-  const limit=Math.min(matrix.length,20);
-  for(let i=0;i<limit;i++){
-    const vals=(matrix[i]||[]).map(v=>String(v??'').trim()).filter(Boolean);
-    if(vals.length>=3 && new Set(vals).size>=Math.min(3,vals.length)) return i;
-  }
-  return 0;
+function buildMapping(side){ const s=state[side],h=s.headers; let auto;
+  if(side==='bank') auto={date:findHeader(h,[/^日付$/,/取引日/,/入出金日/]),outflow:findHeader(h,[/^出金$/,/出金額/,/引出/]),inflow:findHeader(h,[/^入金$/,/入金額/,/預入/]),desc:findHeader(h,[/概要/,/摘要/,/取引内容/]),name:findHeader(h,[/振込人名/,/依頼人/,/名義/]),balance:findHeader(h,[/残高/])};
+  else auto={date:findHeader(h,[/^転記日付$/,/転記日/]),amount:findHeader(h,[/^国内通貨額/,/^金額$/,/国内通貨/]),direction:findHeader(h,[/^貸借区分$/,/入出金区分/]),gl:findHeader(h,[/^G\/L勘定$/,/GL勘定/]),doc:findHeader(h,[/^伝票番号$/]),partner:findHeader(h,[/取引先名/,/取引先企業名/,/仕入先.*名称/,/得意先.*名称/]),headerText:findHeader(h,[/ヘッダテキスト/]),lineText:findHeader(h,[/明細テキスト/]),flag:findHeader(h,[/国内外フラグ/]),docType:findHeader(h,[/伝票タイプ/])};
+  s.mapping=auto; const el=$(side+'Mapping');el.classList.remove('hidden'); const fields=side==='bank'?[['date','日付',false],['outflow','出金',true],['inflow','入金',true],['desc','概要',true],['name','振込人名',true]]:[['date','転記日付',false],['amount','国内通貨額',false],['direction','貸借区分',true],['gl','G/L勘定',true],['doc','伝票番号',true],['partner','取引先',true],['headerText','ヘッダテキスト',true],['lineText','明細テキスト',true]];
+  el.innerHTML=`<div class="mapping-title">列対応を確認</div><div class="mapping-grid">${fields.map(([k,l,b])=>`<label>${l}<select data-map="${k}">${optionList(h,auto[k],b)}</select></label>`).join('')}</div><div class="file-meta">${esc(s.file.name)} / 見出し ${h.length}列</div>`;
+  el.querySelectorAll('[data-map]').forEach(c=>c.addEventListener('change',()=>{s.mapping[c.dataset.map]=c.value;normalizeSide(side);updateReady();})); normalizeSide(side);
 }
-function setStatus(side,text,ok=false){ const el=$(side+'Status'); el.textContent=text; el.classList.toggle('ok',ok); }
-function findHeader(headers,regexes,exclude=[]){
-  return headers.find(h=>regexes.some(r=>r.test(h)) && !exclude.some(r=>r.test(h))) || '';
-}
-function optionList(headers,selected,allowBlank=true){
-  return `${allowBlank?'<option value="">未使用</option>':''}`+headers.map(h=>`<option value="${escapeHtml(h)}" ${h===selected?'selected':''}>${escapeHtml(h)}</option>`).join('');
-}
-function buildMapping(side){
-  const s=state[side], h=s.headers;
-  const auto={
-    date:findHeader(h,[/取引日/i,/入出金日/i,/伝票日/i,/起票日/i,/日付/i,/date/i]),
-    amount:findHeader(h,[/^金額$/i,/取引金額/i,/入出金額/i,/amount/i],[/入金/i,/出金/i]),
-    inflow:findHeader(h,[/入金/i,/預入/i,/受取/i,/deposit/i,/inflow/i]),
-    outflow:findHeader(h,[/出金/i,/引出/i,/支払/i,/withdraw/i,/outflow/i]),
-    desc:findHeader(h,[/摘要/i,/内容/i,/取引内容/i,/相手/i,/名義/i,/備考/i,/テキスト/i,/description/i,/memo/i])
-  };
-  s.mapping={...auto,invert:false};
-  const el=$(side+'Mapping'); el.classList.remove('hidden');
-  el.innerHTML=`<div class="mapping-title">列の対応を確認してください</div>
-  <div class="mapping-grid">
-    <label>日付<select data-map="date">${optionList(h,auto.date,false)}</select></label>
-    <label>金額（単一列）<select data-map="amount">${optionList(h,auto.amount,true)}</select></label>
-    <label>摘要・相手先<select data-map="desc">${optionList(h,auto.desc,true)}</select></label>
-    <label>入金列（任意）<select data-map="inflow">${optionList(h,auto.inflow,true)}</select></label>
-    <label>出金列（任意）<select data-map="outflow">${optionList(h,auto.outflow,true)}</select></label>
-  </div>
-  <div class="mapping-options"><label><input type="checkbox" data-map="invert"> 金額の＋/－を反転</label></div>
-  <div class="file-meta">${escapeHtml(s.file.name)} / ${s.rawRows.length.toLocaleString()}件 / ${h.length}列</div>`;
-  el.querySelectorAll('[data-map]').forEach(ctrl=>ctrl.addEventListener('change',()=>{
-    const k=ctrl.dataset.map; s.mapping[k]=k==='invert'?ctrl.checked:ctrl.value; normalizeSide(side); updateReady();
-  }));
-  normalizeSide(side);
-}
-function normalizeSide(side){
-  const s=state[side], m=s.mapping, prefix=side==='bank'?'B':'C';
-  s.rows=s.rawRows.map((raw,i)=>{
-    let amount=0;
-    if(m.amount) amount=num(raw[m.amount]);
-    else amount=num(raw[m.inflow])-Math.abs(num(raw[m.outflow]));
-    if(m.invert) amount*=-1;
-    return {id:`${prefix}${i+1}`,side,index:i+1,date:parseDate(raw[m.date]),amount,desc:m.desc?String(raw[m.desc]??'').trim():'',raw,status:'unmatched',matchId:null};
-  }).filter(r=>Number.isFinite(r.amount) && r.amount!==0);
-}
-function updateReady(){
-  const ready=state.bank.rows.length>0 && state.company.rows.length>0 && state.bank.mapping.date && state.company.mapping.date;
-  $('runBtn').disabled=!ready;
-  $('runNote').textContent=ready?`銀行 ${state.bank.rows.length.toLocaleString()}件 / 当社 ${state.company.rows.length.toLocaleString()}件。照合を実行できます。`:'銀行RAWと当社RAWを読み込み、日付列を確認してください。';
-}
-
-function resetStatuses(){
-  [...state.bank.rows,...state.company.rows].forEach(r=>{r.status='unmatched';r.matchId=null;});
-  state.matches=[];state.candidates=[];
-}
-function settings(){return {dateTol:Number($('dateTolerance').value),amountTol:Number($('amountTolerance').value),maxItems:Number($('maxComboItems').value),candidateLimit:Number($('candidateLimit').value)};}
-function amountsClose(a,b,t){return Math.abs(a-b)<=t;}
-function rowMatches(a,b,cfg){return dayDiff(a.date,b.date)<=cfg.dateTol && amountsClose(a.amount,b.amount,cfg.amountTol);}
-function createMatch(bankIds,companyIds,type='manual',auto=false){
-  const id=`M${String(state.matches.length+1).padStart(4,'0')}-${Date.now().toString().slice(-5)}`;
-  const bank=state.bank.rows.filter(r=>bankIds.includes(r.id)); const company=state.company.rows.filter(r=>companyIds.includes(r.id));
-  if(!bank.length||!company.length) return null;
-  [...bank,...company].forEach(r=>{r.status='matched';r.matchId=id;});
-  const group={id,type,auto,bankIds:[...bankIds],companyIds:[...companyIds],bankSum:bank.reduce((s,r)=>s+r.amount,0),companySum:company.reduce((s,r)=>s+r.amount,0),createdAt:new Date().toISOString()};
-  state.matches.push(group); return group;
-}
-function autoMatchOneToOne(cfg){
-  let count=0;
-  const banks=state.bank.rows.filter(r=>r.status==='unmatched'); const comps=state.company.rows.filter(r=>r.status==='unmatched');
-  for(const b of banks){
-    if(b.status!=='unmatched'||!b.date) continue;
-    const cs=comps.filter(c=>c.status==='unmatched'&&rowMatches(b,c,cfg));
-    if(cs.length!==1) continue;
-    const c=cs[0];
-    const bs=banks.filter(x=>x.status==='unmatched'&&rowMatches(x,c,cfg));
-    if(bs.length===1){createMatch([b.id],[c.id],'1対1',true);count++;}
-  }
-  return count;
-}
-function subsetFind(rows,target,cfg,minSize=2){
-  if(!rows.length||!target) return null;
-  const sign=target>=0?1:-1, t=Math.abs(target), deadline=performance.now()+25;
-  const pool=rows.filter(r=>sameDirection(r.amount,target)&&Math.abs(r.amount)<=t+cfg.amountTol)
-    .sort((a,b)=>Math.abs(b.amount)-Math.abs(a.amount)).slice(0,Math.max(cfg.maxItems,30));
-  const vals=pool.map(r=>Math.abs(r.amount)); let found=null;
-  function dfs(start,sum,pick){
-    if(found||performance.now()>deadline) return;
-    if(pick.length>=minSize&&Math.abs(sum-t)<=cfg.amountTol){found=pick.map(i=>pool[i]);return;}
-    if(pick.length>=cfg.maxItems||sum>t+cfg.amountTol) return;
-    for(let i=start;i<pool.length;i++){
-      if(sum+vals[i]>t+cfg.amountTol) continue;
-      pick.push(i);dfs(i+1,sum+vals[i],pick);pick.pop();if(found)return;
+function directionFromCompany(raw,m,amount){ const d=String(raw[m.direction]??'').trim().toUpperCase(); if(d==='S'||/入金/.test(d))return '入金'; if(d==='H'||/出金/.test(d))return '出金'; return amount>=0?'入金':'出金'; }
+function normalizeSide(side){ const s=state[side],m=s.mapping; const existing=new Map((s.rows||[]).map(r=>[r.fp,r])); const rows=[];
+  for(const raw of s.rawRows){
+    if(side==='bank'){
+      const date=parseDate(raw[m.date]); const out=Math.abs(num(raw[m.outflow])); const inn=Math.abs(num(raw[m.inflow])); if(!date||(!out&&!inn))continue; const direction=inn>0?'入金':'出金'; const amount=inn>0?inn:out; const desc=[raw[m.desc],raw[m.name]].filter(Boolean).join(' | '); const key=sixKey(desc); const fp=hash(`B|${date}|${direction}|${amount}|${norm(desc)}|${raw.__rawRow}`); const old=existing.get(fp); rows.push(old||{id:`B-${fp}`,fp,side:'bank',rawRow:raw.__rawRow,date,direction,amount,desc,name:String(raw[m.name]??''),strongKey:key,status:'未照合',matchId:null,candidateCount:0,importedAt:nowIso(),raw});
+    }else{
+      const date=parseDate(raw[m.date]); const signed=num(raw[m.amount]); if(!date||!signed)continue; const gl=String(raw[m.gl]??'').trim(); const targetGl=$('targetGl').value.trim(); if(targetGl&&gl&&gl!==targetGl)continue; const direction=directionFromCompany(raw,m,signed); const amount=Math.abs(signed); const partner=String(raw[m.partner]??''); const search=[partner,raw[m.headerText],raw[m.lineText],raw[m.doc],raw[m.flag],raw[m.docType]].filter(Boolean).join(' | '); const key=sixKey(search); const fp=hash(`C|${date}|${direction}|${amount}|${norm(search)}|${raw.__rawRow}`); const old=existing.get(fp); rows.push(old||{id:`C-${fp}`,fp,side:'company',rawRow:raw.__rawRow,date,direction,amount,desc:search,partner,doc:String(raw[m.doc]??''),gl,strongKey:key,status:'未照合',matchId:null,candidateCount:0,importedAt:nowIso(),raw});
     }
   }
-  dfs(0,0,[]); return found;
+  const priorCount=existing.size; s.rows=rows.filter(sameMonth); const added=s.rows.filter(r=>!existing.has(r.fp)).length; if(priorCount&&added)log(`${side==='bank'?'銀行':'当社'}：同月再取込の差分 ${added}件を追加候補として認識。既存照合は保持。`);
 }
-function generateCandidates(cfg){
-  state.candidates=[]; const seen=new Set();
-  const banks=state.bank.rows.filter(r=>r.status==='unmatched'&&r.date); const comps=state.company.rows.filter(r=>r.status==='unmatched'&&r.date);
-  const add=(type,bids,cids)=>{
-    const key=[...bids].sort().join(',')+'|'+[...cids].sort().join(','); if(seen.has(key)||state.candidates.length>=cfg.candidateLimit)return;
-    seen.add(key); const bs=state.bank.rows.filter(r=>bids.includes(r.id)),cs=state.company.rows.filter(r=>cids.includes(r.id));
-    state.candidates.push({id:`C${state.candidates.length+1}`,type,bankIds:bids,companyIds:cids,bankSum:bs.reduce((s,r)=>s+r.amount,0),companySum:cs.reduce((s,r)=>s+r.amount,0)});
-  };
-  for(const b of banks){
-    if(state.candidates.length>=cfg.candidateLimit)break;
-    const same=comps.filter(c=>dayDiff(b.date,c.date)<=cfg.dateTol&&sameDirection(b.amount,c.amount));
-    const subset=subsetFind(same,b.amount,cfg,2); if(subset) add('1対多',[b.id],subset.map(x=>x.id));
-  }
-  for(const c of comps){
-    if(state.candidates.length>=cfg.candidateLimit)break;
-    const same=banks.filter(b=>dayDiff(b.date,c.date)<=cfg.dateTol&&sameDirection(b.amount,c.amount));
-    const subset=subsetFind(same,c.amount,cfg,2); if(subset) add('多対1',subset.map(x=>x.id),[c.id]);
-  }
+function updateReady(){ const ready=!!state.targetMonth&&state.bank.rows.length>0&&state.company.rows.length>0; $('runBtn').disabled=!ready||state.locked; $('deepSearchBtn').disabled=!ready||state.locked; $('runNote').textContent=ready?`銀行 ${state.bank.rows.length.toLocaleString()}件 / 当社 ${state.company.rows.length.toLocaleString()}件。既存照合を保持して未処理分を照合します。`:'対象月を設定し、銀行RAWと当社RAWを読み込んでください。'; $('monthBadge').textContent=state.targetMonth?`対象月 ${state.targetMonth}${state.locked?'（確定済）':''}`:'対象月 未設定'; }
+function unmatched(side){return state[side].rows.filter(r=>!r.matchId);}
+function matchEligible(b,c,tol){return b.direction===c.direction&&b.amount===c.amount&&businessDayDiff(b.date,c.date)<=tol;}
+function aliasBoost(b,c){ const bn=norm(b.name||b.desc), cn=norm(c.partner||c.desc); return state.aliases.some(a=>a.direction===b.direction&&bn.includes(norm(a.bank))&&cn.includes(norm(a.company))); }
+function pairScore(b,c){ let s=0;if(b.strongKey&&c.strongKey&&b.strongKey===c.strongKey)s+=100;if(aliasBoost(b,c))s+=60;if(norm(b.name)&&norm(c.partner)&&(norm(b.name).includes(norm(c.partner))||norm(c.partner).includes(norm(b.name))))s+=25;s+=Math.max(0,10-businessDayDiff(b.date,c.date));return s; }
+function newMatchId(){state.counters.match++;return `M-${state.targetMonth.replace('-','')}-${String(state.counters.match).padStart(5,'0')}`;}
+function createMatch(bankIds,companyIds,type,auto=false,note=''){ const bank=state.bank.rows.filter(r=>bankIds.includes(r.id)&&!r.matchId), company=state.company.rows.filter(r=>companyIds.includes(r.id)&&!r.matchId); if(!bank.length&&!company.length)return null; const id=newMatchId(); [...bank,...company].forEach(r=>{r.matchId=id;r.status='照合済';r.candidateCount=0;}); const m={id,type,auto,bankIds:bank.map(r=>r.id),companyIds:company.map(r=>r.id),bankSum:bank.reduce((a,r)=>a+r.amount,0),companySum:company.reduce((a,r)=>a+r.amount,0),note,createdAt:nowIso()};state.matches.push(m);return m; }
+function autoCompanyCancellation(){ if($('companyCancelMode').value!=='on')return 0; let n=0; const rows=unmatched('company'); const groups=new Map(); for(const r of rows){const k=`${r.date}|${r.amount}|${r.strongKey||norm(r.partner||r.desc).slice(0,40)}`;if(!groups.has(k))groups.set(k,[]);groups.get(k).push(r);} for(const arr of groups.values()){const ins=arr.filter(r=>r.direction==='入金'&&!r.matchId),outs=arr.filter(r=>r.direction==='出金'&&!r.matchId);if(ins.length===1&&outs.length===1){createMatch([], [ins[0].id,outs[0].id],'社内同士取消',true,'同日・同額・逆方向・参照情報一意');n++;}} return n; }
+function autoOneToOne(){ const tol=Number($('businessDayTolerance').value); let n=0; let changed=true; while(changed){changed=false;const bs=unmatched('bank'),cs=unmatched('company');for(const b of bs){const opts=cs.filter(c=>matchEligible(b,c,tol)).sort((a,z)=>pairScore(b,z)-pairScore(b,a));if(opts.length!==1)continue;const c=opts[0];const back=bs.filter(x=>matchEligible(x,c,tol));if(back.length===1){createMatch([b.id],[c.id],'1対1',true,`一意一致 score=${pairScore(b,c)}`);n++;changed=true;break;}}}return n; }
+function candidateKey(bankIds,companyIds){return `${[...bankIds].sort().join(',')}|${[...companyIds].sort().join(',')}`;}
+function excluded(key){return state.exclusions.some(x=>x.key===key);}
+function resetCandidateState(){state.candidates=[];[...state.bank.rows,...state.company.rows].forEach(r=>{if(!r.matchId){r.candidateCount=0;r.status='未照合';}});state.deepLimitRows=[];}
+function addCandidate(type,bankIds,companyIds,reason,deep=false){ const key=candidateKey(bankIds,companyIds); if(excluded(key)||state.candidates.some(c=>c.key===key))return; state.counters.candidate++; const c={id:`C-${String(state.counters.candidate).padStart(6,'0')}`,key,type,bankIds:[...bankIds],companyIds:[...companyIds],reason,deep,status:'要確認',createdAt:nowIso()};state.candidates.push(c); }
+function subsetSolutions(rows,target,maxItems,maxSolutions=12,timeMs=45){ const pool=rows.filter(r=>r.amount<=target).sort((a,b)=>b.amount-a.amount).slice(0,maxItems); const deadline=performance.now()+timeMs; const out=[]; const suffix=[]; suffix[pool.length]=0; for(let i=pool.length-1;i>=0;i--)suffix[i]=suffix[i+1]+pool[i].amount; function dfs(i,sum,pick){if(performance.now()>deadline||out.length>=maxSolutions)return;if(sum===target&&pick.length>=2){out.push(pick.map(j=>pool[j]));return;}if(i>=pool.length||pick.length>=maxItems||sum>target||sum+suffix[i]<target)return;dfs(i+1,sum+pool[i].amount,[...pick,i]);dfs(i+1,sum,pick);} dfs(0,0,[]); return out; }
+function generateCandidates(maxItems,deep=false){ resetCandidateState(); const tol=Number($('businessDayTolerance').value); const bs=unmatched('bank'),cs=unmatched('company');
+  for(const b of bs){const opts=cs.filter(c=>matchEligible(b,c,tol));if(opts.length>1)opts.forEach(c=>addCandidate('1対1競合',[b.id],[c.id],`金額・方向・${tol}営業日内で複数一致`,deep));}
+  for(const c of cs){const opts=bs.filter(b=>matchEligible(b,c,tol));if(opts.length>1)opts.forEach(b=>addCandidate('1対1競合',[b.id],[c.id],`社内明細側から見ても複数一致`,deep));}
+  for(const b of bs){const pool=cs.filter(c=>!c.matchId&&c.direction===b.direction&&businessDayDiff(b.date,c.date)<=tol);if(pool.length>maxItems){state.deepLimitRows.push({side:'bank',id:b.id,pool:pool.length});continue;} subsetSolutions(pool,b.amount,maxItems).forEach(sol=>addCandidate('1対多',[b.id],sol.map(x=>x.id),`同方向・${tol}営業日内の合算一致`,deep));}
+  for(const c of cs){const pool=bs.filter(b=>!b.matchId&&b.direction===c.direction&&businessDayDiff(b.date,c.date)<=tol);if(pool.length>maxItems){state.deepLimitRows.push({side:'company',id:c.id,pool:pool.length});continue;} subsetSolutions(pool,c.amount,maxItems).forEach(sol=>addCandidate('多対1',sol.map(x=>x.id),[c.id],`同方向・${tol}営業日内の合算一致`,deep));}
+  recalcCandidateConflicts();
 }
-async function runReconciliation(){
-  resetStatuses(); state.runSeq++; $('progressWrap').classList.remove('hidden'); $('progressBar').style.width='15%'; $('progressText').textContent='1対1照合を実行中...';
-  await new Promise(r=>setTimeout(r,30)); const cfg=settings(); const exact=autoMatchOneToOne(cfg);
-  $('progressBar').style.width='60%'; $('progressText').textContent='合算候補を探索中...'; await new Promise(r=>setTimeout(r,30)); generateCandidates(cfg);
-  $('progressBar').style.width='100%'; $('progressText').textContent='完了';
-  log(`自動照合完了：1対1 ${exact}組 / 合算候補 ${state.candidates.length}組`);
-  $('workspace').classList.remove('hidden'); renderAll(); setTimeout(()=>$('progressWrap').classList.add('hidden'),900);
-}
+function recalcCandidateConflicts(){ const counts=new Map(); for(const c of state.candidates){[...c.bankIds,...c.companyIds].forEach(id=>counts.set(id,(counts.get(id)||0)+1));} for(const c of state.candidates){const conflict=[...c.bankIds,...c.companyIds].some(id=>(counts.get(id)||0)>1);c.status=conflict?'複数候補有':'要確認';} [...state.bank.rows,...state.company.rows].forEach(r=>{if(r.matchId)return;const n=counts.get(r.id)||0;r.candidateCount=n;r.status=n===0?'未照合':n===1?'要確認':'未照合：複数候補有';}); }
+async function runReconciliation(deep=false){ if(state.locked)return; showProgress(10,'既存DBを検証中...'); await tick(); const canc=autoCompanyCancellation();showProgress(35,'1対1を照合中...');await tick();const one=autoOneToOne();showProgress(65,deep?'詳細候補を探索中...':'候補組を探索中...');await tick();generateCandidates(Number(deep?$('deepMaxItems').value:$('maxComboItems').value),deep);showProgress(100,'完了');$('workspace').classList.remove('hidden');renderAll();log(`自動照合完了：社内取消 ${canc}組 / 1対1 ${one}組 / 候補 ${state.candidates.length}組${state.deepLimitRows.length?` / 探索上限 ${state.deepLimitRows.length}件`:''}`);scheduleSave();setTimeout(()=>$('progressWrap').classList.add('hidden'),700); }
+function showProgress(p,t){$('progressWrap').classList.remove('hidden');$('progressBar').style.width=p+'%';$('progressText').textContent=t;}
+const tick=()=>new Promise(r=>setTimeout(r,25));
 
 function rowsByIds(side,ids){return state[side].rows.filter(r=>ids.includes(r.id));}
-function chip(r){return `<div class="row-chip"><b>${escapeHtml(r.date||'日付なし')}</b>　${yen(r.amount)}<br><span>${escapeHtml(r.desc||'（摘要なし）')}</span></div>`;}
-function renderCandidates(){
-  const q=$('globalSearch').value.trim().toLowerCase();
-  const list=state.candidates.filter(c=>[...rowsByIds('bank',c.bankIds),...rowsByIds('company',c.companyIds)].some(r=>`${r.date} ${r.amount} ${r.desc}`.toLowerCase().includes(q))||!q);
-  $('candidateList').innerHTML=list.length?list.map(c=>{
-    const bs=rowsByIds('bank',c.bankIds),cs=rowsByIds('company',c.companyIds),diff=c.bankSum-c.companySum;
-    return `<article class="candidate-card"><div class="candidate-head"><div><span class="candidate-type">${c.type}</span> <b>${c.id}</b></div><button class="primary-btn small accept-candidate" data-id="${c.id}">この候補を照合</button></div><div class="candidate-sums">銀行 ${yen(c.bankSum)} ／ 当社 ${yen(c.companySum)} ／ 差額 ${yen(diff)}</div><div class="candidate-rows"><div class="side-box"><strong>銀行 ${bs.length}件</strong>${bs.map(chip).join('')}</div><div class="side-box"><strong>当社 ${cs.length}件</strong>${cs.map(chip).join('')}</div></div></article>`;
-  }).join(''):'<div class="empty">現在、合算候補はありません。</div>';
-  document.querySelectorAll('.accept-candidate').forEach(b=>b.addEventListener('click',()=>acceptCandidate(b.dataset.id)));
-}
-function acceptCandidate(id){
-  const c=state.candidates.find(x=>x.id===id); if(!c)return;
-  const all=[...rowsByIds('bank',c.bankIds),...rowsByIds('company',c.companyIds)]; if(all.some(r=>r.status!=='unmatched')){alert('この候補には既に照合済みの明細が含まれています。');return;}
-  createMatch(c.bankIds,c.companyIds,c.type,false); state.candidates=state.candidates.filter(x=>x.id!==id); log(`${c.type}候補 ${id} を採用`); generateCandidates(settings()); renderAll();
-}
-function tableHtml(rows,side){
-  const q=$('globalSearch').value.trim().toLowerCase(); rows=rows.filter(r=>!q||`${r.date} ${r.amount} ${r.desc} ${r.id}`.toLowerCase().includes(q));
-  return `<thead><tr><th>選択</th><th>ID</th><th>日付</th><th>摘要</th><th class="money">金額</th></tr></thead><tbody>${rows.map(r=>`<tr><td><input type="checkbox" class="manual-check" data-side="${side}" data-id="${r.id}"></td><td>${r.id}</td><td>${escapeHtml(r.date||'')}</td><td>${escapeHtml(r.desc||'')}</td><td class="money">${yen(r.amount)}</td></tr>`).join('')}</tbody>`;
-}
-function renderManual(){
-  $('bankUnmatchedTable').innerHTML=tableHtml(state.bank.rows.filter(r=>r.status==='unmatched'),'bank');
-  $('companyUnmatchedTable').innerHTML=tableHtml(state.company.rows.filter(r=>r.status==='unmatched'),'company');
-  document.querySelectorAll('.manual-check').forEach(x=>x.addEventListener('change',renderManualSums)); renderManualSums();
-}
-function selectedManual(){
-  const bank=[],company=[]; document.querySelectorAll('.manual-check:checked').forEach(x=>(x.dataset.side==='bank'?bank:company).push(x.dataset.id)); return {bank,company};
-}
-function renderManualSums(){
-  const s=selectedManual(),bs=rowsByIds('bank',s.bank),cs=rowsByIds('company',s.company),b=bs.reduce((x,r)=>x+r.amount,0),c=cs.reduce((x,r)=>x+r.amount,0),d=b-c,ok=s.bank.length&&s.company.length&&Math.abs(d)<=settings().amountTol;
-  $('manualSums').innerHTML=`<span class="sum-pill">銀行 ${s.bank.length}件：${yen(b)}</span><span class="sum-pill">当社 ${s.company.length}件：${yen(c)}</span><span class="sum-pill ${ok?'ok':'bad'}">差額：${yen(d)}</span>`;
-}
-function doManualMatch(){
-  const s=selectedManual(); if(!s.bank.length||!s.company.length){alert('銀行側と当社側の両方から明細を選択してください。');return;}
-  const b=rowsByIds('bank',s.bank).reduce((x,r)=>x+r.amount,0),c=rowsByIds('company',s.company).reduce((x,r)=>x+r.amount,0);
-  if(!amountsClose(b,c,settings().amountTol)){alert(`合計金額が一致していません。\n銀行：${yen(b)}\n当社：${yen(c)}\n差額：${yen(b-c)}`);return;}
-  createMatch(s.bank,s.company,'手動',false); log(`手動照合：銀行${s.bank.length}件 × 当社${s.company.length}件`); generateCandidates(settings()); renderAll();
-}
-function renderMatched(){
-  const q=$('globalSearch').value.trim().toLowerCase();
-  const list=[...state.matches].reverse().filter(m=>{const rs=[...rowsByIds('bank',m.bankIds),...rowsByIds('company',m.companyIds)];return !q||rs.some(r=>`${r.date} ${r.amount} ${r.desc} ${m.id}`.toLowerCase().includes(q));});
-  $('matchedList').innerHTML=list.length?list.map(m=>{const bs=rowsByIds('bank',m.bankIds),cs=rowsByIds('company',m.companyIds);return `<article class="match-card"><div class="match-head"><div><b>${m.id}</b>　<span class="candidate-type">${escapeHtml(m.type)}</span>${m.auto?'　<small>自動</small>':''}</div><button class="ghost-btn undo-match" data-id="${m.id}">照合を戻す</button></div><div class="candidate-sums">銀行 ${yen(m.bankSum)} ／ 当社 ${yen(m.companySum)} ／ 差額 ${yen(m.bankSum-m.companySum)}</div><div class="match-rows"><div class="side-box"><strong>銀行 ${bs.length}件</strong>${bs.map(chip).join('')}</div><div class="side-box"><strong>当社 ${cs.length}件</strong>${cs.map(chip).join('')}</div></div></article>`;}).join(''):'<div class="empty">照合済み明細はまだありません。</div>';
-  document.querySelectorAll('.undo-match').forEach(b=>b.addEventListener('click',()=>undoMatch(b.dataset.id)));
-}
-function undoMatch(id){
-  const m=state.matches.find(x=>x.id===id); if(!m)return; [...rowsByIds('bank',m.bankIds),...rowsByIds('company',m.companyIds)].forEach(r=>{r.status='unmatched';r.matchId=null;}); state.matches=state.matches.filter(x=>x.id!==id); log(`照合を戻しました：${id}`); generateCandidates(settings()); renderAll();
-}
-function dailyData(){
-  const map=new Map(); const ensure=d=>{if(!map.has(d))map.set(d,{date:d,bankIn:0,bankOut:0,companyIn:0,companyOut:0});return map.get(d)};
-  state.bank.rows.forEach(r=>{const x=ensure(r.date||'日付なし');r.amount>=0?x.bankIn+=r.amount:x.bankOut+=Math.abs(r.amount);});
-  state.company.rows.forEach(r=>{const x=ensure(r.date||'日付なし');r.amount>=0?x.companyIn+=r.amount:x.companyOut+=Math.abs(r.amount);});
-  return [...map.values()].sort((a,b)=>a.date.localeCompare(b.date));
-}
-function renderDaily(){
-  const rows=dailyData(); $('dailyTable').innerHTML=`<thead><tr><th>日付</th><th class="money">銀行 入金</th><th class="money">銀行 出金</th><th class="money">当社 入金</th><th class="money">当社 出金</th><th class="money">入金差額</th><th class="money">出金差額</th></tr></thead><tbody>${rows.map(x=>`<tr><td>${escapeHtml(x.date)}</td><td class="money">${yen(x.bankIn)}</td><td class="money">${yen(x.bankOut)}</td><td class="money">${yen(x.companyIn)}</td><td class="money">${yen(x.companyOut)}</td><td class="money">${yen(x.bankIn-x.companyIn)}</td><td class="money">${yen(x.bankOut-x.companyOut)}</td></tr>`).join('')}</tbody>`;
-}
-function renderSummary(){
-  const total=state.bank.rows.length+state.company.rows.length,matchedRows=state.bank.rows.filter(r=>r.status==='matched').length+state.company.rows.filter(r=>r.status==='matched').length,rate=total?matchedRows/total*100:0;
-  $('matchProgress').style.width=`${rate}%`;
-  $('summaryStats').innerHTML=`<div class="mini-stat"><span>照合グループ</span><b>${state.matches.length}</b></div><div class="mini-stat"><span>自動1対1</span><b>${state.matches.filter(m=>m.auto).length}</b></div><div class="mini-stat"><span>手動/候補採用</span><b>${state.matches.filter(m=>!m.auto).length}</b></div><div class="mini-stat"><span>全明細照合率</span><b>${rate.toFixed(1)}%</b></div>`;
-  const bu=state.bank.rows.filter(r=>r.status==='unmatched'),cu=state.company.rows.filter(r=>r.status==='unmatched');
-  $('unmatchedSummary').innerHTML=`<div class="unmatched-line"><span>銀行 未照合</span><b>${bu.length.toLocaleString()}件</b></div><div class="unmatched-line"><span>当社 未照合</span><b>${cu.length.toLocaleString()}件</b></div><div class="unmatched-line"><span>銀行 未照合金額</span><b>${yen(bu.reduce((s,r)=>s+r.amount,0))}</b></div><div class="unmatched-line"><span>当社 未照合金額</span><b>${yen(cu.reduce((s,r)=>s+r.amount,0))}</b></div>`;
-}
-function renderKpis(){
-  const b=state.bank.rows,c=state.company.rows,total=b.length+c.length,matched=b.filter(r=>r.status==='matched').length+c.filter(r=>r.status==='matched').length;
-  $('kpiBank').textContent=b.length.toLocaleString();$('kpiCompany').textContent=c.length.toLocaleString();$('kpiRate').textContent=(total?matched/total*100:0).toFixed(1)+'%';$('kpiCandidates').textContent=state.candidates.length.toLocaleString();$('kpiUnmatched').textContent=(total-matched).toLocaleString();
-}
-function renderAll(){renderKpis();renderSummary();renderCandidates();renderManual();renderMatched();renderDaily();renderLog();}
+function rowChip(r){return `<div class="row-chip"><b>${esc(r.date)} ${r.direction}</b>　${yen(r.amount)}<br><span>${esc(r.desc||'（摘要なし）')}</span>${r.strongKey?`<small>6桁キー: ${r.strongKey}</small>`:''}</div>`;}
+function candidateCard(c,conflict=false){const bs=rowsByIds('bank',c.bankIds),cs=rowsByIds('company',c.companyIds),bSum=bs.reduce((a,r)=>a+r.amount,0),cSum=cs.reduce((a,r)=>a+r.amount,0);return `<details class="candidate-card ${conflict?'conflict-card':''}"><summary><label class="summary-check"><input type="checkbox" class="candidate-select" data-id="${c.id}"> <span class="candidate-type">${esc(c.type)}</span> <b>${esc(c.id)}</b></label><span>${yen(bSum)} / ${yen(cSum)}</span></summary><div class="candidate-sums">${esc(c.reason)} ／ 差額 ${yen(bSum-cSum)}</div><div class="candidate-rows"><div class="side-box"><strong>銀行 ${bs.length}件</strong>${bs.map(rowChip).join('')}</div><div class="side-box"><strong>当社 ${cs.length}件</strong>${cs.map(rowChip).join('')}</div></div><div class="card-actions"><button class="primary-btn small accept-candidate" data-id="${c.id}">この候補を照合</button><button class="ghost-btn small exclude-candidate" data-id="${c.id}">候補から除外</button></div></details>`;}
+function renderCandidates(){const q=$('globalSearch').value.trim().toLowerCase();const list=state.candidates.filter(c=>c.status==='要確認'&&candidateSearch(c,q));$('candidateList').innerHTML=list.length?list.map(c=>candidateCard(c,false)).join(''):'<div class="empty">競合のない候補組はありません。</div>';wireCandidateButtons();}
+function renderConflicts(){const q=$('globalSearch').value.trim().toLowerCase();const list=state.candidates.filter(c=>c.status==='複数候補有'&&candidateSearch(c,q));$('conflictList').innerHTML=list.length?list.map(c=>candidateCard(c,true)).join(''):'<div class="empty">複数候補有はありません。</div>';wireCandidateButtons();}
+function candidateSearch(c,q){if(!q)return true;return [...rowsByIds('bank',c.bankIds),...rowsByIds('company',c.companyIds)].some(r=>`${r.date} ${r.amount} ${r.desc} ${r.strongKey}`.toLowerCase().includes(q));}
+function wireCandidateButtons(){document.querySelectorAll('.accept-candidate').forEach(b=>b.onclick=()=>acceptCandidates([b.dataset.id]));document.querySelectorAll('.exclude-candidate').forEach(b=>b.onclick=()=>excludeCandidate(b.dataset.id));}
+function acceptCandidates(ids){const cs=state.candidates.filter(c=>ids.includes(c.id));if(!cs.length)return;const used=new Set();for(const c of cs){for(const id of [...c.bankIds,...c.companyIds]){if(used.has(id)){alert('選択した候補間で同じ明細が重複しています。照合を中止しました。');return;}used.add(id);const row=[...state.bank.rows,...state.company.rows].find(r=>r.id===id);if(row?.matchId){alert('既に照合済みの明細を含みます。再生成してください。');return;}}}cs.forEach(c=>createMatch(c.bankIds,c.companyIds,c.type,false,'候補組から確定'));generateCandidates(Number($('maxComboItems').value));renderAll();log(`${cs.length}候補を照合確定しました。`);scheduleSave();}
+function excludeCandidate(id){const c=state.candidates.find(x=>x.id===id);if(!c)return;const reason=prompt('除外理由（任意）','誤候補');state.exclusions.push({id:`EX-${Date.now()}`,key:c.key,type:c.type,reason:reason||'',createdAt:nowIso()});generateCandidates(Number($('maxComboItems').value));renderAll();log(`候補 ${id} を除外履歴へ登録しました。`);}
+function selectedCandidateIds(panel){return [...$(panel).querySelectorAll('.candidate-select:checked')].map(x=>x.dataset.id);}
 
-function exportExcel(){
-  if(!window.XLSX){alert('Excel出力ライブラリを読み込めません。');return;}
-  const wb=XLSX.utils.book_new();
-  const matchedRows=[]; state.matches.forEach(m=>{rowsByIds('bank',m.bankIds).forEach(r=>matchedRows.push({照合ID:m.id,種別:m.type,側:'銀行',明細ID:r.id,日付:r.date,金額:r.amount,摘要:r.desc}));rowsByIds('company',m.companyIds).forEach(r=>matchedRows.push({照合ID:m.id,種別:m.type,側:'当社',明細ID:r.id,日付:r.date,金額:r.amount,摘要:r.desc}));});
-  const unmatched=(side)=>state[side].rows.filter(r=>r.status==='unmatched').map(r=>({明細ID:r.id,日付:r.date,金額:r.amount,摘要:r.desc}));
-  const cand=[];state.candidates.forEach(c=>{rowsByIds('bank',c.bankIds).forEach(r=>cand.push({候補ID:c.id,種別:c.type,側:'銀行',明細ID:r.id,日付:r.date,金額:r.amount,摘要:r.desc}));rowsByIds('company',c.companyIds).forEach(r=>cand.push({候補ID:c.id,種別:c.type,側:'当社',明細ID:r.id,日付:r.date,金額:r.amount,摘要:r.desc}));});
-  const daily=dailyData().map(x=>({日付:x.date,銀行入金:x.bankIn,銀行出金:x.bankOut,当社入金:x.companyIn,当社出金:x.companyOut,入金差額:x.bankIn-x.companyIn,出金差額:x.bankOut-x.companyOut}));
-  [['照合済',matchedRows],['銀行未照合',unmatched('bank')],['当社未照合',unmatched('company')],['候補組',cand],['日別集計',daily]].forEach(([name,data])=>XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(data.length?data:[{データ:'なし'}]),name));
-  XLSX.writeFile(wb,`銀行入出金照合結果_${new Date().toISOString().slice(0,10)}.xlsx`); log('Excel出力を実行');
-}
-function resetAll(){
-  if((state.bank.file||state.company.file)&&!confirm('読み込んだデータと照合結果をすべて初期化しますか？'))return;
-  state.bank={file:null,headers:[],rawRows:[],rows:[],mapping:{}};state.company={file:null,headers:[],rawRows:[],rows:[],mapping:{}};state.matches=[];state.candidates=[];state.logs=[];
-  ['bank','company'].forEach(s=>{setStatus(s,'未読込',false);$(s+'Mapping').classList.add('hidden');$(s+'Mapping').innerHTML='';$(s+'File').value='';});$('workspace').classList.add('hidden');updateReady();renderLog();
-}
+function tableRows(side){const q=$('globalSearch').value.trim().toLowerCase();return unmatched(side).filter(r=>!q||`${r.date} ${r.amount} ${r.desc} ${r.strongKey} ${r.status}`.toLowerCase().includes(q)).sort((a,b)=>a.date.localeCompare(b.date)||b.amount-a.amount);}
+function renderManual(){renderUnmatchedTable('bank','bankUnmatchedTable');renderUnmatchedTable('company','companyUnmatchedTable');renderManualSums();}
+function renderUnmatchedTable(side,id){const rows=tableRows(side);$(id).innerHTML=`<thead><tr><th>選択</th><th>状態</th><th>日付</th><th>区分</th><th>金額</th><th>摘要/相手先</th><th>6桁キー</th></tr></thead><tbody>${rows.map(r=>`<tr><td><input type="checkbox" class="manual-check" data-side="${side}" data-id="${r.id}"></td><td><span class="row-status ${r.status.includes('複数')?'st-conflict':r.status==='要確認'?'st-review':''}">${esc(r.status)}</span></td><td>${esc(r.date)}</td><td>${r.direction}</td><td class="money">${yen(r.amount)}</td><td>${esc(r.desc)}</td><td>${esc(r.strongKey)}</td></tr>`).join('')}</tbody>`;document.querySelectorAll('.manual-check').forEach(x=>x.onchange=renderManualSums);}
+function manualSelected(side){return [...document.querySelectorAll(`.manual-check[data-side="${side}"]:checked`)].map(x=>x.dataset.id);}
+function renderManualSums(){const bs=rowsByIds('bank',manualSelected('bank')),cs=rowsByIds('company',manualSelected('company'));const b=bs.reduce((a,r)=>a+r.amount,0),c=cs.reduce((a,r)=>a+r.amount,0),ok=bs.length&&cs.length&&b===c&&new Set([...bs,...cs].map(r=>r.direction)).size===1;$('manualSums').innerHTML=`<span class="sum-pill">銀行 ${bs.length}件 ${yen(b)}</span><span class="sum-pill">当社 ${cs.length}件 ${yen(c)}</span><span class="sum-pill ${ok?'ok':'bad'}">差額 ${yen(b-c)}${ok?' · 照合可能':''}</span>`;}
+function manualMatch(){const bids=manualSelected('bank'),cids=manualSelected('company');const bs=rowsByIds('bank',bids),cs=rowsByIds('company',cids);if(!bids.length||!cids.length)return alert('銀行と当社の両方を選択してください。');const b=bs.reduce((a,r)=>a+r.amount,0),c=cs.reduce((a,r)=>a+r.amount,0);if(b!==c)return alert(`合計が一致しません。差額 ${yen(b-c)}`);const dirs=new Set([...bs,...cs].map(r=>r.direction));if(dirs.size!==1&&!confirm('入金・出金が混在しています。それでも照合しますか？'))return;createMatch(bids,cids,'手動照合',false,'手動選択');generateCandidates(Number($('maxComboItems').value));renderAll();log(`手動照合：銀行${bids.length}件 / 当社${cids.length}件 / ${yen(b)}`);}
 
-$('bankFile').addEventListener('change',e=>e.target.files[0]&&readFile('bank',e.target.files[0]).catch(err=>{console.error(err);alert('銀行ファイルの読み込みに失敗しました。');}));
-$('companyFile').addEventListener('change',e=>e.target.files[0]&&readFile('company',e.target.files[0]).catch(err=>{console.error(err);alert('当社ファイルの読み込みに失敗しました。');}));
-$('runBtn').addEventListener('click',()=>runReconciliation().catch(err=>{console.error(err);alert('照合処理でエラーが発生しました。');}));
-$('resetBtn').addEventListener('click',resetAll);$('manualMatchBtn').addEventListener('click',doManualMatch);$('exportBtn').addEventListener('click',exportExcel);$('globalSearch').addEventListener('input',()=>{renderCandidates();renderManual();renderMatched();});
-$('tabs').addEventListener('click',e=>{const b=e.target.closest('.tab');if(!b)return;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.tab-panel').forEach(x=>x.classList.toggle('active',x.id===`tab-${b.dataset.tab}`));});
-renderLog();updateReady();
+function renderMatches(){const q=$('globalSearch').value.trim().toLowerCase();const list=state.matches.filter(m=>{if(!q)return true;return [...rowsByIds('bank',m.bankIds),...rowsByIds('company',m.companyIds)].some(r=>`${r.date} ${r.amount} ${r.desc}`.toLowerCase().includes(q));});$('matchedList').innerHTML=list.length?list.slice().reverse().map(m=>{const bs=rowsByIds('bank',m.bankIds),cs=rowsByIds('company',m.companyIds);return `<details class="match-card"><summary><label class="summary-check"><input type="checkbox" class="match-select" data-id="${m.id}"> <b>${esc(m.id)}</b> <span class="match-type">${esc(m.type)}</span></label><span>${yen(m.bankSum||m.companySum)}</span></summary><div class="candidate-sums">${esc(m.note||'')} / ${new Date(m.createdAt).toLocaleString('ja-JP')}</div><div class="match-rows"><div class="side-box"><strong>銀行 ${bs.length}件</strong>${bs.map(rowChip).join('')}</div><div class="side-box"><strong>当社 ${cs.length}件</strong>${cs.map(rowChip).join('')}</div></div></details>`;}).join(''):'<div class="empty">照合済みデータはありません。</div>';}
+function undoMatches(ids){if(!ids.length)return;for(const id of ids){const idx=state.matches.findIndex(m=>m.id===id);if(idx<0)continue;const m=state.matches[idx];[...rowsByIds('bank',m.bankIds),...rowsByIds('company',m.companyIds)].forEach(r=>{r.matchId=null;r.status='未照合';});state.matches.splice(idx,1);}generateCandidates(Number($('maxComboItems').value));renderAll();log(`${ids.length}件の照合を戻しました。`);}
+function renderDaily(){const dates=[...new Set([...state.bank.rows,...state.company.rows].map(r=>r.date))].sort();const lines=[];for(const d of dates){for(const dir of ['入金','出金']){const b=state.bank.rows.filter(r=>r.date===d&&r.direction===dir).reduce((a,r)=>a+r.amount,0);const c=state.company.rows.filter(r=>r.date===d&&r.direction===dir).reduce((a,r)=>a+r.amount,0);lines.push({d,dir,b,c,diff:b-c});}}const month=(dir,side)=>state[side].rows.filter(r=>r.direction===dir).reduce((a,r)=>a+r.amount,0);$('dailyTable').innerHTML=`<thead><tr><th>日付</th><th>区分</th><th>銀行RAW合計</th><th>当社RAW合計</th><th>差額</th><th>確認目安</th></tr></thead><tbody>${lines.map(x=>`<tr><td>${x.d}</td><td>${x.dir}</td><td class="money">${yen(x.b)}</td><td class="money">${yen(x.c)}</td><td class="money">${yen(x.diff)}</td><td>${x.diff===0?'一致':'要確認'}</td></tr>`).join('')}<tr class="total-row"><td>月合計</td><td>入金</td><td>${yen(month('入金','bank'))}</td><td>${yen(month('入金','company'))}</td><td>${yen(month('入金','bank')-month('入金','company'))}</td><td></td></tr><tr class="total-row"><td></td><td>出金</td><td>${yen(month('出金','bank'))}</td><td>${yen(month('出金','company'))}</td><td>${yen(month('出金','bank')-month('出金','company'))}</td><td></td></tr></tbody>`;}
+function renderMasters(){$('aliasList').innerHTML=state.aliases.length?state.aliases.map(a=>`<div class="master-row"><span>${esc(a.bank)} ⇔ ${esc(a.company)} / ${a.direction}</span><button class="ghost-btn tiny" data-alias="${a.id}">削除</button></div>`).join(''):'<div class="empty small">登録なし</div>';$('exclusionList').innerHTML=state.exclusions.length?state.exclusions.slice().reverse().map(x=>`<div class="master-row"><span>${esc(x.type)} / ${esc(x.reason||'理由なし')}<small>${new Date(x.createdAt).toLocaleString('ja-JP')}</small></span><button class="ghost-btn tiny" data-exclusion="${x.id}">削除</button></div>`).join(''):'<div class="empty small">除外なし</div>';document.querySelectorAll('[data-alias]').forEach(b=>b.onclick=()=>{state.aliases=state.aliases.filter(a=>a.id!==b.dataset.alias);renderMasters();scheduleSave();});document.querySelectorAll('[data-exclusion]').forEach(b=>b.onclick=()=>{state.exclusions=state.exclusions.filter(a=>a.id!==b.dataset.exclusion);generateCandidates(Number($('maxComboItems').value));renderAll();});}
+function addAlias(){const bank=$('aliasBank').value.trim(),company=$('aliasCompany').value.trim(),direction=$('aliasDirection').value;if(!bank||!company)return alert('銀行表記と当社表記を入力してください。');state.aliases.push({id:`A-${Date.now()}`,bank,company,direction,createdAt:nowIso()});$('aliasBank').value='';$('aliasCompany').value='';renderMasters();log(`名寄せマスタ登録：${bank} ⇔ ${company}（${direction}）`);}
+function closeChecks(){const bankUn=unmatched('bank').length,conflict=state.candidates.filter(c=>c.status==='複数候補有').length,review=state.candidates.filter(c=>c.status==='要確認').length;const dup=duplicateUseCount();return [{label:'銀行未照合が0件',ok:bankUn===0,value:bankUn},{label:'要確認候補が0件',ok:review===0,value:review},{label:'複数候補が0件',ok:conflict===0,value:conflict},{label:'二重照合が0件',ok:dup===0,value:dup},{label:'照合組の差額が0円',ok:state.matches.every(m=>Math.abs((m.bankSum||0)-(m.companySum||0))===0||m.type==='社内同士取消'),value:''}];}
+function duplicateUseCount(){const ids=[];state.matches.forEach(m=>ids.push(...m.bankIds,...m.companyIds));return ids.length-new Set(ids).size;}
+function renderCloseChecks(){const checks=closeChecks();$('closeChecklist').innerHTML=checks.map(c=>`<div class="check-line ${c.ok?'ok':'ng'}"><span>${c.ok?'✓':'!'} ${esc(c.label)}</span><b>${c.value}</b></div>`).join('');$('closeMonthBtn').disabled=!checks.every(c=>c.ok)||state.locked;}
+function closeMonth(){const checks=closeChecks();if(!checks.every(c=>c.ok))return alert('月次確定条件を満たしていません。');if(!confirm(`${state.targetMonth} を月次確定してロックしますか？`))return;state.locked=true;updateReady();renderCloseChecks();log(`${state.targetMonth} を月次確定しました。`);saveMonth();}
+async function startNewMonth(){if(!confirm('現在の画面データを離れて、新しい月を開始しますか？保存済みDBは残ります。'))return;state.targetMonth='';state.locked=false;state.bank={file:null,headers:[],rawRows:[],rows:[],mapping:{}};state.company={file:null,headers:[],rawRows:[],rows:[],mapping:{}};state.matches=[];state.candidates=[];state.logs=[];state.deepLimitRows=[];$('targetMonth').value='';$('workspace').classList.add('hidden');$('bankMapping').classList.add('hidden');$('companyMapping').classList.add('hidden');setStatus('bank','未読込');setStatus('company','未読込');updateReady();renderLog();}
+function renderSummary(){const bankTotal=state.bank.rows.length,bankMatched=state.bank.rows.filter(r=>r.matchId).length,rate=bankTotal?Math.round(bankMatched/bankTotal*1000)/10:0;const review=state.candidates.filter(c=>c.status==='要確認').length,conflictRows=[...state.bank.rows,...state.company.rows].filter(r=>r.status==='未照合：複数候補有').length;$('kpiBank').textContent=bankTotal.toLocaleString();$('kpiCompany').textContent=state.company.rows.length.toLocaleString();$('kpiRate').textContent=`${rate}%`;$('kpiCandidates').textContent=review.toLocaleString();$('kpiConflicts').textContent=conflictRows.toLocaleString();$('kpiUnmatched').textContent=unmatched('bank').filter(r=>r.status==='未照合').length.toLocaleString();$('matchProgress').style.width=rate+'%';$('summaryStats').innerHTML=`<div class="mini-stat"><span>銀行照合済</span><b>${bankMatched}</b></div><div class="mini-stat"><span>銀行未処理</span><b>${unmatched('bank').length}</b></div><div class="mini-stat"><span>当社未処理</span><b>${unmatched('company').length}</b></div><div class="mini-stat"><span>探索上限</span><b>${state.deepLimitRows.length}</b></div>`;renderCloseChecks();}
+function renderAll(){renderSummary();renderCandidates();renderConflicts();renderManual();renderMatches();renderDaily();renderMasters();renderLog();updateReady();}
+function exportExcel(){if(!window.XLSX)return alert('Excel出力ライブラリを読み込めません。');const wb=XLSX.utils.book_new();const rows=side=>state[side].rows.map(r=>({ID:r.id,日付:r.date,入出金:r.direction,金額:r.amount,摘要:r.desc,ステータス:r.status,照合ID:r.matchId||'',候補組数:r.candidateCount||0,'6桁番号キー':r.strongKey||'',RAW行:r.rawRow}));XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows('bank')),'DB_銀行明細');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(rows('company')),'DB_社内明細');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(state.matches),'DB_照合ヘッダ');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(state.candidates),'DB_候補ヘッダ');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(state.aliases),'名寄せマスタ');XLSX.utils.book_append_sheet(wb,XLSX.utils.json_to_sheet(state.exclusions),'マスタ除外');XLSX.writeFile(wb,`銀行入出金照合_${state.targetMonth||'未設定'}_${APP_VERSION}.xlsx`);log('照合結果をExcel出力しました。');}
+function initTabs(){document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.tab-panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');$('tab-'+b.dataset.tab).classList.add('active');});}
+function bind(){
+  $('targetMonth').addEventListener('change',()=>{state.targetMonth=$('targetMonth').value;state.locked=false;updateReady();scheduleSave();});
+  $('targetGl').addEventListener('change',()=>{if(state.company.rawRows.length)normalizeSide('company');updateReady();});
+  $('bankFile').addEventListener('change',e=>e.target.files[0]&&readFile('bank',e.target.files[0]));$('companyFile').addEventListener('change',e=>e.target.files[0]&&readFile('company',e.target.files[0]));
+  $('runBtn').onclick=()=>runReconciliation(false);$('deepSearchBtn').onclick=()=>runReconciliation(true);$('manualMatchBtn').onclick=manualMatch;$('exportBtn').onclick=exportExcel;$('restoreBtn').onclick=restoreCurrent;$('newMonthBtn').onclick=startNewMonth;$('closeMonthBtn').onclick=closeMonth;$('addAliasBtn').onclick=addAlias;
+  $('batchCandidateBtn').onclick=()=>acceptCandidates(selectedCandidateIds('candidateList'));$('batchConflictBtn').onclick=()=>acceptCandidates(selectedCandidateIds('conflictList'));$('batchUndoBtn').onclick=()=>{const ids=[...document.querySelectorAll('.match-select:checked')].map(x=>x.dataset.id);if(ids.length&&confirm(`${ids.length}件の照合を戻しますか？`))undoMatches(ids);};
+  $('globalSearch').addEventListener('input',()=>{renderCandidates();renderConflicts();renderManual();renderMatches();});initTabs();
+}
+(function init(){const d=new Date();$('targetMonth').value=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;state.targetMonth=$('targetMonth').value;bind();renderLog();updateReady();})();
