@@ -1,0 +1,22 @@
+{
+  "asOf": "2026-08-23",
+  "period": "2026-08",
+  "officialRealizedPnl": 42500,
+  "officialTradeCount": 35,
+  "source": "iSPEED realized P/L screen confirmed in project records",
+  "confirmedExamples": [
+    {"date":"2026-08-12","code":"1605","name":"INPEX","realizedPnl":6300},
+    {"date":"2026-08-12","code":"7013","name":"IHI","realizedPnl":-600},
+    {"date":"2026-08-12","code":"7906","name":"ヨネックス","realizedPnl":2000},
+    {"date":"2026-08-13","code":"3110","name":"日東紡績","realizedPnl":4200},
+    {"date":"2026-08-20","code":"141A","name":"トライアルHD","realizedPnl":12000}
+  ],
+  "rules": {
+    "sourcePriority": [
+      "iSPEED confirmed realized P/L",
+      "confirmed project trade ledger",
+      "derived execution-price calculations"
+    ],
+    "doNotOverwriteOfficialWithDerived": true
+  }
+}
