@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; script-src 'none'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-src 'none'" />
+  <title>銀行入出金照合ツール｜改善版サンプル</title>
+  <link rel="stylesheet" href="./demo-v2.css" />
+</head>
+<body>
+<header class="header"><div class="header-in"><div class="brand"><div class="logo">照</div><div><b>銀行入出金照合ツール</b><small>改善版 UI サンプル</small></div></div><div class="links"><a href="./demo.html">現在版</a><a href="./index.html">ツール本体</a></div></div></header>
+<main class="shell">
+  <section class="intro"><div><span>DESIGN REVIEW</span><h1>「全体」と「手動照合」を見直しました</h1><p>確認が必要な候補画面は現状の方向を維持し、分かりにくかった2画面だけ改善案を作っています。</p></div><div class="pill">ダミーデータ</div></section>
+
+  <nav class="jump"><a href="#overview">改善案① 全体</a><a href="#manual">改善案② 手動照合</a></nav>
+
+  <section id="overview" class="section">
+    <div class="section-title"><div><span>SCREEN 01</span><h2>全体：数字より「次に何をするか」を中心に</h2><p>初めての人でも、画面を見れば次の作業が分かる構成です。</p></div><div class="badge good">おすすめ案</div></div>
+
+    <div class="frame overview">
+      <div class="month-line"><div><small>対象月</small><b>2026年8月</b></div><div class="safe">● 自動保存済み</div></div>
+
+      <div class="progress-card">
+        <div class="progress-left"><span>照合の進み具合</span><strong>96.7<span>%</span></strong><p>銀行明細 428件のうち 414件が処理済みです</p></div>
+        <div class="progress-right"><div class="bar"><i></i></div><div class="bar-label"><b>414件 完了</b><span>あと14件</span></div></div>
+      </div>
+
+      <div class="next-card">
+        <div class="next-head"><div><small>NEXT ACTION</small><h3>次は「確認が必要」を見てください</h3><p>自動で候補は見つかっています。内容を確認するだけです。</p></div><button>7件を確認する →</button></div>
+      </div>
+
+      <div class="status-grid">
+        <article class="status-card ok"><div class="status-icon">✓</div><div><span>自動で完了</span><strong>414件</strong><p>作業不要</p></div></article>
+        <article class="status-card warn"><div class="status-icon">!</div><div><span>確認が必要</span><strong>7件</strong><p>候補を確認</p></div></article>
+        <article class="status-card orange"><div class="status-icon">?</div><div><span>候補が複数</span><strong>3件</strong><p>正しい候補を選択</p></div></article>
+        <article class="status-card red"><div class="status-icon">…</div><div><span>まだ候補なし</span><strong>4件</strong><p>手動照合へ</p></div></article>
+      </div>
+
+      <div class="bottom-grid">
+        <article class="mini-panel"><div class="mini-head"><h3>月次確定まで</h3><span>あと14件</span></div><div class="check okline"><span>✓</span><b>RAW取込</b><em>完了</em></div><div class="check okline"><span>✓</span><b>自動照合</b><em>完了</em></div><div class="check active"><span>3</span><b>要確認を処理</b><em>作業中</em></div><div class="check"><span>4</span><b>未照合を解消</b><em>残り4件</em></div><div class="check"><span>5</span><b>月次確定</b><em>未実施</em></div></article>
+        <article class="mini-panel"><div class="mini-head"><h3>金額チェック</h3><span class="attention">差額あり</span></div><div class="money-row"><span>入金差額</span><b>¥120,000</b></div><div class="money-row"><span>出金差額</span><b class="zero">¥0</b></div><p class="hint">入金差額が残っているため、まだ月次確定はできません。</p><button class="subbtn">日別の差額を見る</button></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="manual" class="section">
+    <div class="section-title"><div><span>SCREEN 04</span><h2>手動照合：左右固定＋それぞれ独立スクロール</h2><p>明細が数百件あっても、銀行と当社を見比べながら選べる構成です。</p></div><div class="badge">大量明細向け</div></div>
+
+    <div class="frame manual-frame">
+      <div class="manual-sticky">
+        <div class="selection-summary"><div><small>銀行側の選択</small><b>2件</b><strong>¥730,000</strong></div><div class="equals">＝</div><div><small>当社側の選択</small><b>3件</b><strong>¥730,000</strong></div><div class="difference okdiff"><small>差額</small><b>¥0</b></div></div>
+        <button class="match-btn">この組み合わせで照合</button>
+      </div>
+
+      <div class="manual-tools"><div class="search">🔍 日付・金額・摘要・番号で検索</div><div class="filters"><span>日付：全て</span><span>入出金：全て</span><span>金額：指定なし</span></div></div>
+
+      <div class="manual-columns">
+        <section class="side bank"><header><div><small>BANK</small><h3>銀行未照合</h3></div><b>128件</b></header><div class="table-box"><table><thead><tr><th>選択</th><th>日付</th><th>摘要</th><th>金額</th></tr></thead><tbody>
+          <tr class="picked"><td>✓</td><td>8/18</td><td><b>DEFサービス</b><small>振込入金</small></td><td>¥500,000</td></tr>
+          <tr class="picked"><td>✓</td><td>8/18</td><td><b>DEFサービス</b><small>振込入金</small></td><td>¥230,000</td></tr>
+          <tr><td>□</td><td>8/19</td><td><b>GHI株式会社</b><small>振込入金</small></td><td>¥120,000</td></tr>
+          <tr><td>□</td><td>8/19</td><td><b>JKLショウジ</b><small>振込入金</small></td><td>¥860,000</td></tr>
+          <tr><td>□</td><td>8/20</td><td><b>MNOコウギョウ</b><small>振込入金</small></td><td>¥415,000</td></tr>
+          <tr><td>□</td><td>8/20</td><td><b>PQRサービス</b><small>振込入金</small></td><td>¥1,020,000</td></tr>
+          <tr><td>□</td><td>8/21</td><td><b>STU株式会社</b><small>振込入金</small></td><td>¥320,000</td></tr>
+          <tr><td>□</td><td>8/21</td><td><b>VWX商事</b><small>振込入金</small></td><td>¥740,000</td></tr>
+          <tr><td>□</td><td>8/22</td><td><b>YZ株式会社</b><small>振込入金</small></td><td>¥280,000</td></tr>
+        </tbody></table></div></section>
+
+        <div class="divider"></div>
+
+        <section class="side company"><header><div><small>COMPANY</small><h3>当社未処理</h3></div><b>147件</b></header><div class="table-box"><table><thead><tr><th>選択</th><th>転記日</th><th>摘要</th><th>金額</th></tr></thead><tbody>
+          <tr class="picked"><td>✓</td><td>8/18</td><td><b>DEF売掛①</b><small>伝票 810023</small></td><td>¥300,000</td></tr>
+          <tr class="picked"><td>✓</td><td>8/18</td><td><b>DEF売掛②</b><small>伝票 810024</small></td><td>¥250,000</td></tr>
+          <tr class="picked"><td>✓</td><td>8/18</td><td><b>DEF売掛③</b><small>伝票 810025</small></td><td>¥180,000</td></tr>
+          <tr><td>□</td><td>8/19</td><td><b>GHI 売掛</b><small>伝票 810026</small></td><td>¥120,000</td></tr>
+          <tr><td>□</td><td>8/19</td><td><b>JKL 売掛</b><small>伝票 810027</small></td><td>¥860,000</td></tr>
+          <tr><td>□</td><td>8/20</td><td><b>MNO 売掛</b><small>伝票 810028</small></td><td>¥415,000</td></tr>
+          <tr><td>□</td><td>8/20</td><td><b>PQR 売掛</b><small>伝票 810029</small></td><td>¥1,020,000</td></tr>
+          <tr><td>□</td><td>8/21</td><td><b>STU 売掛</b><small>伝票 810030</small></td><td>¥320,000</td></tr>
+          <tr><td>□</td><td>8/21</td><td><b>VWX 売掛</b><small>伝票 810031</small></td><td>¥740,000</td></tr>
+        </tbody></table></div></section>
+      </div>
+      <div class="manual-note"><b>ポイント：</b>左右の表は別々にスクロールします。上の選択合計・差額は画面上部に固定される想定です。</div>
+    </div>
+  </section>
+
+  <section class="keep"><b>「確認が必要」画面は現行案をそのまま維持</b><p>候補カードの構造は変更せず、この2画面だけを改善する想定です。</p><a href="./demo.html#candidate">確認が必要の現行サンプルを見る →</a></section>
+</main>
+</body>
+</html>
