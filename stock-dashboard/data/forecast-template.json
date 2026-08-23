@@ -1,0 +1,31 @@
+{
+  "date": "YYYY-MM-DD",
+  "marketStance": "上昇優勢 / 下落優勢 / 方向感なし",
+  "daytrade": [
+    {
+      "rank": 1,
+      "code": "0000",
+      "name": "銘柄名",
+      "sector": "業種・テーマ",
+      "probability": 60,
+      "confidence": "高 / 中 / 低",
+      "catalyst": "材料・根拠",
+      "buyCondition": "9:00〜9:10確認後の買い条件",
+      "skipCondition": "見送り条件"
+    }
+  ],
+  "swing": [
+    {
+      "rank": 1,
+      "code": "0000",
+      "name": "銘柄名",
+      "sector": "業種・テーマ",
+      "probability": 60,
+      "confidence": "高 / 中 / 低",
+      "holdingPeriod": "数日〜数週間",
+      "catalyst": "材料・根拠",
+      "entryCondition": "エントリー条件",
+      "invalidCondition": "撤退条件"
+    }
+  ]
+}
