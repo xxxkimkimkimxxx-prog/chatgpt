@@ -1,0 +1,32 @@
+{
+  "asOf": "2026-08-24",
+  "source": "iSPEED holdings screenshot supplied 2026-08-24",
+  "positions": [
+    {
+      "code": "2342",
+      "name": "トランスジェニックグループ",
+      "quantity": 300,
+      "averageCost": 260.00,
+      "referencePrice": 257,
+      "unrealizedPnl": -900
+    },
+    {
+      "code": "2926",
+      "name": "篠崎屋",
+      "quantity": 1000,
+      "averageCost": 119.00,
+      "referencePrice": 125,
+      "unrealizedPnl": 6000
+    },
+    {
+      "code": "3659",
+      "name": "ネクソン",
+      "quantity": 200,
+      "averageCost": 3146.45,
+      "referencePrice": 3095,
+      "unrealizedPnl": -10290
+    }
+  ],
+  "totalUnrealizedPnl": -5190,
+  "note": "referencePrice is the price shown in the supplied iSPEED screenshot, not a live quote."
+}
