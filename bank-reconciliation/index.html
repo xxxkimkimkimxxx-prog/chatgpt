@@ -12,10 +12,11 @@
 <body>
   <header class="topbar">
     <div class="brand"><div class="logo">照</div><div><div class="brand-title">銀行入出金照合ツール</div><div class="brand-sub">Web版 v20.5.3 · Excel版 v20.5.3 を基準仕様</div></div></div>
-    <div class="privacy-pill">🔒 読込データはブラウザ内処理</div>
+    <div class="top-utility"><a class="manual-link" href="./manual.html">📘 操作マニュアル</a><div class="privacy-pill">🔒 読込データはブラウザ内処理</div></div>
   </header>
   <main class="app-shell">
     <section class="hero-card compact"><div><div class="eyebrow">MONTHLY BANK RECONCILIATION</div><h1>月次の銀行入出金照合を、Webで完結。</h1><p>銀行RAWと当社RAWを読み込み、1対1 → 1対多／多対1 → 複数候補 → 手動照合 → 月次確定まで管理します。</p></div><div class="hero-badge"><strong id="monthBadge">対象月 未設定</strong><span id="saveStateLabel">ローカルDB：未保存</span></div></section>
+    <div class="first-guide"><span><strong>初めて使う方へ：</strong>「対象月を選ぶ → 銀行RAW → 当社RAW → 自動照合」の順に進めれば大丈夫です。</span><a href="./manual.html#quickstart">5分で分かる基本操作 →</a></div>
 
     <section class="control-card">
       <div class="control-head"><div><div class="step">基本設定</div><h2>v20.5.3 基準</h2></div><div class="header-actions"><button class="ghost-btn" id="restoreBtn" type="button">保存済み月を復元</button><button class="danger-btn" id="newMonthBtn" type="button">新しい月を開始</button></div></div>
@@ -51,7 +52,7 @@
       <section class="tab-panel" id="tab-masters"><div class="summary-grid"><article class="summary-card"><div class="summary-title">名寄せマスタ</div><p class="small-note">銀行表記と当社表記の対応を登録すると候補判定の補助情報として使用します。</p><div class="inline-form"><input id="aliasBank" placeholder="銀行表記"/><input id="aliasCompany" placeholder="当社表記"/><select id="aliasDirection"><option>入金</option><option>出金</option></select><button id="addAliasBtn" class="primary-btn small">登録</button></div><div id="aliasList" class="master-list"></div></article><article class="summary-card"><div class="summary-title">候補除外履歴</div><p class="small-note">候補カードの「除外」から登録。以後同じ候補組を自動表示しません。</p><div id="exclusionList" class="master-list"></div></article></div></section>
     </section>
   </main>
-  <footer><strong>データ保護：</strong>RAWファイルの内容はブラウザ内で処理します。月次DBはこの端末のIndexedDBへ保存されます。GitHubリポジトリへRAWデータを保存する処理はありません。</footer>
+  <footer><strong>データ保護：</strong>RAWファイルの内容はブラウザ内で処理します。月次DBはこの端末のIndexedDBへ保存されます。GitHubリポジトリへRAWデータを保存する処理はありません。　<a href="./manual.html">操作マニュアルを開く</a></footer>
   <script src="./app.js"></script>
 </body>
 </html>
