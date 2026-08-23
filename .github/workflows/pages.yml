@@ -23,6 +23,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+
+      - name: Prepare verified local XLSX runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p bank-reconciliation/vendor
+          curl --fail --location --silent --show-error \
+            https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js \
+            --output bank-reconciliation/vendor/xlsx.full.min.js
+          echo "af6da00a10e71af072964f74fb67bfc9caf7455ac38bc0c83a420636126529fbb240ce2d211008d3ad8c695f2c7e340a6151a338169904e03cef3f8885913d0c  bank-reconciliation/vendor/xlsx.full.min.js" | sha512sum --check --strict
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
