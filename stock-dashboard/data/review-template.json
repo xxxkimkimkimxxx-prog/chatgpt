@@ -1,0 +1,19 @@
+{
+  "date": "YYYY-MM-DD",
+  "type": "day / swing",
+  "code": "0000",
+  "name": "銘柄名",
+  "quantity": 100,
+  "entryPrice": 0,
+  "exitPrice": 0,
+  "initialStop": 0,
+  "initialTarget": 0,
+  "lowestDuringHold": 0,
+  "highestDuringHold": 0,
+  "realizedPnl": 0,
+  "holdingMinutes": 0,
+  "ruleCompliance": "ok / ng",
+  "entryReason": "",
+  "exitReason": "",
+  "reviewNote": ""
+}
