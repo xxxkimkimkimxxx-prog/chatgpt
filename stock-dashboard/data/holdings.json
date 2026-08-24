@@ -1,38 +1,38 @@
 {
-  "asOf": "2026-08-24 11:50 JST",
-  "source": "iSPEED holdings screenshot plus 2026-08-24 intraday chart review",
+  "asOf": "2026-08-24 21:04 JST",
+  "source": "iSPEED closing portfolio snapshot recorded in 2026-08-24 review",
   "positions": [
     {
       "code": "2342",
       "name": "トランスジェニックグループ",
-      "quantity": 300,
-      "averageCost": 260.00,
-      "referencePrice": 257,
-      "referencePriceObservedAt": "2026-08-24 01:52 JST",
-      "unrealizedPnl": -900,
-      "management": "保有継続。直近の流動性低下に注意し、新規買い増しは急がない。"
+      "quantity": 800,
+      "averageCost": 255.0,
+      "referencePrice": 253,
+      "referencePriceObservedAt": "2026-08-24 close",
+      "unrealizedPnl": -1600,
+      "management": "8/24に252円で300株＋200株を追加し合計800株・平均255円。252円が当日安値。追加は同日2回となったため、今後の追加ナンピンは行わず、249円・246円の支持帯と260〜264円回復を確認する。"
     },
     {
       "code": "2926",
       "name": "篠崎屋",
       "quantity": 1000,
-      "averageCost": 119.00,
-      "referencePrice": 125,
-      "referencePriceObservedAt": "2026-08-24 01:52 JST",
-      "unrealizedPnl": 6000,
-      "management": "利益保護優先。直近高値帯への再上昇可否と122円近辺の支持を確認。"
+      "averageCost": 119.0,
+      "referencePrice": 124,
+      "referencePriceObservedAt": "2026-08-24 close",
+      "unrealizedPnl": 5000,
+      "management": "利益保護優先。119円の取得単価を上回る状態を維持。122円近辺の支持と129円方向への再上昇を確認する。"
     },
     {
       "code": "3659",
       "name": "ネクソン",
       "quantity": 200,
       "averageCost": 3146.45,
-      "referencePrice": 3095,
-      "referencePriceObservedAt": "2026-08-24 11:21 JST",
-      "unrealizedPnl": -10290,
-      "management": "保有継続・買い増しはまだ待つ。5分足はMA5 3094.60、MA25 3087.52、MA75 3081.39で短期形状は改善。ただし3,100〜3,120円の上値が重い。3,120円を出来高付き5分足終値で突破すれば3,145〜3,150円を次の確認帯とする。3,080円割れでは3,060円再試行を警戒。"
+      "referencePrice": 3105,
+      "referencePriceObservedAt": "2026-08-24 closing portfolio snapshot",
+      "unrealizedPnl": -8290,
+      "management": "保有継続。前場5分足ではMA5>MA25>MA75まで改善したが3,100〜3,120円で上値が重かった。3,120円突破で3,145〜3,150円、さらに3,165〜3,170円を確認。3,080円割れは3,060円再試行を警戒。"
     }
   ],
-  "totalUnrealizedPnl": -5190,
-  "note": "referencePrice is the latest price directly verified from supplied iSPEED screenshots per position, not an automatically refreshed live quote."
+  "totalUnrealizedPnl": -4890,
+  "note": "価格は自動ライブ更新ではなく、当日のiSPEED確認値・終値スナップショットを正本として反映。"
 }
