@@ -1,0 +1,13 @@
+{
+  "lastSyncedAtJST": "2026-08-25 00:06",
+  "trigger": "dashboard_unification_and_sync_policy",
+  "triggerMessageSummary": "User requested one-page navigation and synchronization on ticker/chart/result/consultation/current-check interactions.",
+  "updated": [
+    "data/update-policy.json",
+    "data/latest-review.json",
+    "data/current-view.json",
+    "data/holdings.json"
+  ],
+  "status": "ready",
+  "note": "Chat messages are not external webhooks. Sync is performed by ChatGPT in the same response when a defined investment trigger is handled and GitHub access is available."
+}
