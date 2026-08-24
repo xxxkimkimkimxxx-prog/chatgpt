@@ -1,17 +1,14 @@
 {
-  "lastSyncedAtJST": "2026-08-25 00:06",
-  "trigger": "dashboard_unification_and_sync_policy",
-  "triggerMessageSummary": "User requested one-page navigation and synchronization on ticker/chart/result/consultation/current-check interactions.",
+  "lastSyncedAtJST": "2026-08-25 00:31",
+  "trigger": "current_check_tomorrow_outlook",
+  "triggerMessageSummary": "User asked for the latest outlook for the Aug 25 Tokyo session.",
   "updated": [
-    "dashboard.html",
-    "hub.html",
-    "data/update-policy.json",
-    "data/latest-review.json",
     "data/current-view.json",
-    "data/holdings.json",
+    "data/overnight-2026-08-25-0031.json",
     "data/sync-status.json"
   ],
   "status": "ready",
   "primaryPage": "dashboard.html",
-  "note": "Chat messages are not external webhooks. Sync is performed by ChatGPT in the same response when a defined investment trigger is handled and GitHub access is available."
+  "nextScheduledUpdate": "2026-08-25 06:30 JST",
+  "note": "This is an overnight provisional view because the U.S. session is still in progress. The 06:30 task will refresh the final pre-market view after the U.S. close."
 }
