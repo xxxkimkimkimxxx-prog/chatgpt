@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-24",
+  "observedAtJST": "09:28",
+  "source": "iSPEED screenshots supplied by user",
+  "marketContext": {
+    "nikkeiOpen": 65978.95,
+    "nikkeiOpenChange": -37.41,
+    "topixOpen": 4074.83,
+    "topixOpenChange": 7.54
+  },
+  "observations": [
+    {
+      "code": "8136",
+      "name": "サンリオ",
+      "last": 1202.5,
+      "change": 26.5,
+      "changePct": 2.25,
+      "timestamp": "09:28:40",
+      "timeframe": "5m",
+      "selectedCandle": {"time":"09:25","open":1199.5,"high":1205.5,"low":1199.5,"close":1203.0,"volume":419000},
+      "ma5": 1197.30,
+      "ma25": 1176.08,
+      "ma75": 1182.69,
+      "assessment": "conditional_buy_watch",
+      "notes": "Price above 5/25/75-period MAs with accelerating volume and strong reversal. Current high 1205.5 is immediate trigger; prior-day high 1221 is first major resistance. Avoid blind chase; require breakout retention or pullback/reclaim."
+    },
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "last": 5056,
+      "change": -224,
+      "changePct": -4.24,
+      "timestamp": "09:28:32",
+      "timeframe": "5m",
+      "selectedCandle": {"time":"09:25","open":5070,"high":5080,"low":5044,"close":5058,"volume":1019700},
+      "ma5": 5101.00,
+      "ma25": 5204.64,
+      "ma75": 5278.47,
+      "assessment": "skip",
+      "notes": "Price below all major intraday MAs, with bearish alignment and high sell volume. Do not catch falling knife. Re-evaluate only after higher low plus reclaim of 5100-5110 and preferably VWAP."
+    }
+  ]
+}
