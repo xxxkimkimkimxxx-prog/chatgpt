@@ -1,0 +1,20 @@
+{
+  "asOf": "2026-08-25 00:31 JST",
+  "targetSession": "2026-08-25 Tokyo",
+  "status": "US session in progress",
+  "stance": "Nikkei flat-to-lower bias; TOPIX relatively resilient",
+  "probabilities": {"nikkeiDown":58,"nikkeiUp":42},
+  "market": {
+    "us": "Dow slightly positive; S&P 500 and Nasdaq lower",
+    "nvidia": "about -2.4%",
+    "sox": "about -3.4%",
+    "usdJpy": "around 159.1",
+    "us10y": "around 4.70%",
+    "brent": "around $91, down roughly 1.5%-2%",
+    "nikkeiFutures": "around 65,700"
+  },
+  "preferred": ["9706 Japan Airport Terminal - fresh buyback catalyst","5016 JX Advanced Metals - nonferrous continuation","9107 Kawasaki Kisen - continuation momentum"],
+  "caution": ["semiconductor/AI due SOX and Nvidia weakness","electric wire/AI infrastructure until rebound confirmed","oil/mining while Brent remains weak"],
+  "swingWatch": ["5803 Fujikura: defend 4,973 then reclaim 5,060/5,100","1605 INPEX: defend 3,838 and reclaim 3,860-3,870 with crude rebound"],
+  "nextUpdate": "06:30 JST after US close"
+}
