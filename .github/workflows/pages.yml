@@ -24,6 +24,60 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Add Hoshino official links
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import re
+
+          site = Path('hoshino-resorts/index.html')
+          links = json.loads(Path('hoshino-resorts/official-links.json').read_text(encoding='utf-8'))
+          s = site.read_text(encoding='utf-8')
+
+          m = re.search(r'const hotels=(\[.*?\]);\n  const brandOrder=', s, re.S)
+          if not m:
+              raise SystemExit('Hoshino hotel data not found')
+          hotels = json.loads(m.group(1))
+          missing = [h['name'] for h in hotels if h['name'] not in links]
+          if missing:
+              raise SystemExit('Missing official URLs: ' + ', '.join(missing))
+          for h in hotels:
+              h['url'] = links[h['name']]
+          new_json = json.dumps(hotels, ensure_ascii=False, separators=(',', ':'))
+          s = s[:m.start(1)] + new_json + s[m.end(1):]
+
+          css_marker = '#hrnav .detailBtn{margin-top:10px;width:100%;min-height:40px;border:0;border-top:1px solid light-dark(#e4ddd2,#2d3935);background:transparent;color:light-dark(#476252,#b8d1c0);font-weight:800;cursor:pointer}\n'
+          css_links = '#hrnav .cardActions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px} #hrnav .officialBtn{display:flex;align-items:center;justify-content:center;min-height:42px;border-radius:11px;border:1px solid light-dark(#93a88f,#637b69);background:light-dark(#edf4ee,#213129);color:light-dark(#315442,#d4e8d9);font-weight:850;font-size:12px;text-decoration:none;padding:8px 10px} #hrnav .officialBtn:hover{text-decoration:underline} #hrnav .cardActions .detailBtn{margin-top:0;border:1px solid light-dark(#ded7cb,#34413d);border-radius:11px;min-height:42px;padding:8px 10px}\n'
+          if '.officialBtn{' not in s:
+              if css_marker not in s:
+                  raise SystemExit('Hoshino CSS marker not found')
+              s = s.replace(css_marker, css_marker + css_links, 1)
+
+          old_card = '      <button type="button" class="detailBtn" data-detail="${key}">用途・目的を見る ＋</button>\n'
+          new_card = '      <div class="cardActions"><a class="officialBtn" href="${esc(h.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(h.name)}の公式サイトを開く">公式サイトを見る ↗</a><button type="button" class="detailBtn" data-detail="${key}">用途・目的を見る ＋</button></div>\n'
+          if 'class="cardActions"' not in s:
+              if old_card not in s:
+                  raise SystemExit('Hoshino card marker not found')
+              s = s.replace(old_card, new_card, 1)
+
+          old_compare = "      row('旅の目的',h=>h.purposes.map(esc).join(' / '))+row('子連れ',h=>`${h.family} / 5`)+row('カップル',h=>`${h.couple} / 5`)+row('ひとり',h=>`${h.solo} / 5`)+row('アクティブ',h=>`${h.active} / 5`)+row('車なし',h=>h.carless?'向き':'要確認');"
+          new_compare = "      row('旅の目的',h=>h.purposes.map(esc).join(' / '))+row('子連れ',h=>`${h.family} / 5`)+row('カップル',h=>`${h.couple} / 5`)+row('ひとり',h=>`${h.solo} / 5`)+row('アクティブ',h=>`${h.active} / 5`)+row('車なし',h=>h.carless?'向き':'要確認')+row('公式サイト',h=>`<a href=\"${esc(h.url)}\" target=\"_blank\" rel=\"noopener noreferrer\">公式ページ ↗</a>`);"
+          if "row('公式サイト'" not in s:
+              if old_compare not in s:
+                  raise SystemExit('Hoshino compare marker not found')
+              s = s.replace(old_compare, new_compare, 1)
+
+          mobile_old = '@media(max-width:380px){#hrnav .filterGrid{grid-template-columns:1fr} #hrnav .heroStats{grid-template-columns:1fr 1fr 1fr}}\n'
+          mobile_new = '@media(max-width:380px){#hrnav .filterGrid{grid-template-columns:1fr} #hrnav .heroStats{grid-template-columns:1fr 1fr 1fr} #hrnav .cardActions{grid-template-columns:1fr}}\n'
+          if mobile_old in s:
+              s = s.replace(mobile_old, mobile_new, 1)
+
+          site.write_text(s, encoding='utf-8')
+          print(f'Added official links to {len(hotels)} Hoshino facilities')
+          PY
+
       - name: Prepare verified local XLSX runtime
         shell: bash
         run: |
