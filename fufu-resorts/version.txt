@@ -1,0 +1,5 @@
+FUFU MAP v2
+source: fufu-resorts/index.html
+map redesign commit: 5871bd766f1999bde7c306c78cc2a727c23c6ea8
+deployment workflow fix: a32aefcd8b256d0f3c2933d28201b5a57e8c1707
+published-source check: 2026-08-25 JST
