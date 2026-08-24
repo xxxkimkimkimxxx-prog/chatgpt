@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-24",
+  "time": "15:30 JST",
+  "code": "5803",
+  "name": "フジクラ",
+  "close": 5016,
+  "changePct": -5.00,
+  "dayLow": 4973,
+  "ma5": 5011.20,
+  "ma25": 5000.92,
+  "ma75": 5063.16,
+  "assessment": "5,000円近辺で下げ止まり気味だが、MA75未回復で反転確定前。終日では安値圏引け。",
+  "eventRisk": "8/26 NVIDIA決算前のAI関連デリスキングが下落要因の一部と評価。悪決算そのものを完全に織り込んだとは見なさない。",
+  "swingPlan": {
+    "support": 4973,
+    "firstRecovery": 5060,
+    "secondRecovery": 5100,
+    "saferRecovery": 5144,
+    "invalidCondition": "4,973円を出来高付きで明確に割る"
+  }
+}
