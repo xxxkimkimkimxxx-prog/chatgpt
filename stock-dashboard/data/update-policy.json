@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "effectiveFrom": "2026-08-25",
+  "purpose": "Keep the Japan equity dashboard synchronized whenever an investment-related interaction materially changes the current view.",
+  "repository": "xxxkimkimkimxxx-prog/chatgpt",
+  "dashboardRoot": "stock-dashboard",
+  "triggers": [
+    {
+      "id": "ticker_or_chart",
+      "description": "User posts a ticker, iSPEED chart, board, order screen, holding screen, or other market image.",
+      "updates": ["current-view.json", "latest-intraday.json", "sync-status.json", "holdings.json when position data changed"]
+    },
+    {
+      "id": "trade_or_result",
+      "description": "User reports a buy, sell, execution, realized P/L, unrealized P/L, position size, average cost, or end-of-day result.",
+      "updates": ["holdings.json", "executions/confirmed-trades when supported by evidence", "performance-summary.json when official realized P/L changes", "latest-review.json", "sync-status.json"]
+    },
+    {
+      "id": "investment_consultation",
+      "description": "User asks buy/sell/hold, day-trade, swing, ranking, sector-flow, risk, event, or portfolio advice.",
+      "updates": ["current-view.json", "latest-intraday.json when intraday", "sync-status.json"]
+    },
+    {
+      "id": "current_state_check",
+      "description": "User asks for current status, re-check, latest ranking, or updated market view.",
+      "updates": ["current-view.json", "latest-intraday.json when intraday", "sync-status.json"]
+    },
+    {
+      "id": "scheduled_or_session_review",
+      "description": "Morning strategy, intraday rerank, or after-close review is produced.",
+      "updates": ["daily/YYYY-MM-DD.json", "latest-strategy.json", "current-view.json", "reviews/YYYY-MM-DD.json when after close", "latest-review.json", "sync-status.json"]
+    }
+  ],
+  "sourcePriority": [
+    "iSPEED confirmed realized P/L / supplied screenshots",
+    "company IR / TDnet / JPX / official sources",
+    "trusted current market data",
+    "derived calculations clearly marked as derived"
+  ],
+  "safetyRules": [
+    "Do not overwrite official realized P/L with derived execution-price P/L.",
+    "Do not invent missing prices, quantities, or order details.",
+    "Keep pre-market forecast separate from intraday rerank so forecast accuracy can be evaluated honestly.",
+    "Separate day-trade and swing judgments even for the same ticker.",
+    "A chat message is not an external webhook: synchronization occurs when ChatGPT handles the triggering investment interaction and has GitHub access."
+  ]
+}
