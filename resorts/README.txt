@@ -1,0 +1,1 @@
+Hoshino Resorts and FUFU can coexist in this repository under separate folders. This folder is reserved for a shared travel hub.
