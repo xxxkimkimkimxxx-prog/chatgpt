@@ -1,10 +1,10 @@
 {
   "date": "2026-08-24",
-  "reviewedAtJST": "2026-08-24 16:41",
+  "reviewedAtJST": "2026-08-24 21:04",
   "market": {
     "nikkeiClose": 65528.09,
     "nikkeiChangePct": -0.74,
-    "summary": "日経平均は続落。前場は-0.07%と小幅安だったが後場に下げ幅を拡大。プライムは値上がり841、値下がり658で指数より個別は底堅かった。鉱業は下落上位となり、朝想定した原油高追随が崩れた一方、機械・建設・サービスなどが相対優位。"
+    "summary": "日経平均は続落。前場は小幅安だったが後場に下げ幅を拡大。プライム市場は指数より個別が底堅かった。鉱業は下落上位となり、朝想定した原油高追随が崩れた一方、機械・建設・サービスなどが相対優位。"
   },
   "daytradeReview": [
     {
@@ -16,12 +16,13 @@
       "actualHigh": 3925,
       "actualLow": 3838,
       "actualClose": 3856,
+      "actualHighPct": -0.73,
       "actualClosePct": -2.48,
       "volume": 1717100,
       "hit": false,
-      "tradeTaken": null,
+      "tradeTaken": false,
       "realizedPnl": null,
-      "reviewNote": "予想外れ。ただし朝のentryConditionは3,954円維持または押し後VWAP回復であり、実際は-1.09%GD、9時直後3925円を天井に下落し前日終値3954円を回復できなかったため、条件遵守なら買い回避できた。8/14終値3782円から8/21終値3954円まで約4.5%上昇済みという事前織り込み減点を、上昇確率68%にもより強く反映すべきだった。"
+      "reviewNote": "方向予想は外れ。ただし朝の買い条件3,954円維持または押し後VWAP回復は成立せず、条件遵守なら買い回避できた。事前織り込み減点を確率にも強く反映する必要。"
     },
     {
       "rank": 2,
@@ -32,12 +33,12 @@
       "actualHigh": 3466,
       "actualLow": 3385,
       "actualClose": 3452,
-      "actualClosePct": 1.38,
       "actualHighPct": 1.79,
+      "actualClosePct": 1.38,
       "hit": true,
-      "tradeTaken": null,
+      "tradeTaken": false,
       "realizedPnl": null,
-      "reviewNote": "上昇方向は的中。前日+7.28%、7連騰で過熱警戒したが、寄りは前日終値3405円近辺でGUせず、10時台安値3385円から11:04高値3466円へ切り返した。『高値追い禁止、VWAP上の押し目または3410円再突破』という条件は機能し、実戦候補として朝2位は妥当。過熱銘柄でもGUしなければContinuation Momentum継続余地を再加点する必要がある。"
+      "reviewNote": "上昇方向は的中。前日+7.28%・連騰で過熱警戒したがGUせず、押し後に高値更新。過熱銘柄でもGUしなければContinuation Momentumの減点を一部戻す余地。"
     },
     {
       "rank": 3,
@@ -48,46 +49,183 @@
       "actualHigh": 3542,
       "actualLow": 3475,
       "actualClose": 3504,
+      "actualHighPct": 0.97,
       "actualClosePct": -0.11,
       "volume": 13782900,
       "hit": false,
-      "tradeTaken": null,
+      "tradeTaken": false,
       "realizedPnl": null,
-      "reviewNote": "ほぼ横ばいだがデイトレ上昇候補としては不発。寄りで前日高値3524円を上抜いたものの高値3542円が9:00で、その後3475円まで下落。単純な前日高値突破だけでは不足し、突破後5分程度のVWAP維持・銀行セクター同時高を必須化すべき。"
+      "reviewNote": "寄りで前日高値を上抜いたが高値は9:00で、その後失速。前日高値突破だけでなく5分VWAP維持・出来高継続・同業連動を必須化する。"
     }
   ],
   "swingReview": [
-    {"rank":1,"code":"1605","name":"INPEX","actualClosePct":-2.48,"status":"要警戒","reviewNote":"原油高テーマが株価に連続織り込みされた反動が顕在化。3,800円終値割れという無効条件には未到達だが、新規エントリーは原油と鉱業指数の再同期確認まで待つ。"},
-    {"rank":2,"code":"8306","name":"三菱UFJFG","actualClosePct":-0.11,"status":"継続監視","reviewNote":"3,450〜3,550円帯で推移しスイング想定レンジ内。上昇確認前なので新規追随はまだ不要。"},
-    {"rank":3,"code":"3659","name":"ネクソン","actualOpen":3110,"actualHigh":3118,"actualLow":3068,"actualClose":3072,"actualClosePct":-0.74,"status":"継続監視","reviewNote":"3,167円突破条件は成立せず、3,000円割れ無効条件にも未到達。14:10にTGS2026出展情報が公表されたが終値3072円で大きな株価反応は確認できず。"}
+    {
+      "rank": 1,
+      "code": "1605",
+      "name": "INPEX",
+      "actualClosePct": -2.48,
+      "status": "要警戒",
+      "reviewNote": "原油高テーマの連続織り込み後に反落。3,800円終値割れの無効条件には未到達だが、新規買いは原油と鉱業指数の再同期確認まで待つ。"
+    },
+    {
+      "rank": 2,
+      "code": "8306",
+      "name": "三菱UFJFG",
+      "actualClosePct": -0.11,
+      "status": "継続監視",
+      "reviewNote": "想定レンジ内。上昇確認前なので新規追随は不要。"
+    },
+    {
+      "rank": 3,
+      "code": "3659",
+      "name": "ネクソン",
+      "actualOpen": 3110,
+      "actualHigh": 3118,
+      "actualLow": 3068,
+      "actualClose": 3072,
+      "actualClosePct": -0.74,
+      "status": "継続監視",
+      "reviewNote": "3,167円突破条件は成立せず、3,000円割れ無効条件にも未到達。"
+    }
   ],
+  "portfolioSnapshot": {
+    "source": "iSPEED screenshots provided by user at 21:04 JST",
+    "totalUnrealizedPnl": -4890,
+    "positions": [
+      {
+        "code": "2342",
+        "name": "トランスジェニックグループ",
+        "quantity": 800,
+        "averageCost": 255,
+        "displayPrice": 253,
+        "unrealizedPnl": -1600
+      },
+      {
+        "code": "2926",
+        "name": "篠崎屋",
+        "quantity": 1000,
+        "averageCost": 119,
+        "displayPrice": 124,
+        "unrealizedPnl": 5000
+      },
+      {
+        "code": "3659",
+        "name": "ネクソン",
+        "quantity": 200,
+        "averageCost": 3146.45,
+        "displayPrice": 3105,
+        "unrealizedPnl": -8290
+      }
+    ]
+  },
   "missedMovers": [
-    {"code":"4170","name":"Kaizen Platform","closePct":41.0,"classification":"Continuation Momentum / 小型AIテーマ","mechanicallyCatchable":true,"shouldBeForecast":true,"daytradeable":true,"note":"寄付から終値まで+41.0%でストップ高。約定回数は前日比48.9倍。朝のContinuation Momentum/出来高急増スキャンの小型株枠を広げる余地。"},
-    {"code":"462A","name":"FUNDINNO","closePct":18.6,"classification":"Fresh Catalyst","mechanicallyCatchable":true,"shouldBeForecast":true,"daytradeable":true,"note":"りそなアセットマネジメントのSkyDrive出資支援が材料。前場+24.9%、終値+18.6%で一時ストップ高。新規ニュース抽出対象にすべきだった。"},
-    {"code":"4199","name":"ワンダープラネット","classification":"Fresh Catalyst / 場中材料","mechanicallyCatchable":false,"shouldBeForecast":false,"daytradeable":true,"note":"新たに2件のモバイルゲーム開発開始が材料となりストップ高。朝時点で未公表なら朝ランキングの取り逃しではなく、場中材料監視の対象。"},
-    {"code":"5713","name":"住友金属鉱山","morningPct":8.3,"classification":"Sector Alignment","mechanicallyCatchable":true,"shouldBeForecast":true,"daytradeable":true,"note":"金先物が約3カ月ぶり高値圏、銅も最高値圏で商いを伴い大幅高。朝のSector Alignmentが原油・海運・銀行に偏り、金・銅/非鉄のコモディティ横断比較が不足。"},
-    {"code":"6330","name":"東洋エンジニアリング","morningPct":8.3,"classification":"Sector Alignment / 政策テーマ","mechanicallyCatchable":true,"shouldBeForecast":true,"daytradeable":true,"note":"レアアース関連として大幅高。政策テーマと資源確保関連の横断スキャン不足。"}
+    {
+      "code": "4170",
+      "name": "Kaizen Platform",
+      "closePct": 41.0,
+      "classification": "Continuation Momentum / 小型AIテーマ",
+      "mechanicallyCatchable": true,
+      "shouldBeForecast": true,
+      "daytradeable": true
+    },
+    {
+      "code": "462A",
+      "name": "FUNDINNO",
+      "closePct": 18.6,
+      "classification": "Fresh Catalyst",
+      "mechanicallyCatchable": true,
+      "shouldBeForecast": true,
+      "daytradeable": true
+    },
+    {
+      "code": "5713",
+      "name": "住友金属鉱山",
+      "classification": "Sector Alignment",
+      "mechanicallyCatchable": true,
+      "shouldBeForecast": true,
+      "daytradeable": true
+    },
+    {
+      "code": "6330",
+      "name": "東洋エンジニアリング",
+      "classification": "Sector Alignment / 政策テーマ",
+      "mechanicallyCatchable": true,
+      "shouldBeForecast": true,
+      "daytradeable": true
+    }
   ],
   "lessons": {
     "good": [
-      "川崎汽船は過熱を認識しつつ高値追い禁止・VWAP/3410円再突破条件を置いたため、Continuation Momentumを取りつつ寄り天リスクを抑える設計だった。",
-      "INPEXは方向予想こそ外れたが、3954円維持/VWAP回復を条件にしていたため条件遵守なら誤エントリーを回避できた。"
+      "川崎汽船は過熱を認識しつつ高値追い禁止・VWAP再確認条件を置いたため、Continuation Momentumを取りつつ寄り天リスクを抑える設計だった。",
+      "INPEXは方向予想こそ外れたが、条件遵守なら誤エントリーを回避できた。"
     ],
     "improve": [
-      "Sector Alignmentを原油・海運・銀行に固定しすぎた。金・銅・レアアース・政策テーマを含む商品/テーマ横断の相対強度比較が必要。",
-      "前日高値突破を単独シグナルにしない。MUFGのような寄り直後ブレイク失敗を避けるため、5分VWAP維持、出来高継続、同業2銘柄以上の同方向を確認する。",
-      "材料が正しくても5〜10日で上昇済みの銘柄は、テーマ継続性と当日セクター相対強度が崩れた時点で確率を機動的に引き下げる。"
+      "Sector Alignmentを原油・海運・銀行に固定しすぎた。金・銅・レアアース・政策テーマを含む横断比較が必要。",
+      "前日高値突破を単独シグナルにしない。5分VWAP維持、出来高継続、同業連動を確認する。",
+      "保有銘柄のナンピンは平均単価低下ではなく支持線・仮説維持・撤退ラインを前提とし、原則1回を守る。"
     ],
     "newRules": [
       "9:00〜9:10に朝想定の強い業種が実際の業種別騰落率で下位なら、そのSector Alignment候補を1段階降格する。",
       "前日+5%以上かつ連騰中のContinuation銘柄は、GUしなければ過熱減点を一部戻し、VWAP回復＋前日高値再突破を満たす場合のみ実戦加点する。",
-      "商品市況は原油だけでなく金・銀・銅・レアアース関連ニュースを毎朝横断し、最も相対強度の高い資源サブテーマを選ぶ。"
+      "商品市況は原油だけでなく金・銀・銅・レアアース関連を毎朝横断する。",
+      "ナンピンは投資仮説維持・支持線付近・追加後総額確認・原則1回・撤退ライン設定を必須とし、同一日に複数回追加する場合も原則1回ルール違反として検証対象にする。"
     ],
     "nextWatch": [
-      "川崎汽船：3466円の本日高値を出来高付きで更新できるか。連騰継続のためGU過熱時は追わない。",
-      "INPEX：3838円安値と3800円心理節目。原油が高くても鉱業指数が弱い場合は見送り。",
-      "住友金属鉱山・東洋エンジニアリング：金・銅・レアアースのテーマ継続と、寄り前織り込み/GU率を比較する。"
+      "川崎汽船：3,466円の本日高値を出来高付きで更新できるか。",
+      "INPEX：3,838円安値と3,800円心理節目。",
+      "住友金属鉱山・東洋エンジニアリング：資源テーマ継続と寄り前GU率。",
+      "トランスジェニックグループ：252円の本日安値、249円、246円の支持帯と260〜264円回復の有無。追加ナンピンは行わない。"
     ]
   },
-  "tradeReview": {"available":false,"note":"2026-08-24のユーザー実売買はGitHub正本および今回取得情報から確認できなかったため、R倍数・MAE・MFE・MFE捕捉率は算出していない。"}
+  "tradeReview": {
+    "available": true,
+    "selectedCode": "2342",
+    "selectedName": "トランスジェニックグループ",
+    "tradeType": "swing averaging-down",
+    "preExistingPosition": {
+      "quantity": 300,
+      "averageCost": 260,
+      "costBasis": 78000
+    },
+    "trades": [
+      {
+        "side": "buy",
+        "quantity": 300,
+        "price": 252,
+        "orderTime": "10:06:24",
+        "amount": 75600
+      },
+      {
+        "side": "buy",
+        "quantity": 200,
+        "price": 252,
+        "orderTime": "13:35:57",
+        "amount": 50400
+      }
+    ],
+    "postTradePosition": {
+      "quantity": 800,
+      "averageCost": 255,
+      "costBasis": 204000,
+      "close": 253,
+      "unrealizedPnl": -1600
+    },
+    "marketData": {
+      "open": 255,
+      "high": 258,
+      "low": 252,
+      "close": 253,
+      "volume": 45600,
+      "turnoverYen": 11575000
+    },
+    "assessment": "252円は当日安値かつ直近支持帯であり、1回目の追加300株は支持線付近のナンピンとして一定の合理性がある。一方、同日13:35の追加200株は同じ252円で2回目のナンピンとなり、条件付き解禁ルールの『原則1回』から外れる。平均取得単価は260円から255円へ5円低下したが、投下資金は78,000円から204,000円へ約2.62倍に増えたため、平均単価改善以上にポジションサイズ増加リスクが大きい。",
+    "initialStop": null,
+    "initialTarget": null,
+    "realizedPnl": 0,
+    "rMultiple": null,
+    "mae": null,
+    "mfe": null,
+    "mfeCaptureRate": null,
+    "metricsNote": "売却していないため実現損益・R倍数・MFE捕捉率は未確定。初期損切り・初期利益目標も事前指定が確認できないため推測で埋めていない。"
+  }
 }
