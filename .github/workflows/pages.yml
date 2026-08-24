@@ -32,9 +32,13 @@ jobs:
           from pathlib import Path
           p = Path('hoshino-resorts/index.html')
           s = p.read_text(encoding='utf-8')
-          tag = '<script src="./enhancements-v2.js?v=20260824-4"></script>'
-          if tag not in s:
-              s = s.replace('</body>', tag + '\n</body>')
+          tags = [
+              '<script src="./enhancements-v2.js?v=20260824-4"></script>',
+              '<script src="./cleanup-v3.js?v=20260824-5"></script>',
+          ]
+          for tag in tags:
+              if tag not in s:
+                  s = s.replace('</body>', tag + '\n</body>')
           p.write_text(s, encoding='utf-8')
           PY
 
