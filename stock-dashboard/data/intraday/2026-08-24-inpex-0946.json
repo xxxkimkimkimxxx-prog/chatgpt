@@ -1,0 +1,17 @@
+{
+  "date":"2026-08-24",
+  "observedAt":"09:46:50 JST",
+  "code":"1605",
+  "name":"INPEX",
+  "source":"iSPEED screenshot supplied by user",
+  "price":3847,
+  "changeYen":-107,
+  "changePct":-2.71,
+  "fiveMinuteBar":{"open":3846,"high":3849,"low":3843,"close":3847,"volume":16500},
+  "movingAverages":{"ma5":3857.00,"ma25":3905.52,"ma75":3914.17},
+  "morningPlan":{"rank":1,"probability":68,"entryCondition":"3,954円を維持、または押し後にVWAP回復","skipCondition":"3,954円割れかつVWAP下で出来高増加、または原油先物急反落"},
+  "assessment":"見送り。朝の買い条件は不成立。前日終値3,954円を大きく下回り、5分足はMA5・MA25・MA75のすべて下。寄り後の急落局面で高値追い条件は完全に無効。",
+  "macroUpdate":"アジア時間の原油はBrent/WTIとも約1%下落。制裁発表前の利益確定・ポジション調整が背景。朝の原油高継続シナリオが弱化。",
+  "reconsiderOnlyIf":"少なくとも3,860〜3,880円帯を回復し、さらにVWAP回復と安値切り上げを確認。3,900円未満では戻り売り警戒。",
+  "tradeAction":"新規買いしない"
+}
