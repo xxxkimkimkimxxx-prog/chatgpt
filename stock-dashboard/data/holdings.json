@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-24",
-  "source": "iSPEED holdings screenshot supplied 2026-08-24",
+  "asOf": "2026-08-24 11:50 JST",
+  "source": "iSPEED holdings screenshot plus 2026-08-24 intraday chart review",
   "positions": [
     {
       "code": "2342",
@@ -8,7 +8,9 @@
       "quantity": 300,
       "averageCost": 260.00,
       "referencePrice": 257,
-      "unrealizedPnl": -900
+      "referencePriceObservedAt": "2026-08-24 01:52 JST",
+      "unrealizedPnl": -900,
+      "management": "保有継続。直近の流動性低下に注意し、新規買い増しは急がない。"
     },
     {
       "code": "2926",
@@ -16,7 +18,9 @@
       "quantity": 1000,
       "averageCost": 119.00,
       "referencePrice": 125,
-      "unrealizedPnl": 6000
+      "referencePriceObservedAt": "2026-08-24 01:52 JST",
+      "unrealizedPnl": 6000,
+      "management": "利益保護優先。直近高値帯への再上昇可否と122円近辺の支持を確認。"
     },
     {
       "code": "3659",
@@ -24,9 +28,11 @@
       "quantity": 200,
       "averageCost": 3146.45,
       "referencePrice": 3095,
-      "unrealizedPnl": -10290
+      "referencePriceObservedAt": "2026-08-24 11:21 JST",
+      "unrealizedPnl": -10290,
+      "management": "保有継続・買い増しはまだ待つ。5分足はMA5 3094.60、MA25 3087.52、MA75 3081.39で短期形状は改善。ただし3,100〜3,120円の上値が重い。3,120円を出来高付き5分足終値で突破すれば3,145〜3,150円を次の確認帯とする。3,080円割れでは3,060円再試行を警戒。"
     }
   ],
   "totalUnrealizedPnl": -5190,
-  "note": "referencePrice is the price shown in the supplied iSPEED screenshot, not a live quote."
+  "note": "referencePrice is the latest price directly verified from supplied iSPEED screenshots per position, not an automatically refreshed live quote."
 }
