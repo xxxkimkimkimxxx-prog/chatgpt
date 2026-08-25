@@ -9,6 +9,7 @@ on:
     paths:
       - "stock-dashboard/low-price-map/update_data.py"
       - "stock-dashboard/low-price-map/export_compact.py"
+      - "stock-dashboard/low-price-map/rank_multibagger.py"
       - ".github/workflows/update-low-price-stocks.yml"
 
 permissions:
@@ -36,6 +37,7 @@ jobs:
         run: |
           python stock-dashboard/low-price-map/update_data.py
           python stock-dashboard/low-price-map/export_compact.py
+          python stock-dashboard/low-price-map/rank_multibagger.py
 
       - name: Validate output
         shell: bash
@@ -53,6 +55,8 @@ jobs:
           assert len(compact) == len(stocks) + 1, 'Compact export row count failed'
           insights = json.loads(Path('stock-dashboard/low-price-map/insights.json').read_text(encoding='utf-8'))
           assert insights['counts']['total'] == len(stocks), 'Insights count failed'
+          rank = json.loads(Path('stock-dashboard/low-price-map/multibagger_rank.json').read_text(encoding='utf-8'))
+          assert len(rank['top20_quant']) == 20, 'Rank top20 failed'
           print('validated:', len(stocks), 'stocks')
           PY
 
@@ -62,7 +66,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add stock-dashboard/low-price-map/data.json stock-dashboard/low-price-map/compact.tsv stock-dashboard/low-price-map/insights.json
+          git add stock-dashboard/low-price-map/data.json stock-dashboard/low-price-map/compact.tsv stock-dashboard/low-price-map/insights.json stock-dashboard/low-price-map/multibagger_rank.json
           if git diff --cached --quiet; then
             echo "No snapshot change"
             exit 0
