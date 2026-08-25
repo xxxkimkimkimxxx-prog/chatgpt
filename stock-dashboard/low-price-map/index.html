@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>300円以下 日本株・全銘柄マップ</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#f4f6fb;--panel:#fff;--panel2:#eef2f8;--text:#172033;--muted:#667085;--line:#d9e0eb;--accent:#2459ff;--good:#147d64;--bad:#c13d4a;--warn:#b16b08;--chip:#e9eef9;--shadow:0 10px 28px rgba(21,32,54,.08)}
+    @media(prefers-color-scheme:dark){:root{--bg:#0b1020;--panel:#121a2a;--panel2:#172236;--text:#edf2ff;--muted:#9aa7bd;--line:#26344d;--accent:#7da2ff;--good:#6ad5b4;--bad:#ff8d98;--warn:#f7bb63;--chip:#1c2942;--shadow:0 12px 34px rgba(0,0,0,.28)}}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif} button,input,select{font:inherit} button{cursor:pointer} .wrap{max-width:1500px;margin:auto;padding:22px}.hero{display:grid;gap:10px;margin-bottom:18px}.hero h1{font-size:clamp(25px,4vw,42px);margin:0;letter-spacing:-.03em}.hero p{margin:0;color:var(--muted);line-height:1.75}.meta{display:flex;gap:8px;flex-wrap:wrap}.pill,.flag{display:inline-flex;align-items:center;border-radius:999px;padding:5px 9px;background:var(--chip);font-size:12px}.flag.risk{color:var(--bad)}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:15px 0}.kpi{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:15px;box-shadow:var(--shadow)}.kpi .label{font-size:12px;color:var(--muted)}.kpi .value{font-size:27px;font-weight:800;margin-top:5px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px;margin:14px 0;box-shadow:var(--shadow)}.panel h2{font-size:18px;margin:0 0 10px}.controls{display:grid;grid-template-columns:2fr repeat(4,minmax(135px,1fr));gap:9px}.controls input,.controls select{width:100%;min-height:44px;border:1px solid var(--line);border-radius:11px;background:var(--panel2);color:var(--text);padding:9px 11px}.checkrow{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;color:var(--muted);font-size:13px}.checkrow label{display:flex;gap:7px;align-items:center}.treemap{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}.sector{border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:12px;border-radius:13px;text-align:left;min-height:78px}.sector.active{outline:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--panel2))}.sector strong{display:block;font-size:14px}.sector span{display:block;color:var(--muted);font-size:12px;margin-top:5px}.toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}.toolbar .count{font-weight:700}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:14px;margin-top:10px;max-height:760px}table{width:100%;border-collapse:separate;border-spacing:0;min-width:1390px;font-size:13px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:middle;text-align:right}th{position:sticky;top:0;background:var(--panel2);z-index:2;color:var(--muted);font-size:11px;letter-spacing:.02em}th:first-child,td:first-child,th:nth-child(2),td:nth-child(2),th:nth-child(10),td:nth-child(10),th:nth-child(11),td:nth-child(11){text-align:left}tbody tr{background:var(--panel)}tbody tr:hover{background:color-mix(in srgb,var(--accent) 5%,var(--panel))}.company{font-weight:700;max-width:240px}.sub{display:block;color:var(--muted);font-size:11px;margin-top:2px}.posbar{width:115px;height:8px;border-radius:999px;background:var(--line);overflow:hidden;margin-left:auto}.posbar i{display:block;height:100%;background:linear-gradient(90deg,var(--good),var(--warn),var(--bad));width:0}.positive{color:var(--good)}.negative{color:var(--bad)}.btn{min-height:38px;border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:10px;padding:7px 10px}.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}.detailgrid{display:grid;grid-template-columns:1.05fr 1.95fr;gap:14px}.detailbox{background:var(--panel2);border-radius:14px;padding:14px}.detailbox h3{margin:0 0 8px}.metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.metric{border:1px solid var(--line);border-radius:10px;padding:9px}.metric small{display:block;color:var(--muted)}.metric b{font-size:16px}.compare{display:grid;grid-template-columns:repeat(5,minmax(180px,1fr));gap:9px;overflow:auto}.comparecard{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:12px}.comparecard h4{margin:0 0 8px}.empty{padding:26px;text-align:center;color:var(--muted)}.source{font-size:12px;color:var(--muted);line-height:1.7}.error{color:var(--bad);font-weight:700}.hide{display:none!important}@media(max-width:1000px){.grid4{grid-template-columns:repeat(2,1fr)}.controls{grid-template-columns:1fr 1fr}.treemap{grid-template-columns:repeat(3,1fr)}.detailgrid{grid-template-columns:1fr}}@media(max-width:560px){.wrap{padding:14px}.grid4{grid-template-columns:1fr 1fr}.controls{grid-template-columns:1fr}.treemap{grid-template-columns:1fr 1fr}.kpi .value{font-size:22px}.compare{grid-template-columns:repeat(5,250px)}}
+  </style>
+</head>
+<body>
+<main class="wrap">
+  <section class="hero">
+    <div class="meta"><span class="pill">日本上場株</span><span class="pill">株価 ≤ 300円</span><span class="pill" id="updated">更新確認中</span></div>
+    <h1>300円以下 日本株・全銘柄マップ</h1>
+    <p>低位株を「安い順」だけで見ず、業種・52週レンジ・流動性・時価総額・バリュエーションを横断比較するための調査ダッシュボードです。株価が低いこと自体は割安を意味しません。</p>
+  </section>
+
+  <section class="grid4">
+    <div class="kpi"><div class="label">抽出銘柄数</div><div class="value" id="kCount">—</div></div>
+    <div class="kpi"><div class="label">価格中央値</div><div class="value" id="kMedian">—</div></div>
+    <div class="kpi"><div class="label">100円未満</div><div class="value" id="kUnder100">—</div></div>
+    <div class="kpi"><div class="label">セクター数</div><div class="value" id="kSector">—</div></div>
+  </section>
+
+  <section class="panel">
+    <h2>業種マップ</h2>
+    <p class="source">タップするとセクターで絞り込みます。面積ではなく件数比較を優先したカード型マップです。</p>
+    <div id="sectorMap" class="treemap"></div>
+  </section>
+
+  <section class="panel">
+    <h2>絞り込み・並べ替え</h2>
+    <div class="controls">
+      <input id="q" type="search" placeholder="コード・会社名・業種を検索" aria-label="銘柄検索" />
+      <select id="sector"><option value="">全セクター</option></select>
+      <select id="industry"><option value="">全業種</option></select>
+      <select id="market"><option value="">全市場</option></select>
+      <select id="sort">
+        <option value="priceAsc">株価 安い順</option><option value="priceDesc">株価 高い順</option>
+        <option value="lowZone">52週安値に近い順</option><option value="highZone">52週高値に近い順</option>
+        <option value="volume">出来高 多い順</option><option value="cap">時価総額 大きい順</option>
+        <option value="perf">1年騰落率 高い順</option><option value="rvol">相対出来高 高い順</option>
+      </select>
+    </div>
+    <div class="checkrow">
+      <label><input id="onlyLow" type="checkbox"> 52週安値圏（レンジ下位15%）</label>
+      <label><input id="onlyLoss" type="checkbox"> 赤字TTMのみ</label>
+      <label><input id="onlyLiquid" type="checkbox"> 出来高10万株以上</label>
+      <label><input id="onlyUnder100" type="checkbox"> 100円未満</label>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="toolbar"><h2>全銘柄一覧</h2><div><span class="count" id="visibleCount">—</span> <button id="clearCompare" class="btn" type="button">比較をクリア</button></div></div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>比較</th><th>銘柄</th><th>現在値</th><th>52週高値</th><th>52週安値</th><th>52週位置</th><th>前日比</th><th>出来高</th><th>時価総額</th><th>セクター</th><th>業種</th><th>PER</th><th>PBR</th><th>配当利回り</th><th>注意</th></tr></thead>
+        <tbody id="tbody"><tr><td colspan="15" class="empty">データを読み込んでいます…</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="toolbar"><h2>比較（最大5銘柄）</h2><span class="source">一覧の「＋比較」で追加</span></div>
+    <div id="compare" class="compare"><div class="empty">比較銘柄はまだありません</div></div>
+  </section>
+
+  <section class="panel">
+    <h2>個別深掘り</h2>
+    <div id="detail" class="empty">一覧の銘柄名をタップすると、定量情報とリスクの読み方を表示します。</div>
+  </section>
+
+  <section class="panel source">
+    <strong>データ定義・注意</strong><br>
+    日本市場の一次上場かつ株価0円超300円以下の普通株・優先株・DRを対象とし、ETF・投信・Pre-IPOは除外しています。現在値・52週高安・出来高等はTradingView Stock Screenerから自動取得し、セクター/業種を付与しています。52週レンジ位置は「(現在値−52週安値)÷(52週高値−52週安値)」で算出。表示は投資助言ではなくスクリーニング用途です。低位株は株式併合・増資/希薄化・継続企業リスク・低流動性・値幅拡大の影響を受けやすいため、売買前に会社IR・TDnet・JPXで最新開示を確認してください。<br>
+    <span id="sourceLine"></span>
+  </section>
+</main>
+<script>
+(() => {
+  const $=id=>document.getElementById(id); const state={all:[],filtered:[],compare:[],sector:"",selected:null,meta:{}};
+  const fmt=(n,d=0)=>Number.isFinite(Number(n))?Number(n).toLocaleString('ja-JP',{maximumFractionDigits:d}):'—';
+  const yen=(n,d=1)=>Number.isFinite(Number(n))?'¥'+fmt(n,d):'—';
+  const pct=(n,d=1)=>Number.isFinite(Number(n))?fmt(n,d)+'%':'—';
+  const cap=n=>{if(!Number.isFinite(Number(n)))return'—';n=Number(n);return n>=1e12?fmt(n/1e12,2)+'兆円':n>=1e8?fmt(n/1e8,1)+'億円':fmt(n/1e4,0)+'万円'};
+  const uniq=(arr,key)=>[...new Set(arr.map(x=>x[key]).filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),'ja'));
+  const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  function fillSelect(id,values,label){$(id).innerHTML='<option value="">'+label+'</option>'+values.map(v=>`<option>${esc(v)}</option>`).join('')}
+  function mapSectors(){const counts={};state.all.forEach(r=>counts[r.sector]=(counts[r.sector]||0)+1);const entries=Object.entries(counts).sort((a,b)=>b[1]-a[1]);$('sectorMap').innerHTML=entries.map(([s,n])=>`<button type="button" class="sector ${state.sector===s?'active':''}" data-sector="${esc(s)}"><strong>${esc(s)}</strong><span>${n}銘柄・${pct(n/state.all.length*100,1)}</span></button>`).join('');$('sectorMap').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{state.sector=state.sector===b.dataset.sector?'':b.dataset.sector;$('sector').value=state.sector;mapSectors();apply()}))}
+  function apply(){const q=$('q').value.trim().toLowerCase(),sector=$('sector').value,industry=$('industry').value,market=$('market').value;state.sector=sector;let a=state.all.filter(r=>{const hay=[r.code,r.company,r.sector,r.industry].join(' ').toLowerCase();return(!q||hay.includes(q))&&(!sector||r.sector===sector)&&(!industry||r.industry===industry)&&(!market||r.market===market)&&(!$('onlyLow').checked||Number(r.range_position)<=15)&&(!$('onlyLoss').checked||Number(r.eps_ttm)<0)&&(!$('onlyLiquid').checked||Number(r.volume)>=100000)&&(!$('onlyUnder100').checked||Number(r.price)<100)});const sort=$('sort').value, num=(r,k,def=Infinity)=>Number.isFinite(Number(r[k]))?Number(r[k]):def; a.sort((x,y)=>({priceAsc:num(x,'price')-num(y,'price'),priceDesc:num(y,'price')-num(x,'price'),lowZone:num(x,'range_position')-num(y,'range_position'),highZone:num(y,'range_position',-Infinity)-num(x,'range_position',-Infinity),volume:num(y,'volume',-Infinity)-num(x,'volume',-Infinity),cap:num(y,'market_cap',-Infinity)-num(x,'market_cap',-Infinity),perf:num(y,'perf_1y',-Infinity)-num(x,'perf_1y',-Infinity),rvol:num(y,'relative_volume',-Infinity)-num(x,'relative_volume',-Infinity)})[sort]||0);state.filtered=a;renderTable();mapSectors();$('visibleCount').textContent=`${fmt(a.length)} / ${fmt(state.all.length)}銘柄`}
+  function renderTable(){const a=state.filtered;if(!a.length){$('tbody').innerHTML='<tr><td colspan="15" class="empty">条件に一致する銘柄がありません</td></tr>';return}$('tbody').innerHTML=a.map(r=>{const selected=state.compare.includes(r.symbol),change=Number(r.change),pos=Math.max(0,Math.min(100,Number(r.range_position)||0));return `<tr><td><button class="btn cmp" data-s="${esc(r.symbol)}">${selected?'✓':'＋'} 比較</button></td><td class="company"><button class="btn detail" data-s="${esc(r.symbol)}">${esc(r.code)} ${esc(r.company)}</button><span class="sub">${esc(r.market)}</span></td><td><b>${yen(r.price,2)}</b></td><td>${yen(r.high_52w,2)}</td><td>${yen(r.low_52w,2)}</td><td>${pct(r.range_position,1)}<div class="posbar"><i style="width:${pos}%"></i></div></td><td class="${change>0?'positive':change<0?'negative':''}">${pct(r.change,2)}</td><td>${fmt(r.volume)}</td><td>${cap(r.market_cap)}</td><td>${esc(r.sector)}</td><td>${esc(r.industry)}</td><td>${fmt(r.per,2)}</td><td>${fmt(r.pbr,2)}</td><td>${pct(r.dividend_yield,2)}</td><td>${(r.flags||[]).slice(0,3).map(f=>`<span class="flag risk">${esc(f)}</span>`).join(' ')||'—'}</td></tr>`}).join('');$('tbody').querySelectorAll('.cmp').forEach(b=>b.addEventListener('click',()=>toggleCompare(b.dataset.s)));$('tbody').querySelectorAll('.detail').forEach(b=>b.addEventListener('click',()=>selectDetail(b.dataset.s)))}
+  function toggleCompare(s){const i=state.compare.indexOf(s);if(i>=0)state.compare.splice(i,1);else if(state.compare.length<5)state.compare.push(s);else{alert('比較は最大5銘柄です');return}renderCompare();renderTable()}
+  function renderCompare(){const rows=state.compare.map(s=>state.all.find(r=>r.symbol===s)).filter(Boolean);$('compare').innerHTML=rows.length?rows.map(r=>`<article class="comparecard"><h4>${esc(r.code)} ${esc(r.company)}</h4><div><b>${yen(r.price,2)}</b> / 52週位置 ${pct(r.range_position,1)}</div><div class="sub">高値 ${yen(r.high_52w,2)} ・ 安値 ${yen(r.low_52w,2)}</div><hr style="border:0;border-top:1px solid var(--line)"><div>PER ${fmt(r.per,2)} / PBR ${fmt(r.pbr,2)}</div><div>配当 ${pct(r.dividend_yield,2)} / 1年 ${pct(r.perf_1y,1)}</div><div class="sub">${esc(r.sector)} › ${esc(r.industry)}</div><button type="button" class="btn rm" data-s="${esc(r.symbol)}" style="margin-top:8px">外す</button></article>`).join(''):'<div class="empty">比較銘柄はまだありません</div>';$('compare').querySelectorAll('.rm').forEach(b=>b.addEventListener('click',()=>toggleCompare(b.dataset.s)))}
+  function selectDetail(s){const r=state.all.find(x=>x.symbol===s);if(!r)return;state.selected=s;const observations=[];if(Number.isFinite(Number(r.range_position)))observations.push(Number(r.range_position)<=15?'52週レンジの下位15%で、反発余地の確認対象。ただし「安値圏＝底値」ではありません。':Number(r.range_position)>=85?'52週レンジ上位15%で、低位株ながら高値圏。高値追いは出来高継続を要確認。':'52週レンジの中間帯。方向性は材料・出来高・市場環境と併読。');if(Number(r.eps_ttm)<0)observations.push('EPS（1株利益）がマイナスのため、直近12か月ベースでは赤字。黒字転換材料の有無をIRで確認。');if(Number(r.relative_volume)>=3)observations.push('相対出来高が3倍以上。資金流入の可能性がある一方、短期過熱にも注意。');if(Number(r.volume)<100000)observations.push('出来高が10万株未満で流動性に注意。成行注文は価格が飛びやすい可能性。');if(Number(r.market_cap)<10000000000)observations.push('時価総額100億円未満の小型株。材料一発で値幅が出やすい反面、需給変動も大きくなりやすい。');if(!observations.length)observations.push('定量面で極端な注意フラグは少なめ。次は適時開示・決算・需給・チャートを確認。');$('detail').className='detailgrid';$('detail').innerHTML=`<div class="detailbox"><h3>${esc(r.code)} ${esc(r.company)}</h3><div class="metrics"><div class="metric"><small>現在値</small><b>${yen(r.price,2)}</b></div><div class="metric"><small>52週位置</small><b>${pct(r.range_position,1)}</b></div><div class="metric"><small>52週高値</small><b>${yen(r.high_52w,2)}</b></div><div class="metric"><small>52週安値</small><b>${yen(r.low_52w,2)}</b></div><div class="metric"><small>PER / PBR</small><b>${fmt(r.per,2)} / ${fmt(r.pbr,2)}</b></div><div class="metric"><small>配当利回り</small><b>${pct(r.dividend_yield,2)}</b></div><div class="metric"><small>出来高 / RVOL</small><b>${fmt(r.volume)} / ${fmt(r.relative_volume,2)}</b></div><div class="metric"><small>時価総額</small><b>${cap(r.market_cap)}</b></div></div></div><div class="detailbox"><h3>読み方</h3><ul>${observations.map(x=>`<li style="margin:8px 0;line-height:1.65">${esc(x)}</li>`).join('')}</ul><p class="source"><b>分類:</b> ${esc(r.sector)} › ${esc(r.industry)}<br><b>1年騰落率:</b> ${pct(r.perf_1y,1)} / <b>ROE:</b> ${pct(r.roe,1)} / <b>D/E:</b> ${fmt(r.debt_to_equity,2)}<br><b>注意フラグ:</b> ${(r.flags||[]).map(f=>esc(f)).join('・')||'なし'}</p></div>`;$('detail').scrollIntoView({behavior:'smooth',block:'nearest'})}
+  async function load(){try{const res=await fetch('./data.json?ts='+Date.now(),{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);const data=await res.json();state.all=data.stocks||[];state.meta=data.meta||{};$('updated').textContent='データ '+(state.meta.generated_at_jst||'更新済み');$('kCount').textContent=fmt(state.all.length)+'銘柄';$('kMedian').textContent=yen(state.meta.median_price,1);$('kUnder100').textContent=fmt(state.all.filter(r=>Number(r.price)<100).length)+'銘柄';$('kSector').textContent=fmt(new Set(state.all.map(r=>r.sector)).size);$('sourceLine').textContent='最終生成: '+(state.meta.generated_at_jst||'—')+' / '+(state.meta.source||'—');fillSelect('sector',uniq(state.all,'sector'),'全セクター');fillSelect('industry',uniq(state.all,'industry'),'全業種');fillSelect('market',uniq(state.all,'market'),'全市場');mapSectors();apply()}catch(e){$('tbody').innerHTML=`<tr><td colspan="15" class="empty error">データ取得に失敗しました: ${esc(e.message)}。GitHub Actionsの更新状況を確認してください。</td></tr>`;$('updated').textContent='データ未取得'}}
+  ['q','sector','industry','market','sort','onlyLow','onlyLoss','onlyLiquid','onlyUnder100'].forEach(id=>$(id).addEventListener(id==='q'?'input':'change',apply));$('clearCompare').addEventListener('click',()=>{state.compare=[];renderCompare();renderTable()});load();
+})();
+</script>
+</body>
+</html>
