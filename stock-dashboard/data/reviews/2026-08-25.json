@@ -1,15 +1,18 @@
 {
   "date": "2026-08-25",
-  "asOf": "2026-08-25 15:31 JST",
+  "asOf": "2026-08-25 23:30 JST",
   "series": "3-month +300,000 yen project",
   "goalProgress": {
-    "startDate": "2026-08-24 close",
+    "startDate": "2026-08-01",
     "targetDate": "2026-11-24",
     "targetRealizedPnl": 300000,
+    "countingRule": "2026年8月のすべての取引を30万円計画に含める",
+    "confirmedAugustRealizedPnlThrough20260823": 42500,
     "todayDerivedRealizedPnl": 17410,
     "todayDerivedPnlStatus": "provisional until iSPEED realized P/L screen confirms net amount",
-    "remainingToTargetProvisional": 282590,
-    "progressPctProvisional": 5.8
+    "cumulativeRealizedPnlProvisional": 59910,
+    "remainingToTargetProvisional": 240090,
+    "progressPctProvisional": 20.0
   },
   "market": {
     "summary": "朝方は米Nasdaq・SOX安を受け日経平均が一時64,609.47まで下落したが、その後切り返した。前場終値は65,598.68（+0.11%）。後場寄りは65,785.09（+257.00）まで上昇。セクターでは非鉄金属が上位となり、電線・光通信インフラへ資金が集中した。",
