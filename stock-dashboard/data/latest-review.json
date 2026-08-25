@@ -1,6 +1,6 @@
 {
   "date": "2026-08-25",
-  "asOf": "2026-08-25 15:31 JST",
+  "asOf": "2026-08-25 23:30 JST",
   "market": {
     "summary": "朝はNasdaq・SOX安で指数が下落したが、その後切り返し。非鉄金属が上昇率上位となり、古河電工・フジクラ・住友電工など電線・光通信インフラへ資金が集中した。朝の『半導体安→電線も弱い』という一括評価は修正が必要。"
   },
@@ -17,9 +17,14 @@
   },
   "goalProgress": {
     "targetRealizedPnl": 300000,
+    "countingStart": "2026-08-01",
+    "countingRule": "8月の全取引を30万円計画に含める",
+    "confirmedAugustRealizedPnlThrough20260823": 42500,
     "todayDerivedRealizedPnl": 17410,
-    "status": "provisional until iSPEED realized P/L screen confirms net amount",
-    "remainingProvisional": 282590
+    "cumulativeProvisional": 59910,
+    "progressPctProvisional": 20.0,
+    "remainingProvisional": 240090,
+    "status": "古河電工分はiSPEED実現損益画面確認まで暫定。8/23までの42,500円は確定値。"
   },
   "lessons": [
     "非鉄金属を電線・光通信／製錬・半導体材料／資源に分解する。",
