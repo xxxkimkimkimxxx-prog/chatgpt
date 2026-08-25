@@ -1,0 +1,38 @@
+{
+  "asOf": "2026-08-25 10:50 JST",
+  "type": "intraday-rerank",
+  "market": {
+    "nikkeiAt1000": 65119.67,
+    "nikkeiPctAt1000": -0.62,
+    "primeAdvancersAt1000": 828,
+    "primeDeclinersAt1000": 642,
+    "risingIndustriesAt1000": 27,
+    "topIndustriesAt1000": ["海運業", "非鉄金属", "保険業", "鉱業"],
+    "interpretation": "指数は半導体大型株に押される一方、市場幅は買い優勢。全面リスクオフではなく選別相場。"
+  },
+  "ranking": [
+    {"rank":1,"code":"5803","name":"フジクラ","reason":"10:01:45 iSPEEDで5,205円(+3.77%)。出来高を伴う上放れで、電線・光通信インフラへ資金回帰。"},
+    {"rank":2,"code":"5801","name":"古河電工","reason":"09:24確認で3,788円(+4.49%)、10時の日経平均プラス寄与上位。強いが値幅大。"},
+    {"rank":3,"code":"9107","name":"川崎汽船","reason":"海運が10時時点33業種首位。連騰後の過熱があるため押し目・高値更新確認型。"},
+    {"rank":4,"code":"1605","name":"INPEX","reason":"09:08確認で3,933円(+1.13%)。原油安に逆行し、鉱業も業種上位。"},
+    {"rank":5,"code":"9706","name":"日本空港ビルデング","reason":"09:09に5,930円(+3.54%)。自社株買いは好材料だが大型売出しが同時にあり材料は混在。"},
+    {"rank":6,"code":"5016","name":"JX金属","reason":"朝1位から降格。非鉄業種上位でも電線株主導との切り分けが必要。前日高値追いを避ける。"}
+  ],
+  "holdingsSnapshot": {
+    "observedAt": "2026-08-25 10:34 JST",
+    "totalUnrealizedPnl": 11310,
+    "positions": [
+      {"code":"2342","name":"トランスジェニックグループ","quantity":800,"averageCost":255,"price":253,"unrealizedPnl":-1600},
+      {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119,"price":131,"unrealizedPnl":12000},
+      {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"price":3151,"unrealizedPnl":910}
+    ]
+  },
+  "sources": [
+    {"name":"ユーザー iSPEED フジクラ 10:01:45","type":"screenshot"},
+    {"name":"ユーザー iSPEED 保有銘柄 10:34","type":"screenshot"},
+    {"name":"株探/みんかぶ 10時の日経平均・市場幅・業種騰落","url":"https://minkabu.jp/news/4604036"},
+    {"name":"みんかぶ 古河電工 09:24確認値","url":"https://s.minkabu.jp/stock/5801/daily_bar?page=128"},
+    {"name":"みんかぶ INPEX 09:08確認値","url":"https://s.minkabu.jp/stock/1605/news/4594026"},
+    {"name":"フィスコ/みんかぶ 日本空港ビル 09:09確認値","url":"https://minkabu.jp/news/4603998"}
+  ]
+}
