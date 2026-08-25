@@ -1,14 +1,15 @@
 {
-  "lastSyncedAtJST": "2026-08-25 12:18",
-  "trigger": "front_session_review_and_holdings_refresh",
-  "triggerMessageSummary": "User requested a front-session summary and supplied a 12:18 iSPEED snapshot showing a new Furukawa Electric position.",
+  "lastSyncedAtJST": "2026-08-25 23:30",
+  "trigger": "all_august_trades_added_to_300k_goal",
+  "triggerMessageSummary": "User requested that the 300,000 yen plan include every August 2026 trade rather than starting after the August 24 close.",
   "updated": [
+    "data/performance-summary.json",
+    "data/latest-review.json",
     "data/current-view.json",
-    "data/holdings.json",
-    "data/intraday/2026-08-25-1218-front-session.json",
+    "data/reviews/2026-08-25.json",
     "data/sync-status.json"
   ],
   "status": "ready",
   "primaryPage": "dashboard.html",
-  "note": "Front-session review is now live. Holdings use the 12:18 iSPEED snapshot as primary. The 06:30 morning strategy remains unchanged for later forecast evaluation. Exact 11:30 index closing levels were not guessed because they were not verified in this refresh."
+  "note": "The 300,000 yen goal now counts all realized P/L from 2026-08-01. Confirmed iSPEED realized P/L through 2026-08-23 is +42,500 yen. The 2026-08-25 Furukawa Electric derived P/L of +17,410 yen remains provisional until confirmed in iSPEED, giving provisional cumulative progress of +59,910 yen, 20.0%, with 240,090 yen remaining."
 }
