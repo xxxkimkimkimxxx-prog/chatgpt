@@ -57,6 +57,8 @@ jobs:
           assert insights['counts']['total'] == len(stocks), 'Insights count failed'
           rank = json.loads(Path('stock-dashboard/low-price-map/multibagger_rank.json').read_text(encoding='utf-8'))
           assert len(rank['top20_quant']) == 20, 'Rank top20 failed'
+          top20 = Path('stock-dashboard/low-price-map/multibagger_top20.tsv').read_text(encoding='utf-8').splitlines()
+          assert len(top20) == 21, 'Top20 compact export failed'
           print('validated:', len(stocks), 'stocks')
           PY
 
@@ -66,7 +68,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add stock-dashboard/low-price-map/data.json stock-dashboard/low-price-map/compact.tsv stock-dashboard/low-price-map/insights.json stock-dashboard/low-price-map/multibagger_rank.json
+          git add stock-dashboard/low-price-map/data.json stock-dashboard/low-price-map/compact.tsv stock-dashboard/low-price-map/insights.json stock-dashboard/low-price-map/multibagger_rank.json stock-dashboard/low-price-map/multibagger_top20.tsv
           if git diff --cached --quiet; then
             echo "No snapshot change"
             exit 0
