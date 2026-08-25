@@ -1,0 +1,158 @@
+{
+  "date": "2026-08-25",
+  "asOf": "2026-08-25 15:31 JST",
+  "series": "3-month +300,000 yen project",
+  "goalProgress": {
+    "startDate": "2026-08-24 close",
+    "targetDate": "2026-11-24",
+    "targetRealizedPnl": 300000,
+    "todayDerivedRealizedPnl": 17410,
+    "todayDerivedPnlStatus": "provisional until iSPEED realized P/L screen confirms net amount",
+    "remainingToTargetProvisional": 282590,
+    "progressPctProvisional": 5.8
+  },
+  "market": {
+    "summary": "朝方は米Nasdaq・SOX安を受け日経平均が一時64,609.47まで下落したが、その後切り返した。前場終値は65,598.68（+0.11%）。後場寄りは65,785.09（+257.00）まで上昇。セクターでは非鉄金属が上位となり、電線・光通信インフラへ資金が集中した。",
+    "importantObservation": "朝の『半導体安→電線・AIインフラも弱い』という一括評価は誤り。半導体製造装置と電線・光通信インフラを分離すべきだった。"
+  },
+  "morningForecastReview": [
+    {
+      "code": "5016",
+      "name": "JX金属",
+      "forecastProbability": 62,
+      "classification": "Sector Alignment",
+      "actualHigh": 3837,
+      "actualLow": 3676,
+      "latestVerifiedPrice": 3798,
+      "latestVerifiedTime": "15:07",
+      "actualHighPct": 1.35,
+      "actualClosePct": null,
+      "hit": false,
+      "reviewNote": "非鉄金属という業種方向は合っていたが、資金の主役は製錬・素材より電線・光通信インフラだった。業種内サブテーマ選別が不足。"
+    },
+    {
+      "code": "9107",
+      "name": "川崎汽船",
+      "forecastProbability": 59,
+      "classification": "Continuation Momentum",
+      "actualHigh": 3591,
+      "actualLow": 3447,
+      "latestVerifiedPrice": 3452,
+      "latestVerifiedTime": "13:46",
+      "actualHighPct": 3.64,
+      "actualClosePct": null,
+      "hit": true,
+      "reviewNote": "朝の3,470円高値突破条件を満たし9:15に3,591円まで上昇。Continuation仮説は機能したが、その後失速したため高値追いには不向き。"
+    }
+  ],
+  "swingForecastReview": [
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "forecastProbability": 55,
+      "actualOpen": 4995,
+      "actualHigh": 5357,
+      "actualLow": 4968,
+      "latestVerifiedPrice": 5294,
+      "latestVerifiedTime": "15:02",
+      "swingPnlPct": 5.54,
+      "holdingStatus": "not taken",
+      "invalidationStatus": "not invalidated",
+      "reviewNote": "朝はNVIDIA決算前リスクを重く見すぎた。4,973円支持条件は実質機能し、そこから強烈に反発。電線3社の同業連動を寄り後もっと早く再加点すべきだった。"
+    },
+    {
+      "code": "1605",
+      "name": "INPEX",
+      "forecastProbability": 52,
+      "actualOpen": 3905,
+      "actualHigh": 3954,
+      "actualLow": 3879,
+      "latestVerifiedPrice": 3880,
+      "latestVerifiedTime": "15:23",
+      "swingPnlPct": -0.23,
+      "holdingStatus": "not taken",
+      "invalidationStatus": "not invalidated",
+      "reviewNote": "前場は上昇したが終盤失速。原油安に逆行する強さは一時的で、スイング優先度は電線より低かった。"
+    }
+  ],
+  "missedMover": {
+    "code": "5801",
+    "name": "古河電気工業",
+    "classificationMorning": "Sector Alignmentで拾うべきだった",
+    "classificationIntraday": "Sector Alignment + Fresh Catalyst",
+    "previousClose": 3625,
+    "close": 4000,
+    "closePct": 10.34,
+    "tradeable": true,
+    "mechanicallyCatchableMorning": true,
+    "whyMissedMorning": "朝は非鉄金属を強い業種と認識しながら、電線・AIインフラをNVIDIA決算前デリスキングで冷たい業種に分類した。このサブテーマ判定が矛盾していた。",
+    "intradayCatalyst": "11:05に米系大手証券が強気継続・目標株価7,900円とするレーティング情報が公表され、既に強かった電線セクターへFresh Catalystが追加された。"
+  },
+  "bestLearningTrade": {
+    "code": "5801",
+    "name": "古河電気工業",
+    "buyExecutions": [
+      {"qty": 100, "price": 3868.0, "venue": "JAX"},
+      {"qty": 100, "price": 3867.9, "venue": "JAX"}
+    ],
+    "quantity": 200,
+    "averageBuyPrice": 3867.95,
+    "sellPrice": 3955,
+    "sellQuantity": 200,
+    "derivedGrossRealizedPnl": 17410,
+    "initialStop": 3835,
+    "initialProfitTarget": "3950-3960, strong case 4000",
+    "visiblePostEntryLow": 3847,
+    "sessionClose": 4000,
+    "sessionClosePct": 10.34,
+    "initialRiskYen": 6590,
+    "rMultipleDerived": 2.64,
+    "maeYenDerivedFromVisibleLow": -4190,
+    "maeRDerived": -0.64,
+    "mfeYenToCloseDerived": 26410,
+    "mfeRToCloseDerived": 4.01,
+    "mfeCaptureRateDerivedPct": 65.9,
+    "missedProfitVsCloseYen": 9000,
+    "assessment": "買いは確認条件3,875円よりやや早かったが、3,838-3,850円帯の押し目とMA25支持が機能し、セクター連動も強かった。3,955円売却は事前利益目標3,950-3,960円に沿っており判断ミスではない。一方、1R到達後も出来高・同業連動・高値切り上げが継続し、11:05の強気レーティングも追加されたため、固定利確ではなく5分足安値/MA25によるトレーリングへ切り替えれば4,000円まで追えた可能性がある。",
+    "overnightAssessment": "終値4,000円の高値引けは翌日Continuationに好材料だが、8/26 NVIDIA決算というイベントリスクがあるため、デイトレを後からスイングへ変更して全200株を持ち越すべきだったとは断定しない。"
+  },
+  "holdingsAtClose": [
+    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"averageCost":255,"price":252,"unrealizedPnl":-2400},
+    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119,"price":129,"unrealizedPnl":10000},
+    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"price":3114,"unrealizedPnl":-6490}
+  ],
+  "portfolioAtClose": {
+    "estimatedCost": 952290,
+    "estimatedMarketValue": 953400,
+    "totalUnrealizedPnl": 1110
+  },
+  "lessons": {
+    "good": [
+      "古河電工の押し目を場中に再評価し、200株で実際に利益を確保できた。",
+      "3,835円というチャート根拠のある損切りを維持し、含み損時にも撤退基準を遠ざけなかった。",
+      "3,955円の売却は事前に設定した利益目標内で、約2.64Rを確保した。"
+    ],
+    "improve": [
+      "朝のSector Alignmentを東証33業種だけで止めず、非鉄金属内を電線・光通信、製錬、資源に分解する。",
+      "場中のレーティング・目標株価変更をFresh Catalystとして即時検知する。11:05の古河電工強気継続・目標7,900円は利益を伸ばす判断材料だった。",
+      "1R到達後、セクター首位・同業連動・出来高・高値切り上げが継続する場合は固定目標で全決済せず、全株を5分足直近安値またはMA25でトレーリングする選択肢を優先する。"
+    ],
+    "newRules": [
+      "非鉄金属は電線・光通信インフラ／製錬・半導体材料／資源の3サブテーマに最低限分解して相対強度を比較する。",
+      "保有中に証券会社レーティング・目標株価変更が出た場合、材料方向と出来高反応を確認し、既存の利確目標を機械的に維持するかトレーリングへ切り替えるか再判定する。",
+      "1R超かつ当日業種上位・同業2社以上上昇・5分足MA25上・高値切り上げなら、利益を伸ばすモードへ移行する。"
+    ],
+    "nextWatch": [
+      "古河電工：4,000円を翌朝支持化できるか。GUが大きすぎる場合は追わず、3,950-4,000円の押しとVWAPを確認。",
+      "フジクラ・住友電工：古河と同時に強ければ電線テーマ継続。NVIDIA決算前後のギャップリスクを考慮。",
+      "ネクソン：3,146円取得単価回復、3,150-3,160円突破の有無。",
+      "篠崎屋：129円維持と132-137円再試行。",
+      "トランスジェニック：252円防衛、追加ナンピンは行わない。"
+    ]
+  },
+  "sources": [
+    {"name":"ユーザーiSPEED画像","note":"古河電工の売買・終値4,000円、保有3銘柄の15:31表示を正本として使用"},
+    {"name":"株予報Pro","note":"2026-08-25 11:05 古河電工、米系大手証券の強気継続・目標株価7,900円"},
+    {"name":"フィスコ/みんかぶ","note":"前場・後場の市場概況、非鉄金属上位、古河電工・フジクラ・住友電工の強さ"}
+  ]
+}
