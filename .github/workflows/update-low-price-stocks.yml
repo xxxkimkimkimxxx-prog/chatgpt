@@ -51,6 +51,8 @@ jobs:
           assert len({x['symbol'] for x in stocks}) == len(stocks), 'Duplicate symbols found'
           compact = Path('stock-dashboard/low-price-map/compact.tsv').read_text(encoding='utf-8').splitlines()
           assert len(compact) == len(stocks) + 1, 'Compact export row count failed'
+          insights = json.loads(Path('stock-dashboard/low-price-map/insights.json').read_text(encoding='utf-8'))
+          assert insights['counts']['total'] == len(stocks), 'Insights count failed'
           print('validated:', len(stocks), 'stocks')
           PY
 
@@ -60,7 +62,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add stock-dashboard/low-price-map/data.json stock-dashboard/low-price-map/compact.tsv
+          git add stock-dashboard/low-price-map/data.json stock-dashboard/low-price-map/compact.tsv stock-dashboard/low-price-map/insights.json
           if git diff --cached --quiet; then
             echo "No snapshot change"
             exit 0
