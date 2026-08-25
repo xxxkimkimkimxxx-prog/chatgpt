@@ -203,7 +203,7 @@ def normalize(payload):
             "sector_raw": values.get("sector"),
             "industry": values.get("industry.tr") or values.get("industry") or "未分類",
             "industry_raw": values.get("industry"),
-            "market": values.get("market") or values.get("exchange") or symbol.split(":")[0],
+            "market": values.get("exchange") or symbol.split(":")[0] or values.get("market") or "未分類",
             "perf_1y": round_or_none(values.get("Perf.Y"), 2),
         }
         row["flags"] = make_flags(row)
