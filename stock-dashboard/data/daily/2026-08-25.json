@@ -1,30 +1,37 @@
 {
   "date":"2026-08-25",
   "generatedAtJST":"2026-08-25 06:28",
+  "reviewUpdatedAtJST":"2026-08-25 15:31",
   "marketStance":"中立〜やや弱気。CME日経先物は65,370円で大証終値比-70円と指数の寄りは小動き想定だが、Nasdaq -0.76%・半導体安、NVIDIA決算前のデリスキングが日本の半導体・AIインフラ株の重し。対してDow +0.26%、米長期金利低下、ドル円159円台前半はバリュー・輸出株を支える。指数より業種選別を優先。",
   "macroSummary":"米国8/24終値はDow 53,417.16 (+0.26%)、S&P500 7,652.86 (-0.28%)、Nasdaq 25,980.19 (-0.76%)。NVIDIA決算（8/26）前に半導体が下落。CME日経先物65,370円（大証比-70円）。米10年債は約4.70%へ低下。ドル円は159円台前半。WTIは85ドル前後で約2%下落。8/24東京ではJX金属+5.43%、住友金属鉱山+6.64%と非鉄が強く、川崎汽船は3,465円(+1.76%)で年初来高値更新。一方AI・電線はNVIDIAイベント前のポジション縮小に注意。",
   "hotSectors":["非鉄金属・先端材料（前日強さの継続確認）","海運（モメンタム継続確認）","銀行・バリュー（米金融株相対優位、金利低下との綱引き）"],
   "coldSectors":["半導体・AI高ベータ（NVIDIA決算前）","電線・AIインフラ（イベント前デリスキング）","鉱業・石油（WTI約2%下落）"],
   "holdingsReview":[
-    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"averageCost":255,"lastClose":253,"stance":"保有管理優先・追加ナンピン停止","keyLevel":"252円安値、249/246円支持。260〜264円回復で改善。"},
-    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119,"lastClose":124,"stance":"利益保護優先","keyLevel":"122円支持、129円方向への回復を監視。"},
-    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"lastClose":3105,"stance":"保有継続、買い増しは突破確認後","keyLevel":"3,100〜3,120円が抵抗。3,120円突破で3,145〜3,150円、3,080円割れで3,060円警戒。"}
+    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"averageCost":255,"lastClose":253,"stance":"保有管理優先・追加ナンピン停止","keyLevel":"252円安値、249/246円支持。260〜264円回復で改善。","actualCloseReference":252,"unrealizedPnlAtClose":-2400},
+    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119,"lastClose":124,"stance":"利益保護優先","keyLevel":"122円支持、129円方向への回復を監視。","actualCloseReference":129,"unrealizedPnlAtClose":10000},
+    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"lastClose":3105,"stance":"保有継続、買い増しは突破確認後","keyLevel":"3,100〜3,120円が抵抗。3,120円突破で3,145〜3,150円、3,080円割れで3,060円警戒。","actualCloseReference":3114,"unrealizedPnlAtClose":-6490}
   ],
   "daytradeCandidates":[
-    {"rank":1,"code":"5016","name":"JX金属","sector":"非鉄金属","probability":62,"confidence":"中","catalyst":"8/24に+5.43%、出来高2,727万株へ増加。住友金属鉱山も+6.64%でセクター横展開を確認。","risks":"夜間PTSは3,747円で終値比-1.03%。前日急騰後の利確、米ハイテク安。","entryCondition":"9:00〜9:10に3,643円（前日安値）を守り、VWAP回復。住友金属鉱山・DOWA等もプラス圏または相対強いこと。前日高値3,885円突破は出来高増加時のみ。","skipCondition":"3,643円割れ＋VWAP下で出来高増加、または非鉄同業が全面安。","morningCheck":"寄りGU/GD率、最初の10分高安、VWAP、出来高ペース、3,643/3,786/3,885円、住友金属鉱山・DOWA、板厚とスプレッド。"},
-    {"rank":2,"code":"9107","name":"川崎汽船","sector":"海運業","probability":59,"confidence":"中","catalyst":"8/24は+1.76%の3,465円で年初来高値圏。8/21の+7.3%後も高値更新しContinuation Momentum継続。","risks":"短期上昇が大きく過熱。高値掴みと寄り天。","entryCondition":"3,470円前日高値を出来高付きで突破するか、押し目で3,405〜3,385円を守ってVWAP回復。海運3社の連動を確認。","skipCondition":"3,385円割れ、VWAP下で戻りが弱い、海運業指数・同業が劣後。","morningCheck":"3,470/3,405/3,385円、VWAP、寄り10分出来高、商船三井・日本郵船、板・スプレッド。"}
+    {"rank":1,"code":"5016","name":"JX金属","sector":"非鉄金属","probability":62,"confidence":"中","catalyst":"8/24に+5.43%、出来高2,727万株へ増加。住友金属鉱山も+6.64%でセクター横展開を確認。","risks":"夜間PTSは3,747円で終値比-1.03%。前日急騰後の利確、米ハイテク安。","entryCondition":"9:00〜9:10に3,643円（前日安値）を守り、VWAP回復。住友金属鉱山・DOWA等もプラス圏または相対強いこと。前日高値3,885円突破は出来高増加時のみ。","skipCondition":"3,643円割れ＋VWAP下で出来高増加、または非鉄同業が全面安。","morningCheck":"寄りGU/GD率、最初の10分高安、VWAP、出来高ペース、3,643/3,786/3,885円、住友金属鉱山・DOWA、板厚とスプレッド。","actualOpen":3722,"actualHigh":3837,"actualLow":3676,"actualHighPct":1.35,"actualClosePct":null,"latestVerifiedPrice":3798,"latestVerifiedTime":"15:07","hit":false,"tradeTaken":false,"realizedPnl":0,"reviewNote":"非鉄金属という業種方向は合っていたが、資金の主役は製錬・素材ではなく電線・光通信インフラ。東証33業種だけでなくサブテーマ相対強度が必要。終値は15:31時点で独立確認未反映のためactualClosePctはnull。"},
+    {"rank":2,"code":"9107","name":"川崎汽船","sector":"海運業","probability":59,"confidence":"中","catalyst":"8/24は+1.76%の3,465円で年初来高値圏。8/21の+7.3%後も高値更新しContinuation Momentum継続。","risks":"短期上昇が大きく過熱。高値掴みと寄り天。","entryCondition":"3,470円前日高値を出来高付きで突破するか、押し目で3,405〜3,385円を守ってVWAP回復。海運3社の連動を確認。","skipCondition":"3,385円割れ、VWAP下で戻りが弱い、海運業指数・同業が劣後。","morningCheck":"3,470/3,405/3,385円、VWAP、寄り10分出来高、商船三井・日本郵船、板・スプレッド。","actualOpen":3511,"actualHigh":3591,"actualLow":3447,"actualHighPct":3.64,"actualClosePct":null,"latestVerifiedPrice":3452,"latestVerifiedTime":"13:46","hit":true,"tradeTaken":false,"realizedPnl":0,"reviewNote":"朝の3,470円突破条件を満たし9:15に3,591円まで上昇。Continuation仮説は機能したが、その後失速。実戦では高値追いではなく突破後のVWAP維持確認が必要。"}
   ],
   "swingCandidates":[
-    {"rank":1,"code":"5803","name":"フジクラ","sector":"非鉄金属・電線","probability":55,"confidence":"中低","catalyst":"8/24終値5,016円まで-5.00%調整し、NVIDIA決算前のAIイベントリスク縮小を相当程度反映。AIデータセンター長期需要は残る。","risks":"米半導体が8/24も下落。NVIDIA決算期待未達ならギャップダウン余地。","entryCondition":"4,973円を守り、5,060円→5,100円を回復。安全策は5,144円奪回後。","skipCondition":"4,973円を出来高付きで割る、電線3社が揃って弱い。","holdingPeriod":"3営業日〜3週間。NVIDIA決算通過後の反応を最優先。","invalidCondition":"4,973円割れ定着、またはNVIDIA決算後にAI設備投資期待が明確に後退。"},
-    {"rank":2,"code":"1605","name":"INPEX","sector":"鉱業","probability":52,"confidence":"中低","catalyst":"3,800〜3,860円は直近支持帯で押し目候補。","risks":"WTIが8/24に約2%下落し85ドル前後。原油との逆行買いは避ける。","entryCondition":"3,838円〜3,800円を守り、3,860〜3,870円回復。原油も下げ止まること。","skipCondition":"3,800円割れ定着、WTI続落、鉱業指数劣後。","holdingPeriod":"3営業日〜3週間。原油反発が確認できる期間のみ。","invalidCondition":"原油続落＋3,800円終値割れ。"}
+    {"rank":1,"code":"5803","name":"フジクラ","sector":"非鉄金属・電線","probability":55,"confidence":"中低","catalyst":"8/24終値5,016円まで-5.00%調整し、NVIDIA決算前のAIイベントリスク縮小を相当程度反映。AIデータセンター長期需要は残る。","risks":"米半導体が8/24も下落。NVIDIA決算期待未達ならギャップダウン余地。","entryCondition":"4,973円を守り、5,060円→5,100円を回復。安全策は5,144円奪回後。","skipCondition":"4,973円を出来高付きで割る、電線3社が揃って弱い。","holdingPeriod":"3営業日〜3週間。NVIDIA決算通過後の反応を最優先。","invalidCondition":"4,973円割れ定着、またはNVIDIA決算後にAI設備投資期待が明確に後退。","actualOpen":4995,"actualHigh":5357,"actualLow":4968,"actualHighPct":6.80,"actualClosePct":null,"latestVerifiedPrice":5294,"latestVerifiedTime":"15:02","hit":true,"tradeTaken":false,"realizedPnl":0,"holdingStatus":"not taken","daysHeld":0,"invalidationStatus":"not invalidated","reviewNote":"4,973円支持条件がほぼ機能し大幅反発。NVIDIA決算前リスクを朝は重く見すぎた。寄り後の出来高と古河・住友電工の同業連動をもっと早く再加点すべきだった。"},
+    {"rank":2,"code":"1605","name":"INPEX","sector":"鉱業","probability":52,"confidence":"中低","catalyst":"3,800〜3,860円は直近支持帯で押し目候補。","risks":"WTIが8/24に約2%下落し85ドル前後。原油との逆行買いは避ける。","entryCondition":"3,838円〜3,800円を守り、3,860〜3,870円回復。原油も下げ止まること。","skipCondition":"3,800円割れ定着、WTI続落、鉱業指数劣後。","holdingPeriod":"3営業日〜3週間。原油反発が確認できる期間のみ。","invalidCondition":"原油続落＋3,800円終値割れ。","actualOpen":3905,"actualHigh":3954,"actualLow":3879,"actualHighPct":1.67,"actualClosePct":-0.23,"latestVerifiedPrice":3880,"latestVerifiedTime":"15:23","hit":false,"tradeTaken":false,"realizedPnl":0,"holdingStatus":"not taken","daysHeld":0,"invalidationStatus":"not invalidated","reviewNote":"前場は上昇したが終盤失速。原油安に逆行する相対強度は継続せず、電線テーマより期待値が低かった。"}
   ],
-  "riskPlan":{"dailyLossLimitYen":50000,"perTradeLossLimitYen":10000,"singleNameCapitalLimitYen":1500000,"monthOfficialRealizedPnlYen":42500,"previousBusinessDayRealizedPnl":"8/24単日確定値はGitHub未登録のため推測しない","consecutiveStopLosses":"GitHub未登録のため未確認","lossCapacityTodayYen":50000,"policy":"保有3銘柄の管理を最優先。寄り成行禁止。9:00〜9:10の資金流入業種を見て朝候補を再ランキング。1回の想定損失は1万円以内。"},
+  "intradayDiscoveredCandidates":[
+    {"code":"5801","name":"古河電気工業","classification":"Sector Alignment + Fresh Catalyst","morningCatchable":true,"morningMissReason":"非鉄を強気としながら電線・AIインフラを冷たい業種に分類したため候補化できなかった。","intradayCatalyst":"11:05 米系大手証券が強気継続、目標株価7,900円。","actualClose":4000,"actualClosePct":10.34,"tradeTaken":true,"quantity":200,"averageBuy":3867.95,"sell":3955,"realizedPnl":17410,"realizedPnlStatus":"derived gross provisional","reviewNote":"押し目買いは成功。3,955円売却は事前利益目標内。1R後のトレーリングなら4,000円まで追えた余地。"}
+  ],
+  "riskPlan":{"dailyLossLimitYen":50000,"perTradeLossLimitYen":10000,"singleNameCapitalLimitYen":1500000,"monthOfficialRealizedPnlYen":42500,"previousBusinessDayRealizedPnl":"8/24単日確定値はGitHub未登録のため推測しない","consecutiveStopLosses":"GitHub未登録のため未確認","lossCapacityTodayYen":50000,"policy":"保有3銘柄の管理を最優先。寄り成行禁止。9:00〜9:10の資金流入業種を見て朝候補を再ランキング。1回の想定損失は1万円以内。","todayDerivedRealizedPnl":17410,"todayDerivedPnlStatus":"provisional until iSPEED realized P/L confirmation"},
   "sources":[
     {"name":"Reuters 米国株 2026-08-24","url":"https://www.reuters.com/business/sp-nasdaq-futures-slip-markets-await-iran-sanctions-nvidia-results-2026-08-24/"},
     {"name":"Reuters NVIDIA/Jackson Hole 2026-08-21","url":"https://www.reuters.com/business/wall-st-week-ahead-nvidia-earnings-jackson-hole-test-pillars-stock-rally-2026-08-21/"},
     {"name":"みんかぶ 米国株概況 2026-08-25 05:32","url":"https://minkabu.jp/news/4603909"},
     {"name":"みんかぶ NY為替概況 2026-08-25 05:50","url":"https://minkabu.jp/news/4603913"},
-    {"name":"Yahoo!ファイナンス JX金属 8/24","url":"https://finance.yahoo.co.jp/quote/5016.T/history"},
-    {"name":"野村證券 川崎汽船 8/24","url":"https://quote.nomura.co.jp/nomura/cgi-bin/parser.pl?MKTN=T&QCODE=9107&TEMPLATE=nomura_tp_kabu_01"}
+    {"name":"Yahoo!ファイナンス JX金属","url":"https://finance.yahoo.co.jp/quote/5016.T"},
+    {"name":"Yahoo!ファイナンス フジクラ","url":"https://finance.yahoo.co.jp/quote/5803.T"},
+    {"name":"Yahoo!ファイナンス INPEX","url":"https://finance.yahoo.co.jp/quote/1605.T"},
+    {"name":"株予報Pro 古河電工レーティング 2026-08-25 11:05","url":"https://kabuyoho.jp/sp/consNewsDetail?cat=3&nid=5801_20260825_rep_20260825_110505_9"},
+    {"name":"ユーザーiSPEED画像","note":"古河電工の売買・終値4,000円、保有銘柄の15:31表示を正本として使用"}
   ]
 }
