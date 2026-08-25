@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-24 21:04 JST",
-  "source": "iSPEED closing portfolio snapshot recorded in 2026-08-24 review",
+  "asOf": "2026-08-25 10:34 JST",
+  "source": "iSPEED portfolio snapshot supplied by user at 10:34",
   "positions": [
     {
       "code": "2342",
@@ -8,31 +8,31 @@
       "quantity": 800,
       "averageCost": 255.0,
       "referencePrice": 253,
-      "referencePriceObservedAt": "2026-08-24 close",
+      "referencePriceObservedAt": "2026-08-25 10:34 JST",
       "unrealizedPnl": -1600,
-      "management": "8/24に252円で300株＋200株を追加し合計800株・平均255円。252円が当日安値。追加は同日2回となったため、今後の追加ナンピンは行わず、249円・246円の支持帯と260〜264円回復を確認する。"
+      "management": "追加ナンピン停止。253円では取得単価255円の直下。252円維持を確認し、249円・246円割れは弱化。255円回復後に260円方向を確認する。"
     },
     {
       "code": "2926",
       "name": "篠崎屋",
       "quantity": 1000,
       "averageCost": 119.0,
-      "referencePrice": 124,
-      "referencePriceObservedAt": "2026-08-24 close",
-      "unrealizedPnl": 5000,
-      "management": "利益保護優先。119円の取得単価を上回る状態を維持。122円近辺の支持と129円方向への再上昇を確認する。"
+      "referencePrice": 131,
+      "referencePriceObservedAt": "2026-08-25 10:34 JST",
+      "unrealizedPnl": 12000,
+      "management": "保有3銘柄で最も強い。利益保護優先。128〜129円を短期支持として、132円再突破なら137円方向を監視。追加買いより既存利益の保全を優先する。"
     },
     {
       "code": "3659",
       "name": "ネクソン",
       "quantity": 200,
       "averageCost": 3146.45,
-      "referencePrice": 3105,
-      "referencePriceObservedAt": "2026-08-24 closing portfolio snapshot",
-      "unrealizedPnl": -8290,
-      "management": "保有継続。前場5分足ではMA5>MA25>MA75まで改善したが3,100〜3,120円で上値が重かった。3,120円突破で3,145〜3,150円、さらに3,165〜3,170円を確認。3,080円割れは3,060円再試行を警戒。"
+      "referencePrice": 3151,
+      "referencePriceObservedAt": "2026-08-25 10:34 JST",
+      "unrealizedPnl": 910,
+      "management": "10時前後の3,090円近辺から急回復し取得単価を奪回。3,145〜3,150円を維持できれば改善継続。3,165〜3,180円を次の上値目安とし、3,130円割れでは戻り失速を警戒。買い増しは上値定着確認後。"
     }
   ],
-  "totalUnrealizedPnl": -4890,
-  "note": "価格は自動ライブ更新ではなく、当日のiSPEED確認値・終値スナップショットを正本として反映。"
+  "totalUnrealizedPnl": 11310,
+  "note": "価格は自動ライブ更新ではなく、ユーザーのiSPEED実画面を正本として反映。"
 }
