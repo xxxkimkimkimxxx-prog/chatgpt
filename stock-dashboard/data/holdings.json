@@ -1,16 +1,16 @@
 {
-  "asOf": "2026-08-25 10:34 JST",
-  "source": "iSPEED portfolio snapshot supplied by user at 10:34",
+  "asOf": "2026-08-25 12:18 JST",
+  "source": "iSPEED portfolio snapshot supplied by user at 12:18",
   "positions": [
     {
       "code": "2342",
       "name": "トランスジェニックグループ",
       "quantity": 800,
       "averageCost": 255.0,
-      "referencePrice": 253,
-      "referencePriceObservedAt": "2026-08-25 10:34 JST",
-      "unrealizedPnl": -1600,
-      "management": "追加ナンピン停止。253円では取得単価255円の直下。252円維持を確認し、249円・246円割れは弱化。255円回復後に260円方向を確認する。"
+      "referencePrice": 252,
+      "referencePriceObservedAt": "2026-08-25 12:18 JST",
+      "unrealizedPnl": -2400,
+      "management": "前場は252円まで低下。追加ナンピン停止を継続。252円が目先の防衛線で、249円・246円割れは弱化。255円回復までは攻めない。"
     },
     {
       "code": "2926",
@@ -18,21 +18,33 @@
       "quantity": 1000,
       "averageCost": 119.0,
       "referencePrice": 131,
-      "referencePriceObservedAt": "2026-08-25 10:34 JST",
+      "referencePriceObservedAt": "2026-08-25 12:18 JST",
       "unrealizedPnl": 12000,
-      "management": "保有3銘柄で最も強い。利益保護優先。128〜129円を短期支持として、132円再突破なら137円方向を監視。追加買いより既存利益の保全を優先する。"
+      "management": "前場を131円で維持し、保有利益の中心。128〜129円を利益保護帯、132円再突破なら137円方向を監視。追加買いより利益保全を優先。"
     },
     {
       "code": "3659",
       "name": "ネクソン",
       "quantity": 200,
       "averageCost": 3146.45,
-      "referencePrice": 3151,
-      "referencePriceObservedAt": "2026-08-25 10:34 JST",
-      "unrealizedPnl": 910,
-      "management": "10時前後の3,090円近辺から急回復し取得単価を奪回。3,145〜3,150円を維持できれば改善継続。3,165〜3,180円を次の上値目安とし、3,130円割れでは戻り失速を警戒。買い増しは上値定着確認後。"
+      "referencePrice": 3132,
+      "referencePriceObservedAt": "2026-08-25 12:18 JST",
+      "unrealizedPnl": -2890,
+      "management": "10:34の3,151円から前引け後表示3,132円へ失速し、取得単価を再び下回った。後場は3,145〜3,150円奪回を改善条件、3,120円割れで再弱化を警戒。買い増しは見送る。"
+    },
+    {
+      "code": "5801",
+      "name": "古河電気工業",
+      "quantity": 200,
+      "averageCost": 3867.95,
+      "referencePrice": 3890,
+      "referencePriceObservedAt": "2026-08-25 12:18 JST",
+      "unrealizedPnl": 4410,
+      "management": "本日前場に新規保有。場中ランキング上位の電線・光通信インフラ資金流入を受けたポジション。平均3,867.95円に対し3,890円で含み益。後場は3,870円前後を取得単価防衛帯として、高値更新継続かを確認。急騰銘柄のため買い増しは押し目確認なしでは行わない。"
     }
   ],
-  "totalUnrealizedPnl": 11310,
+  "totalUnrealizedPnl": 11120,
+  "estimatedPortfolioCost": 1725880,
+  "estimatedPortfolioMarketValue": 1737000,
   "note": "価格は自動ライブ更新ではなく、ユーザーのiSPEED実画面を正本として反映。"
 }
