@@ -1,11 +1,158 @@
 {
-  "asOf":"2026-08-26 06:30 JST",
-  "continuity":"8/25 review carried forward: subdivide nonferrous into wire/optical vs smelting/materials; intraday analyst rating changes treated as Fresh Catalyst; after +1R use trailing when sector/peers/trend remain strong.",
-  "goalProgress":{"target":300000,"start":"2026-08-01","confirmedThrough20260823":42500,"provisional20260825":17410,"cumulativeProvisional":59910,"remaining":240090,"progressPct":20.0,"note":"8/25 Furukawa P/L remains provisional until iSPEED realized P/L confirmation."},
-  "macro":{"nikkeiClose":65856.43,"cmeNikkei0403":66020,"cmeVsOsakaPct":0.12,"nasdaqClose":26145.47,"nasdaqPct":0.64,"sp500Close":7676.62,"sp500Pct":0.31,"us10yApprox":4.64,"usdJpyOvernight":"159.2 area","wtiApprox":82.3,"wtiPct":-3.2,"read":"US tech rebound and lower yields are supportive, but Nvidia earnings due after the US session makes AI-linked overnight risk high. Oil weakness is a headwind for energy and a relative tailwind for transport/input-cost beneficiaries."},
-  "candidatePipelines":{"freshCatalyst":[{"code":"5801","name":"古河電工","catalyst":"8/25 11:05 US broker bullish maintained, target 7,900 yen","status":"continuation into 8/26"},{"code":"5803","name":"フジクラ","catalyst":"8/25 14:05 US broker bullish maintained, target 8,200 yen","status":"continuation into 8/26"}],"continuationMomentum":[{"code":"5801","name":"古河電工","close":4000,"pct":10.34,"pts":4010.5,"ptsPct":0.26},{"code":"593A","name":"ティアフォー","close":1391,"pct":21.48,"pts":1489,"ptsPct":7.05},{"code":"3103","name":"ユニチカ","close":1543,"pct":13.71,"pts":1556,"ptsPct":0.84},{"code":"475A","name":"ギミック","close":697,"pct":16.75,"pts":725,"ptsPct":4.02}],"sectorAlignment":[{"theme":"電線・光通信","stance":"positive but do not chase gap-ups","names":["古河電工","フジクラ","住友電工"]},{"theme":"AI/半導体","stance":"US tech rebound positive intraday; Nvidia event risk blocks aggressive swing adds before results"},{"theme":"energy","stance":"negative/underweight due WTI ~-3.2%"}]},
-  "rankings":{"daytradeUpside":[{"rank":1,"code":"593A","name":"ティアフォー","prob":64,"warning":"PTS +7.05%, very overheated"},{"rank":2,"code":"5801","name":"古河電工","prob":62,"warning":"+10.34% prior day; 4,000 pivot"},{"rank":3,"code":"5803","name":"フジクラ","prob":59,"warning":"peer confirmation and 5,357 breakout required"},{"rank":4,"code":"3103","name":"ユニチカ","prob":56,"warning":"very high volatility; event-stock treatment"}],"practicalDaytrade":[{"rank":1,"code":"5801","name":"古河電工","prob":61,"condition":"9:00-9:10 hold 4,000 and reclaim VWAP; Furukawa/Fujikura/Sumitomo Electric synchronized strength","avoid":"large GU >~3%, loss of 4,000 with heavy sell volume"},{"rank":2,"code":"5803","name":"フジクラ","prob":58,"condition":"hold 5,250-5,290 and reclaim VWAP; break 5,357 with volume","avoid":"gap-up chase or wire peers diverge"},{"rank":3,"code":"593A","name":"ティアフォー","prob":48,"condition":"after initial volatility, VWAP reclaim and first 10-min high breakout with tight spread","avoid":"PTS premium persists into open, wide spread, first-10-min low break"},{"rank":4,"code":"3103","name":"ユニチカ","prob":47,"condition":"1,500s hold and VWAP reclaim with volume","avoid":"1,500 loss or repeated upper wicks"}],"swing3to10":[{"rank":1,"code":"5801","name":"古河電工","prob":61,"confidence":"medium-high","hold":"3-10 sessions","entry":"not at open; 3,950-4,000 support confirmation or 4,113 breakout after consolidation","stop":3890,"target1":4113,"targetFinal":4300,"budget":400000,"riskApprox":11000,"rewardApprox":30000,"rrApprox":2.7,"shelfLife":"several sessions, but Nvidia result can reset AI infrastructure sentiment","pricedIn":"low-to-medium before 8/25 rally; 5-session pre-rally return -8.4%, 10-session approx +1.2%; now short-term heat is high"},{"rank":2,"code":"5803","name":"フジクラ","prob":59,"confidence":"medium","hold":"3-10 sessions","entry":"5,200-5,300 support and VWAP/peer confirmation or 5,357 breakout after consolidation","stop":5120,"target1":5500,"targetFinal":5800,"budget":530000,"riskApprox":17000,"rewardApprox":50000,"rrApprox":2.9,"shelfLife":"several sessions; Nvidia result is key event","pricedIn":"pre-8/25 was weak: 5-session about -10.3%, 10-session about -5.2%, so rebound had room; after +5.5% one-day move heat is medium"},{"rank":3,"code":"3659","name":"ネクソン","prob":56,"confidence":"medium","hold":"3-10 sessions","entry":"existing position only; no add. 3,146-3,160 reclaim improves thesis","stop":3050,"target1":3200,"targetFinal":3300,"budget":0,"riskApprox":19290,"rewardApprox":30710,"rrApprox":1.6,"shelfLife":"through dividend/corporate-action thesis; monitor price response","pricedIn":"large August rerating already occurred; medium-high"}],"swing2to6weeks":[{"rank":1,"code":"5803","name":"フジクラ","prob":60,"confidence":"medium","hold":"2-6 weeks","entry":"post-Nvidia confirmation preferred; 5,000-5,200 support or clean 5,357 breakout","stop":4950,"target1":5800,"targetFinal":6300,"budget":520000,"riskApprox":25000,"rewardApprox":110000,"rrApprox":4.4,"shelfLife":"weeks if AI data-center capex thesis remains intact","pricedIn":"medium"},{"rank":2,"code":"5801","name":"古河電工","prob":58,"confidence":"medium","hold":"2-6 weeks","entry":"post-event pullback holds 3,850-4,000 or 4,113 breakout","stop":3780,"target1":4300,"targetFinal":4700,"budget":400000,"riskApprox":22000,"rewardApprox":70000,"rrApprox":3.2,"shelfLife":"weeks if optical/network capex remains strong","pricedIn":"medium after +10.34%"},{"rank":3,"code":"3659","name":"ネクソン","prob":55,"confidence":"medium-low","hold":"2-6 weeks","entry":"hold existing only; no averaging down","stop":2980,"target1":3300,"targetFinal":3500,"budget":0,"riskApprox":33290,"rewardApprox":70710,"rrApprox":2.1,"shelfLife":"weeks","pricedIn":"medium-high"}]},
-  "holdings":[{"code":"2342","name":"トランスジェニックG","qty":800,"avg":255,"last":252,"stance":"hold/defensive; no more averaging down","riskLine":246},{"code":"2926","name":"篠崎屋","qty":1000,"avg":119,"last":129,"pts":132,"stance":"protect profit; 137 retest if 129-132 holds","riskLine":124},{"code":"3659","name":"ネクソン","qty":200,"avg":3146.45,"last":3114,"pts":3111.1,"stance":"hold, no add; reclaim 3146-3160 needed","riskLine":3050}],
-  "portfolio":{"costBasisApprox":952290,"existingStopDownsideFromLastApprox":22600,"newTradeRule":"one new position at a time; keep per-trade loss <=10,000 yen and daily loss <=50,000 yen. Swing reference stops above are scenario invalidation levels and position size must be reduced if their full-size risk exceeds the per-trade cap."},
-  "executionChecklist":"For every daytrade candidate at 9:00-9:10 record first-10-min high/low, VWAP, volume vs prior day, peer direction, board depth, spread. Buy only after the stated confirmation; do not pre-commit a buy price at 06:30."
+  "date": "2026-08-26",
+  "generatedAtJST": "2026-08-26 06:32",
+  "marketStance": "中立〜やや強気（デイトレ）／AI関連の持越しは慎重。米国株はテック主導で反発し、日経先物も現物終値を小幅上回る。一方、NVIDIA決算が今夜の米国時間に控えるため、電線・AI・半導体は前日急騰分の利確とイベント前ポジション調整が入りやすい。寄り成行は避け、9:00〜9:10の相対強度とVWAPを重視する。",
+  "macroSummary": "8/25米国終値はS&P500 7,676.62（+0.31%）、Nasdaq 26,145.47（+0.64%）、Dow 53,572.91（+0.29%）。米10年債利回りは約4.65%へ低下し、テックに追い風。WTIは82.36ドル、Brentは88.58ドルと3%超下落し、エネルギー株には逆風。USD/JPYは8/26未明に159.2円近辺。8/25の日経平均は65,856.43（+0.50%）、TOPIX 4,093.67（+0.50%）。大阪日経225先物は8/26 02:00時点66,000で現物比約+144円。8/25の東証33業種では非鉄金属+2.83%、保険+1.85%、証券+1.63%、銀行+1.30%が上位、輸送用機器-1.29%、海運-0.91%が弱かった。",
+  "hotSectors": [
+    "電線・光通信／非鉄金属：古河電工、フジクラ、住友電工。前日強い資金流入が継続。ただしNVIDIA決算前で持越しリスク大。",
+    "金融：保険・証券・銀行。8/25はセクター全体が上昇し、AI以外の資金逃避先として相対的に強い。",
+    "情報・通信：8/25業種+1.14%。米テック反発が支援。"
+  ],
+  "coldSectors": [
+    "鉱業・石油：WTI/Brentが3%超下落。原油反発確認前は逆張りしない。",
+    "輸送用機器：8/25業種最下位。円安は追い風だが、セクターの相対弱さを優先。",
+    "半導体高ベータの持越し：NVIDIA決算前でギャップリスクが大きい。"
+  ],
+  "holdingsReview": [
+    {
+      "code": "2342",
+      "name": "トランスジェニックグループ",
+      "quantity": 800,
+      "averageCost": 255,
+      "lastClose": 252,
+      "pts": 253,
+      "unrealizedPnlAtLast": -2400,
+      "stance": "防御優先。追加ナンピンなし。",
+      "keyLevels": "251〜252円を維持し255円回復なら改善。249円割れで弱化、246円割れ定着は撤退検討を強める。",
+      "action": "寄りで253円前後なら静観。255円を出来高付きで奪回しない限り新規追加はしない。"
+    },
+    {
+      "code": "2926",
+      "name": "篠崎屋",
+      "quantity": 1000,
+      "averageCost": 119,
+      "lastClose": 129,
+      "pts": 132,
+      "unrealizedPnlAtLast": 10000,
+      "stance": "利益保護を最優先しつつ上値追随。",
+      "keyLevels": "129〜130円を支持化できれば134円→137円。134円突破は出来高増加が条件。128円割れから戻れない場合は一部利確を優先。",
+      "action": "PTS 132円は好材料だが、薄いPTSだけで判断しない。9:00〜9:10に129円を守りVWAP上なら保有継続。134〜137円では一部利確候補。"
+    },
+    {
+      "code": "3659",
+      "name": "ネクソン",
+      "quantity": 200,
+      "averageCost": 3146.45,
+      "lastClose": 3114,
+      "pts": 3111.1,
+      "unrealizedPnlAtLast": -6490,
+      "stance": "保有継続、買い増しなし。",
+      "keyLevels": "3,146〜3,160円回復で改善。8/25安値3,084円が短期防衛線。3,080円割れ定着なら3,050円方向を警戒。",
+      "action": "PTSはほぼ横ばい。寄りで無理に処分せず、3,084円を割る売り圧力と出来高を確認する。"
+    }
+  ],
+  "daytradeCandidates": [
+    {
+      "rank": 1,
+      "code": "5801",
+      "name": "古河電気工業",
+      "sector": "非鉄金属・光通信",
+      "probability": 61,
+      "confidence": "中高",
+      "catalyst": "8/25は+10.34%の4,000円引け、出来高4,146万株、夜間PTS4,010.5円。非鉄金属が業種上昇率トップで、フジクラ・住友電工も上昇。米Nasdaq反発も追い風。",
+      "risks": "前日+10%超で短期過熱。NVIDIA決算前の利益確定とイベント前縮小。4,000円が心理的節目で失速しやすい。",
+      "entryCondition": "9:00〜9:10で4,000円前後を支持化し、VWAPを上回り、最初の10分高値を出来高付きで突破。フジクラ・住友電工も同時に強いこと。",
+      "skipCondition": "大幅GU（目安+3%以上）を寄りで追う、4,000円割れ後にVWAP回復できない、同業が逆行安、スプレッド拡大。",
+      "morningCheck": "最初の10分高値/安値、4,000円攻防、VWAP、出来高ペース、フジクラ・住友電工、日経/TOPIX、板厚、スプレッド。",
+      "riskReward": "100株を想定し、確認後エントリーから損切り幅を70〜90円以内（損失7,000〜9,000円）に収める。+120〜180円を狙える形のみ実行しRR1.5以上。"
+    },
+    {
+      "rank": 2,
+      "code": "5803",
+      "name": "フジクラ",
+      "sector": "非鉄金属・AIデータセンター",
+      "probability": 59,
+      "confidence": "中",
+      "catalyst": "8/25は5,292円（+5.50%）、出来高7,085万株、夜間PTS5,320円（+0.53%）。非鉄・AIインフラの資金流入継続候補。",
+      "risks": "8/25高値5,357円付近は戻り売りが出やすい。NVIDIA前の高値追いはギャップリスク。",
+      "entryCondition": "5,250〜5,290円を維持してVWAP回復、または5,357円を出来高付きで突破し5分足で定着。古河電工と住友電工の相対強度も確認。",
+      "skipCondition": "寄り大幅GUを追う、5,250円割れでVWAP下、5,357円で上ヒゲ連発、同業が崩れる。",
+      "morningCheck": "5,250/5,292/5,357円、最初の10分高安、VWAP、出来高、古河電工・住友電工、板・スプレッド。",
+      "riskReward": "100株で損切り幅70〜90円（7,000〜9,000円）以内。利益目標120〜180円以上が見込める形だけ。"
+    },
+    {
+      "rank": 3,
+      "code": "5802",
+      "name": "住友電気工業",
+      "sector": "非鉄金属・通信インフラ",
+      "probability": 57,
+      "confidence": "中",
+      "catalyst": "8/25は2,199.5円（+2.23%）、出来高1,704万株、PTS2,220円。古河電工・フジクラより過熱が小さく、同テーマの循環物色候補。",
+      "risks": "電線セクター全体が前日急騰しており連れ安リスク。NVIDIA前のポジション調整。",
+      "entryCondition": "2,200円前後を維持しVWAP上、2,211.5円（前日高値）〜2,220円PTS水準を出来高付きで突破。",
+      "skipCondition": "2,180円割れ＋VWAP下、古河・フジクラが同時に崩れる、出来高が前日比で極端に細い。",
+      "morningCheck": "2,200/2,211.5/2,220円、最初の10分高安、VWAP、出来高、電線3社の同方向性、板・スプレッド。",
+      "riskReward": "100〜300株で1回損失1万円以内。損切り幅25〜35円、利益目標45〜70円を目安にRR1.5以上。"
+    }
+  ],
+  "swingCandidates": [
+    {
+      "rank": 1,
+      "code": "5802",
+      "name": "住友電気工業",
+      "sector": "非鉄金属・通信インフラ",
+      "probability": 58,
+      "confidence": "中",
+      "catalyst": "AIデータセンター・通信インフラテーマの恩恵を受けつつ、古河電工・フジクラより前日上昇率が低く過熱度が相対的に小さい。",
+      "risks": "NVIDIA決算でAIインフラ需要見通しが悪化するとセクター全体がギャップダウン。",
+      "entryCondition": "本日中の新規持越しは原則見送り。8/27のNVIDIA結果確認後、2,180〜2,200円支持または2,220円超定着を確認して検討。",
+      "skipCondition": "NVIDIA決算後にAI設備投資見通しが弱い、2,150円割れ、電線3社が揃って相対弱化。",
+      "holdingPeriod": "1〜3週間",
+      "invalidCondition": "2,150円終値割れ、またはAI/通信CAPEXの投資仮説が後退。",
+      "profitTarget": "2,300〜2,380円を第1目標。",
+      "eventRisk": "8/27朝のNVIDIA決算、8/27日銀副総裁発言、8/28東京CPI。"
+    },
+    {
+      "rank": 2,
+      "code": "8604",
+      "name": "野村ホールディングス",
+      "sector": "証券・商品",
+      "probability": 55,
+      "confidence": "中低",
+      "catalyst": "8/25は1,571.5円（+2.11%）、出来高787万株。証券業は+1.63%で資金流入上位。AIイベントの直接影響が小さい分、分散先候補。",
+      "risks": "前日上昇後の利確、米金利・株価急変、日銀発言による金融株内ローテーション。",
+      "entryCondition": "1,550〜1,570円を維持し、1,576円前日高値を終値ベースで抜くか、押し目で出来高を伴わず下げ止まること。",
+      "skipCondition": "1,540円割れ、証券・銀行・保険が全面安、日経/TOPIXが急落。",
+      "holdingPeriod": "3営業日〜2週間",
+      "invalidCondition": "1,520円終値割れ。",
+      "profitTarget": "1,620〜1,636円を第1目標。",
+      "eventRisk": "8/27日銀副総裁発言、8/28東京CPI、Jackson Hole。"
+    }
+  ],
+  "riskPlan": {
+    "dailyLossLimitYen": 50000,
+    "perTradeLossLimitYen": 10000,
+    "singleNameCapitalLimitYen": 1500000,
+    "officialRealizedPnlThrough20260823": 42500,
+    "provisionalRealizedPnl20260825": 17410,
+    "provisionalAugustCumulative": 59910,
+    "previousBusinessDayRealizedPnl": "+17,410円（古河電工、約定価格ベース暫定。iSPEED確定画面未確認）",
+    "lossCapacityTodayYen": 50000,
+    "consecutiveStopLosses": 0,
+    "consecutiveStopLossesNote": "GitHubに記録された直近クローズ取引は古河電工の利益確定。全取引履歴の完全な連続損切り判定は未登録のため、記録範囲では0回とする。",
+    "priority": "まず保有3銘柄を管理。新規デイトレは最大でも1〜2銘柄を同時に追い、1回損失1万円以内。AI関連の新規スイング持越しはNVIDIA決算通過まで原則避ける。"
+  },
+  "sources": [
+    {"name": "Reuters US stocks 2026-08-25", "url": "https://www.reuters.com/business/us-stock-futures-rise-tech-rebound-before-nvidia-inflation-tests-2026-08-25/"},
+    {"name": "Reuters global markets 2026-08-25", "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-08-25/"},
+    {"name": "Reuters oil 2026-08-25", "url": "https://www.reuters.com/business/energy/oil-prices-steady-investors-weigh-impact-expanded-us-sanctions-against-iran-2026-08-25/"},
+    {"name": "Reuters Nvidia earnings setup 2026-08-25", "url": "https://www.reuters.com/business/nvidia-shares-set-280-billion-price-swing-after-earnings-options-show-2026-08-25/"},
+    {"name": "Kabutan Nikkei close 2026-08-25", "url": "https://s.kabutan.jp/news/n202608251021/"},
+    {"name": "FISCO sector ranking 2026-08-25", "url": "https://zaikei.co.jp/article/20260825/867229.html"},
+    {"name": "Yahoo Finance Furukawa Electric", "url": "https://finance.yahoo.co.jp/quote/5801.T/chart"},
+    {"name": "Yahoo Finance Fujikura", "url": "https://finance.yahoo.co.jp/quote/5803.T/chart"},
+    {"name": "Kabutan Sumitomo Electric", "url": "https://s.kabutan.jp/stocks/5802"},
+    {"name": "Yahoo Finance Shinozakiya", "url": "https://finance.yahoo.co.jp/quote/2926.T/chart"},
+    {"name": "Yahoo Finance Nexon", "url": "https://finance.yahoo.co.jp/quote/3659.T/history"}
+  ]
 }
