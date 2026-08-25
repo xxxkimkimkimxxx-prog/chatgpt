@@ -1,0 +1,37 @@
+{
+  "asOf": "2026-08-25 12:18 JST",
+  "type": "front_session_review",
+  "marketView": "指数は弱いが市場内部は広く買われる選別相場。前場の主役は電線・光通信インフラ、海運、鉱業。朝の非鉄一括評価を修正し、電線と製錬を分離する。",
+  "verifiedBreadthAt10": {
+    "nikkei": 65119.67,
+    "nikkeiChange": -408.42,
+    "nikkeiPct": -0.62,
+    "primeAdvancers": 828,
+    "primeDecliners": 642,
+    "advancingIndustries": 27,
+    "totalIndustries": 33
+  },
+  "rerank": [
+    {"rank":1,"code":"5803","name":"フジクラ","result":"前場最強級。朝の慎重評価を大幅上回る。"},
+    {"rank":2,"code":"5801","name":"古河電工","result":"電線・光通信資金流入の中心。ユーザー新規保有200株@3,867.95円、12:18表示3,890円。"},
+    {"rank":3,"code":"9107","name":"川崎汽船","result":"海運セクター全体を伴う継続モメンタム。"},
+    {"rank":4,"code":"1605","name":"INPEX","result":"原油安に逆行する相対強度。朝より格上げ。"},
+    {"rank":5,"code":"9706","name":"日本空港ビルデング","result":"材料強弱混在で追い買いより監視。"},
+    {"rank":6,"code":"5016","name":"JX金属","result":"朝1位から降格。製錬・素材継続仮説は不発。"}
+  ],
+  "holdings": [
+    {"code":"2342","quantity":800,"averageCost":255,"price":252,"unrealizedPnl":-2400},
+    {"code":"2926","quantity":1000,"averageCost":119,"price":131,"unrealizedPnl":12000},
+    {"code":"3659","quantity":200,"averageCost":3146.45,"price":3132,"unrealizedPnl":-2890},
+    {"code":"5801","quantity":200,"averageCost":3867.95,"price":3890,"unrealizedPnl":4410}
+  ],
+  "portfolioTotalUnrealizedPnl": 11120,
+  "afternoonPriorities": [
+    "古河電工は3,867.95円の取得単価帯を維持できるかを最優先。",
+    "フジクラは5,150〜5,200円帯維持と前場高値更新。",
+    "ネクソンは3,145〜3,150円奪回、3,120円割れに注意。",
+    "篠崎屋は131円維持と132円突破。",
+    "13:00〜13:15に電線・海運への資金継続を再確認。"
+  ],
+  "dataNote": "11:30の指数確定値はこの記録では未検証。保有価格は12:18のユーザーiSPEED画面を正本とする。"
+}
