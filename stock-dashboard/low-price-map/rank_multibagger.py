@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import csv
 import json
 from pathlib import Path
 
@@ -24,7 +25,6 @@ def score(r):
     pos = r.get("range_position")
     perf = r.get("perf_1y")
 
-    # Small current market cap / realistic 5x destination.
     if cap <= 2e9: s += 20; reasons.append("時価総額20億円以下")
     elif cap <= 5e9: s += 17; reasons.append("時価総額50億円以下")
     elif cap <= 1e10: s += 14; reasons.append("時価総額100億円以下")
@@ -37,7 +37,6 @@ def score(r):
     elif five_cap <= 1e11: s += 5
     elif five_cap <= 3e11: s += 2
 
-    # Earnings / valuation quality.
     if isinstance(eps,(int,float)) and eps > 0:
         s += 14; reasons.append("TTM黒字")
     elif isinstance(eps,(int,float)) and eps < 0:
@@ -59,7 +58,6 @@ def score(r):
     elif isinstance(de,(int,float)) and de > 3:
         s -= 3
 
-    # Entry-zone / liquidity. Avoid illiquid lottery-like names.
     if isinstance(pos,(int,float)):
         if 10 <= pos <= 45: s += 7; reasons.append("52週レンジ下位")
         elif pos < 10: s += 3
@@ -75,7 +73,6 @@ def score(r):
         elif perf <= -70: s -= 4
         elif perf >= 150: s -= 3
 
-    # Penny-stock risk penalty.
     price = num(r.get("price"),0)
     if price < 30: s -= 6
     elif price < 50: s -= 3
@@ -103,4 +100,10 @@ out={
   "top50_quant":ranked[:50]
 }
 (ROOT / "multibagger_rank.json").write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding="utf-8")
+fields=["rank","code","company","price","market_cap","market_cap_5x","score_quant","capital_1000_shares","profit_if_5x_1000","per","pbr","eps_ttm","roe","debt_to_equity","volume","relative_volume","range_position","perf_1y","sector","industry","quant_reasons"]
+with (ROOT / "multibagger_top20.tsv").open("w",encoding="utf-8",newline="") as f:
+    w=csv.writer(f,delimiter="\t",lineterminator="\n")
+    w.writerow(fields)
+    for i,r in enumerate(ranked[:20],1):
+        w.writerow([i,r.get("code"),r.get("company"),r.get("price"),r.get("market_cap"),r.get("market_cap_5x"),r.get("score_quant"),r.get("capital_1000_shares"),r.get("profit_if_5x_1000"),r.get("per"),r.get("pbr"),r.get("eps_ttm"),r.get("roe"),r.get("debt_to_equity"),r.get("volume"),r.get("relative_volume"),r.get("range_position"),r.get("perf_1y"),r.get("sector"),r.get("industry"),"|".join(r.get("quant_reasons") or [])])
 print("ranked",len(rows),"top",ranked[0]["code"],ranked[0]["score_quant"])
