@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-25 12:18 JST",
-  "source": "iSPEED portfolio snapshot supplied by user at 12:18",
+  "asOf": "2026-08-25 15:31 JST",
+  "source": "iSPEED portfolio snapshot supplied by user at 15:31",
   "positions": [
     {
       "code": "2342",
@@ -8,43 +8,46 @@
       "quantity": 800,
       "averageCost": 255.0,
       "referencePrice": 252,
-      "referencePriceObservedAt": "2026-08-25 12:18 JST",
+      "referencePriceObservedAt": "2026-08-25 15:31 JST",
       "unrealizedPnl": -2400,
-      "management": "前場は252円まで低下。追加ナンピン停止を継続。252円が目先の防衛線で、249円・246円割れは弱化。255円回復までは攻めない。"
+      "management": "追加ナンピン停止。252円が目先の防衛線で、249円・246円割れは弱化。255円回復までは攻めない。"
     },
     {
       "code": "2926",
       "name": "篠崎屋",
       "quantity": 1000,
       "averageCost": 119.0,
-      "referencePrice": 131,
-      "referencePriceObservedAt": "2026-08-25 12:18 JST",
-      "unrealizedPnl": 12000,
-      "management": "前場を131円で維持し、保有利益の中心。128〜129円を利益保護帯、132円再突破なら137円方向を監視。追加買いより利益保全を優先。"
+      "referencePrice": 129,
+      "referencePriceObservedAt": "2026-08-25 15:31 JST",
+      "unrealizedPnl": 10000,
+      "management": "利益ポジション継続。129円維持を確認しつつ、132円再突破なら137円方向を監視。122円まで利益を放置せず、128〜129円帯の崩れ方を確認する。"
     },
     {
       "code": "3659",
       "name": "ネクソン",
       "quantity": 200,
       "averageCost": 3146.45,
-      "referencePrice": 3132,
-      "referencePriceObservedAt": "2026-08-25 12:18 JST",
-      "unrealizedPnl": -2890,
-      "management": "10:34の3,151円から前引け後表示3,132円へ失速し、取得単価を再び下回った。後場は3,145〜3,150円奪回を改善条件、3,120円割れで再弱化を警戒。買い増しは見送る。"
-    },
+      "referencePrice": 3114,
+      "referencePriceObservedAt": "2026-08-25 15:31 JST",
+      "unrealizedPnl": -6490,
+      "management": "取得単価を下回って終了。買い増しはしない。3,146円回復、3,150〜3,160円突破を改善条件とし、3,100円割れが続く場合は3,080円近辺を再警戒。"
+    }
+  ],
+  "closedToday": [
     {
       "code": "5801",
       "name": "古河電気工業",
       "quantity": 200,
       "averageCost": 3867.95,
-      "referencePrice": 3890,
-      "referencePriceObservedAt": "2026-08-25 12:18 JST",
-      "unrealizedPnl": 4410,
-      "management": "本日前場に新規保有。場中ランキング上位の電線・光通信インフラ資金流入を受けたポジション。平均3,867.95円に対し3,890円で含み益。後場は3,870円前後を取得単価防衛帯として、高値更新継続かを確認。急騰銘柄のため買い増しは押し目確認なしでは行わない。"
+      "sellPrice": 3955,
+      "derivedGrossRealizedPnl": 17410,
+      "pnlStatus": "provisional until iSPEED realized P/L screen confirmation",
+      "sessionClose": 4000,
+      "note": "事前利益目標3,950〜3,960円内で全株売却。終値まで保有した場合との差は+9,000円だったが、売却自体は計画遵守。"
     }
   ],
-  "totalUnrealizedPnl": 11120,
-  "estimatedPortfolioCost": 1725880,
-  "estimatedPortfolioMarketValue": 1737000,
-  "note": "価格は自動ライブ更新ではなく、ユーザーのiSPEED実画面を正本として反映。"
+  "totalUnrealizedPnl": 1110,
+  "estimatedPortfolioCost": 952290,
+  "estimatedPortfolioMarketValue": 953400,
+  "note": "価格は自動ライブ更新ではなく、ユーザーのiSPEED実画面を正本として反映。古河電工は15:31時点で保有なし。"
 }
