@@ -1,14 +1,14 @@
 {
-  "lastSyncedAtJST": "2026-08-25 00:31",
-  "trigger": "current_check_tomorrow_outlook",
-  "triggerMessageSummary": "User asked for the latest outlook for the Aug 25 Tokyo session.",
+  "lastSyncedAtJST": "2026-08-25 10:50",
+  "trigger": "intraday_rerank_and_holdings_refresh",
+  "triggerMessageSummary": "User requested a full ranking refresh and website update after supplying 10:34 iSPEED holdings.",
   "updated": [
     "data/current-view.json",
-    "data/overnight-2026-08-25-0031.json",
+    "data/holdings.json",
+    "data/intraday/2026-08-25-1050-rerank.json",
     "data/sync-status.json"
   ],
   "status": "ready",
   "primaryPage": "dashboard.html",
-  "nextScheduledUpdate": "2026-08-25 06:30 JST",
-  "note": "This is an overnight provisional view because the U.S. session is still in progress. The 06:30 task will refresh the final pre-market view after the U.S. close."
+  "note": "The dashboard now separates the unchanged 06:30 morning hypothesis from the 10:50 intraday rerank. Intraday prices use explicit observation timestamps; user iSPEED screenshots are treated as primary for supplied holdings and Fujikura."
 }
