@@ -1,14 +1,14 @@
 {
-  "lastSyncedAtJST": "2026-08-25 10:50",
-  "trigger": "intraday_rerank_and_holdings_refresh",
-  "triggerMessageSummary": "User requested a full ranking refresh and website update after supplying 10:34 iSPEED holdings.",
+  "lastSyncedAtJST": "2026-08-25 12:18",
+  "trigger": "front_session_review_and_holdings_refresh",
+  "triggerMessageSummary": "User requested a front-session summary and supplied a 12:18 iSPEED snapshot showing a new Furukawa Electric position.",
   "updated": [
     "data/current-view.json",
     "data/holdings.json",
-    "data/intraday/2026-08-25-1050-rerank.json",
+    "data/intraday/2026-08-25-1218-front-session.json",
     "data/sync-status.json"
   ],
   "status": "ready",
   "primaryPage": "dashboard.html",
-  "note": "The dashboard now separates the unchanged 06:30 morning hypothesis from the 10:50 intraday rerank. Intraday prices use explicit observation timestamps; user iSPEED screenshots are treated as primary for supplied holdings and Fujikura."
+  "note": "Front-session review is now live. Holdings use the 12:18 iSPEED snapshot as primary. The 06:30 morning strategy remains unchanged for later forecast evaluation. Exact 11:30 index closing levels were not guessed because they were not verified in this refresh."
 }
