@@ -1,9 +1,21 @@
 {
-  "asOf": "2026-08-23",
+  "asOf": "2026-08-25 15:31 JST",
   "period": "2026-08",
   "officialRealizedPnl": 42500,
   "officialTradeCount": 35,
-  "source": "iSPEED realized P/L screen confirmed in project records",
+  "officialSourceAsOf": "2026-08-23 iSPEED realized P/L screen",
+  "threeMonthGoal": {
+    "startDate": "2026-08-24 close",
+    "targetDate": "2026-11-24",
+    "targetAdditionalRealizedPnl": 300000,
+    "provisionalRealizedPnlSinceStart": 17410,
+    "remainingProvisional": 282590,
+    "progressPctProvisional": 5.8,
+    "status": "2026-08-25 Furukawa derived from execution prices; do not add to official monthly P/L until iSPEED realized P/L screen confirms net amount"
+  },
+  "provisionalTrades": [
+    {"date":"2026-08-25","type":"day","code":"5801","name":"古河電気工業","qty":200,"averageBuy":3867.95,"sell":3955,"derivedGrossPnl":17410,"confirmed":false}
+  ],
   "confirmedExamples": [
     {"date":"2026-08-12","code":"1605","name":"INPEX","realizedPnl":6300},
     {"date":"2026-08-12","code":"7013","name":"IHI","realizedPnl":-600},
@@ -17,6 +29,7 @@
       "confirmed project trade ledger",
       "derived execution-price calculations"
     ],
-    "doNotOverwriteOfficialWithDerived": true
+    "doNotOverwriteOfficialWithDerived": true,
+    "goalDoesNotRelaxRiskRules": true
   }
 }
