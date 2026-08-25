@@ -1,69 +1,24 @@
 {
-  "asOf": "2026-08-25 15:31 JST",
+  "asOf": "2026-08-25 23:30 JST",
   "source": "End-of-day review using user iSPEED screenshots plus verified intraday market sources",
   "marketSummary": "朝はNasdaq・SOX安を受け日経平均が一時64,609.47まで下落したが、その後切り返した。非鉄金属が業種上位となり、電線・光通信インフラへ資金が集中。古河電工は前日3,625円から4,000円へ+10.34%で高値圏引け。フジクラ・住友電工も上昇し、単独株ではなく同業連動が確認された。",
   "capitalFlow": [
-    {
-      "rank": 1,
-      "theme": "電線・光通信インフラ",
-      "strength": "本日の主役",
-      "examples": ["古河電工", "フジクラ", "住友電工"],
-      "note": "半導体製造装置の弱さと分離して資金が流入。古河電工には11:05に米系大手証券の強気継続・目標株価7,900円というFresh Catalystも追加された。"
-    },
-    {
-      "rank": 2,
-      "theme": "海運",
-      "strength": "前場強いが後場は伸び悩み",
-      "examples": ["川崎汽船", "日本郵船", "商船三井"],
-      "note": "川崎汽船は朝の3,470円突破条件後に3,591円まで上昇しContinuation仮説は機能。ただし高値追いには不向き。"
-    },
-    {
-      "rank": 3,
-      "theme": "製錬・半導体材料",
-      "strength": "相対的に電線へ劣後",
-      "examples": ["JX金属"],
-      "note": "非鉄という業種方向は合っていたが、主役サブテーマ選別で電線に負けた。"
-    }
+    {"rank":1,"theme":"電線・光通信インフラ","strength":"本日の主役","examples":["古河電工","フジクラ","住友電工"],"note":"半導体製造装置の弱さと分離して資金が流入。古河電工には11:05に米系大手証券の強気継続・目標株価7,900円というFresh Catalystも追加された。"},
+    {"rank":2,"theme":"海運","strength":"前場強いが後場は伸び悩み","examples":["川崎汽船","日本郵船","商船三井"],"note":"川崎汽船は朝の3,470円突破条件後に3,591円まで上昇しContinuation仮説は機能。ただし高値追いには不向き。"},
+    {"rank":3,"theme":"製錬・半導体材料","strength":"相対的に電線へ劣後","examples":["JX金属"],"note":"非鉄という業種方向は合っていたが、主役サブテーマ選別で電線に負けた。"}
   ],
   "daytrade": {
     "morningForecastReview": [
       {"code":"5016","name":"JX金属","forecastProbability":62,"result":"外れ寄り","note":"業種は合っていたがサブテーマ選別が不十分。"},
       {"code":"9107","name":"川崎汽船","forecastProbability":59,"result":"前場的中","note":"3,470円突破後3,591円まで上昇。"}
     ],
-    "intradayBestTrade": {
-      "code": "5801",
-      "name": "古河電工",
-      "buyPrice": 3867.95,
-      "qty": 200,
-      "sellPrice": 3955,
-      "derivedGrossRealizedPnl": 17410,
-      "rMultipleDerived": 2.64,
-      "sessionClose": 4000,
-      "assessment": "エントリーは確認条件より少し早かったが押し目判断は成功。売却は事前目標3,950〜3,960円内で計画通り。一方、1R後も業種首位・同業連動・高値切り上げが続いたためトレーリングなら4,000円まで追えた余地。"
-    }
+    "intradayBestTrade": {"code":"5801","name":"古河電工","buyPrice":3867.95,"qty":200,"sellPrice":3955,"derivedGrossRealizedPnl":17410,"rMultipleDerived":2.64,"sessionClose":4000,"assessment":"エントリーは確認条件より少し早かったが押し目判断は成功。売却は事前目標3,950〜3,960円内で計画通り。一方、1R後も業種首位・同業連動・高値切り上げが続いたためトレーリングなら4,000円まで追えた余地。"}
   },
   "swing": {
     "priorityForNextSession": [
-      {
-        "rank": 1,
-        "code": "5801",
-        "name": "古河電工",
-        "stance": "Continuation監視。4,000円を支持化できれば再候補。大幅GUなら追わない。",
-        "event": "8/26 NVIDIA決算前後のギャップリスク"
-      },
-      {
-        "rank": 2,
-        "code": "5803",
-        "name": "フジクラ",
-        "stance": "電線テーマ継続の確認役。古河・住友電工との同時高を重視。",
-        "event": "8/26 NVIDIA決算"
-      },
-      {
-        "rank": 3,
-        "code": "3659",
-        "name": "ネクソン",
-        "stance": "既存保有。3,146円回復と3,150〜3,160円突破が改善条件。"
-      }
+      {"rank":1,"code":"5801","name":"古河電工","stance":"Continuation監視。4,000円を支持化できれば再候補。大幅GUなら追わない。","event":"8/26 NVIDIA決算前後のギャップリスク"},
+      {"rank":2,"code":"5803","name":"フジクラ","stance":"電線テーマ継続の確認役。古河・住友電工との同時高を重視。","event":"8/26 NVIDIA決算"},
+      {"rank":3,"code":"3659","name":"ネクソン","stance":"既存保有。3,146円回復と3,150〜3,160円突破が改善条件。"}
     ]
   },
   "holdingsUpdate": [
@@ -75,9 +30,13 @@
   "portfolioSummary": "古河電工は全株売却済み。残る3銘柄の取得原価概算952,290円、15:31表示時価概算953,400円、評価損益+1,110円。古河電工の値幅ベース実現益は+17,410円で、iSPEED実現損益画面確認までは暫定値。",
   "goalProgress": {
     "target": 300000,
+    "countingStart": "2026-08-01",
+    "countingRule": "8月のすべての取引を30万円計画に含める",
+    "confirmedAugustThrough20260823": 42500,
     "todayProvisional": 17410,
-    "remainingProvisional": 282590,
-    "progressPctProvisional": 5.8
+    "cumulativeProvisional": 59910,
+    "remainingProvisional": 240090,
+    "progressPctProvisional": 20.0
   },
   "lessons": [
     "非鉄金属は電線・光通信／製錬・半導体材料／資源に分解して相対強度を見る。",
