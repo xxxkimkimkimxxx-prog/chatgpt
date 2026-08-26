@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-26",
+  "asOf": "2026-08-26 16:05 JST",
+  "series": "3-month +300,000 yen project",
+  "market": {
+    "close": {"nikkei225":66262.16,"changeYen":405.73,"changePct":0.62},
+    "breadth": {"primeAdvancers":976,"primeDecliners":515,"unchanged":59},
+    "intraday": "日経平均は9:00に65,604.49円で寄り、10時には65,390.55円まで下落した後、前引け66,227.55円、14時66,371.63円まで切り返し、終値66,262.16円。朝安から全面的に買い戻された一日。",
+    "sectorRotation": "朝に弱かった半導体・電線の一部から、証券・保険・医薬品・銀行へ資金が移動。後場はアドバンテストとソフトバンクGの寄与で指数が上昇した一方、電線は前日急騰後の持ち高整理が目立った。",
+    "eventRisk": "日本時間8/27早朝のNVIDIA決算を控え、AI・半導体・電線の新規持越しは引き続き慎重。"
+  },
+  "morningForecastReview": [
+    {"rank":1,"code":"5801","name":"古河電気工業","forecastProbability":61,"classification":"Continuation Momentum + Sector Alignment","result":"miss","reviewNote":"前日+10.34%の強さを重視し過ぎた。10時時点で非鉄金属が業種下位、フジクラも指数押し下げ上位となり、同業連動の弱化でContinuation条件は早期失格にすべきだった。"},
+    {"rank":2,"code":"5803","name":"フジクラ","forecastProbability":59,"classification":"Continuation Momentum + Sector Alignment","result":"miss","reviewNote":"前日+5.50%後のイベント前ポジション整理を過小評価。朝のSector Alignmentが崩れた時点で新規買い対象から外す判断が正しかった。"},
+    {"rank":3,"code":"5802","name":"住友電気工業","forecastProbability":57,"classification":"Sector Alignment","result":"downgraded","reviewNote":"電線3社の同方向性を確認条件にしていたため、古河・フジクラ弱化で買い条件不成立。朝の条件付き設計自体は機能した。"}
+  ],
+  "freshCatalystReview": [
+    {"code":"4082","name":"第一稀元素化学工業","result":"S高買い気配","actual":"2,591円、+500円（+23.9%）でストップ高買い気配","catchableMorning":true,"tradeable":false,"reviewNote":"ハフニウム国内製造技術確立は朝時点で機械的に拾うべきFresh Catalyst。ただしPTSで既に+23.9%相当まで織り込まれ、実戦デイトレには不向き。"},
+    {"code":"278A","name":"Terra Drone","result":"S高","actual":"17,050円、+3,000円（+21.4%）ストップ高","catchableMorning":true,"tradeable":false,"reviewNote":"防衛向け迎撃ドローン量産調達は強いFresh Catalyst。上昇期待では上位だが高価格・ストップ高で実戦性は低い。"},
+    {"code":"8766","name":"東京海上HD","result":"positive","reviewNote":"1→15株式分割と長期優待導入に加え、保険業が業種上位。Fresh CatalystとSector Alignmentが一致した好例。"}
+  ],
+  "intradayLearning": {
+    "mainLesson": "前日のSector Alignmentを翌日に自動継続しない。寄り後30〜60分で同業2社以上と業種指数が弱ければ、Continuation候補を即時失格させる。",
+    "marketLesson": "10時時点で日経平均-0.71%でも値上がり銘柄数は1093と多く、指数だけで地合いを弱いと判断するのも誤り。今日は指数寄与度の高い半導体が朝に下げ、金融・医薬品など広範な銘柄が上昇するローテーション相場だった。",
+    "afternoonDecision": "後場は新規スイングを見送り、0〜1回のデイトレ条件付きとした判断は妥当。NVIDIA決算前に無理に持ち越す必要はなかった。"
+  },
+  "actualTrades": {
+    "confirmedToday": [],
+    "status": "この自動検証時点では8/26のユーザー実売買は確認できていないため、当日実現損益は0円と断定せず未確認扱い。"
+  },
+  "holdings": {
+    "status": "8/26引け後のiSPEED保有一覧が未確認のため、含み損益・使用資金・全損切り時想定損失は8/25スナップショットを正式更新しない。"
+  },
+  "goalProgress": {
+    "targetRealizedPnl":300000,
+    "countingStart":"2026-08-01",
+    "confirmedAugustRealizedPnlThrough20260823":42500,
+    "provisionalRealizedPnl20260825":17410,
+    "provisionalCumulativeRealizedPnl":59910,
+    "remainingProvisional":240090,
+    "progressPctProvisional":20.0,
+    "todayRealizedPnlStatus":"unconfirmed"
+  },
+  "lessons": {
+    "good":["電線3社の同方向性を買い条件にしていたため、住友電工などは条件不成立で無理なエントリーを回避できた。","前場途中で電線を持ち高整理による弱化と認識し、後場の基本方針を見送り寄りに修正できた。"],
+    "improve":["朝6:30ランキングで前日主役テーマを重く残し過ぎた。NVIDIA決算前というイベント前日には『前日急騰率×イベント接近日数』の減点をさらに強める。","日経朝材料に出た第一稀元素・Terra Drone・東京海上などFresh Catalystを6:30後の追加材料としてランキングへ即時反映する仕組みを強化する。"],
+    "newRules":["前日+5%以上のテーマ株は、翌朝9:30までに業種指数と同業2社以上がVWAP下ならContinuationを失格。","大型イベント前日は、前日急騰テーマの新規スイング持越しを原則見送り、Fresh CatalystでもPTS+10%以上なら上昇期待と実戦可能性を明確に分離する。"],
+    "nextWatch":["8/27朝はNVIDIA決算内容・ガイダンス・時間外株価を最優先。","電線はNVIDIA通過後に古河・フジクラ・住友電工が揃って相対強度を回復する場合のみ再昇格。","金融は証券・保険・銀行の資金流入継続を確認し、AIイベント後のローテーション継続候補として評価する。"]
+  },
+  "sources":[
+    {"name":"株探/みんかぶ 2026-08-26大引け","note":"日経平均66,262.16円、+405.73円、プライム値上がり976・値下がり515"},
+    {"name":"株探 10時/前引け/14時市況","note":"朝安からの切り返し、業種ローテーション、指数寄与度を確認"},
+    {"name":"株探 話題株昼刊","note":"第一稀元素S高買い気配、Terra Drone S高を確認"}
+  ]
+}
