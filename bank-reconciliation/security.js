@@ -54,7 +54,7 @@
         alert('削除する対象月を先に選択してください。');
         return;
       }
-      const ok = confirm(`${month} の、この端末・このブラウザに保存された照合データを削除します。\n\n銀行RAWや当社RAWがGitHubから削除される操作ではありません。ブラウザ内の月次保存データだけを削除します。\n\n削除後は元に戻せません。実行しますか？`);
+      const ok = confirm(`${month} の、この端末・このブラウザに保存された照合データを削除します。\n\n銀行データや当社データがGitHubから削除される操作ではありません。ブラウザ内の月次保存データだけを削除します。\n\n削除後は元に戻せません。実行しますか？`);
       if (!ok) return;
       try {
         await deleteMonth(month);
@@ -85,9 +85,15 @@
     });
   }
 
-  // app.js の初期化後に高速化レイヤーを読み込む。
+  // app.js 初期化後、高速化 → 視認性改善の順で読み込む。
   const perf = document.createElement('script');
   perf.src = './performance.js';
   perf.async = false;
+  perf.onload = () => {
+    const clarity = document.createElement('script');
+    clarity.src = './clarity.js';
+    clarity.async = false;
+    document.head.appendChild(clarity);
+  };
   document.head.appendChild(perf);
 })();
