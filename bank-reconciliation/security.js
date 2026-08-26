@@ -85,7 +85,7 @@
     });
   }
 
-  // app.js 初期化後、高速化 → 視認性改善の順で読み込む。
+  // app.js 初期化後、高速化 → 視認性改善 → 読込準備表示の順で読み込む。
   const perf = document.createElement('script');
   perf.src = './performance.js';
   perf.async = false;
@@ -93,6 +93,12 @@
     const clarity = document.createElement('script');
     clarity.src = './clarity.js';
     clarity.async = false;
+    clarity.onload = () => {
+      const readiness = document.createElement('script');
+      readiness.src = './readiness.js';
+      readiness.async = false;
+      document.head.appendChild(readiness);
+    };
     document.head.appendChild(clarity);
   };
   document.head.appendChild(perf);
