@@ -84,4 +84,10 @@
       }
     });
   }
+
+  // app.js の初期化後に高速化レイヤーを読み込む。
+  const perf = document.createElement('script');
+  perf.src = './performance.js';
+  perf.async = false;
+  document.head.appendChild(perf);
 })();
