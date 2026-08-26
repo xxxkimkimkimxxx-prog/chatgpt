@@ -33,6 +33,24 @@
     return document.querySelector('.tab.active')?.dataset.tab || 'summary';
   }
 
+  function renderActiveTab(){
+    const tab=activeTab();
+    if(tab==='candidates') renderCandidates();
+    else if(tab==='conflicts') renderConflicts();
+    else if(tab==='manual') renderManual();
+    else if(tab==='matched') renderMatches();
+    else if(tab==='daily') renderDaily();
+    else if(tab==='masters') renderMasters();
+  }
+
+  // 全画面を毎回描き直さず、「全体 + 今見ている画面」だけを更新する。
+  renderAll = function(){
+    renderSummary();
+    renderActiveTab();
+    renderLog();
+    updateReady();
+  };
+
   function pruneCandidatesByIds(ids){
     const used=ids instanceof Set ? ids : new Set(ids);
     state.candidates = state.candidates.filter(c => ![...c.bankIds,...c.companyIds].some(id=>used.has(id)));
@@ -41,20 +59,11 @@
 
   function refreshLight(){
     renderSummary();
-    renderCandidates();
-    renderConflicts();
+    renderActiveTab();
     updateReady();
   }
 
-  function refreshCurrentHeavyTab(){
-    const tab=activeTab();
-    if(tab==='manual') renderManual();
-    else if(tab==='matched') renderMatches();
-    else if(tab==='daily') renderDaily();
-    else if(tab==='masters') renderMasters();
-  }
-
-  // 候補確定時：全候補の再探索・全画面再描画をやめ、影響候補だけ除外する。
+  // 候補確定時：候補の全再探索をやめ、今回使った明細に関係する候補だけ除外する。
   acceptCandidates = function(ids){
     const cs=state.candidates.filter(c=>ids.includes(c.id));
     if(!cs.length) return;
@@ -78,13 +87,12 @@
     for(const c of cs) createMatch(c.bankIds,c.companyIds,c.type,false,'候補組から確定');
     pruneCandidatesByIds(used);
     refreshLight();
-    refreshCurrentHeavyTab();
     toast(`${cs.length}件を照合しました`);
     log(`${cs.length}候補を照合確定しました。`);
     scheduleSave();
   };
 
-  // 候補除外時も再探索しない。残った候補だけで競合状態を再計算する。
+  // 候補除外も全再探索しない。残った候補だけで競合状態を再計算する。
   excludeCandidate = function(id){
     const c=state.candidates.find(x=>x.id===id);
     if(!c) return;
@@ -101,7 +109,7 @@
     return new Set([...document.querySelectorAll(`#${side==='bank'?'bankUnmatchedTable':'companyUnmatchedTable'} .manual-check[data-side="${side}"]:checked`)].map(x=>x.dataset.id));
   }
 
-  // 手動表は最大300行だけ描画。必要なら300行ずつ追加表示。
+  // 手動表は最初の300行だけ描画。大量明細でもDOMを膨らませない。
   renderUnmatchedTable = function(side,id){
     const table=document.getElementById(id);
     if(!table) return;
@@ -134,8 +142,6 @@
     createMatch(bids,cids,'手動照合',false,'手動選択');
     pruneCandidatesByIds(new Set([...bids,...cids]));
     renderSummary();
-    renderCandidates();
-    renderConflicts();
     renderManual();
     updateReady();
     toast('手動照合しました');
@@ -147,7 +153,7 @@
   const manualBtn=document.getElementById('manualMatchBtn');
   if(manualBtn) manualBtn.onclick=fastManualMatch;
 
-  // 重い一覧は、そのタブを開いたときだけ最新状態を描画する。
+  // 非表示タブは開いた瞬間だけ最新状態を描画する。
   document.addEventListener('click',e=>{
     const tab=e.target.closest('.tab[data-tab]');
     if(!tab) return;
@@ -162,7 +168,7 @@
     });
   });
 
-  // 検索入力時は、手動表の表示件数を一度300件へ戻す。
+  // 検索時は表示件数を300件へ戻し、絞り込み結果を軽く描画する。
   const search=document.getElementById('globalSearch');
   if(search) search.addEventListener('input',()=>{manualVisible.bank=PAGE_SIZE;manualVisible.company=PAGE_SIZE;});
 
