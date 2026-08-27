@@ -1,0 +1,46 @@
+{
+  "asOf": "2026-08-27 10:11 JST",
+  "source": "User-confirmed latest trading rules",
+  "scope": "Japanese cash equities and ETFs via Rakuten Securities/iSPEED",
+  "capitalRules": {
+    "singleNameCapitalLimitYen": 1500000,
+    "dailyGrossPurchaseLimitYen": null,
+    "dailyGrossPurchaseLimitNote": "固定の1日購入総額上限は設けない。複数銘柄同時保有可。1銘柄あたりの投入上限は150万円。",
+    "basicTradeUnit": "100 shares as a base, but position size may vary within risk and capital limits"
+  },
+  "lossRules": {
+    "dailyRealizedLossLimitYen": 50000,
+    "perTradeLossLimitYen": 10000,
+    "usualPerTradeLossTargetYen": "2000-5000 preferred when chart structure allows",
+    "twoConsecutiveStopsRule": "After two consecutive stop-loss trades, stop opening new day trades for the session unless explicitly re-planned under a swing thesis."
+  },
+  "daytradeToSwingPolicy": {
+    "allowed": true,
+    "principle": "A position entered as a day trade may be reclassified to a swing if the investment thesis, sector/macro backdrop, price structure and expected value still support holding beyond the session.",
+    "requiredBeforeCarry": [
+      "Re-evaluate the thesis using information available before the close",
+      "Define overnight/swing invalidation level",
+      "Define first and final profit targets",
+      "Check event and gap risk",
+      "Check total capital tied up and portfolio downside"
+    ],
+    "notAllowed": "Do not extend holding solely because the position is in loss without a valid swing thesis."
+  },
+  "averagingDownPolicy": {
+    "allowedConditionally": true,
+    "principle": "Do not average down merely to lower the average cost. Add only when the thesis remains valid, price is near a defined support area, rebound/confirmation is visible, and total downside remains acceptable.",
+    "repeatAdds": "Avoid repeated mechanical averaging down in the same name."
+  },
+  "profitRules": {
+    "minimumRiskReward": 1.5,
+    "preferredRiskReward": 2.0,
+    "trailingAfter1R": true,
+    "referenceLevels": ["VWAP","5-minute recent low","moving averages","prior day high/low","volume concentration zones"]
+  },
+  "goal": {
+    "targetRealizedPnlYen": 300000,
+    "countingStart": "2026-08-01",
+    "targetDate": "2026-11-24",
+    "includeAllAugustTrades": true
+  }
+}
