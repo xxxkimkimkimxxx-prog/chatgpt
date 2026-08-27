@@ -1,15 +1,10 @@
 {
   "date":"2026-08-27",
-  "asOf":"2026-08-27 16:15 JST",
-  "market":{"summary":"15時時点の日経平均は66,119.29円（-142.87円、-0.22%）。プライム値上がり654、値下がり843。非鉄金属が業種首位。アドバンテストが約265円押し下げる一方、キオクシア、フジクラ、東エレク、イビデンが指数を押し上げ、AI関連は二極化。"},
-  "forecastReview":[
-    {"code":"5803","name":"フジクラ","forecastProbability":58,"result":"的中","lesson":"寄り追い回避と押し目確認が重要。5310円まで振れた後5500円（+3.68%）で終了し、非鉄金属のSector Alignmentも成立。"},
-    {"code":"5801","name":"古河電工","forecastProbability":56,"result":"方向は的中","lesson":"フジクラとの同業連動が成立し、光通信・電線への資金残存を確認。"},
-    {"code":"6857","name":"アドバンテスト","forecastProbability":54,"result":"弱さ判定に有効","lesson":"資金上限から実売買対象外にした判断は正しく、AIテーマ内の二極化判定に有効だった。"}
-  ],
-  "holdings":{"fujikura":"100株@5513、終値5500で概算-1300円。持越し合理性あり。5558→5600を上値目標、5450割れ警戒。","nexon":"200株@3146.45、終値3092で概算-10890円。朝3169まで戻したが失速し安値圏引け。3080割れを撤退優先条件、追加買い禁止。"},
-  "goalProgress":{"targetRealizedPnl":300000,"confirmedAugustRealizedPnlThrough20260823":42500,"provisionalRealizedPnl20260825":17410,"confirmedRealizedPnl20260826":0,"cumulativeProvisional":59910,"progressPctProvisional":19.97,"remainingProvisional":240090,"todayRealizedPnlStatus":"8/27未確認"},
-  "lessons":["AI関連はメモリー・光通信・基板・テスターに分解しサブセクター相対強度を見る。","心理的節目の突破は5分足定着と出来高増を確認する。","取得単価回復後に再失速し安値圏引けした保有株は翌日の追加買いを禁止し撤退優先度を上げる。"],
-  "nextWatch":["フジクラ5500〜5513支持化と5558突破。","ネクソン3080防衛、3130→3146.45回復。","アドバンテストの弱さとキオクシア・フジクラ・古河・イビデンの強さが翌日も分岐するか。"],
+  "asOf":"2026-08-27 18:20 JST",
+  "market":{"summary":"日経平均は66,131.98円（-130.18円、-0.20%）。非鉄金属が業種1位。キオクシア、フジクラ、東エレク、イビデンが指数を押し上げ、AI関連はメモリー・光通信・基板が強くテスターは弱い二極化。"},
+  "focus":{"code":"5803","name":"フジクラ","holding":"100株@5513、終値5500、概算-1300円","review":"方向は正しかったがエントリーが早く、5310円までの大きな振れを受けた。非鉄首位・同業連動・AIデータセンター需要から1〜5営業日のスイング再分類は合理性あり。","tomorrow":"5500〜5513支持化→5558突破→5600。5450割れ警戒、5310再接近で仮説再評価。キオクシアとは直接商流ではなくAI需要・資金ローテーションの共通テーマとして見る。"},
+  "holdings":{"totalCost":1503590,"marketValue":1499200,"unrealizedPnl":-4390,"transgenic":800,"shinozakiya":1000,"nexon":200,"fujikura":100},
+  "goalProgress":{"target":300000,"confirmedThrough20260823":42500,"provisional20260825":17410,"cumulativeProvisional":59910,"remainingProvisional":240090,"progressPctProvisional":19.97},
+  "lessons":["AI関連はサブセクター分解が必須","大型イベント翌日のGUは最初の押し・VWAP再奪回後を本命エントリーにする","報道ベースの大型投資材料は会社公式の確認状況を併記する"],
   "detailPath":"data/reviews/2026-08-27.json"
 }
