@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-08-27 10:11 JST",
+  "asOf": "2026-08-27 12:15 JST",
   "source": "Latest user-supplied iSPEED screenshots; individual reference prices may have different observation times",
   "positions": [
     {
@@ -27,20 +27,20 @@
       "name": "ネクソン",
       "quantity": 200,
       "averageCost": 3146.45,
-      "referencePrice": 3136,
-      "referencePriceObservedAt": "2026-08-27 10:11 JST",
-      "unrealizedPnlAtReference": -2090,
-      "management": "デイトレ/スイングを問わず継続保有可。3,128〜3,131円帯を維持し3,142円→取得単価3,146.45円→3,150〜3,160円を回復できるか監視。3,160円突破時は3,180〜3,200円方向の利益伸長を検討。"
+      "referencePrice": 3121,
+      "referencePriceObservedAt": "2026-08-27 11:30 JST",
+      "unrealizedPnlAtReference": -5090,
+      "management": "前場は3,160円台から3,121円まで押し戻し、5分足MA5・MA25・MA75を下回って前引け。後場は3,132〜3,140円回復が改善条件。3,100〜3,095円割れは1回損失上限1万円に接近するため防御優先。3,146.45円回復後に3,160円突破なら3,180〜3,200円方向を再評価。"
     },
     {
       "code": "5803",
       "name": "フジクラ",
       "quantity": 100,
       "averageCost": 5513.0,
-      "referencePrice": 5366,
-      "referencePriceObservedAt": "2026-08-27 10:10 JST",
-      "unrealizedPnlAtReference": -14700,
-      "management": "デイトレからスイングへの再分類は可。AI/光通信の中期仮説、5分足MA25・MA75、当日支持線、翌日ギャップリスクを再評価して持越し判断。単に含み損だからではなく期待値が残る場合のみ継続。"
+      "referencePrice": 5460,
+      "referencePriceObservedAt": "2026-08-27 11:30 JST",
+      "unrealizedPnlAtReference": -5300,
+      "management": "前場安値圏から回復し、5分足MA25・MA75の上、MA5近辺まで戻して前引け。5,440〜5,450円維持なら5,480〜5,500円、さらに建値5,513円〜前場高値圏の再試行を期待。5,415円前後を明確に割る場合は1回損失上限1万円に接近するため撤退優先。デイトレからスイングへの再分類は可。"
     }
   ],
   "portfolioUnrealizedPnlStatus": "partial/mixed-timestamp; do not aggregate as a live total until all current prices are refreshed",
