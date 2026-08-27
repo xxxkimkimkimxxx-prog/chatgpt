@@ -1,26 +1,15 @@
 {
-  "asOf":"2026-08-26 16:05 JST",
-  "source":"2026-08-26 evening review using verified market sources; user trade/holdings not updated without iSPEED confirmation",
-  "marketSummary":"日経平均は65,604.49円で安寄りし、10時65,390.55円まで下落した後に急反発。終値66,262.16円（+405.73円、+0.62%）。プライムは値上がり976、値下がり515。証券・保険・医薬品・銀行が強く、前日主役の電線は持ち高整理が優勢だった。",
+  "asOf":"2026-08-27 18:20 JST",
+  "source":"8/27 evening review using user iSPEED screenshot and verified market sources",
+  "marketSummary":"日経平均66,131.98円（-0.20%）。非鉄金属が業種1位。AI関連はキオクシア・フジクラ・古河電工・イビデンなどが強く、アドバンテストは弱い二極化。",
   "capitalFlow":[
-    {"rank":1,"theme":"金融","strength":"強い","examples":["東京海上","銀行・証券株"],"note":"NVIDIA決算前のイベント回避資金も入り、証券・保険・銀行が業種上位。"},
-    {"rank":2,"theme":"医薬品","strength":"強い","examples":["中外薬"],"note":"指数寄与と業種強度が確認された。"},
-    {"rank":3,"theme":"電線・光通信","strength":"前日から明確に弱化","examples":["古河電工","フジクラ","住友電工"],"note":"前日急騰後の利益確定・NVIDIA前の持ち高整理が優勢。Continuationは朝の同業連動弱化で失格扱い。"}
+    {"rank":1,"theme":"AIメモリー・データセンター","examples":["キオクシア"],"note":"キオクシアは52,500円、+5.00%。新棟報道で買われたが会社は正式発表ではないとコメント。"},
+    {"rank":2,"theme":"光通信・電線","examples":["フジクラ","古河電工","住友電工"],"note":"フジクラ+3.68%、古河電工+4.71%、住友電工+1.97%。同業連動と非鉄首位でSector Alignment成立。"},
+    {"rank":3,"theme":"RFID店舗DX","examples":["アスタリスク","スマレジ"],"note":"アスタリスクはストップ高。Fresh Catalystが強く反応。"}
   ],
-  "forecastReview":[
-    {"code":"5801","name":"古河電工","result":"外れ","note":"前日主役継続を重く見過ぎた。"},
-    {"code":"5803","name":"フジクラ","result":"外れ","note":"イベント前の整理売りを過小評価。"},
-    {"code":"5802","name":"住友電工","result":"条件不成立","note":"同業連動条件により無理な買いを回避。"}
-  ],
-  "freshCatalystWinners":[
-    {"code":"4082","name":"第一稀元素化学工業","result":"ストップ高買い気配"},
-    {"code":"278A","name":"Terra Drone","result":"ストップ高"},
-    {"code":"8766","name":"東京海上HD","result":"Fresh Catalyst + Sector Alignment一致"}
-  ],
-  "holdingsStatus":"8/26引け後のiSPEED保有一覧未確認。保有数量・含み損益・使用資金は8/25スナップショットを正式更新しない。",
-  "tradeStatus":"8/26のユーザー実売買は確認できていないため、当日実現損益は未確認。",
-  "goalProgress":{"target":300000,"countingStart":"2026-08-01","confirmedAugustThrough20260823":42500,"provisional20260825":17410,"cumulativeProvisional":59910,"remainingProvisional":240090,"progressPctProvisional":20.0},
-  "lessons":["9:30までに業種指数と同業2社以上がVWAP下なら前日テーマのContinuationを失格。","大型イベント前日は前日急騰テーマの新規スイング持越しを原則見送り。","日経平均だけでなく値上がり銘柄数と業種ローテーションで地合いを判定する。"],
-  "nextWatch":["8/27朝のNVIDIA決算・ガイダンス・時間外株価。","電線3社の相対強度回復有無。","金融セクターへの資金流入継続。"],
-  "reviewPath":"data/reviews/2026-08-26.json"
+  "holdings":{"totalCost":1503590,"marketValue":1499200,"unrealizedPnl":-4390,"positions":[{"code":"2342","qty":800,"avg":255,"price":256},{"code":"2926","qty":1000,"avg":119,"price":126},{"code":"3659","qty":200,"avg":3146.45,"price":3092},{"code":"5803","qty":100,"avg":5513,"price":5500}]},
+  "fujikuraPlan":{"stance":"1〜5営業日のスイング継続候補","support":[5500,5450,5310],"resistance":[5513,5558,5600],"note":"キオクシアとの直接商流ではなく、AIデータセンター需要と資金ローテーションの共通テーマとして連動を見る。"},
+  "nexonPlan":{"stance":"防御優先","support":[3080],"recovery":[3130,3146.45,3169]},
+  "goalProgress":{"target":300000,"cumulativeProvisional":59910,"remainingProvisional":240090,"progressPctProvisional":19.97},
+  "nextWatch":["フジクラ5500〜5513支持化と5558突破","キオクシア52500維持と53450突破、会社正式発表の有無","古河電工・住友電工の同時高継続","ネクソン3080防衛"]
 }
