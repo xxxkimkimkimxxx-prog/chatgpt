@@ -1,23 +1,19 @@
 {
   "date":"2026-08-27",
-  "marketStance":"中立〜やや弱気。NVIDIAはQ2売上・EPS・データセンター・Q3ガイダンスを全て上回ったが時間外株価は約1〜3%安。AI需要は強い一方、期待値が極端に高く、今日は『好決算だが材料出尽くし』を基本シナリオとする。寄りのAI株GU/GDを追わず9:00〜9:10のVWAPと相対強度で判定。",
-  "macroSummary":"NVIDIA Q2 FY27売上962.2億ドル（市場予想約921.7〜922.7億ドル）、調整EPS2.22ドル（約2.09ドル予想）、Data Center 890億ドル（約856〜857億ドル予想）、Q3売上見通し1080億ドル（約1049〜1052億ドル予想）。Q2粗利率75%、Q3調整粗利率見通し約74%への低下が嫌気され、時間外はマイナス圏。8/26米PCEは前年比3.7%と強く金利上昇圧力。8/26日経平均は66,262.16円（+405.73）、TOPIX4,111.02。日経先物は深夜に65,850まで下げた後、5:51時点のCFDは66,147.5付近へ回復。",
-  "hotSectors":["AIデータセンター需要そのもの：NVIDIA Data Center 890億ドルとQ3売上1080億ドル見通しは需要継続を裏付ける","通信・光インフラ：NVIDIAのAIインフラ拡大継続はフジクラ・古河電工・住友電工の中期仮説を支える","金融：AI株の材料出尽くし時の資金ローテーション候補"],
-  "coldSectors":["高ベータ半導体の寄り付き追随：好決算にもかかわらずNVIDIA時間外安で期待先行銘柄は利確リスク","高PER AI関連：数字の良さより粗利率低下と期待値の高さが意識されやすい"],
-  "holdingsReview":[
-    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"averageCost":255,"lastClose":251,"stance":"防御優先・追加なし","action":"8/26高値256を超えて定着できれば改善。249円割れ定着は撤退候補。255〜256回復時は戻りの強さを確認。"},
-    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119,"lastClose":129,"pts":128,"stance":"含み益保護を優先","action":"128〜129円維持なら保有。131円超で137円再挑戦。128円を出来高付きで割り戻せない場合は一部利確候補。"},
-    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"lastClose":3121,"stance":"保有継続・追加なし","action":"8/26高値3151と取得単価3146.45の回復定着が改善条件。3100割れ定着なら弱化。"}
-  ],
+  "marketStanceMorning":"中立〜やや弱気。NVIDIA好決算でも材料出尽くし警戒、9:00〜9:10のVWAPと相対強度で判定。",
+  "marketActual":{"nikkeiClose":66131.98,"nikkeiPct":-0.20,"leadingSector":"非鉄金属","interpretation":"AI関連は一括上昇ではなく、メモリー・光通信・基板が強く、テスターは弱い二極化。"},
   "daytradeCandidates":[
-    {"rank":1,"code":"5803","name":"フジクラ","sector":"非鉄金属・AI光通信","probability":58,"confidence":"中","catalyst":"NVIDIA Data Center 890億ドル、Q3売上1080億ドル見通しでAIインフラ需要継続。8/26終値5305、高値5353。","risks":"NVIDIA時間外安による材料出尽くし。前日までに期待を織り込み済み。","entryCondition":"9:00〜9:10で初動安値を守りVWAP回復、5353円を出来高付きで突破するか、GD後に同業より強くVWAPを奪回。","skipCondition":"VWAP下で戻り売り継続、8/26安値5110方向へ下落、古河・アドバンテストも同時安。","morningCheck":"最初の10分高安、VWAP、出来高、5353/5305/5110、古河電工・アドバンテスト、日経先物、板とスプレッド。"},
-    {"rank":2,"code":"5801","name":"古河電気工業","sector":"非鉄金属・光通信","probability":56,"confidence":"中","catalyst":"AIデータセンター投資継続。8/26は3905円まで調整し、前日の+10.3%過熱を一部解消。","risks":"8/25急騰の利益確定継続。NVIDIA時間外安。","entryCondition":"3816円（8/26安値）を守り、VWAP上で3905〜3950円を回復。フジクラも相対強いこと。","skipCondition":"3816円割れ、VWAP回復失敗、電線3社が揃って弱い。","morningCheck":"3816/3877（8/26VWAP）/3905/3950、最初の10分高安、VWAP、出来高、フジクラ・住友電工。"},
-    {"rank":3,"code":"6857","name":"アドバンテスト","sector":"半導体テスト","probability":54,"confidence":"中低","catalyst":"NVIDIA売上・EPS・Data Center・ガイダンス全て予想超過。8/26は35700円+3.62%。","risks":"NVIDIA時間外安と高期待。単元100株では約357万円で1銘柄150万円上限を超えるため通常ルールでは実売買対象外。","entryCondition":"監視専用。寄り後に35910円（8/26高値）突破とVWAP上を確認すればAI半導体全体の強さ判定に利用。","skipCondition":"実売買は資金上限ルール上見送り。","morningCheck":"35910/35700/33400、VWAP、出来高、NVIDIA時間外最終反応、フジクラ・イビデンの相対強度。"}
+    {"rank":1,"code":"5803","name":"フジクラ","probability":58,"actual":{"open":5470,"high":5558,"low":5310,"close":5500,"closePct":3.68,"volume":54885600},"hit":true,"tradeTaken":true,"trade":{"qty":100,"buyPrice":5513,"status":"held overnight as swing","unrealizedPnlAtClose":-1300},"reviewNote":"方向は的中。ただし5513円エントリーは早く、5310円まで大きく振れた。最初の押し・VWAP回復後の買いがより良かった。"},
+    {"rank":2,"code":"5801","name":"古河電気工業","probability":56,"actual":{"close":4089,"closePct":4.71},"hit":true,"tradeTaken":false,"reviewNote":"フジクラ・住友電工と同時高でSector Alignment成立。"},
+    {"rank":3,"code":"6857","name":"アドバンテスト","probability":54,"hit":false,"tradeTaken":false,"reviewNote":"AIテスターは弱く、AIテーマ内二極化の温度計として有効。"}
   ],
-  "swingCandidates":[
-    {"rank":1,"code":"5802","name":"住友電気工業","sector":"非鉄金属・通信インフラ","probability":60,"confidence":"中高","catalyst":"NVIDIAのData Center 890億ドルとQ3売上1080億ドル見通しはAIインフラ需要継続を支持。8/26終値2211.5、VWAP2207.1。","risks":"NVIDIA株の材料出尽くし、日銀・東京CPI・Jackson Hole。","entryCondition":"2179〜2200円を維持し、2233円突破または押し目からVWAP回復を確認。","skipCondition":"2179円割れ定着、AIインフラ株全面安。","holdingPeriod":"1〜3週間","invalidCondition":"2150円終値割れ、またはAI設備投資継続仮説の後退。"},
-    {"rank":2,"code":"5801","name":"古河電気工業","sector":"非鉄金属・光通信","probability":58,"confidence":"中","catalyst":"NVIDIA決算でAIインフラ需要自体は強さ確認。8/26調整で短期過熱を一部解消。","risks":"8/25急騰分の利益確定と高ボラティリティ。","entryCondition":"3816〜3900円帯で下げ止まり、日足で3905円を回復すること。","skipCondition":"3816円を大商いで割る。","holdingPeriod":"3営業日〜3週間","invalidCondition":"3750円終値割れ、またはAI光通信需要の投資仮説後退。"}
+  "intradayDiscoveredCandidates":[
+    {"code":"6522","name":"アスタリスク","stream":"Fresh Catalyst","result":"ストップ高2567円","tradeTaken":false},
+    {"code":"6055","name":"ジャパンマテリアル","stream":"Sector Alignment / Kioxia capex read-through","result":"大幅高","tradeTaken":false},
+    {"code":"285A","name":"キオクシアHD","stream":"Fresh Catalyst","result":"52500円 +5.00%","tradeTaken":false,"note":"新棟報道は会社正式発表ではなく、検討中であることは事実と会社コメント。"}
   ],
-  "riskPlan":{"dailyLossLimitYen":50000,"perTradeLossLimitYen":10000,"singleNameCapitalLimitYen":1500000,"officialRealizedPnlThrough20260823":42500,"provisionalRealizedPnl20260825":17410,"provisionalAugustCumulative":59910,"previousBusinessDayRealizedPnl":"8/26は未確認。確定値として加算しない。","lossCapacityTodayYen":50000,"consecutiveStopLosses":"8/26売買履歴未確認のため確定不能。GitHub上の直近確認済みクローズは8/25古河電工の利益確定。","priority":"NVIDIA好決算を理由に寄り成行でAI株を追わない。9:00〜9:10のVWAP・同業相対強度・出来高を確認し、最大1〜2銘柄に限定。"},
-  "sources":["Reuters 2026-08-26 NVIDIA earnings","AP 2026-08-26 NVIDIA earnings","Reuters 2026-08-26 US markets/PCE","NVIDIA Investor Relations","Monex 2026-08-26 Tokyo market summary","GitHub holdings.json","GitHub performance-summary.json"]
+  "holdingsAtEvening":{"totalCost":1503590,"marketValue":1499200,"unrealizedPnl":-4390,"positions":[{"code":"2342","qty":800,"avg":255,"price":256},{"code":"2926","qty":1000,"avg":119,"price":126},{"code":"3659","qty":200,"avg":3146.45,"price":3092},{"code":"5803","qty":100,"avg":5513,"price":5500}]},
+  "riskPlan":{"dailyRealizedLossLimitYen":50000,"perTradeLossLimitYen":10000,"singleNameCapitalLimitYen":1500000,"dailyGrossPurchaseLimitYen":null,"daytradeToSwingAllowed":true,"ruleReference":"data/trading-rules.json"},
+  "goalProgress":{"confirmedThrough20260823":42500,"provisional20260825":17410,"cumulativeProvisional":59910,"remainingProvisional":240090,"progressPctProvisional":19.97},
+  "tomorrowFocus":["フジクラ5500〜5513支持化→5558→5600","キオクシア52500維持と53450突破、正式開示の有無","古河電工・住友電工の同時高継続","ネクソン3080防衛"]
 }
