@@ -1,49 +1,15 @@
 {
-  "asOf": "2026-08-27 12:15 JST",
-  "source": "Latest user-supplied iSPEED screenshots; individual reference prices may have different observation times",
+  "asOf": "2026-08-27 18:20 JST",
+  "source": "User-supplied iSPEED holdings screenshot",
   "positions": [
-    {
-      "code": "2342",
-      "name": "トランスジェニックグループ",
-      "quantity": 800,
-      "averageCost": 255.0,
-      "referencePrice": 252,
-      "referencePriceObservedAt": "2026-08-25 15:31 JST",
-      "unrealizedPnlAtReference": -2400,
-      "management": "既存保有。追加は投資仮説・支持線・総リスクを再確認した場合のみ。"
-    },
-    {
-      "code": "2926",
-      "name": "篠崎屋",
-      "quantity": 1000,
-      "averageCost": 119.0,
-      "referencePrice": 129,
-      "referencePriceObservedAt": "2026-08-25 15:31 JST",
-      "unrealizedPnlAtReference": 10000,
-      "management": "利益ポジション。129円前後の支持と132〜137円方向を監視。"
-    },
-    {
-      "code": "3659",
-      "name": "ネクソン",
-      "quantity": 200,
-      "averageCost": 3146.45,
-      "referencePrice": 3121,
-      "referencePriceObservedAt": "2026-08-27 11:30 JST",
-      "unrealizedPnlAtReference": -5090,
-      "management": "前場は3,160円台から3,121円まで押し戻し、5分足MA5・MA25・MA75を下回って前引け。後場は3,132〜3,140円回復が改善条件。3,100〜3,095円割れは1回損失上限1万円に接近するため防御優先。3,146.45円回復後に3,160円突破なら3,180〜3,200円方向を再評価。"
-    },
-    {
-      "code": "5803",
-      "name": "フジクラ",
-      "quantity": 100,
-      "averageCost": 5513.0,
-      "referencePrice": 5460,
-      "referencePriceObservedAt": "2026-08-27 11:30 JST",
-      "unrealizedPnlAtReference": -5300,
-      "management": "前場安値圏から回復し、5分足MA25・MA75の上、MA5近辺まで戻して前引け。5,440〜5,450円維持なら5,480〜5,500円、さらに建値5,513円〜前場高値圏の再試行を期待。5,415円前後を明確に割る場合は1回損失上限1万円に接近するため撤退優先。デイトレからスイングへの再分類は可。"
-    }
+    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"averageCost":255.0,"referencePrice":256,"unrealizedPnl":800,"management":"既存保有。追加は投資仮説・支持線・総リスクを再確認した場合のみ。"},
+    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":126,"unrealizedPnl":7000,"management":"利益ポジション。126円維持から129〜132円回復を監視。"},
+    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"referencePrice":3092,"unrealizedPnl":-10890,"management":"防御優先。3080円防衛、3130→3146.45→3169回復が改善条件。追加は反発確認なしでは行わない。"},
+    {"code":"5803","name":"フジクラ","quantity":100,"averageCost":5513.0,"referencePrice":5500,"unrealizedPnl":-1300,"management":"デイトレからスイングへ再分類。5500〜5513支持化、5558突破で5600方向。5450割れは警戒、5310方向へ崩れる場合は再評価。キオクシアとの直接商流ではなくAIデータセンター需要・セクター資金の同時強さを確認する。"}
   ],
-  "portfolioUnrealizedPnlStatus": "partial/mixed-timestamp; do not aggregate as a live total until all current prices are refreshed",
-  "ruleReference": "data/trading-rules.json",
-  "note": "購入上限は1日総額50万円ではない。1銘柄あたり150万円、固定の1日購入総額上限なし。デイトレからスイングへの変更は条件付きで許容。"
+  "totalUnrealizedPnl": -4390,
+  "estimatedPortfolioCost": 1503590,
+  "estimatedPortfolioMarketValue": 1499200,
+  "ruleReference":"data/trading-rules.json",
+  "note":"購入上限は1銘柄150万円、固定の1日購入総額上限なし。デイトレ→スイング変更は条件付きで許容。"
 }
