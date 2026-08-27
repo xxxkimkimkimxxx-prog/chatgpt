@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-08-25 15:31 JST",
-  "source": "iSPEED portfolio snapshot supplied by user at 15:31",
+  "asOf": "2026-08-27 10:11 JST",
+  "source": "Latest user-supplied iSPEED screenshots; individual reference prices may have different observation times",
   "positions": [
     {
       "code": "2342",
@@ -9,8 +9,8 @@
       "averageCost": 255.0,
       "referencePrice": 252,
       "referencePriceObservedAt": "2026-08-25 15:31 JST",
-      "unrealizedPnl": -2400,
-      "management": "追加ナンピン停止。252円が目先の防衛線で、249円・246円割れは弱化。255円回復までは攻めない。"
+      "unrealizedPnlAtReference": -2400,
+      "management": "既存保有。追加は投資仮説・支持線・総リスクを再確認した場合のみ。"
     },
     {
       "code": "2926",
@@ -19,35 +19,31 @@
       "averageCost": 119.0,
       "referencePrice": 129,
       "referencePriceObservedAt": "2026-08-25 15:31 JST",
-      "unrealizedPnl": 10000,
-      "management": "利益ポジション継続。129円維持を確認しつつ、132円再突破なら137円方向を監視。122円まで利益を放置せず、128〜129円帯の崩れ方を確認する。"
+      "unrealizedPnlAtReference": 10000,
+      "management": "利益ポジション。129円前後の支持と132〜137円方向を監視。"
     },
     {
       "code": "3659",
       "name": "ネクソン",
       "quantity": 200,
       "averageCost": 3146.45,
-      "referencePrice": 3114,
-      "referencePriceObservedAt": "2026-08-25 15:31 JST",
-      "unrealizedPnl": -6490,
-      "management": "取得単価を下回って終了。買い増しはしない。3,146円回復、3,150〜3,160円突破を改善条件とし、3,100円割れが続く場合は3,080円近辺を再警戒。"
-    }
-  ],
-  "closedToday": [
+      "referencePrice": 3136,
+      "referencePriceObservedAt": "2026-08-27 10:11 JST",
+      "unrealizedPnlAtReference": -2090,
+      "management": "デイトレ/スイングを問わず継続保有可。3,128〜3,131円帯を維持し3,142円→取得単価3,146.45円→3,150〜3,160円を回復できるか監視。3,160円突破時は3,180〜3,200円方向の利益伸長を検討。"
+    },
     {
-      "code": "5801",
-      "name": "古河電気工業",
-      "quantity": 200,
-      "averageCost": 3867.95,
-      "sellPrice": 3955,
-      "derivedGrossRealizedPnl": 17410,
-      "pnlStatus": "provisional until iSPEED realized P/L screen confirmation",
-      "sessionClose": 4000,
-      "note": "事前利益目標3,950〜3,960円内で全株売却。終値まで保有した場合との差は+9,000円だったが、売却自体は計画遵守。"
+      "code": "5803",
+      "name": "フジクラ",
+      "quantity": 100,
+      "averageCost": 5513.0,
+      "referencePrice": 5366,
+      "referencePriceObservedAt": "2026-08-27 10:10 JST",
+      "unrealizedPnlAtReference": -14700,
+      "management": "デイトレからスイングへの再分類は可。AI/光通信の中期仮説、5分足MA25・MA75、当日支持線、翌日ギャップリスクを再評価して持越し判断。単に含み損だからではなく期待値が残る場合のみ継続。"
     }
   ],
-  "totalUnrealizedPnl": 1110,
-  "estimatedPortfolioCost": 952290,
-  "estimatedPortfolioMarketValue": 953400,
-  "note": "価格は自動ライブ更新ではなく、ユーザーのiSPEED実画面を正本として反映。古河電工は15:31時点で保有なし。"
+  "portfolioUnrealizedPnlStatus": "partial/mixed-timestamp; do not aggregate as a live total until all current prices are refreshed",
+  "ruleReference": "data/trading-rules.json",
+  "note": "購入上限は1日総額50万円ではない。1銘柄あたり150万円、固定の1日購入総額上限なし。デイトレからスイングへの変更は条件付きで許容。"
 }
