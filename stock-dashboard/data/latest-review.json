@@ -1,19 +1,15 @@
 {
-  "date":"2026-08-26",
-  "asOf":"2026-08-26 16:05 JST",
-  "market":{"summary":"日経平均は65,604.49円で安寄りし、10時には65,390.55円まで下落した後に急反発。終値は66,262.16円（+405.73円、+0.62%）。証券・保険・医薬品・銀行が強く、前日主役の電線は持ち高整理が優勢。"},
+  "date":"2026-08-27",
+  "asOf":"2026-08-27 16:15 JST",
+  "market":{"summary":"15時時点の日経平均は66,119.29円（-142.87円、-0.22%）。プライム値上がり654、値下がり843。非鉄金属が業種首位。アドバンテストが約265円押し下げる一方、キオクシア、フジクラ、東エレク、イビデンが指数を押し上げ、AI関連は二極化。"},
   "forecastReview":[
-    {"code":"5801","name":"古河電工","forecastProbability":61,"result":"外れ","lesson":"前日+10.34%のContinuationを重視し過ぎた。非鉄金属と同業が朝から弱い時点で失格にすべきだった。"},
-    {"code":"5803","name":"フジクラ","forecastProbability":59,"result":"外れ","lesson":"NVIDIA決算前の利益確定・ポジション整理を過小評価。"},
-    {"code":"5802","name":"住友電工","forecastProbability":57,"result":"条件不成立","lesson":"同業連動を買い条件にしていたため、無理なエントリー回避に機能。"}
+    {"code":"5803","name":"フジクラ","forecastProbability":58,"result":"的中","lesson":"寄り追い回避と押し目確認が重要。5310円まで振れた後5500円（+3.68%）で終了し、非鉄金属のSector Alignmentも成立。"},
+    {"code":"5801","name":"古河電工","forecastProbability":56,"result":"方向は的中","lesson":"フジクラとの同業連動が成立し、光通信・電線への資金残存を確認。"},
+    {"code":"6857","name":"アドバンテスト","forecastProbability":54,"result":"弱さ判定に有効","lesson":"資金上限から実売買対象外にした判断は正しく、AIテーマ内の二極化判定に有効だった。"}
   ],
-  "freshCatalystReview":[
-    {"code":"4082","name":"第一稀元素化学工業","result":"ストップ高買い気配","note":"上昇期待は高かったがPTS織り込み過大で実戦性は低い。"},
-    {"code":"278A","name":"Terra Drone","result":"ストップ高","note":"防衛ドローン量産調達は強いFresh Catalystだが高価格・S高で実戦対象外。"},
-    {"code":"8766","name":"東京海上HD","result":"強い","note":"株式分割・長期優待と保険業のSector Alignmentが一致。"}
-  ],
-  "goalProgress":{"targetRealizedPnl":300000,"countingStart":"2026-08-01","confirmedAugustRealizedPnlThrough20260823":42500,"provisionalRealizedPnl20260825":17410,"cumulativeProvisional":59910,"progressPctProvisional":20.0,"remainingProvisional":240090,"todayRealizedPnlStatus":"8/26実売買未確認"},
-  "lessons":["前日主役テーマを翌日に自動継続しない。9:30までに業種指数と同業2社以上がVWAP下ならContinuation失格。","イベント前日は前日急騰テーマの新規スイング持越しを原則見送り。","指数だけで地合い判断せず、値上がり銘柄数と業種ローテーションを見る。"],
-  "nextWatch":["8/27朝はNVIDIA決算・ガイダンス・時間外株価を最優先。","電線は古河・フジクラ・住友電工が揃って相対強度回復時のみ再昇格。","金融は証券・保険・銀行の資金流入継続を確認。"],
-  "detailPath":"data/reviews/2026-08-26.json"
+  "holdings":{"fujikura":"100株@5513、終値5500で概算-1300円。持越し合理性あり。5558→5600を上値目標、5450割れ警戒。","nexon":"200株@3146.45、終値3092で概算-10890円。朝3169まで戻したが失速し安値圏引け。3080割れを撤退優先条件、追加買い禁止。"},
+  "goalProgress":{"targetRealizedPnl":300000,"confirmedAugustRealizedPnlThrough20260823":42500,"provisionalRealizedPnl20260825":17410,"confirmedRealizedPnl20260826":0,"cumulativeProvisional":59910,"progressPctProvisional":19.97,"remainingProvisional":240090,"todayRealizedPnlStatus":"8/27未確認"},
+  "lessons":["AI関連はメモリー・光通信・基板・テスターに分解しサブセクター相対強度を見る。","心理的節目の突破は5分足定着と出来高増を確認する。","取得単価回復後に再失速し安値圏引けした保有株は翌日の追加買いを禁止し撤退優先度を上げる。"],
+  "nextWatch":["フジクラ5500〜5513支持化と5558突破。","ネクソン3080防衛、3130→3146.45回復。","アドバンテストの弱さとキオクシア・フジクラ・古河・イビデンの強さが翌日も分岐するか。"],
+  "detailPath":"data/reviews/2026-08-27.json"
 }
