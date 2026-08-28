@@ -2,8 +2,9 @@
   "date":"2026-08-27",
   "marketStanceMorning":"中立〜やや弱気。NVIDIA好決算でも材料出尽くし警戒、9:00〜9:10のVWAPと相対強度で判定。",
   "marketActual":{"nikkeiClose":66131.98,"nikkeiPct":-0.20,"leadingSector":"非鉄金属","interpretation":"AI関連は一括上昇ではなく、メモリー・光通信・基板が強く、テスターは弱い二極化。"},
+  "realizedPnl":{"status":"confirmed","amount":0,"source":"user confirmed 2026-08-28","note":"8/27はフジクラ100株の買付・持越しがあるため取引0回ではない。売却による実現損益は0円。"},
   "daytradeCandidates":[
-    {"rank":1,"code":"5803","name":"フジクラ","probability":58,"actual":{"open":5470,"high":5558,"low":5310,"close":5500,"closePct":3.68,"volume":54885600},"hit":true,"tradeTaken":true,"trade":{"qty":100,"buyPrice":5513,"status":"held overnight as swing","unrealizedPnlAtClose":-1300},"reviewNote":"方向は的中。ただし5513円エントリーは早く、5310円まで大きく振れた。最初の押し・VWAP回復後の買いがより良かった。"},
+    {"rank":1,"code":"5803","name":"フジクラ","probability":58,"actual":{"open":5470,"high":5558,"low":5310,"close":5500,"closePct":3.68,"volume":54885600},"hit":true,"tradeTaken":true,"trade":{"qty":100,"buyPrice":5513,"status":"held overnight as swing","realizedPnl":0,"unrealizedPnlAtClose":-1300},"reviewNote":"方向は的中。ただし5513円エントリーは早く、5310円まで大きく振れた。最初の押し・VWAP回復後の買いがより良かった。"},
     {"rank":2,"code":"5801","name":"古河電気工業","probability":56,"actual":{"close":4089,"closePct":4.71},"hit":true,"tradeTaken":false,"reviewNote":"フジクラ・住友電工と同時高でSector Alignment成立。"},
     {"rank":3,"code":"6857","name":"アドバンテスト","probability":54,"hit":false,"tradeTaken":false,"reviewNote":"AIテスターは弱く、AIテーマ内二極化の温度計として有効。"}
   ],
@@ -14,6 +15,6 @@
   ],
   "holdingsAtEvening":{"totalCost":1503590,"marketValue":1499200,"unrealizedPnl":-4390,"positions":[{"code":"2342","qty":800,"avg":255,"price":256},{"code":"2926","qty":1000,"avg":119,"price":126},{"code":"3659","qty":200,"avg":3146.45,"price":3092},{"code":"5803","qty":100,"avg":5513,"price":5500}]},
   "riskPlan":{"dailyRealizedLossLimitYen":50000,"perTradeLossLimitYen":10000,"singleNameCapitalLimitYen":1500000,"dailyGrossPurchaseLimitYen":null,"daytradeToSwingAllowed":true,"ruleReference":"data/trading-rules.json"},
-  "goalProgress":{"confirmedThrough20260823":42500,"provisional20260825":17410,"cumulativeProvisional":59910,"remainingProvisional":240090,"progressPctProvisional":19.97},
+  "goalProgress":{"confirmedThrough20260823":42500,"provisional20260825":17410,"confirmed20260826":0,"confirmed20260827":0,"cumulativeProvisional":59910,"remainingProvisional":240090,"progressPctProvisional":19.97},
   "tomorrowFocus":["フジクラ5500〜5513支持化→5558→5600","キオクシア52500維持と53450突破、正式開示の有無","古河電工・住友電工の同時高継続","ネクソン3080防衛"]
 }
