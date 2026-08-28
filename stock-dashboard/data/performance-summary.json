@@ -1,32 +1,28 @@
 {
-  "asOf":"2026-08-28 16:31 JST",
+  "asOf":"2026-08-28 18:10 JST",
   "period":"2026-08",
-  "officialRealizedPnl":42500,
-  "officialTradeCount":35,
+  "officialRealizedPnlThrough20260823":42500,
+  "officialTradeCountThrough20260823":35,
   "officialSourceAsOf":"2026-08-23 iSPEED realized P/L screen",
   "threeMonthGoal":{
-    "startDate":"2026-08-01",
-    "targetDate":"2026-11-24",
-    "targetRealizedPnl":300000,
-    "countingRule":"2026年8月のすべての取引を含め、8月以降の実現損益を累計して30万円目標の進捗とする",
+    "startDate":"2026-08-01","targetDate":"2026-11-24","targetRealizedPnl":300000,
     "confirmedAugustRealizedPnlThrough20260823":42500,
     "provisionalRealizedPnl20260825":17410,
     "confirmedRealizedPnl20260826":0,
-    "confirmedTradeCount20260826":0,
-    "provisionalCumulativeRealizedPnl":59910,
-    "remainingProvisional":240090,
-    "progressPctProvisional":19.97,
-    "status":"8/23までのiSPEED確定月間損益42,500円を全額ベースに含める。8/25古河電工+17,410円は約定価格からの暫定値。8/26はユーザー確認済みで取引0回・実現損益0円。8/27および8/28の実売買・実現損益はiSPEED未確認のため加算しない。"
+    "confirmedRealizedPnl20260828":4200,
+    "confirmedTradeCount20260828":2,
+    "confirmedKnownPnlExcludingUnconfirmedDays":46700,
+    "provisionalCumulativeRealizedPnl":64110,
+    "remainingProvisional":235890,
+    "progressPctProvisional":21.37,
+    "status":"8/28 iSPEED画面で当日実現損益+4,200円を確認（タイミー+1,000円、トランスジェニック+3,200円）。8/25古河電工+17,410円は引き続き暫定。8/27は未確認のため加算しない。"
   },
+  "confirmedTrades20260828":[
+    {"code":"215A","name":"タイミー","quantity":100,"sellPrice":1810,"realizedPnl":1000},
+    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"sellPrice":259,"realizedPnl":3200}
+  ],
   "provisionalTrades":[{"date":"2026-08-25","type":"day","code":"5801","name":"古河電気工業","qty":200,"averageBuy":3867.95,"sell":3955,"derivedGrossPnl":17410,"confirmed":false}],
   "confirmedNoTradeDays":[{"date":"2026-08-26","tradeCount":0,"realizedPnl":0,"source":"user confirmed"}],
-  "confirmedExamples":[
-    {"date":"2026-08-12","code":"1605","name":"INPEX","realizedPnl":6300},
-    {"date":"2026-08-12","code":"7013","name":"IHI","realizedPnl":-600},
-    {"date":"2026-08-12","code":"7906","name":"ヨネックス","realizedPnl":2000},
-    {"date":"2026-08-13","code":"3110","name":"日東紡績","realizedPnl":4200},
-    {"date":"2026-08-20","code":"141A","name":"トライアルHD","realizedPnl":12000}
-  ],
-  "lastReview":{"date":"2026-08-28","todayRealizedPnlStatus":"unconfirmed","detailPath":"data/reviews/2026-08-28.json"},
+  "lastReview":{"date":"2026-08-28","todayRealizedPnlStatus":"confirmed +4200","detailPath":"data/reviews/2026-08-28.json"},
   "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"goalIncludesAllAugustTrades":true}
 }
