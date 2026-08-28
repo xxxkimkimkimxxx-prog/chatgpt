@@ -1,15 +1,15 @@
 {
-  "asOf":"2026-08-27 18:20 JST",
-  "source":"8/27 evening review using user iSPEED screenshot and verified market sources",
-  "marketSummary":"日経平均66,131.98円（-0.20%）。非鉄金属が業種1位。AI関連はキオクシア・フジクラ・古河電工・イビデンなどが強く、アドバンテストは弱い二極化。",
+  "asOf":"2026-08-28 16:31 JST",
+  "source":"8/28 evening review using verified market sources; user executions/holdings not overwritten without iSPEED confirmation",
+  "marketSummary":"日経平均66,405.56円（+0.41%）、TOPIX4,146.71（+0.72%）。指数は反発したが非鉄金属は弱く、古河電工-4.54%、住友電工-3.32%、フジクラ-2.90%。サービス、海運、その他製品、半導体装置・ソフトウェアの一角へ資金ローテーション。",
   "capitalFlow":[
-    {"rank":1,"theme":"AIメモリー・データセンター","examples":["キオクシア"],"note":"キオクシアは52,500円、+5.00%。新棟報道で買われたが会社は正式発表ではないとコメント。"},
-    {"rank":2,"theme":"光通信・電線","examples":["フジクラ","古河電工","住友電工"],"note":"フジクラ+3.68%、古河電工+4.71%、住友電工+1.97%。同業連動と非鉄首位でSector Alignment成立。"},
-    {"rank":3,"theme":"RFID店舗DX","examples":["アスタリスク","スマレジ"],"note":"アスタリスクはストップ高。Fresh Catalystが強く反応。"}
+    {"rank":1,"theme":"サービス・ソフトウェア","examples":["リクルートHD","トレンドマイクロ"],"note":"リクルート+4.89%、トレンドマイクロ+5.93%。米ソフトウェア株高と国内資金ローテーションが追い風。"},
+    {"rank":2,"theme":"半導体装置・電子部品","examples":["アドバンテスト","東京エレクトロン","SCREEN","村田製作所"],"note":"NVIDIA後のAI資金は装置・電子部品の一角へ。アドバンテスト+1.90%。"},
+    {"rank":3,"theme":"ゲーム・その他製品","examples":["任天堂","コナミG","バンダイナムコ"],"note":"任天堂・コナミ・バンナムが上昇。非鉄からのローテーション先の一つ。"}
   ],
-  "holdings":{"totalCost":1503590,"marketValue":1499200,"unrealizedPnl":-4390,"positions":[{"code":"2342","qty":800,"avg":255,"price":256},{"code":"2926","qty":1000,"avg":119,"price":126},{"code":"3659","qty":200,"avg":3146.45,"price":3092},{"code":"5803","qty":100,"avg":5513,"price":5500}]},
-  "fujikuraPlan":{"stance":"1〜5営業日のスイング継続候補","support":[5500,5450,5310],"resistance":[5513,5558,5600],"note":"キオクシアとの直接商流ではなく、AIデータセンター需要と資金ローテーションの共通テーマとして連動を見る。"},
-  "nexonPlan":{"stance":"防御優先","support":[3080],"recovery":[3130,3146.45,3169]},
-  "goalProgress":{"target":300000,"cumulativeProvisional":59910,"remainingProvisional":240090,"progressPctProvisional":19.97},
-  "nextWatch":["フジクラ5500〜5513支持化と5558突破","キオクシア52500維持と53450突破、会社正式発表の有無","古河電工・住友電工の同時高継続","ネクソン3080防衛"]
+  "weakThemes":[{"theme":"非鉄金属・電線/光通信","examples":["古河電工","住友電工","フジクラ"],"note":"前日業種首位から一転して全面安。Continuation失敗。"},{"theme":"AIメモリー","examples":["キオクシア"],"note":"前日の強さが継続せず、日経平均の大きなマイナス寄与。"}],
+  "holdingsReference":"data/holdings.jsonは8/27 18:20 iSPEED確認値を維持。8/28のユーザー約定・全保有引け値は未確認のため上書きしない。",
+  "fujikuraPlan":{"stance":"短期スイング期待値低下・追加禁止","close":5340,"estimatedPnlAtClose":-17300,"support":[5310],"recovery":[5450,5500,5513,5558],"note":"AI光通信の中期仮説は残るが、5450割れ＋非鉄業種下位で短期仮説は悪化。5310割れ定着なら撤退優先。"},
+  "goalProgress":{"target":300000,"cumulativeProvisional":59910,"remainingProvisional":240090,"progressPctProvisional":19.97,"today":"8/28未確認"},
+  "nextWatch":["Jackson Hole後の米10年債・Nasdaq・SOX・ドル円","フジクラ5310防衛と5450回復","古河3900・住友2180・フジクラ5340から電線3社が同時反発できるか","AI資金を光通信に固定せず装置・ソフトウェア・メモリーで再選定"]
 }
