@@ -1,16 +1,41 @@
 {
-  "asOf":"2026-08-28 21:23 JST",
+  "asOf":"2026-08-28 23:10 JST",
   "period":"2026-08",
   "officialRealizedPnl":67100,
   "officialRealizedTradeCount":40,
-  "wins":30,
-  "losses":10,
-  "winRatePct":75.0,
-  "grossProfit":116805,
-  "grossLoss":49705,
-  "profitFactor":2.35,
-  "averageWin":3893.5,
-  "averageLoss":-4970.5,
+  "executionBasedMetrics":{
+    "wins":30,
+    "losses":10,
+    "winRatePct":75.0,
+    "grossProfit":116805,
+    "grossLoss":49705,
+    "profitFactor":2.35,
+    "averageWin":3893.5,
+    "averageLoss":-4970.5,
+    "note":"iSPEEDの約定明細をそのまま1明細=1件として集計。証券口座との照合用。"
+  },
+  "decisionEpisodeMetrics":{
+    "episodes":37,
+    "wins":29,
+    "losses":8,
+    "winRatePct":78.38,
+    "grossProfit":102455,
+    "grossLoss":35355,
+    "profitFactor":2.90,
+    "averageWin":3532.93,
+    "averageLoss":-4419.38,
+    "expectancyPerEpisode":1813.51,
+    "adjustments":[{
+      "date":"2026-08-07",
+      "code":"6998",
+      "name":"日本タングステン",
+      "reason":"ユーザー確認：誤操作でエントリーを繰り返した同一売買エピソードのため分析上はnetする",
+      "rawExecutions":[-11675,-2675,5665,9825],
+      "netRealizedPnl":1140,
+      "classification":"1勝0敗"
+    }],
+    "note":"売買判断の採点・勝敗分析はこちらを優先。公式実現損益と約定明細自体は変更しない。"
+  },
   "officialSourceAsOf":"2026-08-28 21:23 iSPEED realized P/L screens",
   "ledgerPath":"data/realized-pnl-ledger.json",
   "threeMonthGoal":{
@@ -18,13 +43,13 @@
     "confirmedCumulativeRealizedPnl":67100,
     "remainingConfirmed":232900,
     "progressPctConfirmed":22.37,
-    "status":"iSPEED画面で2026年8月の実現損益合計+67,100円を確認。全40明細をrealized-pnl-ledger.jsonへ登録済み。古河電工は+8,700円×2明細=+17,400円の確定値。"
+    "status":"iSPEED画面で2026年8月の実現損益合計+67,100円を確認。全40明細はraw executionとして保持。売買判断分析では8/7日本タングステン4明細を同一エピソードとして+1,140円へnetする。"
   },
   "dailyRealizedPnl":[
     {"date":"2026-08-04","pnl":-5185,"cumulative":-5185},
     {"date":"2026-08-05","pnl":5460,"cumulative":275},
     {"date":"2026-08-06","pnl":7850,"cumulative":8125},
-    {"date":"2026-08-07","pnl":8110,"cumulative":16235},
+    {"date":"2026-08-07","pnl":8110,"cumulative":16235,"analysisNote":"日本タングステンは4明細net +1,140円で1勝扱い"},
     {"date":"2026-08-10","pnl":-12535,"cumulative":3700},
     {"date":"2026-08-12","pnl":7700,"cumulative":11400},
     {"date":"2026-08-13","pnl":4200,"cumulative":15600},
@@ -38,5 +63,5 @@
   "bestTrade":{"date":"2026-08-20","code":"141A","name":"トライアルホールディングス","realizedPnl":12000},
   "worstTrade":{"date":"2026-08-10","code":"5803","name":"フジクラ","realizedPnl":-13435},
   "lastReview":{"date":"2026-08-28","todayRealizedPnlStatus":"confirmed +7200","detailPath":"data/reviews/2026-08-28.json"},
-  "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"goalIncludesAllAugustTrades":true}
+  "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"goalIncludesAllAugustTrades":true,"performanceAnalysisUsesDecisionEpisodes":true}
 }
