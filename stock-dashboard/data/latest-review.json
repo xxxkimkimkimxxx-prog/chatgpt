@@ -1,9 +1,10 @@
 {
   "date":"2026-08-28",
-  "asOf":"2026-08-28 18:11 JST",
+  "asOf":"2026-08-28 21:20 JST",
   "market":{"summary":"日経平均66,405.56円（+273.58円、+0.41%）、TOPIX4,146.71（+0.72%）。指数は反発したが非鉄金属・電線は逆行安。サービス、海運、その他製品、半導体装置・ソフトウェアの一角へ資金が移動した。"},
   "focus":{"code":"5803","name":"フジクラ","holding":"100株@5513、終値5340、概算-17,300円","review":"AIデータセンター需要の中期仮説は残るが、5500〜5513支持化失敗、5450割れ、非鉄金属業種下位で短期スイング仮説は悪化。追加買い回避は正解。","next":"5310防衛が最重要。5450→5500→5513回復で改善。5310割れ定着なら撤退優先。週末はJackson Hole後の米金利・Nasdaq・SOX・ドル円ギャップに注意。"},
-  "goalProgress":{"target":300000,"confirmedThrough20260823":42500,"provisional20260825":17410,"confirmed20260826":0,"confirmed20260827":0,"confirmed20260828":4200,"cumulativeProvisional":64110,"remainingProvisional":235890,"progressPctProvisional":21.37,"today":"8/28実現損益+4,200円確定。8/27実現損益0円確定。"},
+  "todayTrading":{"realizedPnl":7200,"tradeCount":3,"trades":["タイミー +1,000円","トランスジェニック +3,200円","日本一ソフトウェア +3,000円（1430→1460、100株）"]},
+  "goalProgress":{"target":300000,"confirmedThrough20260823":42500,"provisional20260825":17410,"confirmed20260826":0,"confirmed20260827":0,"confirmed20260828":7200,"cumulativeProvisional":67110,"remainingProvisional":232890,"progressPctProvisional":22.37,"today":"8/28実現損益+7,200円確定。8/27実現損益0円確定。"},
   "lessons":["前日業種1位でも金曜＋大型イベント当日＋前日急騰はContinuationを強く減点する","AIテーマは毎朝固定せず、9:30に装置・メモリー・光通信・ソフトウェアへ再ランキングする","既存スイングも第一警戒線割れ＋Sector Alignment崩壊なら前場中の縮小・撤退を比較する"],
   "detailPath":"data/reviews/2026-08-28.json"
 }
