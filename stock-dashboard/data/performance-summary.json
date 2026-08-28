@@ -1,5 +1,5 @@
 {
-  "asOf":"2026-08-27 16:15 JST",
+  "asOf":"2026-08-28 16:31 JST",
   "period":"2026-08",
   "officialRealizedPnl":42500,
   "officialTradeCount":35,
@@ -16,7 +16,7 @@
     "provisionalCumulativeRealizedPnl":59910,
     "remainingProvisional":240090,
     "progressPctProvisional":19.97,
-    "status":"8/23までのiSPEED確定月間損益42,500円を全額ベースに含める。8/25古河電工+17,410円は約定価格からの暫定値。8/26はユーザー確認済みで取引0回・実現損益0円。8/27の実売買・実現損益は16:15時点で未確認のため加算しない。"
+    "status":"8/23までのiSPEED確定月間損益42,500円を全額ベースに含める。8/25古河電工+17,410円は約定価格からの暫定値。8/26はユーザー確認済みで取引0回・実現損益0円。8/27および8/28の実売買・実現損益はiSPEED未確認のため加算しない。"
   },
   "provisionalTrades":[{"date":"2026-08-25","type":"day","code":"5801","name":"古河電気工業","qty":200,"averageBuy":3867.95,"sell":3955,"derivedGrossPnl":17410,"confirmed":false}],
   "confirmedNoTradeDays":[{"date":"2026-08-26","tradeCount":0,"realizedPnl":0,"source":"user confirmed"}],
@@ -27,6 +27,6 @@
     {"date":"2026-08-13","code":"3110","name":"日東紡績","realizedPnl":4200},
     {"date":"2026-08-20","code":"141A","name":"トライアルHD","realizedPnl":12000}
   ],
-  "lastReview":{"date":"2026-08-27","todayRealizedPnlStatus":"unconfirmed","detailPath":"data/reviews/2026-08-27.json"},
+  "lastReview":{"date":"2026-08-28","todayRealizedPnlStatus":"unconfirmed","detailPath":"data/reviews/2026-08-28.json"},
   "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"goalIncludesAllAugustTrades":true}
 }
