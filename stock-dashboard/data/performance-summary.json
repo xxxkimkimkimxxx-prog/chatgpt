@@ -1,5 +1,5 @@
 {
-  "asOf":"2026-08-28 18:11 JST",
+  "asOf":"2026-08-28 21:20 JST",
   "period":"2026-08",
   "officialRealizedPnlThrough20260823":42500,
   "officialTradeCountThrough20260823":35,
@@ -10,21 +10,22 @@
     "provisionalRealizedPnl20260825":17410,
     "confirmedRealizedPnl20260826":0,
     "confirmedRealizedPnl20260827":0,
-    "confirmedRealizedPnl20260828":4200,
-    "confirmedTradeCount20260828":2,
-    "confirmedKnownPnlExcludingProvisional20260825":46700,
-    "provisionalCumulativeRealizedPnl":64110,
-    "remainingProvisional":235890,
-    "progressPctProvisional":21.37,
-    "status":"8/27の実現損益はユーザー確認により0円で確定。8/27はフジクラ買付・持越しがあるため『取引0回』とは扱わず、実現損益0円として記録する。8/28 iSPEED画面で当日実現損益+4,200円を確認（タイミー+1,000円、トランスジェニック+3,200円）。8/25古河電工+17,410円は引き続き暫定。"
+    "confirmedRealizedPnl20260828":7200,
+    "confirmedTradeCount20260828":3,
+    "confirmedKnownPnlExcludingProvisional20260825":49700,
+    "provisionalCumulativeRealizedPnl":67110,
+    "remainingProvisional":232890,
+    "progressPctProvisional":22.37,
+    "status":"8/27の実現損益はユーザー確認により0円で確定。8/28 iSPEED画面で当日実現損益+7,200円を確認（タイミー+1,000円、トランスジェニック+3,200円、日本一ソフトウェア+3,000円）。8/25古河電工+17,410円は引き続き暫定。"
   },
   "confirmedTrades20260828":[
-    {"code":"215A","name":"タイミー","quantity":100,"sellPrice":1810,"realizedPnl":1000},
-    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"sellPrice":259,"realizedPnl":3200}
+    {"code":"215A","name":"タイミー","quantity":100,"averageCost":1800,"sellPrice":1810,"realizedPnl":1000},
+    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"averageCost":255,"sellPrice":259,"realizedPnl":3200},
+    {"code":"3851","name":"日本一ソフトウェア","quantity":100,"averageCost":1430,"sellPrice":1460,"realizedPnl":3000}
   ],
   "provisionalTrades":[{"date":"2026-08-25","type":"day","code":"5801","name":"古河電気工業","qty":200,"averageBuy":3867.95,"sell":3955,"derivedGrossPnl":17410,"confirmed":false}],
   "confirmedNoTradeDays":[{"date":"2026-08-26","tradeCount":0,"realizedPnl":0,"source":"user confirmed"}],
   "confirmedZeroRealizedPnlDays":[{"date":"2026-08-27","realizedPnl":0,"source":"user confirmed","note":"買付・持越しあり。取引0回ではない"}],
-  "lastReview":{"date":"2026-08-28","todayRealizedPnlStatus":"confirmed +4200","detailPath":"data/reviews/2026-08-28.json"},
+  "lastReview":{"date":"2026-08-28","todayRealizedPnlStatus":"confirmed +7200","detailPath":"data/reviews/2026-08-28.json"},
   "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"goalIncludesAllAugustTrades":true}
 }
