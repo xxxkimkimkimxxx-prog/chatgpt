@@ -1,15 +1,15 @@
 {
-  "asOf": "2026-08-27 18:20 JST",
-  "source": "User-supplied iSPEED holdings screenshot",
-  "positions": [
-    {"code":"2342","name":"トランスジェニックグループ","quantity":800,"averageCost":255.0,"referencePrice":256,"unrealizedPnl":800,"management":"既存保有。追加は投資仮説・支持線・総リスクを再確認した場合のみ。"},
-    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":126,"unrealizedPnl":7000,"management":"利益ポジション。126円維持から129〜132円回復を監視。"},
-    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"referencePrice":3092,"unrealizedPnl":-10890,"management":"防御優先。3080円防衛、3130→3146.45→3169回復が改善条件。追加は反発確認なしでは行わない。"},
-    {"code":"5803","name":"フジクラ","quantity":100,"averageCost":5513.0,"referencePrice":5500,"unrealizedPnl":-1300,"management":"デイトレからスイングへ再分類。5500〜5513支持化、5558突破で5600方向。5450割れは警戒、5310方向へ崩れる場合は再評価。キオクシアとの直接商流ではなくAIデータセンター需要・セクター資金の同時強さを確認する。"}
+  "asOf":"2026-08-28 18:10 JST",
+  "source":"User-supplied iSPEED holdings screenshot",
+  "positions":[
+    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":128,"unrealizedPnl":9000},
+    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"referencePrice":3148,"unrealizedPnl":310},
+    {"code":"5027","name":"ANYMIND GROUP","quantity":300,"averageCost":840.0,"referencePrice":814,"unrealizedPnl":-7800},
+    {"code":"5803","name":"フジクラ","quantity":100,"averageCost":5513.0,"referencePrice":5340,"unrealizedPnl":-17300,"management":"短期仮説悪化。追加禁止。5310防衛、5450回復を優先監視。"}
   ],
-  "totalUnrealizedPnl": -4390,
-  "estimatedPortfolioCost": 1503590,
-  "estimatedPortfolioMarketValue": 1499200,
-  "ruleReference":"data/trading-rules.json",
-  "note":"購入上限は1銘柄150万円、固定の1日購入総額上限なし。デイトレ→スイング変更は条件付きで許容。"
+  "closedToday":[{"code":"2342","name":"トランスジェニックグループ","quantity":800,"sellPrice":259,"realizedPnl":3200,"status":"closed"}],
+  "totalUnrealizedPnl":-15790,
+  "estimatedPortfolioCost":1551590,
+  "estimatedPortfolioMarketValue":1535800,
+  "ruleReference":"data/trading-rules.json"
 }
