@@ -1,10 +1,10 @@
 {
-  "asOf":"2026-08-28 21:20 JST",
+  "asOf":"2026-08-28 21:23 JST",
   "source":"User iSPEED realized P/L and holdings screenshots plus 8/28 evening review",
   "today":{"realizedPnl":7200,"tradeCount":3,"holdingsUnrealizedPnl":-15790},
   "priorDay":{"date":"2026-08-27","realizedPnl":0,"status":"confirmed","note":"フジクラ買付・持越しあり。取引0回ではなく実現損益0円。"},
   "holdings":[{"code":"2926","name":"篠崎屋","qty":1000,"avg":119,"price":128,"pnl":9000},{"code":"3659","name":"ネクソン","qty":200,"avg":3146.45,"price":3148,"pnl":310},{"code":"5027","name":"ANYMIND GROUP","qty":300,"avg":840,"price":814,"pnl":-7800},{"code":"5803","name":"フジクラ","qty":100,"avg":5513,"price":5340,"pnl":-17300}],
   "closedToday":[{"code":"215A","name":"タイミー","qty":100,"avg":1800,"sell":1810,"realizedPnl":1000},{"code":"2342","name":"トランスジェニックグループ","qty":800,"avg":255,"sell":259,"realizedPnl":3200},{"code":"3851","name":"日本一ソフトウェア","qty":100,"avg":1430,"sell":1460,"realizedPnl":3000}],
-  "goalProgress":{"target":300000,"cumulativeProvisional":67110,"remainingProvisional":232890,"progressPctProvisional":22.37,"note":"8/25古河+17,410円は暫定。8/26=0円、8/27=0円、8/28=+7,200円は確定。"},
+  "goalProgress":{"target":300000,"confirmedCumulative":67100,"remaining":232900,"progressPct":22.37,"note":"8/25古河電工+17,400円はiSPEEDで確定。8/26=0円、8/27=0円、8/28=+7,200円も確定。"},
   "riskFocus":["フジクラ5310防衛。追加禁止、5450回復失敗なら撤退優先","ANYMINDは反発確認なしの追加禁止","篠崎屋+9,000円の利益保全、ネクソン取得単価3146.45円維持"]
 }
