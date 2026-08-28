@@ -1,7 +1,8 @@
 {
   "date":"2026-08-27",
-  "asOf":"2026-08-27 18:20 JST",
+  "asOf":"2026-08-28 18:11 JST",
   "market":{"nikkeiClose":66131.98,"nikkeiChange":-130.18,"nikkeiPct":-0.20,"leadingSector":"非鉄金属","interpretation":"指数は小幅安だがAI関連は二極化。キオクシア、フジクラ、東エレク、イビデンが指数を押し上げ、アドバンテストが大きく押し下げた。AI関連を一括評価せず、メモリー・光通信・基板・テスターへ分解して見る必要があった。"},
+  "actualTrading":{"realizedPnl":0,"status":"confirmed","note":"ユーザー確認により8/27の実現損益は0円。フジクラ100株@5513円の買付・持越しがあるため、取引0回ではない。"},
   "morningStrategyReview":[
     {"code":"5803","name":"フジクラ","morningProbability":58,"result":"方向は的中・エントリー位置は改善余地","ohlc":{"open":5470,"high":5558,"low":5310,"close":5500},"volume":54885600,"assessment":"終値5500円（+3.68%）、非鉄金属は業種首位。朝の強気方向は正しかったが、5513円での買いは寄り直後の高値圏で、その後5310円まで大きく振れた。押し目・VWAP回復確認後のエントリーならリスクを大幅に抑えられた。"},
     {"code":"5801","name":"古河電気工業","result":"的中","assessment":"終値4089円、前日比+4.71%。フジクラ・住友電工とともに電線・光通信へ資金が残った。"},
@@ -9,10 +10,9 @@
     {"code":"6522","name":"アスタリスク","result":"場中追加候補として大当たり","assessment":"2567円ストップ高。RFID Fresh Catalystの評価は正しかった。"},
     {"code":"6055","name":"ジャパンマテリアル","result":"後追い関連株として強い","assessment":"キオクシア設備投資連想で大幅高。直接受益候補の関連株スキャンは有効だった。"}
   ],
-  "focusTrade":{"code":"5803","name":"フジクラ","quantity":100,"buyPrice":5513,"close":5500,"unrealizedPnl":-1300,"dayLow":5310,"dayHigh":5558,"assessment":"最も学びが大きい取引。買い方向そのものはセクターとAI需要に合致したが、買い位置が早く、寄り後のボラティリティをまともに受けた。10時台の安値から5分足MA25・MA75を回復し、非鉄金属の業種首位と同業連動が確認できたため、デイトレから1〜5営業日のスイングへ再分類する合理性はある。","maeIfEntryBeforeDayLow":-20300,"mfeAfterEntryStatus":"正確な約定時刻が不明のため算定不可。ユーザー画像で確認できる戻り高値は少なくとも5509円。","tomorrowThesis":"キオクシアとの直接商流連動を期待するのではなく、AIデータセンター需要とメモリー・光通信・電線への資金流入が同時継続するかを確認する。","support":[5500,5450,5310],"resistance":[5513,5558,5600],"expectedPeriod":"1〜5営業日を基本。強ければ1〜3週間へ再評価"},
+  "focusTrade":{"code":"5803","name":"フジクラ","quantity":100,"buyPrice":5513,"close":5500,"realizedPnl":0,"unrealizedPnl":-1300,"dayLow":5310,"dayHigh":5558,"assessment":"最も学びが大きい取引。買い方向そのものはセクターとAI需要に合致したが、買い位置が早く、寄り後のボラティリティをまともに受けた。10時台の安値から5分足MA25・MA75を回復し、非鉄金属の業種首位と同業連動が確認できたため、デイトレから1〜5営業日のスイングへ再分類する合理性はある。","maeIfEntryBeforeDayLow":-20300,"mfeAfterEntryStatus":"正確な約定時刻が不明のため算定不可。ユーザー画像で確認できる戻り高値は少なくとも5509円。","tomorrowThesis":"キオクシアとの直接商流連動を期待するのではなく、AIデータセンター需要とメモリー・光通信・電線への資金流入が同時継続するかを確認する。","support":[5500,5450,5310],"resistance":[5513,5558,5600],"expectedPeriod":"1〜5営業日を基本。強ければ1〜3週間へ再評価"},
   "holdingsSnapshot":{"totalCost":1503590,"marketValue":1499200,"totalUnrealizedPnl":-4390,"positions":[{"code":"2342","qty":800,"avg":255,"price":256,"pnl":800},{"code":"2926","qty":1000,"avg":119,"price":126,"pnl":7000},{"code":"3659","qty":200,"avg":3146.45,"price":3092,"pnl":-10890},{"code":"5803","qty":100,"avg":5513,"price":5500,"pnl":-1300}]},
-  "kioxiaReadThrough":{"kioxiaClose":52500,"kioxiaPct":5.0,"kioxiaHigh":53450,"kioxiaLow":50580,"note":"新棟建設報道は株価材料になったが、会社は『新棟建設をさまざまに検討していることは事実』としつつ正式発表ではないとコメント。フジクラとの直接商流は確認していない。両社の同時高はAIデータセンター需要という共通テーマと資金ローテーションの色が強い。"},
-  "goalProgress":{"targetRealizedPnl":300000,"confirmedAugustRealizedPnlThrough20260823":42500,"provisionalRealizedPnl20260825":17410,"cumulativeProvisional":59910,"progressPctProvisional":19.97,"remainingProvisional":240090,"todayRealizedPnlStatus":"8/27は売却確認なし。iSPEED実現損益画面未確認のため正式加算なし。"},
+  "goalProgress":{"targetRealizedPnl":300000,"confirmedAugustRealizedPnlThrough20260823":42500,"provisionalRealizedPnl20260825":17410,"confirmedRealizedPnl20260826":0,"confirmedRealizedPnl20260827":0,"cumulativeProvisional":59910,"progressPctProvisional":19.97,"remainingProvisional":240090,"todayRealizedPnlStatus":"8/27はユーザー確認により実現損益0円で確定。"},
   "goodPoints":["AI関連をサブテーマで分解し、キオクシア・フジクラ・古河の強さを拾えた","フジクラを含み損だけで機械的に切らず、セクター強度と5分足回復を見て持越し候補へ再評価できた","RFID Fresh Catalystのアスタリスクを場中で上位評価できた"],
   "improvements":["フジクラは寄り後の急騰を追わず、最初の押しとVWAP回復後に入るべきだった","キオクシア材料は報道と会社正式発表を分け、関連株の直接受益度も確認する","ネクソンは3169円まで戻した後の失速を重く見て、3080円防衛を次営業日の最重要条件にする"],
   "newRules":["AI関連はメモリー・光通信・基板・テスターを分離して相対強度を見る","大型イベント翌日のGU銘柄は9:00〜9:10だけでなく最初の押し・VWAP再奪回後を本命エントリーとする","報道ベースの大型投資材料は企業公式の確認状況を必ず併記する"],
