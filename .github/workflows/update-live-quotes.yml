@@ -34,6 +34,7 @@ jobs:
           from pathlib import Path
           from zoneinfo import ZoneInfo
 
+          JST = ZoneInfo('Asia/Tokyo')
           holdings_path = Path('stock-dashboard/data/holdings.json')
           output_path = Path('stock-dashboard/data/live-quotes.json')
           holdings = json.loads(holdings_path.read_text(encoding='utf-8'))
@@ -52,7 +53,39 @@ jobs:
           def fmt_epoch(ts):
               if not ts:
                   return None
-              return datetime.fromtimestamp(int(ts), ZoneInfo('Asia/Tokyo')).strftime('%Y-%m-%d %H:%M:%S JST')
+              return datetime.fromtimestamp(int(ts), JST).strftime('%Y-%m-%d %H:%M:%S JST')
+
+          def aggregate_5m(timestamps, opens, highs, lows, closes, volumes):
+              buckets = {}
+              for i, ts in enumerate(timestamps or []):
+                  vals = []
+                  for arr in (opens, highs, lows, closes):
+                      vals.append(arr[i] if i < len(arr) else None)
+                  o, h, l, c = vals
+                  if c is None:
+                      continue
+                  dt = datetime.fromtimestamp(int(ts), JST)
+                  minute = (dt.minute // 5) * 5
+                  bucket_dt = dt.replace(minute=minute, second=0, microsecond=0)
+                  key = int(bucket_dt.timestamp())
+                  v = volumes[i] if i < len(volumes) and volumes[i] is not None else 0
+                  if key not in buckets:
+                      buckets[key] = {
+                          't': key,
+                          'time': bucket_dt.strftime('%H:%M'),
+                          'open': num(o if o is not None else c),
+                          'high': num(h if h is not None else c),
+                          'low': num(l if l is not None else c),
+                          'close': num(c),
+                          'volume': int(v or 0),
+                      }
+                  else:
+                      b = buckets[key]
+                      b['high'] = max(b['high'], float(h if h is not None else c))
+                      b['low'] = min(b['low'], float(l if l is not None else c))
+                      b['close'] = num(c)
+                      b['volume'] += int(v or 0)
+              return [buckets[k] for k in sorted(buckets)]
 
           quotes = {}
           observed_epochs = []
@@ -74,11 +107,19 @@ jobs:
                   meta = result.get('meta', {})
                   q = (result.get('indicators', {}).get('quote') or [{}])[0]
 
-                  closes = [v for v in (q.get('close') or []) if v is not None]
-                  opens = [v for v in (q.get('open') or []) if v is not None]
-                  highs = [v for v in (q.get('high') or []) if v is not None]
-                  lows = [v for v in (q.get('low') or []) if v is not None]
-                  vols = [v for v in (q.get('volume') or []) if v is not None]
+                  timestamps = result.get('timestamp') or []
+                  raw_open = q.get('open') or []
+                  raw_high = q.get('high') or []
+                  raw_low = q.get('low') or []
+                  raw_close = q.get('close') or []
+                  raw_vol = q.get('volume') or []
+
+                  closes = [v for v in raw_close if v is not None]
+                  opens = [v for v in raw_open if v is not None]
+                  highs = [v for v in raw_high if v is not None]
+                  lows = [v for v in raw_low if v is not None]
+                  vols = [v for v in raw_vol if v is not None]
+                  series5m = aggregate_5m(timestamps, raw_open, raw_high, raw_low, raw_close, raw_vol)
 
                   price = meta.get('regularMarketPrice')
                   if price is None and closes:
@@ -121,8 +162,9 @@ jobs:
                       'low': num(day_low),
                       'volume': int(volume) if volume is not None else None,
                       'observedAt': fmt_epoch(ts),
-                      'currency': meta.get('currency', 'JPY'),
+                      'currency': 'JPY',
                       'exchangeName': meta.get('fullExchangeName') or meta.get('exchangeName') or 'Tokyo',
+                      'series5m': series5m,
                       'sourceStatus': 'ok'
                   }
               except Exception:
@@ -144,12 +186,14 @@ jobs:
                           'observedAt': None,
                           'currency': 'JPY',
                           'exchangeName': 'Tokyo',
+                          'series5m': [],
                           'sourceStatus': 'unavailable'
                       }
 
           as_of = fmt_epoch(max(observed_epochs)) if observed_epochs else old.get('asOf')
           out = {
               'asOf': as_of,
+              'currency': 'JPY',
               'source': 'Yahoo Finance chart endpoint (unofficial, server-side via GitHub Actions)',
               'refreshPolicy': 'GitHub Actions polls about every 5 minutes on JPX weekdays; workflow timing may be delayed.',
               'quotes': quotes
