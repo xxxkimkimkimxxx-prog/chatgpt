@@ -1,0 +1,6 @@
+{
+  "asOf": null,
+  "source": "Waiting for GitHub Actions quote refresh",
+  "refreshPolicy": "GitHub Actions polls about every 5 minutes on JPX weekdays; workflow timing may be delayed.",
+  "quotes": {}
+}
