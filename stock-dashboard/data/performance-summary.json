@@ -1,30 +1,30 @@
 {
-  "asOf":"2026-08-28 23:10 JST",
+  "asOf":"2026-08-31 21:46 JST",
   "period":"2026-08",
-  "officialRealizedPnl":67100,
-  "officialRealizedTradeCount":40,
+  "officialRealizedPnl":70700,
+  "officialRealizedTradeCount":42,
   "executionBasedMetrics":{
-    "wins":30,
+    "wins":32,
     "losses":10,
-    "winRatePct":75.0,
-    "grossProfit":116805,
+    "winRatePct":76.19,
+    "grossProfit":120405,
     "grossLoss":49705,
-    "profitFactor":2.35,
-    "averageWin":3893.5,
+    "profitFactor":2.42,
+    "averageWin":3762.66,
     "averageLoss":-4970.5,
-    "note":"iSPEEDの約定明細をそのまま1明細=1件として集計。証券口座との照合用。"
+    "note":"iSPEEDの約定・実現損益明細を1明細=1件として集計。2026-08-31はiSPEED画面で+3,600円（ベクターHD +600円、日本一ソフトウェア +3,000円）を確認。"
   },
   "decisionEpisodeMetrics":{
-    "episodes":37,
-    "wins":29,
+    "episodes":39,
+    "wins":31,
     "losses":8,
-    "winRatePct":78.38,
-    "grossProfit":102455,
+    "winRatePct":79.49,
+    "grossProfit":106055,
     "grossLoss":35355,
-    "profitFactor":2.90,
-    "averageWin":3532.93,
+    "profitFactor":3.00,
+    "averageWin":3421.13,
     "averageLoss":-4419.38,
-    "expectancyPerEpisode":1813.51,
+    "expectancyPerEpisode":1812.82,
     "adjustments":[{
       "date":"2026-08-07",
       "code":"6998",
@@ -36,14 +36,16 @@
     }],
     "note":"売買判断の採点・勝敗分析はこちらを優先。公式実現損益と約定明細自体は変更しない。"
   },
-  "officialSourceAsOf":"2026-08-28 21:23 iSPEED realized P/L screens",
+  "officialSourceAsOf":"2026-08-31 21:46 iSPEED realized P/L screen",
   "ledgerPath":"data/realized-pnl-ledger.json",
   "threeMonthGoal":{
-    "startDate":"2026-08-01","targetDate":"2026-11-24","targetRealizedPnl":300000,
-    "confirmedCumulativeRealizedPnl":67100,
-    "remainingConfirmed":232900,
-    "progressPctConfirmed":22.37,
-    "status":"iSPEED画面で2026年8月の実現損益合計+67,100円を確認。全40明細はraw executionとして保持。売買判断分析では8/7日本タングステン4明細を同一エピソードとして+1,140円へnetする。"
+    "startDate":"2026-08-01",
+    "targetDate":"2026-11-24",
+    "targetRealizedPnl":300000,
+    "confirmedCumulativeRealizedPnl":70700,
+    "remainingConfirmed":229300,
+    "progressPctConfirmed":23.57,
+    "status":"iSPEED確認済み。2026-08-31実現損益+3,600円を加え、8月累計+70,700円。30万円目標への進捗23.57%。"
   },
   "dailyRealizedPnl":[
     {"date":"2026-08-04","pnl":-5185,"cumulative":-5185},
@@ -58,10 +60,11 @@
     {"date":"2026-08-25","pnl":17400,"cumulative":59900},
     {"date":"2026-08-26","pnl":0,"cumulative":59900,"note":"取引0回"},
     {"date":"2026-08-27","pnl":0,"cumulative":59900,"note":"買付・持越しあり、売却なし"},
-    {"date":"2026-08-28","pnl":7200,"cumulative":67100}
+    {"date":"2026-08-28","pnl":7200,"cumulative":67100},
+    {"date":"2026-08-31","pnl":3600,"cumulative":70700,"note":"iSPEED確認済み。ベクターHD +600円、日本一ソフトウェア +3,000円。"}
   ],
   "bestTrade":{"date":"2026-08-20","code":"141A","name":"トライアルホールディングス","realizedPnl":12000},
   "worstTrade":{"date":"2026-08-10","code":"5803","name":"フジクラ","realizedPnl":-13435},
-  "lastReview":{"date":"2026-08-28","todayRealizedPnlStatus":"confirmed +7200","detailPath":"data/reviews/2026-08-28.json"},
+  "lastReview":{"date":"2026-08-31","todayRealizedPnlStatus":"confirmed +3600","detailPath":"data/reviews/2026-08-31.json"},
   "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"goalIncludesAllAugustTrades":true,"performanceAnalysisUsesDecisionEpisodes":true}
 }
