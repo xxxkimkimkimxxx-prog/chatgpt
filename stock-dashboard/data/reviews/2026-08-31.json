@@ -1,0 +1,168 @@
+{
+  "date": "2026-08-31",
+  "asOf": "2026-08-31 16:26 JST",
+  "status": "evening review; realized P/L not yet iSPEED-confirmed",
+  "market": {
+    "nikkeiClose": 64930.03,
+    "nikkeiChangePct": -2.22,
+    "interpretation": "Warshタカ派・米金利上昇・NVIDIA下落・イラン情勢再緊張が重なり、日経は半導体主導で大幅安。TOPIXは日経より相対的に底堅く、朝の指数間格差予想は的中。",
+    "macro": [
+      "Brentはアジア時間に約90.51ドルへ2.7%上昇し、イラン情勢がインフレ懸念を再点火。",
+      "米9月利上げ確率は約57%まで上昇、米2年債利回りは4.33%近辺。",
+      "USD/JPYは160円近辺で介入警戒が継続。"
+    ]
+  },
+  "morningStrategyValidation": {
+    "correct": [
+      "日経平均は弱く、TOPIXが相対的に底堅いという方向性。",
+      "高PER半導体は弱く、アドバンテストは大幅安。",
+      "寄り直後のAI・電線の無条件逆張りを避ける条件付き戦略。"
+    ],
+    "misses": [
+      "AI電線をセクター一括で弱気に見過ぎた。フジクラは5123円まで下げた後5399円（+1.10%）まで戻し、古河電工も3697円安値から3918円（+0.38%）へ反発。悪材料耐性が強かった。",
+      "銀行は一律に強くならず、MUFGは朝時点で弱含みだった一方、SMFGは6996円（+1.36%）。『金利上昇恩恵』より個別の相対強度確認が必要。"
+    ],
+    "lesson": "マクロの方向予測より、悪材料に対する価格反応を優先する。『下がるはずなのに下がらない』電線株は短期強気シグナルとして再評価する。"
+  },
+  "candidateReview": [
+    {
+      "code": "8306",
+      "name": "三菱UFJFG",
+      "morningRank": 1,
+      "assessment": "条件未達で見送りが正解。9:53時点3631円（-0.74%）で前日終値3658円を下回り、朝条件の3678円突破を満たさず。"
+    },
+    {
+      "code": "8316",
+      "name": "三井住友FG",
+      "morningRank": 2,
+      "assessment": "終値6996円（+1.36%）。銀行内で最も素直に金利上昇メリットを反映した候補の一つ。朝の6937円突破条件が機能。"
+    },
+    {
+      "code": "5801",
+      "name": "古河電工",
+      "morningRank": 3,
+      "assessment": "始値3720円、安値3697円、高値3938円、11:25時点3918円（+0.38%）。逆張り禁止→初動安値形成後の切り返し確認という条件設計は良かったが、反発確率47%は低く見積もり過ぎた。"
+    }
+  ],
+  "holdingsReview": [
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "qty": 100,
+      "avg": 5513,
+      "close": 5399,
+      "dayLow": 5123,
+      "dayHigh": 5432,
+      "stance": "保有継続。追加はまだ急がない。",
+      "reason": "NVIDIA下落・日経-2.2%・金利上昇という逆風下で前日比プラスまで戻したことは強い。ただし取得単価5513円は未回復。",
+      "invalidation": "5300円台を再び失い、5123円の本日安値方向へ戻る場合は再評価。",
+      "target": "まず5450円回復、次に5513円の取得単価回復。",
+      "expectedPeriod": "1〜5営業日で再判定",
+      "gapRisk": "米金利・NVIDIA・イラン情勢・為替介入。"
+    },
+    {
+      "code": "5027",
+      "name": "ANYMIND GROUP",
+      "qty": 400,
+      "avg": 830.5,
+      "referencePriceAt1105": 803,
+      "tradeInference": "300株@840円から400株@830.5円となったため、本日100株を約802円で追加したと算術上推定。iSPEED約定確認前の暫定。",
+      "stance": "追加停止。800円近辺の支持確認を優先。",
+      "reason": "小型グロースに金利上昇逆風。ナンピン後なので平均単価低下ではなく反発確認が必要。",
+      "invalidation": "800円を明確に割り、戻りも弱い場合。",
+      "target": "830〜840円台回復。",
+      "expectedPeriod": "数営業日",
+      "gapRisk": "グロース指数・米金利・小型株流動性。"
+    },
+    {
+      "code": "3659",
+      "name": "ネクソン",
+      "qty": 200,
+      "avg": 3146.45,
+      "referencePriceAt1105": 3177,
+      "stance": "保有継続寄り。追加不要。",
+      "reason": "指数急落下でも取得単価を上回る参考値で推移。8/31は自己株式消却日でもあり、個別要因を持つ。",
+      "invalidation": "3099円割れ定着。",
+      "target": "3200円台定着、その後は9月イベントと需給で再評価。"
+    },
+    {
+      "code": "2926",
+      "name": "篠崎屋",
+      "qty": 1000,
+      "avg": 119,
+      "referencePrice": 129,
+      "dayRange": "127-130",
+      "stance": "利益保護優先で継続。",
+      "reason": "地合い悪化に対して小幅高で相対強度あり。",
+      "invalidation": "127円割れ定着。",
+      "target": "133円、次に137円。"
+    },
+    {
+      "code": "4597",
+      "name": "ソレイジア・ファーマ",
+      "qty": 1000,
+      "avg": 29,
+      "referencePriceAt1105": 30,
+      "tradeStatus": "本日新規保有とみられる。約定詳細未確認。",
+      "stance": "低位・高出来高銘柄として29円防衛を最優先。追加は材料確認なしではしない。",
+      "invalidation": "29円を明確に割り、出来高を伴って戻れない場合。",
+      "target": "31〜32円の戻りをまず確認。",
+      "gapRisk": "低位バイオ特有の材料・希薄化・流動性変化。"
+    }
+  ],
+  "tradeReview": {
+    "realizedPnlToday": null,
+    "status": "iSPEED未確認のため実現損益は確定しない。performance-summary.jsonの公式累計+67,100円を維持。",
+    "provisionalTrades": [
+      "ANYMIND GROUP 100株を約802円で追加したと保有数量・平均単価から推定。",
+      "ソレイジア・ファーマ 1000株@29円を新規保有。"
+    ],
+    "deepDive": {
+      "name": "ANYMIND GROUP",
+      "reason": "既存300株@840円から400株@830.5円への追加は、ナンピン規律の検証価値が最大。",
+      "entryApprox": 802,
+      "classification": "スイング追加",
+      "evaluation": "800円近辺を支持候補として追加した点はルールに合う余地があるが、反発確認前なら早い。今後は『支持線到達』だけでなく5分足で安値切り上げ/VWAP回復のどちらかを必須化する。",
+      "mae": null,
+      "mfe": null,
+      "rMultiple": null,
+      "note": "正確な約定時刻・当日高安・終値の確定データが揃っていないため算出保留。"
+    }
+  },
+  "goalProgress": {
+    "confirmedCumulativeRealizedPnl": 67100,
+    "target": 300000,
+    "remainingConfirmed": 232900,
+    "progressPctConfirmed": 22.37,
+    "today": "未確認。確定値が得られるまで加算しない。"
+  },
+  "goodPoints": [
+    "日経とTOPIXの乖離を事前に想定できた。",
+    "MUFGは材料だけで飛びつかず、前日高値・VWAP突破条件を置いたため弱い初動を回避できた。",
+    "フジクラを含み損だけで投げず、悪材料吸収の強さを確認できた。"
+  ],
+  "improvements": [
+    "AI電線を『NVIDIA下落→弱い』と一括評価せず、寄り後15〜30分の悪材料耐性を独立スコア化する。",
+    "銀行もセクター一括ではなくMUFG/SMFG/みずほの相対強度を比較して1銘柄へ絞る。",
+    "ナンピンは支持線到達だけでなく5分足安値切り上げまたはVWAP回復を必須にする。"
+  ],
+  "newRules": [
+    "悪材料日で前日終値を回復しVWAP上に定着した銘柄は『Bad-news resilience』加点。",
+    "同業3社のうち2社以上がVWAP回復した場合のみセクター反発判定を強める。",
+    "ナンピンは支持線＋反発確認（5分足安値切り上げ/VWAP回復）の二条件制。"
+  ],
+  "nextSessionWatch": [
+    "フジクラ5450円→5513円回復可否。5300円再割れなら警戒。",
+    "古河電工3900円台定着と電線3社の相対強度継続。",
+    "米2年・10年金利、USD/JPY160円、Brent90ドル台、イラン情勢と米雇用関連指標。"
+  ],
+  "sources": [
+    "Reuters 2026-08-31 global markets",
+    "WSJ 2026-08-31 Nikkei close",
+    "Traders Web / MarketScreener 2026-08-31 quotes",
+    "GitHub data/daily/2026-08-31.json",
+    "GitHub data/holdings.json",
+    "GitHub data/performance-summary.json",
+    "GitHub data/trading-rules.json"
+  ]
+}
