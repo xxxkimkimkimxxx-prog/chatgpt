@@ -125,7 +125,7 @@ jobs:
                       'exchangeName': meta.get('fullExchangeName') or meta.get('exchangeName') or 'Tokyo',
                       'sourceStatus': 'ok'
                   }
-              except Exception as e:
+              except Exception:
                   if code in old_quotes:
                       quotes[code] = old_quotes[code]
                       quotes[code]['sourceStatus'] = 'stale-fallback'
@@ -162,12 +162,12 @@ jobs:
         shell: bash
         run: |
           set -e
-          if git diff --quiet -- stock-dashboard/data/live-quotes.json; then
+          git add stock-dashboard/data/live-quotes.json
+          if git diff --cached --quiet; then
             echo "No quote changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add stock-dashboard/data/live-quotes.json
           git commit -m "Update live holdings quotes"
           git push
