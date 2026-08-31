@@ -3,6 +3,8 @@ name: Deploy static site to Pages
 on:
   push:
     branches: ["main"]
+    paths-ignore:
+      - "stock-dashboard/data/live-quotes.json"
   workflow_dispatch:
 
 permissions:
