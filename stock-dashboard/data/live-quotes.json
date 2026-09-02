@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-02 10:13:49 JST",
+  "asOf": "2026-09-02 10:38:18 JST",
   "currency": "JPY",
   "source": "Yahoo Finance chart endpoint (unofficial, server-side via GitHub Actions)",
   "refreshPolicy": "GitHub Actions polls about every 5 minutes on JPX weekdays; workflow timing may be delayed.",
@@ -14,8 +14,8 @@
       "open": 127.0,
       "high": 127.0,
       "low": 123.0,
-      "volume": 157900,
-      "observedAt": "2026-09-02 10:10:33 JST",
+      "volume": 158100,
+      "observedAt": "2026-09-02 10:27:33 JST",
       "currency": "JPY",
       "exchangeName": "Tokyo",
       "series5m": [
@@ -107,6 +107,15 @@
           "high": 124.0,
           "low": 124.0,
           "close": 124.0,
+          "volume": 200
+        },
+        {
+          "t": 1788312300,
+          "time": "10:25",
+          "open": 124.0,
+          "high": 124.0,
+          "low": 124.0,
+          "close": 124.0,
           "volume": 0
         }
       ],
@@ -115,15 +124,15 @@
     "3659": {
       "code": "3659",
       "symbol": "3659.T",
-      "price": 3121.0,
+      "price": 3128.0,
       "previousClose": 3205.0,
-      "change": -84.0,
-      "changePct": -2.6209048361934477,
+      "change": -77.0,
+      "changePct": -2.4024960998439937,
       "open": 3166.0,
       "high": 3194.0,
       "low": 3116.0,
-      "volume": 846400,
-      "observedAt": "2026-09-02 10:13:34 JST",
+      "volume": 962700,
+      "observedAt": "2026-09-02 10:38:16 JST",
       "currency": "JPY",
       "exchangeName": "Tokyo",
       "series5m": [
@@ -251,7 +260,52 @@
           "high": 3124.0,
           "low": 3118.0,
           "close": 3121.0,
-          "volume": 19500
+          "volume": 27100
+        },
+        {
+          "t": 1788311700,
+          "time": "10:15",
+          "open": 3122.0,
+          "high": 3122.0,
+          "low": 3120.0,
+          "close": 3122.0,
+          "volume": 20400
+        },
+        {
+          "t": 1788312000,
+          "time": "10:20",
+          "open": 3122.0,
+          "high": 3130.0,
+          "low": 3121.0,
+          "close": 3130.0,
+          "volume": 30100
+        },
+        {
+          "t": 1788312300,
+          "time": "10:25",
+          "open": 3128.0,
+          "high": 3128.0,
+          "low": 3123.0,
+          "close": 3126.0,
+          "volume": 11100
+        },
+        {
+          "t": 1788312600,
+          "time": "10:30",
+          "open": 3128.0,
+          "high": 3136.0,
+          "low": 3125.0,
+          "close": 3134.0,
+          "volume": 33000
+        },
+        {
+          "t": 1788312900,
+          "time": "10:35",
+          "open": 3133.0,
+          "high": 3134.0,
+          "low": 3126.0,
+          "close": 3128.0,
+          "volume": 15800
         }
       ],
       "sourceStatus": "ok"
@@ -266,8 +320,8 @@
       "open": 29.0,
       "high": 30.0,
       "low": 28.0,
-      "volume": 24869500,
-      "observedAt": "2026-09-02 10:12:55 JST",
+      "volume": 24890500,
+      "observedAt": "2026-09-02 10:36:13 JST",
       "currency": "JPY",
       "exchangeName": "Tokyo",
       "series5m": [
@@ -395,7 +449,52 @@
           "high": 29.0,
           "low": 29.0,
           "close": 29.0,
-          "volume": 1000
+          "volume": 3900
+        },
+        {
+          "t": 1788311700,
+          "time": "10:15",
+          "open": 28.0,
+          "high": 29.0,
+          "low": 28.0,
+          "close": 29.0,
+          "volume": 14400
+        },
+        {
+          "t": 1788312000,
+          "time": "10:20",
+          "open": 29.0,
+          "high": 29.0,
+          "low": 28.0,
+          "close": 28.0,
+          "volume": 5000
+        },
+        {
+          "t": 1788312300,
+          "time": "10:25",
+          "open": 28.0,
+          "high": 28.0,
+          "low": 28.0,
+          "close": 28.0,
+          "volume": 100
+        },
+        {
+          "t": 1788312600,
+          "time": "10:30",
+          "open": 29.0,
+          "high": 29.0,
+          "low": 29.0,
+          "close": 29.0,
+          "volume": 900
+        },
+        {
+          "t": 1788312900,
+          "time": "10:35",
+          "open": 29.0,
+          "high": 29.0,
+          "low": 29.0,
+          "close": 29.0,
+          "volume": 300
         }
       ],
       "sourceStatus": "ok"
@@ -403,15 +502,15 @@
     "5027": {
       "code": "5027",
       "symbol": "5027.T",
-      "price": 744.0,
+      "price": 748.0,
       "previousClose": 766.0,
-      "change": -22.0,
-      "changePct": -2.8720626631853787,
+      "change": -18.0,
+      "changePct": -2.3498694516971277,
       "open": 766.0,
       "high": 758.0,
       "low": 723.0,
-      "volume": 153000,
-      "observedAt": "2026-09-02 10:11:28 JST",
+      "volume": 166700,
+      "observedAt": "2026-09-02 10:37:17 JST",
       "currency": "JPY",
       "exchangeName": "Tokyo",
       "series5m": [
@@ -544,11 +643,56 @@
         {
           "t": 1788311400,
           "time": "10:10",
-          "open": 744.0,
-          "high": 744.0,
+          "open": 741.0,
+          "high": 745.0,
+          "low": 739.0,
+          "close": 744.0,
+          "volume": 11700
+        },
+        {
+          "t": 1788311700,
+          "time": "10:15",
+          "open": 745.0,
+          "high": 746.0,
           "low": 744.0,
           "close": 744.0,
-          "volume": 0
+          "volume": 800
+        },
+        {
+          "t": 1788312000,
+          "time": "10:20",
+          "open": 745.0,
+          "high": 748.0,
+          "low": 745.0,
+          "close": 748.0,
+          "volume": 1300
+        },
+        {
+          "t": 1788312300,
+          "time": "10:25",
+          "open": 749.0,
+          "high": 749.0,
+          "low": 748.0,
+          "close": 748.0,
+          "volume": 2400
+        },
+        {
+          "t": 1788312600,
+          "time": "10:30",
+          "open": 748.0,
+          "high": 749.0,
+          "low": 748.0,
+          "close": 749.0,
+          "volume": 700
+        },
+        {
+          "t": 1788312900,
+          "time": "10:35",
+          "open": 749.0,
+          "high": 749.0,
+          "low": 748.0,
+          "close": 748.0,
+          "volume": 800
         }
       ],
       "sourceStatus": "ok"
@@ -556,15 +700,15 @@
     "5803": {
       "code": "5803",
       "symbol": "5803.T",
-      "price": 5165.0,
+      "price": 5081.0,
       "previousClose": 5298.0,
-      "change": -133.0,
-      "changePct": -2.51038127595319,
+      "change": -217.0,
+      "changePct": -4.095885239713099,
       "open": 5167.0,
       "high": 5239.0,
-      "low": 5133.0,
-      "volume": 15550900,
-      "observedAt": "2026-09-02 10:13:49 JST",
+      "low": 5080.0,
+      "volume": 20610700,
+      "observedAt": "2026-09-02 10:38:18 JST",
       "currency": "JPY",
       "exchangeName": "Tokyo",
       "series5m": [
@@ -690,9 +834,54 @@
           "time": "10:10",
           "open": 5199.0,
           "high": 5200.0,
-          "low": 5163.0,
-          "close": 5165.0,
-          "volume": 489800
+          "low": 5155.0,
+          "close": 5156.0,
+          "volume": 1053600
+        },
+        {
+          "t": 1788311700,
+          "time": "10:15",
+          "open": 5156.0,
+          "high": 5162.0,
+          "low": 5136.0,
+          "close": 5138.0,
+          "volume": 1211200
+        },
+        {
+          "t": 1788312000,
+          "time": "10:20",
+          "open": 5138.0,
+          "high": 5159.0,
+          "low": 5131.0,
+          "close": 5159.0,
+          "volume": 770600
+        },
+        {
+          "t": 1788312300,
+          "time": "10:25",
+          "open": 5159.0,
+          "high": 5162.0,
+          "low": 5129.0,
+          "close": 5139.0,
+          "volume": 811500
+        },
+        {
+          "t": 1788312600,
+          "time": "10:30",
+          "open": 5138.0,
+          "high": 5138.0,
+          "low": 5110.0,
+          "close": 5119.0,
+          "volume": 887500
+        },
+        {
+          "t": 1788312900,
+          "time": "10:35",
+          "open": 5119.0,
+          "high": 5119.0,
+          "low": 5081.0,
+          "close": 5081.0,
+          "volume": 1020400
         }
       ],
       "sourceStatus": "ok"
@@ -700,15 +889,15 @@
     "8518": {
       "code": "8518",
       "symbol": "8518.T",
-      "price": 151.0,
+      "price": 150.0,
       "previousClose": 150.0,
-      "change": 1.0,
-      "changePct": 0.6666666666666667,
+      "change": 0.0,
+      "changePct": 0.0,
       "open": 148.0,
       "high": 151.0,
       "low": 148.0,
-      "volume": 92400,
-      "observedAt": "2026-09-02 10:10:46 JST",
+      "volume": 101100,
+      "observedAt": "2026-09-02 10:36:39 JST",
       "currency": "JPY",
       "exchangeName": "Tokyo",
       "series5m": [
@@ -832,11 +1021,47 @@
         {
           "t": 1788311400,
           "time": "10:10",
+          "open": 150.0,
+          "high": 151.0,
+          "low": 150.0,
+          "close": 151.0,
+          "volume": 1000
+        },
+        {
+          "t": 1788311700,
+          "time": "10:15",
+          "open": 150.0,
+          "high": 150.0,
+          "low": 150.0,
+          "close": 150.0,
+          "volume": 1100
+        },
+        {
+          "t": 1788312300,
+          "time": "10:25",
           "open": 151.0,
           "high": 151.0,
           "low": 151.0,
           "close": 151.0,
-          "volume": 0
+          "volume": 5500
+        },
+        {
+          "t": 1788312600,
+          "time": "10:30",
+          "open": 151.0,
+          "high": 151.0,
+          "low": 151.0,
+          "close": 151.0,
+          "volume": 500
+        },
+        {
+          "t": 1788312900,
+          "time": "10:35",
+          "open": 150.0,
+          "high": 150.0,
+          "low": 150.0,
+          "close": 150.0,
+          "volume": 900
         }
       ],
       "sourceStatus": "ok"
