@@ -1,10 +1,11 @@
 {
-  "date":"2026-08-31",
-  "asOf":"2026-08-31 16:26 JST",
-  "market":{"summary":"日経平均は64,930.03円（-2.22%）。Warshタカ派、米金利上昇、NVIDIA下落、イラン情勢再緊張で半導体主導の大幅安。一方でTOPIXは相対的に底堅く、電線株は寄り後に悪材料を吸収して反発した。"},
-  "focus":{"code":"5803","name":"フジクラ","holding":"100株@5513、終値5399、概算-11,400円","review":"朝は5300〜5310回復不能なら撤退候補としたが、実際は5123円まで下げた後5399円（+1.10%）まで戻し、悪材料耐性を示した。NVIDIA下落だけでAI電線を一括弱気にした点は修正が必要。","next":"5450円回復→5513円取得単価回復を確認。5300円再割れから本日安値5123円方向へ戻るなら再評価。"},
-  "todayTrading":{"realizedPnl":null,"status":"iSPEED未確認のため確定しない","provisional":["ANYMIND GROUP 100株を約802円で追加したと保有数量・平均単価から推定","ソレイジア・ファーマ1000株@29円を新規保有"]},
-  "goalProgress":{"target":300000,"confirmedCumulative":67100,"remaining":232900,"progressPct":22.37,"today":"8/31当日実現損益は未確認。確定値が得られるまで累計を更新しない。"},
-  "lessons":["悪材料日で下がらない銘柄をBad-news resilienceとして加点する","銀行もセクター一括ではなくMUFG/SMFG/みずほの相対強度で選別する","ナンピンは支持線到達＋5分足安値切り上げまたはVWAP回復を必須化する"],
-  "detailPath":"data/reviews/2026-08-31.json"
+  "date":"2026-09-03",
+  "asOf":"2026-09-03 16:21 JST",
+  "market":{"summary":"日経平均は朝+399円で始まったが64,214.48円（-111.16円、-0.17%）で終了。自律反発が失速し、円高・日銀利上げ観測が重石。銀行株は相対強く、個別Fresh CatalystとSector Alignmentの選別が有効だった。"},
+  "focus":{"code":"5803","name":"フジクラ","holdingBasis":"最終確認100株@5513。9/3実売買は未確認。","review":"始値5151円、高値5154円、安値4897円、終値4951円（-2.73%）。朝に定めた5000円終値割れの短期無効化条件に到達。AI/DCの中期仮説は残るが短期スイングは格下げし、ナンピン禁止を継続。","next":"次営業日に5000-5050円を迅速に回復できなければ、保有継続より損失圧縮・縮小の期待値を優先して再評価。"},
+  "candidateScorecard":{"daytrade":[{"rank":1,"code":"1605","name":"INPEX","result":"方向失敗。終値3889円（-4.00%）。ただし寄り後の条件不成立で実戦見送りが妥当。"},{"rank":2,"code":"8306","name":"MUFG","result":"成功。終値3768円（+2.28%）、高値3794円。銀行Sector Alignmentが機能。"},{"rank":3,"code":"2670","name":"ABCマート","result":"小幅成功。終値2690円（+0.98%）だが日中2643円まで押し、実戦難度は高い。"}]},
+  "todayTrading":{"realizedPnl":null,"status":"9/3のiSPEED実現損益・実売買は未確認。推定で確定値を更新しない。"},
+  "goalProgress":{"target":300000,"confirmedCumulative":70700,"remaining":229300,"progressPct":23.57,"confirmedThrough":"2026-08-31"},
+  "lessons":["原油テーマは前日材料より当日の原油方向・夜間PTSを重視する","自律反発の朝高を終日トレンドと同一視しない","Fresh Catalyst探索にSDV・小型AIの同時モメンタムを追加する"],
+  "detailPath":"data/reviews/2026-09-03.json"
 }
