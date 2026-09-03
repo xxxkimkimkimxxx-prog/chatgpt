@@ -1,0 +1,31 @@
+{
+  "date":"2026-09-03",
+  "asOf":"2026-09-03 16:21 JST",
+  "continuity":"Morning strategy -> actual market -> holdings/trades -> evening review -> next-session improvement",
+  "market":{"nikkeiClose":64214.48,"nikkeiChange":-111.16,"nikkeiChangePct":-0.17,"summary":"日経平均は朝+399円で始まったが引けは-111円。前日急落からの自律反発は続かず、円高進行と日銀利上げ観測が重石。日本10年債は2.947%まで低下した一方、ドル円は157円台半ばまで円高。指数よりも銀行・商社などの相対強度と、個別Fresh Catalystが有効だった。"},
+  "morningCandidateReview":[
+    {"rank":1,"code":"1605","name":"INPEX","morningProbability":64,"open":3942,"high":4022,"low":3884,"close":3889,"changePct":-4.00,"evaluation":"方向予測は失敗。ただし朝条件は『VWAP上・初動安値切り上げ・原油維持・同業同時高』であり、寄りから4000円を割り、鉱業セクターも弱く、実戦フィルターでは見送りが妥当。前日までの原油高を過大評価し、9/2夜間PTSの弱さと原油失速を十分減点できていなかった。","classification":"Sector Alignment failure / catalyst overpricing"},
+    {"rank":2,"code":"8306","name":"三菱UFJFG","morningProbability":61,"open":3688,"high":3794,"low":3685,"close":3768,"changePct":2.28,"volume":45171200,"turnoverThousandYen":169291612,"evaluation":"成功。寄り直後安値3685円から切り返し、3700円を回復して高値3794円。日銀利上げ観測・円高・銀行同業高が揃い、Sector Alignmentが機能。朝の3650-3680維持＋VWAP＋3メガ同調という条件が良かった。","classification":"Sector Alignment success"},
+    {"rank":3,"code":"2670","name":"ABCマート","morningProbability":56,"open":2674.5,"high":2699.5,"low":2643,"close":2690,"changePct":0.98,"volume":647800,"turnoverThousandYen":1736096,"evaluation":"小幅成功だが実戦難度は高い。9:17に2699.5円まで上げた後2643円まで押し、終値で戻した。月次売上材料は効いたが、明確な一方向トレンドではなく、VWAP維持確認前の追随は不利。","classification":"Fresh Catalyst modest success"}
+  ],
+  "swingReview":[
+    {"code":"5803","name":"フジクラ","morningView":"5000-5048円支持、5137円前日VWAP→5200円回復で継続。新規追加なし。5000円終値割れで再評価。","open":5151,"high":5154,"low":4897,"close":4951,"changePct":-2.73,"volume":37758400,"turnoverThousandYen":188907961,"evaluation":"短期テクニカルの無効化条件に到達。朝高値5154円から終日失速し、5000円を終値で明確に割った。AI/DC中期仮説そのものは残るが、短期スイングとしては格下げ。追加買いは禁止継続。次営業日に5000-5050円を迅速に回復できない場合は損失圧縮・縮小の期待値を優先して再評価する。"},
+    {"code":"5027","name":"AnyMind Group","open":726,"high":739,"low":711,"close":724,"changePct":0.14,"volume":337300,"evaluation":"720-723円防衛という朝の最重要監視ラインは概ね機能。711円まで下げたが724円で引けたため、即損切り条件ではない。一方、自社株買い完了後で上値材料が弱く、740→758円を回復できない限り評価は中立以下。ナンピン禁止。"},
+    {"code":"3659","name":"ネクソン","open":3135,"high":3136,"low":3090,"close":3120,"changePct":-0.22,"volume":2362300,"evaluation":"3120円近辺で終了し朝の管理ラインぎりぎり。3150-3170円回復に失敗しており、資金効率は悪化。次営業日3120円を回復・維持できず3090円を再度割るなら縮小候補。"},
+    {"code":"8518","name":"日本アジア投資","open":153,"high":153,"low":151,"close":153,"changePct":0.00,"volume":41400,"turnoverThousandYen":6317,"evaluation":"優待材料後の高値追いは止まったが153円を維持。低流動性で値幅も出来高も縮小しており、短期モメンタム銘柄ではなくなりつつある。148-150円支持と優待目的を分離して管理。"},
+    {"code":"2926","name":"篠崎屋","open":125,"high":127,"low":124,"close":125,"changePct":0.00,"volume":112900,"evaluation":"利益圏維持。124-125円を守っており急いで処分する形ではないが、127円突破が続かない限り上値追いも限定的。"},
+    {"code":"4597","name":"ソレイジア・ファーマ","open":29,"high":30,"low":28,"close":29,"changePct":0.00,"evaluation":"29円維持。材料のない低位バイオ投機枠として扱い、日々の指数変動では売買しない。追加材料がない限りナンピンしない。"}
+  ],
+  "missedMoves":[
+    {"code":"3653","name":"モルフォ","changePct":29.6,"classification":"Fresh Catalyst","reason":"AstemoとSDVカメラ技術領域で共同開発開始。朝のFresh Catalyst探索で優先抽出可能だった。"},
+    {"code":"8746","name":"unbanked","changePct":25.2,"classification":"Continuation Momentum","reason":"金地金事業再開材料の継続。前日急騰後も材料持続性が高く、Continuation枠で追跡対象にすべきだった。"},
+    {"code":"4056","name":"ニューラルグループ","changePct":29.0,"classification":"Sector Alignment / AI momentum","reason":"AI小型株への資金集中。単独材料だけでなくAI小型株群の同時上昇を朝のセクター強度で拾う余地。"},
+    {"code":"4370","name":"モビルス","changePct":22.6,"classification":"Sector Alignment / AI momentum","reason":"人工知能関連。ニューラルG・フィーチャ等との同時上昇をテーマ束として検知すべき。"},
+    {"code":"4052","name":"フィーチャ","changePct":21.0,"classification":"Sector Alignment / AI momentum","reason":"人工知能関連。前夜・寄前の小型AIテーマ強度を定量化する必要。"}
+  ],
+  "tradeReview":{"status":"2026-09-03の実売買・iSPEED実現損益は未確認。推定でperformance-summaryを更新しない。MAE/MFE/R倍数の実売買深掘りは確認済み約定がないため未算出。"},
+  "goalProgress":{"targetRealizedPnl":300000,"confirmedCumulativeRealizedPnl":70700,"remainingConfirmed":229300,"progressPctConfirmed":23.57,"confirmedThrough":"2026-08-31","note":"9/1-9/3はiSPEED実現損益画面未確認のため確定累計に加算しない。"},
+  "lessons":{"good":["MUFGで金利・円高・銀行同業連動のSector Alignmentが機能","INPEXは順位自体は外したが条件付きエントリーにより実戦回避できる設計だった","AnyMindで含み損だけを理由に投げず720円近辺の反発確認を優先した"],"improve":["原油高テーマは原油現物/先物の当日方向と夜間PTSを必ず同時評価し、前日材料の惰性を減点","朝の自律反発を指数の終日反発と同一視しない。円高・日銀観測が強まる日は輸出/非鉄を早めに格下げ","Fresh Catalyst探索にSDV・AI小型株群の同時モメンタム検知を追加"],"newRules":["Continuation/Sector候補は寄前材料が同じでも、夜間PTSまたは海外関連資産が逆行したら予測確率を最低5pt下げる","朝高後にVWAP割れ＋初動安値更新した場合は、その日のロング再エントリーを原則1回まで","スイング無効化ラインを終値で割った保有株は翌営業日に『回復ラインを明示した縮小候補』へ自動格下げ"]},
+  "nextSessionWatch":["フジクラ：5000-5050円を回復できるか。回復不能なら100株保有継続より損失圧縮を優先して再評価。ナンピン禁止。","MUFG：3750-3800円帯を維持し銀行3メガが同調するなら継続候補。ただし急速な金利低下時は追わない。","AnyMind：720円維持→740円回復。711円再割れかつVWAP下なら縮小検討。","9/4は米雇用統計を日本引け後に控えるため、週末持越しはギャップリスクを通常より大きく評価する。"],
+  "ruleReference":"data/trading-rules.json"
+}
