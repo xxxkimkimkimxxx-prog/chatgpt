@@ -1,20 +1,22 @@
 {
-  "asOf":"2026-08-31 16:26 JST",
-  "source":"8/31 market close plus user-supplied 11:05 holdings snapshot; realized P/L not yet iSPEED-confirmed",
-  "today":{"realizedPnl":null,"tradeCount":null,"status":"未確認","market":"日経平均64,930.03円（-2.22%）。半導体主導安だが電線の一角は寄り後反発。"},
-  "holdings":[
-    {"code":"2926","name":"篠崎屋","qty":1000,"avg":119,"referencePrice":129,"pnlApprox":10000},
-    {"code":"3659","name":"ネクソン","qty":200,"avg":3146.45,"referencePriceAt1105":3177,"pnlApproxAt1105":6110},
-    {"code":"4597","name":"ソレイジア・ファーマ","qty":1000,"avg":29,"referencePriceAt1105":30,"pnlApproxAt1105":1000},
-    {"code":"5027","name":"ANYMIND GROUP","qty":400,"avg":830.5,"referencePriceAt1105":803,"pnlApproxAt1105":-11000},
-    {"code":"5803","name":"フジクラ","qty":100,"avg":5513,"close":5399,"pnlApprox":-11400}
+  "asOf":"2026-09-03 16:21 JST",
+  "source":"2026-09-03 market close plus last confirmed holdings quantities; 9/1-9/3 actual trades and iSPEED realized P/L remain unconfirmed",
+  "today":{"realizedPnl":null,"tradeCount":null,"status":"未確認","market":"日経平均64,214.48円（-0.17%）。朝+399円から失速。円高・日銀利上げ観測が重石だが、銀行と一部個別材料株は強い。"},
+  "holdingsReference":[
+    {"code":"2926","name":"篠崎屋","lastConfirmedQty":1000,"avg":119,"close":125,"pnlApproxIfUnchanged":6000,"management":"124-125円支持。121円割れ定着なら利益保護。127円突破定着までは追加なし。"},
+    {"code":"3659","name":"ネクソン","lastConfirmedQty":200,"avg":3146.45,"close":3120,"pnlApproxIfUnchanged":-5290,"management":"3150-3170円回復失敗。3120円維持できず3090円再割れなら縮小候補。"},
+    {"code":"4597","name":"ソレイジア・ファーマ","lastConfirmedQty":1000,"avg":29,"close":29,"pnlApproxIfUnchanged":0,"management":"材料待ち投機枠。27-28円割れ継続時のみ再点検。材料なしの追加禁止。"},
+    {"code":"5027","name":"ANYMIND GROUP","lastConfirmedQty":400,"avg":830.5,"close":724,"pnlApproxIfUnchanged":-42600,"management":"711円まで下げた後724円。720円支持→740円回復が必要。ナンピン禁止。"},
+    {"code":"5803","name":"フジクラ","lastConfirmedQty":100,"avg":5513,"close":4951,"pnlApproxIfUnchanged":-56200,"management":"5000円終値割れで短期スイング無効化。次営業日5000-5050円回復不能なら損失圧縮・縮小を優先再評価。ナンピン禁止。"},
+    {"code":"8518","name":"日本アジア投資","lastConfirmedQty":200,"avg":162,"close":153,"pnlApproxIfUnchanged":-1800,"management":"短期モメンタムは低下。148-150円支持と優待目的を分離管理。"}
   ],
-  "goalProgress":{"target":300000,"confirmedCumulative":67100,"remaining":232900,"progressPct":22.37,"note":"8/31当日実現損益はiSPEED未確認のため未加算。"},
+  "goalProgress":{"target":300000,"confirmedCumulative":70700,"remaining":229300,"progressPct":23.57,"confirmedThrough":"2026-08-31","note":"9/1-9/3はiSPEED未確認のため未加算。"},
   "riskFocus":[
-    "フジクラは悪材料耐性を評価。5450→5513回復を確認、5300再割れは警戒。",
-    "ANYMINDはナンピン後400株。追加停止、800円支持と830〜840円台回復を確認。",
-    "ソレイジアは29円防衛最優先。材料確認なしの追加はしない。",
-    "篠崎屋は127円割れ定着で利益保護、ネクソンは3099円割れ定着を警戒。"
+    "フジクラは5000円終値割れで短期評価を格下げ。5000-5050円を戻せない限り追加買い禁止。",
+    "AnyMindは720円支持確認、740円回復までは弱い。711円再割れ＋VWAP下なら縮小候補。",
+    "MUFGは銀行Sector Alignment成功例。金利・3メガ同調が続く場合のみ継続監視。",
+    "9/4は米雇用統計を日本引け後に控えるため、週末持越しのギャップリスクを通常より高く見る。"
   ],
-  "latestReview":"data/reviews/2026-08-31.json"
+  "latestReview":"data/reviews/2026-09-03.json",
+  "ruleReference":"data/trading-rules.json"
 }
