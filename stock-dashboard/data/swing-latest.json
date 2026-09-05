@@ -1,0 +1,11 @@
+{
+  "asOf":"2026-09-06 JST","status":"provisional-weekend","newCandidateRanking":[
+    {"rank":1,"code":"9824","name":"泉州電業","holdingPeriod":"3-20 sessions","thesis":"3Q recurring +40.3%, full-year upward revision, dividend raise; valuation still moderate","invalidation":"clear break below 7040 with relative weakness"},
+    {"rank":2,"code":"8306","name":"MUFG","holdingPeriod":"2-6 weeks","thesis":"domestic rate normalization plus portfolio diversification","invalidation":"JGB yield reversal + bank sector relative weakness"},
+    {"rank":3,"code":"4180","name":"Appier Group","holdingPeriod":"2-6 weeks","thesis":"AI marketing growth + year-high momentum","invalidation":"break below 1454 and failed breakout"},
+    {"rank":4,"code":"285A","name":"キオクシアHD","holdingPeriod":"3-15 sessions","thesis":"AI memory + SOX/turnover momentum","invalidation":"fails to hold 54k area despite SOX strength"},
+    {"rank":5,"code":"4627","name":"ナトコ","holdingPeriod":"5-20 sessions","thesis":"43.9% full-year recurring profit upward revision and margin improvement","invalidation":"break below 1918 or no volume expansion despite catalyst"}
+  ],
+  "holdingActions":{"5803":"hold; add only after relative strength confirmation","5027":"hold; no add until 754 breakout/volume improvement","3659":"hold with dividend-event exit plan","2926":"funding/organize candidate","4597":"speculative sleeve/funding candidate","8518":"priority organize candidate"},
+  "decisionMemo":"investment-company/decision-memos/2026-09-06/swing.md"
+}
