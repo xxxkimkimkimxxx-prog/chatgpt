@@ -1,0 +1,18 @@
+{
+  "date":"2026-09-06",
+  "purpose":"Non-macro article/event driven discovery -> value chain -> verified Japanese listed beneficiaries -> horizon ranking",
+  "themes":[
+    {"rank":1,"slug":"ai-datacenter-power-flexibility","name":"AIデータセンター電力制約/電力柔軟性","trendQuality":"A+","priceHeat":"medium","bestDay":"350A デジタルグリッド","bestSwing":"6501 日立製作所","bestMedium":"6501 日立製作所"},
+    {"rank":2,"slug":"defense-ai-unmanned","name":"防衛AI/指揮統制/無人アセット","trendQuality":"A+","priceHeat":"medium-high","bestDay":"7011 三菱重工","bestSwing":"6701 NEC","bestMedium":"7011 三菱重工 / 6701 NEC"},
+    {"rank":3,"slug":"critical-infrastructure-cyber","name":"重要インフラ・サイバー統一基準","trendQuality":"A","priceHeat":"medium-high","bestDay":"3692 FFRIセキュリティ","bestSwing":"4704 トレンドマイクロ","bestMedium":"4704 トレンドマイクロ"},
+    {"rank":4,"slug":"ai-optical-connectivity","name":"AIデータセンター光接続","trendQuality":"A","priceHeat":"high","bestDay":"5801 古河電工","bestSwing":"5801 古河電工","bestMedium":"5803 フジクラ / 5801 古河電工"},
+    {"rank":5,"slug":"physical-ai-autonomous-sdv","name":"Physical AI/自動運転/SDV","trendQuality":"A","priceHeat":"extreme","bestDay":"336A Dynamic Map Platform - reversal only","bestSwing":"none until base","bestMedium":"4667 アイサン / 336A DMP / 593A TIER IV speculative"}
+  ],
+  "screenedButNotPromoted":[
+    {"event":"Oura US IPO / Health x AI","reason":"日本上場株で現在の利益に直接結びつく十分なエクスポージャーを確認できず。連想取引は見送り。"},
+    {"event":"ABN AMROと電力先物の報道","reason":"当該個別参加の一次情報は今回独立確認できず。代わりにJPX公表のJJ-Link Phase2と電力先物取引量増加をテーマ根拠として採用。"},
+    {"event":"食品消費税減税論","reason":"政策未確定で企業利益への方向・時期が定まらず、現時点では本命テーマ化しない。"},
+    {"event":"長期金利3%/米雇用/為替/原油","reason":"重要だがマクロ部門の管轄。テーマ・ニュース部の新規個社発掘とは別枠で既に処理。"}
+  ],
+  "rule":"Theme relation alone is insufficient. Promote only stocks with primary-source evidence of revenue/order/customer/technology/capex exposure and then analyze earnings, releases, valuation, price, liquidity, and red-team case."
+}
