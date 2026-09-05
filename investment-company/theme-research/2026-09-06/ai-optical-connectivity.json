@@ -1,0 +1,19 @@
+{
+  "date":"2026-09-06",
+  "theme":"AIデータセンター光接続 / DCI / 超多心光ファイバ",
+  "status":"validated-continuation-theme",
+  "sourceEvents":[
+    {"date":"2026-03-12","event":"古河電工が13824心の超多心光ファイバを量産開始、第2工場で生産能力を2023年度比2倍以上へ","url":"https://www.furukawaelectric.com/release/2026/comm_20260312.html"},
+    {"date":"2026-06-02","event":"古河電工グループ白山がAIデータセンター向けVSFF多心コネクタ用フェルール工場新設を決定","url":"https://www.furukawaelectric.com/release/2026/opt_20260602.html"},
+    {"date":"2026-03-09","event":"フジクラが国内データセンター向け4000心WTCを製品化","url":"https://www.fujikura.co.jp/en/news/pressrelease/2026030913824swr_wtc.html"},
+    {"date":"2026-05-08","event":"フジクラがDCI向け1728心Air Blown WTCを販売開始","url":"https://www.fujikura.co.jp/news/pressrelease/202605084000swr_wtc.html"}
+  ],
+  "thesis":"生成AIのボトルネックが計算資源だけでなくGPUクラスタ間/データセンター間の高速大容量接続へ広がり、光ファイバ・コネクタの高密度化と増産が実需として確認できる。単なるAI連想ではなく設備投資と量産の証拠がある。",
+  "valueChain":["超多心光ファイバ","DCIケーブル","高密度コネクタ/フェルール","融着接続","光部品/レーザ","ネットワーク運用"],
+  "candidates":[
+    {"code":"5801","name":"古河電工","directness":"very_high","earningsExposure":"high","evidenceQuality":"company_primary","priceState":"9/4 close 3844 +6.39%, high 3867; strong turnover","pricedIn":"medium-high after sharp rebound","daytrade":"A","swing":"A","medium":"A core challenger","risk":"AI光通信期待の織り込みと高ボラティリティ"},
+    {"code":"5803","name":"フジクラ","directness":"very_high","earningsExposure":"high","evidenceQuality":"company_primary","pricedIn":"high","daytrade":"A- if peer-relative strength returns","swing":"A- existing holding; add only on confirmation","medium":"A existing core candidate","risk":"期待倍率が高く、同業相対弱が続く場合は再評価"}
+  ],
+  "redTeam":["AIデータセンター投資が減速すれば光接続需要も鈍化","設備増強が供給増・価格競争につながる可能性","一日の相対強度だけでフジクラから古河へ資金移動しない"],
+  "horizonConclusion":{"daytrade":"9/7は古河をフジクラより先に相対強度確認。電線3社同時高が条件。","swing":"古河が新規有力。フジクラは既存保有のため追加より回復確認を優先。","medium":"両社とも実需確認済み。フジクラ既存保有と古河新規候補の比較を決算ごとに継続。"}
+}
