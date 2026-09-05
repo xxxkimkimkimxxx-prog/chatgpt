@@ -1,0 +1,11 @@
+{
+  "asOf":"2026-09-06 JST","targetSession":"2026-09-07","status":"provisional-weekend","ranking":[
+    {"rank":1,"code":"1605","name":"INPEX","thesis":"9/5 U.S.-Iran tanker strikes occurred after Friday PTS; direct oil beta","entryCondition":"Monday oil strength + VWAP hold + initial low higher + energy peers confirm","skipCondition":"oil does not respond or gap-up loses VWAP"},
+    {"rank":2,"code":"285A","name":"キオクシアHD","thesis":"SOX +3.4%, Sep4 turnover leader, PTS strong","entryCondition":"semiconductor breadth + VWAP hold + 9:05-9:10 breakout with volume","skipCondition":"PTS gap turns into opening fade"},
+    {"rank":3,"code":"7011","name":"三菱重工業","thesis":"weekend geopolitical/defense re-rating candidate","entryCondition":"defense peers confirm + VWAP hold + higher initial high/low","skipCondition":"no defense inflow despite geopolitical escalation"},
+    {"rank":4,"code":"5801","name":"古河電工","thesis":"optical/data-center relative strength, PTS strong","entryCondition":"5803/5802 peers confirm + gap digested + breakout","skipCondition":"near-4000 gap chase or peer divergence"},
+    {"rank":5,"code":"6976","name":"太陽誘電","thesis":"high-beta technology continuation","entryCondition":"semiconductor/electronics breadth + VWAP hold","skipCondition":"opening range too wide for favorable RR"}
+  ],
+  "criticalUpdate":"Re-rank at 08:00 because Sep5 Iran escalation occurred after Friday PTS/futures.",
+  "decisionMemo":"investment-company/decision-memos/2026-09-06/daytrade.md"
+}
