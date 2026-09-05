@@ -1,0 +1,23 @@
+{
+  "date":"2026-09-06",
+  "theme":"AIデータセンター電力制約 / オンサイト電源 / 電力取引・蓄電池",
+  "status":"underreacted-structural-theme",
+  "sourceEvents":[
+    {"date":"2026-09-01","event":"日立がBloom Energyと日本向けオンサイト電源ソリューションで協業","url":"https://www.hitachi.com/en/press/articles/2026/09/0901b/"},
+    {"date":"2026-09-03","event":"日立がHMAX Data Center / Cyber / Data Fabric / AI Operationsを拡充","url":"https://www.hitachi.com/en-us/press/hitachi-expands-hmax-to-accelerate-the-deployment-of-physical-ai/"},
+    {"date":"2026-09-03","event":"デジタルグリッドが1年契約の再エネPPAを開始、燃料高・電力価格変動のヘッジ需要を狙う","url":"https://www.digitalgrid.com/"},
+    {"date":"2026-08-31","event":"JPX/TOCOMのJJ-Linkがフェーズ2へ。電力先物と現物のワンストップ連携を開始","url":"https://www.jpx.co.jp/corporate/news/news-releases/0060/20260831-01.html"}
+  ],
+  "thesis":"AIデータセンター拡大の制約がGPUだけでなく電源・送配電・電力価格管理へ移る。電力先物の取引量も拡大しており、電力調達の柔軟化・オンサイト発電・蓄電池・エネルギーマネジメントは複数年テーマになり得る。",
+  "valueChain":["オンサイト発電","送配電/変電","データセンター統合運用","PPA/電力取引","蓄電池アグリゲーション","電力先物/ヘッジ"],
+  "candidates":[
+    {"code":"6501","name":"日立製作所","directness":"high","earningsExposure":"medium-high","evidenceQuality":"company_primary","priceState":"9/4 close 5377 +0.47%","pricedIn":"low-to-medium versus event stack","daytrade":"B","swing":"A+","medium":"A+ core candidate","risk":"巨大企業のため個別イベントの利益寄与が希薄化しやすい"},
+    {"code":"350A","name":"デジタルグリッド","directness":"very_high","earningsExposure":"high","evidenceQuality":"company_primary","priceState":"9/4 close 819 +6.78%, PTS +0.13%, earnings expected 9/10","pricedIn":"medium","daytrade":"A-","swing":"B+ due earnings risk","medium":"A- if battery/PPA scale continues","risk":"small-cap liquidity and near earnings event"}
+  ],
+  "rejectedOrDeferred":[
+    {"code":"8697","name":"日本取引所グループ","reason":"電力先物運営は直接だがグループ利益への感応度が現時点では小さいと判断"},
+    {"code":"6503","name":"三菱電機","reason":"JJ-LinkでBLEnDer採用は確認できるが、現時点で利益寄与の直接度を十分検証できず本命外"}
+  ],
+  "redTeam":["電力市場制度の拡大が各社利益へ直結するまで時間がかかる","PPA・蓄電池は競争激化でマージンが伸びない可能性","AIデータセンター投資減速は全バリューチェーン共通の破綻条件"],
+  "horizonConclusion":{"daytrade":"Digital Gridを材料・出来高型で監視。ただし9/10決算リスク。","swing":"日立を最上位。イベント複数に対して株価反応が過熱していない。","medium":"日立を中核、Digital Gridを高ベータ純度枠。"}
+}
