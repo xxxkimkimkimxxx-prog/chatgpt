@@ -1,0 +1,9 @@
+{
+  "date":"2026-09-06","committee":"theme-news-research","trial":true,
+  "agents":[
+    {"agentId":32,"title":"ニュース・技術トレンド発掘担当","taskPerformed":"マクロ統計・個社IR以外の有力記事、制度変更、社会実装、新技術を独立探索","keyFindings":["Physical AI/自動運転は実際に現行人気テーマだが急騰後急落","防衛AI/無人アセットのMHI-NEC提携","10/1重要インフラサイバー統一基準","AIデータセンターの電源制約と電力市場柔軟化","AI光接続の量産増強"],"novelContribution":"ユーザー例に依存せず5つの現行テーマを形成","sourcesUsed":["政府一次情報","企業IR","JPX","Reuters等"],"candidatesFlagged":["336A","3653","4667","593A","7011","6701","4704","3692","6501","350A","5801","5803"],"risksFlagged":["theme blowoff","association-only stocks","policy monetization lag"],"confidence":0.92,"dataLimitations":"日経記事のABN AMRO個別参入は一次情報で独立確認できず"},
+    {"agentId":33,"title":"テーマ・バリューチェーンマッピング担当","taskPerformed":"各テーマを価値連鎖へ分解し日本上場株を直接/間接受益で整理","keyFindings":["自動運転=OS/地図/センシング/制御/運行","防衛AI=装備/無人/C2/クラウド/AI主権","電力=オンサイト発電/送配電/PPA/蓄電池/先物","光接続=ファイバ/DCI/コネクタ/融着","サイバー=統合プラットフォーム/SOC/OT/政府"],"novelContribution":"テーマ名から単なる関連銘柄列挙ではなく収益経路を定義","sourcesUsed":["企業一次情報","政府資料"],"candidatesFlagged":["6501","350A","7011","6701","4704","3692","5801","5803","336A","4667","593A"],"risksFlagged":["hidden factor concentration"],"confidence":0.9,"dataLimitations":"全サプライチェーンの未上場企業は投資候補外"},
+    {"agentId":34,"title":"テーマ実需・収益感応度検証担当","taskPerformed":"候補の売上/受注/顧客/量産/設備投資/ARR等を一次情報で検証し連想株を除外","keyFindings":["Trend Micro Vision One ARR+49%","古河13824心量産と生産能力2倍超","フジクラ4000心/1728心製品化","Dynamic Map国交省採択","Morpho-Astemo共同開発","Hitachiのオンサイト電源+HMAX Data Center","MHI-NEC防衛MOU"],"novelContribution":"JPXや三菱電機などテーマ関連でも利益感応度が弱い候補を本命から除外","sourcesUsed":["company primary releases","government/JPX"],"candidatesFlagged":["4704","5801","5803","6501","7011","6701","336A"],"risksFlagged":["revenue timing","valuation","capex burden"],"confidence":0.93,"dataLimitations":"一部小型株のセグメント別テーマ売上比率は開示不足"}
+  ],
+  "departmentConclusion":"新設3役は初回から既存部署では欠けていた『記事起点→企業特定』を補完。正式人事評価は案件蓄積後だが、現時点では役割分離に合理性あり。"
+}
