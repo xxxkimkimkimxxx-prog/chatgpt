@@ -1,0 +1,11 @@
+{
+  "date":"2026-09-06","committee":"performance-review","trial":true,
+  "agents":[
+    {"agentId":1,"title":"投資委員会議長","taskPerformed":"成績レビューを投資ルール変更と接続","keyFindings":["固定損失上限撤廃は利益捕捉率改善とセットで評価すべき"],"novelContribution":"ルール変更を検証可能なKPIへ落とし込んだ","confidence":0.92,"dataLimitations":"9月実績未確定"},
+    {"agentId":2,"title":"投資方針・コンプライアンス担当","taskPerformed":"旧固定損失ルールが評価に混入しないか確認","keyFindings":["最新方針は案件別リスク管理"],"novelContribution":"ルールの版管理を確認","confidence":0.98,"dataLimitations":"なし"},
+    {"agentId":3,"title":"データ検証責任者","taskPerformed":"performance-summaryの確定範囲を確認","keyFindings":["8月+70,700円まで確定、9月は未確認"],"novelContribution":"未確定損益を累計へ混ぜない","confidence":0.99,"dataLimitations":"9月iSPEED確認データなし"},
+    {"agentId":26,"title":"トレード日誌・成績分析担当","taskPerformed":"勝率、PF、平均勝敗、期待値を分析","keyFindings":["意思決定エピソード勝率79.49%、PF3.00、期待値+1,812.82円","平均損失4,419円は平均利益3,421円より約29%大きい"],"novelContribution":"固定損失上限撤廃後に監視すべき弱点を特定","confidence":0.97,"dataLimitations":"MFE/MAE全履歴未整備"},
+    {"agentId":27,"title":"投資仮説・四半期レビュー担当","taskPerformed":"今後の検証項目を定義","keyFindings":["PF、平均利益/損失、MFE捕捉率、MAE、持越し再分類後成績を追跡"],"novelContribution":"新運用を次回レビュー可能にした","confidence":0.93,"dataLimitations":"新ルール適用後の案件数ゼロ"},
+    {"agentId":31,"title":"人事評価・組織開発担当","taskPerformed":"初回試行の人事評価枠を運用","keyFindings":["正式評価には案件数不足","No.30はデータ供給力を要観察","No.12/13、No.7/28は重複率を今後計測"],"novelContribution":"成果だけでなく役割価値を継続測定する観点を追加","confidence":0.94,"dataLimitations":"自己評価は禁止。No.31の評価はNo.1/2が担当"}
+  ]
+}
