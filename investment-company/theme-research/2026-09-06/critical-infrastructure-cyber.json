@@ -1,0 +1,17 @@
+{
+  "date":"2026-09-06",
+  "theme":"重要インフラ・サイバーセキュリティ統一基準",
+  "status":"policy-catalyst-with-recurring-revenue-beneficiaries",
+  "sourceEvents":[
+    {"date":"2026-07-31","event":"重要インフラのサイバーセキュリティ対策のための統一基準を決定。2026-10-01施行予定。","url":"https://www.cyber.go.jp/policy/group/infra/policy.html"}
+  ],
+  "thesis":"16分野の重要インフラで具体的かつ統一的な対策水準が導入され、診断・監視・EDR/XDR・SOC・コンサル等への支出が中期的に底上げされる可能性。単発テーマより規制起点で持続性が高い。",
+  "valueChain":["統合セキュリティプラットフォーム","SOC/MDR","脆弱性診断/ペネトレーション","国産セキュリティ/政府案件","OT/重要インフラ向けセキュリティ"],
+  "candidates":[
+    {"code":"4704","name":"トレンドマイクロ","directness":"high","earningsExposure":"high","evidenceQuality":"company_primary","fundamentalEvidence":"Q2 net sales +13% YoY; TrendAI Vision One ARR +49%; enterprise NRR 122%","priceState":"9/4 close 6100 +6.05%, PTS 6000 -1.64%","daytrade":"B+ momentum but PTS soft","swing":"A","medium":"A core candidate","risk":"valuation and prior run-up; regulation benefit not exclusive"},
+    {"code":"3692","name":"FFRIセキュリティ","directness":"high","earningsExposure":"medium-high","evidenceQuality":"theme/business direct; company financial verification required each quarter","daytrade":"A- high-beta cyber momentum","swing":"B+","medium":"B+ national-security purity but smaller/liquidity risk","risk":"price volatility and government-demand concentration"}
+  ],
+  "rejectedOrDeferred":[{"name":"セキュリティ一般の連想小型株","reason":"重要インフラ/政府/OT等への実需を一次情報で確認できない場合は本命除外"}],
+  "redTeam":["統一基準は支出を直接義務化する単一予算ではなく、各所管・事業者の実装速度に差が出る","10/1施行は既知で事前織り込みが進む可能性","サイバー株はAIテーマも重なり高バリュエーション化しやすい"],
+  "horizonConclusion":{"daytrade":"FFRI/Trend Microを相対強度と出来高で監視。","swing":"Trend Microを優先。業績と規制テーマが一致。","medium":"Trend Micro中心。FFRIは国産安全保障枠として別管理。"}
+}
