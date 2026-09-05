@@ -1,0 +1,25 @@
+{
+  "date":"2026-09-06","committee":"daytrade","trial":true,
+  "agents":[
+    {"agentId":1,"title":"投資委員会議長","taskPerformed":"各部門を統合し月曜の仮順位と保留条件を決裁書化","keyFindings":["INPEX>キオクシア>三菱重工>古河電工>太陽誘電"],"novelContribution":"週末材料を踏まえ仮順位と月曜再審査を分離","conditionsProposed":["8:00再順位","9:00-9:10条件確認"],"confidence":0.88,"dataLimitations":"月曜気配未形成"},
+    {"agentId":2,"title":"投資方針・コンプライアンス担当","taskPerformed":"固定金額上限を使わず案件別リスク方式が守られているか確認","keyFindings":["AIは注文しない","寄り前に買値を断定しない"],"novelContribution":"最新ルールとの整合確認","conditionsProposed":[],"confidence":0.98,"dataLimitations":"なし"},
+    {"agentId":3,"title":"データ検証責任者","taskPerformed":"価格・PTS・週末イベント時刻を検証","keyFindings":["土曜イラン攻撃は金曜PTS後"],"novelContribution":"古い先物プレミアムの過信を阻止","conditionsProposed":["月曜寄り前再取得"],"confidence":0.95,"dataLimitations":"週末後の日本株価格なし"},
+    {"agentId":4,"title":"グローバルマクロ担当","taskPerformed":"雇用・中東・米休場を短期地合いへ変換","keyFindings":["金利高と地政学がGU追いの逆風"],"novelContribution":"半導体強気一本足打法を抑制","conditionsProposed":[],"confidence":0.9,"dataLimitations":"月曜先物未更新"},
+    {"agentId":5,"title":"金利・為替・商品担当","taskPerformed":"原油・金利から短期候補を評価","keyFindings":["INPEXを週末Fresh Catalyst最上位へ"],"novelContribution":"土曜材料の直接ベータを特定","conditionsProposed":["原油上昇確認必須"],"confidence":0.9,"dataLimitations":"週末原油再価格待ち"},
+    {"agentId":6,"title":"米国株・AI担当","taskPerformed":"SOX+3.4%を日本半導体へ反映","keyFindings":["キオクシア・古河・太陽誘電を継続候補"],"novelContribution":"指数安と半導体強を分離","conditionsProposed":["半導体同時高"],"confidence":0.9,"dataLimitations":"米国現物9/7休場"},
+    {"agentId":7,"title":"日本市場・セクター担当","taskPerformed":"金曜の狭い上昇とセクター偏りを確認","keyFindings":["値下がり銘柄数が値上がりを上回る"],"novelContribution":"指数だけで全面高と誤認しない","conditionsProposed":[],"confidence":0.92,"dataLimitations":"月曜セクターフロー未形成"},
+    {"agentId":8,"title":"TDnet・IR・イベント担当","taskPerformed":"Fresh Catalystをデイトレ候補へ提供","keyFindings":["ナトコ・泉州・カナモト等は材料強いがPTS反応は限定"],"novelContribution":"材料株を高値追い候補から条件付き候補へ変更","conditionsProposed":[],"confidence":0.92,"dataLimitations":"板未確認"},
+    {"agentId":9,"title":"スクリーニング・PTS担当","taskPerformed":"PTSと出来高で実戦候補を絞込","keyFindings":["キオクシア、古河、太陽誘電は出来高・PTS両面で優位"],"novelContribution":"流動性の低い好材料株を落とした","conditionsProposed":[],"confidence":0.91,"dataLimitations":"土曜材料はPTS未反映"},
+    {"agentId":15,"title":"デイトレ・価格行動担当","taskPerformed":"9:00-9:10確認項目を設計","keyFindings":["VWAP、初動高安、GU消化が共通条件"],"novelContribution":"寄り成り回避と追随条件を明確化","conditionsProposed":["VWAP上","初動安値切上げ","9:10高値更新"],"confidence":0.86,"dataLimitations":"当日5分足未形成"},
+    {"agentId":16,"title":"出来高・需給・板担当","taskPerformed":"売買代金と流動性を評価","keyFindings":["キオクシアは最上位流動性、トミタ等は実戦不適"],"novelContribution":"材料強度と執行可能性を分離","conditionsProposed":["平時比出来高増"],"confidence":0.88,"dataLimitations":"リアルタイム板未取得"},
+    {"agentId":18,"title":"執行設計担当","taskPerformed":"寄り前→9:10までの執行順序を設計","keyFindings":["大幅GUは最初の押しを待つ"],"novelContribution":"候補順位を注文行動へ変換","conditionsProposed":["追い掛け禁止","条件成立後のみ数量決定"],"confidence":0.89,"dataLimitations":"実際のスプレッド未取得"},
+    {"agentId":20,"title":"ポジション・RR担当","taskPerformed":"固定金額でなく価格構造で数量判断する枠組みを適用","keyFindings":["初動安値までの距離と上値余地で数量決定"],"novelContribution":"高額キオクシアも単元未満株で候補維持","conditionsProposed":[],"confidence":0.85,"dataLimitations":"当日価格構造未形成"},
+    {"agentId":21,"title":"イベント・ストレス担当","taskPerformed":"週末イラン攻撃・米休場・金利ショックをストレステスト","keyFindings":["金曜先物シグナルの有効性低下"],"novelContribution":"今回の試行で最重要の新規リスクを特定","conditionsProposed":["原油・先物再価格確認"],"confidence":0.96,"dataLimitations":"週明け反応未確認"},
+    {"agentId":22,"title":"流動性・ギャップ担当","taskPerformed":"小型材料株と大型高流動性株のギャップ耐性を比較","keyFindings":["トミタ・クロスプラス等は流動性で降格"],"novelContribution":"材料だけで採用しない安全弁","conditionsProposed":[],"confidence":0.9,"dataLimitations":"月曜板未確認"},
+    {"agentId":23,"title":"空売りファンド担当","taskPerformed":"各本命の寄り天理由を提示","keyFindings":["半導体は金曜大幅高で利食い余地","INPEXは原油反応なしなら材料出尽くし"],"novelContribution":"強気候補に反対シナリオを付与","conditionsProposed":[],"confidence":0.86,"dataLimitations":"空売り需給詳細未取得"},
+    {"agentId":24,"title":"前提破壊担当","taskPerformed":"戦争=資源高、SOX高=日本半導体高の前提を検証","keyFindings":["どちらも無条件には成立しない"],"novelContribution":"条件付き戦略へ修正","conditionsProposed":[],"confidence":0.9,"dataLimitations":"月曜市場反応待ち"},
+    {"agentId":25,"title":"失敗パターン担当","taskPerformed":"GU追い・材料出尽くし・ナンピン化の過去型を照合","keyFindings":["金曜急騰銘柄の追い掛けが最大の短期事故候補"],"novelContribution":"勝ちたい気持ちによる追随を抑制","conditionsProposed":[],"confidence":0.87,"dataLimitations":"過去全取引のMFE/MAE未整備"},
+    {"agentId":28,"title":"機関投資家需給担当","taskPerformed":"売買代金を中心に大口参加可能性を確認","keyFindings":["285A・8306・9984は高流動性"],"novelContribution":"実戦候補の市場深度評価","conditionsProposed":[],"confidence":0.68,"dataLimitations":"詳細外国人フロー未取得"},
+    {"agentId":29,"title":"決算期待値担当","taskPerformed":"好決算と市場反応の差を確認","keyFindings":["泉州・ナトコは数字が良くてもPTSが強くない"],"novelContribution":"好決算=翌日買いの単純化を否定","conditionsProposed":["決算後初動の需給確認"],"confidence":0.91,"dataLimitations":"全銘柄のアナリストコンセンサス未取得"}
+  ]
+}
