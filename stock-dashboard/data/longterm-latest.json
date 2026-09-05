@@ -1,0 +1,10 @@
+{
+  "asOf":"2026-09-06 JST","status":"initial-classification",
+  "coreCandidates":["5803 フジクラ","8306 MUFG","285A キオクシアHD"],
+  "subCoreCandidates":["5027 AnyMind Group","4180 Appier Group","9824 泉州電業","9678 カナモト"],
+  "eventManaged":["3659 ネクソン"],
+  "speculativeSleeve":["4597 ソレイジア・ファーマ"],
+  "organizeCandidates":["2926 篠崎屋","8518 日本アジア投資"],
+  "principle":"Do not classify by cost basis. Compare expected value from current price, structural thesis, valuation, cash flow, concentration and thesis invalidation.",
+  "decisionMemo":"investment-company/decision-memos/2026-09-06/longterm.md"
+}
