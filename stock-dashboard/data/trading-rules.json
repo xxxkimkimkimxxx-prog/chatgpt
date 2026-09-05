@@ -1,46 +1,65 @@
 {
-  "asOf": "2026-08-27 10:11 JST",
+  "asOf": "2026-09-05 JST",
   "source": "User-confirmed latest trading rules",
-  "scope": "Japanese cash equities and ETFs via Rakuten Securities/iSPEED",
+  "scope": "Japanese cash equities and ETFs via Rakuten Securities/iSPEED, including odd-lot/minimum-share execution when available",
   "capitalRules": {
-    "singleNameCapitalLimitYen": 1500000,
+    "singleNameCapitalLimitYen": null,
     "dailyGrossPurchaseLimitYen": null,
-    "dailyGrossPurchaseLimitNote": "固定の1日購入総額上限は設けない。複数銘柄同時保有可。1銘柄あたりの投入上限は150万円。",
-    "basicTradeUnit": "100 shares as a base, but position size may vary within risk and capital limits"
+    "fixedCapitalCapsEnabled": false,
+    "principle": "Do not exclude high-priced names because of unit price. Use odd-lot/minimum-share execution when appropriate. Position size is decided case by case from thesis strength, volatility, liquidity, event risk, portfolio concentration and downside scenario rather than a fixed yen cap."
   },
   "lossRules": {
-    "dailyRealizedLossLimitYen": 50000,
-    "perTradeLossLimitYen": 10000,
-    "usualPerTradeLossTargetYen": "2000-5000 preferred when chart structure allows",
-    "twoConsecutiveStopsRule": "After two consecutive stop-loss trades, stop opening new day trades for the session unless explicitly re-planned under a swing thesis."
+    "dailyRealizedLossLimitYen": null,
+    "perTradeLossLimitYen": null,
+    "fixedLossCapsEnabled": false,
+    "principle": "Do not exit or skip a valid opportunity solely because a fixed yen loss threshold is reached. Before entry, define the thesis, invalidation condition, downside scenario, expected maximum loss and risk/reward. Reassess when the thesis or market structure changes.",
+    "consecutiveStopsRule": null
   },
   "daytradeToSwingPolicy": {
     "allowed": true,
-    "principle": "A position entered as a day trade may be reclassified to a swing if the investment thesis, sector/macro backdrop, price structure and expected value still support holding beyond the session.",
+    "principle": "A position entered as a day trade may be reclassified to a swing only if the investment thesis, sector/macro backdrop, price structure and expected value independently justify holding beyond the session.",
     "requiredBeforeCarry": [
       "Re-evaluate the thesis using information available before the close",
-      "Define overnight/swing invalidation level",
-      "Define first and final profit targets",
-      "Check event and gap risk",
-      "Check total capital tied up and portfolio downside"
+      "Define swing invalidation conditions",
+      "Define first and final profit objectives",
+      "Check overnight event and gap risk",
+      "Check portfolio concentration and downside scenario"
     ],
-    "notAllowed": "Do not extend holding solely because the position is in loss without a valid swing thesis."
+    "notAllowed": "Do not extend holding solely because the position is in loss."
   },
   "averagingDownPolicy": {
     "allowedConditionally": true,
-    "principle": "Do not average down merely to lower the average cost. Add only when the thesis remains valid, price is near a defined support area, rebound/confirmation is visible, and total downside remains acceptable.",
-    "repeatAdds": "Avoid repeated mechanical averaging down in the same name."
+    "principle": "Do not average down merely to lower average cost. Add only when the thesis remains valid, evidence improves or price/reward becomes more attractive, and the resulting portfolio downside remains acceptable.",
+    "repeatAdds": "Avoid mechanical repeated averaging down. Each add requires a fresh committee rationale."
   },
-  "profitRules": {
-    "minimumRiskReward": 1.5,
-    "preferredRiskReward": 2.0,
-    "trailingAfter1R": true,
-    "referenceLevels": ["VWAP","5-minute recent low","moving averages","prior day high/low","volume concentration zones"]
+  "riskEvaluation": {
+    "required": [
+      "investment thesis",
+      "thesis invalidation",
+      "volatility",
+      "liquidity",
+      "event risk",
+      "portfolio concentration",
+      "downside scenario",
+      "expected maximum loss",
+      "expected profit",
+      "risk/reward"
+    ],
+    "riskReward": "Use risk/reward as a decision input, not an inflexible pass/fail threshold."
+  },
+  "governance": {
+    "aiMayRecommend": true,
+    "aiMayPlaceOrders": false,
+    "finalDecisionMaker": "user",
+    "redTeamRequired": true,
+    "primarySourcesPreferred": true,
+    "numbersRequireVerification": true
   },
   "goal": {
     "targetRealizedPnlYen": 300000,
     "countingStart": "2026-08-01",
     "targetDate": "2026-11-24",
-    "includeAllAugustTrades": true
+    "includeAllAugustTrades": true,
+    "note": "The target does not create a fixed daily or per-trade loss cap and must not force low-quality trades."
   }
 }
