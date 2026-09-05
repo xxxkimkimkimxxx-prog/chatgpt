@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="全国の住宅ローン変動金利と返済額を比較し、夫婦の年齢・収入・貯蓄・子どもの教育費から生涯の資産曲線と老後資金を試算します。">
+  <meta name="theme-color" content="#071a2b">
+  <title>住宅ローン比較・家族資産シミュレーター</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="住宅ローン試算 ホーム">
+      <span class="brand-mark" aria-hidden="true">¥</span>
+      <span>住宅ローン試算</span>
+    </a>
+    <nav class="topnav" aria-label="ページ内ナビゲーション">
+      <a href="#top">ローン試算</a>
+      <a class="topnav-cta" href="#life-plan">家族資産曲線</a>
+      <a href="#comparison-title">金利比較</a>
+    </nav>
+    <div class="data-stamp"><span class="pulse" aria-hidden="true"></span>金利基準日 2026.09</div>
+  </header>
+
+  <main id="top">
+    <section class="workspace" aria-labelledby="main-title">
+      <div class="intro">
+        <p class="eyebrow">MORTGAGE WORKBENCH</p>
+        <h1 id="main-title">借りる前に、<br><span>返せる形</span>をつくる。</h1>
+        <p>金融機関を選ぶと掲載金利が自動入力されます。借入額・期間・年収を変えながら、毎月返済と将来の金利上昇まで一画面で確認できます。</p>
+        <div class="coverage">
+          <strong id="bank-count">—</strong>
+          <span>金融機関を収録<br>メガ・ネット・地銀・第二地銀・労金</span>
+        </div>
+      </div>
+
+      <form class="input-panel" id="loan-form" autocomplete="off">
+        <div class="panel-head">
+          <div>
+            <span class="step">STEP 01</span>
+            <h2>試算条件</h2>
+          </div>
+          <button type="button" class="ghost-button" id="reset-button">初期値に戻す</button>
+        </div>
+
+        <label class="field field-wide">
+          <span>金融機関</span>
+          <select id="bank-select" aria-describedby="bank-note"></select>
+          <small id="bank-note">選択すると2026年9月の掲載金利を反映します</small>
+        </label>
+
+        <div class="field-grid">
+          <label class="field">
+            <span>借入金額</span>
+            <div class="unit-input"><input id="loan-amount" type="number" min="100" max="30000" step="100" value="4000" inputmode="numeric"><em>万円</em></div>
+          </label>
+          <label class="field">
+            <span>返済期間</span>
+            <div class="unit-input"><input id="loan-years" type="number" min="1" max="50" step="1" value="35" inputmode="numeric"><em>年</em></div>
+          </label>
+          <label class="field">
+            <span>適用金利</span>
+            <div class="unit-input"><input id="interest-rate" type="number" min="0" max="15" step="0.001" value="0.875" inputmode="decimal"><em>%</em></div>
+          </label>
+          <label class="field">
+            <span>世帯年収</span>
+            <div class="unit-input"><input id="annual-income" type="number" min="0" max="100000" step="50" value="700" inputmode="numeric"><em>万円</em></div>
+          </label>
+        </div>
+
+        <div class="rate-source" id="selected-bank-meta">
+          <span class="tag">地方銀行</span>
+          <span>主なエリア：奈良県</span>
+          <a href="#sources">金利データについて</a>
+        </div>
+      </form>
+
+      <section class="result-panel" aria-live="polite">
+        <div class="panel-head result-head">
+          <div>
+            <span class="step">RESULT</span>
+            <h2>返済シミュレーション</h2>
+          </div>
+          <span class="assumption">元利均等・ボーナス返済なし</span>
+        </div>
+
+        <div class="hero-metric">
+          <span>毎月の返済額</span>
+          <strong id="monthly-payment">—</strong>
+          <small id="monthly-change">現在の入力条件で計算</small>
+        </div>
+
+        <div class="split-metrics">
+          <div>
+            <span>初回の元本</span>
+            <strong id="first-principal">—</strong>
+            <div class="meter"><i id="principal-meter"></i></div>
+          </div>
+          <div>
+            <span>初回の利息</span>
+            <strong id="first-interest">—</strong>
+            <div class="meter interest"><i id="interest-meter"></i></div>
+          </div>
+        </div>
+
+        <div class="summary-grid">
+          <div><span>総返済額</span><strong id="total-payment">—</strong></div>
+          <div><span>利息総額</span><strong id="total-interest">—</strong></div>
+          <div><span>返済負担率</span><strong id="burden-ratio">—</strong></div>
+          <div><span>完済時期</span><strong id="payoff-date">—</strong></div>
+        </div>
+
+        <div class="income-card">
+          <div>
+            <span>無理を抑える年収目安</span>
+            <strong id="recommended-income">—</strong>
+            <small>年間返済額 ÷ 25% で算出</small>
+          </div>
+          <div class="income-status" id="income-status">—</div>
+        </div>
+
+        <div class="stress-box">
+          <div class="stress-title">
+            <span>金利上昇ストレス</span>
+            <small>同じ残高・期間で再計算した比較</small>
+          </div>
+          <div class="stress-row">
+            <div><span>現在</span><strong id="stress-current">—</strong></div>
+            <div><span>+1.0%</span><strong id="stress-one">—</strong><small id="stress-one-diff">—</small></div>
+            <div><span>+2.0%</span><strong id="stress-two">—</strong><small id="stress-two-diff">—</small></div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="life-plan" id="life-plan" aria-labelledby="life-plan-title">
+      <div class="life-plan-heading">
+        <div>
+          <p class="eyebrow">FAMILY LIFE PLAN</p>
+          <h2 id="life-plan-title">住宅ローンを、<br><span>人生全体</span>で確かめる。</h2>
+        </div>
+        <p>今の貯蓄、夫婦の年齢と収入、子どもの教育方針を重ねて、95歳までの資産推移を年ごとに試算します。年間収支が赤字になる年と、資産そのものが尽きる年は分けて表示します。</p>
+      </div>
+
+      <div class="life-layout">
+        <form class="life-input-card" id="life-form" autocomplete="off">
+          <div class="life-card-head">
+            <div><span class="step">LIFE INPUT</span><h3>家族と家計の条件</h3></div>
+            <button type="button" class="ghost-button" id="life-reset">標準例に戻す</button>
+          </div>
+
+          <fieldset>
+            <legend>家族</legend>
+            <div class="life-field-grid three">
+              <label class="life-field"><span>夫の現在年齢</span><div><input id="lp-h-age" type="number" min="18" max="80" step="1" value="35"><em>歳</em></div></label>
+              <label class="life-field"><span>妻の現在年齢</span><div><input id="lp-w-age" type="number" min="18" max="80" step="1" value="33"><em>歳</em></div></label>
+              <label class="life-field"><span>子どもの人数</span><div><input id="lp-child-count" type="number" min="0" max="6" step="1" value="1"><em>人</em></div></label>
+            </div>
+            <div class="children-list" id="children-list" aria-live="polite"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend>収入・退職</legend>
+            <div class="life-field-grid">
+              <label class="life-field"><span>夫の額面年収</span><div><input id="lp-h-income" type="number" min="0" max="100000" step="10" value="550"><em>万円</em></div></label>
+              <label class="life-field"><span>妻の額面年収</span><div><input id="lp-w-income" type="number" min="0" max="100000" step="10" value="400"><em>万円</em></div></label>
+              <label class="life-field"><span>手取り率</span><div><input id="lp-net-rate" type="number" min="40" max="100" step="1" value="78"><em>%</em></div></label>
+              <label class="life-field"><span>年収上昇率</span><div><input id="lp-income-growth" type="number" min="-10" max="10" step="0.1" value="1"><em>%/年</em></div></label>
+              <label class="life-field"><span>夫の退職年齢</span><div><input id="lp-h-retire" type="number" min="45" max="80" step="1" value="65"><em>歳</em></div></label>
+              <label class="life-field"><span>妻の退職年齢</span><div><input id="lp-w-retire" type="number" min="45" max="80" step="1" value="65"><em>歳</em></div></label>
+              <label class="life-field"><span>夫の年金（月額）</span><div><input id="lp-h-pension" type="number" min="0" max="100" step="0.1" value="15"><em>万円</em></div></label>
+              <label class="life-field"><span>妻の年金（月額）</span><div><input id="lp-w-pension" type="number" min="0" max="100" step="0.1" value="8.7"><em>万円</em></div></label>
+              <label class="life-field"><span>年金受給開始</span><div><input id="lp-pension-age" type="number" min="60" max="75" step="1" value="65"><em>歳</em></div></label>
+              <label class="life-field"><span>退職金（夫婦合計）</span><div><input id="lp-retirement-pay" type="number" min="0" max="100000" step="50" value="1500"><em>万円</em></div></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>貯蓄・生活</legend>
+            <div class="life-field-grid">
+              <label class="life-field"><span>現在の金融資産</span><div><input id="lp-savings" type="number" min="-10000" max="100000" step="50" value="1200"><em>万円</em></div></label>
+              <label class="life-field"><span>毎月の生活費</span><div><input id="lp-living" type="number" min="0" max="1000" step="1" value="28"><em>万円</em></div></label>
+              <label class="life-field"><span>住宅維持費（年間）</span><div><input id="lp-home-cost" type="number" min="0" max="1000" step="1" value="36"><em>万円</em></div></label>
+              <label class="life-field"><span>資産運用利回り</span><div><input id="lp-return-rate" type="number" min="-20" max="20" step="0.1" value="2"><em>%/年</em></div></label>
+              <label class="life-field"><span>物価上昇率</span><div><input id="lp-inflation" type="number" min="-5" max="20" step="0.1" value="1.5"><em>%/年</em></div></label>
+              <label class="life-field"><span>試算終了年齢</span><div><input id="lp-end-age" type="number" min="70" max="110" step="1" value="95"><em>歳</em></div></label>
+            </div>
+          </fieldset>
+
+          <div class="loan-sync">
+            <div><span>上の住宅ローンを反映</span><strong id="lp-loan-summary">—</strong></div>
+            <a href="#top">条件を変更 ↑</a>
+          </div>
+          <p class="autosave-note"><span aria-hidden="true">✓</span> 入力内容はこの端末内に自動保存されます</p>
+        </form>
+
+        <div class="life-results" aria-live="polite">
+          <div class="life-kpis">
+            <article><span>夫婦が退職する年の資産</span><strong id="lp-retirement-assets">—</strong><small id="lp-retirement-year">—</small></article>
+            <article><span id="lp-final-label">95歳時点の資産</span><strong id="lp-final-assets">—</strong><small id="lp-final-status">—</small></article>
+            <article class="risk-kpi"><span>最初の年間収支赤字</span><strong id="lp-first-red">—</strong><small>資産残高がプラスでも表示</small></article>
+            <article class="risk-kpi"><span>最初の資産不足</span><strong id="lp-first-shortage">—</strong><small>資産残高が0円を下回る年</small></article>
+          </div>
+
+          <section class="asset-chart-card" aria-labelledby="asset-chart-title">
+            <div class="asset-chart-head">
+              <div><span class="step">ASSET CURVE</span><h3 id="asset-chart-title">家族の資産曲線</h3></div>
+              <div class="chart-legend"><span><i class="asset-key"></i>資産残高</span><span><i class="red-key"></i>年間収支が赤字</span></div>
+            </div>
+            <div class="chart-frame"><canvas id="asset-curve" role="img" aria-label="現在から試算終了年齢までの資産推移グラフ"></canvas></div>
+            <div class="chart-range" id="lp-chart-range">—</div>
+          </section>
+
+          <div class="life-insights">
+            <article><span>老後の取崩必要額</span><strong id="lp-retirement-draw">—</strong><p>夫婦退職後の年間赤字額を単純合計した参考値です。</p></article>
+            <article><span>期間中の最低資産</span><strong id="lp-min-assets">—</strong><p id="lp-min-year">—</p></article>
+          </div>
+
+          <section class="timeline-card">
+            <div class="timeline-head"><div><span class="step">MILESTONES</span><h3>節目の資産</h3></div><span id="lp-red-count">—</span></div>
+            <div class="table-wrap life-table-wrap">
+              <table class="life-table">
+                <thead><tr><th>年</th><th>夫 / 妻</th><th>主な出来事</th><th>年間収支</th><th>年末資産</th></tr></thead>
+                <tbody id="lp-milestones"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <details class="red-years-card" id="lp-red-details">
+            <summary><span>年間収支が赤字になる年</span><strong id="lp-red-summary">—</strong></summary>
+            <div id="lp-red-years"></div>
+          </details>
+
+          <p class="life-disclaimer">本試算は一定の収入上昇率・物価上昇率・運用利回りを置いた概算です。税・社会保険の個別条件、介護、住宅修繕、奨学金、住宅ローン控除などは含みません。将来を保証するものではありません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell comparison-section" aria-labelledby="comparison-title">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">RATE COMPARISON</p>
+          <h2 id="comparison-title">金融機関を横断比較</h2>
+          <p>入力中の借入額・期間で毎月返済額をそろえて比較します。行を押すと上の試算へ反映します。</p>
+        </div>
+        <div class="best-card">
+          <span>表示中の最小掲載金利</span>
+          <strong id="best-rate">—</strong>
+          <small id="best-bank">—</small>
+        </div>
+      </div>
+
+      <div class="filters" aria-label="金融機関の絞り込み">
+        <label>
+          <span>検索</span>
+          <input id="bank-search" type="search" placeholder="銀行名を入力">
+        </label>
+        <label>
+          <span>区分</span>
+          <select id="category-filter">
+            <option value="all">すべて</option>
+            <option>メガ・都市銀行</option>
+            <option>ネット銀行</option>
+            <option>地方銀行</option>
+            <option>第二地方銀行</option>
+            <option>労働金庫・その他</option>
+          </select>
+        </label>
+        <label>
+          <span>地域</span>
+          <select id="region-filter">
+            <option value="all">全国・すべて</option>
+            <option>北海道</option><option>東北</option><option>関東</option><option>甲信越</option>
+            <option>北陸</option><option>東海</option><option>近畿</option><option>中国</option>
+            <option>四国</option><option>九州</option><option>沖縄</option>
+          </select>
+        </label>
+        <label>
+          <span>並び順</span>
+          <select id="sort-filter">
+            <option value="payment">月々が安い順</option>
+            <option value="rate">金利が低い順</option>
+            <option value="name">金融機関名順</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>金融機関</th><th>区分・主な地域</th><th>掲載金利</th><th>月々返済</th><th>総利息</th><th></th></tr></thead>
+          <tbody id="bank-table-body"></tbody>
+        </table>
+      </div>
+      <div class="table-foot">
+        <span id="result-count">—</span>
+        <button type="button" class="outline-button" id="show-more">さらに表示</button>
+      </div>
+    </section>
+
+    <section class="section-shell breakdown-section" aria-labelledby="breakdown-title">
+      <div class="section-title-row compact">
+        <div>
+          <p class="eyebrow">AMORTIZATION</p>
+          <h2 id="breakdown-title">元本と利息の減り方</h2>
+          <p>毎月同じ返済額でも、前半ほど利息が多く、返済が進むにつれて元本の割合が増えます。</p>
+        </div>
+        <div class="legend" aria-label="グラフの凡例"><span><i class="principal-key"></i>元本</span><span><i class="interest-key"></i>利息</span></div>
+      </div>
+      <div class="year-chart" id="year-chart" aria-label="年ごとの元本と利息のグラフ"></div>
+      <div class="table-wrap schedule-wrap">
+        <table>
+          <thead><tr><th>回</th><th>返済額</th><th>元本</th><th>利息</th><th>返済後残高</th></tr></thead>
+          <tbody id="schedule-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-shell guidance-section" aria-labelledby="guidance-title">
+      <div>
+        <p class="eyebrow">AFFORDABILITY GUIDE</p>
+        <h2 id="guidance-title">必要年収は「通る額」より<br>「続けられる額」で見る</h2>
+      </div>
+      <div class="guide-grid">
+        <article><span class="guide-number">20%</span><h3>ゆとり重視</h3><p>教育費や金利上昇への余白を厚く取りたい場合の目安です。</p><strong id="income-20">—</strong></article>
+        <article class="featured"><span class="guide-number">25%</span><h3>標準目安</h3><p>年間返済額を年収の4分の1以内に収める考え方です。</p><strong id="income-25">—</strong></article>
+        <article><span class="guide-number">35%</span><h3>上限参考</h3><p>審査上の返済負担率を考える参考値。安全な水準を意味しません。</p><strong id="income-35">—</strong></article>
+      </div>
+      <div class="checklist">
+        <h3>金利以外に確認したいこと</h3>
+        <ul>
+          <li><span>01</span>事務手数料・保証料を含めた総費用</li>
+          <li><span>02</span>団信の保障内容と上乗せ金利</li>
+          <li><span>03</span>繰上返済・固定金利変更の手数料</li>
+          <li><span>04</span>営業地域、物件、自己資金などの適用条件</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-shell methodology" id="sources" aria-labelledby="source-title">
+      <div>
+        <p class="eyebrow">DATA & METHOD</p>
+        <h2 id="source-title">データと計算条件</h2>
+      </div>
+      <div class="method-copy">
+        <p><strong>金利データ：</strong>2026年9月の新規借入向け変動金利を基準にしています。主要行は各行の公表ページ、地域金融機関はダイヤモンド不動産研究所の主要地銀等の表面金利一覧を主な参照元としています。</p>
+        <p><strong>重要：</strong>表示金利は最優遇・代表的な掲載値であり、実際の適用金利は審査、物件、借入比率、給与振込、団信、営業地域、キャンペーン等で変わります。申込前に必ず金融機関へ確認してください。</p>
+        <p><strong>試算：</strong>元利均等返済、毎月払い、ボーナス返済なし。入力金利が全期間変わらない前提です。金融機関ごとに異なる5年ルール・125%ルール、諸費用、住宅ローン控除は計算に含みません。家族資産曲線の教育費は文部科学省の公表値、年金の初期値は厚生労働省の2026年度公表値を参考にしています。</p>
+        <div class="source-links">
+          <a href="https://diamond-fudosan.jp/articles/-/126846" target="_blank" rel="noopener">地域金融機関の比較データ ↗</a>
+          <a href="https://www.bk.mufg.jp/kariru/jutaku/yuuguu/index.html" target="_blank" rel="noopener">三菱UFJ銀行 ↗</a>
+          <a href="https://www.smbc.co.jp/kojin/jutaku_loan/kinri/" target="_blank" rel="noopener">三井住友銀行 ↗</a>
+          <a href="https://www.mizuhobank.co.jp/loan_housing/housingloancost/index.html" target="_blank" rel="noopener">みずほ銀行 ↗</a>
+          <a href="https://www.mext.go.jp/content/20260116-mxt_chousa01-000039333_1.pdf" target="_blank" rel="noopener">文科省 子供の学習費調査 ↗</a>
+          <a href="https://www.mext.go.jp/a_menu/koutou/shinkou/07021403/1412031_00006.htm" target="_blank" rel="noopener">文科省 私立大学の学費 ↗</a>
+          <a href="https://www.mhlw.go.jp/content/12600000/001672868.pdf" target="_blank" rel="noopener">厚労省 2026年度年金額 ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>住宅ローン比較・家族資産シミュレーター</span>
+    <span>2026年9月版 ｜ 本サイトは試算用であり、融資・審査結果を保証しません。</span>
+  </footer>
+
+  <script src="./app.js"></script>
+  <script src="./lifeplan.js"></script>
+</body>
+</html>
