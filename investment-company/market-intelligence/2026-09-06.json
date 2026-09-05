@@ -1,0 +1,51 @@
+{
+  "date":"2026-09-06",
+  "sessionType":"weekend dry-run / 2026-09-07 premarket preparation",
+  "marketStance":"constructive but event-risk elevated",
+  "executiveSummary":"Friday was a narrow technology-led Nikkei rally, while Saturday's U.S. strikes on three Iranian crude carriers materially increased weekend geopolitical and oil risk after Japanese PTS had already closed. Monday's Friday-night Nikkei futures premium is therefore stale and should not be treated as a clean bullish signal. Semiconductor/AI momentum remains strong, but energy/defense and banks deserve higher priority than in the prior committee because of weekend escalation and BOJ tightening expectations.",
+  "macro":{
+    "nikkeiClose":65020.94,
+    "nikkeiChangePct":1.26,
+    "breadth":"86 advancers / 137 decliners / 2 unchanged",
+    "leadership":"technology contributed about +818.6 yen to Nikkei; materials were negative",
+    "usMarket":"Dow -0.51%, S&P500 -0.38%, Nasdaq -0.29%; semiconductors +3.4%",
+    "usJobs":"August payrolls +162k vs consensus +56k; Fed hike expectations increased",
+    "rates":"U.S. 10Y around 4.8%; Japan 10Y recently broke 3%; BOJ September hike debate active",
+    "geopolitics":"On Sep 5 U.S. forces struck three Iranian crude oil carriers, including one near Kharg Island. This occurred after Friday PTS and raises oil/inflation/risk-off tail risk.",
+    "calendar":["Sep 7 Japan market open","Sep 7 U.S. cash market closed for Labor Day","Sep 7 Japan GDP revision is a domestic macro focus","Sep 10 ECB","following week U.S. inflation data","Sep 17-18 BOJ meeting"]
+  },
+  "screenedUniverse":["1605 INPEX","285A Kioxia","3320 Cross Plus","3994 Money Forward","4180 Appier","4627 Natoco","5801 Furukawa Electric","5802 Sumitomo Electric","5803 Fujikura","5885 GDEP Advance","6349 Komori","6834 Seikoh Giken","6857 Advantest","6898 Tomita Electric","6976 Taiyo Yuden","7011 Mitsubishi Heavy","7013 IHI","7850 Sogo Shoken","8306 MUFG","9636 Kintetsu Cinema/Kine?","9678 Kanamoto","9824 Senshu Electric","9984 SoftBank Group","4062 Ibiden","8035 Tokyo Electron","5805 SWCC","6787 Meiko","2354 YE Digital","3131 Shinden Hightex","9552 Quant Research HD"],
+  "shortlist":{
+    "freshCatalyst":[
+      {"code":"1605","name":"INPEX","priority":1,"reason":"Saturday U.S.-Iran tanker strikes are not reflected in Friday PTS; direct oil beta."},
+      {"code":"4627","name":"ナトコ","priority":2,"reason":"43.9% upward revision to full-year recurring profit with sharp margin improvement; PTS -0.68% tempers enthusiasm."},
+      {"code":"9824","name":"泉州電業","priority":3,"reason":"3Q recurring profit +40.3%, full-year +11.1% revision and dividend raise; PTS nearly flat."},
+      {"code":"9678","name":"カナモト","priority":4,"reason":"3Q operating profit +31.6%, data-center/construction demand; PTS +1.07%."},
+      {"code":"6349","name":"小森コーポレーション","priority":5,"reason":"2.3% share buyback; liquid enough for monitoring; PTS +0.77%."}
+    ],
+    "continuationTrend":[
+      {"code":"285A","name":"キオクシアHD","priority":1,"reason":"Sep 4 +5.4%, largest TSE turnover, PTS +2.19%, SOX +3.4%."},
+      {"code":"5801","name":"古河電工","priority":2,"reason":"Sep 4 +6.39%, PTS strong, optical/data-center peer leader."},
+      {"code":"6976","name":"太陽誘電","priority":3,"reason":"Sep 4 +6.42%, PTS +1.43%, high-beta technology flow."},
+      {"code":"4180","name":"Appier","priority":4,"reason":"year-high breakout, Sep 4 +6.63%, AI growth theme."},
+      {"code":"6834","name":"精工技研","priority":5,"reason":"Sep 4 +11.66% with volume, optical-theme momentum but high volatility."}
+    ],
+    "sectorLeaders":[
+      {"code":"8306","name":"MUFG","theme":"BOJ/rates"},
+      {"code":"9984","name":"SoftBank Group","theme":"AI beta; but +11.78% Friday and PTS -1.47% makes chase risk high"},
+      {"code":"7011","name":"三菱重工","theme":"weekend geopolitical/defense"},
+      {"code":"7013","name":"IHI","theme":"weekend geopolitical/defense"},
+      {"code":"5803","name":"フジクラ","theme":"AI optical / recovery candidate"}
+    ],
+    "monitorOnly":["3320 Cross Plus: buyback but extremely thin and PTS -3.71%","6898 Tomita Electric: strong revision but extreme illiquidity","9636 Kintetsu Cinema: revision but lower earnings outlook and poor liquidity","7850 Sogo Shoken: revision, quality/liquidity need review"]
+  },
+  "topRisks":["Saturday Iran escalation makes Friday futures/PTS stale","oil shock may lift inflation and global yields","BOJ tightening/yen strengthening can hurt exporters and high-duration growth","Friday Nikkei rise had weak breadth and was heavily technology-concentrated","U.S. cash market holiday Monday reduces intraday external guidance"],
+  "sources":[
+    "https://indexes.nikkei.co.jp/en/nkave/archives/summary?dt=09042026&idx=nk225",
+    "https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/",
+    "https://www.reuters.com/world/middle-east/us-military-strikes-three-iranian-crude-oil-carriers-central-command-says-2026-09-05/",
+    "https://www.reuters.com/world/asia-pacific/boj-will-debate-this-month-economy-price-risks-ueda-says-2026-09-02/",
+    "https://s.kabutan.jp/news/k202609040007/",
+    "https://s.kabutan.jp/news/k202609040002/"
+  ]
+}
