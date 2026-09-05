@@ -1,0 +1,14 @@
+{
+  "date":"2026-09-06",
+  "theme":"防衛AI / 指揮統制 / 無人アセット / データ主権",
+  "status":"durable-policy-and-earnings-theme",
+  "sourceEvents":[{"date":"2026-09-02","event":"三菱重工とNECが防衛分野の戦略的提携に向けMOU。作戦計画、指揮統制、無人アセット、データ・AI主権で連携。","url":"https://www.mhi.com/jp/news/26090202.html"}],
+  "thesis":"既知の防衛費増額テーマから一段進み、ハードウェア装備とクラウド/AI/指揮統制の統合が新たな投資軸。政策テーマだけでなく既存防衛事業・受注基盤を持つ企業が中心。",
+  "valueChain":["防衛装備/プラットフォーム","無人アセット","C2/指揮統制","クラウド/ネットワーク","AI/データ主権","セキュア通信"],
+  "candidates":[
+    {"code":"7011","name":"三菱重工業","directness":"very_high","earningsExposure":"high","evidenceQuality":"company_primary","pricedIn":"medium-high","daytrade":"A- high liquidity; also geopolitical beta","swing":"A-","medium":"A core candidate","risk":"防衛成長期待が株価に相当織り込み済み"},
+    {"code":"6701","name":"NEC","directness":"very_high","earningsExposure":"medium-high","evidenceQuality":"company_primary","pricedIn":"medium","daytrade":"B","swing":"A","medium":"A core candidate","risk":"MOU段階で案件金額未定。収益化時期の確認が必要"}
+  ],
+  "redTeam":["MOUは受注契約ではない","防衛費拡大は広く知られておりバリュエーションに織り込み済みの可能性","政治・予算・調達スケジュールで売上計上が遅れる"],
+  "horizonConclusion":{"daytrade":"三菱重工を流動性重視で監視。テーマだけのGU追いはしない。","swing":"NECを特に注目。ニュースに対する価格過熱が相対的に小さく、テーマ持続性が高い。","medium":"三菱重工+NECは最重要。装備とC2/AIの両輪として追跡。"}
+}
