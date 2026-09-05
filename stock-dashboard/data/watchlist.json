@@ -1,0 +1,106 @@
+{
+  "asOf": "2026-09-05 JST",
+  "purpose": "Persistent market-wide watchlist for the 08:00 investment committee. Holdings are tracked separately in holdings.json.",
+  "candidates": [
+    {
+      "code": "9824",
+      "name": "泉州電業",
+      "category": "Fresh Catalyst",
+      "status": "watch",
+      "thesis": "電線・FA/半導体製造装置需要の回復を背景に利益成長が加速。",
+      "catalyst": "2026-09-04 3Q経常利益+40.3%、通期経常11.1%上方修正、年間配当170円へ10円増額。",
+      "nextEvent": "2026-09-07 寄り後の材料消化と出来高確認",
+      "invalidation": "好材料にもかかわらず直近高値を回復できず相対弱が継続、または利益成長前提の悪化。",
+      "lastReviewed": "2026-09-05",
+      "source": "https://kabutan.jp/news/?b=k202609040002",
+      "note": "9/4夜間PTSは7,288円、東証終値7,380円比-1.25%、出来高300株。材料は強いが売り出尽くし警戒。"
+    },
+    {
+      "code": "4627",
+      "name": "ナトコ",
+      "category": "Fresh Catalyst",
+      "status": "watch",
+      "thesis": "利益率改善を伴う上方修正で業績モメンタムが強い。",
+      "catalyst": "2026-09-04 3Q累計経常利益+82.9%、通期経常43.9%上方修正。",
+      "nextEvent": "2026-09-07 寄り付き・PTS反応確認",
+      "invalidation": "大幅GU後にVWAPを維持できず材料出尽くし、または流動性不足。",
+      "lastReviewed": "2026-09-05",
+      "source": "https://kabutan.jp/news/?b=k202609040007"
+    },
+    {
+      "code": "9678",
+      "name": "カナモト",
+      "category": "Fresh Catalyst / Sector Leader",
+      "status": "watch",
+      "thesis": "国土強靱化、物流施設、データセンター投資を背景に建機レンタル需要が底堅い。",
+      "catalyst": "2026-09-04 3Q累計営業利益+31.6%、最終利益+39.1%。",
+      "nextEvent": "2026-09-07 決算後初取引",
+      "invalidation": "決算後に前日終値を割り込み、建設・設備投資関連より相対弱。",
+      "lastReviewed": "2026-09-05",
+      "source": "https://finance.yahoo.co.jp/quote/9678.T",
+      "note": "9/4夜間PTS5,680円、東証終値5,620円比+1.07%。"
+    },
+    {
+      "code": "6898",
+      "name": "トミタ電機",
+      "category": "Fresh Catalyst",
+      "status": "monitor-only",
+      "thesis": "業績修正インパクトは大きいが流動性が極端に低い。",
+      "catalyst": "2026-09-04 上期経常予想を約3倍へ上方修正。",
+      "nextEvent": "2026-09-11 決算予定",
+      "invalidation": "流動性改善が確認できない限り実戦候補へ昇格しない。",
+      "lastReviewed": "2026-09-05",
+      "source": "https://finance.yahoo.co.jp/quote/6898.T",
+      "note": "9/4出来高700株、売買代金約292万円。材料が強くても執行リスクが高い。"
+    },
+    {
+      "code": "9636",
+      "name": "きんえい",
+      "category": "Fresh Catalyst",
+      "status": "excluded-for-now",
+      "thesis": "業績上方修正はあるが、流動性とバリュエーションが実戦向きでない。",
+      "catalyst": "2026-09-04 上期経常47%上方修正、通期も増額。",
+      "nextEvent": "2026-09-08 決算予定",
+      "invalidation": "出来高・売買代金が大幅に増え、価格形成が改善すれば再評価。",
+      "lastReviewed": "2026-09-05",
+      "source": "https://finance.yahoo.co.jp/quote/9636.T",
+      "note": "9/4出来高300株、売買代金約126万円、会社予想PER約77.8倍。"
+    },
+    {
+      "code": "285A",
+      "name": "キオクシアホールディングス",
+      "category": "Sector Leader",
+      "status": "watch",
+      "thesis": "米半導体株・メモリ需給とAIデータセンター投資の日本側高感応度銘柄。",
+      "catalyst": "9/4に54,460円まで反発。SOXの強さが続く場合の日本半導体リーダー候補。",
+      "nextEvent": "2026-09-07 SOX連動と寄り後相対強度確認",
+      "invalidation": "SOX高にもかかわらず半導体主力内で明確に劣後。",
+      "lastReviewed": "2026-09-05",
+      "source": "https://finance.yahoo.co.jp/quote/285A.T"
+    },
+    {
+      "code": "8306",
+      "name": "三菱UFJフィナンシャル・グループ",
+      "category": "Sector Leader",
+      "status": "watch",
+      "thesis": "日銀利上げ・国内金利上昇局面の銀行セクター代表。",
+      "catalyst": "国内金融政策・長期金利上昇。",
+      "nextEvent": "次回日銀金融政策会合と日々のJGB金利",
+      "invalidation": "国内金利低下と銀行指数の相対強度消失。",
+      "lastReviewed": "2026-09-05",
+      "source": "market/macro monitoring"
+    },
+    {
+      "code": "1605",
+      "name": "INPEX",
+      "category": "Macro / Sector Leader",
+      "status": "watch",
+      "thesis": "原油高・地政学リスクへの高感応度。",
+      "catalyst": "WTI・Brent高止まりと中東情勢。",
+      "nextEvent": "原油価格・中東情勢の週末更新",
+      "invalidation": "原油急落または地政学プレミアム剥落。",
+      "lastReviewed": "2026-09-05",
+      "source": "commodity/macro monitoring"
+    }
+  ]
+}
