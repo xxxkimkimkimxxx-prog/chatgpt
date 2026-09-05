@@ -1,0 +1,30 @@
+{
+  "date":"2026-09-06","committee":"longterm","trial":true,
+  "agents":[
+    {"agentId":1,"title":"投資委員会議長","taskPerformed":"1〜12か月の分類を統合","keyFindings":["主力候補: フジクラ/MUFG/キオクシア","準主力: AnyMind/Appier/泉州/カナモト"],"novelContribution":"既存保有と新規候補を同じ分類軸へ統合","confidence":0.86,"dataLimitations":"1回目の試行"},
+    {"agentId":2,"title":"投資方針・コンプライアンス担当","taskPerformed":"中長期化が含み損逃避になっていないか確認","keyFindings":["取得価格を保有根拠にしない"],"novelContribution":"デイトレ→長期化の理由付けを抑制","confidence":0.98,"dataLimitations":"なし"},
+    {"agentId":3,"title":"データ検証責任者","taskPerformed":"会社IR・市場指標・GitHub正本の時点を確認","keyFindings":["保有正本は8/31、9月実現損益未確認"],"novelContribution":"未確認値を排除","confidence":0.96,"dataLimitations":"最新保有変更があれば未反映"},
+    {"agentId":4,"title":"グローバルマクロ担当","taskPerformed":"1年以内の政策・地政学因子を評価","keyFindings":["高金利・原油高・AI投資継続が共存"],"novelContribution":"単一テーマ集中を回避","confidence":0.87,"dataLimitations":"政策シナリオ不確実"},
+    {"agentId":5,"title":"金利・為替・商品担当","taskPerformed":"各候補の金利/為替感応度を比較","keyFindings":["MUFGは国内金利上昇、グロースは金利高に弱い"],"novelContribution":"ポートフォリオ因子分散を提案","confidence":0.9,"dataLimitations":"感応度の定量化は次回"},
+    {"agentId":6,"title":"米国株・AI担当","taskPerformed":"AI設備投資の日本株波及を評価","keyFindings":["フジクラ/キオクシアに構造成長余地"],"novelContribution":"半導体と光通信を別チェーンで整理","confidence":0.88,"dataLimitations":"ハイパースケーラー個別CAPEX詳細は簡略"},
+    {"agentId":7,"title":"日本市場・セクター担当","taskPerformed":"長期のセクター分散を評価","keyFindings":["銀行/建設レンタルをAI偏重の補完候補に"],"novelContribution":"候補群を複数収益ドライバーへ分散","confidence":0.86,"dataLimitations":"長期業種相関未計算"},
+    {"agentId":8,"title":"TDnet・IR・イベント担当","taskPerformed":"決算・中計・還元イベントを収集","keyFindings":["フジクラ中計、AnyMind 2027目標、キオクシア大型投資、泉州上方修正"],"novelContribution":"長期仮説の確認イベントを設定","confidence":0.93,"dataLimitations":"一部資料の深掘りは次回"},
+    {"agentId":10,"title":"決算・業績担当","taskPerformed":"利益成長の方向性を比較","keyFindings":["AnyMind/泉州は成長、ナトコは修正インパクト大"],"novelContribution":"一過性材料と継続成長を分離","confidence":0.88,"dataLimitations":"3年モデル未作成"},
+    {"agentId":11,"title":"財務・キャッシュフロー担当","taskPerformed":"財務・CF観点から主力適性を審査","keyFindings":["巨額CAPEXのキオクシアはFCF監視必須","成長株は利益だけでなくCFを確認"],"novelContribution":"設備投資リスクを主力条件に追加","confidence":0.82,"dataLimitations":"今回は全社CF時系列の再計算未実施"},
+    {"agentId":12,"title":"業界構造・競争優位担当","taskPerformed":"AI光通信、メモリ、銀行、AIマーケの構造を比較","keyFindings":["主力候補間で競争優位の源泉が異なる"],"novelContribution":"テーマ名ではなく収益構造で分類","confidence":0.83,"dataLimitations":"競合シェア定量は次回"},
+    {"agentId":13,"title":"経営者・中期計画担当","taskPerformed":"中計・資本配分の信頼性を審査","keyFindings":["フジクラFY2028計画、AnyMind 2027目標を重要KPI化"],"novelContribution":"次回レビューの約束値を明示","confidence":0.78,"dataLimitations":"過去計画達成率の網羅比較は未実施"},
+    {"agentId":14,"title":"バリュエーション・資本政策担当","taskPerformed":"期待成長と評価倍率を比較","keyFindings":["フジクラは高期待、Appierは高PER、泉州は十数倍PER、MUFGはPBR約1.9"],"novelContribution":"高成長でも価格次第という判断を維持","confidence":0.86,"dataLimitations":"DCF未実施"},
+    {"agentId":17,"title":"スイング・相対強度担当","taskPerformed":"週足・相対強度を長期分類の補助に使用","keyFindings":["フジクラは古河より直近相対弱、Appierは高値更新"],"novelContribution":"ファンダ良好でも価格弱さを警戒","confidence":0.87,"dataLimitations":"月足定量は未実施"},
+    {"agentId":19,"title":"ポートフォリオ担当","taskPerformed":"主力候補の相関・分散を評価","keyFindings":["AI関連4銘柄は実質同じ因子を共有"],"novelContribution":"MUFG/カナモトの分散価値を明示","confidence":0.94,"dataLimitations":"保有現金・総資産最新値未取得"},
+    {"agentId":20,"title":"ポジション・RR担当","taskPerformed":"主力化を段階採用で設計","keyFindings":["キオクシアは循環・CAPEXリスクから一括主力化を避ける"],"novelContribution":"固定上限なしでも段階的集中を提案","confidence":0.85,"dataLimitations":"具体数量はエントリー時決定"},
+    {"agentId":21,"title":"イベント・ストレス担当","taskPerformed":"金利急変・AI減速・原油ショックを長期PFへ適用","keyFindings":["AI系は同時ショック可能性"],"novelContribution":"見かけの銘柄分散を否定","confidence":0.93,"dataLimitations":"定量ストレス率は次回"},
+    {"agentId":22,"title":"流動性・ギャップ担当","taskPerformed":"主力候補としての売買可能性を評価","keyFindings":["小型修正株は主力昇格を保留"],"novelContribution":"長期でも出口流動性を重視","confidence":0.9,"dataLimitations":"将来流動性は変動"},
+    {"agentId":23,"title":"空売りファンド担当","taskPerformed":"主力候補の弱気ケースを提示","keyFindings":["フジクラ高期待、MUFG利上げ織込み、キオクシアメモリ循環"],"novelContribution":"主力候補ほど反対論を強化","confidence":0.9,"dataLimitations":"借株需給は対象外"},
+    {"agentId":24,"title":"前提破壊担当","taskPerformed":"AI CAPEX継続・金利上昇・成長目標達成の前提を検証","keyFindings":["どの主力にも明示的な破綻条件が必要"],"novelContribution":"保有理由を検証可能な形へ変換","confidence":0.94,"dataLimitations":"将来予測の不確実性"},
+    {"agentId":25,"title":"失敗パターン担当","taskPerformed":"含み損を長期化する型を監視","keyFindings":["買値回復待ちを中長期根拠にしない"],"novelContribution":"整理候補を明示","confidence":0.92,"dataLimitations":"過去パターンDBはまだ小さい"},
+    {"agentId":27,"title":"投資仮説・四半期レビュー担当","taskPerformed":"今後の再検証KPIを設定","keyFindings":["受注、CF、利益率、メモリ価格、中計進捗を次回照合項目に"],"novelContribution":"決裁書を将来レビュー可能な形にした","confidence":0.9,"dataLimitations":"初回なので比較対象となる旧決裁書が少ない"},
+    {"agentId":28,"title":"機関投資家需給担当","taskPerformed":"長期主力候補の市場深度を確認","keyFindings":["MUFG/キオクシアは機関資金を受け入れやすい"],"novelContribution":"継続的な資金流入余地を評価","confidence":0.7,"dataLimitations":"保有主体別フロー不足"},
+    {"agentId":29,"title":"決算期待値担当","taskPerformed":"成長率と市場期待の差を評価","keyFindings":["良い会社でも期待超過が続かなければ高評価は維持できない"],"novelContribution":"業績絶対値と株価期待を分離","confidence":0.88,"dataLimitations":"全銘柄コンセンサス網羅なし"},
+    {"agentId":30,"title":"オルタナティブデータ担当","taskPerformed":"長期仮説補助データを探索","keyFindings":["今回は信頼できる独自データでランキング変更なし"],"novelContribution":"無理な補完を避けた","confidence":0.95,"dataLimitations":"独自寄与なし"}
+  ]
+}
