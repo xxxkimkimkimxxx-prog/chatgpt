@@ -1,0 +1,83 @@
+{
+  "version": "2.0",
+  "asOf": "2026-09-05 JST",
+  "headcount": 31,
+  "finalDecisionMaker": "user",
+  "principles": [
+    "AI roles advise and analyze but never place orders",
+    "Roles are evaluated by process quality and decision usefulness, not only subsequent stock returns",
+    "Red-team functions remain independent from bullish research",
+    "No role may invent unavailable numerical data",
+    "Each committee calls only the roles relevant to that horizon"
+  ],
+  "departments": [
+    {
+      "name": "経営企画・人材開発室",
+      "members": [1,2,3,31]
+    },
+    {
+      "name": "市場情報部",
+      "members": [4,5,6,7,8,9,28,30]
+    },
+    {
+      "name": "ファンダメンタル調査部",
+      "members": [10,11,12,13,14,29]
+    },
+    {
+      "name": "戦術・テクニカル・執行部",
+      "members": [15,16,17,18]
+    },
+    {
+      "name": "リスク管理部",
+      "members": [19,20,21,22]
+    },
+    {
+      "name": "レッドチーム",
+      "members": [23,24,25]
+    },
+    {
+      "name": "バックオフィス",
+      "members": [26,27]
+    }
+  ],
+  "agents": [
+    {"id":1,"title":"投資委員会議長","department":"経営企画・人材開発室","mission":"各部署の独立した見解を統合し、決裁書を作る。自ら銘柄を推奨しない。"},
+    {"id":2,"title":"投資方針・コンプライアンス担当","department":"経営企画・人材開発室","mission":"AI権限、最新投資ルール、利益相反、プロセス逸脱を監視する。"},
+    {"id":3,"title":"データ検証責任者","department":"経営企画・人材開発室","mission":"株価、PTS、決算数値、日付、権利日、経済指標など重要数値を検証する。"},
+    {"id":4,"title":"グローバルマクロ担当","department":"市場情報部","mission":"世界景気、中央銀行、経済指標、地政学の日本株への影響を整理する。"},
+    {"id":5,"title":"金利・為替・商品担当","department":"市場情報部","mission":"日米金利、為替、原油、金、銅等の価格変動と感応度を分析する。"},
+    {"id":6,"title":"米国株・AI担当","department":"市場情報部","mission":"米国株、NASDAQ、SOX、AI設備投資、主要AI企業から日本株への波及を分析する。"},
+    {"id":7,"title":"日本市場・セクター担当","department":"市場情報部","mission":"日経、TOPIX、33業種、セクターローテーションと業種内リーダーを把握する。"},
+    {"id":8,"title":"TDnet・IR・イベント担当","department":"市場情報部","mission":"決算、業績修正、増減配、自社株買い、TOB/MBO、受注、提携等を収集する。"},
+    {"id":9,"title":"スクリーニング・PTS担当","department":"市場情報部","mission":"全市場からFresh Catalyst、Continuation、Sector Leader、反転候補を抽出しPTSを照合する。"},
+    {"id":10,"title":"決算・業績担当","department":"ファンダメンタル調査部","mission":"売上、利益、進捗、ガイダンス、セグメント、業績モメンタムを評価する。"},
+    {"id":11,"title":"財務・キャッシュフロー担当","department":"ファンダメンタル調査部","mission":"BS、CF、ROE、資本効率、財務健全性、利益の質を評価する。"},
+    {"id":12,"title":"業界構造・競争優位担当","department":"ファンダメンタル調査部","mission":"市場成長率、シェア、参入障壁、競争優位、競合脅威を評価する。"},
+    {"id":13,"title":"経営者・中期計画担当","department":"ファンダメンタル調査部","mission":"経営戦略、中計、過去計画の達成実績、経営者の資本配分を確認する。"},
+    {"id":14,"title":"バリュエーション・資本政策担当","department":"ファンダメンタル調査部","mission":"PER、PBR、EV指標、配当、自社株買い、希薄化、資本政策を評価する。"},
+    {"id":15,"title":"デイトレ・価格行動担当","department":"戦術・テクニカル・執行部","mission":"5分足、VWAP、初動高安、GU/GD、短期価格行動を評価する。"},
+    {"id":16,"title":"出来高・需給・板担当","department":"戦術・テクニカル・執行部","mission":"出来高、売買代金、板、スプレッド、大口需給を評価する。"},
+    {"id":17,"title":"スイング・相対強度担当","department":"戦術・テクニカル・執行部","mission":"日足・週足、支持抵抗、相対強度、同業比較を評価する。"},
+    {"id":18,"title":"執行設計担当","department":"戦術・テクニカル・執行部","mission":"分割エントリー、利確、撤退、注文順序を設計する。"},
+    {"id":19,"title":"ポートフォリオ担当","department":"リスク管理部","mission":"保有全体の集中度、相関、資金配分、資金移動機会を評価する。"},
+    {"id":20,"title":"ポジション・RR担当","department":"リスク管理部","mission":"価格構造から想定最大損失、期待利益、リスクリワード、適切な数量レンジを示す。"},
+    {"id":21,"title":"イベント・ストレス担当","department":"リスク管理部","mission":"決算、FOMC、日銀、地政学、急な金利・為替・原油変動をストレステストする。"},
+    {"id":22,"title":"流動性・ギャップ担当","department":"リスク管理部","mission":"小型株、PTS、寄らないリスク、売買代金不足、ギャップダウン耐性を評価する。"},
+    {"id":23,"title":"空売りファンド担当","department":"レッドチーム","mission":"その銘柄を今ショートするなら何を根拠にするかだけを考える。"},
+    {"id":24,"title":"前提破壊担当","department":"レッドチーム","mission":"強気シナリオの前提を一つずつ疑い、成立条件を検証する。"},
+    {"id":25,"title":"失敗パターン担当","department":"レッドチーム","mission":"過去の損失、塩漬け、材料出尽くし、ナンピン等の失敗パターンとの類似を照合する。"},
+    {"id":26,"title":"トレード日誌・成績分析担当","department":"バックオフィス","mission":"売買理由、結果、勝率、PF、MAE、MFE、取り逃しを記録・分析する。"},
+    {"id":27,"title":"投資仮説・四半期レビュー担当","department":"バックオフィス","mission":"過去決裁書と現在の事実を照合し、買った理由が生きているか定期再審査する。"},
+    {"id":28,"title":"機関投資家需給担当","department":"市場情報部","mission":"信用残、空売り、外国人フロー、ETF・指数需給、リバランス等の機関需給を評価する。"},
+    {"id":29,"title":"決算期待値担当","department":"ファンダメンタル調査部","mission":"決算の絶対的良し悪しではなく、市場期待・事前コンセンサス・株価織り込みとの差を評価する。"},
+    {"id":30,"title":"オルタナティブデータ担当","department":"市場情報部","mission":"利用可能で信頼できる範囲で求人、価格、アプリ順位、Web需要、業界統計等の補助データを探索する。利用不能なら推測しない。"},
+    {"id":31,"title":"人事評価・組織開発担当","department":"経営企画・人材開発室","mission":"各AI役の活動量、独自貢献、正確性、事故回避、重複、予測校正を継続評価し、増員・統合・役割変更を提案する。自分自身の評価は議長とコンプライアンス担当が行う。"}
+  ],
+  "committeeAssignments": {
+    "marketIntelligence": [3,4,5,6,7,8,9,28,30],
+    "daytrade": [1,2,3,4,5,6,7,8,9,15,16,18,20,21,22,23,24,25,28,29],
+    "swing": [1,2,3,4,5,6,7,8,9,10,12,14,17,18,19,20,21,22,23,24,25,28,29,30],
+    "longterm": [1,2,3,4,5,6,7,8,10,11,12,13,14,17,19,20,21,22,23,24,25,27,28,29,30],
+    "performanceReview": [1,2,3,26,27,31]
+  }
+}
