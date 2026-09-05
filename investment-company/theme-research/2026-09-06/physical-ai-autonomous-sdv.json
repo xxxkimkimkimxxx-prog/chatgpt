@@ -1,0 +1,22 @@
+{
+  "date":"2026-09-06",
+  "theme":"Physical AI / 自動運転 / SDV社会実装",
+  "status":"hot-but-overheated",
+  "sourceEvents":[
+    {"date":"2026-09-04","event":"Dynamic Map Platform等の物流施設内自動運転実証が国交省事業に採択","url":"https://www.dynamic-maps.co.jp/news/news-1984/"},
+    {"date":"2026-09-02","event":"モルフォとAstemoがSDV向けカメラセンシングAI共同開発を開始","url":"https://www.morphoinc.com/news/20260902-jpr-jointdevelopment"},
+    {"date":"2026-09-02","event":"アイサンテクノロジー/A-Driveが軽井沢町の自動運転バス事業を受託","url":"https://www.aisantec.co.jp/information/5720/"},
+    {"date":"2026-08-05","event":"TIER IVとAstemoがE2E自動運転AI開発基盤を共同開発、2030年頃実用化目標","url":"https://tier4.co.jp/en/updates/press-release/20260805-tieriv-develops-platform-with-astemo"}
+  ],
+  "thesis":"実証実験だけでなく、自治体・物流・Tier1との社会実装/量産開発へフェーズが進んでいる。半面、関連小型株は9月第1週に急騰後の急反落が発生しており、テーマの強さと株価の買いやすさを分離する必要がある。",
+  "valueChain":["自動運転OS/AI開発基盤","高精度3D地図","カメラ/センシングAI","車両制御/Tier1","運行・物流オペレーション","実装支援/検証"],
+  "candidates":[
+    {"code":"336A","name":"ダイナミックマッププラットフォーム","directness":"very_high","earningsExposure":"medium_to_high","timeHorizon":"current-to-2y","evidenceQuality":"company_primary","priceState":"9/4 close 1497, -15.85%; PTS +5.40%; intraday 1475-2045","daytrade":"A-watch/reversal only","swing":"B-watch after base","medium":"B-high directness but valuation/earnings risk"},
+    {"code":"3653","name":"モルフォ","directness":"high","earningsExposure":"medium","timeHorizon":"1-4y","evidenceQuality":"company_primary","priceState":"theme momentum already extreme; earnings event near","daytrade":"B- only after stabilization","swing":"B after earnings/base","medium":"B+ if automotive monetization becomes material"},
+    {"code":"4667","name":"アイサンテクノロジー","directness":"high","earningsExposure":"medium","timeHorizon":"current-to-3y","evidenceQuality":"company_primary","priceState":"9/4 close 2970, stop-low -19.07%; PTS -4.98%","daytrade":"C/no long chase","swing":"B after base","medium":"A- watch because profitable core + actual deployment"},
+    {"code":"593A","name":"TIER IV","directness":"very_high","earningsExposure":"very_high","timeHorizon":"2-5y","evidenceQuality":"company_primary","priceState":"9/4 close 2870, stop-low -19.61%; PTS -8.85%","daytrade":"C/high risk","swing":"C until price stabilization","medium":"B speculative pure-play; financial/valuation risk high"}
+  ],
+  "rejectedOrDeferred":[{"name":"単なる自動運転連想株","reason":"一次情報で売上・受注・顧客・技術エクスポージャーを確認できないものは本命除外"}],
+  "redTeam":["テーマ株は週次で40-50%級の上昇を経て急落しており、需給崩壊リスクが非常に高い","実証採択や共同開発は即時の利益寄与を保証しない","2030年前後の実用化案件は現在価値の評価が難しい"],
+  "horizonConclusion":{"daytrade":"Dynamic Mapのみ条件付き上位。寄り追い禁止。","swing":"急落後の底固め待ち。現時点で新規本命にしない。","medium":"アイサン/ダイナミックマップ/TIER IVを純度別に継続追跡。実需と収益化を四半期ごとに検証。"}
+}
