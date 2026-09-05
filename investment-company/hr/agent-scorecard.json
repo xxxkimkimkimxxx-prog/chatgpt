@@ -1,5 +1,5 @@
 {
-  "version":"1.1","asOf":"2026-09-06 JST","evaluationWindow":"first full-company dry run","policyPath":"investment-company/hr/evaluation-policy.md","minimumEvaluationPeriod":"4 weeks or sufficient case count","status":"tracking_active","formalGradesAssigned":false,
+  "version":"1.2","asOf":"2026-09-06 JST","evaluationWindow":"first full-company dry run plus new theme-research hires","policyPath":"investment-company/hr/evaluation-policy.md","minimumEvaluationPeriod":"4 weeks or sufficient case count","status":"tracking_active","formalGradesAssigned":false,
   "agents":[
     {"id":1,"title":"投資委員会議長","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"複数時間軸の統合を実施"},
     {"id":2,"title":"投資方針・コンプライアンス担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"最新ルールの逸脱防止に寄与"},
@@ -31,8 +31,14 @@
     {"id":28,"title":"機関投資家需給担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"市場深度評価は有用だが専用フローデータ不足。No.7/16との重複要観察"},
     {"id":29,"title":"決算期待値担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"好決算とPTS反応の乖離を指摘し高い初期貢献"},
     {"id":30,"title":"オルタナティブデータ担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"今回は独自データ寄与ほぼゼロ。4週間の供給実績を要観察"},
-    {"id":31,"title":"人事評価・組織開発担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"評価ログ・重複/遊休監視を制度化。評価者はNo.1/2"}
+    {"id":31,"title":"人事評価・組織開発担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"評価ログ・重複/遊休監視を制度化。評価者はNo.1/2"},
+    {"id":32,"title":"ニュース・技術トレンド発掘担当","grade":null,"score":null,"cases":0,"status":"new_hire_probation","preliminaryObservation":"有力記事・規制・新技術・社会実装から非マクロの投資テーマを発掘する新設役"},
+    {"id":33,"title":"テーマ・バリューチェーンマッピング担当","grade":null,"score":null,"cases":0,"status":"new_hire_probation","preliminaryObservation":"ニュース起点で直接/間接受益・逆風まで日本上場銘柄を価値連鎖で洗う新設役"},
+    {"id":34,"title":"テーマ実需・収益感応度検証担当","grade":null,"score":null,"cases":0,"status":"new_hire_probation","preliminaryObservation":"連想株を排除し、実際の売上・利益・受注・技術エクスポージャーを一次情報で検証する新設役"}
   ],
-  "organizationActions":[{"date":"2026-09-06","type":"no-change","reason":"First trial only; insufficient sample for hiring/firing/merger decisions."}],
-  "notes":["No formal grade until minimum evidence threshold is met.","Outcome-only scoring is prohibited.","Agent 31 is evaluated by agents 1 and 2, not by self-evaluation.","Weekly detail: investment-company/hr/weekly/2026-W36.json"]
+  "organizationActions":[
+    {"date":"2026-09-06","type":"no-change","reason":"First trial only; insufficient sample for firing/merger decisions."},
+    {"date":"2026-09-06","type":"hire","agents":[32,33,34],"reason":"Gap identified in non-macro article/news -> theme -> value-chain -> listed-stock exposure workflow, exemplified by autonomous-driving news."}
+  ],
+  "notes":["No formal grade until minimum evidence threshold is met.","Outcome-only scoring is prohibited.","Agent 31 is evaluated by agents 1 and 2, not by self-evaluation.","Agents 32-34 must be evaluated on theme discovery timeliness, value-chain coverage, false-positive rate and verified revenue exposure."]
 }
