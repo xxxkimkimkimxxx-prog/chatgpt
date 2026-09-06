@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#09111f" />
+  <meta name="description" content="ニュース→テーマ→バリューチェーン→個別銘柄まで、投資判断の軌跡をたどるAI投資会社リサーチ画面" />
+  <title>AI Investment Research Tree</title>
+  <link rel="stylesheet" href="./app.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brandMark">AI</div>
+      <div>
+        <div class="brandTitle">INVESTMENT RESEARCH TREE</div>
+        <div class="brandSub">ニュースから銘柄まで、判断の軌跡をたどる</div>
+      </div>
+    </div>
+    <div class="topActions">
+      <span id="dataDate" class="datePill">データ読込中</span>
+      <button id="expandAll" class="ghostBtn" type="button">すべて展開</button>
+      <button id="collapseAll" class="ghostBtn" type="button">折りたたむ</button>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="表示切替">
+    <button class="tab active" data-view="tree">思考ツリー</button>
+    <button class="tab" data-view="day">デイトレ</button>
+    <button class="tab" data-view="swing">スイング</button>
+    <button class="tab" data-view="medium">中期</button>
+    <button class="tab" data-view="summary">1枚サマリー</button>
+  </nav>
+
+  <main>
+    <section id="treeView" class="view active">
+      <div class="heroGrid">
+        <article class="heroCard">
+          <div class="eyebrow">TODAY'S RESEARCH MAP</div>
+          <h1>記事を読むだけで終わらせない。<br><span>「なぜこの銘柄まで辿り着いたか」</span>を残す。</h1>
+          <p>起点ニュースを展開すると、テーマ仮説、関連する価値連鎖、一次情報で検証した企業、デイ・スイング・中期の判定まで辿れます。</p>
+          <div class="legend">
+            <span><i class="dot news"></i>起点ニュース</span>
+            <span><i class="dot theme"></i>投資テーマ</span>
+            <span><i class="dot chain"></i>関連業界・価値連鎖</span>
+            <span><i class="dot stock"></i>検証済み銘柄</span>
+          </div>
+        </article>
+        <aside class="scoreCard">
+          <div class="scoreLabel">発掘テーマ</div>
+          <div class="scoreValue" id="themeCount">—</div>
+          <div class="scoreMeta"><span>本命候補</span><b id="candidateCount">—</b></div>
+          <div class="scoreMeta"><span>連想除外</span><b id="rejectedCount">—</b></div>
+          <div class="scoreMeta"><span>最新更新</span><b id="updatedAt">—</b></div>
+        </aside>
+      </div>
+
+      <div class="treeLayout">
+        <section class="treePanel">
+          <div class="panelHead">
+            <div>
+              <span class="sectionKicker">RESEARCH FLOW</span>
+              <h2>ニュース → テーマ → 業界 → 銘柄</h2>
+            </div>
+            <div class="searchBox">
+              <input id="treeSearch" type="search" placeholder="テーマ・ニュース・銘柄を検索" />
+            </div>
+          </div>
+          <div id="treeRoot" class="treeRoot" aria-live="polite"></div>
+        </section>
+
+        <aside id="detailPanel" class="detailPanel">
+          <div class="detailEmpty">
+            <div class="detailIcon">＋</div>
+            <h3>ノードを選択</h3>
+            <p>ニュース、テーマ、業界、銘柄を押すと、ここに根拠と判断を表示します。</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="horizonView" class="view horizonView">
+      <div class="horizonIntro">
+        <div>
+          <span class="sectionKicker" id="horizonKicker">DAY TRADE</span>
+          <h2 id="horizonTitle">デイトレ候補</h2>
+          <p id="horizonDesc">同じテーマでも時間軸によって採用条件は変わります。</p>
+        </div>
+        <div class="filterPills" id="themeFilters"></div>
+      </div>
+      <div id="horizonGrid" class="horizonGrid"></div>
+    </section>
+
+    <section id="summaryView" class="view summaryView">
+      <div class="summarySheet" id="summarySheet">
+        <div class="summaryHeader">
+          <div>
+            <span class="sectionKicker">ONE PAGE BRIEF</span>
+            <h2>イベント起点・投資テーマ サマリー</h2>
+          </div>
+          <span id="summaryDate" class="summaryDate">—</span>
+        </div>
+        <div id="summaryThemes" class="summaryThemes"></div>
+        <div class="summaryFooter">
+          <div><b>使い方</b><br>テーマの強さと「今買えるか」は分けて判断。最終売買はデイ・スイング・中期委員会で再審査。</div>
+          <div><b>基本原則</b><br>ニュースに名前が出ただけの企業は本命にしない。一次情報で実需・収益感応度を確認する。</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>AI Investment Company · Research Traceability UI</div>
+    <div>投資判断の最終決裁・売買執行はユーザーが行います。</div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
