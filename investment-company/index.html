@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#09111f" />
   <meta name="description" content="最新ニュースをジャンル別に広く拾い、テーマ昇格したニュースだけを構造変化→バリューチェーン→企業→一次情報→銘柄まで追跡するAI投資会社リサーチ画面" />
   <title>AI Investment Research Tree</title>
-  <link rel="stylesheet" href="./app.css" />
-  <link rel="stylesheet" href="./thought-trace.css" />
-  <link rel="stylesheet" href="./news-feed.css" />
+  <link rel="stylesheet" href="./app.css?v=202609070041" />
+  <link rel="stylesheet" href="./thought-trace.css?v=202609070041" />
+  <link rel="stylesheet" href="./news-feed.css?v=202609070041" />
 </head>
 <body>
   <header class="topbar">
@@ -21,21 +21,21 @@
   <main>
     <section id="treeView" class="view active">
       <div class="heroGrid">
-        <article class="heroCard"><div class="eyebrow">TODAY'S RESEARCH MAP</div><h1>まずニュースを広く見る。<br><span>その後、投資テーマだけ深く潜る。</span></h1><p>上段は直近ニュースをジャンル別に整理したフィード。下段は、その中からテーマとして追う価値があるものだけを、ニュース→構造変化→価値連鎖→受益条件→企業→一次情報→銘柄まで展開します。</p><div class="legend"><span><i class="dot news"></i>NEWS FEED</span><span><i class="dot theme"></i>PROMOTED THEME</span><span><i class="dot chain"></i>VALUE CHAIN</span><span><i class="dot stock"></i>COMPANY → EVIDENCE → STOCK</span></div></article>
+        <article class="heroCard"><div class="eyebrow">TODAY'S RESEARCH MAP</div><h1>まずジャンルを選ぶ。<br><span>＋で具体的なニュースを見る。</span></h1><p>上段は「ジャンル → 個別ニュース」の2段階。下段は、そのニュース群から投資テーマへ昇格したものだけを、ニュース→構造変化→価値連鎖→受益条件→企業→一次情報→銘柄まで展開します。</p><div class="legend"><span><i class="dot news"></i>GENRE → NEWS</span><span><i class="dot theme"></i>PROMOTED THEME</span><span><i class="dot chain"></i>VALUE CHAIN</span><span><i class="dot stock"></i>COMPANY → EVIDENCE → STOCK</span></div></article>
         <aside class="scoreCard"><div class="scoreLabel">発掘テーマ</div><div class="scoreValue" id="themeCount">—</div><div class="scoreMeta"><span>本命候補</span><b id="candidateCount">—</b></div><div class="scoreMeta"><span>連想除外</span><b id="rejectedCount">—</b></div><div class="scoreMeta"><span>最新更新</span><b id="updatedAt">—</b></div></aside>
       </div>
 
       <section id="freshNewsSection" class="freshNewsSection">
-        <div class="freshNewsHead"><div><span class="sectionKicker">FRESH NEWS FEED</span><h2>① 最新ニュース・イベント</h2><p>ニュースはジャンルごとに折りたたみ。＋を押すと個別記事が出ます。原則72時間以内を掲載し、古い材料は「関連背景」に分離します。</p></div><div class="freshNewsStats"><div class="freshStat"><b id="freshCount">—</b><span>72h以内</span></div><div class="freshStat"><b id="fresh24Count">—</b><span>24h以内</span></div><div class="freshStat"><b id="freshPromotedCount">—</b><span>テーマ昇格</span></div></div></div>
+        <div class="freshNewsHead"><div><span class="sectionKicker">FRESH NEWS FEED</span><h2>① ジャンル → 最新ニュース</h2><p>最初はジャンルだけ表示します。左の＋を押すと、そのジャンルの具体的なニュースが出ます。原則72時間以内、古い材料は「関連背景」に分離します。</p></div><div class="freshNewsStats"><div class="freshStat"><b id="freshCount">—</b><span>72h以内</span></div><div class="freshStat"><b id="fresh24Count">—</b><span>24h以内</span></div><div class="freshStat"><b id="freshPromotedCount">—</b><span>テーマ昇格</span></div></div></div>
         <div class="freshFilters"><button class="freshFilter active" data-filter="fresh" type="button">72h以内</button><button class="freshFilter" data-filter="24h" type="button">24h</button><button class="freshFilter" data-filter="48h" type="button">48h</button><button class="freshFilter" data-filter="context" type="button">関連背景</button></div>
         <div id="freshNewsGrid"></div>
-        <div class="freshNote"><b>ニュース掲載 ≠ テーマ昇格:</b> 小さな材料もここには残します。テーマ化するには構造的な利益波及と企業固有の裏付けが必要です。更新 <span id="freshAsOf">—</span></div>
+        <div class="freshNote"><b>ニュース掲載 ≠ テーマ昇格:</b> 小さな材料も上段には残します。テーマ化するには構造的な利益波及と企業固有の裏付けが必要です。更新 <span id="freshAsOf">—</span></div>
       </section>
 
       <section class="promotedTreeIntro">
         <span class="promotedBadge">PROMOTED THEMES ONLY</span>
-        <h2>② テーマとして取り上げるニュース → 銘柄までの思考ツリー</h2>
-        <p>ここには最新フィードの全ニュースを並べません。投資テーマとして追う価値があると判断した最新ニュースだけを起点にします。古いニュースはトップに出さず、必要な場合のみ RELATED FRESH / CONTEXT / EVIDENCE として途中に紐付けます。最新テーマツリー更新 <span id="promotedAsOf">—</span></p>
+        <h2>② テーマ昇格ニュース → 銘柄までの思考ツリー</h2>
+        <p>上段の全ニュースをそのまま並べません。投資テーマとして追う価値があるものだけを起点に、FRESH NEWS → 構造変化 → THEME → VALUE CHAIN → 受益企業条件 → COMPANY → EVIDENCE → STOCKの順でぶら下げます。古いニュースは必要な背景・証拠としてだけ途中に紐付けます。最新テーマツリー更新 <span id="promotedAsOf">—</span></p>
       </section>
 
       <div class="treeLayout">
@@ -50,9 +50,9 @@
   </main>
 
   <footer><div>AI Investment Company · Research Traceability UI</div><div>投資判断の最終決裁・売買執行はユーザーが行います。</div></footer>
-  <script src="./app.js"></script>
-  <script src="./thought-trace.js"></script>
-  <script src="./news-feed.js"></script>
-  <script src="./current-promoted-tree.js"></script>
+  <script src="./app.js?v=202609070041"></script>
+  <script src="./thought-trace.js?v=202609070041"></script>
+  <script src="./news-feed.js?v=202609070041"></script>
+  <script src="./current-promoted-tree.js?v=202609070041"></script>
 </body>
 </html>
