@@ -1,11 +1,16 @@
 {
-  "asOf":"2026-09-06 JST","targetSession":"2026-09-07","status":"provisional-weekend","ranking":[
-    {"rank":1,"code":"1605","name":"INPEX","thesis":"9/5 U.S.-Iran tanker strikes occurred after Friday PTS; direct oil beta","entryCondition":"Monday oil strength + VWAP hold + initial low higher + energy peers confirm","skipCondition":"oil does not respond or gap-up loses VWAP"},
-    {"rank":2,"code":"285A","name":"キオクシアHD","thesis":"SOX +3.4%, Sep4 turnover leader, PTS strong","entryCondition":"semiconductor breadth + VWAP hold + 9:05-9:10 breakout with volume","skipCondition":"PTS gap turns into opening fade"},
-    {"rank":3,"code":"7011","name":"三菱重工業","thesis":"weekend geopolitical/defense re-rating candidate","entryCondition":"defense peers confirm + VWAP hold + higher initial high/low","skipCondition":"no defense inflow despite geopolitical escalation"},
-    {"rank":4,"code":"5801","name":"古河電工","thesis":"optical/data-center relative strength, PTS strong","entryCondition":"5803/5802 peers confirm + gap digested + breakout","skipCondition":"near-4000 gap chase or peer divergence"},
-    {"rank":5,"code":"6976","name":"太陽誘電","thesis":"high-beta technology continuation","entryCondition":"semiconductor/electronics breadth + VWAP hold","skipCondition":"opening range too wide for favorable RR"}
+  "asOf":"2026-09-06 21:52 JST",
+  "targetSession":"2026-09-07",
+  "status":"weekend-rerun-provisional",
+  "ranking":[
+    {"rank":1,"code":"1605","name":"INPEX","thesis":"unpriced Sep5-6 Iran/OPEC weekend oil catalyst","entryCondition":"oil strength + energy peers confirm + VWAP hold + higher initial low","skipCondition":"oil fails to respond or large gap loses VWAP"},
+    {"rank":2,"code":"7011","name":"三菱重工業","thesis":"weekend geopolitical beta plus verified defense-AI/C2 structural theme","entryCondition":"defense peers confirm + VWAP hold + higher initial high/low","skipCondition":"no sector inflow or opening fade"},
+    {"rank":3,"code":"285A","name":"キオクシアHD","thesis":"AI memory/SOX momentum with strong liquidity","entryCondition":"semiconductor breadth + VWAP hold + 9:05-9:10 breakout with volume","skipCondition":"PTS gap becomes opening fade"},
+    {"rank":4,"code":"5801","name":"古河電工","thesis":"AI optical relative-strength leader","entryCondition":"5803/5802 peer confirmation + gap digestion + VWAP breakout","skipCondition":"near-4000 chase or peer divergence"},
+    {"rank":5,"code":"8306","name":"MUFG","thesis":"BOJ tightening/rate normalization diversifier","entryCondition":"JGB yields firm + bank peers confirm + 3813 breakout or VWAP recovery","skipCondition":"JGB yield reversal + bank relative weakness"}
   ],
-  "criticalUpdate":"Re-rank at 08:00 because Sep5 Iran escalation occurred after Friday PTS/futures.",
+  "downgraded":["6976 太陽誘電: high-beta/rate sensitivity after weekend risk increase"],
+  "calendarCorrection":"Japan Apr-Jun GDP second preliminary is 2026-09-08 08:50 JST, not Sep 7.",
+  "criticalUpdate":"Re-rank again at 08:00 because Friday PTS/futures/oil closes predate weekend developments.",
   "decisionMemo":"investment-company/decision-memos/2026-09-06/daytrade.md"
 }
