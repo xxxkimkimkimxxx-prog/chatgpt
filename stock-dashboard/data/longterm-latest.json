@@ -1,12 +1,1 @@
-{
-  "asOf":"2026-09-06 21:52 JST",
-  "status":"weekend-rerun-classification",
-  "coreCandidates":["6501 日立製作所","5803 フジクラ","8306 MUFG"],
-  "subCoreCandidates":["285A キオクシアHD","6701 NEC","4704 トレンドマイクロ","5027 AnyMind Group","9824 泉州電業","9678 カナモト"],
-  "watch":["4180 Appier Group","5801 古河電工","4627 ナトコ","350A デジタルグリッド","3659 ネクソン"],
-  "speculativeSleeve":["4597 ソレイジア・ファーマ"],
-  "organizeCandidates":["2926 篠崎屋","8518 日本アジア投資"],
-  "majorChange":"6501 Hitachi promoted to core from verified AI-datacenter power/operations theme; 285A Kioxia moved to sub-core due capex/cycle risk; NEC and Trend Micro added as verified structural-theme candidates.",
-  "principle":"Do not classify by cost basis or one weekend headline. Compare expected value from current price, structural thesis, primary-source evidence, valuation, cash flow, concentration and thesis invalidation.",
-  "decisionMemo":"investment-company/decision-memos/2026-09-06/longterm.md"
-}
+{"asOf":"2026-09-07 08:27 JST","horizon":"1-12 months","dataCaveat":"holdings.json is stale as of 2026-08-31; rankings are thesis decisions, not price/size orders","mainCandidates":[{"code":"6501","name":"日立製作所","reason":"Lumada/HMAX・AI/DC電力・社会インフラの複数成長源、FY26ガイダンス上方修正、ROIC/FCF改善"},{"code":"6857","name":"アドバンテスト","reason":"FY26 Q1売上+39.3%、営業利益+53.3%、AI/HPC/高性能メモリのテスト強度上昇"},{"code":"5803","name":"フジクラ","reason":"AIデータセンター光接続の高い収益感応度、財務改善。既存保有で中長期主力候補"},{"code":"8306","name":"MUFG","reason":"国内金利正常化の利益感応度がQ1純利益+48%、貸出スプレッド改善で実証。AI因子との分散効果"}],"secondaryCandidates":[{"code":"6701","name":"NEC"},{"code":"4704","name":"トレンドマイクロ"},{"code":"285A","name":"キオクシアHD"},{"code":"7011","name":"三菱重工業"}],"watch":[{"code":"3659","name":"ネクソン"},{"code":"5027","name":"AnyMind Group"},{"code":"5801","name":"古河電工"},{"code":"9678","name":"カナモト"},{"code":"6954","name":"ファナック"},{"code":"6506","name":"安川電機"}],"speculative":[{"code":"4597","name":"ソレイジア・ファーマ","reason":"承認・提携の非線形上振れと希薄化/開発失敗リスクを分離管理"}],"restructureCandidates":[{"code":"2926","name":"篠崎屋","reason":"構造的利益成長・競争優位の裏付け不足、機会費用大"},{"code":"8518","name":"日本アジア投資","reason":"優待材料と中長期投資価値を分離。ROE/CF改善の主力仮説が弱い"}],"promotedStructuralThemes":["AIインフラ投資加速（テスト・メモリ・光・電力/DC運用）","国内金利正常化・銀行ROE改善","防衛AI/C2/無人・データ主権","AIサイバー/重要インフラ防衛"],"notMainDespiteFreshCatalyst":["中東供給リスク：短中期には強いが1-12か月では地政学プレミアム依存","中国金融資本増強×FA：日本企業利益への因果がまだ一段弱い","GEO/生成AI検索：行動変化は強いが個社売上KPI不足"],"nextChecks":["BOJ 2026-09-17/18","Q2 earnings and guidance","Advantest tester TAM/orders","Fujikura optical/DC orders","Hitachi Lumada/HMAX and ROIC","MUFG domestic lending spread","Nexon new-title KPI","AnyMind organic growth/margin","Solasia pipeline/financing"],"decisionMemo":"investment-company/decision-memos/2026-09-07/longterm.md"}
