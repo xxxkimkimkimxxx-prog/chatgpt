@@ -1,0 +1,108 @@
+{
+  "date": "2026-09-06",
+  "version": "1.0",
+  "purpose": "Make the research path auditable: event -> structural change -> theme -> value-chain segment -> beneficiary screen -> company -> company evidence -> stock/horizon decision.",
+  "themes": {
+    "ai-datacenter-power-flexibility": {
+      "structuralChanges": [
+        {
+          "id": "power-bottleneck",
+          "title": "AIデータセンターの制約が『GPU調達』から『電源確保・系統接続』にも広がる",
+          "why": "AI計算密度の上昇で、データセンターの立地・増設速度を電力供給が制約しやすくなる。電源を早く確保できる企業・技術の価値が上がる。",
+          "chains": ["オンサイト発電", "データセンター統合運用"]
+        },
+        {
+          "id": "power-price-flex",
+          "title": "電力価格変動の拡大で、調達・PPA・蓄電池・ヘッジの価値が上がる",
+          "why": "燃料価格・需給・系統制約による価格変動が大きいほど、需要家には固定化と柔軟な調達の両方が必要になる。",
+          "chains": ["PPA/電力取引", "蓄電池アグリゲーション", "電力先物/ヘッジ"]
+        }
+      ],
+      "paths": {
+        "オンサイト発電": {
+          "question": "日本のデータセンター向けに、短納期のオンサイト電源を実装・統合できる上場企業はどこか？",
+          "beneficiaryConditions": ["国内で商用展開できる", "データセンター運用まで統合できる", "提携・製品が一次情報で確認できる"],
+          "companies": [
+            {
+              "code": "6501", "name": "日立製作所",
+              "fit": "Bloom Energyとの国内オンサイト電源協業に加え、HMAX Data Centerで運用側まで接続できるため、単なる電機メーカーではなく『電源＋DC運用』の接点がある。",
+              "evidence": [
+                {"date":"2026-09-01","title":"Bloom Energyと日本向けオンサイト電源ソリューションで協業","url":"https://www.hitachi.com/en/press/articles/2026/09/0901b/"},
+                {"date":"2026-09-03","title":"HMAX Data Center等を拡張","url":"https://www.hitachi.com/en-us/press/hitachi-expands-hmax-to-accelerate-the-deployment-of-physical-ai/"}
+              ]
+            }
+          ]
+        },
+        "データセンター統合運用": {
+          "question": "電源だけでなく、AIデータセンターの運用・データ・セキュリティまで一体で提供できるか？",
+          "beneficiaryConditions": ["DC運用製品がある", "AI/データ運用を事業化している", "大企業顧客へ展開可能"],
+          "companies": [{"code":"6501","name":"日立製作所","fit":"HMAX Data Center / Cyber / Data Fabric / AI Operationsを同時展開し、設備から運用まで接続。","evidence":[{"date":"2026-09-03","title":"HMAX拡張発表","url":"https://www.hitachi.com/en-us/press/hitachi-expands-hmax-to-accelerate-the-deployment-of-physical-ai/"}]}]
+        },
+        "PPA/電力取引": {
+          "question": "価格高騰・変動を受ける需要家に、実際の電力調達サービスを提供する上場企業はどこか？",
+          "beneficiaryConditions": ["電力取引が本業に近い", "需要家向けサービスを提供", "契約期間・価格柔軟性を商品化"],
+          "companies": [{"code":"350A","name":"デジタルグリッド","fit":"電力取引プラットフォームを基盤に、1年契約からのPPAを投入。テーマと収益源の距離が近い。","evidence":[{"date":"2026-09-03","title":"短期契約型PPAを開始","url":"https://www.digitalgrid.com/"}]}]
+        },
+        "蓄電池アグリゲーション": {
+          "question": "電力価格差・需給調整を収益化できる蓄電池運用機能を持つか？",
+          "beneficiaryConditions": ["蓄電池運用を事業化", "電力取引とのシナジー", "実需家・電力市場と接続"],
+          "companies": [{"code":"350A","name":"デジタルグリッド","fit":"電力取引基盤と蓄電池運用を同一事業文脈で持ち、価格変動の収益機会に直接接続しやすい。","evidence":[{"date":"2026-09-06","title":"会社事業情報で電力取引・蓄電池運用を確認","url":"https://www.digitalgrid.com/"}]}]
+        },
+        "電力先物/ヘッジ": {
+          "question": "電力先物市場の拡大そのものが、上場企業の利益を大きく動かすか？",
+          "beneficiaryConditions": ["電力先物収益の利益感応度が大きい", "取引量増加が業績に可視化される"],
+          "companies": [],
+          "rejected": [{"code":"8697","name":"日本取引所グループ","reason":"市場運営は直接関係するが、グループ全体利益への感応度が現時点では小さいため本命昇格せず。"}]
+        }
+      }
+    },
+    "defense-ai-unmanned": {
+      "structuralChanges": [{
+        "id":"system-of-systems",
+        "title":"防衛投資の焦点が装備単体から『装備＋無人機＋C2＋AI＋クラウド』の統合へ",
+        "why":"戦場情報を集約し、無人アセットを指揮し、AIで意思決定を支援する統合能力が競争力になる。",
+        "chains":["防衛装備/プラットフォーム","無人アセット","C2/指揮統制","クラウド/ネットワーク","AI/データ主権","セキュア通信"]
+      }],
+      "paths": {
+        "防衛装備/プラットフォーム": {"question":"既存の防衛プラットフォームを持ち、無人・AIシステム統合の主契約者になれるか？","beneficiaryConditions":["防衛プライム","大型装備の統合力","政府調達の既存基盤"],"companies":[{"code":"7011","name":"三菱重工業","fit":"装備側の中核で、NECとのMOUによりAI/C2との統合まで対象を広げる。","evidence":[{"date":"2026-09-02","title":"NECと防衛分野の戦略的提携に向けMOU","url":"https://www.mhi.com/jp/news/26090202.html"}]}]},
+        "無人アセット": {"question":"無人アセットを防衛システムへ統合する立場にあるか？","beneficiaryConditions":["装備統合力","無人化を提携範囲に明記"],"companies":[{"code":"7011","name":"三菱重工業","fit":"MOUが無人アセットを明示し、既存防衛プラットフォームとの統合余地がある。","evidence":[{"date":"2026-09-02","title":"MOUで無人アセットを対象化","url":"https://www.mhi.com/jp/news/26090202.html"}]}]},
+        "C2/指揮統制": {"question":"大量のセンサー・装備情報を統合して指揮統制へ変換できる企業はどこか？","beneficiaryConditions":["政府・防衛向けIT実績","ネットワーク/データ統合","AI実装力"],"companies":[{"code":"6701","name":"NEC","fit":"提携の中心領域に作戦計画・指揮統制・AIが明記され、NECの政府/ネットワーク基盤と整合。","evidence":[{"date":"2026-09-02","title":"三菱重工とのMOU","url":"https://www.mhi.com/jp/news/26090202.html"}]}]},
+        "クラウド/ネットワーク": {"question":"防衛用途のセキュアなクラウド・ネットワークを構築できるか？","beneficiaryConditions":["高信頼ネットワーク","政府案件基盤","クラウド統合"],"companies":[{"code":"6701","name":"NEC","fit":"C2・AI・データ主権を支えるネットワーク/クラウド側の中核候補。","evidence":[{"date":"2026-09-02","title":"防衛AI/C2提携範囲を確認","url":"https://www.mhi.com/jp/news/26090202.html"}]}]},
+        "AI/データ主権": {"question":"機密データを国内管理しながらAI活用できる事業基盤があるか？","beneficiaryConditions":["政府向け実績","AI基盤","データ主権を提携範囲に明記"],"companies":[{"code":"6701","name":"NEC","fit":"MOUにデータ・AI主権が明記され、単なるAI連想ではなく案件テーマに直接含まれる。","evidence":[{"date":"2026-09-02","title":"MOUでデータ・AI主権を明記","url":"https://www.mhi.com/jp/news/26090202.html"}]}]},
+        "セキュア通信": {"question":"防衛C2を支える高信頼通信へ直接関与できるか？","beneficiaryConditions":["通信/ネットワーク技術","政府・防衛用途","C2との統合"],"companies":[{"code":"6701","name":"NEC","fit":"ネットワーク技術とC2統合の接点があるため候補化。","evidence":[{"date":"2026-09-02","title":"防衛分野戦略提携MOU","url":"https://www.mhi.com/jp/news/26090202.html"}]}]}
+      }
+    },
+    "critical-infrastructure-cyber": {
+      "structuralChanges": [{"id":"baseline-rise","title":"16分野の重要インフラでサイバー対策の最低水準が引き上がる","why":"統一基準により、対策が任意のIT投資ではなく継続的なリスク管理・監視・対応へ近づく。","chains":["統合セキュリティプラットフォーム","SOC/MDR","脆弱性診断/ペネトレーション","国産セキュリティ/政府案件","OT/重要インフラ向けセキュリティ"]}],
+      "paths": {
+        "統合セキュリティプラットフォーム": {"question":"大企業・重要インフラが継続利用できる統合型セキュリティ基盤を持つか？","beneficiaryConditions":["継続課金型","大企業顧客","XDR/統合監視","ARR成長が確認可能"],"companies":[{"code":"4704","name":"トレンドマイクロ","fit":"TrendAI Vision OneのARR成長が大きく、規制対応需要が継続売上へ接続しやすい。","evidence":[{"date":"2026-08-13","title":"Q2: 売上+13%、Vision One ARR+49%、Enterprise NRR 122%","url":"https://newsroom.trendmicro.com/2026-08-13-Trend-Micro-Reports-Earnings-Results-for-Q2-2026"}]}]},
+        "SOC/MDR": {"question":"導入後も監視・運用を継続提供できる企業か？","beneficiaryConditions":["継続監視サービス","大企業基盤","プラットフォームARR"],"companies":[{"code":"4704","name":"トレンドマイクロ","fit":"単発売切りではなく、プラットフォーム型ARRの伸びが確認できる。","evidence":[{"date":"2026-08-13","title":"Q2 ARR・NRRを確認","url":"https://newsroom.trendmicro.com/2026-08-13-Trend-Micro-Reports-Earnings-Results-for-Q2-2026"}]}]},
+        "脆弱性診断/ペネトレーション": {"question":"重要インフラ・政府案件に近い国産セキュリティ企業か？","beneficiaryConditions":["国産技術","政府/重要インフラ需要","小型でも事業純度が高い"],"companies":[{"code":"3692","name":"FFRIセキュリティ","fit":"国産セキュリティ・安全保障テーマとの直接度は高いが、四半期ごとの業績寄与確認を必須とする。","evidence":[]}]},
+        "国産セキュリティ/政府案件": {"question":"経済安全保障上、国内技術として優先され得るか？","beneficiaryConditions":["国産技術","政府案件との接点","安全保障用途"],"companies":[{"code":"3692","name":"FFRIセキュリティ","fit":"国産安全保障のテーマ純度で候補化。ただし価格変動と需要集中を割り引く。","evidence":[]}]},
+        "OT/重要インフラ向けセキュリティ": {"question":"ITだけでなく重要インフラ運用環境へ展開可能か？","beneficiaryConditions":["企業向け基盤","重要インフラ顧客に展開可能","継続運用"],"companies":[{"code":"4704","name":"トレンドマイクロ","fit":"大企業基盤と統合セキュリティの収益化が確認できるため優先。","evidence":[{"date":"2026-08-13","title":"Q2業績・ARR確認","url":"https://newsroom.trendmicro.com/2026-08-13-Trend-Micro-Reports-Earnings-Results-for-Q2-2026"}]},{"code":"3692","name":"FFRIセキュリティ","fit":"テーマ純度は高いが、重要インフラへの具体的売上接続は四半期ごとに検証。","evidence":[]}]}
+      }
+    },
+    "ai-optical-connectivity": {
+      "structuralChanges": [{"id":"traffic-bottleneck","title":"AI計算能力の増加で、GPU間・DC間の通信帯域が次のボトルネックになる","why":"AIクラスタの大規模化は通信量を増やし、超多心化・高密度コネクタ・DCIの需要を押し上げる。企業が実際に量産・増産へ動いているかが重要。","chains":["超多心光ファイバ","DCIケーブル","高密度コネクタ/フェルール","融着接続","光部品/レーザ","ネットワーク運用"]}],
+      "paths": {
+        "超多心光ファイバ": {"question":"AIデータセンター向けに超多心ケーブルを実際に量産し、能力増強しているか？","beneficiaryConditions":["AI/DC需要を会社が明記","量産開始","工場能力増強"],"companies":[{"code":"5801","name":"古河電工","fit":"13,824心ケーブルを量産し、第2工場で生産能力を2023年度比2倍以上へ。","evidence":[{"date":"2026-03-12","title":"13,824心ケーブル量産・能力増強","url":"https://www.furukawaelectric.com/release/2026/comm_20260312.html"}]},{"code":"5803","name":"フジクラ","fit":"国内DC向け4,000心WTCを製品化し、生成AIによる通信量増加を明示。","evidence":[{"date":"2026-03-09","title":"4,000心WTC製品化","url":"https://www.fujikura.co.jp/en/news/pressrelease/2026030913824swr_wtc.html"}]}]},
+        "DCIケーブル": {"question":"データセンター間接続の高密度化へ製品を投入しているか？","beneficiaryConditions":["DCI用途を明記","高密度製品","販売/量産段階"],"companies":[{"code":"5803","name":"フジクラ","fit":"DCI向け1,728心Air Blown WTCを販売開始。","evidence":[{"date":"2026-05-08","title":"DCI向け1,728心Air Blown WTC販売開始","url":"https://www.fujikura.co.jp/news/pressrelease/202605084000swr_wtc.html"}]},{"code":"5801","name":"古河電工","fit":"超多心化の量産能力を持ち、DCI需要にも接続しやすい。","evidence":[{"date":"2026-03-12","title":"超多心ケーブル量産","url":"https://www.furukawaelectric.com/release/2026/comm_20260312.html"}]}]},
+        "高密度コネクタ/フェルール": {"question":"光ファイバ本体だけでなく接続密度のボトルネックにも投資しているか？","beneficiaryConditions":["AI DC向け明記","専用工場/増産","高密度接続技術"],"companies":[{"code":"5801","name":"古河電工","fit":"グループの白山がAIデータセンター向けVSFF多心フェルール工場を新設。","evidence":[{"date":"2026-06-02","title":"AI DC向けVSFF多心フェルール工場新設","url":"https://www.furukawaelectric.com/release/2026/opt_20260602.html"}]},{"code":"5803","name":"フジクラ","fit":"光接続製品群を持つが、本テーマ内ではケーブル側の一次情報をより強い根拠として評価。","evidence":[]}]},
+        "融着接続": {"question":"敷設量増加に伴う接続工程の需要を取り込めるか？","beneficiaryConditions":["光接続の製品群","DC向け展開","業績寄与確認"],"companies":[{"code":"5801","name":"古河電工","fit":"光通信バリューチェーン全体を持つため候補だが、今回の新規イベントではケーブル・フェルールの根拠を優先。","evidence":[]},{"code":"5803","name":"フジクラ","fit":"同様に光接続技術を持つが、今回の主要根拠はWTC製品化。","evidence":[]}]},
+        "光部品/レーザ": {"question":"AI光通信のボトルネックに直接効く新規量産・受注が確認できるか？","beneficiaryConditions":["新規量産/受注","AI DC用途明記"],"companies":[],"rejected":[{"name":"一般的な光部品関連株","reason":"今回のイベント群から一次情報で直接収益接続を確認できた企業に限定したため追加昇格なし。"}]},
+        "ネットワーク運用": {"question":"光ケーブル需要の増加が運用ソフト等の利益へ直接波及するか？","beneficiaryConditions":["直接受注/売上の一次情報"],"companies":[],"rejected":[{"name":"ネットワーク運用一般","reason":"今回の一次情報では古河・フジクラ以外の上場本命へ繋がる証拠が不足。"}]}
+      }
+    },
+    "physical-ai-autonomous-sdv": {
+      "structuralChanges": [{"id":"poc-to-deployment","title":"自動運転が『実証』から自治体・物流・Tier1との社会実装/量産開発へ進む","why":"テーマの価値は技術デモではなく、運行受託・量産開発・プラットフォーム採用へ移るほど収益化確率が上がる。","chains":["自動運転OS/AI開発基盤","高精度3D地図","カメラ/センシングAI","車両制御/Tier1","運行・物流オペレーション","実装支援/検証"]}],
+      "paths": {
+        "自動運転OS/AI開発基盤": {"question":"OEM/Tier1の量産開発基盤に組み込まれる自動運転ソフト企業か？","beneficiaryConditions":["Tier1共同開発","E2E AI基盤","商用化ロードマップ"],"companies":[{"code":"593A","name":"TIER IV","fit":"AstemoとE2E自動運転AI開発基盤を共同開発。技術純度は高いが収益化は長期。","evidence":[{"date":"2026-08-05","title":"AstemoとE2E自動運転AI開発基盤","url":"https://tier4.co.jp/en/updates/press-release/20260805-tieriv-develops-platform-with-astemo"}]}]},
+        "高精度3D地図": {"question":"自動運転に必要な地図・位置情報が実際の運行案件に採用されているか？","beneficiaryConditions":["高精度地図が本業","社会実装案件","運行/物流案件への採用"],"companies":[{"code":"336A","name":"ダイナミックマッププラットフォーム","fit":"物流施設内の自動運転実証/実装案件に高精度地図を含む統合側として参画。","evidence":[{"date":"2026-09-04","title":"物流施設内自動運転事業が国交省事業に採択","url":"https://www.dynamic-maps.co.jp/news/news-1984/"}]},{"code":"4667","name":"アイサンテクノロジー","fit":"高精度位置情報を基盤に自治体での自動運転バス事業へ関与。","evidence":[{"date":"2026-09-02","title":"軽井沢町の自動運転バス事業を受託","url":"https://www.aisantec.co.jp/information/5720/"}]}]},
+        "カメラ/センシングAI": {"question":"車載カメラAIがTier1との量産開発へ進んでいるか？","beneficiaryConditions":["車載AIの開発実績","Tier1共同開発","SDV文脈"],"companies":[{"code":"3653","name":"モルフォ","fit":"AstemoとSDV向けカメラセンシングAIを共同開発。車載AD/ADAS開発実績も明示。","evidence":[{"date":"2026-09-02","title":"AstemoとSDV向けカメラセンシングAI共同開発","url":"https://www.morphoinc.com/news/20260902-jpr-jointdevelopment"}]}]},
+        "車両制御/Tier1": {"question":"自動運転AIが車両制御を担うTier1の開発フローへ入っているか？","beneficiaryConditions":["Tier1との共同開発","量産を見据えた統合"],"companies":[{"code":"3653","name":"モルフォ","fit":"Astemo共同開発によりセンシングAIをTier1のSDV開発へ接続。","evidence":[{"date":"2026-09-02","title":"Astemo共同開発","url":"https://www.morphoinc.com/news/20260902-jpr-jointdevelopment"}]},{"code":"593A","name":"TIER IV","fit":"AstemoとのE2E AI基盤共同開発でTier1接続が明確。","evidence":[{"date":"2026-08-05","title":"Astemo共同開発","url":"https://tier4.co.jp/en/updates/press-release/20260805-tieriv-develops-platform-with-astemo"}]}]},
+        "運行・物流オペレーション": {"question":"技術提供だけでなく、実際の運行・物流オペレーション案件へ入っているか？","beneficiaryConditions":["自治体/物流案件","運行統合","受託・採択の一次情報"],"companies":[{"code":"336A","name":"ダイナミックマッププラットフォーム","fit":"地図・車両・バース管理を統合する物流施設案件で社会実装側に位置する。","evidence":[{"date":"2026-09-04","title":"国交省事業採択","url":"https://www.dynamic-maps.co.jp/news/news-1984/"}]},{"code":"4667","name":"アイサンテクノロジー","fit":"軽井沢町の自動運転バス事業受託で自治体運行に接続。","evidence":[{"date":"2026-09-02","title":"軽井沢町自動運転バス","url":"https://www.aisantec.co.jp/information/5720/"}]}]},
+        "実装支援/検証": {"question":"社会実装の現場で地図・運行・検証を担う具体案件があるか？","beneficiaryConditions":["案件受託","現場実装","継続展開可能性"],"companies":[{"code":"4667","name":"アイサンテクノロジー","fit":"自治体での実装案件を持つ。","evidence":[{"date":"2026-09-02","title":"軽井沢町自動運転バス","url":"https://www.aisantec.co.jp/information/5720/"}]},{"code":"336A","name":"ダイナミックマッププラットフォーム","fit":"物流施設内の統合実装案件を持つ。","evidence":[{"date":"2026-09-04","title":"国交省事業採択","url":"https://www.dynamic-maps.co.jp/news/news-1984/"}]}]}
+      }
+    }
+  }
+}
