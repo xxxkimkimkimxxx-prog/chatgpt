@@ -1,10 +1,12 @@
 {
-  "asOf":"2026-09-06 JST","status":"initial-classification",
-  "coreCandidates":["5803 フジクラ","8306 MUFG","285A キオクシアHD"],
-  "subCoreCandidates":["5027 AnyMind Group","4180 Appier Group","9824 泉州電業","9678 カナモト"],
-  "eventManaged":["3659 ネクソン"],
+  "asOf":"2026-09-06 21:52 JST",
+  "status":"weekend-rerun-classification",
+  "coreCandidates":["6501 日立製作所","5803 フジクラ","8306 MUFG"],
+  "subCoreCandidates":["285A キオクシアHD","6701 NEC","4704 トレンドマイクロ","5027 AnyMind Group","9824 泉州電業","9678 カナモト"],
+  "watch":["4180 Appier Group","5801 古河電工","4627 ナトコ","350A デジタルグリッド","3659 ネクソン"],
   "speculativeSleeve":["4597 ソレイジア・ファーマ"],
   "organizeCandidates":["2926 篠崎屋","8518 日本アジア投資"],
-  "principle":"Do not classify by cost basis. Compare expected value from current price, structural thesis, valuation, cash flow, concentration and thesis invalidation.",
+  "majorChange":"6501 Hitachi promoted to core from verified AI-datacenter power/operations theme; 285A Kioxia moved to sub-core due capex/cycle risk; NEC and Trend Micro added as verified structural-theme candidates.",
+  "principle":"Do not classify by cost basis or one weekend headline. Compare expected value from current price, structural thesis, primary-source evidence, valuation, cash flow, concentration and thesis invalidation.",
   "decisionMemo":"investment-company/decision-memos/2026-09-06/longterm.md"
 }
