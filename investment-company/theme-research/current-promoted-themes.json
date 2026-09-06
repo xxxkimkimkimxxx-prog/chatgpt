@@ -1,0 +1,119 @@
+{
+  "asOf":"2026-09-07T00:25:00+09:00",
+  "policy":"Only fresh or still-active trigger news starts a top-level tree. Older items appear only as supporting context/evidence.",
+  "themes":[
+    {
+      "id":"energy-middle-east",
+      "rank":1,
+      "title":"中東供給リスク × 原油・物流・防衛",
+      "status":"PROMOTED",
+      "trigger":{"date":"2026-09-06","title":"中東供給不安が継続、OPEC+は10月の原油生産方針を据え置き","source":"Reuters","url":"https://www.reuters.com/business/energy/opec-set-keep-oil-output-policy-unchanged-sunday-sources-say-2026-09-06/"},
+      "relatedFresh":[
+        {"date":"2026-09-06","title":"ホルムズ海峡を巡る米イラン対立、原油輸送と経済圧力が継続","url":"https://www.reuters.com/business/energy/irans-hormuz-leverage-wanes-us-economic-squeeze-bites-2026-09-06/"},
+        {"date":"2026-09-05","title":"米軍、イラン原油タンカー3隻を攻撃","url":"https://www.reuters.com/world/middle-east/us-military-strikes-three-iranian-crude-oil-carriers-central-command-says-2026-09-05/"},
+        {"date":"2026-09-04","title":"ホルムズ海峡の船舶通航、10日平均を大幅下回る","url":"https://www.reuters.com/world/middle-east/gulf-shipping-traffic-via-hormuz-keeps-below-10-day-average-data-shows-2026-09-04/"}
+      ],
+      "change":{"title":"単なる地政学ニュースではなく、原油供給・輸送ルート・保険/運賃・燃料コストを同時に再価格形成させる状態へ","why":"供給途絶リスクと輸送制約が続くと、上流資源には価格面の追い風が出る一方、航空・化学・電力など燃料投入型産業にはコスト逆風が出る。海運は運賃上昇余地と航路寸断リスクの両面を持つ。"},
+      "chains":[
+        {
+          "title":"上流石油・ガス",
+          "question":"原油価格上昇が売上・利益へ比較的直接効く日本上場企業はどこか？",
+          "conditions":["上流権益・生産を保有","原油価格感応度が高い","週末材料が株価に未織り込み"],
+          "companies":[
+            {"code":"1605","name":"INPEX","fit":"国内最大級の上流資源企業で、原油・ガス価格の利益感応度が高い。週末の追加緊張は9/4日本株PTS終了後。","evidence":[{"date":"2026-09-05","title":"週末の米・イラン原油タンカー攻撃で原油供給リスクが追加","url":"https://www.reuters.com/world/middle-east/us-military-strikes-three-iranian-crude-oil-carriers-central-command-says-2026-09-05/"}],"decision":{"day":"A 条件付き最優先監視","swing":"A- 原油トレンド確認後","medium":"B+ 地政学プレミアム依存に注意"},"risk":"原油が週末材料に反応しない場合は材料出尽くし。"}
+          ]
+        },
+        {
+          "title":"石油精製・卸",
+          "question":"原油高の恩恵だけでなく在庫評価・精製マージンまで確認できるか？",
+          "conditions":["原油価格だけでなく精製マージンを確認","在庫評価影響を分離","小売価格転嫁力を確認"],
+          "companies":[
+            {"code":"5020","name":"ENEOSホールディングス","fit":"エネルギー価格上昇の影響を受けるが、上流純粋ベータではなく精製・販売・在庫評価の複合要因。","evidence":[],"decision":{"day":"B セクター連動確認","swing":"B 個別マージン確認後","medium":"B"},"risk":"原油高が必ず利益増になるわけではない。"}
+          ]
+        },
+        {
+          "title":"海運・タンカー/物流",
+          "question":"迂回・保険料・運賃上昇の恩恵が、航路寸断や燃料高のコストを上回るか？",
+          "conditions":["運賃上昇を確認","船種構成を確認","航路停止リスクを別評価"],
+          "companies":[
+            {"code":"9101","name":"日本郵船","fit":"海上輸送・運賃再価格の影響を受ける大型海運。テーマ感応度はあるが方向は単純でない。","evidence":[{"date":"2026-09-04","title":"ホルムズ海峡の通航減少を確認","url":"https://www.reuters.com/world/middle-east/gulf-shipping-traffic-via-hormuz-keeps-below-10-day-average-data-shows-2026-09-04/"}],"decision":{"day":"B+ 運賃/海運同時高なら","swing":"B","medium":"B"},"risk":"輸送混乱は運賃上昇と同時に運航不能リスクも増やす。"},
+            {"code":"9104","name":"商船三井","fit":"日本郵船と同様に海上輸送の再価格影響を受ける。船種別エクスポージャーの確認が必要。","evidence":[],"decision":{"day":"B","swing":"B","medium":"B"},"risk":"テーマ方向性が混合。"}
+          ]
+        },
+        {
+          "title":"航空・燃料コスト",
+          "question":"原油高で利益が圧迫される側はどこか？",
+          "conditions":["燃料費比率が高い","運賃転嫁に時間差","ヘッジ状況を確認"],
+          "companies":[
+            {"code":"9201","name":"日本航空","fit":"燃料価格上昇の負の感応度を持つ代表的な航空株。受益株ではなく逆風モニターとして使用。","evidence":[],"decision":{"day":"逆風監視","swing":"新規ロング慎重","medium":"原油高長期化なら利益圧迫"},"risk":"燃料ヘッジと運賃転嫁で感応度は変動。"}
+          ]
+        }
+      ]
+    },
+    {
+      "id":"rates-rotation",
+      "rank":2,
+      "title":"米雇用上振れ × 金利上昇 × 日本株ローテーション",
+      "status":"PROMOTED",
+      "trigger":{"date":"2026-09-04","title":"米8月雇用者数+16.2万人、予想を大幅上回る","source":"Reuters","url":"https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/"},
+      "relatedFresh":[
+        {"date":"2026-09-04","title":"日本当局、円安進行をけん制　過度な変動には対応姿勢","url":"https://www.reuters.com/world/asia-pacific/japans-top-currency-diplomat-alert-currency-moves-2026-09-04/"}
+      ],
+      "change":{"title":"強い米雇用で『早期利下げ期待』より高金利継続を織り込み、株式内でも金融と高PER成長の相対評価が変わる","why":"金利上昇は銀行の利ざや期待には追い風になり得る一方、遠い将来利益の現在価値に依存する高PERグロースにはバリュエーション逆風となる。日本では日銀正常化観測も同じ方向に働く場合がある。"},
+      "chains":[
+        {
+          "title":"メガバンク・利ざや",
+          "question":"国内金利上昇を利益成長へ取り込みやすい大手銀行はどこか？",
+          "conditions":["国内貸出基盤が大きい","金利上昇メリットが大きい","流動性が高い"],
+          "companies":[
+            {"code":"8306","name":"三菱UFJフィナンシャル・グループ","fit":"国内金利正常化の代表的な高流動性ベータ。既存AI/グロース保有との因子分散にもなる。","evidence":[],"decision":{"day":"A- 金利/銀行指数確認","swing":"A","medium":"A- 利上げ織り込み度に注意"},"risk":"利上げ期待が既に価格へ織り込まれ、政策が期待未満なら材料出尽くし。"},
+            {"code":"8316","name":"三井住友フィナンシャルグループ","fit":"MUFGと同じく国内金利正常化の代表候補。相対強度比較に使う。","evidence":[],"decision":{"day":"A-","swing":"A-","medium":"A-"},"risk":"銀行株全体の高値圏リスク。"}
+          ]
+        },
+        {
+          "title":"高PERグロース・割引率",
+          "question":"金利上昇時にバリュエーション圧縮を受けやすい保有/監視株はどこか？",
+          "conditions":["高PER","将来成長期待への依存度が高い","金利上昇局面で相対弱"],
+          "companies":[
+            {"code":"4180","name":"Appier Group","fit":"AI成長株として業績モメンタムは強いが、金利上昇時の割引率上昇に敏感。テーマ上は逆風モニター。","evidence":[],"decision":{"day":"金利上昇時は追い慎重","swing":"業績と金利の綱引き","medium":"成長率がバリュエーションを上回れるか確認"},"risk":"SOX/AIモメンタムが金利逆風を上回る場合は単純ショート論が崩れる。"},
+            {"code":"5027","name":"AnyMind Group","fit":"既存保有の高成長株。金利上昇局面では業績だけでなく相対バリュエーションを再確認する必要。","evidence":[],"decision":{"day":"既存保有の相対強度確認","swing":"買い増し保留","medium":"成長継続なら保有余地"},"risk":"金利だけで企業固有成長を過小評価しない。"}
+          ]
+        }
+      ]
+    },
+    {
+      "id":"physical-ai-autonomous-sdv",
+      "rank":3,
+      "title":"Physical AI / 自動運転 / 物流社会実装",
+      "status":"PROMOTED",
+      "trigger":{"date":"2026-09-04","title":"Dynamic Map Platform等の物流施設内自動運転実証が国交省事業に採択","source":"Dynamic Map Platform","url":"https://www.dynamic-maps.co.jp/news/news-1984/"},
+      "relatedFresh":[],
+      "context":[
+        {"date":"2026-09-02","title":"モルフォとAstemoがSDV向けカメラセンシングAI共同開発","url":"https://www.morphoinc.com/news/20260902-jpr-jointdevelopment"},
+        {"date":"2026-09-02","title":"アイサンテクノロジー/A-Driveが軽井沢町の自動運転バス事業を受託","url":"https://www.aisantec.co.jp/information/5720/"},
+        {"date":"2026-08-05","title":"TIER IVとAstemoがE2E自動運転AI開発基盤を共同開発","url":"https://tier4.co.jp/en/updates/press-release/20260805-tieriv-develops-platform-with-astemo"}
+      ],
+      "change":{"title":"自動運転が『実証車両』単体から、地図・車両・バース管理・運行オペレーションを統合する社会実装フェーズへ進む","why":"社会実装では車両AIだけでなく、高精度地図、運行管理、施設側システム、自治体/物流事業者との統合が必要になり、利益機会がソフト・地図・運行支援へ広がる。"},
+      "chains":[
+        {
+          "title":"高精度3D地図・位置基盤",
+          "question":"自動運転の実運用に必要な高精度位置情報を継続提供できる上場企業はどこか？",
+          "conditions":["高精度地図が中核事業","実証/社会実装案件に参加","一次情報で案件確認"],
+          "companies":[
+            {"code":"336A","name":"ダイナミックマッププラットフォーム","fit":"物流施設内自動運転の国交省採択案件で地図・車両・バース管理統合に直接関与。","evidence":[{"date":"2026-09-04","title":"物流施設内自動運転実証が国交省事業に採択","url":"https://www.dynamic-maps.co.jp/news/news-1984/"}],"decision":{"day":"A 反転確認型のみ","swing":"B 底固め待ち","medium":"B+ 実需純度高いが評価/業績リスク"},"risk":"テーマ株急騰後の需給崩壊。"},
+            {"code":"4667","name":"アイサンテクノロジー","fit":"高精度位置情報に加え自治体自動運転バス実装へ関与。","evidence":[{"date":"2026-09-02","title":"軽井沢町の自動運転バス事業を受託","url":"https://www.aisantec.co.jp/information/5720/"}],"decision":{"day":"C 急落需給","swing":"B 底固め待ち","medium":"A- 実装案件継続なら"},"risk":"小型株需給と案件の利益寄与時期。"}
+          ]
+        },
+        {
+          "title":"センシングAI / SDVソフト",
+          "question":"自動車メーカー/Tier1の量産開発へAIソフトを接続できる企業はどこか？",
+          "conditions":["車載AI開発実績","Tier1/メーカーとの共同開発","量産化への明確なロードマップ"],
+          "companies":[
+            {"code":"3653","name":"モルフォ","fit":"AstemoとSDV向けカメラセンシングAIを共同開発し、車載AD/ADASの開発実績を持つ。","evidence":[{"date":"2026-09-02","title":"AstemoとSDV向けカメラセンシングAI共同開発","url":"https://www.morphoinc.com/news/20260902-jpr-jointdevelopment"}],"decision":{"day":"B 安定化後","swing":"B 決算確認後","medium":"B+ 車載収益の大型化確認"},"risk":"共同開発が売上・量産へ移るまで時間がかかる。"},
+            {"code":"593A","name":"TIER IV","fit":"自動運転AI開発基盤の純度が非常に高く、Astemoと2030年前後の商用化を目指す。","evidence":[{"date":"2026-08-05","title":"AstemoとE2E自動運転AI開発基盤を共同開発","url":"https://tier4.co.jp/en/updates/press-release/20260805-tieriv-develops-platform-with-astemo"}],"decision":{"day":"C 高リスク","swing":"C 安定化待ち","medium":"B 投機的純粋テーマ"},"risk":"商用化までの時間と財務/評価リスク。"}
+          ]
+        }
+      ]
+    }
+  ]
+}
