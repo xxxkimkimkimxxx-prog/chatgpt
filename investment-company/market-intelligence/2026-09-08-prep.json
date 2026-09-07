@@ -1,0 +1,59 @@
+{
+  "asOf":"2026-09-07 23:45 JST",
+  "targetSession":"2026-09-08",
+  "status":"overnight-prep-before-07:30-refresh",
+  "executiveSummary":"Sep 8 starts from a likely digestion/rotation setup after Sep 7's narrow Nikkei +2.12% rally. U.S. cash market is closed for Labor Day, so there is no fresh U.S. cash-session confirmation overnight. Domestic macro releases at 08:30/08:50, after-hours disclosures, PTS, yen strength, oil and SQ-week derivatives matter more than usual. The strongest fresh after-close stock-specific items are Hagihara Industries earnings/DBJ tie-up, Quantum Solutions AI data-center server acquisition, Resonac partial spin-off listing approval, and Dynamic Map Platform margin-trading restrictions as a negative event. Semiconductors remain the main structural theme, but Sep 7 PTS shows some cooling in Kioxia and SBG after sharp cash-session gains.",
+  "marketSignals":{
+    "nikkeiCashClose":{"value":66399.84,"changePct":2.12,"note":"Sep 7 rally was narrow; prime decliners exceeded advancers."},
+    "nightFutures":{"observedAt":"2026-09-07 20:31 JST","topixFuture":4100.0,"changePct":-0.73,"nikkei225At1900":66100,"note":"futures softened after the cash close; exact 23:45 Nikkei future not independently verified."},
+    "fx":{"usdJpy":"yen strengthened to around 154.05 intraday according to Reuters Sep 7","implication":"exporters and high-beta growth can face valuation/translation headwind; domestic-rate and import-cost beneficiaries need separate evaluation."},
+    "oil":{"brentApprox":96.85,"wtiApprox":92.10,"sourceContext":"Reuters Sep 7 Europe morning bid","implication":"energy/shipping remain event-sensitive but Sep 7 showed headline importance does not automatically translate into INPEX relative strength."},
+    "usCashMarket":"closed Sep 7 for Labor Day; no fresh U.S. cash-session confirmation before Tokyo open"
+  },
+  "macroCalendarSep8":[
+    {"time":"08:30","event":"Japan July Monthly Labour Survey","marketUse":"wage/inflation/BOJ expectations"},
+    {"time":"08:50","event":"Japan Q2 GDP revised","marketUse":"major pre-open trigger; 1st estimate annualised +1.1%; private forecasts point to upward revision, with Daiwa +2.7% and one market calendar around +1.8%"},
+    {"time":"08:50","event":"Japan July balance of payments / securities flows","marketUse":"yen, rates, foreign-flow context"},
+    {"time":"14:00","event":"Japan August Economy Watchers Survey","marketUse":"domestic-demand sentiment"},
+    {"event":"China August trade data","marketUse":"China-exposed machinery/materials/FA"},
+    {"event":"5-year JGB auction","marketUse":"domestic yield curve / bank valuation"},
+    {"event":"SQ week; Sep Nikkei options/futures special settlement Sep 11","marketUse":"index flow can dominate individual fundamentals"}
+  ],
+  "freshAfterCloseEvents":[
+    {"code":"7856","name":"萩原工業","rating":"A-","event":"3Q cumulative recurring profit +45%; May-Jul +97%; shareholder-benefit continuation with revised terms; capital/business alliance with DBJ","whyWatch":"multiple catalysts, earnings + capital policy","timeframe":"daytrade/swing"},
+    {"code":"2338","name":"クオンタムソリューションズ","rating":"B+ high-vol","event":"contract to acquire high-performance GPU servers and related equipment for AI data-center business, total 9.51bn yen","whyWatch":"large contract relative to company narrative; requires funding/liquidity/implementation verification","timeframe":"daytrade/speculative swing"},
+    {"code":"4004","name":"レゾナックHD","rating":"A-","event":"TSE approved listing of consolidated subsidiary Kurasus Chemical; partial spin-off scheduled Oct 1","whyWatch":"capital-policy catalyst layered onto AI semiconductor-material earnings theme","timeframe":"swing/medium"},
+    {"code":"212A","name":"フィットイージー","rating":"B","event":"patent allowance for AI Healthcare Automation","whyWatch":"AI-health theme but earnings exposure must be verified","timeframe":"daytrade/swing watch"},
+    {"code":"336A","name":"DMP","rating":"negative-short-term","event":"TSE/JSF margin-trading restrictions from Sep 8","whyWatch":"Physical AI theme remains structurally interesting, but forced deleveraging/volatility risk rises","timeframe":"daytrade rebound only; swing caution"},
+    {"code":"3854","name":"アイル","rating":"negative","event":"current-year recurring profit forecast -10%, despite dividend increase","whyWatch":"earnings-quality disappointment vs shareholder return","timeframe":"avoid unless price overreacts"}
+  ],
+  "structuralThemeWatch":[
+    {"theme":"AI infrastructure / semiconductors","status":"A+ but tactically overheated","stocks":["285A Kioxia","6857 Advantest","9984 SBG","4062 Ibiden","268A Rigaku HD","6055 Japan Material","4004 Resonac"],"note":"Sep 7 cash leaders were strong but PTS showed cooling: Kioxia 59,130 (-0.67%) and SBG 6,134 (-1.34%) around 23:30. Do not assume another gap-and-go."},
+    {"theme":"AI semiconductor downstream / materials","status":"upgrade","stocks":["4004 Resonac","268A Rigaku HD","6055 Japan Material","6227 AI Mechatech","6315 TOWA"],"note":"Sep 7 confirmed money spreading from Kioxia into equipment/material suppliers; deeper value-chain review needed."},
+    {"theme":"defense drones / unmanned systems","status":"upgrade","stocks":["6203 Howa Machinery","7011 MHI","7013 IHI","6701 NEC"],"note":"Howa hit limit-up after strengthening drone development/manufacturing alliance and hosting mass-production facility; verify whether this becomes a broader defense-drone chain."},
+    {"theme":"oil/shipping","status":"A news / B+ stock sensitivity","stocks":["1605 INPEX","9104 MOL","9101 NYK"],"note":"MOL gained 2.8% Sep 7 and broker target raises added stock-specific support; INPEX reaction remained muted, so shipping may currently express the Middle East theme better than upstream oil."},
+    {"theme":"rates / BOJ / yen strength","status":"A macro","stocks":["8306 MUFG","8316 SMFG","5831 Shizuoka FG","7203 Toyota","9201 JAL"],"note":"BOJ September hike is close to fully priced according to Reuters; stronger yen makes sector reaction more nuanced than simple bank-long/exporter-short."}
+  ],
+  "preliminaryWatchlistSep8":{
+    "daytrade":["7856 Hagihara Industries","2338 Quantum Solutions","4004 Resonac","6203 Howa Machinery","285A Kioxia","6857 Advantest","9104 MOL"],
+    "swing":["4004 Resonac","7856 Hagihara Industries","6055 Japan Material","268A Rigaku HD","6501 Hitachi","6857 Advantest","9104 MOL"],
+    "medium":["4004 Resonac","6857 Advantest","5803 Fujikura","6501 Hitachi","8306 MUFG","6701 NEC","285A Kioxia"]
+  },
+  "morningDecisionGates":[
+    "07:30 re-scan fresh news and PTS",
+    "08:30 wages",
+    "08:50 GDP revised + BoP + securities flows",
+    "08:55 re-rank daytrade list using index futures, USDJPY, JGB yields and pre-open orders",
+    "09:00-09:10 require VWAP/initial range/sector confirmation; do not chase prior-day winners"
+  ],
+  "sources":[
+    "Reuters Sep 7 yen seven-month high",
+    "Reuters Sep 7 oil/inflation and Fed/ECB outlook",
+    "Kabutan Sep 7 after-close good/bad materials",
+    "Kabutan Sep 7 surprise earnings",
+    "Kabutan Sep 7 market close and movers",
+    "BOJ release calendar",
+    "Cabinet Office GDP schedule",
+    "Daiwa Institute Q2 GDP revision forecast"
+  ]
+}
