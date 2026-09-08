@@ -6,15 +6,21 @@
   <meta name="theme-color" content="#09111f" />
   <meta name="description" content="最新ニュースをジャンル別に広く拾い、テーマ昇格したニュースだけを構造変化→バリューチェーン→企業→一次情報→銘柄まで追跡するAI投資会社リサーチ画面" />
   <title>AI Investment Research Tree</title>
-  <link rel="stylesheet" href="./app.css?v=202609070058" />
-  <link rel="stylesheet" href="./thought-trace.css?v=202609070058" />
-  <link rel="stylesheet" href="./news-feed.css?v=202609070058" />
-  <link rel="stylesheet" href="./horizon-list.css?v=202609070058" />
+  <link rel="stylesheet" href="./app.css?v=202609081726" />
+  <link rel="stylesheet" href="./thought-trace.css?v=202609081726" />
+  <link rel="stylesheet" href="./news-feed.css?v=202609081726" />
+  <link rel="stylesheet" href="./horizon-list.css?v=202609081726" />
 </head>
 <body>
   <header class="topbar">
     <div class="brand"><div class="brandMark">AI</div><div><div class="brandTitle">INVESTMENT RESEARCH TREE</div><div class="brandSub">最新ニュースを広く拾い、テーマ化したものだけ深掘りする</div></div></div>
-    <div class="topActions"><span id="dataDate" class="datePill">データ読込中</span><button id="expandAll" class="ghostBtn" type="button">すべて展開</button><button id="collapseAll" class="ghostBtn" type="button">折りたたむ</button></div>
+    <div class="topActions">
+      <span id="dataDate" class="datePill">データ読込中</span>
+      <span id="syncState" class="datePill syncPill">自動更新 5分</span>
+      <button id="refreshData" class="primaryRefreshBtn" type="button">↻ 最新データに更新</button>
+      <button id="expandAll" class="ghostBtn" type="button">すべて展開</button>
+      <button id="collapseAll" class="ghostBtn" type="button">折りたたむ</button>
+    </div>
   </header>
 
   <nav class="tabs" aria-label="表示切替"><button class="tab active" data-view="tree">思考ツリー</button><button class="tab" data-view="day">デイトレ</button><button class="tab" data-view="swing">スイング</button><button class="tab" data-view="medium">中期</button><button class="tab" data-view="summary">1枚サマリー</button></nav>
@@ -45,17 +51,21 @@
       </div>
     </section>
 
-    <section id="horizonView" class="view horizonView"><div class="horizonIntro"><div><span class="sectionKicker" id="horizonKicker">DAY TRADE</span><h2 id="horizonTitle">デイトレ候補</h2><p id="horizonDesc">銘柄はコンパクトな一覧表示。＋を押した銘柄だけ詳細を展開します。</p></div><div class="filterPills" id="themeFilters"></div></div><div id="horizonGrid" class="horizonList"></div></section>
+    <section id="horizonView" class="view horizonView">
+      <div class="horizonIntro"><div><span class="sectionKicker" id="horizonKicker">DAY TRADE</span><h2 id="horizonTitle">デイトレ候補</h2><p id="horizonDesc">銘柄はコンパクトな一覧表示。＋を押した銘柄だけ詳細を展開します。</p></div><div class="filterPills" id="themeFilters"></div></div>
+      <div id="committeeBrief" class="committeeBrief" aria-live="polite"></div>
+      <div id="horizonGrid" class="horizonList"></div>
+    </section>
 
     <section id="summaryView" class="view summaryView"><div class="summarySheet" id="summarySheet"><div class="summaryHeader"><div><span class="sectionKicker">ONE PAGE BRIEF</span><h2>イベント起点・投資テーマ サマリー</h2></div><span id="summaryDate" class="summaryDate">—</span></div><div id="summaryThemes" class="summaryThemes"></div><div class="summaryFooter"><div><b>使い方</b><br>ニュースの網羅と投資テーマの採用を分ける。最終売買はデイ・スイング・中期委員会で再審査。</div><div><b>基本原則</b><br>VALUE CHAINから直接STOCKへ飛ばない。受益条件→候補企業→企業固有の一次情報を通過したものだけを投資対象として審査する。</div></div></div></section>
   </main>
 
   <footer><div>AI Investment Company · Research Traceability UI</div><div>投資判断の最終決裁・売買執行はユーザーが行います。</div></footer>
-  <script src="./app.js?v=202609070058"></script>
-  <script src="./thought-trace.js?v=202609070058"></script>
-  <script src="./news-feed.js?v=202609070058"></script>
-  <script src="./current-promoted-tree.js?v=202609070058"></script>
-  <script src="./horizon-list.js?v=202609070058"></script>
-  <script src="./current-stats.js?v=202609070058"></script>
+  <script src="./app.js?v=202609081726"></script>
+  <script src="./thought-trace.js?v=202609081726"></script>
+  <script src="./news-feed.js?v=202609081726"></script>
+  <script src="./current-promoted-tree.js?v=202609081726"></script>
+  <script src="./horizon-list.js?v=202609081726"></script>
+  <script src="./current-stats.js?v=202609081726"></script>
 </body>
 </html>
