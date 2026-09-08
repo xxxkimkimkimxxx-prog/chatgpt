@@ -1,0 +1,49 @@
+{
+  "date":"2026-09-09",
+  "asOf":"07:30 JST",
+  "status":"morning cross-market screening; no trade decision",
+  "dataQuality":{"holdings":"stale: GitHub holdings asOf 2026-08-31; not used as current-position truth","PTS":"night-session rankings partially available from public sources; exact 06:00 final for all names not verified","institutionalFlow":"dedicated real-time foreign flow/short-interest data incomplete; no fabrication"},
+  "marketSnapshot":{"japanSep8":{"nikkei":65269.33,"nikkeiChangePct":-1.70,"primeTurnoverTrillionYen":8.4774,"breadth":"decliners about 75%; weak breadth","source":"https://s.kabutan.jp/news/n202609080924/"},"usSep8":{"sp500":7673.52,"sp500ChangePct":-0.58,"dowChangePct":-1.2,"nasdaqChangePct":-0.3,"driver":"oil/inflation risk + AI software disruption; some semis stronger","source":"https://www.reuters.com/business/wall-st-futures-slip-oil-surge-puts-markets-edge-2026-09-08/"},"fx":{"usdJpyLow":152.89,"note":"yen seven-month high; carry unwind and BOJ hike expectations","source":"https://www.reuters.com/world/asia-pacific/yen-extends-rally-new-seven-month-high-dollar-subdued-ahead-cpi-2026-09-08/"},"oil":{"brent":97.92,"wti":93.03,"note":"six-week highs after attacks on Saudi energy facilities","source":"https://www.reuters.com/business/energy/oil-rises-risks-prolonged-mideast-conflict-heighten-supply-worries-2026-09-08/"}},
+  "regimeAssessment":{"primary":"risk-off / rotation with two-sided opportunities","drivers":["yen carry unwind","oil shock/inflation","AI hardware remains structurally strong","AI software incumbents face substitution narrative","Japan cash breadth deteriorated sharply Sep8"],"implication":"Do not equate index direction with all-stock direction. Screen for oil/energy beneficiaries, yen beneficiaries, AI inference/optical beneficiaries and company-specific catalysts separately."},
+  "freshCatalysts":[
+    {"code":"2321","name":"ソフトフロントHD","category":"Fresh Catalyst/AI Datacenter","directness":"high","earningsExposure":"unproven-high-potential","timeHorizon":"days-weeks","pricedIn":"PTS +21.9% at 17:30; overheating risk","evidenceQuality":"B","evidence":"Token Factory launch; 0.92bn yen domestic DC equipment investment"},
+    {"code":"1436","name":"グリーンエナジー＆カンパニー","category":"Fresh Catalyst/Earnings","directness":"high","earningsExposure":"high","timeHorizon":"days-weeks","pricedIn":"unknown final PTS","evidenceQuality":"B+","evidence":"current recurring-profit forecast +19%, record-profit outlook raised"},
+    {"code":"7475","name":"アルビス","category":"Fresh Catalyst/TOB","directness":"very-high","earningsExposure":"event-driven","timeHorizon":"event","pricedIn":"TOB price 3780 vs Sep8 close +51.2%","evidenceQuality":"A","evidence":"Life Corp TOB; privatization"},
+    {"code":"2492","name":"インフォマート","category":"Fresh Catalyst/Activism","directness":"medium","earningsExposure":"indirect-capital-policy","timeHorizon":"weeks-months","pricedIn":"to verify","evidenceQuality":"B+","evidence":"Oasis stake 14.42% to 15.82%"},
+    {"code":"2689","name":"オルバヘルスケアHD","category":"Fresh Catalyst/Earnings","directness":"high","earningsExposure":"medium","timeHorizon":"days-weeks","pricedIn":"to verify","evidenceQuality":"B","evidence":"Q1 recurring profit turned positive"},
+    {"code":"9759","name":"NSD","category":"Fresh Catalyst/Monthly","directness":"high","earningsExposure":"medium","timeHorizon":"days-weeks","pricedIn":"to verify","evidenceQuality":"B","evidence":"August sales +8.2%"}
+  ],
+  "continuationTrend":[
+    {"code":"7856","name":"萩原工業","category":"Continuation","reason":"3Q operating profit +38.2%; Sep8 +5.1%, market confirmed catalyst"},
+    {"code":"9843","name":"ニトリHD","category":"Yen Beneficiary/Sector Leader","reason":"strong yen directly lowers import costs; Sep8 broad yen-beneficiary buying"},
+    {"code":"3038","name":"神戸物産","category":"Yen Beneficiary","reason":"import-cost sensitivity; yen-beneficiary basket strength"},
+    {"code":"2726","name":"パルGHD","category":"Yen Beneficiary","reason":"yen beneficiary; consumer/import exposure"},
+    {"code":"7581","name":"サイゼリヤ","category":"Yen Beneficiary","reason":"imported food/input cost sensitivity"},
+    {"code":"1605","name":"INPEX","category":"Energy","reason":"oil at six-week highs; prior weak stock response means require relative-strength confirmation"},
+    {"code":"5020","name":"ENEOS","category":"Energy","reason":"oil/refining sensitivity; verify margins and crude-cost pass-through"},
+    {"code":"9104","name":"商船三井","category":"Shipping","reason":"Middle East logistics disruption may be a better equity expression than upstream oil; freight effect must be verified"},
+    {"code":"9101","name":"日本郵船","category":"Shipping","reason":"same shipping-disruption screen"}
+  ],
+  "aiHardwareStructural":[
+    {"code":"6857","name":"アドバンテスト","category":"AI Inference/Test","directness":"high","earningsExposure":"high","timeHorizon":"weeks-years","pricedIn":"high","evidenceQuality":"A"},
+    {"code":"285A","name":"キオクシアHD","category":"AI Memory","directness":"high","earningsExposure":"high","timeHorizon":"weeks-years","pricedIn":"high","evidenceQuality":"A"},
+    {"code":"5803","name":"フジクラ","category":"AI Optical","directness":"high","earningsExposure":"high","timeHorizon":"weeks-years","pricedIn":"high","evidenceQuality":"A-"},
+    {"code":"5801","name":"古河電工","category":"AI Optical","directness":"medium-high","earningsExposure":"medium-high","timeHorizon":"weeks-years","pricedIn":"high","evidenceQuality":"B+"},
+    {"code":"4004","name":"レゾナックHD","category":"AI Materials/Packaging","directness":"high","earningsExposure":"high","timeHorizon":"months-years","pricedIn":"medium-high","evidenceQuality":"A-"},
+    {"code":"6055","name":"ジャパンマテリアル","category":"Fab Infrastructure","directness":"medium-high","earningsExposure":"medium-high","timeHorizon":"months-years","pricedIn":"medium","evidenceQuality":"B"},
+    {"code":"268A","name":"リガクHD","category":"Semiconductor Metrology","directness":"medium-high","earningsExposure":"medium","timeHorizon":"months-years","pricedIn":"medium-high","evidenceQuality":"B"},
+    {"code":"6315","name":"TOWA","category":"Advanced Packaging Equipment","directness":"high","earningsExposure":"high","timeHorizon":"months-years","pricedIn":"high","evidenceQuality":"B+"}
+  ],
+  "aiSoftwareDisruptionScreen":[
+    {"code":"3697","name":"SHIFT","fit":"mixed","status":"DEFERRED","reason":"AI can automate testing but SHIFT can also sell AI-enabled transformation; net earnings effect needs primary-source validation"},
+    {"code":"4443","name":"Sansan","fit":"potential-risk","status":"DEFERRED","reason":"workflow software may face AI feature commoditization; no evidence yet of revenue erosion"},
+    {"code":"3994","name":"マネーフォワード","fit":"potential-risk","status":"DEFERRED","reason":"AI can both commoditize and enhance accounting workflows; insufficient direct evidence"},
+    {"code":"4478","name":"freee","fit":"potential-risk","status":"DEFERRED","reason":"same dual-edge AI exposure; no direct negative earnings evidence"}
+  ],
+  "physicalAIRegulation":[{"code":"278A","name":"Terra Drone","status":"short-term-negative","reason":"margin trading restrictions from Sep9; structural drone theme remains separate"},{"code":"593A","name":"ティアフォー","status":"short-term-negative","reason":"margin trading restrictions from Sep9; autonomous-driving thesis separate from leverage unwind"}],
+  "candidateUniverse":["2321 ソフトフロントHD","1436 グリーンエナジー&C","7475 アルビス","2492 インフォマート","2689 オルバヘルスケアHD","9759 NSD","7856 萩原工業","9843 ニトリHD","3038 神戸物産","2726 パルGHD","7581 サイゼリヤ","1605 INPEX","5020 ENEOS","9104 商船三井","9101 日本郵船","6857 アドバンテスト","285A キオクシアHD","5803 フジクラ","5801 古河電工","4004 レゾナックHD","6055 ジャパンマテリアル","268A リガクHD","6315 TOWA","8306 MUFG","8316 SMFG","8411 みずほFG","7203 トヨタ","7267 ホンダ","3697 SHIFT","4443 Sansan","3994 マネーフォワード","4478 freee","278A Terra Drone","593A ティアフォー"],
+  "screeningBuckets":{"Fresh Catalyst":["2321","1436","7475","2492","2689","9759"],"Continuation/Trend":["7856","9843","3038","2726","7581"],"Sector Leader":["6857","285A","5803","1605","8306"],"押し目/反転":["4004","6055","268A","5801"],"Theme News":["9104","9101","3697","4443","3994","4478","278A","593A"]},
+  "noTradeDecision":true,
+  "newsFeedPath":"investment-company/news-feed/2026-09-09.json",
+  "themeTracePath":"investment-company/theme-research/2026-09-09/thought-trace.json"
+}
