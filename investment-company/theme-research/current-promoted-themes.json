@@ -1,89 +1,207 @@
 {
-  "asOf":"2026-09-07T00:55:00+09:00",
-  "policy":"Fresh trigger first. Promote when a fresh event can be connected through a structural change and beneficiary screen to listed companies with company-specific evidence. Older facts may support but never replace the fresh trigger.",
-  "themes":[
+  "asOf": "2026-09-09T07:30:00+09:00",
+  "policy": "Fresh trigger first. Market Intelligence records broad news separately from theme promotion. Promoted themes require a fresh trigger, a structural change, beneficiary conditions, company-specific evidence where available, and explicit deferral of weak association stocks. Market Intelligence itself does not issue trade orders.",
+  "themes": [
     {
-      "id":"ai-infrastructure-capex","rank":1,"title":"AIインフラ投資加速 × 半導体・メモリ・光・電力","status":"PROMOTED A+",
-      "trigger":{"date":"2026-09-05","title":"Foxconn、AI需要を背景に3Qが市場予想を上回る見通し","source":"Reuters","url":"https://www.reuters.com/world/asia-pacific/foxconn-says-third-quarter-outperform-market-expectations-on-ai-strength-2026-09-05/"},
-      "relatedFresh":[{"date":"2026-09-04","title":"ByteDance、AI投資を背景に296億ドル融資を確保","url":"https://www.reuters.com/legal/transactional/bytedance-secures-296-billion-loan-ai-push-sources-say-2026-09-04/"},{"date":"2026-09-04","title":"日本の概算要求でAI・半導体・経済安保など戦略投資が焦点","url":"https://www.reuters.com/world/asia-pacific/japan-budget-requests-swell-pandemic-era-scale-under-takaichi-agenda-2026-09-04/"}],
-      "context":[{"date":"2026-09-01","title":"AIデータセンター投資で電力・冷却企業の受注が拡大","url":"https://www.reuters.com/business/energy/not-just-nvidia-these-power-cooling-firms-are-riding-trillion-dollar-data-centre-2026-09-01/"}],
-      "change":{"title":"AI投資のボトルネックがGPU単体から、テスト・メモリ・光通信・電源/運用まで広がる","why":"AIサーバー需要が実際の売上と設備投資に反映され、周辺インフラまで投資額が波及している。GPU銘柄だけでなく、AI計算を量産・接続・給電する工程へ利益が落ちる。"},
-      "chains":[
-        {"title":"半導体テスト","question":"AI/HPC半導体の数量増・複雑化が既に利益へ出ている企業は？","conditions":["AI/HPCを成長要因として会社が明記","テスタ需要が売上利益へ反映","高流動性"],"companies":[{"code":"6857","name":"アドバンテスト","fit":"FY26 Q1で売上+39.3%、営業利益+53.3%。会社がAI/HPC・高性能メモリを市場成長要因と明記。","evidence":[{"date":"2026-07-29","title":"FY2026 Q1 Financial Review","url":"https://www.advantest.com/en/investors/financial-highlights/review/"}],"decision":{"day":"A-","swing":"A-","medium":"A"},"risk":"高期待・高値圏で金利上昇に弱い。"}]},
-        {"title":"AIメモリ","question":"AIデータセンターのメモリ需要に直接投資している企業は？","conditions":["メモリ専業に近い","AI/DC需要の設備投資","生産能力拡張"],"companies":[{"code":"285A","name":"キオクシアHD","fit":"SanDiskと国内約5兆円投資、北上K3棟などAI/データ需要に備える設備投資を進める。","evidence":[{"date":"2026-08-27","title":"SanDiskとの投資計画・約5兆円投資","url":"https://www.kioxia-holdings.com/ja-jp/ir.html"}],"decision":{"day":"A","swing":"B+","medium":"A-"},"risk":"NAND循環・巨額CAPEX・FCF。"}]},
-        {"title":"光接続・DCI","question":"AIクラスターの通信量増加を実際の量産・能力増強へつなげている企業は？","conditions":["超多心/高密度光製品","量産または増産","AI/DC需要を会社が明記"],"companies":[{"code":"5801","name":"古河電工","fit":"AI/DC向け超多心光ファイバ量産・能力増強が明確で、9/4の相対強度も高い。","evidence":[{"date":"2026-03-12","title":"13,824心超多心光ファイバ量産・能力増強","url":"https://www.furukawaelectric.com/release/2026/comm_20260312.html"}],"decision":{"day":"A-","swing":"A-","medium":"A-"},"risk":"9/4急騰後の利食い。"},{"code":"5803","name":"フジクラ","fit":"AI/DC向け多心光配線の製品化と構造需要が明確。既存保有は古河との相対強度も評価。","evidence":[{"date":"2026-03-09","title":"AI/DC向け高密度光ケーブル製品","url":"https://www.fujikura.co.jp/en/news/pressrelease/2026030913824swr_wtc.html"}],"decision":{"day":"B","swing":"B+","medium":"A-"},"risk":"高期待・現在は古河に相対劣後。"}]},
-        {"title":"データセンター電源・統合運用","question":"AIデータセンターの電源制約と運用複雑化を一体で解ける日本企業は？","conditions":["電源確保へ具体策","DC/クラウド運用を商品化","大企業顧客への展開力"],"companies":[{"code":"6501","name":"日立製作所","fit":"Bloom Energy協業、HMAX、クラウド高信頼化など電源から運用まで複数工程に接続。","evidence":[{"date":"2026-09-02","title":"クラウド高信頼化ソリューション提供開始","url":"https://www.hitachi.co.jp/products/it/CloudDX/modernization/news/202609_01.html"}],"decision":{"day":"B","swing":"A-","medium":"A"},"risk":"全社規模が大きくテーマ寄与率が希薄化しやすい。"}]}
+      "id": "ai-inference-optical-datacenter",
+      "rank": 1,
+      "title": "AI推論拡大 × 光接続・テスト・メモリ・先端材料",
+      "status": "PROMOTED A+",
+      "trigger": {
+        "date": "2026-09-08",
+        "title": "QualcommとAmazon、最大600億ドル規模のAIデータセンターチップ契約・1.6Tbps級光接続も共同開発",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/"
+      },
+      "relatedFresh": [
+        {
+          "date": "2026-09-08",
+          "title": "ソフトフロントHD、Token Factory事業開始・国内DCへ約9.2億円投資",
+          "source": "企業開示",
+          "url": ""
+        }
+      ],
+      "context": [],
+      "change": {
+        "title": "AI投資の利益機会が学習GPU単体から推論計算・テスト・メモリ・光インターコネクト・先端材料へ広がる",
+        "why": "AmazonとQualcommの協業は推論用カスタムチップだけでなく高速光接続を含む。AIデータセンターのボトルネックが演算だけでなく帯域・テスト強度・メモリ・先端材料へ拡張している追加証拠とみる。"
+      },
+      "chains": [
+        {
+          "title": "半導体テスト",
+          "question": "AI/HPCの数量増・複雑化が実際のテスタ需要と利益へ接続している企業は？",
+          "conditions": ["AI/HPCを成長要因として会社が確認", "テスト強度上昇が収益へ反映", "十分な流動性"],
+          "companies": [
+            {
+              "code": "6857",
+              "name": "アドバンテスト",
+              "fit": "AI/HPCテスト強度上昇への直接収益感応度が高い。市場情報部では構造受益を確認し、当日の売買可否は委員会へ送る。",
+              "evidence": [{"date": "2026-09-09", "title": "AI/HPC test intensity remains direct earnings exposure", "url": "https://www.advantest.com/investors/"}],
+              "decision": {"day": "監視", "swing": "監視", "medium": "主力候補"},
+              "risk": "高期待・高バリュエーションと半導体設備循環。"
+            }
+          ]
+        },
+        {
+          "title": "AIメモリ",
+          "question": "推論データセンター拡大でメモリ需要・設備投資が直接増える企業は？",
+          "conditions": ["メモリ事業への高い直接度", "AI/DC需要への設備投資", "価格循環とFCFを確認"],
+          "companies": [
+            {
+              "code": "285A",
+              "name": "キオクシアHD",
+              "fit": "AIメモリ需要と国内設備投資への直接度が高い一方、NAND価格循環と巨額CAPEXを同時に見る必要がある。",
+              "evidence": [{"date": "2026-09-09", "title": "AI memory demand/capex direct exposure", "url": "https://www.kioxia-holdings.com/ja-jp/ir.html"}],
+              "decision": {"day": "監視", "swing": "監視", "medium": "準主力"},
+              "risk": "NAND循環・巨額CAPEX・FCF変動。"
+            }
+          ]
+        },
+        {
+          "title": "光接続・DCI",
+          "question": "AIクラスターの帯域増加を高密度光配線・量産能力へつなげている企業は？",
+          "conditions": ["AI/DC向け光製品", "高密度・高速化への技術優位", "受注・能力増強の裏付け"],
+          "companies": [
+            {
+              "code": "5803",
+              "name": "フジクラ",
+              "fit": "AI/DC向け光接続の構造受益度が高い。9/9はテーマの正しさと株価方向を分け、価格は委員会側で再審査する。",
+              "evidence": [
+                {"date": "2026-03-09", "title": "AI/DC向け高密度光ケーブル製品", "url": "https://www.fujikura.co.jp/en/news/pressrelease/2026030913824swr_wtc.html"},
+                {"date": "2026-09-08", "title": "Amazon-Qualcomm optical collaboration adds a fresh external demand signal", "url": "https://www.reuters.com/technology/qualcomm-amazon-develop-custom-chips-ai-data-centers-2026-09-08/"}
+              ],
+              "decision": {"day": "監視", "swing": "A-構造 / B+戦術", "medium": "主力"},
+              "risk": "円高・高金利下では良いAIニュースでも価格が下落し得る。"
+            }
+          ]
+        },
+        {
+          "title": "先端材料・後工程",
+          "question": "AI半導体の高性能化が材料・先端パッケージ需要へ実際に波及する企業は？",
+          "conditions": ["半導体材料への高い売上接続", "先端パッケージ露出", "設備投資と利益率の確認"],
+          "companies": [
+            {
+              "code": "4004",
+              "name": "レゾナックHD",
+              "fit": "半導体材料・先端パッケージへの直接度が高く、事業純化も進行。ただし9/8の価格下落を無視せず戦術判断は分離する。",
+              "evidence": [{"date": "2026-09-09", "title": "Semiconductor materials and advanced packaging exposure", "url": "https://www.resonac.com/jp/ir"}],
+              "decision": {"day": "監視", "swing": "A構造 / B戦術", "medium": "要再審査"},
+              "risk": "高期待と直前急騰後の全戻し。"
+            }
+          ]
+        }
       ]
     },
     {
-      "id":"energy-middle-east","rank":2,"title":"中東供給リスク × 原油・物流・燃料コスト","status":"PROMOTED A+",
-      "trigger":{"date":"2026-09-06","title":"OPEC+、中東供給不安の中でも10月生産方針を据え置き","source":"Reuters","url":"https://www.reuters.com/business/energy/opec-set-keep-oil-output-policy-unchanged-sunday-sources-say-2026-09-06/"},
-      "relatedFresh":[{"date":"2026-09-06","title":"米イラン対立とホルムズ圧力が継続","url":"https://www.reuters.com/business/energy/irans-hormuz-leverage-wanes-us-economic-squeeze-bites-2026-09-06/"},{"date":"2026-09-05","title":"米軍、イラン原油タンカー3隻を攻撃","url":"https://www.reuters.com/world/middle-east/explosions-heard-near-irans-kharg-island-gulf-origin-unknown-fars-news-says-2026-09-05/"}],
-      "change":{"title":"供給制約だけでなく海運・保険・燃料投入コストまで同時に再価格形成","why":"ホルムズ通航減と原油輸出圧力が続けば、上流資源には価格追い風、海運は運賃と運航リスク、航空は燃料コスト逆風が生じる。"},
-      "chains":[
-        {"title":"上流石油・ガス","question":"原油価格上昇が最も直接利益へ効く日本株は？","conditions":["上流権益","価格感応度","週末未織り込み"],"companies":[{"code":"1605","name":"INPEX","fit":"上流資源の直接度が高く、週末の追加緊張は金曜日本株終了後。","evidence":[{"date":"2026-09-06","title":"OPEC+生産方針据え置きと供給不安","url":"https://www.reuters.com/business/energy/opec-set-keep-oil-output-policy-unchanged-sunday-sources-say-2026-09-06/"}],"decision":{"day":"A","swing":"A-","medium":"B+"},"risk":"原油が反応しなければ寄り天。"}]},
-        {"title":"精製・販売","question":"原油高だけでなく精製マージン・在庫評価を見て判断すべき企業は？","conditions":["精製マージン","在庫評価","価格転嫁"],"companies":[{"code":"5020","name":"ENEOS HD","fit":"エネルギー価格感応はあるが上流純粋ベータではなく複合要因。","evidence":[],"decision":{"day":"B","swing":"B","medium":"B"},"risk":"原油高=利益増ではない。"}]},
-        {"title":"海運・物流","question":"運賃上昇が運航不能・燃料高を上回る企業は？","conditions":["船種構成","運賃","航路リスク"],"companies":[{"code":"9101","name":"日本郵船","fit":"ホルムズ通航減による運賃再価格の大型モニター。","evidence":[{"date":"2026-09-04","title":"ホルムズ通航が10日平均を下回る","url":"https://www.reuters.com/world/middle-east/gulf-shipping-traffic-via-hormuz-keeps-below-10-day-average-data-shows-2026-09-04/"}],"decision":{"day":"B+","swing":"B","medium":"B"},"risk":"運賃上昇と航路寸断が両立。"},{"code":"9104","name":"商船三井","fit":"海上輸送再価格の同業比較対象。","evidence":[],"decision":{"day":"B","swing":"B","medium":"B"},"risk":"方向性が単純ではない。"}]}
+      "id": "middle-east-energy-shipping",
+      "rank": 2,
+      "title": "中東エネルギー施設攻撃 × 原油・海運・燃料コスト",
+      "status": "PROMOTED A+",
+      "trigger": {
+        "date": "2026-09-08",
+        "title": "フーシ派がサウジのエネルギー施設を攻撃、一部操業停止",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-yemen-says-73-injured-houthi-attacks-kingdom-2026-09-08/"
+      },
+      "relatedFresh": [
+        {"date": "2026-09-08", "title": "Brent 97.92ドル、WTI 93.03ドルで6週間ぶり高値", "source": "Reuters", "url": "https://www.reuters.com/business/energy/oil-rises-risks-prolonged-mideast-conflict-heighten-supply-worries-2026-09-08/"}
+      ],
+      "context": [],
+      "change": {
+        "title": "中東リスクが海上輸送の懸念からエネルギー施設の直接的な供給障害へ進む",
+        "why": "原油高だけでなく、上流資源・海運運賃・保険・燃料投入コストを同時に再価格形成させる可能性が高まった。恩恵と逆風を同じテーマ内で分けて扱う。"
+      },
+      "chains": [
+        {
+          "title": "上流石油・ガス",
+          "question": "原油価格上昇が日本企業の利益へ最も直接効くのはどこか？",
+          "conditions": ["上流権益", "商品価格への正の感応度", "株価の実際の相対強度"],
+          "companies": [
+            {
+              "code": "1605",
+              "name": "INPEX",
+              "fit": "上流資源の直接度は高い。ただし直近はニュース重要度ほど株価βが安定していないため、セクター相対強度を別途確認する。",
+              "evidence": [{"date": "2026-09-09", "title": "Brent/WTI at six-week highs after Saudi facility attacks", "url": "https://www.reuters.com/business/energy/oil-rises-risks-prolonged-mideast-conflict-heighten-supply-worries-2026-09-08/"}],
+              "decision": {"day": "#3候補", "swing": "A-イベント", "medium": "要再審査"},
+              "risk": "地政学プレミアム剥落と全面リスクオフによる相殺。"
+            }
+          ]
+        },
+        {
+          "title": "海運・物流",
+          "question": "運賃上昇が燃料高・航路寸断・保険コストを上回って利益になる企業は？",
+          "conditions": ["船種と航路構成", "運賃上昇", "燃料・保険コストの相殺確認"],
+          "companies": [
+            {
+              "code": "9104",
+              "name": "商船三井",
+              "fit": "海運は単純な原油高受益ではなく、実現運賃と運航コストのネット効果確認が必要な条件付き候補。",
+              "evidence": [{"date": "2026-09-09", "title": "Hormuz/Red Sea disruptions can alter freight economics; direct realized benefit requires rate confirmation", "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-yemen-says-73-injured-houthi-attacks-kingdom-2026-09-08/"}],
+              "decision": {"day": "条件付監視", "swing": "要再審査", "medium": "要再審査"},
+              "risk": "運賃上昇と燃料高・航路寸断が同時進行する。"
+            }
+          ]
+        }
       ]
     },
     {
-      "id":"defense-ai-unmanned","rank":3,"title":"日本の防衛力変革 × AI・無人機・C2・データ主権","status":"PROMOTED A",
-      "trigger":{"date":"2026-09-04","title":"日本の概算要求が143.1兆円、戦略投資と防衛費が焦点","source":"Reuters","url":"https://www.reuters.com/world/asia-pacific/japan-budget-requests-swell-pandemic-era-scale-under-takaichi-agenda-2026-09-04/"},
-      "relatedFresh":[{"date":"2026-09-02","title":"三菱重工とNEC、防衛AI・C2・無人アセットで戦略提携","url":"https://jpn.nec.com/press/202609/20260902_04.html"}],
-      "context":[{"date":"2026-08-31","title":"防衛省、令和9年度概算要求で防衛力変革を提示","url":"https://www.mod.go.jp/j/budget/yosan_gaiyo/"}],
-      "change":{"title":"防衛投資が装備単体から『装備＋無人アセット＋C2＋AI＋クラウド』の統合へ","why":"防衛省は無人化・AIの早期装備化を重視し、MHI/NECの企業提携も同じ領域を明示。政策と企業行動が一致している。"},
-      "chains":[
-        {"title":"防衛プラットフォーム・無人化","question":"既存装備を持ち無人システムの主契約者になれる企業は？","conditions":["防衛プライム","政府調達基盤","無人化を具体化"],"companies":[{"code":"7011","name":"三菱重工業","fit":"防衛プラットフォーム側の中核で、NECとの提携で無人・C2・AIまで統合領域を拡大。","evidence":[{"date":"2026-09-02","title":"NECとの防衛戦略提携MOU","url":"https://www.mhi.com/jp/news/26090202.html"}],"decision":{"day":"A-","swing":"B+","medium":"A-"},"risk":"株価高評価と政策依存。"},{"code":"7013","name":"IHI","fit":"防衛航空・宇宙の高流動性同業として予算拡大のセクター受益を監視。","evidence":[],"decision":{"day":"B+","swing":"B","medium":"B+"},"risk":"今回のAI/C2材料への直接度はMHIより低い。"}]},
-        {"title":"C2・クラウド・AI主権","question":"セキュアな指揮統制・AI・クラウドを政府向けに提供できる企業は？","conditions":["政府IT実績","ネットワーク/クラウド","AI・データ主権"],"companies":[{"code":"6701","name":"NEC","fit":"MOUで作戦計画・指揮統制・無人アセット・データ/AI主権を直接対象化。","evidence":[{"date":"2026-09-02","title":"MHIとの防衛戦略提携","url":"https://jpn.nec.com/press/202609/20260902_04.html"}],"decision":{"day":"B","swing":"A-","medium":"A-"},"risk":"提携から受注・利益まで時間差。"}]}
-      ]
-    },
-    {
-      "id":"ai-cyber-defense","rank":4,"title":"AIエージェント普及 × サイバー防衛・AIガバナンス","status":"PROMOTED A",
-      "trigger":{"date":"2026-09-04","title":"米中、9月中旬にAI安全対話へ　AI起点サイバー攻撃も論点","source":"Reuters","url":"https://www.reuters.com/legal/litigation/us-china-gear-up-mid-september-ai-safety-dialogue-2026-09-04/"},
-      "relatedFresh":[{"date":"2026-09-04","title":"AIエージェントによるWebサイト乗っ取り事例が報道","url":"https://www.reuters.com/world/europe/openai-agents-hijacked-german-website-previously-undisclosed-ai-breakout-this-2026-09-04/"},{"date":"2026-09-03","title":"OpenAI、サイバー防衛に10億ドル規模をコミット","url":"https://www.reuters.com/legal/litigation/openai-commits-1-billion-cyberdefense-effort-amid-ai-safety-scrutiny-2026-09-03/"}],
-      "context":[{"date":"2026-08-31","title":"FSB議長、AI起点サイバーリスクを金融安定の最優先懸念に","url":"https://www.reuters.com/legal/litigation/ai-driven-cyber-risk-is-top-concern-global-financial-stability-watchdog-says-2026-08-31/"}],
-      "change":{"title":"AI導入の拡大が防御側のAI・統合監視・ガバナンス需要を同時に引き上げる","why":"AIエージェントが攻撃面を広げる一方、企業・政府は機械速度の監視と統合プラットフォームを必要とする。"},
-      "chains":[
-        {"title":"統合AIセキュリティ","question":"AIサイバー需要が継続課金の実績へ出ている企業は？","conditions":["ARR成長","AI統合監視","大企業顧客"],"companies":[{"code":"4704","name":"トレンドマイクロ","fit":"TrendAI Vision One ARR+49%、Enterprise NRR122%でAIセキュリティ需要が既に収益へ反映。","evidence":[{"date":"2026-08-13","title":"Q2: Vision One ARR+49%、NRR122%","url":"https://newsroom.trendmicro.com/2026-08-13-Trend-Micro-Reports-Earnings-Results-for-Q2-2026"}],"decision":{"day":"B+","swing":"A-","medium":"A-"},"risk":"9/4急騰後・高PBR。"}]},
-        {"title":"国産・高βサイバー","question":"日本市場でAIサイバー物色の値幅を取りやすい上場企業は？","conditions":["サイバー専業度","テーマ連動","流動性確認"],"companies":[{"code":"3692","name":"FFRIセキュリティ","fit":"国産サイバー専業度が高く政策・AIサイバー物色の高β候補。企業固有の直近収益裏付けは継続確認。","evidence":[],"decision":{"day":"B+","swing":"B","medium":"B"},"risk":"連想・需給比率が高い。"}]}
-      ]
-    },
-    {
-      "id":"rates-rotation","rank":5,"title":"米雇用上振れ × 金利上昇 × 日本株ローテーション","status":"PROMOTED A",
-      "trigger":{"date":"2026-09-04","title":"米8月雇用者数+16.2万人、予想を大幅上回る","source":"Reuters","url":"https://www.reuters.com/business/nasdaq-sp-500-futures-climb-ahead-key-jobs-report-2026-09-04/"},
-      "relatedFresh":[{"date":"2026-09-04","title":"日本当局、円安進行をけん制","url":"https://www.reuters.com/world/asia-pacific/japans-top-currency-diplomat-alert-currency-moves-2026-09-04/"}],
-      "change":{"title":"高金利継続観測で銀行と高PERグロースの相対評価が変わる","why":"銀行は利ざや改善余地、グロースは割引率上昇が逆風。日本の長期金利上昇も同じローテーションを補強する。"},
-      "chains":[
-        {"title":"メガバンク","question":"国内金利上昇を利益へ取り込みやすい大手銀行は？","conditions":["国内貸出基盤","NIM感応度","高流動性"],"companies":[{"code":"8306","name":"三菱UFJ FG","fit":"国内金利正常化の代表ベータでAI偏重PFの分散にも寄与。","evidence":[],"decision":{"day":"B+","swing":"A-","medium":"A-"},"risk":"利上げ期待織り込み。"},{"code":"8316","name":"三井住友FG","fit":"MUFGとの相対強度比較対象。","evidence":[],"decision":{"day":"B+","swing":"B+","medium":"A-"},"risk":"銀行株高値圏。"}]},
-        {"title":"高PERグロース逆風","question":"金利上昇時に評価圧縮を受けやすい保有/監視株は？","conditions":["将来利益依存","高PER","相対弱"],"companies":[{"code":"4180","name":"Appier Group","fit":"AI成長は強いが金利上昇時の評価圧縮リスク。","evidence":[],"decision":{"day":"条件付き","swing":"B+","medium":"B+"},"risk":"AIモメンタムが金利逆風を上回る可能性。"},{"code":"5027","name":"AnyMind Group","fit":"既存保有の成長株として金利と個社成長を分離して評価。","evidence":[],"decision":{"day":"監視","swing":"B","medium":"B+"},"risk":"株価相対弱。"}]}
-      ]
-    },
-    {
-      "id":"physical-ai-autonomous-sdv","rank":6,"title":"Physical AI / 自動運転 × 社会実装・ロボタクシー","status":"PROMOTED A-",
-      "trigger":{"date":"2026-09-04","title":"DMP等の物流施設内自動運転実証が国交省事業に採択","source":"Dynamic Map Platform","url":"https://www.dynamic-maps.co.jp/news/news-1984/"},
-      "relatedFresh":[{"date":"2026-09-03","title":"Tesla、AustinでCybercabの限定運行を開始","url":"https://www.reuters.com/business/autos-transportation/teslas-cybercab-event-set-thursday-with-few-details-2026-09-03/"},{"date":"2026-09-02","title":"Uber/Wayve、ロンドンでロボタクシー開始","url":"https://www.reuters.com/business/uber-ai-firm-wayve-launch-londons-first-robotaxis-2026-09-02/"}],
-      "context":[{"date":"2026-09-02","title":"モルフォとAstemo、SDV向けカメラセンシングAI共同開発","url":"https://www.morphoinc.com/news/20260902-jpr-jointdevelopment"}],
-      "change":{"title":"自動運転が実証車単体から、地図・センシング・運行・施設システムを統合する商用化競争へ","why":"世界でロボタクシー商用化が進み、日本でも物流/自治体案件が増えると、車両AI以外の地図・運行統合・実装支援にも収益機会が生じる。"},
-      "chains":[
-        {"title":"高精度地図・運行統合","question":"実際の物流/自治体案件に入り地図と運行を統合できる企業は？","conditions":["実案件","高精度地図","運行/施設統合"],"companies":[{"code":"336A","name":"ダイナミックマッププラットフォーム","fit":"物流施設案件で地図・車両・バース管理を統合。","evidence":[{"date":"2026-09-04","title":"国交省事業採択","url":"https://www.dynamic-maps.co.jp/news/news-1984/"}],"decision":{"day":"B+反転のみ","swing":"B-底固め待ち","medium":"B"},"risk":"テーマ過熱後の需給崩壊。"},{"code":"4667","name":"アイサンテクノロジー","fit":"自治体自動運転バスなど実装支援の直接度が高い。","evidence":[{"date":"2026-09-02","title":"軽井沢町自動運転バス事業受託","url":"https://www.aisantec.co.jp/information/5720/"}],"decision":{"day":"C","swing":"B-","medium":"B"},"risk":"小型・実証と利益の時間差。"}]},
-        {"title":"センシングAI / SDV","question":"車載AIを量産開発へ接続している日本上場企業は？","conditions":["Tier1連携","車載AI実績","量産化ロードマップ"],"companies":[{"code":"3653","name":"モルフォ","fit":"Astemoとの共同開発でSDV向けカメラセンシングAIへ直接接続。","evidence":[{"date":"2026-09-02","title":"AstemoとSDV向けAI共同開発","url":"https://www.morphoinc.com/news/20260902-jpr-jointdevelopment"}],"decision":{"day":"B-","swing":"B-","medium":"B+"},"risk":"量産利益化まで時間。"}]}
-      ]
-    },
-    {
-      "id":"china-credit-industrial","rank":7,"title":"中国金融資本増強 × 設備投資・FA感応度","status":"PROMOTED B / CONDITIONAL",
-      "trigger":{"date":"2026-09-06","title":"中国、国有銀行・保険へ540億ドル規模の資本注入","source":"Reuters","url":"https://www.reuters.com/world/asia-pacific/china-pump-47-bln-into-state-banks-insurers-capital-boosting-push-2026-09-06/"},
-      "change":{"title":"金融システムの貸出余力を補強するが、実体設備投資へ波及するかは未確定","why":"資本注入そのものは日本機械株の売上にはならない。中国の信用供給がAI、ロボット、NEV等の設備投資を再加速させる場合だけ日本FA企業に波及する。"},
-      "chains":[
-        {"title":"CNC・FA設備","question":"中国でAI/DC/ロボット関連の設備投資需要を既に確認している企業は？","conditions":["中国需要を会社が説明","FA/CNCの直接売上","直近業績上方修正"],"companies":[{"code":"6954","name":"ファナック","fit":"会社Q&Aで中国のAI半導体、AIデータセンター、ヒューマノイド等の部品加工需要がCNC前倒し受注を押し上げたと説明。FY26予想も上方修正。","evidence":[{"date":"2026-07-29","title":"FY2026 forecast revision","url":"https://www.fanuc.co.jp/en/ir/announce/pdf/2026/financialresult202606_e.pdf"}],"decision":{"day":"B","swing":"B+","medium":"B+"},"risk":"中国資本注入から実需要までの因果は弱い。"},{"code":"6506","name":"安川電機","fit":"中国・アジアFAとロボット、Physical AIの事業接点を持つが今回の資本注入への直接度は低い。","evidence":[{"date":"2026-07-15","title":"MOTOMAN NEXT Agentic Robot System","url":"https://www.yaskawa-global.com/"}],"decision":{"day":"B-","swing":"B","medium":"B+"},"risk":"中国景気・設備投資循環。"}]}
-      ]
-    },
-    {
-      "id":"generative-search-geo","rank":8,"title":"生成AI検索50%突破 × GEO・広告予算シフト","status":"EARLY PROMOTED B",
-      "trigger":{"date":"2026-09-04","title":"生成AIの検索利用率52.3%、初めて50%を突破","source":"CyberAgent","url":"https://www.cyberagent.co.jp/news/detail/id%3D33787"},
-      "change":{"title":"検索行動が検索エンジン単独から生成AIへ分散し、企業の集客最適化対象がSEOだけでなくGEOへ広がる","why":"利用率が1年強で21.3%から52.3%へ上昇。購買前の情報取得チャネルが変われば、広告・コンテンツ最適化予算の配分変更が起こり得る。"},
-      "chains":[
-        {"title":"GEO・AI広告","question":"行動変化を実際の広告サービス・売上へ変換できる企業は？","conditions":["GEOサービス/研究組織","広告顧客基盤","今後受注KPIを確認可能"],"companies":[{"code":"4751","name":"サイバーエージェント","fit":"GEO Labを設置し自社で継続調査。大規模ネット広告顧客基盤を持つため最初の観測対象。","evidence":[{"date":"2026-09-04","title":"生成AI検索利用率52.3%調査","url":"https://www.cyberagent.co.jp/news/detail/id%3D33787"}],"decision":{"day":"B-","swing":"B","medium":"B"},"risk":"現時点は調査結果でありGEO売上寄与の定量証拠が不足。"}]}
+      "id": "yen-carry-unwind",
+      "rank": 3,
+      "title": "円キャリー巻き戻し × 内需・輸入・銀行・輸出逆風",
+      "status": "PROMOTED A",
+      "trigger": {
+        "date": "2026-09-08",
+        "title": "円が一時152.89円/ドルまで上昇、日銀利上げ織り込みとキャリー巻き戻しが進行",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/world/asia-pacific/yens-sudden-surge-is-upsetting-carry-trade-faithful-2026-09-08/"
+      },
+      "relatedFresh": [],
+      "context": [],
+      "change": {
+        "title": "円高が緩やかな為替変化ではなく株式の因子ローテーションを起こす速度へ加速",
+        "why": "輸入コスト低下・国内金利上昇の恩恵と、輸出換算利益・高PERグロースへの逆風を同時に評価する必要がある。"
+      },
+      "chains": [
+        {
+          "title": "輸入・内需",
+          "question": "急速な円高が仕入原価と利益率へ比較的直接効く企業は？",
+          "conditions": ["輸入原価比率", "為替ヘッジと在庫タイムラグ", "円高局面での実際の相対強度"],
+          "companies": [
+            {
+              "code": "9843",
+              "name": "ニトリHD",
+              "fit": "円高メリットの直接度が高い代表的輸入内需株で、9/8の価格行動にも円高恩恵が表れた。",
+              "evidence": [{"date": "2026-09-08", "title": "Sharp yen appreciation prompted buying in yen-beneficiary stocks", "url": "https://s.kabutan.jp/news/n202609080778/"}],
+              "decision": {"day": "#4候補", "swing": "A-", "medium": "要再審査"},
+              "risk": "円高メリットのPL反映にはヘッジ・在庫の時間差がある。"
+            }
+          ]
+        },
+        {
+          "title": "国内金利・銀行",
+          "question": "日銀正常化が利ざや・ROEへ届く一方、織り込み過多ではない銀行は？",
+          "conditions": ["国内貸出利ざや", "金利感応度", "利上げ期待の織り込み度"],
+          "companies": [
+            {
+              "code": "8306",
+              "name": "三菱UFJ FG",
+              "fit": "国内金利正常化の直接受益候補。ただし9月利上げ期待の織り込みが高く、sell-the-factを同時に評価する。",
+              "evidence": [{"date": "2026-09-09", "title": "BOJ hike probability near 97%; curve and sell-the-news risk remain key", "url": "https://www.reuters.com/world/asia-pacific/yens-sudden-surge-is-upsetting-carry-trade-faithful-2026-09-08/"}],
+              "decision": {"day": "条件付監視", "swing": "要再審査", "medium": "主力"},
+              "risk": "利上げ期待の織り込み済みと景気悪化時の信用コスト。"
+            }
+          ]
+        }
       ]
     }
+  ],
+  "screenedOut": [
+    {"code": "2321", "name": "ソフトフロントHD", "reason": "Fresh Catalystとしては強いが、新規事業の稼働率・顧客・ユニットエコノミクス未検証のため構造テーマ中核はDEFERRED。"},
+    {"code": "3697", "name": "SHIFT", "reason": "生成AIはソフトウェア/テストに二面性があり、純利益へのネット効果未確認。"},
+    {"code": "4443", "name": "Sansan", "reason": "AIによる代替とアップセルのどちらが勝つか一次情報で未確認。"},
+    {"code": "3994", "name": "マネーフォワード", "reason": "AIのコスト削減効果と価格侵食のネット効果未確認。"},
+    {"code": "4478", "name": "freee", "reason": "同上。現時点ではDEFERRED。"},
+    {"code": "9201", "name": "JAL", "reason": "原油高は基本的に燃料コスト逆風。ヘッジ・運賃転嫁で相殺できるか別途検証。"},
+    {"code": "7203", "name": "トヨタ", "reason": "急速な円高は輸出・換算利益の逆風で、受益側には置かない。"}
   ]
 }
