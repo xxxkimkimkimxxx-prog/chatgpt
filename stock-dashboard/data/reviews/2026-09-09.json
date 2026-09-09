@@ -1,0 +1,53 @@
+{
+  "date":"2026-09-09",
+  "asOf":"2026-09-09 20:44 JST",
+  "market":{
+    "nikkei":{"close":65142.78,"change":-126.55,"pct":-0.19},
+    "topix":{"close":4046.64,"change":-3.69,"pct":-0.09},
+    "prime":{"advancers":601,"decliners":920,"turnoverYen":"9.2303兆円"},
+    "summary":"指数は小幅続落だが中身は強いローテーション。非鉄金属・石油石炭・鉱業が上位で、光通信・電線、資源、防衛の一角に資金集中。"
+  },
+  "morningCandidateReview":[
+    {"rank":1,"code":"1436","name":"グリーンエナジー＆カンパニー","close":1751,"pct":-8.94,"result":"selection_miss_execution_gate_worked","review":"上方修正をFresh Catalystとして最上位に置いたが、寄り2,003円・高値2,086円の直後から失速し安値1,725円、終値1,751円。PTS先食いと寄り天リスクを過小評価。初動安値維持/VWAP上の条件は成立せず、実行上は見送りが正解。"},
+    {"rank":2,"code":"2321","name":"ソフトフロントHD","close":189,"pct":35.97,"result":"strong_hit","review":"Token Factory材料をFresh Catalystとして捕捉し、ストップ高189円。材料発掘・優先順位とも成功。ただし高GU/特買い時の執行可否は別問題として扱う。"},
+    {"rank":3,"code":"1605","name":"INPEX","close":3912,"pct":2.09,"result":"hit","review":"中東供給リスクと原油高の直接受益を評価した方向性は機能。石油・鉱業セクターも上位。"},
+    {"rank":4,"code":"9843","name":"ニトリHD","close":3287,"pct":-3.10,"result":"miss","review":"円高メリットだけを強く見過ぎた。前日+5.5%の先行上昇と小売セクター弱含みを十分に織り込むべきだった。VWAP下・同業連動不十分なら見送りという条件は機能。"},
+    {"rank":5,"code":"7856","name":"萩原工業","close":1948,"pct":-2.50,"result":"miss","review":"決算二日目Continuationは失速。2,000円支持化を条件にしていたため条件不成立で見送りが妥当。Fresh二日目の順位をさらに下げるべきケース。"}
+  ],
+  "majorMisses":[
+    {"code":"5801","name":"古河電工","close":4129,"pct":12.6,"classification":"catchable","reason":"米CorningのVerizon向け数十億ドル規模・複数年光ファイバー契約が日本市場寄り前に利用可能。既存のAI光通信テーマと完全接続しており、No.6/32/33が朝順位へ昇格すべきだった。"},
+    {"code":"5803","name":"フジクラ","close":5493,"pct":8.07,"classification":"catchable","reason":"同上。テーマ自体は把握済みだったが『監視』止まり。海外同業Fresh Catalyst＋前夜PTS＋寄り前特別気配を組み合わせる昇格ルールが不足。"},
+    {"code":"4052","name":"フィーチャ","close":1040,"pct":16.85,"classification":"catchable_continuation","reason":"自動運転/Physical AIテーマの継続。前日までのテーマ波及と朝のContinuationスキャンで候補化余地あり。"},
+    {"code":"4440","name":"ヴィッツ","classification":"catchable_but_execution_limited","reason":"前日Go-Tech採択でS高、当日朝5:30時点にも継続材料が確認可能。前営業日レビューで改善対象に挙げた直後であり、候補化漏れはプロセス反映不足。"},
+    {"code":"4667","name":"アイサンテクノロジー","close":3625,"pct":6.61,"classification":"theme_continuation","reason":"自動運転テーマの高ボラ継続。前場一時S高。事前候補化は可能だが、連続急騰で執行難度は高い。"},
+    {"code":"5287","name":"イトーヨーギョー","close":1011,"pct":17.4,"classification":"partly_catchable","reason":"豪雨・都市型水害と下水道インフラ再構築のテーマ。No.30の気象/災害オルタナティブデータから拾う改善余地あり。"},
+    {"code":"8254","name":"さいか屋","close":329,"pct":32.12,"classification":"not_premarket_catchable","reason":"後場15時過ぎの資本政策開示が主因。朝スクリーニングの見逃しには数えない。"}
+  ],
+  "marketStructureLessons":[
+    "Fresh個社材料だけでなく、海外同業の大型契約が国内セクター全体へ波及する『Sector Leader Fresh』を朝順位へ強制的に再評価する。",
+    "前日大幅高銘柄は材料の強さだけでなく『既に何％織り込んだか』を独立スコア化する。1436と9843はここが不足。",
+    "Physical AI/自動運転は政府採択・大手OEM報道・関連銘柄連鎖を同一バスケットで監視し、前日レビューで得た改善策を翌朝のスクリーナへ必ず反映する。",
+    "S高捕捉率を上げるために基準を無差別に緩めない。後場開示や材料不明の低時価総額株は『事前捕捉困難』として分離する。"
+  ],
+  "userTrading":{
+    "confirmedRealizedPnl":6100,
+    "closed":[
+      {"code":"5803","name":"フジクラ","pnl":4700,"review":"5,513円買い→5,560円売り。終値5,493円より高い水準で利益確定できており、強いテーマ日に利を残した出口として良好。"},
+      {"code":"3653","name":"モルフォ","pnl":500},
+      {"code":"3653","name":"モルフォ","pnl":2900},
+      {"code":"3653","name":"モルフォ","pnl":-2000,"review":"3回目再エントリーは新しいセットアップ確認を厳格化する。損切り自体は実行できた。"}
+    ],
+    "newPositions":[
+      {"code":"285A","name":"キオクシアHD","quantity":1,"averageCost":57878,"referencePrice":57000,"review":"観察用1株。AIハード全体が強い日でもキオクシアは相対弱く、セクター内選別の教材として有効。"},
+      {"code":"5016","name":"JX金属","quantity":100,"averageCost":3902,"referencePrice":3909,"review":"非鉄金属セクター上昇の本流に沿うが、当日+4.9%後の新規なので翌日のギャップ・利食いリスクを重視。"},
+      {"code":"4597","name":"ソレイジア・ファーマ","quantity":3000,"averageCost":28.93,"referencePrice":29,"review":"通常の中長期候補ランキングとは分離した投機枠として管理。"}
+    ],
+    "portfolioUnrealizedPnlConfirmed":-32668
+  },
+  "tomorrowProcessChanges":[
+    "海外同業大型契約→日本の対応業界→寄り前特別気配/PTSの3段一致を最優先昇格条件に追加",
+    "Fresh Catalystの織り込み度スコアに前日騰落率・PTS乖離・GU率を必須入力",
+    "前日レビューの改善事項を翌朝スクリーナのチェックリストへ自動持越し",
+    "候補ランキングと保有レビューは完全分離を継続"
+  ]
+}
