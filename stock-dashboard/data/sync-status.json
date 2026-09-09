@@ -1,15 +1,14 @@
 {
-  "lastSyncedAtJST": "2026-08-25 23:30",
-  "trigger": "all_august_trades_added_to_300k_goal",
-  "triggerMessageSummary": "User requested that the 300,000 yen plan include every August 2026 trade rather than starting after the August 24 close.",
-  "updated": [
-    "data/performance-summary.json",
+  "lastSyncedAtJST":"2026-09-09 20:44",
+  "trigger":"after_close_review_2026-09-09",
+  "triggerMessageSummary":"User requested today's review. Morning candidates were compared with actual closes, missed S-high/sector leaders were classified, user trades and current holdings were reconciled.",
+  "updated":[
+    "data/reviews/2026-09-09.json",
     "data/latest-review.json",
     "data/current-view.json",
-    "data/reviews/2026-08-25.json",
     "data/sync-status.json"
   ],
-  "status": "ready",
-  "primaryPage": "dashboard.html",
-  "note": "The 300,000 yen goal now counts all realized P/L from 2026-08-01. Confirmed iSPEED realized P/L through 2026-08-23 is +42,500 yen. The 2026-08-25 Furukawa Electric derived P/L of +17,410 yen remains provisional until confirmed in iSPEED, giving provisional cumulative progress of +59,910 yen, 20.0%, with 240,090 yen remaining."
+  "status":"ready",
+  "primaryPage":"dashboard.html",
+  "note":"Key process change: treat overseas peer large contracts as Sector Leader Fresh when they map directly to a known Japanese value chain, and keep candidate ranking holdings-blind. Confirmed Sep 9 realized P/L is +6,100 yen; portfolio unrealized P/L confirmed from the 17:14 iSPEED screenshot is -32,668 yen."
 }
