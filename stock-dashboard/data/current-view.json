@@ -1,43 +1,44 @@
 {
-  "asOf":"2026-09-09 11:15 JST",
-  "source":"2026-09-09 user-supplied iSPEED holdings, chart and realized P/L screenshots",
+  "asOf":"2026-09-09 20:44 JST",
+  "source":"2026-09-09 after-close market review plus user-supplied iSPEED holdings/execution screenshots",
   "today":{
     "realizedPnl":6100,
     "tradeCount":4,
     "wins":3,
     "losses":1,
-    "status":"11:15時点確認済み・場中途中",
-    "summary":"フジクラ既存100株を5,560円で売却して+4,700円。モルフォ3往復は+333円、+3,233円、-2,166円。合計+6,100円。キオクシアHDを57,878円で1株買付し観察中。"
+    "status":"大引け後確認済み",
+    "summary":"フジクラ100株を5,560円で売却し+4,700円。モルフォ3取引合計+1,400円。確定損益+6,100円。"
+  },
+  "marketReview":{
+    "nikkeiClose":65142.78,
+    "nikkeiPct":-0.19,
+    "topixClose":4046.64,
+    "topixPct":-0.09,
+    "regime":"指数横ばいに近い一方、非鉄・光通信・資源へ資金集中するローテーション相場",
+    "bestMorningCall":"2321 ソフトフロントHD：+35.97%ストップ高",
+    "largestSelectionError":"1436 グリーンエナジー&Cを1位にしたこと。寄り天・PTS先食いを過小評価。ただし実行条件は不成立で見送りが正解。",
+    "largestMiss":"5801古河電工+12.6%、5803フジクラ+8.1%。米Corning-Verizon大型光ファイバー契約を朝順位へ昇格できなかった。"
   },
   "holdingsReference":[
-    {"code":"285A","name":"キオクシアホールディングス","lastConfirmedQty":1,"avg":57878,"reference":57630,"management":"単元未満1株の観察用ポジション。価格行動・半導体セクター相対強度を確認。"},
-    {"code":"2926","name":"篠崎屋","lastConfirmedQty":1000,"avg":119,"reference":125,"management":"低流動性。追加は慎重。"},
-    {"code":"3659","name":"ネクソン","lastConfirmedQty":200,"avg":3146.45,"reference":3102,"management":"既存保有管理。"},
-    {"code":"4597","name":"ソレイジア・ファーマ","lastConfirmedQty":1000,"avg":29,"reference":29,"management":"中長期投機枠。"},
-    {"code":"5027","name":"ANYMIND GROUP","lastConfirmedQty":400,"avg":830.5,"reference":742,"management":"追加は原則停止。"},
-    {"code":"8518","name":"日本アジア投資","lastConfirmedQty":200,"avg":162,"reference":155,"management":"低流動性のため追加買いは慎重。"}
+    {"code":"285A","name":"キオクシアホールディングス","lastConfirmedQty":1,"avg":57878,"reference":57000,"management":"単元未満1株の観察用ポジション。AIハード内の相対強度を確認。"},
+    {"code":"2926","name":"篠崎屋","lastConfirmedQty":1000,"avg":119,"reference":127,"management":"低流動性。保有レビューと全市場ランキングを分離。"},
+    {"code":"3659","name":"ネクソン","lastConfirmedQty":200,"avg":3146.45,"reference":3115,"management":"既存保有管理。全市場の中長期候補ランキングには保有理由で残さない。"},
+    {"code":"4597","name":"ソレイジア・ファーマ","lastConfirmedQty":3000,"avg":28.93,"reference":29,"management":"通常の中長期ランキングと分離した投機枠。"},
+    {"code":"5016","name":"JX金属","lastConfirmedQty":100,"avg":3902,"reference":3909,"management":"非鉄金属セクター本流。ただし当日+4.9%後の新規なので翌日の利食い・ギャップを警戒。"},
+    {"code":"5027","name":"ANYMIND GROUP","lastConfirmedQty":400,"avg":830.5,"reference":748,"management":"既存保有レビュー。追加は原則停止。全市場ランキングには保有理由で残さない。"},
+    {"code":"8518","name":"日本アジア投資","lastConfirmedQty":200,"avg":162,"reference":155,"management":"低流動性。追加買いは慎重。"}
   ],
-  "closedToday":[
-    {"code":"5803","name":"フジクラ","qty":100,"sellPrice":5560,"realizedPnl":4700},
-    {"code":"3653","name":"モルフォ","qty":100,"sellPrice":1485,"realizedPnl":333},
-    {"code":"3653","name":"モルフォ","qty":100,"sellPrice":1514,"realizedPnl":3233},
-    {"code":"3653","name":"モルフォ","qty":100,"sellPrice":1460,"realizedPnl":-2166}
-  ],
-  "portfolioUnrealizedPnlConfirmedFromScreenshot":-39138,
-  "goalProgress":{
-    "target":300000,
-    "confirmedCumulativeThroughAug31":70700,
-    "latestConfirmedDayPnl":6100,
-    "latestConfirmedDay":"2026-09-09",
-    "cumulativeStatus":"9/1〜9/8の実現損益がこのGitHub正本では未照合のため、70,700円+6,100円を正式累計とはしない。"
-  },
+  "portfolioUnrealizedPnlConfirmedFromScreenshot":-32668,
   "executionReview":[
-    "フジクラ5,560円売却は高値圏の良い出口。",
-    "モルフォ1,514円利確はブレイク・出来高確認後で再現性が高い。",
-    "モルフォ3回目は新しいセットアップ不足の再エントリーで反省対象。ただし1,460円損切りは妥当。",
-    "同一銘柄の再エントリーは新高値・節目再奪回・出来高再増加のうち最低2条件を新たに確認する。"
+    "フジクラ5,560円売却は終値5,493円を上回る水準で利益確定できており良好。",
+    "モルフォは3回目再エントリーのセットアップ条件を厳格化する。損切り自体は実行できた。",
+    "JX金属3,902円買いはセクター本流だが、当日大幅高後なので翌日の利食い耐性を確認する。"
   ],
-  "dailyTradeLog":"data/daily/2026-09-09.json",
-  "daytradeLatest":"data/daytrade-latest.json",
+  "processChanges":[
+    "海外同業大型契約→日本対応業界→PTS/寄り前気配の一致をSector Leader Freshとして朝順位へ反映",
+    "Fresh Catalystの織り込み度に前日騰落率・PTS乖離・GU率を必須化",
+    "候補ランキングと保有レビューの完全分離を継続"
+  ],
+  "reviewPath":"data/reviews/2026-09-09.json",
   "ruleReference":"data/trading-rules.json"
 }
