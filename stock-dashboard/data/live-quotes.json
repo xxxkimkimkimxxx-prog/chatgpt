@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-09 14:17:08 JST",
+  "asOf": "2026-09-09 14:17:46 JST",
   "currency": "JPY",
   "source": "Yahoo Finance chart endpoint (unofficial, server-side via GitHub Actions)",
   "refreshPolicy": "GitHub Actions polls about every 5 minutes on JPX weekdays; workflow timing may be delayed.",
@@ -7,15 +7,15 @@
     "285A": {
       "code": "285A",
       "symbol": "285A.T",
-      "price": 56870.0,
+      "price": 56770.0,
       "previousClose": 57410.0,
-      "change": -540.0,
-      "changePct": -0.9406026824595018,
+      "change": -640.0,
+      "changePct": -1.1147883643964467,
       "open": 58160.0,
       "high": 58510.0,
       "low": 56020.0,
-      "volume": 25812700,
-      "observedAt": "2026-09-09 14:17:08 JST",
+      "volume": 25869400,
+      "observedAt": "2026-09-09 14:17:46 JST",
       "currency": "JPY",
       "exchangeName": "Tokyo",
       "series5m": [
@@ -483,8 +483,8 @@
           "time": "14:15",
           "open": 56930.0,
           "high": 56950.0,
-          "low": 56850.0,
-          "close": 56870.0,
+          "low": 56770.0,
+          "close": 56770.0,
           "volume": 110100
         }
       ],
@@ -664,15 +664,15 @@
     "3659": {
       "code": "3659",
       "symbol": "3659.T",
-      "price": 3129.0,
+      "price": 3128.0,
       "previousClose": 3132.0,
-      "change": -3.0,
-      "changePct": -0.09578544061302681,
+      "change": -4.0,
+      "changePct": -0.1277139208173691,
       "open": 3117.0,
       "high": 3142.0,
       "low": 3079.0,
-      "volume": 1579900,
-      "observedAt": "2026-09-09 14:17:08 JST",
+      "volume": 1580000,
+      "observedAt": "2026-09-09 14:17:30 JST",
       "currency": "JPY",
       "exchangeName": "Tokyo",
       "series5m": [
@@ -1140,8 +1140,8 @@
           "time": "14:15",
           "open": 3134.0,
           "high": 3135.0,
-          "low": 3129.0,
-          "close": 3129.0,
+          "low": 3128.0,
+          "close": 3128.0,
           "volume": 14500
         }
       ],
