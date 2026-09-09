@@ -2,23 +2,16 @@
 const s=(q,e=document)=>e.querySelector(q);
 const esc=v=>String(v??'').replace(/[&<>'\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','\"':'&quot;'}[m]));
 function collectCompanies(t){return (t.chains||[]).flatMap(c=>c.companies||[]);}
-function uniqueCompanies(t){
-  const m=new Map();
-  collectCompanies(t).forEach(c=>m.set(c.code,c));
-  return [...m.values()];
-}
-function candidateText(t){
-  const a=uniqueCompanies(t).slice(0,4).map(c=>`${c.code} ${c.name}`);
-  return a.length?a.join(' / '):'継続検証';
-}
+function uniqueCompanies(t){const m=new Map();collectCompanies(t).forEach(c=>m.set(c.code,c));return [...m.values()];}
+function candidateText(t){const a=uniqueCompanies(t).slice(0,4).map(c=>`${c.code} ${c.name}`);return a.length?a.join(' / '):'継続検証';}
 function fmtAsOf(v=''){return String(v).replace('T',' ').replace('+09:00',' JST').slice(0,20)+(String(v).includes('+09:00')?' JST':'');}
 async function load(){
  try{
-  const r=await fetch('./theme-research/current-promoted-themes.json?v='+Date.now(),{cache:'no-store'});
-  if(!r.ok)throw new Error(r.status);
-  const d=await r.json();
-  const all=d.themes.flatMap(collectCompanies);
-  const uniq=new Map(all.map(x=>[x.code,x]));
+  const paths=['./theme-research/current-promoted-themes-latest.json','./theme-research/current-promoted-themes.json'];
+  let d=null,lastErr=null;
+  for(const p of paths){try{const r=await fetch(p+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(r.status);d=await r.json();break;}catch(e){lastErr=e;}}
+  if(!d)throw lastErr||new Error('promoted themes unavailable');
+  const all=d.themes.flatMap(collectCompanies);const uniq=new Map(all.map(x=>[x.code,x]));
   const date=String(d.asOf||'').slice(0,10)||'—';
   if(s('#dataDate'))s('#dataDate').textContent=`Research ${date}`;
   if(s('#themeCount'))s('#themeCount').textContent=d.themes.length;
