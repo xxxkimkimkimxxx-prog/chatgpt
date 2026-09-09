@@ -1,6 +1,6 @@
 {
-  "version":"2.1",
-  "asOf":"2026-09-06 JST",
+  "version":"2.2",
+  "asOf":"2026-09-09 JST",
   "headcount":34,
   "finalDecisionMaker":"user",
   "principles":[
@@ -9,7 +9,8 @@
     "Red-team functions remain independent from bullish research",
     "No role may invent unavailable numerical data",
     "Each committee calls only the roles relevant to that horizon",
-    "High-impact non-macro news must be translated into investable themes, value chains and verified listed-stock exposure rather than handled as isolated headlines"
+    "High-impact non-macro news must be translated into investable themes, value chains and verified listed-stock exposure rather than handled as isolated headlines",
+    "Medium/long-term candidate rankings must be holdings-blind on the first pass: screen the eligible Japan-listed universe first, keep portfolio review separate, and never promote, protect, retain or raise a ticker because the user already owns it. A held stock may rank only if it independently qualifies under the same market-wide criteria."
   ],
   "departments":[
     {"name":"経営企画・人材開発室","members":[1,2,3,31]},
