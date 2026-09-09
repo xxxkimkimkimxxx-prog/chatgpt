@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "effectiveFrom": "2026-08-25",
+  "version": 2,
+  "effectiveFrom": "2026-09-09",
   "purpose": "Keep the Japan equity dashboard synchronized whenever an investment-related interaction materially changes the current view.",
   "repository": "xxxkimkimkimxxx-prog/chatgpt",
   "dashboardRoot": "stock-dashboard",
@@ -42,6 +42,9 @@
     "Do not invent missing prices, quantities, or order details.",
     "Keep pre-market forecast separate from intraday rerank so forecast accuracy can be evaluated honestly.",
     "Separate day-trade and swing judgments even for the same ticker.",
+    "For medium/long-term candidate rankings, run the first-pass screen across the eligible Japan-listed universe without using current holdings as a positive factor.",
+    "Holding status must never promote, protect, retain, or raise the rank of a ticker. A held stock may appear in the candidate list only when it independently qualifies under the same market-wide criteria and would rank there even if not owned.",
+    "Keep market-wide candidate ranking and portfolio/holdings review as separate outputs. Holdings that do not qualify for the market-wide list belong only in portfolio review, reduce/exit review, or speculative buckets as appropriate.",
     "A chat message is not an external webhook: synchronization occurs when ChatGPT handles the triggering investment interaction and has GitHub access."
   ]
 }
