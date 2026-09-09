@@ -7,7 +7,7 @@ const hesc=v=>String(v??'').replace(/[&<>'"]/g,m=>({'&':'&amp;','<':'&lt;','>':'
 const hInfo={
   day:['DAY TRADE','デイトレ候補','候補を一覧で比較し、＋を押した銘柄だけ詳細を表示。寄り前順位は9:00〜9:10の価格構造で再審査します。'],
   swing:['SWING','スイング候補','数日〜6週間。材料の持続性・織り込み・相対強度・イベント期限を個別に確認します。'],
-  medium:['MEDIUM TERM','中期候補','1〜12か月。テーマ純度だけでなく実需、利益、CF、バリュエーション、仮説破綻条件まで確認します。']
+  medium:['MEDIUM TERM','中期候補','1〜12か月。全上場銘柄を保有状況と切り離して比較し、主力・準主力に値する候補だけ表示します。保有銘柄の監視は上段の「保有レビュー」に分離します。']
 };
 function categoryList(items){return ['all',...new Set(items.map(x=>x.category).filter(Boolean))];}
 function detailRow(k,v){if(!v)return'';return `<div class="hzDetailRow"><span>${hesc(k)}</span><div>${hesc(v)}</div></div>`;}
@@ -38,7 +38,15 @@ function wireRows(){
   }));
 }
 function committeeFor(h){return horizonData?.committees?.[h]||null;}
-function itemsFor(h){return committeeFor(h)?.items||horizonData?.[h]||[];}
+function isMarketCandidate(h,x){
+  if(h!=='medium')return true;
+  const grade=String(x?.grade||'');
+  return !/(監視|投機|整理|保有レビュー)/.test(grade);
+}
+function itemsFor(h){
+  const raw=committeeFor(h)?.items||horizonData?.[h]||[];
+  return raw.filter(x=>isMarketCandidate(h,x));
+}
 function renderBrief(h){
   const box=hq('#committeeBrief');if(!box)return;
   const c=committeeFor(h);
