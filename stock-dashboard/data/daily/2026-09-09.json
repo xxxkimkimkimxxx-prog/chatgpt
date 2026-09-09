@@ -1,0 +1,36 @@
+{
+  "date":"2026-09-09",
+  "asOf":"2026-09-09 11:15 JST",
+  "source":"User-supplied iSPEED screenshots in ChatGPT",
+  "status":"intraday-partial",
+  "realizedPnl":6100,
+  "realizedTradeCount":4,
+  "wins":3,
+  "losses":1,
+  "winRatePct":75.0,
+  "grossProfit":8266,
+  "grossLoss":2166,
+  "profitFactor":3.82,
+  "trades":[
+    {"sequence":1,"code":"5803","name":"フジクラ","side":"sell","qty":100,"buyPrice":5513.0,"sellPrice":5560,"realizedPnl":4700,"classification":"既存保有解消","assessment":"A","review":"朝の強いGU後、高値圏で売却。11時台には5,500円を割り込む場面があり、結果だけでなく価格構造上も良い出口。"},
+    {"sequence":2,"code":"3653","name":"モルフォ","side":"round-trip","qty":100,"buyPrice":1480,"sellPrice":1485,"realizedPnl":333,"classification":"デイトレ","assessment":"B","review":"初回は小幅利確。ボラティリティ確認としては許容。"},
+    {"sequence":3,"code":"3653","name":"モルフォ","side":"round-trip","qty":100,"buyPrice":1480,"sellPrice":1514,"realizedPnl":3233,"classification":"デイトレ","assessment":"A","review":"1,440〜1,450円突破、1,500円奪回、出来高増加を確認したモメンタム取引。高値1,545円を全て取ろうとせず強い局面で利確。"},
+    {"sequence":4,"code":"3653","name":"モルフォ","side":"round-trip","qty":100,"buyPrice":1480,"sellPrice":1460,"realizedPnl":-2166,"classification":"デイトレ再エントリー","assessment":"C-entry/A--exit","review":"高値1,545円形成後に短期モメンタムが弱まった後の3回目エントリー。新しいセットアップ確認が不足。1,441円まで急落する中で1,460円損切りは損失拡大を防いだ。"}
+  ],
+  "openTrades":[
+    {"code":"285A","name":"キオクシアホールディングス","side":"buy","qty":1,"price":57878,"status":"open","purpose":"観察用の単元未満ポジション"}
+  ],
+  "executionReview":{
+    "good":[
+      "フジクラを5,560円で既存保有解消し+4,700円。資金拘束も解消。",
+      "モルフォ2回目はブレイク条件成立後に入り、1,514円で+3,233円を確定。",
+      "モルフォ3回目はエントリーは悪かったが、1,460円で損切りして損失を限定。"
+    ],
+    "improve":[
+      "同一銘柄で利益を取った後の再エントリーは、前回の成功とは切り離し、新高値更新・節目再奪回・出来高再増加など新しいセットアップを最低2条件確認する。",
+      "高ボラ銘柄では節目ぴったりの逆指値が短期的な売り連鎖に巻き込まれやすい。5分足終値確認等も選択肢だが、損切りを緩める理由にはしない。"
+    ]
+  },
+  "committeeReviewNote":"朝の本命5銘柄は当日リーダーのフジクラ・モルフォを十分上位化できず、選定精度は反省対象。一方、場中の価格行動・出来高確認による執行判断は朝のランキングより機能した。Fresh Catalyst偏重を修正し、Continuation MomentumとSector Alignmentの実資金流入をより重く評価する。",
+  "officiality":"実現損益はiSPEED実現損益画面表示を正本。11:15時点の途中経過であり、午後に追加売買があれば追記する。"
+}
