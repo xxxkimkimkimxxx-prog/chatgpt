@@ -1,1 +1,75 @@
-{"asOf":"2026-09-09 08:02 JST","targetSession":"2026-09-09","status":"premarket","marketStance":"risk-off/rotation; favor fresh earnings/AI-DC and verified oil/yen beneficiaries; no pre-open fixed entry","priorDayReview":{"date":"2026-09-08","hits":[{"code":"6203","name":"豊和工業","result":"+12.34%, intraday limit-up","assessment":"strong hit; PTS turnover weighting worked"},{"code":"7856","name":"萩原工業","result":"+5.10%, record high","assessment":"hit; earnings/capital-policy thesis confirmed"},{"code":"9824","name":"泉州電業","result":"+0.76%, record high","assessment":"direction right but continuation modest; 8000 confirmation rule appropriate"}],"misses":{"actionable":[{"code":"4440","name":"ヴィッツ","result":"limit-up","reason":"Physical AI theme was known, but government Go-Tech adoption cross-scan was not surfaced into premarket candidate set; add targeted policy/grant/certification scan without broadening universe indiscriminately"}],"nonActionableOrLowReproducibility":[{"code":"6898","name":"トミタ電機","result":"second consecutive limit-up","reason":"continuation squeeze and limit-up quote; limited executable premarket edge"},{"code":"8995","name":"誠建設工業","result":"second consecutive limit-up","reason":"continuation squeeze; limited executable edge"},{"code":"2667","name":"イメージワン","result":"+21.78%","reason":"no sufficiently verified premarket fundamental/primary-source trigger; do not loosen standards ex post"}]},"processChange":"Review prior picks and market-wide limit-up/large-gainer/volume-spike misses every morning; classify reproducible vs non-predictable before changing rules."},"market":{"nikkeiSep8":65269.33,"nikkeiChangePct":-1.70,"primeTurnoverTrillion":8.4774,"breadth":"~75% decliners","us":{"sp500ChangePct":-0.58,"dowChangePct":-1.2,"nasdaqChangePct":-0.3},"oil":{"brent":97.92,"wti":93.03},"fx":{"usdJpyLow":152.89},"futures":{"cmeLate":65220,"osakaSepContractAround0520":65060}},"ranking":[{"rank":1,"code":"1436","name":"グリーンエナジー＆カンパニー","probabilityPct":65,"confidence":"medium-high","type":"Fresh Earnings","directness":"very-high","earningsSensitivity":"high","pricedIn":"PTS +11.23%","pts":"2139, +11.23%, 14600 shares, ~30.8m yen at 23:53","entry":"after GU digestion: initial-low hold + VWAP + 9:05-9:10 high breakout with turnover","skip":"excessive GU, VWAP fail, thin turnover/wide spread","invalidation":"initial low break and rapid fill toward 2030","riskPct":"1.8-2.5","expectedPct":"3.5-6","rr":"1.8-2.4"},{"rank":2,"code":"2321","name":"ソフトフロントHD","probabilityPct":61,"confidence":"medium","type":"Fresh AI inference datacenter","directness":"high","earningsSensitivity":"unproven","pricedIn":"PTS about +21%","pts":"169.4 at 17:30 (+21.9%); ~168 at 21:56","entry":"wait first price formation; VWAP + higher low + turnover surge + acceptable 1-2 yen spread","skip":"special quote/extreme GU/thin book/VWAP fail","invalidation":"initial low break plus inability to recover 160s or financing concern","riskPct":"4-6","expectedPct":"8-12","rr":">=1.8"},{"rank":3,"code":"1605","name":"INPEX","probabilityPct":59,"confidence":"medium-high","type":"Theme News/Energy","directness":"high","earningsSensitivity":"high to oil","pricedIn":"medium","entry":"oil sector outperforms TOPIX + INPEX VWAP + initial-high break + relative strength","skip":"oil high but stock/sector weak or GU fade","invalidation":"initial low break plus crude reversal/de-escalation","riskPct":"1.0-1.5","expectedPct":"2-3","rr":"1.7-2.2"},{"rank":4,"code":"9843","name":"ニトリHD","probabilityPct":57,"confidence":"medium","type":"Sector Alignment/Yen beneficiary","directness":"high","earningsSensitivity":"high-import-cost with lag","pricedIn":"medium","entry":"yen remains firm + peer basket confirmation + VWAP + initial-high break","skip":"yen reversal or VWAP fail","invalidation":"initial low break plus USDJPY rebound","riskPct":"1.0-1.4","expectedPct":"2-2.8","rr":"1.7-2.1"},{"rank":5,"code":"7856","name":"萩原工業","probabilityPct":55,"confidence":"medium","type":"Continuation/Earnings","directness":"high","earningsSensitivity":"high","pricedIn":"medium-high after +5.1%","entry":"2000 support + VWAP + renewed move toward/through 2110 with turnover","skip":"below 2000, volume collapse, upper wicks","invalidation":"initial low break and failure to recover prior VWAP/2000","riskPct":"1.2-1.7","expectedPct":"2.3-3.5","rr":"1.7-2.1"}],"secondary":["2492 インフォマート","6857 アドバンテスト","285A キオクシアHD","5803 フジクラ","4004 レゾナックHD","9104 商船三井"],"avoidOrMonitorRisk":["278A Terra Drone: margin restriction Sep9","593A ティアフォー: margin restriction Sep9"],"holdingsNote":"holdings.json stale as of 2026-08-31; quantities/costs not treated as current truth","required0900Checks":["initial high/low","VWAP","5m volume","turnover","Nikkei/TOPIX/Growth","futures","sector peers","order book","spread","gap percentage"],"creditDataNote":"latest weekly credit balances are not uniformly verified premarket; do not fabricate. For low-priced names prioritize turnover/book plus available JSF/regulatory data.","decisionMemo":"investment-company/decision-memos/2026-09-09/daytrade.md"}
+{
+  "asOf":"2026-09-09 11:15 JST",
+  "targetSession":"2026-09-09",
+  "status":"intraday",
+  "marketStance":"risk-off/rotation; favor verified real-money momentum over fresh-catalyst labels alone; no fixed-price chasing",
+  "priorDayReview":{
+    "date":"2026-09-08",
+    "hits":[
+      {"code":"6203","name":"豊和工業","result":"+12.34%, intraday limit-up","assessment":"strong hit; PTS turnover weighting worked"},
+      {"code":"7856","name":"萩原工業","result":"+5.10%, record high","assessment":"hit; earnings/capital-policy thesis confirmed"},
+      {"code":"9824","name":"泉州電業","result":"+0.76%, record high","assessment":"direction right but continuation modest; 8000 confirmation rule appropriate"}
+    ],
+    "misses":{
+      "actionable":[{"code":"4440","name":"ヴィッツ","result":"limit-up","reason":"Physical AI theme was known, but government Go-Tech adoption cross-scan was not surfaced into premarket candidate set; add targeted policy/grant/certification scan without broadening universe indiscriminately"}],
+      "nonActionableOrLowReproducibility":[
+        {"code":"6898","name":"トミタ電機","result":"second consecutive limit-up","reason":"continuation squeeze and limit-up quote; limited executable premarket edge"},
+        {"code":"8995","name":"誠建設工業","result":"second consecutive limit-up","reason":"continuation squeeze; limited executable edge"},
+        {"code":"2667","name":"イメージワン","result":"+21.78%","reason":"no sufficiently verified premarket fundamental/primary-source trigger; do not loosen standards ex post"}
+      ]
+    },
+    "processChange":"Review prior picks and market-wide limit-up/large-gainer/volume-spike misses every morning; classify reproducible vs non-predictable before changing rules."
+  },
+  "market":{
+    "nikkeiSep8":65269.33,
+    "nikkeiChangePct":-1.70,
+    "primeTurnoverTrillion":8.4774,
+    "breadth":"~75% decliners",
+    "us":{"sp500ChangePct":-0.58,"dowChangePct":-1.2,"nasdaqChangePct":-0.3},
+    "oil":{"brent":97.92,"wti":93.03},
+    "fx":{"usdJpyLow":152.89},
+    "futures":{"cmeLate":65220,"osakaSepContractAround0520":65060}
+  },
+  "premarketRanking":[
+    {"rank":1,"code":"1436","name":"グリーンエナジー＆カンパニー","probabilityPct":65,"confidence":"medium-high","type":"Fresh Earnings"},
+    {"rank":2,"code":"2321","name":"ソフトフロントHD","probabilityPct":61,"confidence":"medium","type":"Fresh AI inference datacenter"},
+    {"rank":3,"code":"1605","name":"INPEX","probabilityPct":59,"confidence":"medium-high","type":"Theme News/Energy"},
+    {"rank":4,"code":"9843","name":"ニトリHD","probabilityPct":57,"confidence":"medium","type":"Sector Alignment/Yen beneficiary"},
+    {"rank":5,"code":"7856","name":"萩原工業","probabilityPct":55,"confidence":"medium","type":"Continuation/Earnings"}
+  ],
+  "secondaryPremarket":["2492 インフォマート","6857 アドバンテスト","285A キオクシアHD","5803 フジクラ","4004 レゾナックHD","9104 商船三井"],
+  "intradayReview":{
+    "premarketSelectionAssessment":"below expectations",
+    "mainMisses":[
+      {"code":"5803","name":"フジクラ","classification":"actionable miss","reason":"AI/optical theme and prior-day heavy turnover were known, but high-pricing-in and credit overhang were weighted too heavily. The 09:05 surge in turnover should have promoted it immediately from secondary to top-tier."},
+      {"code":"3653","name":"モルフォ","classification":"actionable continuation miss","reason":"large recent turnover and continuation structure were not sufficiently surfaced because the process overweighted fresh catalysts. It should have been in the Continuation Momentum scan even if not premarket rank #1."}
+    ],
+    "processChange":[
+      "Do not broaden the universe indiscriminately.",
+      "At 08:35-08:50 rerank using pre-open order flow, peer alignment, overnight sector moves and PTS turnover.",
+      "At 09:05-09:10 allow full reranking using initial 5m turnover, VWAP, high/low, sector-relative strength and spread.",
+      "Weight actual money flow in Continuation Momentum and Sector Alignment more heavily relative to Fresh Catalyst labels."
+    ]
+  },
+  "executions":{
+    "asOf":"2026-09-09 11:15 JST",
+    "confirmedRealizedPnl":6100,
+    "tradeCount":4,
+    "wins":3,
+    "losses":1,
+    "grossProfit":8266,
+    "grossLoss":2166,
+    "trades":[
+      {"code":"5803","name":"フジクラ","qty":100,"buyPrice":5513.0,"sellPrice":5560,"realizedPnl":4700,"assessment":"A","note":"existing holding exited in strong high-price zone; capital freed"},
+      {"code":"3653","name":"モルフォ","qty":100,"buyPrice":1480,"sellPrice":1485,"realizedPnl":333,"assessment":"B","note":"small first profit"},
+      {"code":"3653","name":"モルフォ","qty":100,"buyPrice":1480,"sellPrice":1514,"realizedPnl":3233,"assessment":"A","note":"breakout/turnover confirmation trade"},
+      {"code":"3653","name":"モルフォ","qty":100,"buyPrice":1480,"sellPrice":1460,"realizedPnl":-2166,"assessment":"C entry / A- exit","note":"third entry lacked a fresh setup; stop prevented further damage"}
+    ],
+    "openObservationPosition":{"code":"285A","name":"キオクシアホールディングス","qty":1,"buyPrice":57878,"purpose":"odd-lot observation position"},
+    "disciplineLesson":"A repeat entry in the same winner must be treated as a new trade. Require at least two fresh conditions among new-high breakout, key-level reclaim, renewed volume/turnover expansion before re-entering."
+  },
+  "required0900Checks":["initial high/low","VWAP","5m volume","turnover","Nikkei/TOPIX/Growth","futures","sector peers","order book","spread","gap percentage"],
+  "creditDataNote":"latest weekly credit balances are not uniformly verified premarket; do not fabricate. For low-priced names prioritize turnover/book plus available JSF/regulatory data.",
+  "decisionMemo":"investment-company/decision-memos/2026-09-09/daytrade.md",
+  "dailyTradeLog":"stock-dashboard/data/daily/2026-09-09.json"
+}
