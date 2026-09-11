@@ -1,1 +1,204 @@
-{"asOf":"2026-09-11T07:30:00+09:00","policy":"Fresh trigger first; broad news recorded separately. Promotion requires structural change, beneficiary conditions and evidence.","themes":[{"id":"energy-inflation-shock","rank":1,"title":"原油107ドル × ホルムズ/紅海混乱 × 世界インフレ再加速","status":"PROMOTED A+","trigger":{"date":"2026-09-10","title":"Brent 107.63ドル、WTI 102.48ドルへ6%超急騰"},"change":{"title":"供給ショックが商品価格だけでなく金利・景気・輸送コストへ二次波及"},"chains":[{"title":"上流資源","companies":[{"code":"1605","name":"INPEX"},{"code":"1662","name":"石油資源開発"}]},{"title":"銀行・金利","companies":[{"code":"8306","name":"MUFG"},{"code":"8316","name":"SMFG"}]}]},{"id":"boj-normalization","rank":2,"title":"日銀正常化加速 × 銀行収益","status":"PROMOTED A","trigger":{"date":"2026-09-10","title":"益委員、インフレ加速時の迅速利上げを示唆"},"change":{"title":"政策金利の到達点・利上げペース上振れ可能性"},"chains":[{"title":"銀行","companies":[{"code":"8306","name":"MUFG"},{"code":"8316","name":"SMFG"},{"code":"8411","name":"みずほFG"}]}]},{"id":"ai-infrastructure-capex","rank":3,"title":"Oracleクラウド急成長 × AIインフラCAPEX","status":"PROMOTED A","trigger":{"date":"2026-09-10","title":"Oracleクラウドインフラ売上+121%"},"change":{"title":"AI投資継続を実売上で確認。ただし資本集約化と金利負担も増大"},"chains":[{"title":"テスト・メモリ・光","companies":[{"code":"6857","name":"アドバンテスト"},{"code":"285A","name":"キオクシアHD"},{"code":"5801","name":"古河電工"},{"code":"5803","name":"フジクラ"}]}]},{"id":"fresh-earnings-0910","rank":4,"title":"9/10引け後 Fresh決算・上方修正","status":"PROMOTED B+","trigger":{"date":"2026-09-10","title":"アールプラン・モイ・GMO-FG等の決算/修正"},"change":{"title":"指数逆風下でも企業固有利益成長へ資金が集中し得る"},"chains":[{"title":"企業固有","companies":[{"code":"2983","name":"アールプランナー"},{"code":"5031","name":"モイ"},{"code":"4051","name":"GMO-FG"}]}]}],"screenedOut":[{"code":"9107","name":"川崎汽船","reason":"運賃上昇が燃料・保険・迂回費用を上回る証拠不足"},{"code":"1911","name":"住友林業","reason":"PTS上昇観測はあるが米住宅金利上昇とファンダ逆風が強く、材料の質を追加確認"},{"code":"6976","name":"太陽誘電","reason":"折りたたみiPhoneとの個社収益エクスポージャー一次確認不足"}]}
+{
+  "asOf": "2026-09-11T08:15:00+09:00",
+  "policy": "Fresh trigger first; broad news is recorded separately. Promotion requires a structural change, beneficiary screen and company-specific evidence. Candidate ranking is holdings-blind.",
+  "themes": [
+    {
+      "id": "energy-inflation-shock",
+      "rank": 1,
+      "title": "原油107ドル × 供給不安 × 世界インフレ再加速",
+      "status": "PROMOTED A+",
+      "trigger": {
+        "date": "2026-09-10",
+        "title": "Brent 107.63ドル、WTI 102.48ドルへ6%超急騰",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/business/energy/brent-holds-above-100-tanker-attacks-deepen-supply-fear-2026-09-10/"
+      },
+      "relatedFresh": [
+        {
+          "date": "2026-09-10",
+          "title": "米10年債4.95%近辺まで上昇、米株4日続落",
+          "source": "market intelligence",
+          "url": ""
+        }
+      ],
+      "context": [],
+      "change": {
+        "title": "供給ショックが油価だけでなく金利・景気・輸送コストへ二次波及",
+        "why": "原油急騰が企業利益のセクター間移転とインフレ再加速を同時に起こし得るため、単純な資源高ではなく金利・景気・物流まで含めて評価する。"
+      },
+      "chains": [
+        {
+          "title": "上流石油・ガス",
+          "question": "油価上昇が売上・利益へ直接反映され、供給制約の負の影響が比較的小さい企業はどこか？",
+          "conditions": ["上流比率が高い", "販売価格への正の感応度が高い", "原油高と株価相対強度が同方向"],
+          "companies": [
+            {
+              "code": "1605",
+              "name": "INPEX",
+              "fit": "上流資源への直接度と利益感応度が高い。9/11は原油107ドル台をFresh材料として扱う一方、前日の株価逆行を踏まえ価格確認を必須とする。",
+              "evidence": [
+                {"date": "2026-09-10", "title": "Brent 107.63 / WTI 102.48", "url": "https://www.reuters.com/business/energy/brent-holds-above-100-tanker-attacks-deepen-supply-fear-2026-09-10/"}
+              ],
+              "decision": {"day": "#2 65%", "swing": "A- event conditional", "medium": "要再審査"},
+              "risk": "地政学プレミアムの急剥落。9/10は原油急騰に対して株価が弱く、負のダイバージェンスがある。"
+            }
+          ]
+        },
+        {
+          "title": "海運・物流",
+          "question": "運賃上昇が燃料・保険・迂回費用を上回り、ネット利益を押し上げるか？",
+          "conditions": ["実現運賃上昇", "保険・燃料コストの転嫁", "航路停止・迂回による稼働悪化を吸収"],
+          "companies": []
+        }
+      ]
+    },
+    {
+      "id": "boj-normalization",
+      "rank": 2,
+      "title": "日銀正常化加速 × 銀行NIM改善",
+      "status": "PROMOTED A",
+      "trigger": {
+        "date": "2026-09-10",
+        "title": "日銀・益委員、インフレ加速なら迅速利上げの可能性を示唆",
+        "source": "Reuters",
+        "url": "https://www.reuters.com/world/asia-pacific/boj-may-be-forced-hike-rates-rapidly-if-inflation-accelerates-board-member-masu-2026-09-10/"
+      },
+      "relatedFresh": [
+        {"date": "2026-09-10", "title": "ECB、政策金利を2.50%へ25bp引き上げ", "source": "market intelligence", "url": ""}
+      ],
+      "context": [],
+      "change": {
+        "title": "国内金利の到達点・利上げペースが従来想定より上振れる可能性",
+        "why": "インフレ再加速時の迅速な利上げが示唆され、銀行の貸出利ざや改善余地と景気・信用コスト悪化を同時に再評価する必要がある。"
+      },
+      "chains": [
+        {
+          "title": "銀行",
+          "question": "政策金利上昇がNIM・貸出スプレッド・ROE改善へつながる銀行はどこか？",
+          "conditions": ["貸出スプレッド改善", "預金ベータを抑制できる", "信用コストが安定"],
+          "companies": [
+            {
+              "code": "8306",
+              "name": "三菱UFJ FG",
+              "fit": "国内金利正常化への利益感応度が高く、AI・資源とは異なる収益因子として評価できる。",
+              "evidence": [
+                {"date": "2026-09-10", "title": "BOJ Masu hawkish remarks", "url": "https://www.reuters.com/world/asia-pacific/boj-may-be-forced-hike-rates-rapidly-if-inflation-accelerates-board-member-masu-2026-09-10/"}
+              ],
+              "decision": {"day": "#4 58%", "swing": "A- conditional", "medium": "主力"},
+              "risk": "利上げ期待の織り込み、原油高による景気悪化・信用コスト上昇がNIM改善を相殺する可能性。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-infrastructure-capex",
+      "rank": 3,
+      "title": "Oracleクラウド急成長 × AIインフラCAPEX継続",
+      "status": "PROMOTED A",
+      "trigger": {
+        "date": "2026-09-10",
+        "title": "Oracleクラウドインフラ売上+121%、AI CAPEX実需継続",
+        "source": "Barron's / company results",
+        "url": "https://www.barrons.com/articles/oracle-earnings-stock-price-7608397f"
+      },
+      "relatedFresh": [],
+      "context": [],
+      "change": {
+        "title": "AIインフラ需要は実売上で継続確認。ただし高金利が高PER・資本集約企業を圧迫",
+        "why": "AI投資の実需は続いているためテーマそのものは維持するが、米10年債4.95%近辺では価格評価と資金調達コストを別途厳しく見る。"
+      },
+      "chains": [
+        {
+          "title": "テスト・メモリ・光",
+          "question": "AIクラウドCAPEXが日本企業の受注・利益へ直接波及しているか？",
+          "conditions": ["AI顧客設備投資との直接接続", "高付加価値製品・技術優位", "受注・利益率の裏付け"],
+          "companies": [
+            {
+              "code": "6857",
+              "name": "アドバンテスト",
+              "fit": "AI/HPCの高性能化・複雑化に伴うテスト強度上昇への直接収益感応度が高い。",
+              "evidence": [
+                {"date": "2026-09-10", "title": "Oracle OCI growth confirms continuing AI infrastructure demand", "url": "https://www.barrons.com/articles/oracle-earnings-stock-price-7608397f"}
+              ],
+              "decision": {"day": "監視", "swing": "戦術的に金利逆風", "medium": "主力"},
+              "risk": "高バリュエーションと米長期金利上昇、半導体設備循環。"
+            },
+            {
+              "code": "5803",
+              "name": "フジクラ",
+              "fit": "AI/DC向け高密度光接続の構造受益度が高い。テーマの正しさと短期価格を分けて評価する。",
+              "evidence": [
+                {"date": "2026-09-10", "title": "AI cloud demand continuation", "url": "https://www.barrons.com/articles/oracle-earnings-stock-price-7608397f"}
+              ],
+              "decision": {"day": "監視", "swing": "構造A / 戦術慎重", "medium": "主力"},
+              "risk": "高金利・テーマ過熱・顧客CAPEX循環。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fresh-earnings-0910",
+      "rank": 4,
+      "title": "9/10引け後 Fresh決算・上方修正",
+      "status": "PROMOTED B+",
+      "trigger": {
+        "date": "2026-09-10",
+        "title": "アールプランナー、通期経常24%上方修正・最高益上乗せ・増配",
+        "source": "company disclosure / market intelligence",
+        "url": ""
+      },
+      "relatedFresh": [
+        {"date": "2026-09-10", "title": "モイ、上期最終+78%・2Q最終4.2倍", "source": "company disclosure", "url": ""},
+        {"date": "2026-09-10", "title": "GMOフィナンシャルゲート、最高益予想上乗せ・増配", "source": "company disclosure", "url": ""}
+      ],
+      "context": [],
+      "change": {
+        "title": "指数逆風下でも、利益上方修正や実績成長が明確な企業固有Catalystへ資金集中し得る",
+        "why": "マクロがrisk-offでも、企業固有の利益成長は独立因子として短期資金を集める可能性がある。ただしPTS織り込みを必ず差し引く。"
+      },
+      "chains": [
+        {
+          "title": "企業固有の利益成長",
+          "question": "Fresh決算の改善が実際の利益成長で、PTS織り込み後にも期待値が残るか？",
+          "conditions": ["利益・ガイダンスの明確な上振れ", "PTS過熱度を確認", "寄り後VWAP・初動安値・売買代金で再確認"],
+          "companies": [
+            {
+              "code": "2983",
+              "name": "アールプランナー",
+              "fit": "上期経常+43.8%、通期経常予想を24.1%上方修正し最高益予想を上乗せ。増配も伴うFresh Catalyst。",
+              "evidence": [{"date": "2026-09-10", "title": "通期経常37.7→46.8億円、増配45→55円", "url": ""}],
+              "decision": {"day": "#1 66%", "swing": "A", "medium": "未審査"},
+              "risk": "住宅は金利敏感。PTS上昇で上方修正を一部織り込み済み。"
+            },
+            {
+              "code": "5031",
+              "name": "モイ",
+              "fit": "上期最終+78%、2Q最終4.2倍のFresh決算。ただしPTS+22.5%で短期織り込みが非常に大きい。",
+              "evidence": [{"date": "2026-09-10", "title": "上期最終+78%、2Q最終4.2倍", "url": ""}],
+              "decision": {"day": "#3 60%", "swing": "B+ high-vol", "medium": "未審査"},
+              "risk": "PTS過熱と2Q営業利益率の悪化。ギャップ失敗リスク。"
+            },
+            {
+              "code": "4051",
+              "name": "GMOフィナンシャルゲート",
+              "fit": "最高益予想上乗せ・増配のFresh材料。高金利下では高バリュエーション耐性を確認する。",
+              "evidence": [{"date": "2026-09-10", "title": "最高益予想上乗せ・増配", "url": ""}],
+              "decision": {"day": "準監視", "swing": "#5 B", "medium": "未審査"},
+              "risk": "米10年4.95%近辺では高PERグロースの評価圧縮が強い。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "screenedOut": [
+    {"code": "9101", "name": "日本郵船", "reason": "運賃上昇が燃料・保険・迂回費用を上回るネット利益効果を未確認"},
+    {"code": "9104", "name": "商船三井", "reason": "同上。中東混乱を単純な海運受益として扱わない"},
+    {"code": "9107", "name": "川崎汽船", "reason": "同上。実現運賃と運航コストの裏付け不足"},
+    {"code": "2321", "name": "ソフトフロントHD", "reason": "AI/DC関連だが大型クラウドCAPEXからの利益直接度が低い"},
+    {"code": "1911", "name": "住友林業", "reason": "米住宅金利上昇の逆風が強くFresh材料の質を追加確認"},
+    {"code": "6976", "name": "太陽誘電", "reason": "折りたたみiPhoneとの個社収益エクスポージャー一次確認不足"}
+  ]
+}
