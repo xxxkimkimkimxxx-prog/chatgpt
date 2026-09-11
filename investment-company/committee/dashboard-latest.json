@@ -1,1 +1,186 @@
-{"asOf":"2026-09-11T07:30:00+09:00","autoRefreshMinutes":5,"status":"market intelligence refreshed; 9/11 day/swing committees pending; holdings-blind candidate ranking","marketSnapshot":{"headline":"原油107ドル台・米10年4.95%・米株4日続落。ECB利上げと日銀タカ派化が重なり、商品インフレ＋金利上昇のrisk-offを基本シナリオとする。AIインフラ実需はOracleクラウド急成長で継続確認。","points":["Brent 107.63ドル、WTI 102.48ドル。","米9/10はS&P500 -0.6%、Dow -0.6%、Nasdaq -0.7%、米10年債約4.95%。","ECBは政策金利を2.50%へ25bp引き上げ。","日銀・益委員はインフレ加速時の迅速利上げ可能性を示唆。"]},"committees":{"day":{"kicker":"DAY TRADE COMMITTEE","title":"デイトレ投資委員会（9/11 未実施）","asOf":"2026-09-11T07:30:00+09:00","conclusion":"市場情報部スクリーニング完了。正式な9/11デイトレ委員会は未実施のため順位を捏造しない。","gates":["Fresh候補: 2983アールプランナー、5031モイ、4051GMO-FG","テーマ候補: 1605 INPEX、1662石油資源開発、8306 MUFG","正式順位はデイトレ委員会で価格・板・VWAP・寄前需給を確認後に決定"],"execution":"売買判断は未実施。","holdings":"保有状況は候補順位へ加点していない。","items":[]},"swing":{"kicker":"SWING COMMITTEE","title":"スイング投資委員会（9/11 未実施）","asOf":"2026-09-11T07:30:00+09:00","conclusion":"市場情報部スクリーニング完了。正式な9/11スイング委員会は未実施。","gates":["原油107ドル台の持続性","日銀正常化と銀行NIMへの波及","高金利下でもAIインフラ実需が価格に勝てるか"],"execution":"正式順位はスイング委員会で決定。","holdings":"保有レビューは候補ランキング確定後に別枠。","items":[]},"medium":{"kicker":"MEDIUM / LONG TERM COMMITTEE","title":"中長期投資委員会（最新確定 9/7）","asOf":"2026-09-07T08:27:00+09:00","conclusion":"最新確定日は9/7。日付を9/11へ更新せず、全上場銘柄を保有状況を見ずに一次選抜した既存順位を維持。","gates":["AI/DC需要が売上・利益・受注へ接続しているか","ROIC・FCF・利益率・受注の継続","高金利・円高とバリュエーション耐性"],"execution":"保有状況は候補順位へ加点しない。","holdings":"ネクソン・AnyMind等は保有レビューのみ。","items":[{"rank":1,"code":"6501","name":"日立製作所","grade":"主力","category":"AI・電力・社会インフラ","theme":"AIインフラ","summary":"AI/DC電力・社会インフラの複数成長源。"},{"rank":2,"code":"6857","name":"アドバンテスト","grade":"主力","category":"AI半導体","theme":"AI/HPCテスト","summary":"AI/HPC・高性能メモリのテスト強度上昇。"},{"rank":3,"code":"5803","name":"フジクラ","grade":"主力","category":"AI光通信","theme":"AI/DC光接続","summary":"高密度光接続の構造需要。"},{"rank":4,"code":"8306","name":"三菱UFJ FG","grade":"主力","category":"銀行","theme":"国内金利正常化","summary":"貸出利ざや・資本効率改善。"}]}}}
+{
+  "asOf": "2026-09-11T08:15:00+09:00",
+  "autoRefreshMinutes": 5,
+  "status": "9/11 market intelligence, daytrade and swing committees synchronized; candidate ranking holdings-blind",
+  "marketSnapshot": {
+    "headline": "原油107ドル台・米10年4.95%・米株4日続落。商品インフレ＋金利上昇のrisk-offを基本としつつ、Fresh決算・上流資源・銀行を選別。AIインフラ実需は継続だが高金利で戦術面は慎重。",
+    "points": [
+      "Brent 107.63ドル、WTI 102.48ドル。",
+      "米9/10はS&P500 -0.58%、Dow -0.60%、Nasdaq -0.65%、米10年債約4.95%。",
+      "ECBは政策金利を2.50%へ25bp引き上げ。日銀・益委員もインフレ加速時の迅速利上げ可能性を示唆。",
+      "Oracleクラウドインフラ売上+121%でAIインフラCAPEXの実需は継続確認。"
+    ]
+  },
+  "committees": {
+    "day": {
+      "kicker": "DAY TRADE COMMITTEE",
+      "title": "デイトレ投資委員会",
+      "asOf": "2026-09-11T07:58:00+09:00",
+      "conclusion": "商品インフレショックと高金利を前提に、①Fresh決算、②上流資源、③金利恩恵を優先。寄前順位は固定注文ではなく、9:00〜9:10のVWAP・初動安値・売買代金・相対強度で再審査する。",
+      "gates": [
+        "初動高値/安値、VWAP、5分出来高、売買代金、スプレッド",
+        "日経/TOPIX/グロース・先物・同業バスケットとの相対強度",
+        "大幅GU・PTS過熱は追わず、初回価格形成後の需給一致を確認"
+      ],
+      "execution": "第1群は2983アールプランナー・1605 INPEX。第2群は5031モイ・8306 MUFG。寄前の固定買値は置かず、09:05〜09:10に再順位付け。",
+      "holdings": "保有状況は候補順位に加点しない。5016 JX金属、285Aキオクシアは保有とは独立にセクター相対強度を評価。",
+      "items": [
+        {
+          "rank": 1,
+          "code": "2983",
+          "name": "アールプランナー",
+          "grade": "66%",
+          "category": "Fresh Catalyst / Earnings",
+          "theme": "上方修正・最高益・増配",
+          "summary": "上期経常+43.8%、通期経常予想を37.7→46.8億円へ24.1%上方修正。増配45→55円。PTSは1,826円、東証終値1,737円比+5.12%。",
+          "whyNow": "指数逆風と相関の低い企業固有の利益上振れ。Fresh材料の質は高い。",
+          "condition": "初回価格形成後にVWAP上、初動安値維持、売買代金加速。PTS帯を消化した上で相対強度を確認。",
+          "skip": "大幅GU、VWAP割れ、初動安値割れ、売買代金不足。",
+          "risk": "住宅は金利敏感。PTSで上方修正を一部織り込み済み。"
+        },
+        {
+          "rank": 2,
+          "code": "1605",
+          "name": "INPEX",
+          "grade": "65%",
+          "category": "Theme News / Sector Alignment",
+          "theme": "原油107ドル・供給ショック",
+          "summary": "Brent 107.63ドル、WTI 102.48ドル。上流資源への利益感応度は高い。",
+          "whyNow": "商品インフレ局面で最も直接度の高い日本株候補の一つ。",
+          "condition": "原油高維持、資源株バスケットがTOPIXを上回り、INPEXがVWAP上・初動高値突破。",
+          "skip": "原油高なのに相対弱、VWAP下、Brent急反落。",
+          "risk": "9/10は原油急騰に株価が逆行。地政学プレミアム剥落も速い。"
+        },
+        {
+          "rank": 3,
+          "code": "5031",
+          "name": "モイ",
+          "grade": "60%",
+          "category": "Fresh Catalyst / Earnings",
+          "theme": "上期最終+78%・2Q最終4.2倍",
+          "summary": "Fresh決算は強い一方、PTSは435円、東証終値355円比+22.54%と非常に高い織り込み。",
+          "whyNow": "利益成長は明確だが、価格形成後の需給確認を最優先する高ボラ候補。",
+          "condition": "寄り後の価格形成を待ち、VWAP上・初動安値切り上げ・出来高継続。",
+          "skip": "特買い・極端なGU・ギャップ失敗・VWAP回復不能。",
+          "risk": "PTS過熱。2Q営業利益率は5.6%→3.9%へ悪化。"
+        },
+        {
+          "rank": 4,
+          "code": "8306",
+          "name": "三菱UFJ FG",
+          "grade": "58%",
+          "category": "Sector Alignment / Rates",
+          "theme": "日銀正常化・銀行NIM",
+          "summary": "世界金利上昇と日銀正常化バイアスを背景に、国内銀行の利ざや改善を監視。",
+          "whyNow": "AI・商品とは異なる金利因子。高金利局面での因子分散候補。",
+          "condition": "銀行セクターがTOPIXを上回り、株価がVWAP上・初動高値を突破。",
+          "skip": "銀行全体が相対弱、ギャップダウン継続、金利上昇が景気悪化懸念へ転化。",
+          "risk": "利上げ期待は一部織り込み済み。原油高による信用コスト悪化が逆風。"
+        }
+      ]
+    },
+    "swing": {
+      "kicker": "SWING COMMITTEE",
+      "title": "スイング投資委員会",
+      "asOf": "2026-09-11T08:15:00+09:00",
+      "conclusion": "商品インフレショック・金利上昇下で、Fresh決算の企業固有アルファと、条件付きのINPEX・MUFGを優先。AI構造需要は維持するが高金利で戦術的な追随は抑える。",
+      "gates": [
+        "材料持続性と価格織り込みを分ける",
+        "原油・金利・セクター相対強度が仮説と同方向か",
+        "決算ギャップ維持・支持線・終値ベース破綻条件を確認"
+      ],
+      "execution": "同一因子への集中を避け、Fresh決算・商品・銀行へ分散。保有状況はランキング確定後に別枠でレビュー。",
+      "holdings": "285Aは1株観察、5016は追加せず相対強度確認。ネクソン・AnyMind等は候補順位と切り離して保有レビューのみ。",
+      "items": [
+        {
+          "rank": 1,
+          "code": "2983",
+          "name": "アールプランナー",
+          "grade": "A",
+          "category": "Fresh決算",
+          "theme": "上方修正・最高益・増配",
+          "summary": "3〜15営業日。企業固有の利益上振れが主因子。",
+          "whyNow": "Fresh決算の質が高く、マクロ因子との相関が低い。",
+          "condition": "1,780〜1,820円の押し吸収、または1,850円前後の再奪回・定着。",
+          "skip": "1,700円終値割れ、決算ギャップ失敗、相対強度悪化。",
+          "risk": "住宅の金利感応度とPTS織り込み。"
+        },
+        {
+          "rank": 2,
+          "code": "1605",
+          "name": "INPEX",
+          "grade": "A- event conditional",
+          "category": "Energy",
+          "theme": "原油107ドル・供給ショック",
+          "summary": "3〜10営業日。テーマ自体はAだが、株価の負のダイバージェンスを重く見る。",
+          "whyNow": "油価への直接度は高いが、価格確認なしには入らない。",
+          "condition": "3,986円奪回＋資源株相対強、または3,850〜3,900円反転。",
+          "skip": "3,780円割れ、Brent100ドル割れ、停戦ヘッドライン。",
+          "risk": "地政学プレミアムの急剥落。"
+        },
+        {
+          "rank": 3,
+          "code": "8306",
+          "name": "三菱UFJ FG",
+          "grade": "A- conditional",
+          "category": "銀行・金利",
+          "theme": "日銀正常化",
+          "summary": "2〜6週間。国内金利正常化の収益恩恵を評価。",
+          "whyNow": "AI・商品と異なる因子でポートフォリオ分散に寄与。",
+          "condition": "3,550〜3,600円で安定し銀行セクターがTOPIXを上回る。3,680円超で追加確認。",
+          "skip": "3,500円割れ＋銀行相対弱。",
+          "risk": "利上げ期待織り込み、信用コスト、原油高による景気悪化。"
+        },
+        {
+          "rank": 4,
+          "code": "5031",
+          "name": "モイ",
+          "grade": "B+ high-vol",
+          "category": "Fresh決算",
+          "theme": "高成長・高織り込み",
+          "summary": "3〜10営業日。Fresh決算は強いがPTS+22.5%で過熱。",
+          "whyNow": "材料は強いが、価格形成後の押し目構造ができた場合のみ。",
+          "condition": "420円以下の押し目構造＋出来高支持。",
+          "skip": "ギャップ失敗、イベント前355〜380円帯への急速な回帰。",
+          "risk": "PTS過熱と利益率悪化。"
+        },
+        {
+          "rank": 5,
+          "code": "4051",
+          "name": "GMOフィナンシャルゲート",
+          "grade": "B",
+          "category": "決算・キャッシュレス",
+          "theme": "最高益予想上乗せ・増配",
+          "summary": "2〜6週間。Fresh修正は評価するが高金利でバリュエーション圧力が強い。",
+          "whyNow": "企業固有の業績改善は確認できる。",
+          "condition": "5,800円支持、6,000円再奪回。",
+          "skip": "5,700円割れ＋グロース相対弱。",
+          "risk": "米10年4.95%近辺で高PER銘柄に評価圧縮。"
+        }
+      ]
+    },
+    "medium": {
+      "kicker": "MEDIUM / LONG TERM COMMITTEE",
+      "title": "中長期投資委員会（最新確定 9/7）",
+      "asOf": "2026-09-07T08:27:00+09:00",
+      "conclusion": "最新確定日は9/7。全上場銘柄を保有状況を見ずに一次選抜した順位を維持し、9/11の新情報は次回正式再審査材料とする。",
+      "gates": [
+        "AI/DC需要が売上・利益・受注へ接続しているか",
+        "ROIC・FCF・利益率・受注の継続",
+        "高金利・円高とバリュエーション耐性"
+      ],
+      "execution": "保有状況は候補順位へ加点しない。候補ランキング確定後にポートフォリオレビューを別実施。",
+      "holdings": "ネクソン・AnyMindは保有レビューのみで候補ランキングには含めない。",
+      "items": [
+        {"rank": 1, "code": "6501", "name": "日立製作所", "grade": "主力", "category": "AI・電力・社会インフラ", "theme": "AIインフラ", "summary": "Lumada/HMAX、AI/DC電力、社会インフラの複数成長源。"},
+        {"rank": 2, "code": "6857", "name": "アドバンテスト", "grade": "主力", "category": "AI半導体", "theme": "AI/HPCテスト", "summary": "AI/HPC・高性能メモリのテスト強度上昇。"},
+        {"rank": 3, "code": "5803", "name": "フジクラ", "grade": "主力", "category": "AI光通信", "theme": "AI/DC光接続", "summary": "高密度光接続の構造需要。保有状況とは独立に市場全体スクリーニングで選定。"},
+        {"rank": 4, "code": "8306", "name": "三菱UFJ FG", "grade": "主力", "category": "銀行", "theme": "国内金利正常化", "summary": "貸出利ざや・資本効率改善。"},
+        {"rank": 5, "code": "6701", "name": "NEC", "grade": "準主力", "category": "防衛AI・政府DX", "theme": "C2・AI・データ主権", "summary": "防衛C2/AI、政府DX、ネットワークの複数軸。"},
+        {"rank": 6, "code": "4704", "name": "トレンドマイクロ", "grade": "準主力", "category": "サイバーセキュリティ", "theme": "AIサイバー", "summary": "継続収益を伴うサイバー純度の高い候補。"},
+        {"rank": 7, "code": "285A", "name": "キオクシアHD", "grade": "準主力", "category": "AIメモリ", "theme": "AIメモリ需要", "summary": "AIメモリ純度は高いが、CAPEX・価格循環・FCF変動が大きい。"},
+        {"rank": 8, "code": "7011", "name": "三菱重工業", "grade": "準主力", "category": "防衛・エネルギー", "theme": "防衛AI・原子力", "summary": "政策テーマだけでなく受注・案件へ接続しやすい大型株。"}
+      ]
+    }
+  }
+}
