@@ -1,0 +1,20 @@
+{
+  "date":"2026-09-12",
+  "type":"weekend_committee",
+  "asOf":"2026-09-12 16:01 JST",
+  "targetSession":"2026-09-14",
+  "newsFreshness":{"checkedThrough":"2026-09-12 16:01 JST","status":"verified","note":"Reutersの9/12週末ニュース、9/11米国市場、BOJ/Fed、9/11引け後IR、企業公式リリースを再確認。月曜6:30に再検索が必要。"},
+  "committeeDecision":{"marketStance":"Fresh Catalyst優先。高金利・原油高で高PERグロースの無差別買いは避け、Fresh決算・銀行・上流資源・個別AIを価格確認後に選別。","daytradeTop5":["6317 北川鉄工所","285A キオクシアHD","3539 JMホールディングス","1605 INPEX","8306 MUFG"],"swingTop5":["8306 MUFG","285A キオクシアHD","6317 北川鉄工所","1605 INPEX","3539 JMホールディングス"]},
+  "latestNews":[
+    {"date":"2026-09-12","source":"Reuters","headline":"Saudi East-West pipeline temporarily shut after drone attack","impact":"oil supply risk; upstream positive, inflation/cost negative"},
+    {"date":"2026-09-11","source":"Reuters","headline":"Wall Street rebounds; Fed hike odds near 90% after CPI","impact":"risk appetite improves but 10Y near 5% remains valuation headwind"},
+    {"date":"2026-09-11","source":"Reuters","headline":"BOJ expected to hike 25bp to 1.25% next week","impact":"banks positive; yen/rates risk for exporters and high-duration growth"},
+    {"date":"2026-09-11","source":"Reuters","headline":"Kioxia plans U.S. ADS listing","impact":"Fresh liquidity/global-AI-investor catalyst"},
+    {"date":"2026-09-11","source":"Kabutan/company disclosure","headline":"Kitagawa Iron Works raises recurring profit forecast 53.3% and annual dividend to 110 yen","impact":"top Fresh earnings candidate for Monday"},
+    {"date":"2026-09-11","source":"Kabutan","headline":"JM Holdings authorizes buyback up to 3.81% / 2 billion yen","impact":"buyback starts Sep14; price support candidate"},
+    {"date":"2026-09-10","source":"JX Advanced Metals","headline":"Toho Titanium doubles capacity for ultra-fine nickel powder for AI data-center MLCCs","impact":"structural AI-material catalyst; technical invalidation still takes precedence"}
+  ],
+  "reviewOf20260911":{"topLesson":"方向予想と実行可能性を別スコア化する。モイは方向的中でも張り付きで実行困難。","rankingError":"アールプランナー1位は寄りの織り込みリスクを過小評価。","workingCall":"INPEXは+1.37%、高値4,008円で原油テーマが機能。"},
+  "portfolio":{"positionsSource":"data/holdings.json","derivedUnrealizedPnlAtSep11Close":-67828,"note":"No new user-reported trades after Sep9; do not infer executions."},
+  "requiredMondayRefresh":["Reuters/official news since weekend committee","oil futures","USDJPY","Nikkei futures","US futures","company IR/TDnet","PTS/order book","09:00-09:10 VWAP/initial high-low"]
+}
