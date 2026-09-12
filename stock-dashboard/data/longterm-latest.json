@@ -1,1 +1,28 @@
-{"asOf":"2026-09-07 08:27 JST","horizon":"1-12 months","selectionPolicy":{"universe":"eligible Japan-listed equities","holdingsBlindFirstPass":true,"rule":"Create the candidate ranking without using current holdings. A held stock may appear only if it independently passes the same market-wide screen and would rank there even if not owned. Holdings status must never promote, protect, or retain a ticker in the candidate list.","portfolioReviewSeparated":true},"dataCaveat":"holdings.json is stale as of 2026-08-31; rankings are thesis decisions, not price/size orders","mainCandidates":[{"code":"6501","name":"日立製作所","reason":"Lumada/HMAX・AI/DC電力・社会インフラの複数成長源、FY26ガイダンス上方修正、ROIC/FCF改善"},{"code":"6857","name":"アドバンテスト","reason":"FY26 Q1売上+39.3%、営業利益+53.3%、AI/HPC/高性能メモリのテスト強度上昇"},{"code":"5803","name":"フジクラ","reason":"AIデータセンター光接続の高い収益感応度と財務改善。保有状況とは独立に市場全体スクリーニングで主力候補"},{"code":"8306","name":"MUFG","reason":"国内金利正常化の利益感応度がQ1純利益+48%、貸出スプレッド改善で実証。AI因子との分散効果"}],"secondaryCandidates":[{"code":"6701","name":"NEC"},{"code":"4704","name":"トレンドマイクロ"},{"code":"285A","name":"キオクシアHD"},{"code":"7011","name":"三菱重工業"}],"watch":[{"code":"5801","name":"古河電工"},{"code":"9678","name":"カナモト"},{"code":"6954","name":"ファナック"},{"code":"6506","name":"安川電機"}],"holdingsReview":[{"code":"3659","name":"ネクソン","status":"portfolio review only","reason":"保有銘柄としてKPI・利益率・機会費用を確認するが、市場全体の中長期候補順位には自動的に入れない"},{"code":"5027","name":"AnyMind Group","status":"portfolio review only","reason":"保有銘柄として成長率・利益率・CF・評価圧縮を確認するが、市場全体の中長期候補順位には自動的に入れない"}],"speculative":[{"code":"4597","name":"ソレイジア・ファーマ","reason":"承認・提携の非線形上振れと希薄化/開発失敗リスクを分離管理"}],"restructureCandidates":[{"code":"2926","name":"篠崎屋","reason":"構造的利益成長・競争優位の裏付け不足、機会費用大"},{"code":"8518","name":"日本アジア投資","reason":"優待材料と中長期投資価値を分離。ROE/CF改善の主力仮説が弱い"}],"promotedStructuralThemes":["AIインフラ投資加速（テスト・メモリ・光・電力/DC運用）","国内金利正常化・銀行ROE改善","防衛AI/C2/無人・データ主権","AIサイバー/重要インフラ防衛"],"notMainDespiteFreshCatalyst":["中東供給リスク：短中期には強いが1-12か月では地政学プレミアム依存","中国金融資本増強×FA：日本企業利益への因果がまだ一段弱い","GEO/生成AI検索：行動変化は強いが個社売上KPI不足"],"nextChecks":["BOJ 2026-09-17/18","Q2 earnings and guidance","Advantest tester TAM/orders","Fujikura optical/DC orders","Hitachi Lumada/HMAX and ROIC","MUFG domestic lending spread"],"portfolioReviewChecks":["Nexon new-title KPI and margin","AnyMind organic growth/margin/CF","Solasia pipeline/financing"],"decisionMemo":"investment-company/decision-memos/2026-09-07/longterm.md"}
+{
+  "asOf":"2026-09-12 16:01 JST",
+  "horizon":"1-12 months",
+  "selectionPolicy":{"universe":"eligible Japan-listed equities","holdingsBlindFirstPass":true,"rule":"Candidate ranking is made without using current holdings as a positive factor. A held stock may appear only if it independently passes the same market-wide screen.","portfolioReviewSeparated":true},
+  "macroOverlay":"BOJ normalization supports banks; US rates near 5% compress duration multiples; AI capex remains structural; oil supply shock raises inflation/cost risk.",
+  "mainCandidates":[
+    {"rank":1,"code":"6501","name":"日立製作所","reason":"Lumada/HMAX、AI/DC電力・社会インフラの複数成長源。単一半導体ベータより分散された構造成長。"},
+    {"rank":2,"code":"8306","name":"MUFG","reason":"国内金利正常化の利益感応度。9/17-18 BOJイベントは短期織り込みリスクがあるが1-12か月ではROE改善テーマ。"},
+    {"rank":3,"code":"6857","name":"アドバンテスト","reason":"AI/HPC・高性能メモリのテスト強度上昇。米金利上昇局面のバリュエーション調整は買い場判定が必要。"},
+    {"rank":4,"code":"5803","name":"フジクラ","reason":"AIデータセンター光接続の高い収益感応度。足元調整でも構造テーマは維持、価格過熱時は追わない。"},
+    {"rank":5,"code":"285A","name":"キオクシアHD","reason":"AIメモリ需要に加え米国ADS上場計画が流動性・海外投資家アクセス改善材料。YTD急騰と金利リスクでイベント条件付き。"}
+  ],
+  "secondaryCandidates":[
+    {"code":"5016","name":"JX金属","reason":"AIデータセンター向け材料増産・日経225採用。構造材料は強いが足元のテクニカル悪化は別管理。"},
+    {"code":"6701","name":"NEC"},{"code":"4704","name":"トレンドマイクロ"},{"code":"7011","name":"三菱重工業"}
+  ],
+  "watch":[{"code":"5801","name":"古河電工"},{"code":"6954","name":"ファナック"},{"code":"6506","name":"安川電機"}],
+  "holdingsReview":[
+    {"code":"3659","name":"ネクソン","status":"portfolio review only","reason":"9/30特別配当と新作KPIを機会費用と比較。市場全体ランキングへ保有理由で残さない。"},
+    {"code":"5027","name":"AnyMind Group","status":"portfolio review only","reason":"3Q成長期待はあるが自社株買い終了後の需給と資金拘束を比較。"},
+    {"code":"5016","name":"JX金属","status":"portfolio review + independent secondary candidate","reason":"独立スクリーニングでもAI材料・指数採用は評価。一方、保有管理では3,730円トリガー割れを優先。"}
+  ],
+  "speculative":[{"code":"4597","name":"ソレイジア・ファーマ","reason":"承認・提携の非線形上振れと希薄化/開発失敗リスクを分離管理。"}],
+  "restructureCandidates":[{"code":"2926","name":"篠崎屋","reason":"利益圏だが構造的成長の確度より機会費用が大きい。"},{"code":"8518","name":"日本アジア投資","reason":"低流動性・材料待ちでFresh候補への資金配分効率が低い。"},{"code":"5027","name":"AnyMind Group","reason":"全量を3Qまで拘束するより一部縮小でオプションを残す方が資金効率が高い。"}],
+  "promotedStructuralThemes":["AIインフラ（テスト・メモリ・光・先端材料）","国内金利正常化・銀行ROE改善","社会インフラDX","防衛/データ主権"],
+  "nearTermRisks":["Fed/BOJ同時引き締め","米10年金利5%近辺","中東原油供給ショック","円高・キャリー巻き戻し"],
+  "nextChecks":["2026-09-14 Monday price discovery","BOJ 2026-09-17/18","Fed meeting next week","Kioxia ADS details/timing","JX Metals 3730/3812 reclaim","Nexon Sep30 special-dividend decision"]
+}
