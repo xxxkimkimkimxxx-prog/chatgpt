@@ -1,0 +1,10 @@
+{
+  "date":"2026-09-11",
+  "asOf":"2026-09-12 16:01 JST",
+  "candidateScorecard":{"daytrade":[{"rank":1,"code":"2983","name":"アールプランナー","result":"失敗/セットアップ不成立。終値約-3%。寄りが想定エントリー帯を下回り、見送り条件は機能。"},{"rank":2,"code":"1605","name":"INPEX","result":"小幅成功。終値3,930円(+1.37%)、高値4,008円。"},{"rank":3,"code":"5031","name":"モイ","result":"方向的中・実行困難。435円(+22.54%)で価格が張り付き。"},{"rank":4,"code":"8306","name":"MUFG","result":"終値-0.03%だが3,577→3,683円まで場中反発。"}]},
+  "classification":{"forecastVsExecution":"モイのような張り付きは予想的中でも執行成功ではない。以後、方向予想スコアと実行可能性スコアを分離する。","avoidableMiss":"アールプランナー1位は寄りの織り込みリスクを過小評価。エントリー条件で回避できてもランキング改善対象。","hardToPredict":"金曜引け後や週末に発生したサウジパイプライン停止・キオクシアADS報道は9/11朝には未確定で、9/14候補へ新規反映する。"},
+  "portfolio":{"derivedUnrealizedPnl":-67828,"asOf":"2026-09-11 close","basis":"holdings.json quantities/averageCost × 9/11 close; not iSPEED-confirmed"},
+  "userTrading":{"status":"9/11の新規約定報告は接続データで確認できないため未確定。0円とはしない。"},
+  "lessons":["方向予想と実行可能性を別スコア化","Fresh決算は寄りの織り込み度を独立評価","週末ニュースで月曜候補を全面更新","保有の好材料より事前無効化ラインを優先"],
+  "nextSession":"2026-09-14"
+}
