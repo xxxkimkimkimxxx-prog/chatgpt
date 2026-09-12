@@ -1,44 +1,34 @@
 {
-  "asOf":"2026-09-09 20:44 JST",
-  "source":"2026-09-09 after-close market review plus user-supplied iSPEED holdings/execution screenshots",
-  "today":{
-    "realizedPnl":6100,
-    "tradeCount":4,
-    "wins":3,
-    "losses":1,
-    "status":"大引け後確認済み",
-    "summary":"フジクラ100株を5,560円で売却し+4,700円。モルフォ3取引合計+1,400円。確定損益+6,100円。"
+  "asOf":"2026-09-12 16:01 JST",
+  "status":"weekend_committee",
+  "targetSession":"2026-09-14",
+  "newsAsOf":"2026-09-12 16:01 JST",
+  "marketSummary":"9/12週末委員会。米株は9/11にS&P500 +0.86%、Nasdaq +0.96%、Dow +0.98%と反発した一方、米CPIを受けFed利上げ観測は約9割、米10年金利は5%近辺。中東ではサウジ東西横断パイプライン停止で原油供給リスクが再燃。日本は9/17-18の日銀会合で1.25%への25bp利上げが有力。9/14は全面高を追わず、Fresh決算・銀行・資源・個別AI材料を価格確認後に選別する。",
+  "marketStance":"週末暫定：Fresh Catalyst優先。高金利・原油高で高PERグロースの無差別買いは避ける。銀行・上流資源は相対強度確認、AIはキオクシア等の個別Fresh材料だけを選別。",
+  "portfolioTotalUnrealizedPnl":-67828,
+  "portfolioPnlBasis":"2026-09-11東証終値とholdings.jsonの平均取得単価による派生計算。iSPEED確認値ではない。",
+  "nextWatch":["9/14寄り前：中東情勢とBrent/WTIが100ドル台を維持するか。週末ヘッドラインでINPEX等のGU幅を再評価。","9/14寄り前：キオクシアの米国ADS上場計画を受けた気配・売買代金。大幅GUなら追わずVWAP形成待ち。","北川鉄工所は上方修正+大幅増配のFresh決算。特別買い/15%超GUなら予想的中と売買可能性を分ける。","9/17-18日銀会合：MUFGなど銀行株のTOPIX比相対強度、円相場、国内金利。","JX金属は9/11終値3,695円で従来の3,730円削減レビュー線を下回った。月曜に3,730→3,812円を取り戻せないなら縮小優先。"],
+  "capitalFlow":[
+    {"rank":1,"theme":"Fresh決算・上方修正","strength":"A","examples":["6317 北川鉄工所","446A ノースサンド","460A BRANU"],"note":"週末に新情報が固定され、月曜の価格発見が未了。GU幅とVWAPで織り込み度を判定。"},
+    {"rank":2,"theme":"銀行・国内金利正常化","strength":"A-","examples":["8306 MUFG","8316 三井住友FG","8411 みずほFG"],"note":"日銀1.25%利上げ観測。織り込み済みリスクがあるためセクター相対強度が条件。"},
+    {"rank":3,"theme":"原油・上流資源","strength":"A- event","examples":["1605 INPEX","1662 石油資源開発"],"note":"サウジパイプライン停止で供給リスク。停戦・復旧ヘッドラインで逆回転しやすい。"},
+    {"rank":4,"theme":"AIメモリ・半導体個別Fresh","strength":"A- selective","examples":["285A キオクシア","6857 アドバンテスト"],"note":"キオクシアADS材料は新鮮。米金利5%近辺のため広範な高PER半導体買いは避ける。"},
+    {"rank":5,"theme":"AIデータセンター材料","strength":"B+ structural","examples":["5016 JX金属","5803 フジクラ","5801 古河電工"],"note":"構造テーマは維持。ただし足元は高値波乱。材料だけでテクニカル無効化を無視しない。"}
+  ],
+  "daytrade":{
+    "status":"2026-09-14 weekend pre-plan",
+    "candidates":[
+      {"rank":1,"code":"6317","name":"北川鉄工所","theme":"Fresh Earnings/上方修正+増配","stance":"最優先。ただし価格形成後のみ","reason":"通期経常30→46億円(+53.3%)、年間配当64→110円。金曜16時開示で月曜が初回価格反応。","entryCondition":"寄り後5-10分で初動安値を守りVWAP上、出来高継続。GUが過大でなければ最初の押し目を評価。","invalidCondition":"特別買い/S高張り付きで約定困難、15%超GU後にVWAP割れ、初動安値更新。","targetGuide":"価格形成後にR/R>=2のときのみ。固定目標は寄り前に置かない。"},
+      {"rank":2,"code":"285A","name":"キオクシアホールディングス","theme":"Fresh Catalyst/米国ADS上場計画","stance":"Fresh材料で独立昇格。保有は評価に加点しない","reason":"Reutersが米国ADS上場計画とグローバルAI資金の流動性改善期待を報道。","entryCondition":"9/11終値54,030円を基準に、寄り後VWAP上・初動安値切り上げ・半導体同業比の相対強度を確認。","invalidCondition":"大幅GU後のVWAP割れ、53,000円台回復失敗、半導体指数が弱いのに単独で出来高失速。","targetGuide":"高値更新追随より、押し目吸収確認を優先。"},
+      {"rank":3,"code":"3539","name":"JMホールディングス","theme":"Fresh Capital Policy/自社株買い","stance":"需給下支え候補","reason":"発行済み株式(自己株除く)3.81%、194万株・20億円上限の自社株買いを9/14開始。","entryCondition":"1,336円前日終値基準。寄り後の買い支え、VWAP維持、出来高増を確認。","invalidCondition":"材料GUを全戻しし前日終値割れ、VWAP下で売買代金減少。","targetGuide":"自社株買いだけを理由にGU追いしない。"},
+      {"rank":4,"code":"1605","name":"INPEX","theme":"中東供給リスク/原油","stance":"イベント条件付き","reason":"Brentは金曜104ドル台、土曜にサウジ東西横断パイプライン停止。","entryCondition":"週明け原油が100ドル超を維持し、資源株バスケットがTOPIXを上回る。3,930円近辺を維持して4,008円再突破を確認。","invalidCondition":"復旧・停戦ヘッドライン、Brent100ドル割れ、INPEXが原油高でもVWAP下。","targetGuide":"地政学プレミアムのため持越しサイズは抑制。"},
+      {"rank":5,"code":"8306","name":"三菱UFJ FG","theme":"BOJ利上げ/銀行","stance":"会合前の相対強度確認","reason":"日銀は9/17-18会合で1.25%への25bp利上げが有力。9/11は3,661円、安値から戻した。","entryCondition":"3,650円前後を維持し銀行指数がTOPIXを上回る。3,683円上抜けは出来高確認。","invalidCondition":"3,575円割れ、銀行3メガが揃って相対弱、国内金利低下。","targetGuide":"イベント前の織り込み過多に注意。"}
+    ],
+    "intradayRerank":[{"rank":1,"code":"6317","name":"北川鉄工所","theme":"週末Fresh決算","stance":"月曜寄り後に価格形成で再順位付け"},{"rank":2,"code":"285A","name":"キオクシアHD","theme":"米国ADS Fresh","stance":"VWAP・出来高・同業相対強度が条件"},{"rank":3,"code":"3539","name":"JMHD","theme":"自社株買い","stance":"前日終値防衛と買い支え確認"},{"rank":4,"code":"1605","name":"INPEX","theme":"原油供給ショック","stance":"原油100ドル超と資源相対強度が条件"},{"rank":5,"code":"8306","name":"MUFG","theme":"BOJ正常化","stance":"銀行セクター確認後"}],
+    "morningForecastReview":[{"name":"アールプランナー","code":"2983","forecastProbability":66,"result":"失敗/セットアップ不成立","closePct":"約-3%","note":"寄りが想定押し目帯を下回り、その後も弱い。予想順位1位は過大評価だったが、買い条件不成立なら見送りが正解。"},{"name":"INPEX","code":"1605","forecastProbability":65,"result":"小幅成功","closePct":"+1.37%","note":"高値4,008円まで上昇。原油テーマは機能したが、終値3,930円で高値追いは不利。"},{"name":"モイ","code":"5031","forecastProbability":60,"result":"方向的中・実行困難","closePct":"+22.54%","note":"435円で寄りから終日張り付きに近い価格形成。予想的中と実際に買えたかを別スコアにする。"},{"name":"MUFG","code":"8306","forecastProbability":58,"result":"終値中立/場中反発","closePct":"-0.03%","note":"3,577→3,683円まで反発。会合前の相対強度戦略は継続。"}]
   },
-  "marketReview":{
-    "nikkeiClose":65142.78,
-    "nikkeiPct":-0.19,
-    "topixClose":4046.64,
-    "topixPct":-0.09,
-    "regime":"指数横ばいに近い一方、非鉄・光通信・資源へ資金集中するローテーション相場",
-    "bestMorningCall":"2321 ソフトフロントHD：+35.97%ストップ高",
-    "largestSelectionError":"1436 グリーンエナジー&Cを1位にしたこと。寄り天・PTS先食いを過小評価。ただし実行条件は不成立で見送りが正解。",
-    "largestMiss":"5801古河電工+12.6%、5803フジクラ+8.1%。米Corning-Verizon大型光ファイバー契約を朝順位へ昇格できなかった。"
-  },
-  "holdingsReference":[
-    {"code":"285A","name":"キオクシアホールディングス","lastConfirmedQty":1,"avg":57878,"reference":57000,"management":"単元未満1株の観察用ポジション。AIハード内の相対強度を確認。"},
-    {"code":"2926","name":"篠崎屋","lastConfirmedQty":1000,"avg":119,"reference":127,"management":"低流動性。保有レビューと全市場ランキングを分離。"},
-    {"code":"3659","name":"ネクソン","lastConfirmedQty":200,"avg":3146.45,"reference":3115,"management":"既存保有管理。全市場の中長期候補ランキングには保有理由で残さない。"},
-    {"code":"4597","name":"ソレイジア・ファーマ","lastConfirmedQty":3000,"avg":28.93,"reference":29,"management":"通常の中長期ランキングと分離した投機枠。"},
-    {"code":"5016","name":"JX金属","lastConfirmedQty":100,"avg":3902,"reference":3909,"management":"非鉄金属セクター本流。ただし当日+4.9%後の新規なので翌日の利食い・ギャップを警戒。"},
-    {"code":"5027","name":"ANYMIND GROUP","lastConfirmedQty":400,"avg":830.5,"reference":748,"management":"既存保有レビュー。追加は原則停止。全市場ランキングには保有理由で残さない。"},
-    {"code":"8518","name":"日本アジア投資","lastConfirmedQty":200,"avg":162,"reference":155,"management":"低流動性。追加買いは慎重。"}
-  ],
-  "portfolioUnrealizedPnlConfirmedFromScreenshot":-32668,
-  "executionReview":[
-    "フジクラ5,560円売却は終値5,493円を上回る水準で利益確定できており良好。",
-    "モルフォは3回目再エントリーのセットアップ条件を厳格化する。損切り自体は実行できた。",
-    "JX金属3,902円買いはセクター本流だが、当日大幅高後なので翌日の利食い耐性を確認する。"
-  ],
-  "processChanges":[
-    "海外同業大型契約→日本対応業界→PTS/寄り前気配の一致をSector Leader Freshとして朝順位へ反映",
-    "Fresh Catalystの織り込み度に前日騰落率・PTS乖離・GU率を必須化",
-    "候補ランキングと保有レビューの完全分離を継続"
-  ],
-  "reviewPath":"data/reviews/2026-09-09.json",
-  "ruleReference":"data/trading-rules.json"
+  "swing":{"status":"2026-09-14 weekend pre-plan","candidates":[{"rank":1,"code":"8306","name":"三菱UFJ FG","stance":"A / BOJイベント条件付き","entryCondition":"3,650-3,680円帯を維持し銀行セクターがTOPIXをアウトパフォーム。","invalidCondition":"3,575円割れ+銀行相対弱。","targetGuide":"3,800円台再トライを評価。","event":"9/17-18 日銀会合。25bp利上げが有力だが織り込み済みに注意。"},{"rank":2,"code":"285A","name":"キオクシアHD","stance":"A- / Fresh ADS listing","entryCondition":"54,000円近辺を維持し、VWAP上・出来高拡大でFresh材料の需給を確認。","invalidCondition":"大幅GU全戻し、53,000円台を回復できず、米金利上昇で半導体全面安。","targetGuide":"イベント高値更新は追わず段階エントリー。","event":"米国ADS上場計画報道。YTD急騰後なのでボラティリティ大。"},{"rank":3,"code":"6317","name":"北川鉄工所","stance":"A- / 決算リレーティング","entryCondition":"月曜のギャップ後にVWAP・初動安値を維持し、2日目継続が見込める価格形成。","invalidCondition":"初日GU全戻し、前日終値方向へ急落。","targetGuide":"配当利回り・修正EPSを再評価して価格形成後に設定。","event":"通期経常+53.3%、年間配当110円。"},{"rank":4,"code":"1605","name":"INPEX","stance":"A- / 地政学ヘッジ","entryCondition":"Brent100ドル超継続かつINPEXが3,900円台を維持。","invalidCondition":"復旧/停戦でBrent100ドル割れ、3,850円割れ。","targetGuide":"4,008円→4,100円台。","event":"週末のサウジパイプライン停止。"},{"rank":5,"code":"3539","name":"JMホールディングス","stance":"B+ / 自社株買い需給","entryCondition":"前日終値1,336円を上回り、自社株買い開始日にVWAP上を維持。","invalidCondition":"前日終値割れ定着。","targetGuide":"戻り高値帯を出来高とともに評価。","event":"3.81%・20億円上限の自己株買い。"}]},
+  "holdingsUpdate":[{"code":"285A","name":"キオクシアホールディングス","observedAt":"2026-09-11 close","price":54030,"averageCost":57878,"stance":"1株観察継続。Fresh ADS材料で月曜は独立候補入り。ただし保有理由で順位を上げない。","technical":"9/11終値54,030円。高金利環境でボラ大。","upsideTrigger":"54,000円維持→VWAP上・出来高増。","downsideTrigger":"53,000円台回復失敗なら追加なし。"},{"code":"2926","name":"篠崎屋","observedAt":"2026-09-11 close","price":125,"averageCost":119,"stance":"資金回収候補。","technical":"低流動性。","upsideTrigger":"127円超え+出来高増。","downsideTrigger":"123-124円割れで縮小優先。"},{"code":"3659","name":"ネクソン","observedAt":"2026-09-11 close","price":3070,"averageCost":3146.45,"stance":"9/30特別配当イベントまで継続比較。","technical":"3,000円台支持は維持するが戻り売りが重い。","upsideTrigger":"3,120→3,150円回復。","downsideTrigger":"3,000円明確割れで再評価。"},{"code":"4597","name":"ソレイジア・ファーマ","observedAt":"2026-09-11 close","price":29,"averageCost":28.93,"stance":"投機枠継続、追加停止。","technical":"29円横ばい。","upsideTrigger":"一次IR/承認/提携材料+出来高。","downsideTrigger":"27円割れ定着または希薄化材料。"},{"code":"5016","name":"JX金属","observedAt":"2026-09-11 close","price":3695,"averageCost":3902,"stance":"縮小レビューへ格上げ。従来3,730円トリガーを終値で下回ったためナンピン禁止。","technical":"AI材料・日経225採用と株価失速が逆行。","upsideTrigger":"3,730円回復→3,812円を取り戻せば保有継続再評価。","downsideTrigger":"3,650円割れ/戻り弱なら資金回収を優先。"},{"code":"5027","name":"AnyMind Group","observedAt":"2026-09-11 close","price":749,"averageCost":830.5,"stance":"追加なし。戻りで200株縮小を第一候補。","technical":"自社株買い終了後の需給支えが弱い。","upsideTrigger":"780→800円回復で売却条件を再評価。","downsideTrigger":"720円割れ定着なら縮小前倒し。"},{"code":"8518","name":"日本アジア投資","observedAt":"2026-09-11 close","price":154,"averageCost":162,"stance":"優先的な資金回収候補。","technical":"低流動性・材料待ち。","upsideTrigger":"160→162円回復。","downsideTrigger":"150円割れ定着。"}],
+  "latestNews":[{"published":"2026-09-12","headline":"サウジの東西横断原油パイプラインがドローン攻撃後に一時停止","source":"Reuters","impact":"原油100ドル超の供給プレミアムが週明けも残る。"},{"published":"2026-09-11","headline":"米株は金曜反発、CPIでFed利上げ観測は約9割へ","source":"Reuters","impact":"米10年金利5%近辺が高PERグロースの上値を抑える。"},{"published":"2026-09-11","headline":"日銀は9月会合で1.25%への25bp利上げが有力","source":"Reuters","impact":"銀行追い風、円高・高PERには逆風。"},{"published":"2026-09-11","headline":"キオクシア、米国ADS上場計画","source":"Reuters","impact":"流動性・海外投資家アクセス改善のFresh Catalyst。"},{"published":"2026-09-11","headline":"北川鉄工所、通期経常53.3%上方修正・年間配当110円","source":"Kabutan/会社開示","impact":"月曜Fresh Earnings最上位。"},{"published":"2026-09-11","headline":"JMHD、3.81%・20億円上限の自社株買い","source":"Kabutan","impact":"9/14買付開始の需給材料。"},{"published":"2026-09-10","headline":"JX金属グループ、AIデータセンター向け超微粉ニッケル能力を2倍へ","source":"JX金属","impact":"中長期のAI材料。足元はテクニカル優先。"}],
+  "lessons":["方向予想の的中と、実際に約定可能だったかを別スコア化する。","Fresh決算は内容だけでなく寄りの織り込み度を必須判定。","週末の中東・金利・新規IRで月曜候補を全面更新する。","保有銘柄の好材料があっても、テクニカル無効化をナンピンで正当化しない。"]
 }
