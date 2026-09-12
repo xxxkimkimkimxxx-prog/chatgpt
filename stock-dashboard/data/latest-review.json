@@ -1,22 +1,25 @@
 {
-  "date":"2026-09-09",
-  "asOf":"2026-09-09 20:44 JST",
-  "market":{"summary":"日経平均65,142.78円（-0.19%）、TOPIX4,046.64（-0.09%）。指数は小幅安だが、非鉄金属・石油石炭・鉱業が強く、光通信・電線、資源、防衛の一角へ資金が集中したローテーション相場。"},
+  "date":"2026-09-11",
+  "asOf":"2026-09-12 16:01 JST",
+  "market":{"summary":"9/11朝は原油高・金利高を背景にFresh決算/資源/銀行を選別する方針。金曜の米国市場は引け後に反発したが、Fed利上げ観測と10年金利5%近辺は週明けの主要リスクとして残った。"},
   "candidateScorecard":{"daytrade":[
-    {"rank":1,"code":"1436","name":"グリーンエナジー＆カンパニー","result":"失敗。終値1,751円（-8.94%）。ただし初動安値維持/VWAP上の実行条件は不成立で見送りが正解。"},
-    {"rank":2,"code":"2321","name":"ソフトフロントHD","result":"大成功。189円（+35.97%）ストップ高。Fresh Catalyst捕捉と優先順位が機能。"},
-    {"rank":3,"code":"1605","name":"INPEX","result":"成功。3,912円（+2.09%）。原油高・中東供給リスクの直接受益が機能。"},
-    {"rank":4,"code":"9843","name":"ニトリHD","result":"失敗。3,287円（-3.10%）。前日+5.5%の先行上昇を過小評価。"},
-    {"rank":5,"code":"7856","name":"萩原工業","result":"失敗。1,948円（-2.50%）。決算二日目Continuationは失速。"}
+    {"rank":1,"code":"2983","name":"アールプランナー","result":"失敗/セットアップ不成立。終値は約-3%。寄りが想定エントリー帯を下回り、買い条件不成立なら見送りが正解。"},
+    {"rank":2,"code":"1605","name":"INPEX","result":"小幅成功。3,930円(+1.37%)、高値4,008円。テーマは機能したが高値追いは不利。"},
+    {"rank":3,"code":"5031","name":"モイ","result":"方向的中・実行困難。435円(+22.54%)で価格が張り付き、予想的中と売買可能性を分離すべき。"},
+    {"rank":4,"code":"8306","name":"MUFG","result":"終値中立(-0.03%)だが3,577→3,683円まで反発。イベント前の相対強度候補としては維持。"}
   ]},
-  "majorProcessMiss":"最大の見逃しは5801古河電工（+12.6%）と5803フジクラ（+8.1%）。AI光通信テーマは把握していたが、米Corning- Verizonの数十億ドル規模複数年契約を朝順位に反映できなかった。結果論ではなく寄り前に拾える海外同業Fresh Catalystであり、No.6/32/33の改善対象。",
-  "todayTrading":{"realizedPnl":6100,"status":"iSPEED確認済み。フジクラ+4,700円、モルフォ3取引合計+1,400円。"},
-  "portfolio":{"confirmedUnrealizedPnl":-32668,"asOf":"2026-09-09 17:14 JST"},
-  "lessons":[
-    "海外同業の大型契約→日本対応業界→PTS/寄り前特別気配の3段一致をSector Leader Freshとして朝順位へ強制再評価する",
-    "Fresh材料の織り込み度に前日騰落率・PTS乖離・GU率を独立スコア化する",
-    "前日レビューで追加した改善策は翌朝スクリーナへ必ず持ち越す",
-    "S高捕捉率のために無差別に候補を増やさず、後場開示・材料不明株は事前捕捉困難として分離する"
+  "forecastReview":[
+    {"name":"アールプランナー","code":"2983","forecastProbability":66,"result":"failed / no-entry","closePct":"約-3%","lesson":"Fresh決算でも寄りが想定帯を下回れば即格下げ。"},
+    {"name":"INPEX","code":"1605","forecastProbability":65,"result":"hit small","closePct":"+1.37%","lesson":"テーマ一致でも高値4,008円から押すため利確規律が必要。"},
+    {"name":"モイ","code":"5031","forecastProbability":60,"result":"forecast hit / untradeable","closePct":"+22.54%","lesson":"張り付きは予想的中と実行可能を別評価。"},
+    {"name":"MUFG","code":"8306","forecastProbability":58,"result":"neutral close / intraday strength","closePct":"-0.03%","lesson":"日銀イベント前は終値より銀行相対強度を確認。"}
   ],
-  "detailPath":"data/reviews/2026-09-09.json"
+  "majorProcessMiss":"アールプランナーを1位に置いた点は、好決算内容に対して寄りの織り込み・需給リスクをまだ過小評価。セットアップ条件で回避できても順位付け自体は改善対象。",
+  "majorProcessWin":"モイはPTS+22.5%を非常に織り込み済みとして追わない条件を置けた。実際に張り付きとなり、無理な約定想定をしなかった点は再現性がある。",
+  "trading":{"status":"9/11のユーザー約定・確定実現損益は新規スクリーンショット/報告がないため未確定。0円と仮定しない。"},
+  "portfolio":{"derivedUnrealizedPnl":-67828,"asOf":"2026-09-11 close","basis":"holdings.json quantities/averageCost × 9/11 close; not iSPEED-confirmed"},
+  "lessons":["方向予想と実行可能性を別スコア化する。","Fresh決算でも寄りが想定帯を外れたら朝順位を即時再評価する。","週末の新規IR・地政学・金利ニュースで月曜ランキングを全面更新する。","保有銘柄は好材料があっても事前の無効化ライン割れをナンピンで正当化しない。"],
+  "bestLearningTrade":{"name":"モイ","code":"5031","summary":"予想は上方向で当たっても張り付きで買えなければ実売買の成功ではない。予想精度と執行可能性を分離する必要性が明確になった。"},
+  "nextWatch":["9/14 北川鉄工所のFresh上方修正+増配の初回価格反応","キオクシア米国ADS上場計画の需給反応","サウジパイプライン停止後の原油100ドル台維持","9/17-18 BOJ会合に向けた銀行相対強度"],
+  "detailPath":"data/reviews/2026-09-11.json"
 }
