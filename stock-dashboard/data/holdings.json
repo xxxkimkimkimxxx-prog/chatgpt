@@ -1,32 +1,24 @@
 {
-  "asOf":"2026-09-09 17:14 JST",
-  "source":"User-supplied iSPEED holdings and executions screenshots in ChatGPT on 2026-09-09",
-  "positions":[
-    {"code":"285A","name":"キオクシアホールディングス","quantity":1,"averageCost":57878.0,"referencePrice":57000,"unrealizedPnl":-878,"management":"2026-09-09に単元未満1株を観察用として買付。デイトレ本格ポジションではなく価格行動の観察を優先。"},
-    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":127,"unrealizedPnl":8000},
-    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"referencePrice":3115,"unrealizedPnl":-6290},
-    {"code":"4597","name":"ソレイジア・ファーマ","quantity":3000,"averageCost":28.93,"executionWeightedAverageCost":28.9333333333,"referencePrice":29,"unrealizedPnl":200,"management":"2026-09-09にPTSで2,000株を28.9円（JNX 1,800株、JAX 100株+100株）追加。従来1,000株@29円と合わせ3,000株。約定価格ベース加重平均は28.9333円。中長期の投機・成長期待枠。"},
-    {"code":"5016","name":"JX金属","quantity":100,"averageCost":3902.0,"referencePrice":3909,"unrealizedPnl":700,"management":"2026-09-09に100株を3,902円で買付。"},
-    {"code":"5027","name":"ANYMIND GROUP","quantity":400,"averageCost":830.5,"referencePrice":748,"unrealizedPnl":-33000,"management":"ナンピン後400株。追加は原則停止。3Qまでの保有継続価値と資金効率を随時再評価。"},
-    {"code":"8518","name":"日本アジア投資","quantity":200,"averageCost":162.0,"referencePrice":155,"unrealizedPnl":-1400,"management":"低流動性のため追加買いは慎重。"}
+  "asOf": "2026-09-11 15:30 JST",
+  "positionAsOf": "2026-09-09 17:14 JST",
+  "source": "Position sizes/average costs from user-supplied iSPEED screenshots; referencePrice updated to 2026-09-11 TSE close from trusted market data.",
+  "positions": [
+    {"code":"285A","name":"キオクシアホールディングス","quantity":1,"averageCost":57878.0,"referencePrice":54030,"unrealizedPnl":-3848,"management":"1株観察用。2026-09-12 Reutersの米国ADS上場計画はFresh材料。保有を理由に候補順位は上げない。"},
+    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":125,"unrealizedPnl":6000,"management":"低流動性。利益圏を利用した資金回収候補。"},
+    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"referencePrice":3070,"unrealizedPnl":-15290,"management":"9/30特別配当イベントと機会費用を比較。取得単価へのアンカー禁止。"},
+    {"code":"4597","name":"ソレイジア・ファーマ","quantity":3000,"averageCost":28.93,"executionWeightedAverageCost":28.9333333333,"referencePrice":29,"unrealizedPnl":210,"management":"投機枠。追加停止。一次IR/承認/提携材料を待つ。"},
+    {"code":"5016","name":"JX金属","quantity":100,"averageCost":3902.0,"referencePrice":3695,"unrealizedPnl":-20700,"management":"9/11終値で従来3,730円レビュー線を下回ったため縮小レビュー。AI材料・日経225採用は構造材料だがナンピン禁止。"},
+    {"code":"5027","name":"ANYMIND GROUP","quantity":400,"averageCost":830.5,"referencePrice":749,"unrealizedPnl":-32600,"management":"追加停止。3Qまで全量拘束の機会費用を再評価。780-800円の戻りで一部縮小候補。"},
+    {"code":"8518","name":"日本アジア投資","quantity":200,"averageCost":162.0,"referencePrice":154,"unrealizedPnl":-1600,"management":"低流動性。優先資金回収候補。"}
   ],
-  "openTransactionsToday":[
-    {"code":"285A","name":"キオクシアホールディングス","side":"buy","quantity":1,"price":57878,"market":"S株/単元未満","status":"open"},
-    {"code":"4597","name":"ソレイジア・ファーマ","side":"buy","quantity":1800,"price":28.9,"market":"JNX","status":"open"},
-    {"code":"4597","name":"ソレイジア・ファーマ","side":"buy","quantity":100,"price":28.9,"market":"JAX","status":"open"},
-    {"code":"4597","name":"ソレイジア・ファーマ","side":"buy","quantity":100,"price":28.9,"market":"JAX","status":"open"},
-    {"code":"5016","name":"JX金属","side":"buy","quantity":100,"price":3902,"market":"TSE","status":"open"}
-  ],
-  "closedToday":[
-    {"code":"5803","name":"フジクラ","quantity":100,"buyPrice":5513.0,"sellPrice":5560,"realizedPnl":4700,"status":"closed","market":"TSE","note":"既存保有100株を5,560円で売却しポジション解消。"},
-    {"code":"3653","name":"モルフォ","quantity":100,"buyPrice":1480,"sellPrice":1485,"realizedPnl":500,"status":"closed","market":"TSE","note":"約定一覧を時系列で再構成。手数料等控除前。"},
-    {"code":"3653","name":"モルフォ","quantity":100,"buyPrice":1485,"sellPrice":1514,"realizedPnl":2900,"status":"closed","market":"TSE","note":"約定一覧を時系列で再構成。手数料等控除前。"},
-    {"code":"3653","name":"モルフォ","quantity":100,"buyPrice":1480,"sellPrice":1460,"realizedPnl":-2000,"status":"closed","market":"TSE","note":"約定一覧を時系列で再構成。手数料等控除前。"}
-  ],
-  "confirmedRealizedPnlToday":6100,
-  "realizedPnlBasis":"売買価格差ベース。モルフォは約定一覧の時系列から再構成し、手数料・税等は未控除。",
-  "confirmedPortfolioUnrealizedPnlFromScreenshot":-32668,
-  "portfolioUnrealizedNote":"2026-09-09 17:14のiSPEED保有銘柄画面に表示された評価損益合計を正本として記録。",
-  "estimatedPortfolioCost":1647768,
-  "ruleReference":"data/trading-rules.json"
+  "openTransactionsToday": [],
+  "lastConfirmedTransactions": "2026-09-09",
+  "confirmedRealizedPnlLatestKnown": 6100,
+  "confirmedRealizedPnlDate": "2026-09-09",
+  "realizedPnlNote": "No user-reported executions for Sep10-11 in current connected record; do not assume zero.",
+  "derivedPortfolioUnrealizedPnl": -67828,
+  "derivedPortfolioUnrealizedPnlBasis": "(Sep11 close - averageCost) * quantity; Solasia uses averageCost 28.93 as stored.",
+  "estimatedPortfolioCost": 1647758,
+  "estimatedPortfolioMarketValue": 1579930,
+  "ruleReference": "data/trading-rules.json"
 }
