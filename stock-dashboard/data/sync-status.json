@@ -1,14 +1,11 @@
 {
-  "lastSyncedAtJST":"2026-09-09 20:44",
-  "trigger":"after_close_review_2026-09-09",
-  "triggerMessageSummary":"User requested today's review. Morning candidates were compared with actual closes, missed S-high/sector leaders were classified, user trades and current holdings were reconciled.",
-  "updated":[
-    "data/reviews/2026-09-09.json",
-    "data/latest-review.json",
-    "data/current-view.json",
-    "data/sync-status.json"
-  ],
+  "lastSyncedAtJST":"2026-09-12 16:01",
+  "trigger":"weekend_committee_2026-09-12",
+  "triggerMessageSummary":"User asked to convene the investment committee, refresh the web page, and verify that news is current.",
+  "updated":["data/daily/2026-09-12.json","data/latest-strategy.json","data/daytrade-latest.json","data/swing-latest.json","data/longterm-latest.json","data/reviews/2026-09-11.json","data/latest-review.json","data/current-view.json","data/holdings.json","data/sync-status.json"],
   "status":"ready",
   "primaryPage":"dashboard.html",
-  "note":"Key process change: treat overseas peer large contracts as Sector Leader Fresh when they map directly to a known Japanese value chain, and keep candidate ranking holdings-blind. Confirmed Sep 9 realized P/L is +6,100 yen; portfolio unrealized P/L confirmed from the 17:14 iSPEED screenshot is -32,668 yen."
+  "latestStrategyPage":"latest.html",
+  "newsFreshness":"Verified through 2026-09-12 16:01 JST using Reuters, company official releases and current disclosure sources. Monday 06:30 refresh required before execution.",
+  "note":"Weekend committee rebuilt Sep14 candidates from fresh information rather than carrying Sep11 rankings. Forecast success and executable-trade success are separated. Portfolio P/L is a derived Sep11-close value, not a new iSPEED confirmation."
 }
