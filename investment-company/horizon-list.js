@@ -89,15 +89,98 @@ function renderList(h){
 function syncText(text,busy=false){
   const el=hq('#syncState');if(!el)return;el.textContent=text;el.classList.toggle('syncBusy',busy);
 }
-async function fetchDashboard(){
-  const paths=['./committee/dashboard-latest.json','./committee/horizon-latest.json'];
-  let lastErr=null;
-  for(const path of paths){
-    try{
-      const r=await fetch(path+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error(`${r.status} ${path}`);return await r.json();
-    }catch(e){lastErr=e;}
+async function fetchJson(path){
+  const r=await fetch(path+'?v='+Date.now(),{cache:'no-store'});
+  if(!r.ok)throw new Error(`${r.status} ${path}`);
+  return await r.json();
+}
+function dayItems(d){
+  return (d?.ranking||[]).map(x=>({
+    rank:x.rank,code:x.code,name:x.name,
+    grade:`${x.probabilityPct??x.probability??'—'}% / ${x.confidence||'—'}`,
+    category:x.type||'Day trade',
+    theme:x.material||x.catalyst||'',
+    summary:x.material||x.catalyst||'',
+    whyNow:[x.directness&&`直接度 ${x.directness}`,x.earningsSensitivity&&`収益感応度 ${x.earningsSensitivity}`,x.expectationGap&&`期待差 ${x.expectationGap}`,x.pricedIn&&`織り込み ${x.pricedIn}`].filter(Boolean).join(' / '),
+    condition:x.entry||x.entryCondition||'',
+    skip:[x.skip||x.skipCondition,x.invalidation&&`破綻: ${x.invalidation}`].filter(Boolean).join(' / '),
+    risk:[x.riskPct&&`リスク ${x.riskPct}`,x.expectedPct&&`期待 ${x.expectedPct}`,x.rr&&`RR ${x.rr}`].filter(Boolean).join(' / ')
+  }));
+}
+function swingItems(s){
+  return (s?.swingCandidates||[]).map(x=>({
+    rank:x.rank,code:x.code,name:x.name,
+    grade:`${x.probability??'—'}% / ${x.confidence||'—'}`,
+    category:x.sector||'Swing',
+    theme:x.catalyst||'',
+    summary:x.catalyst||'',
+    whyNow:x.catalyst||'',
+    condition:x.entryCondition||'',
+    skip:[x.skipCondition,x.invalidCondition&&`破綻: ${x.invalidCondition}`].filter(Boolean).join(' / '),
+    risk:[x.risks,x.holdingPeriod&&`保有 ${x.holdingPeriod}`,x.targetGuide&&`目標 ${x.targetGuide}`].filter(Boolean).join(' / ')
+  }));
+}
+function mediumItems(m){
+  return (m?.mainCandidates||[]).map(x=>({
+    rank:x.rank,code:x.code,name:x.name,
+    grade:x.rank<=4?'主力':'準主力',
+    category:'中期候補',
+    theme:'1〜12か月',
+    summary:x.reason||'',
+    whyNow:x.reason||'',
+    condition:'構造テーマ・利益成長・価格水準を継続確認。',
+    skip:'構造仮説の悪化、利益成長鈍化、または価格過熱で期待収益率が低下した場合。',
+    risk:(m?.nearTermRisks||[]).join(' / ')
+  }));
+}
+function mergeCanonical(base,day,strategy,longterm){
+  const out=base&&typeof base==='object'?base:{autoRefreshMinutes:5,marketSnapshot:{headline:'',points:[]},committees:{}};
+  out.committees=out.committees||{};
+  if(day?.ranking?.length){
+    out.asOf=day.asOf||out.asOf;
+    out.marketSnapshot=out.marketSnapshot||{};
+    out.marketSnapshot.headline=day.marketStance||out.marketSnapshot.headline||'';
+    out.committees.day={
+      kicker:'DAY TRADE COMMITTEE',title:`デイトレ投資委員会（${day.targetSession||'最新'} 正式候補）`,asOf:day.asOf,
+      conclusion:'正式ランキングを表示。寄り後は初動高安・VWAP・出来高/売買代金・同業相対強度で再審査。',
+      gates:day.required0900Checks||[],execution:day.executionPriority||'価格構造確認後に執行。',
+      holdings:(day.holdingsRelevant||[]).map(x=>`${x.code} ${x.name}: ${x.role}`).join(' / '),items:dayItems(day)
+    };
   }
-  throw lastErr||new Error('committee data unavailable');
+  if(strategy?.swingCandidates?.length){
+    out.committees.swing={
+      kicker:'SWING COMMITTEE',title:`スイング候補（${strategy.targetSession||strategy.date||'最新'}）`,asOf:strategy.generatedAt||strategy.date,
+      conclusion:'数日〜6週間の候補。材料の持続性・イベント期限・日足相対強度で採否を更新。',
+      gates:['材料の持続性','日足支持・相対強度','GU後の全戻し有無','イベント/ヘッドラインリスク'],
+      execution:strategy.riskPlan?.priority||'価格形成後に段階評価。',holdings:strategy.riskPlan?.portfolio||'保有理由で順位へ加点しない。',items:swingItems(strategy)
+    };
+  }
+  if(longterm?.mainCandidates?.length){
+    out.committees.medium={
+      kicker:'MEDIUM TERM COMMITTEE',title:'中期候補（1〜12か月）',asOf:longterm.asOf,
+      conclusion:longterm.macroOverlay||'構造テーマと企業利益を優先。',
+      gates:['構造的な実需・利益感応度','ROIC/FCF/利益率','金利・円・原油耐性','価格過熱を追わない'],
+      execution:'主力・準主力を分け、決算・押し目・イベントで再審査。',
+      holdings:'保有状況は市場全体ランキングの加点要因にしない。',items:mediumItems(longterm)
+    };
+  }
+  return out;
+}
+async function fetchDashboard(){
+  let base=null,lastErr=null;
+  for(const path of ['./committee/dashboard-latest.json','./committee/horizon-latest.json']){
+    try{base=await fetchJson(path);break;}catch(e){lastErr=e;}
+  }
+  const results=await Promise.allSettled([
+    fetchJson('../stock-dashboard/data/daytrade-latest.json'),
+    fetchJson('../stock-dashboard/data/latest-strategy.json'),
+    fetchJson('../stock-dashboard/data/longterm-latest.json')
+  ]);
+  const day=results[0].status==='fulfilled'?results[0].value:null;
+  const strategy=results[1].status==='fulfilled'?results[1].value:null;
+  const longterm=results[2].status==='fulfilled'?results[2].value:null;
+  if(!base&&!day&&!strategy&&!longterm)throw lastErr||new Error('committee data unavailable');
+  return mergeCanonical(base,day,strategy,longterm);
 }
 async function loadHorizons(silent=false){
   try{
