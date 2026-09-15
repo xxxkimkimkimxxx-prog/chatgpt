@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-09-15 17:21 JST",
+  "asOf": "2026-09-15 17:22 JST",
   "positionAsOf": "2026-09-15 17:21 JST",
-  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings; Sep15 sales and realized P/L from user-supplied iSPEED screenshots at 17:21. Remaining reference prices use 2026-09-15 TSE closes already tracked by the dashboard.",
+  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings; Sep15 Nexon full sale from user-supplied iSPEED screenshot. September daily realized P/L attribution follows latest user correction: unreported days provisionally 0, Sep13 -690.",
   "positions": [
     {"code":"285A","name":"キオクシアホールディングス","quantity":1,"averageCost":57878.0,"referencePrice":51750,"unrealizedPnl":-6128,"management":"1株観察用。保有を理由に候補順位は上げない。"},
     {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":123,"unrealizedPnl":4000,"management":"低流動性。利益圏を利用した資金回収候補。"},
@@ -12,15 +12,35 @@
   ],
   "openTransactionsToday": [],
   "closedToday": [
-    {"code":"1571","name":"NF日経インバースETF","quantity":50,"averageCost":310.0,"sellPrice":310.0,"sellAmount":15500,"realizedPnl":0,"status":"closed","market":"TSE","note":"iSPEED 2026-09-15 17:21 screenshot confirmed."},
-    {"code":"1579","name":"日経平均ブル2倍上場投信","quantity":100,"averageCost":681.0,"sellPrice":674.1,"sellAmount":67410,"realizedPnl":-690,"status":"closed","market":"TSE","note":"iSPEED 2026-09-15 17:21 screenshot confirmed."},
     {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"sellPrice":3175.0,"sellAmount":635000,"realizedPnl":5710,"status":"closed","market":"TSE","note":"200株を全売却。iSPEED 2026-09-15 17:21 screenshot confirmed; current holding quantity is zero."}
   ],
-  "confirmedRealizedPnlToday": 5020,
+  "recentClosedTransactions": [
+    {"code":"1571","name":"NF日経インバースETF","quantity":50,"averageCost":310.0,"sellPrice":310.0,"sellAmount":15500,"realizedPnl":0,"status":"closed","market":"TSE"},
+    {"code":"1579","name":"日経平均ブル2倍上場投信","quantity":100,"averageCost":681.0,"sellPrice":674.1,"sellAmount":67410,"realizedPnl":-690,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-13","dateBasis":"user correction"},
+    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"sellPrice":3175.0,"sellAmount":635000,"realizedPnl":5710,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-15"}
+  ],
+  "confirmedRealizedPnlToday": 5710,
   "confirmedRealizedPnlDate": "2026-09-15",
-  "confirmedRealizedPnlBreakdown": {"1571":0,"1579":-690,"3659":5710},
+  "confirmedRealizedPnlBreakdown": {"3659":5710},
   "confirmedSeptemberRealizedPnlKnown": 11120,
-  "confirmedSeptemberRealizedPnlCoverageNote": "Known confirmed values only: 2026-09-09 +6100 and 2026-09-15 +5020. Do not assume unreported days were zero.",
+  "confirmedSeptemberRealizedPnlCoverageNote": "Per latest user instruction, unreported September days through Sep15 are provisionally 0; Sep13 is -690. Known non-zero days: Sep9 +6100, Sep13 -690, Sep15 +5710.",
+  "dailyRealizedPnlSeptember": [
+    {"date":"2026-09-01","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-02","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-03","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-04","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-05","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-06","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-07","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-08","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-09","pnl":6100,"status":"confirmed"},
+    {"date":"2026-09-10","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-11","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-12","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-13","pnl":-690,"status":"user_corrected"},
+    {"date":"2026-09-14","pnl":0,"status":"provisional_zero"},
+    {"date":"2026-09-15","pnl":5710,"status":"confirmed"}
+  ],
   "derivedPortfolioUnrealizedPnl": -50718,
   "derivedPortfolioUnrealizedPnlBasis": "Remaining six positions at 2026-09-15 TSE close; (referencePrice-averageCost)*quantity. Nexon removed after full sale.",
   "estimatedPortfolioCost": 1018468,
