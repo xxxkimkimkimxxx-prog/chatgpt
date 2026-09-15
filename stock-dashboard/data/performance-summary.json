@@ -1,9 +1,9 @@
 {
-  "asOf":"2026-08-31 21:46 JST",
-  "period":"2026-08",
-  "officialRealizedPnl":70700,
-  "officialRealizedTradeCount":42,
-  "executionBasedMetrics":{
+  "asOf":"2026-09-15 17:21 JST",
+  "period":"2026-08 official + 2026-09 confirmed-known",
+  "officialAugustRealizedPnl":70700,
+  "officialAugustRealizedTradeCount":42,
+  "executionBasedMetricsAugust":{
     "wins":32,
     "losses":10,
     "winRatePct":76.19,
@@ -12,9 +12,9 @@
     "profitFactor":2.42,
     "averageWin":3762.66,
     "averageLoss":-4970.5,
-    "note":"iSPEEDの約定・実現損益明細を1明細=1件として集計。2026-08-31はiSPEED画面で+3,600円（ベクターHD +600円、日本一ソフトウェア +3,000円）を確認。"
+    "note":"August metrics retained from iSPEED-confirmed records."
   },
-  "decisionEpisodeMetrics":{
+  "decisionEpisodeMetricsAugust":{
     "episodes":39,
     "wins":31,
     "losses":8,
@@ -25,46 +25,35 @@
     "averageWin":3421.13,
     "averageLoss":-4419.38,
     "expectancyPerEpisode":1812.82,
-    "adjustments":[{
-      "date":"2026-08-07",
-      "code":"6998",
-      "name":"日本タングステン",
-      "reason":"ユーザー確認：誤操作でエントリーを繰り返した同一売買エピソードのため分析上はnetする",
-      "rawExecutions":[-11675,-2675,5665,9825],
-      "netRealizedPnl":1140,
-      "classification":"1勝0敗"
-    }],
-    "note":"売買判断の採点・勝敗分析はこちらを優先。公式実現損益と約定明細自体は変更しない。"
+    "note":"August decision-episode analysis retained; official realized P/L remains separate."
   },
-  "officialSourceAsOf":"2026-08-31 21:46 iSPEED realized P/L screen",
+  "septemberConfirmedKnown":{
+    "realizedPnl":11120,
+    "coverage":"Known confirmed screenshots only; unreported days are not assumed to be zero.",
+    "daily":[
+      {"date":"2026-09-09","pnl":6100,"note":"Confirmed: Fujikura +4,700; Morphos three trades net +1,400."},
+      {"date":"2026-09-15","pnl":5020,"note":"Confirmed: 1571 0; 1579 -690; Nexon +5,710."}
+    ],
+    "sep15Trades":[
+      {"code":"1571","name":"NF日経インバースETF","qty":50,"averageCost":310.0,"sellPrice":310.0,"realizedPnl":0},
+      {"code":"1579","name":"日経平均ブル2倍上場投信","qty":100,"averageCost":681.0,"sellPrice":674.1,"realizedPnl":-690},
+      {"code":"3659","name":"ネクソン","qty":200,"averageCost":3146.45,"sellPrice":3175.0,"realizedPnl":5710,"positionAfter":0}
+    ]
+  },
+  "confirmedCumulativeRealizedPnlKnownSinceAug1":81820,
+  "officialSourceAsOf":"August official through 2026-08-31; Sep9 and Sep15 values confirmed from user-supplied iSPEED screenshots.",
   "ledgerPath":"data/realized-pnl-ledger.json",
   "threeMonthGoal":{
     "startDate":"2026-08-01",
     "targetDate":"2026-11-24",
     "targetRealizedPnl":300000,
-    "confirmedCumulativeRealizedPnl":70700,
-    "remainingConfirmed":229300,
-    "progressPctConfirmed":23.57,
-    "status":"iSPEED確認済み。2026-08-31実現損益+3,600円を加え、8月累計+70,700円。30万円目標への進捗23.57%。"
+    "confirmedCumulativeRealizedPnlKnown":81820,
+    "remainingAgainstConfirmedKnown":218180,
+    "progressPctConfirmedKnown":27.27,
+    "status":"Confirmed-known cumulative: August +70,700, Sep9 +6,100, Sep15 +5,020. Unreported September days are not treated as zero."
   },
-  "dailyRealizedPnl":[
-    {"date":"2026-08-04","pnl":-5185,"cumulative":-5185},
-    {"date":"2026-08-05","pnl":5460,"cumulative":275},
-    {"date":"2026-08-06","pnl":7850,"cumulative":8125},
-    {"date":"2026-08-07","pnl":8110,"cumulative":16235,"analysisNote":"日本タングステンは4明細net +1,140円で1勝扱い"},
-    {"date":"2026-08-10","pnl":-12535,"cumulative":3700},
-    {"date":"2026-08-12","pnl":7700,"cumulative":11400},
-    {"date":"2026-08-13","pnl":4200,"cumulative":15600},
-    {"date":"2026-08-14","pnl":14900,"cumulative":30500},
-    {"date":"2026-08-20","pnl":12000,"cumulative":42500},
-    {"date":"2026-08-25","pnl":17400,"cumulative":59900},
-    {"date":"2026-08-26","pnl":0,"cumulative":59900,"note":"取引0回"},
-    {"date":"2026-08-27","pnl":0,"cumulative":59900,"note":"買付・持越しあり、売却なし"},
-    {"date":"2026-08-28","pnl":7200,"cumulative":67100},
-    {"date":"2026-08-31","pnl":3600,"cumulative":70700,"note":"iSPEED確認済み。ベクターHD +600円、日本一ソフトウェア +3,000円。"}
-  ],
-  "bestTrade":{"date":"2026-08-20","code":"141A","name":"トライアルホールディングス","realizedPnl":12000},
-  "worstTrade":{"date":"2026-08-10","code":"5803","name":"フジクラ","realizedPnl":-13435},
-  "lastReview":{"date":"2026-08-31","todayRealizedPnlStatus":"confirmed +3600","detailPath":"data/reviews/2026-08-31.json"},
-  "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"goalIncludesAllAugustTrades":true,"performanceAnalysisUsesDecisionEpisodes":true}
+  "bestTradeAugust":{"date":"2026-08-20","code":"141A","name":"トライアルホールディングス","realizedPnl":12000},
+  "worstTradeAugust":{"date":"2026-08-10","code":"5803","name":"フジクラ","realizedPnl":-13435},
+  "lastReview":{"date":"2026-09-15","todayRealizedPnlStatus":"confirmed +5020","source":"iSPEED screenshots supplied by user at 17:21 JST"},
+  "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"performanceAnalysisUsesDecisionEpisodes":true}
 }
