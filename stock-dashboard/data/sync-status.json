@@ -1,13 +1,14 @@
 {
-  "lastSyncedAtJST":"2026-09-15 17:21",
-  "trigger":"trade_or_result_2026-09-15",
-  "triggerMessageSummary":"User supplied iSPEED realized P/L screenshots and reported multiple sales. Nexon is fully closed and must be removed from holdings.",
+  "lastSyncedAtJST":"2026-09-15 17:22",
+  "trigger":"realized_pnl_correction_2026-09-15",
+  "triggerMessageSummary":"User clarified that unreported September days should provisionally be zero and that Sep13 alone carries -690 yen; Sep15 realized P/L is Nexon +5,710 yen.",
   "updated":["data/holdings.json","data/performance-summary.json","data/current-view.json","data/sync-status.json"],
   "status":"ready",
   "primaryPage":"dashboard.html",
   "latestStrategyPage":"latest.html",
   "positionCount":6,
-  "todayConfirmedRealizedPnl":5020,
+  "todayConfirmedRealizedPnl":5710,
+  "septemberRealizedPnl":11120,
   "remainingPortfolioUnrealizedPnl":-50718,
-  "note":"Sep15 confirmed sales: 1571 50 units @310, realized 0; 1579 100 units @674.1, realized -690; Nexon 200 shares @3175, realized +5710. Nexon position is now zero and removed from holdings. September confirmed-known P/L is +11120 from Sep9 and Sep15 screenshots; unreported days are not assumed zero."
+  "note":"Daily attribution corrected: Sep9 +6,100; Sep13 -690; Sep15 +5,710; all other unreported September days through Sep15 provisionally 0. Nexon remains fully closed and excluded from holdings. September cumulative remains +11,120."
 }
