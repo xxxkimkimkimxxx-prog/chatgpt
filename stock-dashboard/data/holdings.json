@@ -1,24 +1,29 @@
 {
-  "asOf": "2026-09-11 15:30 JST",
-  "positionAsOf": "2026-09-09 17:14 JST",
-  "source": "Position sizes/average costs from user-supplied iSPEED screenshots; referencePrice updated to 2026-09-11 TSE close from trusted market data.",
+  "asOf": "2026-09-15 17:21 JST",
+  "positionAsOf": "2026-09-15 17:21 JST",
+  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings; Sep15 sales and realized P/L from user-supplied iSPEED screenshots at 17:21. Remaining reference prices use 2026-09-15 TSE closes already tracked by the dashboard.",
   "positions": [
-    {"code":"285A","name":"キオクシアホールディングス","quantity":1,"averageCost":57878.0,"referencePrice":54030,"unrealizedPnl":-3848,"management":"1株観察用。2026-09-12 Reutersの米国ADS上場計画はFresh材料。保有を理由に候補順位は上げない。"},
-    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":125,"unrealizedPnl":6000,"management":"低流動性。利益圏を利用した資金回収候補。"},
-    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"referencePrice":3070,"unrealizedPnl":-15290,"management":"9/30特別配当イベントと機会費用を比較。取得単価へのアンカー禁止。"},
+    {"code":"285A","name":"キオクシアホールディングス","quantity":1,"averageCost":57878.0,"referencePrice":51750,"unrealizedPnl":-6128,"management":"1株観察用。保有を理由に候補順位は上げない。"},
+    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":123,"unrealizedPnl":4000,"management":"低流動性。利益圏を利用した資金回収候補。"},
     {"code":"4597","name":"ソレイジア・ファーマ","quantity":3000,"averageCost":28.93,"executionWeightedAverageCost":28.9333333333,"referencePrice":29,"unrealizedPnl":210,"management":"投機枠。追加停止。一次IR/承認/提携材料を待つ。"},
-    {"code":"5016","name":"JX金属","quantity":100,"averageCost":3902.0,"referencePrice":3695,"unrealizedPnl":-20700,"management":"9/11終値で従来3,730円レビュー線を下回ったため縮小レビュー。AI材料・日経225採用は構造材料だがナンピン禁止。"},
-    {"code":"5027","name":"ANYMIND GROUP","quantity":400,"averageCost":830.5,"referencePrice":749,"unrealizedPnl":-32600,"management":"追加停止。3Qまで全量拘束の機会費用を再評価。780-800円の戻りで一部縮小候補。"},
-    {"code":"8518","name":"日本アジア投資","quantity":200,"averageCost":162.0,"referencePrice":154,"unrealizedPnl":-1600,"management":"低流動性。優先資金回収候補。"}
+    {"code":"5016","name":"JX金属","quantity":100,"averageCost":3902.0,"referencePrice":3654,"unrealizedPnl":-24800,"management":"縮小レビュー。ナンピン禁止。"},
+    {"code":"5027","name":"ANYMIND GROUP","quantity":400,"averageCost":830.5,"referencePrice":774,"unrealizedPnl":-22600,"management":"追加停止。戻り局面で一部縮小を再評価。"},
+    {"code":"8518","name":"日本アジア投資","quantity":200,"averageCost":162.0,"referencePrice":155,"unrealizedPnl":-1400,"management":"低流動性。優先資金回収候補。"}
   ],
   "openTransactionsToday": [],
-  "lastConfirmedTransactions": "2026-09-09",
-  "confirmedRealizedPnlLatestKnown": 6100,
-  "confirmedRealizedPnlDate": "2026-09-09",
-  "realizedPnlNote": "No user-reported executions for Sep10-11 in current connected record; do not assume zero.",
-  "derivedPortfolioUnrealizedPnl": -67828,
-  "derivedPortfolioUnrealizedPnlBasis": "(Sep11 close - averageCost) * quantity; Solasia uses averageCost 28.93 as stored.",
-  "estimatedPortfolioCost": 1647758,
-  "estimatedPortfolioMarketValue": 1579930,
+  "closedToday": [
+    {"code":"1571","name":"NF日経インバースETF","quantity":50,"averageCost":310.0,"sellPrice":310.0,"sellAmount":15500,"realizedPnl":0,"status":"closed","market":"TSE","note":"iSPEED 2026-09-15 17:21 screenshot confirmed."},
+    {"code":"1579","name":"日経平均ブル2倍上場投信","quantity":100,"averageCost":681.0,"sellPrice":674.1,"sellAmount":67410,"realizedPnl":-690,"status":"closed","market":"TSE","note":"iSPEED 2026-09-15 17:21 screenshot confirmed."},
+    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"sellPrice":3175.0,"sellAmount":635000,"realizedPnl":5710,"status":"closed","market":"TSE","note":"200株を全売却。iSPEED 2026-09-15 17:21 screenshot confirmed; current holding quantity is zero."}
+  ],
+  "confirmedRealizedPnlToday": 5020,
+  "confirmedRealizedPnlDate": "2026-09-15",
+  "confirmedRealizedPnlBreakdown": {"1571":0,"1579":-690,"3659":5710},
+  "confirmedSeptemberRealizedPnlKnown": 11120,
+  "confirmedSeptemberRealizedPnlCoverageNote": "Known confirmed values only: 2026-09-09 +6100 and 2026-09-15 +5020. Do not assume unreported days were zero.",
+  "derivedPortfolioUnrealizedPnl": -50718,
+  "derivedPortfolioUnrealizedPnlBasis": "Remaining six positions at 2026-09-15 TSE close; (referencePrice-averageCost)*quantity. Nexon removed after full sale.",
+  "estimatedPortfolioCost": 1018468,
+  "estimatedPortfolioMarketValue": 967750,
   "ruleReference": "data/trading-rules.json"
 }
