@@ -1,25 +1,30 @@
 {
-  "asOf":"2026-09-15 17:21 JST",
+  "asOf":"2026-09-15 17:22 JST",
   "status":"after_close_position_update",
   "targetSession":"2026-09-16",
   "newsAsOf":"2026-09-12 16:01 JST",
-  "marketSummary":"2026-09-15大引け後の保有・実現損益更新。ネクソン200株を3,175円で全売却し、現在の保有から除外。1571 NF日経インバースETF 50口、1579 日経平均ブル2倍上場投信100口も売却済み。市場戦略・ニュースは次回委員会更新まで latest-strategy.json を参照。",
+  "marketSummary":"2026-09-15大引け後の保有・実現損益更新。ネクソン200株を3,175円で全売却し、現在の保有から除外。1571/1579も保有なし。損益日付はユーザー訂正に従い、未報告日は暫定0円、9/13のみ-690円として整理。",
   "marketStance":"本更新はポジション・損益同期。新規の市場見通し更新ではない。",
   "portfolioTotalUnrealizedPnl":-50718,
   "portfolioPnlBasis":"ネクソン売却後の残存6銘柄について、2026-09-15東証終値とholdings.jsonの平均取得単価で派生計算。",
-  "todayRealizedPnl":5020,
-  "todayRealizedPnlStatus":"iSPEED 2026-09-15 17:21 screenshots confirmed",
+  "todayRealizedPnl":5710,
+  "todayRealizedPnlStatus":"Nexon iSPEED 2026-09-15 17:21 screenshot confirmed; other unreported Sep15 P/L treated as 0 per user instruction.",
   "todayClosedTrades":[
-    {"code":"1571","name":"NF日経インバースETF","qty":50,"averageCost":310.0,"sellPrice":310.0,"realizedPnl":0},
-    {"code":"1579","name":"日経平均ブル2倍上場投信","qty":100,"averageCost":681.0,"sellPrice":674.1,"realizedPnl":-690},
     {"code":"3659","name":"ネクソン","qty":200,"averageCost":3146.45,"sellPrice":3175.0,"realizedPnl":5710,"positionAfter":0}
+  ],
+  "septemberRealizedPnl":11120,
+  "septemberPnlPolicy":"Unreported days through Sep15 are provisionally 0 unless later corrected; Sep13 is -690 by explicit user correction.",
+  "septemberDailyKey":[
+    {"date":"2026-09-09","pnl":6100,"status":"confirmed"},
+    {"date":"2026-09-13","pnl":-690,"status":"user_corrected"},
+    {"date":"2026-09-15","pnl":5710,"status":"confirmed"}
   ],
   "nextWatch":[
     "ネクソンは全売却済み。保有レビュー・評価損益集計から除外する。",
     "JX金属は100株@3,902円、9/15終値3,654円。含み損-24,800円で最大のマイナス寄与。",
     "AnyMindは400株@830.5円、9/15終値774円。含み損-22,600円。",
     "キオクシアは観察用1株。残存保有6銘柄の合計含み損は-50,718円。",
-    "9/15確定実現損益は3売却合計+5,020円。"
+    "9/15実現損益はネクソン+5,710円。9/13に-690円を計上し、その他未報告日は暫定0円。"
   ],
   "capitalFlow":[],
   "daytrade":{"status":"session closed; position sync only","candidates":[],"intradayRerank":[],"morningForecastReview":[]},
@@ -33,5 +38,5 @@
     {"code":"8518","name":"日本アジア投資","observedAt":"2026-09-15 close","price":155,"averageCost":162,"quantity":200,"unrealizedPnl":-1400,"stance":"優先資金回収候補。"}
   ],
   "latestNews":[],
-  "lessons":["ネクソンは3,175円で全200株を売却し、取得単価3,146.45円に対して+5,710円を確定。","1579の-690円を含め、9/15に画像で確認できた確定実現損益は合計+5,020円。","1571/1579/3659はいずれも現在保有から除外。"]
+  "lessons":["ネクソンは3,175円で全200株を売却し、取得単価3,146.45円に対して+5,710円を確定。","9/13は-690円として日次損益を修正。","未報告日は暫定0円で管理し、後日証跡が出た場合に上書きする。"]
 }
