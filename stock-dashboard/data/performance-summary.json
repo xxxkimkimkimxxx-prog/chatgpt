@@ -1,9 +1,11 @@
 {
   "asOf":"2026-09-15 17:21 JST",
   "period":"2026-08 official + 2026-09 confirmed-known",
+  "officialRealizedPnl":70700,
+  "officialTradeCount":42,
   "officialAugustRealizedPnl":70700,
   "officialAugustRealizedTradeCount":42,
-  "executionBasedMetricsAugust":{
+  "executionBasedMetrics":{
     "wins":32,
     "losses":10,
     "winRatePct":76.19,
@@ -14,7 +16,7 @@
     "averageLoss":-4970.5,
     "note":"August metrics retained from iSPEED-confirmed records."
   },
-  "decisionEpisodeMetricsAugust":{
+  "decisionEpisodeMetrics":{
     "episodes":39,
     "wins":31,
     "losses":8,
@@ -52,8 +54,8 @@
     "progressPctConfirmedKnown":27.27,
     "status":"Confirmed-known cumulative: August +70,700, Sep9 +6,100, Sep15 +5,020. Unreported September days are not treated as zero."
   },
-  "bestTradeAugust":{"date":"2026-08-20","code":"141A","name":"トライアルホールディングス","realizedPnl":12000},
-  "worstTradeAugust":{"date":"2026-08-10","code":"5803","name":"フジクラ","realizedPnl":-13435},
+  "bestTrade":{"date":"2026-08-20","code":"141A","name":"トライアルホールディングス","realizedPnl":12000},
+  "worstTrade":{"date":"2026-08-10","code":"5803","name":"フジクラ","realizedPnl":-13435},
   "lastReview":{"date":"2026-09-15","todayRealizedPnlStatus":"confirmed +5020","source":"iSPEED screenshots supplied by user at 17:21 JST"},
   "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"performanceAnalysisUsesDecisionEpisodes":true}
 }
