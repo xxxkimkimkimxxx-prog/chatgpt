@@ -1,6 +1,6 @@
 {
-  "asOf":"2026-09-15 17:21 JST",
-  "period":"2026-08 official + 2026-09 confirmed-known",
+  "asOf":"2026-09-15 17:22 JST",
+  "period":"2026-08 official + 2026-09 user-ledger",
   "officialRealizedPnl":70700,
   "officialTradeCount":42,
   "officialAugustRealizedPnl":70700,
@@ -31,19 +31,35 @@
   },
   "septemberConfirmedKnown":{
     "realizedPnl":11120,
-    "coverage":"Known confirmed screenshots only; unreported days are not assumed to be zero.",
+    "coverage":"User instruction: unreported September days are provisionally treated as 0; Sep13 is -690. Confirmed trade screenshots remain higher-priority evidence when available.",
+    "zeroAssumptionPolicy":"Unreported days through 2026-09-15 are provisionally 0 unless later corrected by the user or iSPEED evidence.",
     "daily":[
-      {"date":"2026-09-09","pnl":6100,"note":"Confirmed: Fujikura +4,700; Morphos three trades net +1,400."},
-      {"date":"2026-09-15","pnl":5020,"note":"Confirmed: 1571 0; 1579 -690; Nexon +5,710."}
+      {"date":"2026-09-01","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-02","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-03","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-04","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-05","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-06","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-07","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-08","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-09","pnl":6100,"status":"confirmed","note":"Fujikura +4,700; Morphos three trades net +1,400."},
+      {"date":"2026-09-10","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-11","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-12","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-13","pnl":-690,"status":"user_corrected","note":"User designated Sep13 as the -690 realized-P/L day for 1579."},
+      {"date":"2026-09-14","pnl":0,"status":"provisional_zero"},
+      {"date":"2026-09-15","pnl":5710,"status":"confirmed","note":"Nexon 200 shares fully sold at 3,175; realized +5,710."}
     ],
     "sep15Trades":[
-      {"code":"1571","name":"NF日経インバースETF","qty":50,"averageCost":310.0,"sellPrice":310.0,"realizedPnl":0},
-      {"code":"1579","name":"日経平均ブル2倍上場投信","qty":100,"averageCost":681.0,"sellPrice":674.1,"realizedPnl":-690},
       {"code":"3659","name":"ネクソン","qty":200,"averageCost":3146.45,"sellPrice":3175.0,"realizedPnl":5710,"positionAfter":0}
+    ],
+    "otherRecentTrades":[
+      {"code":"1571","name":"NF日経インバースETF","qty":50,"averageCost":310.0,"sellPrice":310.0,"realizedPnl":0},
+      {"code":"1579","name":"日経平均ブル2倍上場投信","qty":100,"averageCost":681.0,"sellPrice":674.1,"realizedPnl":-690,"pnlDate":"2026-09-13","dateBasis":"user correction"}
     ]
   },
   "confirmedCumulativeRealizedPnlKnownSinceAug1":81820,
-  "officialSourceAsOf":"August official through 2026-08-31; Sep9 and Sep15 values confirmed from user-supplied iSPEED screenshots.",
+  "officialSourceAsOf":"August official through 2026-08-31; September daily attribution follows latest user correction, with unreported days provisionally 0.",
   "ledgerPath":"data/realized-pnl-ledger.json",
   "threeMonthGoal":{
     "startDate":"2026-08-01",
@@ -52,10 +68,10 @@
     "confirmedCumulativeRealizedPnlKnown":81820,
     "remainingAgainstConfirmedKnown":218180,
     "progressPctConfirmedKnown":27.27,
-    "status":"Confirmed-known cumulative: August +70,700, Sep9 +6,100, Sep15 +5,020. Unreported September days are not treated as zero."
+    "status":"Cumulative through Sep15: August +70,700; September +11,120. September uses provisional 0 for unreported days, with Sep13 -690 and Sep15 +5,710 per latest correction."
   },
   "bestTrade":{"date":"2026-08-20","code":"141A","name":"トライアルホールディングス","realizedPnl":12000},
   "worstTrade":{"date":"2026-08-10","code":"5803","name":"フジクラ","realizedPnl":-13435},
-  "lastReview":{"date":"2026-09-15","todayRealizedPnlStatus":"confirmed +5020","source":"iSPEED screenshots supplied by user at 17:21 JST"},
-  "rules":{"sourcePriority":["iSPEED confirmed realized P/L","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"performanceAnalysisUsesDecisionEpisodes":true}
+  "lastReview":{"date":"2026-09-15","todayRealizedPnlStatus":"confirmed +5710","source":"Nexon iSPEED screenshot; daily attribution corrected by user at 17:22 JST"},
+  "rules":{"sourcePriority":["iSPEED confirmed realized P/L","user explicit correction","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"performanceAnalysisUsesDecisionEpisodes":true}
 }
