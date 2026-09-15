@@ -1,11 +1,13 @@
 {
-  "lastSyncedAtJST":"2026-09-12 16:01",
-  "trigger":"weekend_committee_2026-09-12",
-  "triggerMessageSummary":"User asked to convene the investment committee, refresh the web page, and verify that news is current.",
-  "updated":["data/daily/2026-09-12.json","data/latest-strategy.json","data/daytrade-latest.json","data/swing-latest.json","data/longterm-latest.json","data/reviews/2026-09-11.json","data/latest-review.json","data/current-view.json","data/holdings.json","data/sync-status.json"],
+  "lastSyncedAtJST":"2026-09-15 17:21",
+  "trigger":"trade_or_result_2026-09-15",
+  "triggerMessageSummary":"User supplied iSPEED realized P/L screenshots and reported multiple sales. Nexon is fully closed and must be removed from holdings.",
+  "updated":["data/holdings.json","data/performance-summary.json","data/current-view.json","data/sync-status.json"],
   "status":"ready",
   "primaryPage":"dashboard.html",
   "latestStrategyPage":"latest.html",
-  "newsFreshness":"Verified through 2026-09-12 16:01 JST using Reuters, company official releases and current disclosure sources. Monday 06:30 refresh required before execution.",
-  "note":"Weekend committee rebuilt Sep14 candidates from fresh information rather than carrying Sep11 rankings. Forecast success and executable-trade success are separated. Portfolio P/L is a derived Sep11-close value, not a new iSPEED confirmation."
+  "positionCount":6,
+  "todayConfirmedRealizedPnl":5020,
+  "remainingPortfolioUnrealizedPnl":-50718,
+  "note":"Sep15 confirmed sales: 1571 50 units @310, realized 0; 1579 100 units @674.1, realized -690; Nexon 200 shares @3175, realized +5710. Nexon position is now zero and removed from holdings. September confirmed-known P/L is +11120 from Sep9 and Sep15 screenshots; unreported days are not assumed zero."
 }
