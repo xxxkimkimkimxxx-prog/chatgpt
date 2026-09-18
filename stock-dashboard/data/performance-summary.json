@@ -1,77 +1,224 @@
 {
-  "asOf":"2026-09-15 17:22 JST",
-  "period":"2026-08 official + 2026-09 user-ledger",
-  "officialRealizedPnl":70700,
-  "officialTradeCount":42,
-  "officialAugustRealizedPnl":70700,
-  "officialAugustRealizedTradeCount":42,
-  "executionBasedMetrics":{
-    "wins":32,
-    "losses":10,
-    "winRatePct":76.19,
-    "grossProfit":120405,
-    "grossLoss":49705,
-    "profitFactor":2.42,
-    "averageWin":3762.66,
-    "averageLoss":-4970.5,
-    "note":"August metrics retained from iSPEED-confirmed records."
+  "asOf": "2026-09-18 17:47 JST",
+  "period": "2026-08 official + 2026-09 user-ledger",
+  "officialRealizedPnl": 70700,
+  "officialTradeCount": 42,
+  "officialAugustRealizedPnl": 70700,
+  "officialAugustRealizedTradeCount": 42,
+  "executionBasedMetrics": {
+    "wins": 32,
+    "losses": 10,
+    "winRatePct": 76.19,
+    "grossProfit": 120405,
+    "grossLoss": 49705,
+    "profitFactor": 2.42,
+    "averageWin": 3762.66,
+    "averageLoss": -4970.5,
+    "note": "August metrics retained from iSPEED-confirmed records."
   },
-  "decisionEpisodeMetrics":{
-    "episodes":39,
-    "wins":31,
-    "losses":8,
-    "winRatePct":79.49,
-    "grossProfit":106055,
-    "grossLoss":35355,
-    "profitFactor":3.00,
-    "averageWin":3421.13,
-    "averageLoss":-4419.38,
-    "expectancyPerEpisode":1812.82,
-    "note":"August decision-episode analysis retained; official realized P/L remains separate."
+  "decisionEpisodeMetrics": {
+    "episodes": 39,
+    "wins": 31,
+    "losses": 8,
+    "winRatePct": 79.49,
+    "grossProfit": 106055,
+    "grossLoss": 35355,
+    "profitFactor": 3,
+    "averageWin": 3421.13,
+    "averageLoss": -4419.38,
+    "expectancyPerEpisode": 1812.82,
+    "note": "August decision-episode analysis retained; official realized P/L remains separate."
   },
-  "septemberConfirmedKnown":{
-    "realizedPnl":11120,
-    "coverage":"User instruction: unreported September days are provisionally treated as 0; Sep13 is -690. Confirmed trade screenshots remain higher-priority evidence when available.",
-    "zeroAssumptionPolicy":"Unreported days through 2026-09-15 are provisionally 0 unless later corrected by the user or iSPEED evidence.",
-    "daily":[
-      {"date":"2026-09-01","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-02","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-03","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-04","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-05","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-06","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-07","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-08","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-09","pnl":6100,"status":"confirmed","note":"Fujikura +4,700; Morphos three trades net +1,400."},
-      {"date":"2026-09-10","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-11","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-12","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-13","pnl":-690,"status":"user_corrected","note":"User designated Sep13 as the -690 realized-P/L day for 1579."},
-      {"date":"2026-09-14","pnl":0,"status":"provisional_zero"},
-      {"date":"2026-09-15","pnl":5710,"status":"confirmed","note":"Nexon 200 shares fully sold at 3,175; realized +5,710."}
+  "septemberConfirmedKnown": {
+    "realizedPnl": 21320,
+    "coverage": "User instruction: unreported September days are provisionally treated as 0; confirmed trade screenshots / explicit user corrections remain higher-priority evidence. Sep18 confirmed: Solasia +3,200 and GO +7,000.",
+    "zeroAssumptionPolicy": "Unreported days through 2026-09-18 are provisionally 0 unless later corrected by the user or iSPEED evidence.",
+    "daily": [
+      {
+        "date": "2026-09-01",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-02",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-03",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-04",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-05",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-06",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-07",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-08",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-09",
+        "pnl": 6100,
+        "status": "confirmed",
+        "note": "Fujikura +4,700; Morphos three trades net +1,400."
+      },
+      {
+        "date": "2026-09-10",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-11",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-12",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-13",
+        "pnl": -690,
+        "status": "user_corrected",
+        "note": "User designated Sep13 as the -690 realized-P/L day for 1579."
+      },
+      {
+        "date": "2026-09-14",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-15",
+        "pnl": 5710,
+        "status": "confirmed",
+        "note": "Nexon 200 shares fully sold at 3,175; realized +5,710."
+      },
+      {
+        "date": "2026-09-16",
+        "pnl": 0,
+        "status": "confirmed_no_sale"
+      },
+      {
+        "date": "2026-09-17",
+        "pnl": 0,
+        "status": "provisional_zero"
+      },
+      {
+        "date": "2026-09-18",
+        "pnl": 10200,
+        "status": "confirmed",
+        "note": "Solasia 3,000 shares sold at 30: +3,200. GO 200 shares fully sold at 3,220: +7,000."
+      }
     ],
-    "sep15Trades":[
-      {"code":"3659","name":"ネクソン","qty":200,"averageCost":3146.45,"sellPrice":3175.0,"realizedPnl":5710,"positionAfter":0}
+    "sep15Trades": [
+      {
+        "code": "3659",
+        "name": "ネクソン",
+        "qty": 200,
+        "averageCost": 3146.45,
+        "sellPrice": 3175,
+        "realizedPnl": 5710,
+        "positionAfter": 0
+      }
     ],
-    "otherRecentTrades":[
-      {"code":"1571","name":"NF日経インバースETF","qty":50,"averageCost":310.0,"sellPrice":310.0,"realizedPnl":0},
-      {"code":"1579","name":"日経平均ブル2倍上場投信","qty":100,"averageCost":681.0,"sellPrice":674.1,"realizedPnl":-690,"pnlDate":"2026-09-13","dateBasis":"user correction"}
+    "sep18Trades": [
+      {
+        "code": "4597",
+        "name": "ソレイジア・ファーマ",
+        "qty": 3000,
+        "averageCost": 28.9333333333,
+        "sellPrice": 30,
+        "realizedPnl": 3200,
+        "positionAfter": 0
+      },
+      {
+        "code": "581A",
+        "name": "GO",
+        "qty": 200,
+        "averageCost": 3185,
+        "sellPrice": 3220,
+        "realizedPnl": 7000,
+        "positionAfter": 0
+      }
+    ],
+    "otherRecentTrades": [
+      {
+        "code": "1571",
+        "name": "NF日経インバースETF",
+        "qty": 50,
+        "averageCost": 310,
+        "sellPrice": 310,
+        "realizedPnl": 0
+      },
+      {
+        "code": "1579",
+        "name": "日経平均ブル2倍上場投信",
+        "qty": 100,
+        "averageCost": 681,
+        "sellPrice": 674.1,
+        "realizedPnl": -690,
+        "pnlDate": "2026-09-13",
+        "dateBasis": "user correction"
+      }
     ]
   },
-  "confirmedCumulativeRealizedPnlKnownSinceAug1":81820,
-  "officialSourceAsOf":"August official through 2026-08-31; September daily attribution follows latest user correction, with unreported days provisionally 0.",
-  "ledgerPath":"data/realized-pnl-ledger.json",
-  "threeMonthGoal":{
-    "startDate":"2026-08-01",
-    "targetDate":"2026-11-24",
-    "targetRealizedPnl":300000,
-    "confirmedCumulativeRealizedPnlKnown":81820,
-    "remainingAgainstConfirmedKnown":218180,
-    "progressPctConfirmedKnown":27.27,
-    "status":"Cumulative through Sep15: August +70,700; September +11,120. September uses provisional 0 for unreported days, with Sep13 -690 and Sep15 +5,710 per latest correction."
+  "confirmedCumulativeRealizedPnlKnownSinceAug1": 92020,
+  "officialSourceAsOf": "August official through 2026-08-31; September daily attribution updated through 2026-09-18. Sep18 includes confirmed GO +7,000 and Solasia +3,200; unreported September days remain provisional 0 unless corrected.",
+  "ledgerPath": "data/realized-pnl-ledger.json",
+  "threeMonthGoal": {
+    "startDate": "2026-08-01",
+    "targetDate": "2026-11-24",
+    "targetRealizedPnl": 300000,
+    "confirmedCumulativeRealizedPnlKnown": 92020,
+    "remainingAgainstConfirmedKnown": 207980,
+    "progressPctConfirmedKnown": 30.67,
+    "status": "Cumulative through Sep18: August +70,700; September +21,320. Sep18 confirmed +10,200 (GO +7,000; Solasia +3,200)."
   },
-  "bestTrade":{"date":"2026-08-20","code":"141A","name":"トライアルホールディングス","realizedPnl":12000},
-  "worstTrade":{"date":"2026-08-10","code":"5803","name":"フジクラ","realizedPnl":-13435},
-  "lastReview":{"date":"2026-09-15","todayRealizedPnlStatus":"confirmed +5710","source":"Nexon iSPEED screenshot; daily attribution corrected by user at 17:22 JST"},
-  "rules":{"sourcePriority":["iSPEED confirmed realized P/L","user explicit correction","confirmed project trade ledger","derived execution-price calculations"],"doNotOverwriteOfficialWithDerived":true,"goalDoesNotRelaxRiskRules":true,"performanceAnalysisUsesDecisionEpisodes":true}
+  "bestTrade": {
+    "date": "2026-08-20",
+    "code": "141A",
+    "name": "トライアルホールディングス",
+    "realizedPnl": 12000
+  },
+  "worstTrade": {
+    "date": "2026-08-10",
+    "code": "5803",
+    "name": "フジクラ",
+    "realizedPnl": -13435
+  },
+  "lastReview": {
+    "date": "2026-09-18",
+    "todayRealizedPnlStatus": "confirmed +10200",
+    "source": "iSPEED-confirmed / user-confirmed Sep18 sales: GO 200 shares at 3,220 (+7,000) and Solasia 3,000 shares at 30 (+3,200)."
+  },
+  "rules": {
+    "sourcePriority": [
+      "iSPEED confirmed realized P/L",
+      "user explicit correction",
+      "confirmed project trade ledger",
+      "derived execution-price calculations"
+    ],
+    "doNotOverwriteOfficialWithDerived": true,
+    "goalDoesNotRelaxRiskRules": true,
+    "performanceAnalysisUsesDecisionEpisodes": true
+  }
 }
