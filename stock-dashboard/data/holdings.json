@@ -1,32 +1,34 @@
 {
-  "asOf": "2026-09-16 19:18 JST",
-  "positionAsOf": "2026-09-16 19:17 JST",
-  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings; Sep15 Nexon full sale from user-supplied iSPEED screenshot; Sep16 GO and NTT purchases from user-supplied iSPEED screenshot. User specified unrealized P/L for the two new positions as 0 at entry.",
+  "asOf": "2026-09-18 11:33 JST",
+  "positionAsOf": "2026-09-18 11:33 JST",
+  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings. Sep18 user-supplied iSPEED screenshots confirm GO 200 shares sold at 3,220 and Solasia 3,000 shares sold at 30, with realized P/L +7,000 and +3,200 respectively. NTT 200-share sell order at 180 is shown as executing, not yet confirmed filled, so NTT remains an open position.",
   "positions": [
     {"code":"285A","name":"キオクシアホールディングス","quantity":1,"averageCost":57878.0,"referencePrice":51750,"unrealizedPnl":-6128,"management":"1株観察用。保有を理由に候補順位は上げない。"},
     {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":123,"unrealizedPnl":4000,"management":"低流動性。利益圏を利用した資金回収候補。"},
-    {"code":"4597","name":"ソレイジア・ファーマ","quantity":3000,"averageCost":28.93,"executionWeightedAverageCost":28.9333333333,"referencePrice":29,"unrealizedPnl":210,"management":"投機枠。追加停止。一次IR/承認/提携材料を待つ。"},
     {"code":"5016","name":"JX金属","quantity":100,"averageCost":3902.0,"referencePrice":3654,"unrealizedPnl":-24800,"management":"縮小レビュー。ナンピン禁止。"},
     {"code":"5027","name":"ANYMIND GROUP","quantity":400,"averageCost":830.5,"referencePrice":774,"unrealizedPnl":-22600,"management":"追加停止。戻り局面で一部縮小を再評価。"},
     {"code":"8518","name":"日本アジア投資","quantity":200,"averageCost":162.0,"referencePrice":155,"unrealizedPnl":-1400,"management":"低流動性。優先資金回収候補。"},
-    {"code":"581A","name":"GO","quantity":200,"averageCost":3185.0,"referencePrice":3185,"unrealizedPnl":0,"management":"2026-09-16新規買付。"},
-    {"code":"9432","name":"NTT","quantity":200,"averageCost":176.8,"referencePrice":176.8,"unrealizedPnl":0,"management":"2026-09-16新規買付。"}
+    {"code":"9432","name":"NTT","quantity":200,"averageCost":176.8,"referencePrice":176.8,"unrealizedPnl":0,"management":"2026-09-18 11:33時点、200株・180円の売付注文は執行中。約定未確認のため保有継続扱い。"}
   ],
   "openTransactionsToday": [
-    {"code":"581A","name":"GO","quantity":200,"averageCost":3185.0,"buyPrice":3185.0,"buyAmount":637000,"unrealizedPnlAtEntry":0,"status":"open","market":"TSE","date":"2026-09-16"},
-    {"code":"9432","name":"NTT","quantity":200,"averageCost":176.8,"buyPrice":176.8,"buyAmount":35360,"unrealizedPnlAtEntry":0,"status":"open","market":"TSE","date":"2026-09-16"}
+    {"code":"9432","name":"NTT","quantity":200,"averageCost":176.8,"sellOrderPrice":180.0,"status":"sell_order_executing_unconfirmed","market":"TSE","date":"2026-09-18"}
   ],
-  "closedToday": [],
+  "closedToday": [
+    {"code":"4597","name":"ソレイジア・ファーマ","quantity":3000,"averageCost":28.9333333333,"sellPrice":30.0,"sellAmount":90000,"realizedPnl":3200,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-18"},
+    {"code":"581A","name":"GO","quantity":200,"averageCost":3185.0,"sellPrice":3220.0,"sellAmount":644000,"realizedPnl":7000,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-18"}
+  ],
   "recentClosedTransactions": [
+    {"code":"4597","name":"ソレイジア・ファーマ","quantity":3000,"averageCost":28.9333333333,"sellPrice":30.0,"sellAmount":90000,"realizedPnl":3200,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-18"},
+    {"code":"581A","name":"GO","quantity":200,"averageCost":3185.0,"sellPrice":3220.0,"sellAmount":644000,"realizedPnl":7000,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-18"},
     {"code":"1571","name":"NF日経インバースETF","quantity":50,"averageCost":310.0,"sellPrice":310.0,"sellAmount":15500,"realizedPnl":0,"status":"closed","market":"TSE"},
     {"code":"1579","name":"日経平均ブル2倍上場投信","quantity":100,"averageCost":681.0,"sellPrice":674.1,"sellAmount":67410,"realizedPnl":-690,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-13","dateBasis":"user correction"},
     {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"sellPrice":3175.0,"sellAmount":635000,"realizedPnl":5710,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-15"}
   ],
-  "confirmedRealizedPnlToday": 0,
-  "confirmedRealizedPnlDate": "2026-09-16",
-  "confirmedRealizedPnlBreakdown": {},
-  "confirmedSeptemberRealizedPnlKnown": 11120,
-  "confirmedSeptemberRealizedPnlCoverageNote": "Per latest user instruction, unreported September days through Sep16 are provisionally 0; Sep13 is -690. Known non-zero days: Sep9 +6100, Sep13 -690, Sep15 +5710.",
+  "confirmedRealizedPnlToday": 10200,
+  "confirmedRealizedPnlDate": "2026-09-18",
+  "confirmedRealizedPnlBreakdown": {"4597":3200,"581A":7000},
+  "confirmedSeptemberRealizedPnlKnown": 21320,
+  "confirmedSeptemberRealizedPnlCoverageNote": "Known September realized P/L through Sep18 totals +21,320 yen. Sep18 confirmed: Solasia +3,200, GO +7,000. NTT sell order at 180 is not included because fill is not yet confirmed.",
   "dailyRealizedPnlSeptember": [
     {"date":"2026-09-01","pnl":0,"status":"provisional_zero"},
     {"date":"2026-09-02","pnl":0,"status":"provisional_zero"},
@@ -43,11 +45,12 @@
     {"date":"2026-09-13","pnl":-690,"status":"user_corrected"},
     {"date":"2026-09-14","pnl":0,"status":"provisional_zero"},
     {"date":"2026-09-15","pnl":5710,"status":"confirmed"},
-    {"date":"2026-09-16","pnl":0,"status":"confirmed_no_sale"}
+    {"date":"2026-09-16","pnl":0,"status":"confirmed_no_sale"},
+    {"date":"2026-09-18","pnl":10200,"status":"confirmed"}
   ],
-  "derivedPortfolioUnrealizedPnl": -50718,
-  "derivedPortfolioUnrealizedPnlBasis": "Prior six positions at stored reference prices plus GO and NTT at acquisition prices, for which user specified P/L 0 at entry. Refresh with latest market prices for current valuation.",
-  "estimatedPortfolioCost": 1690828,
-  "estimatedPortfolioMarketValue": 1640110,
+  "derivedPortfolioUnrealizedPnl": null,
+  "derivedPortfolioUnrealizedPnlBasis": "GO and Solasia removed after confirmed full sales on Sep18. NTT remains until sell fill is confirmed. Refresh remaining positions with latest market prices for current valuation.",
+  "estimatedPortfolioCost": null,
+  "estimatedPortfolioMarketValue": null,
   "ruleReference": "data/trading-rules.json"
 }
