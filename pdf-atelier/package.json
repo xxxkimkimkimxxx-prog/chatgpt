@@ -1,0 +1,34 @@
+{
+  "name": "pdf-atelier",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:web-assets": "node scripts/prepare-web-assets.mjs",
+    "predev": "npm run prepare:web-assets",
+    "dev": "vite",
+    "prebuild:web": "npm run prepare:web-assets",
+    "build:web": "vite build --outDir dist/client",
+    "build:render": "python3 scripts/build-fonts.py && npm run build:web",
+    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "setup:ocr": "python3 scripts/setup-ocr.py",
+    "test:engine": ".venv/bin/python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "test:api": "node --test tests/api.test.mjs",
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test": "npm run test:engine && npm run test:api && npm run test:sites"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans-jp": "^5.3.0",
+    "@fontsource/noto-serif-jp": "^5.3.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "@tesseract.js-data/jpn": "^1.0.0",
+    "@tesseract.js-data/jpn_vert": "^1.0.0",
+    "@vitejs/plugin-react": "5.0.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tesseract.js": "^7.0.0",
+    "vite": "6.4.2"
+  }
+}

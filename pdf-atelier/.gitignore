@@ -1,0 +1,11 @@
+node_modules/
+.venv/
+tessdata/
+__pycache__/
+*.pyc
+.DS_Store
+.vercel
+dist/
+public/tesseract/
+public/tessdata/
+assets/fonts/*.ttf

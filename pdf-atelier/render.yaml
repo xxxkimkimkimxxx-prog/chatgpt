@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: pdf-atelier
+    runtime: docker
+    plan: free
+    autoDeployTrigger: commit
+    healthCheckPath: /api/health
