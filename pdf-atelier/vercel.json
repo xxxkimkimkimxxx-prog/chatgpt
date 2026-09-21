@@ -15,6 +15,8 @@
     {
       "source": "/(.*)",
       "headers": [
+        {"key": "Content-Security-Policy", "value": "default-src 'none'; script-src 'none'; connect-src 'none'; style-src 'self'; img-src 'none'; font-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"},
+        {"key": "Cache-Control", "value": "no-store"},
         {"key": "X-Content-Type-Options", "value": "nosniff"},
         {"key": "Referrer-Policy", "value": "no-referrer"},
         {"key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()"},

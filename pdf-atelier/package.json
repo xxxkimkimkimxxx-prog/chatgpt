@@ -9,7 +9,7 @@
     "dev": "vite",
     "prebuild:web": "npm run prepare:web-assets",
     "build:web": "vite build --outDir dist/client",
-    "build:render": "python3 scripts/build-fonts.py && npm run build:web",
+    "build:render": "npm run build:web",
     "build": "vite build && node scripts/prepare-sites-build.mjs",
     "preview": "vite preview",
     "setup:ocr": "python3 scripts/setup-ocr.py",

@@ -17,9 +17,7 @@ class VercelAdapterTests(unittest.TestCase):
         self.assertEqual(module.route_from('/api/sample'),'/api/sample')
         self.assertEqual(module.route_from('/api/health'),'/api/health')
 
-    def test_rate_limit(self):
-        ip='test-only-address'
-        for _ in range(module.RATE_LIMIT): self.assertFalse(module.limited(ip))
-        self.assertTrue(module.limited(ip))
+    def test_no_document_engine(self):
+        self.assertFalse(hasattr(module, 'handle'))
 
 if __name__=='__main__':unittest.main(verbosity=2)

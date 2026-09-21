@@ -1,0 +1,7 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #17243a; background: #f4f6f9; }
+body { margin: 0; padding: 24px; }
+main { max-width: 680px; margin: 40px auto; background: white; padding: clamp(24px, 5vw, 48px); border: 1px solid #d9dfe8; border-radius: 20px; line-height: 1.85; }
+.brand { color: #435e79; font-weight: 700; }
+h1 { font-size: clamp(24px, 5vw, 32px); line-height: 1.4; }
+ul { padding-left: 1.4em; }
+.notice { padding: 16px; background: #fff4db; border-left: 4px solid #986400; }

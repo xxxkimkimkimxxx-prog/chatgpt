@@ -34,19 +34,7 @@ import {
 } from "@phosphor-icons/react";
 
 async function api(path, body) {
-  const r = await fetch(
-    "/api/" + path,
-    body
-      ? {
-          method: "POST",
-          headers: { "Content-Type": "application/json", "X-Atelier": "1" },
-          body: JSON.stringify(body),
-        }
-      : {},
-  );
-  const data = await r.json();
-  if (!r.ok) throw new Error(data.error || "処理に失敗しました。");
-  return data;
+  throw new Error("文書保護のためサーバー処理を停止しています。端末内処理版は未完成です。");
 }
 const b64 = (file) =>
   new Promise((resolve, reject) => {
