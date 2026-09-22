@@ -77,7 +77,9 @@ export async function editPdf(bytes, action, args = {}) {
   } else if (["rectangle", "highlight"].includes(action)) {
     const page = doc.getPage(args.page || 0);
     if (page.getRotation().angle % 360 !== 0) throw new Error("回転済みページへのマーカー追加は座標検証中です。");
-    const [x1, y1, x2, y2] = args.rect.map(Number); const color = action === "highlight" ? rgb(1, 0.82, 0.15) : rgb(0.08, 0.16, 0.29);
+    const [x1, y1, x2, y2] = (args.rect || []).map(Number);
+    if (![x1, y1, x2, y2].every(Number.isFinite) || x2 <= x1 || y2 <= y1) throw new Error("図形の配置範囲が正しくありません。");
+    const color = action === "highlight" ? rgb(1, 0.82, 0.15) : rgb(0.08, 0.16, 0.29);
     page.drawRectangle({ x: x1, y: page.getHeight() - y2, width: x2 - x1, height: y2 - y1, color, opacity: action === "highlight" ? 0.35 : 0.08, borderColor: color, borderWidth: action === "highlight" ? 0 : 1.5 });
   } else throw new Error("この操作は端末内版ではまだ利用できません。");
   return new Uint8Array(await doc.save());

@@ -3,7 +3,7 @@ import { createWorker, OEM } from "tesseract.js";
 import {
   ArrowCounterClockwise, ArrowClockwise, CaretDown, CaretUp, CheckCircle,
   Copy, DownloadSimple, FilePdf, FileXls, FileDoc, Highlighter, Image as ImageIcon, Plus,
-  ShieldCheck, TextT, Trash, UploadSimple, WarningCircle,
+  Rectangle, ShieldCheck, TextT, Trash, UploadSimple, WarningCircle,
 } from "@phosphor-icons/react";
 import {
   createDocx, createVisualDocx, createVisualXlsx, createXlsx, editPdf,
@@ -107,6 +107,7 @@ export function LocalApp() {
     if (file.size > 10 * 1024 * 1024) { setError("画像は10MB以内にしてください。"); return; }
     await action("image", { image: new Uint8Array(await file.arrayBuffer()), imageType: file.type, rect: [box.x, box.y, box.x + box.width, box.y + box.height] });
     setStatus("画像・署名を端末内で配置しました。画像は別保存していません");
+    if (imageInput.current) imageInput.current.value = "";
   }
 
   async function exportOffice(kind, visual = false) {
@@ -221,7 +222,7 @@ export function LocalApp() {
         </div>
         <div className="field-grid"><label>文字サイズ<input type="number" min="8" max="72" value={fontSize} onChange={(e) => setFontSize(Number(e.target.value))} /></label><label>文字色<input type="color" value={color} onChange={(e) => setColor(e.target.value)} /></label></div>
         <Button icon={TextT} className="primary" disabled={busy || !text.trim()} onClick={() => action("text", { text, rect: [box.x, box.y, box.x + box.width, box.y + box.height], size: fontSize, color })}>文字を確定</Button>
-        <div className="quick-tools"><Button icon={Highlighter} onClick={() => action("highlight", { rect: [box.x, box.y, box.x + box.width, box.y + box.height] })} disabled={busy}>同じ範囲をマーカー</Button><Button icon={ImageIcon} onClick={() => imageInput.current?.click()} disabled={busy}>画像・署名を配置</Button></div>
+        <div className="quick-tools"><Button icon={Highlighter} onClick={() => action("highlight", { rect: [box.x, box.y, box.x + box.width, box.y + box.height] })} disabled={busy}>同じ範囲をマーカー</Button><Button icon={Rectangle} onClick={() => action("rectangle", { rect: [box.x, box.y, box.x + box.width, box.y + box.height] })} disabled={busy}>同じ範囲を囲む</Button><Button icon={ImageIcon} onClick={() => imageInput.current?.click()} disabled={busy}>画像・署名を配置</Button></div>
         <input ref={imageInput} hidden type="file" accept="image/png,image/jpeg" onChange={(e) => placeImage(e.target.files?.[0])} />
 
         <h2>OCR・変換</h2>

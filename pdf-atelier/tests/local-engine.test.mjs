@@ -43,6 +43,14 @@ test('image placement embeds pixels without a server',async()=>{
   assert.equal(reopened.getPageCount(),1);
 });
 
+test('local highlight and rectangle validate their placement',async()=>{
+  const input=await sample(1);
+  const highlighted=await editPdf(input,'highlight',{page:0,selected:[0],rect:[20,20,120,70]});
+  const outlined=await editPdf(highlighted,'rectangle',{page:0,selected:[0],rect:[30,30,140,90]});
+  assert.ok(outlined.length>input.length);
+  await assert.rejects(()=>editPdf(input,'rectangle',{page:0,selected:[0],rect:[20,20,10,70]}),/配置範囲/);
+});
+
 test('DOCX and XLSX exports are valid zip packages',async()=>{
   const docx=await createDocx(['日本語の文字抽出','二ページ目']);
   const docxZip=await JSZip.loadAsync(await docx.arrayBuffer());
