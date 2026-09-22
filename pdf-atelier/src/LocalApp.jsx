@@ -6,8 +6,9 @@ import {
   ShieldCheck, TextT, Trash, UploadSimple, WarningCircle,
 } from "@phosphor-icons/react";
 import {
-  createDocx, createXlsx, editPdf, extractText, inspectPdf, readFile,
-  renderForOcr, saveBlob,
+  createDocx, createVisualDocx, createVisualXlsx, createXlsx, editPdf,
+  extractPages, extractText, inspectPdf, readFile, renderForOcr,
+  renderPagesForOffice, saveBlob,
 } from "./localEngine.js";
 
 const initialBox = { x: 48, y: 48, width: 260, height: 80 };
@@ -99,15 +100,22 @@ export function LocalApp() {
     });
   }
 
-  async function exportOffice(kind) {
+  async function exportOffice(kind, visual = false) {
     if (!bytes) return;
     await work(async () => {
       const native = await extractText(bytes, selection);
       const pages = selection.map((index, i) => [native[i], ocrText[index]].filter(Boolean).join("\n"));
       const base = name.replace(/\.pdf$/i, "");
-      if (kind === "docx") saveBlob(await createDocx(pages), `${base}-文字抽出.docx`);
-      else saveBlob(await createXlsx(pages), `${base}-文字抽出.xlsx`);
-      setStatus("文字中心の簡易変換ファイルを保存しました");
+      if (visual) {
+        const images = await renderPagesForOffice(bytes, selection);
+        if (kind === "docx") saveBlob(await createVisualDocx(images), `${base}-見た目優先.docx`);
+        else saveBlob(await createVisualXlsx(images, pages), `${base}-見た目優先.xlsx`);
+        setStatus("見た目優先の変換ファイルを端末内で生成しました");
+      } else {
+        if (kind === "docx") saveBlob(await createDocx(pages), `${base}-文字抽出.docx`);
+        else saveBlob(await createXlsx(pages), `${base}-文字抽出.xlsx`);
+        setStatus("文字中心の簡易変換ファイルを保存しました");
+      }
     });
   }
 
@@ -210,8 +218,10 @@ export function LocalApp() {
         <Button onClick={runOcr} disabled={busy}>端末内OCR（最大5ページ）</Button>
         <p className="limit">OCR文字はWord／Excel出力に利用します。検索可能PDFへの埋め込みは日本語精度の検証が終わるまで無効です。</p>
         <div className="export-buttons"><Button icon={FileDoc} onClick={() => exportOffice("docx")} disabled={busy}>Word（文字中心）</Button><Button icon={FileXls} onClick={() => exportOffice("xlsx")} disabled={busy}>Excel（文字中心）</Button></div>
+        <div className="export-buttons"><Button icon={FileDoc} onClick={() => exportOffice("docx", true)} disabled={busy}>Word（見た目優先）</Button><Button icon={FileXls} onClick={() => exportOffice("xlsx", true)} disabled={busy}>Excel（見た目優先）</Button></div>
+        <Button icon={Copy} onClick={() => work(async () => { const output = await extractPages(bytes, selection); saveBlob(output, name.replace(/\.pdf$/i, "") + "-選択ページ.pdf", "application/pdf"); setStatus("選択ページを端末内で分割保存しました"); })} disabled={busy}>選択ページをPDF保存</Button>
         <Button icon={DownloadSimple} className="save" onClick={() => saveBlob(bytes, name.replace(/\.pdf$/i, "") + "-編集済み.pdf", "application/pdf")} disabled={busy}>編集済みPDFを保存</Button>
-        <p className="limit">Word／Excelは配置完全一致ではありません。元の見た目を保つ画像形式は次の実装段階です。</p>
+        <p className="limit">見た目優先はページ画像を配置するため、本文は直接編集できません。文字中心は編集できますが配置完全一致ではありません。</p>
       </aside>
     </div>}
   </div>;

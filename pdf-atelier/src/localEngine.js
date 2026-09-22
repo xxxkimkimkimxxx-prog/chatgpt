@@ -1,6 +1,6 @@
 import * as pdfjs from "pdfjs-dist/build/pdf.mjs";
 import workerUrl from "pdfjs-dist/build/pdf.worker.min.mjs?url";
-export { createDocx, createXlsx, editPdf } from "./localCore.js";
+export { createDocx, createVisualDocx, createVisualXlsx, createXlsx, editPdf, extractPages } from "./localCore.js";
 
 pdfjs.GlobalWorkerOptions.workerSrc = workerUrl;
 
@@ -51,6 +51,24 @@ export async function renderForOcr(bytes, pageIndex) {
   const doc = await open(bytes);
   try { return (await renderPage(await doc.getPage(pageIndex + 1), 2)).dataUrl; }
   finally { await doc.destroy(); }
+}
+
+function dataUrlBytes(dataUrl) {
+  const binary = atob(dataUrl.split(",")[1]);
+  return Uint8Array.from(binary, (char) => char.charCodeAt(0));
+}
+
+export async function renderPagesForOffice(bytes, indexes) {
+  const doc = await open(bytes);
+  try {
+    const selected = indexes?.length ? indexes : Array.from({ length: doc.numPages }, (_, i) => i);
+    const output = [];
+    for (const index of selected) {
+      const rendered = await renderPage(await doc.getPage(index + 1), 1.35, "image/png");
+      output.push({ bytes: dataUrlBytes(rendered.dataUrl), width: rendered.width * 1.35, height: rendered.height * 1.35 });
+    }
+    return output;
+  } finally { await doc.destroy(); }
 }
 
 export async function extractText(bytes, indexes) {

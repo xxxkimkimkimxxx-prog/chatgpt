@@ -1,9 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
+import {spawnSync} from 'node:child_process';
 import {PDFDocument} from 'pdf-lib';
 import JSZip from 'jszip';
-import {createDocx,createXlsx,editPdf} from '../src/localCore.js';
+import {createDocx,createVisualDocx,createVisualXlsx,createXlsx,editPdf,extractPages} from '../src/localCore.js';
 
 async function sample(count=3){
   const doc=await PDFDocument.create();
@@ -23,6 +24,8 @@ test('local page operations never need an API',async()=>{
   assert.equal((await PDFDocument.load(reordered)).getPage(0).getWidth(),302);
   const merged=await editPdf(reordered,'merge',{other:await sample(2),page:0,selected:[0]});
   assert.equal((await PDFDocument.load(merged)).getPageCount(),5);
+  const split=await extractPages(merged,[1,3]);
+  assert.equal((await PDFDocument.load(split)).getPageCount(),2);
 });
 
 test('cannot delete all pages or use malformed order',async()=>{
@@ -40,6 +43,19 @@ test('DOCX and XLSX exports are valid zip packages',async()=>{
   assert.ok(xlsxZip.file('xl/workbook.xml'));
   assert.ok(xlsxZip.file('xl/worksheets/sheet2.xml'));
   assert.match(await xlsxZip.file('xl/worksheets/sheet1.xml').async('text'),/請求書/);
+  const png=Uint8Array.from(Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Y9Z7xkAAAAASUVORK5CYII=','base64'));
+  const visualDocx=await createVisualDocx([{bytes:png,width:595,height:842}]);
+  const visualDocxZip=await JSZip.loadAsync(await visualDocx.arrayBuffer());
+  assert.ok(Object.keys(visualDocxZip.files).some((name)=>name.startsWith('word/media/')));
+  const visualXlsx=await createVisualXlsx([{bytes:png,width:595,height:842}],['編集可能文字']);
+  const visualXlsxZip=await JSZip.loadAsync(await visualXlsx.arrayBuffer());
+  assert.ok(visualXlsxZip.file('xl/media/image1.png'));
+  assert.ok(visualXlsxZip.file('xl/drawings/drawing1.xml'));
+  assert.match(await visualXlsxZip.file('xl/worksheets/sheet1.xml').async('text'),/編集可能文字/);
+  const docxOpened=spawnSync('.venv/bin/python3',['-c','import io,sys; from docx import Document; d=Document(io.BytesIO(sys.stdin.buffer.read())); assert len(d.inline_shapes)==1'],{input:Buffer.from(await visualDocx.arrayBuffer())});
+  assert.equal(docxOpened.status,0,docxOpened.stderr.toString());
+  const xlsxOpened=spawnSync('.venv/bin/python3',['-c','import io,sys; from openpyxl import load_workbook; w=load_workbook(io.BytesIO(sys.stdin.buffer.read())); assert len(w.sheetnames)==1; assert len(w.active._images)==1'],{input:Buffer.from(await visualXlsx.arrayBuffer())});
+  assert.equal(xlsxOpened.status,0,xlsxOpened.stderr.toString());
 });
 
 test('active frontend contains no document API calls',async()=>{

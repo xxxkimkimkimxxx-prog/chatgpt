@@ -1,5 +1,5 @@
 import { PDFDocument, degrees, rgb } from "pdf-lib";
-import { Document, HeadingLevel, Packer, Paragraph, PageBreak } from "docx";
+import { Document, HeadingLevel, ImageRun, Packer, Paragraph, PageBreak } from "docx";
 import JSZip from "jszip";
 
 const clone = (bytes) => bytes instanceof Uint8Array ? bytes.slice() : new Uint8Array(bytes);
@@ -75,6 +75,15 @@ export async function editPdf(bytes, action, args = {}) {
   return new Uint8Array(await doc.save());
 }
 
+export async function extractPages(bytes, selected) {
+  const source = await PDFDocument.load(clone(bytes), { updateMetadata: false });
+  const list = indexes(source, selected, 0);
+  const output = await PDFDocument.create();
+  const pages = await output.copyPages(source, list);
+  pages.forEach((page) => output.addPage(page));
+  return new Uint8Array(await output.save());
+}
+
 export async function createDocx(textPages) {
   const children = [];
   textPages.forEach((text, i) => {
@@ -85,6 +94,18 @@ export async function createDocx(textPages) {
   return Packer.toBlob(new Document({ sections: [{ properties: {}, children }] }));
 }
 
+export async function createVisualDocx(renderedPages) {
+  const children = [];
+  renderedPages.forEach((item, i) => {
+    if (i) children.push(new Paragraph({ children: [new PageBreak()] }));
+    const maxWidth = 680;
+    const width = Math.min(maxWidth, Math.round(item.width));
+    const height = Math.round(item.height * width / item.width);
+    children.push(new Paragraph({ children: [new ImageRun({ data: item.bytes, type: "png", transformation: { width, height } })] }));
+  });
+  return Packer.toBlob(new Document({ sections: [{ properties: { page: { margin: { top: 360, right: 360, bottom: 360, left: 360 } } }, children }] }));
+}
+
 export async function createXlsx(textPages) {
   const zip = new JSZip();
   zip.file("[Content_Types].xml", `<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>${textPages.map((_, i) => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>`).join("")}</Types>`);
@@ -93,5 +114,32 @@ export async function createXlsx(textPages) {
   zip.folder("xl").folder("_rels").file("workbook.xml.rels", `<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${textPages.map((_, i) => `<Relationship Id="rId${i + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet${i + 1}.xml"/>`).join("")}</Relationships>`);
   const sheets = zip.folder("xl").folder("worksheets");
   textPages.forEach((text, i) => { const rows = (text || "").split(/\r?\n/).flatMap((line) => line.split(/\s{2,}|\t/)).slice(0, 5000); sheets.file(`sheet${i + 1}.xml`, `<?xml version="1.0" encoding="UTF-8"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><sheetData>${rows.map((value, row) => `<row r="${row + 1}"><c r="A${row + 1}" t="inlineStr"><is><t xml:space="preserve">${xml(value)}</t></is></c></row>`).join("")}</sheetData></worksheet>`); });
+  return zip.generateAsync({ type: "blob", mimeType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", compression: "DEFLATE" });
+}
+
+export async function createVisualXlsx(renderedPages, textPages = []) {
+  const zip = new JSZip();
+  const drawingOverrides = renderedPages.map((_, i) => `<Override PartName="/xl/drawings/drawing${i + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.drawing+xml"/>`).join("");
+  const sheetOverrides = renderedPages.map((_, i) => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>`).join("");
+  zip.file("[Content_Types].xml", `<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>${sheetOverrides}${drawingOverrides}</Types>`);
+  zip.folder("_rels").file(".rels", `<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`);
+  zip.folder("xl").file("workbook.xml", `<?xml version="1.0" encoding="UTF-8"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>${renderedPages.map((_, i) => `<sheet name="ページ${i + 1}" sheetId="${i + 1}" r:id="rId${i + 1}"/>`).join("")}</sheets></workbook>`);
+  zip.folder("xl").folder("_rels").file("workbook.xml.rels", `<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${renderedPages.map((_, i) => `<Relationship Id="rId${i + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet${i + 1}.xml"/>`).join("")}</Relationships>`);
+  const worksheets = zip.folder("xl").folder("worksheets");
+  const worksheetRels = worksheets.folder("_rels");
+  const drawings = zip.folder("xl").folder("drawings");
+  const drawingRels = drawings.folder("_rels");
+  const media = zip.folder("xl").folder("media");
+  renderedPages.forEach((item, i) => {
+    const rows = (textPages[i] || "").split(/\r?\n/).slice(0, 5000);
+    const rowXml = rows.map((value, row) => `<row r="${row + 1}"><c r="N${row + 1}" t="inlineStr"><is><t xml:space="preserve">${xml(value)}</t></is></c></row>`).join("");
+    worksheets.file(`sheet${i + 1}.xml`, `<?xml version="1.0" encoding="UTF-8"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheetData>${rowXml}</sheetData><drawing r:id="rId1"/></worksheet>`);
+    worksheetRels.file(`sheet${i + 1}.xml.rels`, `<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/drawing" Target="../drawings/drawing${i + 1}.xml"/></Relationships>`);
+    const cx = Math.max(1, Math.round(item.width * 9525));
+    const cy = Math.max(1, Math.round(item.height * 9525));
+    drawings.file(`drawing${i + 1}.xml`, `<?xml version="1.0" encoding="UTF-8"?><xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><xdr:oneCellAnchor><xdr:from><xdr:col>0</xdr:col><xdr:colOff>0</xdr:colOff><xdr:row>0</xdr:row><xdr:rowOff>0</xdr:rowOff></xdr:from><xdr:ext cx="${cx}" cy="${cy}"/><xdr:pic><xdr:nvPicPr><xdr:cNvPr id="${i + 1}" name="PDF page ${i + 1}"/><xdr:cNvPicPr/></xdr:nvPicPr><xdr:blipFill><a:blip r:embed="rId1"/><a:stretch><a:fillRect/></a:stretch></xdr:blipFill><xdr:spPr><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></xdr:spPr></xdr:pic><xdr:clientData/></xdr:oneCellAnchor></xdr:wsDr>`);
+    drawingRels.file(`drawing${i + 1}.xml.rels`, `<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="../media/image${i + 1}.png"/></Relationships>`);
+    media.file(`image${i + 1}.png`, item.bytes);
+  });
   return zip.generateAsync({ type: "blob", mimeType: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", compression: "DEFLATE" });
 }
