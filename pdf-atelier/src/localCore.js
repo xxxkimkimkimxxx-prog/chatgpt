@@ -66,6 +66,14 @@ export async function editPdf(bytes, action, args = {}) {
     if (![x1, y1, x2, y2].every(Number.isFinite) || x2 <= x1 || y2 <= y1) throw new Error("文字の配置範囲が正しくありません。");
     const png = await rasterText(args.text, x2 - x1, y2 - y1, args); const image = await doc.embedPng(png);
     page.drawImage(image, { x: x1, y: page.getHeight() - y2, width: x2 - x1, height: y2 - y1, opacity: Math.max(0.05, Math.min(1, Number(args.opacity ?? 1))) });
+  } else if (action === "image") {
+    const page = doc.getPage(args.page || 0);
+    if (page.getRotation().angle % 360 !== 0) throw new Error("回転済みページへの画像配置は座標検証中です。先に回転を戻してください。");
+    const [x1, y1, x2, y2] = args.rect.map(Number);
+    if (![x1, y1, x2, y2].every(Number.isFinite) || x2 <= x1 || y2 <= y1) throw new Error("画像の配置範囲が正しくありません。");
+    const imageBytes = clone(args.image);
+    const image = args.imageType === "image/jpeg" ? await doc.embedJpg(imageBytes) : await doc.embedPng(imageBytes);
+    page.drawImage(image, { x: x1, y: page.getHeight() - y2, width: x2 - x1, height: y2 - y1 });
   } else if (["rectangle", "highlight"].includes(action)) {
     const page = doc.getPage(args.page || 0);
     if (page.getRotation().angle % 360 !== 0) throw new Error("回転済みページへのマーカー追加は座標検証中です。");

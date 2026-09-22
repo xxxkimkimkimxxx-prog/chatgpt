@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { createWorker, OEM } from "tesseract.js";
 import {
   ArrowCounterClockwise, ArrowClockwise, CaretDown, CaretUp, CheckCircle,
-  Copy, DownloadSimple, FilePdf, FileXls, FileDoc, Highlighter, Plus,
+  Copy, DownloadSimple, FilePdf, FileXls, FileDoc, Highlighter, Image as ImageIcon, Plus,
   ShieldCheck, TextT, Trash, UploadSimple, WarningCircle,
 } from "@phosphor-icons/react";
 import {
@@ -34,6 +34,7 @@ export function LocalApp() {
   const [ocrText, setOcrText] = useState({});
   const fileInput = useRef(null);
   const mergeInput = useRef(null);
+  const imageInput = useRef(null);
 
   const active = view?.pages?.[page];
   const selection = selected.length ? selected : [page];
@@ -98,6 +99,14 @@ export function LocalApp() {
       const next = await editPdf(bytes, "merge", { other, page, selected: selection });
       commit(next, `${file.name}を端末内で結合しました`);
     });
+  }
+
+  async function placeImage(file) {
+    if (!file || !bytes) return;
+    if (!["image/png", "image/jpeg"].includes(file.type)) { setError("PNGまたはJPEG画像を選択してください。"); return; }
+    if (file.size > 10 * 1024 * 1024) { setError("画像は10MB以内にしてください。"); return; }
+    await action("image", { image: new Uint8Array(await file.arrayBuffer()), imageType: file.type, rect: [box.x, box.y, box.x + box.width, box.y + box.height] });
+    setStatus("画像・署名を端末内で配置しました。画像は別保存していません");
   }
 
   async function exportOffice(kind, visual = false) {
@@ -212,7 +221,8 @@ export function LocalApp() {
         </div>
         <div className="field-grid"><label>文字サイズ<input type="number" min="8" max="72" value={fontSize} onChange={(e) => setFontSize(Number(e.target.value))} /></label><label>文字色<input type="color" value={color} onChange={(e) => setColor(e.target.value)} /></label></div>
         <Button icon={TextT} className="primary" disabled={busy || !text.trim()} onClick={() => action("text", { text, rect: [box.x, box.y, box.x + box.width, box.y + box.height], size: fontSize, color })}>文字を確定</Button>
-        <div className="quick-tools"><Button icon={Highlighter} onClick={() => action("highlight", { rect: [box.x, box.y, box.x + box.width, box.y + box.height] })} disabled={busy}>同じ範囲をマーカー</Button></div>
+        <div className="quick-tools"><Button icon={Highlighter} onClick={() => action("highlight", { rect: [box.x, box.y, box.x + box.width, box.y + box.height] })} disabled={busy}>同じ範囲をマーカー</Button><Button icon={ImageIcon} onClick={() => imageInput.current?.click()} disabled={busy}>画像・署名を配置</Button></div>
+        <input ref={imageInput} hidden type="file" accept="image/png,image/jpeg" onChange={(e) => placeImage(e.target.files?.[0])} />
 
         <h2>OCR・変換</h2>
         <Button onClick={runOcr} disabled={busy}>端末内OCR（最大5ページ）</Button>

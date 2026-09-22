@@ -34,6 +34,15 @@ test('cannot delete all pages or use malformed order',async()=>{
   await assert.rejects(()=>editPdf(input,'reorder',{order:[0,0]}),/正しくありません/);
 });
 
+test('image placement embeds pixels without a server',async()=>{
+  const input=await sample(1);
+  const png=Uint8Array.from(Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Y9Z7xkAAAAASUVORK5CYII=','base64'));
+  const output=await editPdf(input,'image',{page:0,selected:[0],image:png,imageType:'image/png',rect:[20,20,120,70]});
+  assert.ok(output.length>input.length);
+  const reopened=await PDFDocument.load(output);
+  assert.equal(reopened.getPageCount(),1);
+});
+
 test('DOCX and XLSX exports are valid zip packages',async()=>{
   const docx=await createDocx(['日本語の文字抽出','二ページ目']);
   const docxZip=await JSZip.loadAsync(await docx.arrayBuffer());
