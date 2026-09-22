@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-09-21T15:53:30+09:00",
-    "generated_at_jst": "2026-09-21 15:53:30 JST",
+    "generated_at": "2026-09-22T15:51:58+09:00",
+    "generated_at_jst": "2026-09-22 15:51:58 JST",
     "threshold": 300,
     "count": 333,
     "median_price": 168,
@@ -15,7 +15,7 @@
     "under_50": 27,
     "under_100": 83,
     "loss_making_ttm": 163,
-    "low_52w_zone": 162,
+    "low_52w_zone": 160,
     "high_52w_zone": 8,
     "low_liquidity": 182,
     "rvol_hot": 16
@@ -65,7 +65,7 @@
       "pbr": 18.5,
       "dividend_yield": 0,
       "eps_ttm": 2.13,
-      "perf_1y": -91.6,
+      "perf_1y": -91.92,
       "flags": [
         "低位",
         "極小時価総額",
@@ -116,7 +116,7 @@
       "pbr": 1.59,
       "dividend_yield": 0,
       "eps_ttm": 18.97,
-      "perf_1y": -9.96,
+      "perf_1y": -10.62,
       "flags": [
         "小型",
         "出来高過熱",
@@ -167,7 +167,7 @@
       "pbr": 2.12,
       "dividend_yield": 0,
       "eps_ttm": -13.51,
-      "perf_1y": -63.71,
+      "perf_1y": -67.62,
       "flags": [
         "低位",
         "小型",
@@ -181,9 +181,9 @@
       "code": "8894",
       "company": "ＲＥＶＯＬＵＴＩＯＮ",
       "price": 17,
-      "high_52w": 75,
+      "high_52w": 73,
       "low_52w": 16,
-      "range_position": 1.7,
+      "range_position": 1.8,
       "sector": "耐久消費財",
       "industry": "住宅建設",
       "market": "TSE",
@@ -194,7 +194,7 @@
       "pbr": 2.96,
       "dividend_yield": 0,
       "eps_ttm": -8.93,
-      "perf_1y": -77.92,
+      "perf_1y": -76.39,
       "flags": [
         "超低位",
         "小型",
@@ -221,7 +221,7 @@
       "pbr": 2.87,
       "dividend_yield": 0,
       "eps_ttm": -49.79,
-      "perf_1y": -73.84,
+      "perf_1y": -73.95,
       "flags": [
         "低位",
         "小型",
@@ -248,7 +248,7 @@
       "pbr": 1.06,
       "dividend_yield": 4.49,
       "eps_ttm": 23.65,
-      "perf_1y": 6.42,
+      "perf_1y": 9.95,
       "flags": [
         "出来高過熱"
       ]
@@ -271,7 +271,7 @@
       "pbr": 0.31,
       "dividend_yield": 1.73,
       "eps_ttm": 13.03,
-      "perf_1y": -33.97,
+      "perf_1y": -32.95,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -297,7 +297,7 @@
       "pbr": 0.81,
       "dividend_yield": 4.78,
       "eps_ttm": -11.66,
-      "perf_1y": 2.64,
+      "perf_1y": 3.03,
       "flags": [
         "小型",
         "低流動性",
@@ -325,7 +325,7 @@
       "pbr": 18.5,
       "dividend_yield": 0,
       "eps_ttm": 2.13,
-      "perf_1y": -91.6,
+      "perf_1y": -91.92,
       "flags": [
         "低位",
         "極小時価総額",
@@ -351,7 +351,7 @@
       "pbr": 0.27,
       "dividend_yield": 0,
       "eps_ttm": 127.78,
-      "perf_1y": -58.44,
+      "perf_1y": -58.61,
       "flags": [
         "小型",
         "52週安値圏"
@@ -375,7 +375,7 @@
       "pbr": 1.34,
       "dividend_yield": 1.82,
       "eps_ttm": 1.82,
-      "perf_1y": -9.09,
+      "perf_1y": -9.84,
       "flags": [
         "小型",
         "52週安値圏"
@@ -399,7 +399,7 @@
       "pbr": 1.29,
       "dividend_yield": 2.61,
       "eps_ttm": 8.02,
-      "perf_1y": -54,
+      "perf_1y": -54.9,
       "flags": [
         "小型",
         "52週安値圏"
@@ -430,30 +430,6 @@
       ]
     },
     {
-      "symbol": "TSE:3856",
-      "code": "3856",
-      "company": "ＡＢＡＬＡＮＣＥ",
-      "price": 230,
-      "high_52w": 1189,
-      "low_52w": 184,
-      "range_position": 4.6,
-      "sector": "電子テクノロジー",
-      "industry": "電子機器・計器",
-      "market": "TSE",
-      "volume": 683900,
-      "relative_volume": 1.1,
-      "market_cap": 4358700657,
-      "per": 0.58,
-      "pbr": 0.1,
-      "dividend_yield": 2.61,
-      "eps_ttm": 398.88,
-      "perf_1y": -80.99,
-      "flags": [
-        "小型",
-        "52週安値圏"
-      ]
-    },
-    {
       "symbol": "TSE:9704",
       "code": "9704",
       "company": "アゴーラ　ホスピタリティー　グループ",
@@ -471,9 +447,33 @@
       "pbr": 1.29,
       "dividend_yield": 0,
       "eps_ttm": 3.52,
-      "perf_1y": -56.25,
+      "perf_1y": -54.84,
       "flags": [
         "超低位",
+        "小型",
+        "52週安値圏"
+      ]
+    },
+    {
+      "symbol": "TSE:3856",
+      "code": "3856",
+      "company": "ＡＢＡＬＡＮＣＥ",
+      "price": 230,
+      "high_52w": 1126,
+      "low_52w": 184,
+      "range_position": 4.9,
+      "sector": "電子テクノロジー",
+      "industry": "電子機器・計器",
+      "market": "TSE",
+      "volume": 683900,
+      "relative_volume": 1.1,
+      "market_cap": 4358700657,
+      "per": 0.58,
+      "pbr": 0.1,
+      "dividend_yield": 2.61,
+      "eps_ttm": 398.88,
+      "perf_1y": -81.41,
+      "flags": [
         "小型",
         "52週安値圏"
       ]
@@ -496,32 +496,8 @@
       "pbr": 1.31,
       "dividend_yield": 0,
       "eps_ttm": 8.3,
-      "perf_1y": -15.91,
+      "perf_1y": -10.63,
       "flags": [
-        "52週安値圏"
-      ]
-    },
-    {
-      "symbol": "TSE:2440",
-      "code": "2440",
-      "company": "ぐるなび",
-      "price": 123,
-      "high_52w": 238,
-      "low_52w": 115,
-      "range_position": 6.5,
-      "sector": "テクノロジーサービス",
-      "industry": "インターネットソフトウェア・サービス",
-      "market": "TSE",
-      "volume": 131500,
-      "relative_volume": 0.94,
-      "market_cap": 6783024147,
-      "per": 33.1,
-      "pbr": 1.34,
-      "dividend_yield": 0,
-      "eps_ttm": 3.72,
-      "perf_1y": -47.66,
-      "flags": [
-        "小型",
         "52週安値圏"
       ]
     },
@@ -543,9 +519,33 @@
       "pbr": 0.66,
       "dividend_yield": 0,
       "eps_ttm": 7.65,
-      "perf_1y": -50.25,
+      "perf_1y": -49.23,
       "flags": [
         "低位",
+        "小型",
+        "52週安値圏"
+      ]
+    },
+    {
+      "symbol": "TSE:2440",
+      "code": "2440",
+      "company": "ぐるなび",
+      "price": 123,
+      "high_52w": 235,
+      "low_52w": 115,
+      "range_position": 6.7,
+      "sector": "テクノロジーサービス",
+      "industry": "インターネットソフトウェア・サービス",
+      "market": "TSE",
+      "volume": 131500,
+      "relative_volume": 0.94,
+      "market_cap": 6783024147,
+      "per": 33.1,
+      "pbr": 1.34,
+      "dividend_yield": 0,
+      "eps_ttm": 3.72,
+      "perf_1y": -48.32,
+      "flags": [
         "小型",
         "52週安値圏"
       ]
@@ -555,9 +555,9 @@
       "code": "5535",
       "company": "ミガロホールディングス",
       "price": 291,
-      "high_52w": 916,
+      "high_52w": 903,
       "low_52w": 243,
-      "range_position": 7.1,
+      "range_position": 7.3,
       "sector": "金融",
       "industry": "不動産開発",
       "market": "TSE",
@@ -568,7 +568,7 @@
       "pbr": 1.22,
       "dividend_yield": 2.92,
       "eps_ttm": 23.06,
-      "perf_1y": -68.84,
+      "perf_1y": -68.4,
       "flags": [
         "52週安値圏"
       ]
@@ -591,7 +591,7 @@
       "pbr": 0.57,
       "dividend_yield": 0,
       "eps_ttm": 3.97,
-      "perf_1y": -6.09,
+      "perf_1y": -4.42,
       "flags": [
         "52週安値圏"
       ]
@@ -644,27 +644,25 @@
       ]
     },
     {
-      "symbol": "TSE:2776",
-      "code": "2776",
-      "company": "新都ホールディングス",
-      "price": 95,
-      "high_52w": 156,
-      "low_52w": 89,
-      "range_position": 9.0,
-      "sector": "流通サービス",
-      "industry": "卸売業者",
-      "market": "TSE",
-      "volume": 163900,
-      "relative_volume": 0.43,
-      "market_cap": 5298083725,
-      "per": 17.39,
-      "pbr": 1.48,
-      "dividend_yield": 0,
-      "eps_ttm": 5.46,
-      "perf_1y": -38.71,
+      "symbol": "SAPSE:2928",
+      "code": "2928",
+      "company": "ＲＩＺＡＰグループ",
+      "price": 173,
+      "high_52w": 250,
+      "low_52w": 165,
+      "range_position": 9.4,
+      "sector": "生産財製造",
+      "industry": "産業コングロマリット",
+      "market": "SAPSE",
+      "volume": 489600,
+      "relative_volume": 1.45,
+      "market_cap": 103222734985,
+      "per": 13.74,
+      "pbr": 2.06,
+      "dividend_yield": 0.39,
+      "eps_ttm": 12.59,
+      "perf_1y": -15.2,
       "flags": [
-        "低位",
-        "小型",
         "52週安値圏"
       ]
     }
@@ -688,7 +686,7 @@
       "pbr": 0.68,
       "dividend_yield": 7.58,
       "eps_ttm": 35.96,
-      "perf_1y": -77.89,
+      "perf_1y": -78.16,
       "flags": [
         "小型",
         "低流動性",
@@ -713,7 +711,7 @@
       "pbr": 0.88,
       "dividend_yield": 6.73,
       "eps_ttm": 17.23,
-      "perf_1y": 24.58,
+      "perf_1y": 26.7,
       "flags": [
         "低流動性"
       ]
@@ -736,7 +734,7 @@
       "pbr": 1.55,
       "dividend_yield": 5.55,
       "eps_ttm": 15.07,
-      "perf_1y": -35.03,
+      "perf_1y": -35.54,
       "flags": [
         "小型",
         "低流動性"
@@ -760,7 +758,7 @@
       "pbr": 4.49,
       "dividend_yield": 5.54,
       "eps_ttm": 12.83,
-      "perf_1y": 29.29,
+      "perf_1y": 30.36,
       "flags": [
         "52週高値圏"
       ]
@@ -783,7 +781,7 @@
       "pbr": 2.14,
       "dividend_yield": 5.52,
       "eps_ttm": 6.15,
-      "perf_1y": 18.98,
+      "perf_1y": 19.85,
       "flags": [
         "小型"
       ]
@@ -806,7 +804,7 @@
       "pbr": 0.8,
       "dividend_yield": 5.52,
       "eps_ttm": -78.87,
-      "perf_1y": -43.79,
+      "perf_1y": -43.26,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -832,7 +830,7 @@
       "pbr": 0.83,
       "dividend_yield": 5,
       "eps_ttm": 28.16,
-      "perf_1y": -9.91,
+      "perf_1y": -10.45,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -856,7 +854,7 @@
       "pbr": 1.55,
       "dividend_yield": 4.85,
       "eps_ttm": 21.37,
-      "perf_1y": 10.74,
+      "perf_1y": 8.5,
       "flags": [
         "小型",
         "52週高値圏"
@@ -880,7 +878,7 @@
       "pbr": 0.81,
       "dividend_yield": 4.78,
       "eps_ttm": -11.66,
-      "perf_1y": 2.64,
+      "perf_1y": 3.03,
       "flags": [
         "小型",
         "低流動性",
@@ -929,7 +927,7 @@
       "pbr": null,
       "dividend_yield": 0,
       "eps_ttm": -3.15,
-      "perf_1y": 342.86,
+      "perf_1y": 359.26,
       "flags": [
         "赤字TTM",
         "52週安値圏",
@@ -954,7 +952,7 @@
       "pbr": 2.75,
       "dividend_yield": 0,
       "eps_ttm": 27.55,
-      "perf_1y": 160,
+      "perf_1y": 170.83,
       "flags": [
         "小型",
         "1年変動大"
@@ -978,7 +976,7 @@
       "pbr": 12.27,
       "dividend_yield": 0,
       "eps_ttm": -2.98,
-      "perf_1y": 130.77,
+      "perf_1y": 143.24,
       "flags": [
         "低位",
         "赤字TTM",
@@ -1003,7 +1001,7 @@
       "pbr": null,
       "dividend_yield": 0,
       "eps_ttm": -0.42,
-      "perf_1y": 81.48,
+      "perf_1y": 88.46,
       "flags": [
         "超低位",
         "赤字TTM"
@@ -1027,10 +1025,35 @@
       "pbr": 0.76,
       "dividend_yield": 0,
       "eps_ttm": 58.11,
-      "perf_1y": 51.03,
+      "perf_1y": 49.49,
       "flags": [
         "小型",
         "低流動性"
+      ]
+    },
+    {
+      "symbol": "TSE:7183",
+      "code": "7183",
+      "company": "あんしん保証",
+      "price": 255,
+      "high_52w": 257,
+      "low_52w": 142,
+      "range_position": 98.3,
+      "sector": "金融",
+      "industry": "総合保険",
+      "market": "TSE",
+      "volume": 11700,
+      "relative_volume": 0.26,
+      "market_cap": 4584004469,
+      "per": 19.48,
+      "pbr": 1.77,
+      "dividend_yield": 0,
+      "eps_ttm": 13.09,
+      "perf_1y": 48.26,
+      "flags": [
+        "小型",
+        "低流動性",
+        "52週高値圏"
       ]
     },
     {
@@ -1051,33 +1074,8 @@
       "pbr": 1.67,
       "dividend_yield": 1.2,
       "eps_ttm": 8.07,
-      "perf_1y": 50.91,
+      "perf_1y": 47.34,
       "flags": []
-    },
-    {
-      "symbol": "TSE:7183",
-      "code": "7183",
-      "company": "あんしん保証",
-      "price": 255,
-      "high_52w": 257,
-      "low_52w": 142,
-      "range_position": 98.3,
-      "sector": "金融",
-      "industry": "総合保険",
-      "market": "TSE",
-      "volume": 11700,
-      "relative_volume": 0.26,
-      "market_cap": 4584004469,
-      "per": 19.48,
-      "pbr": 1.77,
-      "dividend_yield": 0,
-      "eps_ttm": 13.09,
-      "perf_1y": 50,
-      "flags": [
-        "小型",
-        "低流動性",
-        "52週高値圏"
-      ]
     },
     {
       "symbol": "TSE:9854",
@@ -1097,7 +1095,7 @@
       "pbr": 0.43,
       "dividend_yield": 0,
       "eps_ttm": 18.24,
-      "perf_1y": 41.75,
+      "perf_1y": 43.23,
       "flags": [
         "小型",
         "低流動性"
@@ -1121,7 +1119,7 @@
       "pbr": 1.93,
       "dividend_yield": 0,
       "eps_ttm": 2.71,
-      "perf_1y": 35.48,
+      "perf_1y": 33.33,
       "flags": []
     },
     {
@@ -1142,7 +1140,7 @@
       "pbr": 2.09,
       "dividend_yield": 1.85,
       "eps_ttm": 25.61,
-      "perf_1y": 31.71,
+      "perf_1y": 32.79,
       "flags": []
     }
   ],
@@ -1165,7 +1163,7 @@
       "pbr": 0.63,
       "dividend_yield": 0,
       "eps_ttm": -34.06,
-      "perf_1y": -94.6,
+      "perf_1y": -94.77,
       "flags": [
         "低位",
         "極小時価総額",
@@ -1191,7 +1189,7 @@
       "pbr": 3.45,
       "dividend_yield": 0,
       "eps_ttm": -93.71,
-      "perf_1y": -92.88,
+      "perf_1y": -92.79,
       "flags": [
         "低位",
         "小型",
@@ -1217,7 +1215,7 @@
       "pbr": 18.5,
       "dividend_yield": 0,
       "eps_ttm": 2.13,
-      "perf_1y": -91.6,
+      "perf_1y": -91.92,
       "flags": [
         "低位",
         "極小時価総額",
@@ -1226,24 +1224,24 @@
       ]
     },
     {
-      "symbol": "TSE:7603",
-      "code": "7603",
-      "company": "ジーイエット",
-      "price": 34,
-      "high_52w": 315,
-      "low_52w": 33,
-      "range_position": 0.4,
-      "sector": "小売業",
-      "industry": "アパレル・フットウェア小売",
+      "symbol": "TSE:9399",
+      "code": "9399",
+      "company": "ビート・ホールディングス・リミテッド",
+      "price": 13,
+      "high_52w": 183,
+      "low_52w": 9,
+      "range_position": 2.3,
+      "sector": "テクノロジーサービス",
+      "industry": "インターネットソフトウェア・サービス",
       "market": "TSE",
-      "volume": 395400,
-      "relative_volume": 0.61,
-      "market_cap": 3025023621,
+      "volume": 864265,
+      "relative_volume": 1.41,
+      "market_cap": 2383362228,
       "per": null,
-      "pbr": 0.82,
+      "pbr": 16.17,
       "dividend_yield": 0,
-      "eps_ttm": -113.24,
-      "perf_1y": -90.2,
+      "eps_ttm": -9.33,
+      "perf_1y": -89.47,
       "flags": [
         "超低位",
         "小型",
@@ -1269,7 +1267,7 @@
       "pbr": 1.04,
       "dividend_yield": 0,
       "eps_ttm": -10.17,
-      "perf_1y": -89.92,
+      "perf_1y": -88.92,
       "flags": [
         "低位",
         "小型",
@@ -1279,24 +1277,24 @@
       ]
     },
     {
-      "symbol": "TSE:9399",
-      "code": "9399",
-      "company": "ビート・ホールディングス・リミテッド",
-      "price": 13,
-      "high_52w": 183,
-      "low_52w": 9,
-      "range_position": 2.3,
-      "sector": "テクノロジーサービス",
-      "industry": "インターネットソフトウェア・サービス",
+      "symbol": "TSE:7603",
+      "code": "7603",
+      "company": "ジーイエット",
+      "price": 34,
+      "high_52w": 315,
+      "low_52w": 33,
+      "range_position": 0.4,
+      "sector": "小売業",
+      "industry": "アパレル・フットウェア小売",
       "market": "TSE",
-      "volume": 864265,
-      "relative_volume": 1.41,
-      "market_cap": 2383362228,
+      "volume": 395400,
+      "relative_volume": 0.61,
+      "market_cap": 3025023621,
       "per": null,
-      "pbr": 16.17,
+      "pbr": 0.82,
       "dividend_yield": 0,
-      "eps_ttm": -9.33,
-      "perf_1y": -88.97,
+      "eps_ttm": -113.24,
+      "perf_1y": -87.77,
       "flags": [
         "超低位",
         "小型",
@@ -1322,7 +1320,7 @@
       "pbr": 0.23,
       "dividend_yield": 0,
       "eps_ttm": null,
-      "perf_1y": -87.3,
+      "perf_1y": -85.92,
       "flags": [
         "超低位",
         "小型",
@@ -1334,7 +1332,7 @@
       "code": "9229",
       "company": "サンウェルズ",
       "price": 113,
-      "high_52w": 675,
+      "high_52w": 674,
       "low_52w": 109,
       "range_position": 0.7,
       "sector": "ヘルスケアサービス",
@@ -1347,7 +1345,7 @@
       "pbr": 0.57,
       "dividend_yield": 0,
       "eps_ttm": -45.88,
-      "perf_1y": -83.28,
+      "perf_1y": -82.96,
       "flags": [
         "小型",
         "低流動性",
@@ -1356,54 +1354,50 @@
       ]
     },
     {
-      "symbol": "TSE:8746",
-      "code": "8746",
-      "company": "ＵＮＢＡＮＫＥＤ",
-      "price": 108,
-      "high_52w": 583,
-      "low_52w": 91,
-      "range_position": 3.5,
-      "sector": "金融",
-      "industry": "投資銀行・ブローカー",
+      "symbol": "TSE:3856",
+      "code": "3856",
+      "company": "ＡＢＡＬＡＮＣＥ",
+      "price": 230,
+      "high_52w": 1126,
+      "low_52w": 184,
+      "range_position": 4.9,
+      "sector": "電子テクノロジー",
+      "industry": "電子機器・計器",
       "market": "TSE",
-      "volume": 3041800,
-      "relative_volume": 3.66,
-      "market_cap": 1963790016,
-      "per": null,
-      "pbr": 0.47,
-      "dividend_yield": 0,
-      "eps_ttm": -207.54,
-      "perf_1y": -82.99,
+      "volume": 683900,
+      "relative_volume": 1.1,
+      "market_cap": 4358700657,
+      "per": 0.58,
+      "pbr": 0.1,
+      "dividend_yield": 2.61,
+      "eps_ttm": 398.88,
+      "perf_1y": -81.41,
       "flags": [
-        "極小時価総額",
-        "出来高過熱",
-        "赤字TTM",
+        "小型",
         "52週安値圏"
       ]
     },
     {
-      "symbol": "TSE:6731",
-      "code": "6731",
-      "company": "ピクセラ",
-      "price": 99,
-      "high_52w": 680,
-      "low_52w": 96,
-      "range_position": 0.5,
-      "sector": "電子テクノロジー",
-      "industry": "半導体",
+      "symbol": "TSE:3189",
+      "code": "3189",
+      "company": "ＡＮＡＰホールディングス",
+      "price": 107,
+      "high_52w": 733,
+      "low_52w": 95,
+      "range_position": 1.9,
+      "sector": "小売業",
+      "industry": "アパレル・フットウェア小売",
       "market": "TSE",
-      "volume": 91200,
-      "relative_volume": 1.21,
-      "market_cap": 1592238922,
+      "volume": 139700,
+      "relative_volume": 0.43,
+      "market_cap": 4942494347,
       "per": null,
-      "pbr": 3.71,
+      "pbr": 0.65,
       "dividend_yield": 0,
-      "eps_ttm": -129.92,
-      "perf_1y": -82,
+      "eps_ttm": -284.2,
+      "perf_1y": -80.4,
       "flags": [
-        "低位",
-        "極小時価総額",
-        "低流動性",
+        "小型",
         "赤字TTM",
         "52週安値圏"
       ]

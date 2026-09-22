@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-09-21T15:53:30+09:00",
-    "generated_at_jst": "2026-09-21 15:53:30 JST",
+    "generated_at": "2026-09-22T15:51:58+09:00",
+    "generated_at_jst": "2026-09-22 15:51:58 JST",
     "threshold": 300,
     "count": 333,
     "median_price": 168,
@@ -87,7 +87,7 @@
       "industry": "インターネットソフトウェア・サービス",
       "industry_raw": "Internet Software/Services",
       "market": "TSE",
-      "perf_1y": -88.97,
+      "perf_1y": -89.47,
       "flags": [
         "超低位",
         "小型",
@@ -120,7 +120,7 @@
       "industry": "投資運用会社",
       "industry_raw": "Investment Managers",
       "market": "TSE",
-      "perf_1y": -67.31,
+      "perf_1y": -66,
       "flags": [
         "超低位",
         "小型",
@@ -137,10 +137,10 @@
       "volume": 3460500,
       "relative_volume": 6.3,
       "market_cap": 2810370087,
-      "high_52w": 75,
+      "high_52w": 73,
       "low_52w": 16,
-      "range_position": 1.7,
-      "distance_from_high": 77.3,
+      "range_position": 1.8,
+      "distance_from_high": 76.7,
       "distance_from_low": 6.2,
       "per": null,
       "pbr": 2.96,
@@ -153,7 +153,7 @@
       "industry": "住宅建設",
       "industry_raw": "Homebuilding",
       "market": "TSE",
-      "perf_1y": -77.92,
+      "perf_1y": -76.39,
       "flags": [
         "超低位",
         "小型",
@@ -252,7 +252,7 @@
       "industry": "通信機器",
       "industry_raw": "Telecommunications Equipment",
       "market": "TSE",
-      "perf_1y": -56.6,
+      "perf_1y": -54.9,
       "flags": [
         "超低位",
         "小型",
@@ -336,10 +336,10 @@
       "volume": 611000,
       "relative_volume": 1.69,
       "market_cap": 1863812119,
-      "high_52w": 126,
+      "high_52w": 122,
       "low_52w": 21,
-      "range_position": 4.8,
-      "distance_from_high": 79.4,
+      "range_position": 5.0,
+      "distance_from_high": 78.7,
       "distance_from_low": 23.8,
       "per": null,
       "pbr": 3.3,
@@ -352,7 +352,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -78.69,
+      "perf_1y": -77.97,
       "flags": [
         "超低位",
         "極小時価総額",
@@ -369,10 +369,10 @@
       "volume": 299000,
       "relative_volume": 1.75,
       "market_cap": 1506667751,
-      "high_52w": 114,
+      "high_52w": 111,
       "low_52w": 25,
-      "range_position": 2.2,
-      "distance_from_high": 76.3,
+      "range_position": 2.3,
+      "distance_from_high": 75.7,
       "distance_from_low": 8.0,
       "per": null,
       "pbr": 1.74,
@@ -385,7 +385,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -77.5,
+      "perf_1y": -75.89,
       "flags": [
         "超低位",
         "極小時価総額",
@@ -418,7 +418,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": -32.5,
+      "perf_1y": -28.95,
       "flags": [
         "超低位",
         "小型",
@@ -450,7 +450,7 @@
       "industry": "ホテル・リゾート・クルーズライン",
       "industry_raw": "Hotels/Resorts/Cruise lines",
       "market": "TSE",
-      "perf_1y": -56.25,
+      "perf_1y": -54.84,
       "flags": [
         "超低位",
         "小型",
@@ -466,10 +466,10 @@
       "volume": 179600,
       "relative_volume": 1.76,
       "market_cap": 2625254250,
-      "high_52w": 86,
+      "high_52w": 85,
       "low_52w": 25,
-      "range_position": 6.6,
-      "distance_from_high": 66.3,
+      "range_position": 6.7,
+      "distance_from_high": 65.9,
       "distance_from_low": 16.0,
       "per": null,
       "pbr": 1.99,
@@ -482,7 +482,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -63.75,
+      "perf_1y": -62.34,
       "flags": [
         "超低位",
         "小型",
@@ -515,7 +515,7 @@
       "industry": "ファイナンス・レンタル・リース",
       "industry_raw": "Finance/Rental/Leasing",
       "market": "TSE",
-      "perf_1y": -57.53,
+      "perf_1y": -56.34,
       "flags": [
         "超低位",
         "極小時価総額",
@@ -548,7 +548,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -8.82,
+      "perf_1y": -11.43,
       "flags": [
         "超低位",
         "小型",
@@ -614,7 +614,7 @@
       "industry": "バイオテクノロジー",
       "industry_raw": "Biotechnology",
       "market": "TSE",
-      "perf_1y": -59.26,
+      "perf_1y": -58.75,
       "flags": [
         "超低位",
         "小型",
@@ -647,7 +647,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -90.2,
+      "perf_1y": -87.77,
       "flags": [
         "超低位",
         "小型",
@@ -680,7 +680,7 @@
       "industry": "ジェネリック医薬品",
       "industry_raw": "Pharmaceuticals: Generic",
       "market": "TSE",
-      "perf_1y": -56.1,
+      "perf_1y": -55.56,
       "flags": [
         "超低位",
         "赤字TTM",
@@ -712,7 +712,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -40.85,
+      "perf_1y": -46.15,
       "flags": [
         "超低位",
         "小型"
@@ -743,7 +743,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": -21.43,
+      "perf_1y": -20,
       "flags": [
         "超低位",
         "極小時価総額",
@@ -777,7 +777,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -22.41,
+      "perf_1y": -18.18,
       "flags": [
         "超低位",
         "52週安値圏"
@@ -824,10 +824,10 @@
       "volume": 55900,
       "relative_volume": 2.28,
       "market_cap": 1215415649,
-      "high_52w": 85,
+      "high_52w": 84,
       "low_52w": 46,
-      "range_position": 5.1,
-      "distance_from_high": 43.5,
+      "range_position": 5.3,
+      "distance_from_high": 42.9,
       "distance_from_low": 4.3,
       "per": 65.68,
       "pbr": 1.62,
@@ -840,7 +840,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -42.86,
+      "perf_1y": -40,
       "flags": [
         "超低位",
         "極小時価総額",
@@ -873,7 +873,7 @@
       "industry": "投資運用会社",
       "industry_raw": "Investment Managers",
       "market": "TSE",
-      "perf_1y": -87.3,
+      "perf_1y": -85.92,
       "flags": [
         "超低位",
         "小型",
@@ -905,7 +905,7 @@
       "industry": "電子機器製造装置",
       "industry_raw": "Electronic Production Equipment",
       "market": "TSE",
-      "perf_1y": 81.48,
+      "perf_1y": 88.46,
       "flags": [
         "超低位",
         "赤字TTM"
@@ -936,7 +936,7 @@
       "industry": "書籍・雑誌出版",
       "industry_raw": "Publishing: Books/Magazines",
       "market": "TSE",
-      "perf_1y": -78.99,
+      "perf_1y": -72.68,
       "flags": [
         "低位",
         "小型",
@@ -969,7 +969,7 @@
       "industry": "バイオテクノロジー",
       "industry_raw": "Biotechnology",
       "market": "TSE",
-      "perf_1y": -54.55,
+      "perf_1y": -54.95,
       "flags": [
         "低位",
         "小型",
@@ -1002,7 +1002,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -18.03,
+      "perf_1y": -31.51,
       "flags": [
         "低位",
         "小型",
@@ -1034,7 +1034,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "TSE",
-      "perf_1y": -92.88,
+      "perf_1y": -92.79,
       "flags": [
         "低位",
         "小型",
@@ -1067,7 +1067,7 @@
       "industry": "アパレル・フットウェア",
       "industry_raw": "Apparel/Footwear",
       "market": "TSE",
-      "perf_1y": -52.25,
+      "perf_1y": -51.82,
       "flags": [
         "低位",
         "小型",
@@ -1100,7 +1100,7 @@
       "industry": "卸売業者",
       "industry_raw": "Wholesale Distributors",
       "market": "TSE",
-      "perf_1y": -63.71,
+      "perf_1y": -67.62,
       "flags": [
         "低位",
         "小型",
@@ -1167,7 +1167,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -58.9,
+      "perf_1y": -58.33,
       "flags": [
         "低位",
         "小型",
@@ -1200,7 +1200,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -40,
+      "perf_1y": -34.07,
       "flags": [
         "低位",
         "小型",
@@ -1233,7 +1233,7 @@
       "industry": "電子機器・計器",
       "industry_raw": "Electronic Equipment/Instruments",
       "market": "TSE",
-      "perf_1y": -70.3,
+      "perf_1y": -69.85,
       "flags": [
         "低位",
         "極小時価総額",
@@ -1266,7 +1266,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -15.28,
+      "perf_1y": -11.59,
       "flags": [
         "低位",
         "小型",
@@ -1282,10 +1282,10 @@
       "volume": 344300,
       "relative_volume": 2.53,
       "market_cap": 5126174683,
-      "high_52w": 109,
+      "high_52w": 108,
       "low_52w": 51,
-      "range_position": 19.0,
-      "distance_from_high": 43.1,
+      "range_position": 19.3,
+      "distance_from_high": 42.6,
       "distance_from_low": 21.6,
       "per": null,
       "pbr": 2.85,
@@ -1330,7 +1330,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -73.84,
+      "perf_1y": -73.95,
       "flags": [
         "低位",
         "小型",
@@ -1364,7 +1364,7 @@
       "industry": "食品: 専門品・菓子",
       "industry_raw": "Food: Specialty/Candy",
       "market": "TSE",
-      "perf_1y": -72.53,
+      "perf_1y": -71.3,
       "flags": [
         "低位",
         "小型",
@@ -1397,7 +1397,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -39.25,
+      "perf_1y": -41.44,
       "flags": [
         "低位",
         "赤字TTM",
@@ -1429,7 +1429,7 @@
       "industry": "商業印刷・フォーム",
       "industry_raw": "Commercial Printing/Forms",
       "market": "TSE",
-      "perf_1y": -44.92,
+      "perf_1y": -42.98,
       "flags": [
         "低位",
         "極小時価総額",
@@ -1463,7 +1463,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -10.81,
+      "perf_1y": -7.04,
       "flags": [
         "低位",
         "赤字TTM",
@@ -1495,7 +1495,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -94.6,
+      "perf_1y": -94.77,
       "flags": [
         "低位",
         "極小時価総額",
@@ -1528,7 +1528,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -54.05,
+      "perf_1y": -53.74,
       "flags": [
         "低位",
         "小型",
@@ -1561,7 +1561,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -53.69,
+      "perf_1y": -53.06,
       "flags": [
         "低位",
         "小型",
@@ -1594,7 +1594,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -36.11,
+      "perf_1y": -34.91,
       "flags": [
         "低位",
         "小型",
@@ -1627,7 +1627,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "NAG",
-      "perf_1y": -91.6,
+      "perf_1y": -91.92,
       "flags": [
         "低位",
         "極小時価総額",
@@ -1660,7 +1660,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": 24.56,
+      "perf_1y": 20.34,
       "flags": [
         "低位",
         "赤字TTM"
@@ -1691,7 +1691,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "TSE",
-      "perf_1y": -26.8,
+      "perf_1y": -26.04,
       "flags": [
         "低位",
         "小型",
@@ -1755,7 +1755,7 @@
       "industry": "ケーブル・衛星放送テレビ",
       "industry_raw": "Cable/Satellite TV",
       "market": "TSE",
-      "perf_1y": -36.84,
+      "perf_1y": -37.93,
       "flags": [
         "低位",
         "小型",
@@ -1788,7 +1788,7 @@
       "industry": "その他製造",
       "industry_raw": "Miscellaneous Manufacturing",
       "market": "TSE",
-      "perf_1y": -25.25,
+      "perf_1y": -24.49,
       "flags": [
         "低位",
         "小型",
@@ -1821,7 +1821,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": -25.25,
+      "perf_1y": -26.73,
       "flags": [
         "低位",
         "極小時価総額",
@@ -1855,7 +1855,7 @@
       "industry": "エンジニアリング・建設",
       "industry_raw": "Engineering & Construction",
       "market": "TSE",
-      "perf_1y": -48.65,
+      "perf_1y": -44.53,
       "flags": [
         "低位",
         "極小時価総額",
@@ -1889,7 +1889,7 @@
       "industry": "電子機器・計器",
       "industry_raw": "Electronic Equipment/Instruments",
       "market": "TSE",
-      "perf_1y": -35.29,
+      "perf_1y": -34.19,
       "flags": [
         "低位",
         "小型",
@@ -1955,7 +1955,7 @@
       "industry": "繊維",
       "industry_raw": "Textiles",
       "market": "TSE",
-      "perf_1y": -89.92,
+      "perf_1y": -88.92,
       "flags": [
         "低位",
         "小型",
@@ -1989,7 +1989,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -63.72,
+      "perf_1y": -61.76,
       "flags": [
         "低位",
         "小型",
@@ -2022,7 +2022,7 @@
       "industry": "投資銀行・ブローカー",
       "industry_raw": "Investment Banks/Brokers",
       "market": "TSE",
-      "perf_1y": -21,
+      "perf_1y": -24.04,
       "flags": [
         "低位",
         "小型",
@@ -2055,7 +2055,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -24.76,
+      "perf_1y": -23.3,
       "flags": [
         "低位",
         "小型",
@@ -2088,7 +2088,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -19.19,
+      "perf_1y": -18.37,
       "flags": [
         "低位",
         "小型",
@@ -2120,7 +2120,7 @@
       "industry": "投資銀行・ブローカー",
       "industry_raw": "Investment Banks/Brokers",
       "market": "TSE",
-      "perf_1y": 3.8,
+      "perf_1y": 5.13,
       "flags": [
         "低位",
         "小型",
@@ -2153,7 +2153,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "NAG",
-      "perf_1y": -6.82,
+      "perf_1y": -3.53,
       "flags": [
         "低位",
         "小型",
@@ -2216,7 +2216,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -59.71,
+      "perf_1y": -57.87,
       "flags": [
         "低位",
         "小型",
@@ -2250,7 +2250,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": -34.88,
+      "perf_1y": -34.38,
       "flags": [
         "低位",
         "小型",
@@ -2282,7 +2282,7 @@
       "industry": "繊維",
       "industry_raw": "Textiles",
       "market": "TSE",
-      "perf_1y": -55.73,
+      "perf_1y": -53.3,
       "flags": [
         "低位",
         "小型",
@@ -2316,7 +2316,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -27.97,
+      "perf_1y": -26.72,
       "flags": [
         "低位",
         "小型",
@@ -2332,10 +2332,10 @@
       "volume": 225500,
       "relative_volume": 0.77,
       "market_cap": 4123486862.0,
-      "high_52w": 153,
+      "high_52w": 151,
       "low_52w": 79,
-      "range_position": 14.9,
-      "distance_from_high": 41.2,
+      "range_position": 15.3,
+      "distance_from_high": 40.4,
       "distance_from_low": 13.9,
       "per": 15789.47,
       "pbr": 19.88,
@@ -2348,11 +2348,10 @@
       "industry": "インターネットソフトウェア・サービス",
       "industry_raw": "Internet Software/Services",
       "market": "TSE",
-      "perf_1y": -41.94,
+      "perf_1y": -39.19,
       "flags": [
         "低位",
-        "小型",
-        "52週安値圏"
+        "小型"
       ]
     },
     {
@@ -2413,7 +2412,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": 130.77,
+      "perf_1y": 143.24,
       "flags": [
         "低位",
         "赤字TTM",
@@ -2445,7 +2444,7 @@
       "industry": "書籍・雑誌出版",
       "industry_raw": "Publishing: Books/Magazines",
       "market": "TSE",
-      "perf_1y": -59.65,
+      "perf_1y": -58.18,
       "flags": [
         "低位",
         "小型",
@@ -2477,7 +2476,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -48.89,
+      "perf_1y": -47.13,
       "flags": [
         "低位",
         "小型",
@@ -2494,10 +2493,10 @@
       "volume": 262700,
       "relative_volume": 0.94,
       "market_cap": 7512467651,
-      "high_52w": 192,
+      "high_52w": 156,
       "low_52w": 69,
-      "range_position": 18.7,
-      "distance_from_high": 52.1,
+      "range_position": 26.4,
+      "distance_from_high": 41.0,
       "distance_from_low": 33.3,
       "per": 32.78,
       "pbr": 1.27,
@@ -2510,7 +2509,7 @@
       "industry": "電子専門商社",
       "industry_raw": "Electronics Distributors",
       "market": "TSE",
-      "perf_1y": -25.2,
+      "perf_1y": -43.56,
       "flags": [
         "低位",
         "小型"
@@ -2591,10 +2590,10 @@
       "volume": 163900,
       "relative_volume": 0.43,
       "market_cap": 5298083725,
-      "high_52w": 156,
+      "high_52w": 151,
       "low_52w": 89,
-      "range_position": 9.0,
-      "distance_from_high": 39.1,
+      "range_position": 9.7,
+      "distance_from_high": 37.1,
       "distance_from_low": 6.7,
       "per": 17.39,
       "pbr": 1.48,
@@ -2639,7 +2638,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "TSE",
-      "perf_1y": -4.04,
+      "perf_1y": -3.06,
       "flags": [
         "低位",
         "小型",
@@ -2672,7 +2671,7 @@
       "industry": "石油精製・販売",
       "industry_raw": "Oil Refining/Marketing",
       "market": "TSE",
-      "perf_1y": 0,
+      "perf_1y": 1.02,
       "flags": [
         "低位",
         "赤字TTM"
@@ -2703,7 +2702,7 @@
       "industry": "半導体",
       "industry_raw": "Semiconductors",
       "market": "TSE",
-      "perf_1y": -82,
+      "perf_1y": -80.2,
       "flags": [
         "低位",
         "極小時価総額",
@@ -2737,7 +2736,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -50.25,
+      "perf_1y": -49.23,
       "flags": [
         "低位",
         "小型",
@@ -2769,7 +2768,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -61.09,
+      "perf_1y": -56.52,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -2802,7 +2801,7 @@
       "industry": "その他医薬品",
       "industry_raw": "Pharmaceuticals: Other",
       "market": "TSE",
-      "perf_1y": -28.57,
+      "perf_1y": -29.08,
       "flags": [
         "小型",
         "赤字TTM",
@@ -2834,7 +2833,7 @@
       "industry": "家電製品",
       "industry_raw": "Electronics/Appliances",
       "market": "TSE",
-      "perf_1y": 6.38,
+      "perf_1y": 5.26,
       "flags": [
         "小型"
       ]
@@ -2864,7 +2863,7 @@
       "industry": "電子専門商社",
       "industry_raw": "Electronics Distributors",
       "market": "TSE",
-      "perf_1y": -10.62,
+      "perf_1y": -9.82,
       "flags": [
         "小型",
         "低流動性"
@@ -2895,7 +2894,7 @@
       "industry": "産業機械",
       "industry_raw": "Industrial Machinery",
       "market": "TSE",
-      "perf_1y": -3.81,
+      "perf_1y": -2.88,
       "flags": [
         "小型"
       ]
@@ -2925,7 +2924,7 @@
       "industry": "インターネット小売",
       "industry_raw": "Internet Retail",
       "market": "TSE",
-      "perf_1y": -58.44,
+      "perf_1y": -58.61,
       "flags": [
         "小型",
         "52週安値圏"
@@ -2956,7 +2955,7 @@
       "industry": "建材",
       "industry_raw": "Construction Materials",
       "market": "TSE",
-      "perf_1y": -44.62,
+      "perf_1y": -44.02,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -2989,7 +2988,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -43.09,
+      "perf_1y": -43.41,
       "flags": [
         "赤字TTM",
         "52週安値圏"
@@ -3084,7 +3083,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -7.08,
+      "perf_1y": -6.25,
       "flags": [
         "小型",
         "低流動性"
@@ -3115,7 +3114,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -56.38,
+      "perf_1y": -55.46,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -3147,7 +3146,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -81.77,
+      "perf_1y": -80.4,
       "flags": [
         "小型",
         "赤字TTM",
@@ -3179,7 +3178,7 @@
       "industry": "林産物",
       "industry_raw": "Forest Products",
       "market": "TSE",
-      "perf_1y": -13.71,
+      "perf_1y": -12.3,
       "flags": [
         "小型",
         "低流動性"
@@ -3210,7 +3209,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "TSE",
-      "perf_1y": -5.31,
+      "perf_1y": -6.14,
       "flags": [
         "小型",
         "低流動性",
@@ -3242,7 +3241,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -54.62,
+      "perf_1y": -53.85,
       "flags": [
         "極小時価総額",
         "赤字TTM",
@@ -3274,7 +3273,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -10.74,
+      "perf_1y": -11.48,
       "flags": [
         "小型"
       ]
@@ -3304,7 +3303,7 @@
       "industry": "自動車部品: OEM",
       "industry_raw": "Auto Parts: OEM",
       "market": "TSE",
-      "perf_1y": -6.09,
+      "perf_1y": -4.42,
       "flags": [
         "52週安値圏"
       ]
@@ -3334,7 +3333,7 @@
       "industry": "投資銀行・ブローカー",
       "industry_raw": "Investment Banks/Brokers",
       "market": "TSE",
-      "perf_1y": -82.99,
+      "perf_1y": -78.86,
       "flags": [
         "極小時価総額",
         "出来高過熱",
@@ -3367,7 +3366,7 @@
       "industry": "インターネットソフトウェア・サービス",
       "industry_raw": "Internet Software/Services",
       "market": "TSE",
-      "perf_1y": -20.29,
+      "perf_1y": -19.71,
       "flags": [
         "小型",
         "低流動性",
@@ -3399,7 +3398,7 @@
       "industry": "産業機械",
       "industry_raw": "Industrial Machinery",
       "market": "TSE",
-      "perf_1y": -9.09,
+      "perf_1y": -9.84,
       "flags": [
         "小型",
         "52週安値圏"
@@ -3430,7 +3429,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -45,
+      "perf_1y": -40.22,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -3463,7 +3462,7 @@
       "industry": "新聞発行",
       "industry_raw": "Publishing: Newspapers",
       "market": "TSE",
-      "perf_1y": -37.8,
+      "perf_1y": -38.18,
       "flags": [
         "小型",
         "低流動性",
@@ -3496,7 +3495,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -21.53,
+      "perf_1y": -20.98,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -3512,10 +3511,10 @@
       "volume": 49900,
       "relative_volume": 0.38,
       "market_cap": 3979860138,
-      "high_52w": 675,
+      "high_52w": 674,
       "low_52w": 109,
       "range_position": 0.7,
-      "distance_from_high": 83.3,
+      "distance_from_high": 83.2,
       "distance_from_low": 3.7,
       "per": null,
       "pbr": 0.57,
@@ -3528,7 +3527,7 @@
       "industry": "病院・介護施設運営",
       "industry_raw": "Hospital/Nursing Management",
       "market": "TSE",
-      "perf_1y": -83.28,
+      "perf_1y": -82.96,
       "flags": [
         "小型",
         "低流動性",
@@ -3561,7 +3560,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -78.69,
+      "perf_1y": -78.65,
       "flags": [
         "小型",
         "赤字TTM",
@@ -3593,7 +3592,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -80.21,
+      "perf_1y": -80.14,
       "flags": [
         "小型",
         "赤字TTM",
@@ -3625,7 +3624,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -54,
+      "perf_1y": -54.9,
       "flags": [
         "小型",
         "52週安値圏"
@@ -3656,7 +3655,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -32.95,
+      "perf_1y": -33.33,
       "flags": [
         "小型",
         "低流動性",
@@ -3689,7 +3688,7 @@
       "industry": "エンジニアリング・建設",
       "industry_raw": "Engineering & Construction",
       "market": "TSE",
-      "perf_1y": -29.94,
+      "perf_1y": -31.58,
       "flags": [
         "小型",
         "低流動性",
@@ -3755,7 +3754,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -41.58,
+      "perf_1y": -37.89,
       "flags": [
         "小型",
         "赤字TTM",
@@ -3787,7 +3786,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -46.61,
+      "perf_1y": -45.62,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -3819,7 +3818,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "NAG",
-      "perf_1y": -43.33,
+      "perf_1y": -43.6,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -3851,7 +3850,7 @@
       "industry": "無線通信",
       "industry_raw": "Wireless Telecommunications",
       "market": "TSE",
-      "perf_1y": -19.46,
+      "perf_1y": -18.92,
       "flags": []
     },
     {
@@ -3879,7 +3878,7 @@
       "industry": "インターネット小売",
       "industry_raw": "Internet Retail",
       "market": "TSE",
-      "perf_1y": -43.46,
+      "perf_1y": -42.38,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -3896,10 +3895,10 @@
       "volume": 131500,
       "relative_volume": 0.94,
       "market_cap": 6783024147,
-      "high_52w": 238,
+      "high_52w": 235,
       "low_52w": 115,
-      "range_position": 6.5,
-      "distance_from_high": 48.3,
+      "range_position": 6.7,
+      "distance_from_high": 47.7,
       "distance_from_low": 7.0,
       "per": 33.1,
       "pbr": 1.34,
@@ -3912,7 +3911,7 @@
       "industry": "インターネットソフトウェア・サービス",
       "industry_raw": "Internet Software/Services",
       "market": "TSE",
-      "perf_1y": -47.66,
+      "perf_1y": -48.32,
       "flags": [
         "小型",
         "52週安値圏"
@@ -3943,7 +3942,7 @@
       "industry": "食品: 総合",
       "industry_raw": "Food: Major Diversified",
       "market": "TSE",
-      "perf_1y": -5.38,
+      "perf_1y": 6.96,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -3958,10 +3957,10 @@
       "volume": 893200,
       "relative_volume": 1.63,
       "market_cap": 62623654999,
-      "high_52w": 257,
+      "high_52w": 238,
       "low_52w": 78,
-      "range_position": 25.1,
-      "distance_from_high": 52.1,
+      "range_position": 28.1,
+      "distance_from_high": 48.3,
       "distance_from_low": 57.7,
       "per": 326.61,
       "pbr": 5.05,
@@ -3974,7 +3973,7 @@
       "industry": "その他消費者向けサービス",
       "industry_raw": "Other Consumer Services",
       "market": "TSE",
-      "perf_1y": -50.2,
+      "perf_1y": -46.52,
       "flags": []
     },
     {
@@ -4002,7 +4001,7 @@
       "industry": "エンジニアリング・建設",
       "industry_raw": "Engineering & Construction",
       "market": "TSE",
-      "perf_1y": 342.86,
+      "perf_1y": 359.26,
       "flags": [
         "赤字TTM",
         "52週安値圏",
@@ -4034,7 +4033,7 @@
       "industry": "その他消費者向けサービス",
       "industry_raw": "Other Consumer Services",
       "market": "TSE",
-      "perf_1y": -21.52,
+      "perf_1y": -20.51,
       "flags": [
         "小型",
         "低流動性"
@@ -4065,7 +4064,7 @@
       "industry": "家電量販店",
       "industry_raw": "Electronics/Appliance Stores",
       "market": "TSE",
-      "perf_1y": -3.79,
+      "perf_1y": -4.51,
       "flags": [
         "小型",
         "低流動性",
@@ -4097,7 +4096,7 @@
       "industry": "コンピューター処理ハードウェア",
       "industry_raw": "Computer Processing Hardware",
       "market": "TSE",
-      "perf_1y": -12.24,
+      "perf_1y": -7.86,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -4129,7 +4128,7 @@
       "industry": "産業用特殊品",
       "industry_raw": "Industrial Specialties",
       "market": "TSE",
-      "perf_1y": -0.76,
+      "perf_1y": 0,
       "flags": [
         "小型",
         "低流動性",
@@ -4161,7 +4160,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -25.14,
+      "perf_1y": -25.57,
       "flags": [
         "小型"
       ]
@@ -4191,7 +4190,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": 15.93,
+      "perf_1y": 16.96,
       "flags": [
         "小型",
         "低流動性"
@@ -4206,10 +4205,10 @@
       "volume": 534900,
       "relative_volume": 0.84,
       "market_cap": 6396093979,
-      "high_52w": 166,
+      "high_52w": 165,
       "low_52w": 92,
-      "range_position": 54.1,
-      "distance_from_high": 20.5,
+      "range_position": 54.8,
+      "distance_from_high": 20.0,
       "distance_from_low": 43.5,
       "per": null,
       "pbr": 2.5,
@@ -4222,7 +4221,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -15.38,
+      "perf_1y": -15.92,
       "flags": [
         "小型"
       ]
@@ -4280,7 +4279,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -28.49,
+      "perf_1y": -27.32,
       "flags": [
         "小型",
         "52週安値圏"
@@ -4311,7 +4310,7 @@
       "industry": "日用品・パーソナルケア",
       "industry_raw": "Household/Personal Care",
       "market": "TSE",
-      "perf_1y": -70.52,
+      "perf_1y": -69.99,
       "flags": [
         "小型",
         "赤字TTM",
@@ -4343,7 +4342,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -8.11,
+      "perf_1y": -6.85,
       "flags": [
         "小型"
       ]
@@ -4373,7 +4372,7 @@
       "industry": "レクリエーション製品",
       "industry_raw": "Recreational Products",
       "market": "TSE",
-      "perf_1y": -11.69,
+      "perf_1y": -11.11,
       "flags": [
         "小型"
       ]
@@ -4403,7 +4402,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -26.34,
+      "perf_1y": -27.13,
       "flags": [
         "小型",
         "赤字TTM"
@@ -4434,7 +4433,7 @@
       "industry": "専門医療製品",
       "industry_raw": "Medical Specialties",
       "market": "TSE",
-      "perf_1y": -33.33,
+      "perf_1y": -31.34,
       "flags": [
         "赤字TTM"
       ]
@@ -4497,7 +4496,7 @@
       "industry": "電子部品",
       "industry_raw": "Electronic Components",
       "market": "TSE",
-      "perf_1y": -30,
+      "perf_1y": -27.08,
       "flags": [
         "小型",
         "低流動性",
@@ -4530,7 +4529,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -27.92,
+      "perf_1y": -30.05,
       "flags": [
         "小型",
         "赤字TTM",
@@ -4562,7 +4561,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": -8.97,
+      "perf_1y": -8.39,
       "flags": [
         "小型",
         "低流動性",
@@ -4594,7 +4593,7 @@
       "industry": "インターネット小売",
       "industry_raw": "Internet Retail",
       "market": "TSE",
-      "perf_1y": -42.8,
+      "perf_1y": -39.15,
       "flags": [
         "小型",
         "赤字TTM",
@@ -4626,7 +4625,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -37.5,
+      "perf_1y": -37.23,
       "flags": [
         "小型",
         "赤字TTM",
@@ -4658,7 +4657,7 @@
       "industry": "住宅建設",
       "industry_raw": "Homebuilding",
       "market": "TSE",
-      "perf_1y": 5.8,
+      "perf_1y": 5.04,
       "flags": [
         "小型",
         "低流動性"
@@ -4689,7 +4688,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": -78.43,
+      "perf_1y": -78.98,
       "flags": [
         "小型",
         "低流動性",
@@ -4721,7 +4720,7 @@
       "industry": "家電量販店",
       "industry_raw": "Electronics/Appliance Stores",
       "market": "TSE",
-      "perf_1y": -5.1,
+      "perf_1y": -5.7,
       "flags": [
         "低流動性"
       ]
@@ -4751,7 +4750,7 @@
       "industry": "容器・包装",
       "industry_raw": "Containers/Packaging",
       "market": "TSE",
-      "perf_1y": -42.31,
+      "perf_1y": -41.18,
       "flags": [
         "小型",
         "赤字TTM",
@@ -4783,7 +4782,7 @@
       "industry": "金属加工",
       "industry_raw": "Metal Fabrication",
       "market": "TSE",
-      "perf_1y": -24.5,
+      "perf_1y": -24.88,
       "flags": [
         "小型",
         "低流動性",
@@ -4846,7 +4845,7 @@
       "industry": "航空貨物・宅配便",
       "industry_raw": "Air Freight/Couriers",
       "market": "TSE",
-      "perf_1y": -8.98,
+      "perf_1y": -7.88,
       "flags": [
         "赤字TTM"
       ]
@@ -4876,7 +4875,7 @@
       "industry": "商業印刷・フォーム",
       "industry_raw": "Commercial Printing/Forms",
       "market": "TSE",
-      "perf_1y": 16.79,
+      "perf_1y": 12.5,
       "flags": [
         "小型",
         "低流動性",
@@ -4908,7 +4907,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": 19.38,
+      "perf_1y": 20.31,
       "flags": [
         "小型",
         "赤字TTM"
@@ -4923,10 +4922,10 @@
       "volume": 444400,
       "relative_volume": 2.75,
       "market_cap": 5636905571,
-      "high_52w": 274,
+      "high_52w": 268,
       "low_52w": 115,
-      "range_position": 24.5,
-      "distance_from_high": 43.8,
+      "range_position": 25.5,
+      "distance_from_high": 42.5,
       "distance_from_low": 33.9,
       "per": null,
       "pbr": 2.32,
@@ -4939,7 +4938,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -44.4,
+      "perf_1y": -45,
       "flags": [
         "小型",
         "赤字TTM"
@@ -4970,7 +4969,7 @@
       "industry": "投資運用会社",
       "industry_raw": "Investment Managers",
       "market": "TSE",
-      "perf_1y": -33.76,
+      "perf_1y": -34.32,
       "flags": [
         "小型",
         "低流動性"
@@ -5001,7 +5000,7 @@
       "industry": "その他消費者向けサービス",
       "industry_raw": "Other Consumer Services",
       "market": "TSE",
-      "perf_1y": 0,
+      "perf_1y": 0.64,
       "flags": [
         "小型",
         "低流動性"
@@ -5032,7 +5031,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": 1.28,
+      "perf_1y": 0.64,
       "flags": [
         "小型",
         "低流動性",
@@ -5064,7 +5063,7 @@
       "industry": "映画・エンターテインメント",
       "industry_raw": "Movies/Entertainment",
       "market": "TSE",
-      "perf_1y": 31.71,
+      "perf_1y": 32.79,
       "flags": []
     },
     {
@@ -5104,10 +5103,10 @@
       "volume": 12100,
       "relative_volume": 0.37,
       "market_cap": 2013059700,
-      "high_52w": 499,
+      "high_52w": 488,
       "low_52w": 129,
-      "range_position": 9.2,
-      "distance_from_high": 67.3,
+      "range_position": 9.5,
+      "distance_from_high": 66.6,
       "distance_from_low": 26.4,
       "per": null,
       "pbr": 2.16,
@@ -5120,7 +5119,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -67.33,
+      "perf_1y": -67.2,
       "flags": [
         "小型",
         "低流動性",
@@ -5153,7 +5152,7 @@
       "industry": "バイオテクノロジー",
       "industry_raw": "Biotechnology",
       "market": "TSE",
-      "perf_1y": -38.72,
+      "perf_1y": -39.41,
       "flags": [
         "小型",
         "赤字TTM"
@@ -5184,7 +5183,7 @@
       "industry": "ファイナンス・レンタル・リース",
       "industry_raw": "Finance/Rental/Leasing",
       "market": "TSE",
-      "perf_1y": 18.98,
+      "perf_1y": 19.85,
       "flags": [
         "小型"
       ]
@@ -5214,7 +5213,7 @@
       "industry": "食品小売",
       "industry_raw": "Food Retail",
       "market": "TSE",
-      "perf_1y": -9.89,
+      "perf_1y": -9.39,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -5246,7 +5245,7 @@
       "industry": "アパレル・フットウェア",
       "industry_raw": "Apparel/Footwear",
       "market": "TSE",
-      "perf_1y": -11.29,
+      "perf_1y": -10.81,
       "flags": [
         "小型",
         "低流動性",
@@ -5278,7 +5277,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": 0.61,
+      "perf_1y": 2.48,
       "flags": [
         "小型",
         "赤字TTM",
@@ -5310,7 +5309,7 @@
       "industry": "食品: 肉・魚・乳製品",
       "industry_raw": "Food: Meat/Fish/Dairy",
       "market": "TSE",
-      "perf_1y": 5.73,
+      "perf_1y": 6.41,
       "flags": [
         "小型"
       ]
@@ -5340,7 +5339,7 @@
       "industry": "卸売業者",
       "industry_raw": "Wholesale Distributors",
       "market": "TSE",
-      "perf_1y": 18.44,
+      "perf_1y": 15.17,
       "flags": [
         "小型",
         "低流動性",
@@ -5372,7 +5371,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "TSE",
-      "perf_1y": 35.48,
+      "perf_1y": 33.33,
       "flags": []
     },
     {
@@ -5400,7 +5399,7 @@
       "industry": "バイオテクノロジー",
       "industry_raw": "Biotechnology",
       "market": "TSE",
-      "perf_1y": -3.43,
+      "perf_1y": -0.59,
       "flags": [
         "小型",
         "低流動性",
@@ -5432,7 +5431,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -10.11,
+      "perf_1y": -8.65,
       "flags": [
         "小型",
         "低流動性",
@@ -5527,7 +5526,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": -24.23,
+      "perf_1y": -23.89,
       "flags": [
         "小型",
         "低流動性",
@@ -5559,7 +5558,7 @@
       "industry": "人材サービス",
       "industry_raw": "Personnel Services",
       "market": "TSE",
-      "perf_1y": 4.85,
+      "perf_1y": 6.13,
       "flags": [
         "小型",
         "低流動性"
@@ -5651,7 +5650,7 @@
       "industry": "書籍・雑誌出版",
       "industry_raw": "Publishing: Books/Magazines",
       "market": "TSE",
-      "perf_1y": -33.97,
+      "perf_1y": -32.95,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -5684,7 +5683,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "NAG",
-      "perf_1y": -21.97,
+      "perf_1y": -23.35,
       "flags": [
         "小型",
         "低流動性",
@@ -5716,7 +5715,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -38.08,
+      "perf_1y": -39.37,
       "flags": [
         "小型",
         "52週安値圏"
@@ -5747,7 +5746,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "TSE",
-      "perf_1y": -13,
+      "perf_1y": -12.56,
       "flags": [
         "小型",
         "低流動性",
@@ -5811,7 +5810,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": 29.41,
+      "perf_1y": 27.54,
       "flags": [
         "小型"
       ]
@@ -5841,7 +5840,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -41.58,
+      "perf_1y": -41.97,
       "flags": [
         "赤字TTM",
         "52週安値圏"
@@ -5872,7 +5871,7 @@
       "industry": "専門通信サービス",
       "industry_raw": "Specialty Telecommunications",
       "market": "TSE",
-      "perf_1y": 10.33,
+      "perf_1y": 10.88,
       "flags": [
         "52週高値圏"
       ]
@@ -5902,7 +5901,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -29.8,
+      "perf_1y": -32.45,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -5935,7 +5934,7 @@
       "industry": "繊維",
       "industry_raw": "Textiles",
       "market": "TSE",
-      "perf_1y": -38.36,
+      "perf_1y": -37.72,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -5967,7 +5966,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -32.71,
+      "perf_1y": -32.21,
       "flags": [
         "小型",
         "低流動性",
@@ -5999,7 +5998,7 @@
       "industry": "産業機械",
       "industry_raw": "Industrial Machinery",
       "market": "TSE",
-      "perf_1y": -43.79,
+      "perf_1y": -43.26,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -6032,7 +6031,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": -5.21,
+      "perf_1y": -7.14,
       "flags": []
     },
     {
@@ -6044,10 +6043,10 @@
       "volume": 783600,
       "relative_volume": 0.43,
       "market_cap": 3354169106,
-      "high_52w": 348,
+      "high_52w": 341,
       "low_52w": 134,
-      "range_position": 22.4,
-      "distance_from_high": 47.7,
+      "range_position": 23.2,
+      "distance_from_high": 46.6,
       "distance_from_low": 35.8,
       "per": null,
       "pbr": 2.74,
@@ -6060,7 +6059,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -48.15,
+      "perf_1y": -47.09,
       "flags": [
         "小型",
         "赤字TTM"
@@ -6122,7 +6121,7 @@
       "industry": "アパレル・フットウェア",
       "industry_raw": "Apparel/Footwear",
       "market": "TSE",
-      "perf_1y": -36.46,
+      "perf_1y": -34.64,
       "flags": [
         "極小時価総額",
         "赤字TTM"
@@ -6153,7 +6152,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -39.47,
+      "perf_1y": -38.67,
       "flags": [
         "赤字TTM",
         "52週安値圏"
@@ -6184,7 +6183,7 @@
       "industry": "インターネットソフトウェア・サービス",
       "industry_raw": "Internet Software/Services",
       "market": "TSE",
-      "perf_1y": -29.77,
+      "perf_1y": -28.68,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -6217,7 +6216,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -15.91,
+      "perf_1y": -10.63,
       "flags": [
         "52週安値圏"
       ]
@@ -6247,7 +6246,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -13.55,
+      "perf_1y": -12.32,
       "flags": [
         "小型",
         "赤字TTM"
@@ -6278,7 +6277,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": -10,
+      "perf_1y": -9.57,
       "flags": []
     },
     {
@@ -6306,7 +6305,7 @@
       "industry": "医療・看護サービス",
       "industry_raw": "Medical/Nursing Services",
       "market": "TSE",
-      "perf_1y": -10.43,
+      "perf_1y": -7.35,
       "flags": [
         "小型",
         "低流動性"
@@ -6337,7 +6336,7 @@
       "industry": "ディスカウントストア",
       "industry_raw": "Discount Stores",
       "market": "TSE",
-      "perf_1y": 13.77,
+      "perf_1y": 15.85,
       "flags": [
         "小型",
         "低流動性",
@@ -6369,7 +6368,7 @@
       "industry": "金属加工",
       "industry_raw": "Metal Fabrication",
       "market": "TSE",
-      "perf_1y": 2.15,
+      "perf_1y": 2.7,
       "flags": [
         "小型",
         "低流動性"
@@ -6400,7 +6399,7 @@
       "industry": "電子機器製造装置",
       "industry_raw": "Electronic Production Equipment",
       "market": "TSE",
-      "perf_1y": -7.73,
+      "perf_1y": -8.17,
       "flags": [
         "小型",
         "低流動性",
@@ -6432,7 +6431,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": -27.38,
+      "perf_1y": -17.32,
       "flags": [
         "小型",
         "低流動性"
@@ -6463,7 +6462,7 @@
       "industry": "航空貨物・宅配便",
       "industry_raw": "Air Freight/Couriers",
       "market": "TSE",
-      "perf_1y": -38.98,
+      "perf_1y": -38.39,
       "flags": [
         "小型",
         "低流動性",
@@ -6496,7 +6495,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -41.03,
+      "perf_1y": -42.26,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -6512,10 +6511,10 @@
       "volume": 10600,
       "relative_volume": 1.78,
       "market_cap": 2074558897,
-      "high_52w": 313,
+      "high_52w": 308,
       "low_52w": 168,
-      "range_position": 17.9,
-      "distance_from_high": 38.0,
+      "range_position": 18.6,
+      "distance_from_high": 37.0,
       "distance_from_low": 15.5,
       "per": null,
       "pbr": 2.87,
@@ -6528,7 +6527,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -36.81,
+      "perf_1y": -36.6,
       "flags": [
         "小型",
         "低流動性",
@@ -6560,7 +6559,7 @@
       "industry": "産業機械",
       "industry_raw": "Industrial Machinery",
       "market": "TSE",
-      "perf_1y": 28.29,
+      "perf_1y": 29.14,
       "flags": []
     },
     {
@@ -6572,10 +6571,10 @@
       "volume": 1012200,
       "relative_volume": 0.95,
       "market_cap": 10618503956,
-      "high_52w": 659,
+      "high_52w": 645,
       "low_52w": 191,
       "range_position": 1.3,
-      "distance_from_high": 70.1,
+      "distance_from_high": 69.5,
       "distance_from_low": 3.1,
       "per": null,
       "pbr": 0.54,
@@ -6588,7 +6587,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -68.28,
+      "perf_1y": -68.63,
       "flags": [
         "赤字TTM",
         "52週安値圏"
@@ -6619,7 +6618,7 @@
       "industry": "人材サービス",
       "industry_raw": "Personnel Services",
       "market": "TSE",
-      "perf_1y": -34.11,
+      "perf_1y": -33.67,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -6652,7 +6651,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -16.39,
+      "perf_1y": -14.59,
       "flags": [
         "小型",
         "低流動性",
@@ -6684,7 +6683,7 @@
       "industry": "人材サービス",
       "industry_raw": "Personnel Services",
       "market": "TSE",
-      "perf_1y": -26.2,
+      "perf_1y": -20.95,
       "flags": [
         "小型",
         "低流動性",
@@ -6716,7 +6715,7 @@
       "industry": "ドラッグストアチェーン",
       "industry_raw": "Drugstore Chains",
       "market": "TSE",
-      "perf_1y": -6.1,
+      "perf_1y": -6.98,
       "flags": [
         "小型",
         "低流動性",
@@ -6760,10 +6759,10 @@
       "volume": 26200,
       "relative_volume": 0.6,
       "market_cap": 3168488174,
-      "high_52w": 327,
+      "high_52w": 305,
       "low_52w": 192,
-      "range_position": 7.4,
-      "distance_from_high": 38.2,
+      "range_position": 8.8,
+      "distance_from_high": 33.8,
       "distance_from_low": 5.2,
       "per": null,
       "pbr": 0.79,
@@ -6776,7 +6775,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -30.34,
+      "perf_1y": -30.82,
       "flags": [
         "小型",
         "低流動性",
@@ -6809,7 +6808,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -46.58,
+      "perf_1y": -47.14,
       "flags": [
         "小型",
         "低流動性",
@@ -6842,7 +6841,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -69.73,
+      "perf_1y": -70,
       "flags": [
         "小型",
         "赤字TTM",
@@ -6907,7 +6906,7 @@
       "industry": "商業印刷・フォーム",
       "industry_raw": "Commercial Printing/Forms",
       "market": "TSE",
-      "perf_1y": -25.18,
+      "perf_1y": -25.45,
       "flags": [
         "小型",
         "低流動性"
@@ -6969,7 +6968,7 @@
       "industry": "病院・介護施設運営",
       "industry_raw": "Hospital/Nursing Management",
       "market": "TSE",
-      "perf_1y": -6.79,
+      "perf_1y": -6.36,
       "flags": [
         "小型",
         "低流動性",
@@ -7001,7 +7000,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -64.1,
+      "perf_1y": -64.53,
       "flags": [
         "極小時価総額",
         "赤字TTM",
@@ -7033,7 +7032,7 @@
       "industry": "専門医療製品",
       "industry_raw": "Medical Specialties",
       "market": "TSE",
-      "perf_1y": -6.67,
+      "perf_1y": -0.94,
       "flags": [
         "小型",
         "低流動性"
@@ -7064,7 +7063,7 @@
       "industry": "卸売業者",
       "industry_raw": "Wholesale Distributors",
       "market": "TSE",
-      "perf_1y": -20.45,
+      "perf_1y": -20.75,
       "flags": [
         "小型",
         "低流動性"
@@ -7095,7 +7094,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -7.86,
+      "perf_1y": -7.46,
       "flags": [
         "低流動性",
         "52週安値圏"
@@ -7126,7 +7125,7 @@
       "industry": "コンピューター処理ハードウェア",
       "industry_raw": "Computer Processing Hardware",
       "market": "TSE",
-      "perf_1y": 4.43,
+      "perf_1y": 7.07,
       "flags": [
         "小型",
         "低流動性"
@@ -7185,7 +7184,7 @@
       "industry": "医療・看護サービス",
       "industry_raw": "Medical/Nursing Services",
       "market": "TSE",
-      "perf_1y": -35.54,
+      "perf_1y": -41.05,
       "flags": [
         "小型",
         "低流動性"
@@ -7200,10 +7199,10 @@
       "volume": 6300,
       "relative_volume": 1.48,
       "market_cap": 1442800267,
-      "high_52w": 308,
+      "high_52w": 303,
       "low_52w": 191,
-      "range_position": 19.7,
-      "distance_from_high": 30.5,
+      "range_position": 20.5,
+      "distance_from_high": 29.4,
       "distance_from_low": 12.0,
       "per": 44.43,
       "pbr": 1.26,
@@ -7216,7 +7215,7 @@
       "industry": "インターネット小売",
       "industry_raw": "Internet Retail",
       "market": "TSE",
-      "perf_1y": -30.97,
+      "perf_1y": -31.19,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -7247,7 +7246,7 @@
       "industry": "航空貨物・宅配便",
       "industry_raw": "Air Freight/Couriers",
       "market": "TSE",
-      "perf_1y": -10.79,
+      "perf_1y": -10.23,
       "flags": [
         "小型",
         "低流動性"
@@ -7278,7 +7277,7 @@
       "industry": "日用雑貨",
       "industry_raw": "Consumer Sundries",
       "market": "TSE",
-      "perf_1y": -4.41,
+      "perf_1y": -3.56,
       "flags": [
         "小型",
         "低流動性"
@@ -7309,7 +7308,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": 15.96,
+      "perf_1y": 14.74,
       "flags": [
         "小型",
         "低流動性"
@@ -7340,7 +7339,7 @@
       "industry": "商業印刷・フォーム",
       "industry_raw": "Commercial Printing/Forms",
       "market": "TSE",
-      "perf_1y": -41.24,
+      "perf_1y": -40.6,
       "flags": [
         "小型",
         "低流動性",
@@ -7372,7 +7371,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -12.45,
+      "perf_1y": -12.1,
       "flags": [
         "小型",
         "低流動性",
@@ -7405,7 +7404,7 @@
       "industry": "商業印刷・フォーム",
       "industry_raw": "Commercial Printing/Forms",
       "market": "TSE",
-      "perf_1y": 8.46,
+      "perf_1y": 9,
       "flags": [
         "小型",
         "低流動性"
@@ -7436,7 +7435,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -9.92,
+      "perf_1y": -11.02,
       "flags": [
         "小型",
         "低流動性",
@@ -7468,7 +7467,7 @@
       "industry": "その他消費者向けサービス",
       "industry_raw": "Other Consumer Services",
       "market": "TSE",
-      "perf_1y": 2.34,
+      "perf_1y": 1.86,
       "flags": [
         "小型",
         "低流動性",
@@ -7501,7 +7500,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "TSE",
-      "perf_1y": -13.33,
+      "perf_1y": -13.67,
       "flags": [
         "小型",
         "低流動性",
@@ -7533,7 +7532,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -11.95,
+      "perf_1y": -11.6,
       "flags": [
         "小型",
         "低流動性"
@@ -7596,7 +7595,7 @@
       "industry": "投資銀行・ブローカー",
       "industry_raw": "Investment Banks/Brokers",
       "market": "TSE",
-      "perf_1y": 24.58,
+      "perf_1y": 26.7,
       "flags": [
         "低流動性"
       ]
@@ -7626,7 +7625,7 @@
       "industry": "インターネットソフトウェア・サービス",
       "industry_raw": "Internet Software/Services",
       "market": "TSE",
-      "perf_1y": -37.43,
+      "perf_1y": -39.42,
       "flags": [
         "小型",
         "低流動性",
@@ -7658,7 +7657,7 @@
       "industry": "その他医薬品",
       "industry_raw": "Pharmaceuticals: Other",
       "market": "TSE",
-      "perf_1y": -50.65,
+      "perf_1y": -51.48,
       "flags": [
         "小型",
         "赤字TTM",
@@ -7674,10 +7673,10 @@
       "volume": 463200,
       "relative_volume": 0.39,
       "market_cap": 1924494007,
-      "high_52w": 809,
+      "high_52w": 754,
       "low_52w": 149,
-      "range_position": 12.1,
-      "distance_from_high": 71.7,
+      "range_position": 13.2,
+      "distance_from_high": 69.6,
       "distance_from_low": 53.7,
       "per": null,
       "pbr": 1.22,
@@ -7690,7 +7689,7 @@
       "industry": "電子専門商社",
       "industry_raw": "Electronics Distributors",
       "market": "TSE",
-      "perf_1y": -77.39,
+      "perf_1y": -72.04,
       "flags": [
         "極小時価総額",
         "赤字TTM",
@@ -7706,10 +7705,10 @@
       "volume": 683900,
       "relative_volume": 1.1,
       "market_cap": 4358700657,
-      "high_52w": 1189,
+      "high_52w": 1126,
       "low_52w": 184,
-      "range_position": 4.6,
-      "distance_from_high": 80.7,
+      "range_position": 4.9,
+      "distance_from_high": 79.6,
       "distance_from_low": 25.0,
       "per": 0.58,
       "pbr": 0.1,
@@ -7722,7 +7721,7 @@
       "industry": "電子機器・計器",
       "industry_raw": "Electronic Equipment/Instruments",
       "market": "TSE",
-      "perf_1y": -80.99,
+      "perf_1y": -81.41,
       "flags": [
         "小型",
         "52週安値圏"
@@ -7737,10 +7736,10 @@
       "volume": 1050600,
       "relative_volume": 0.82,
       "market_cap": 33869173050.0,
-      "high_52w": 365,
+      "high_52w": 357,
       "low_52w": 148,
-      "range_position": 38.2,
-      "distance_from_high": 36.7,
+      "range_position": 39.7,
+      "distance_from_high": 35.3,
       "distance_from_low": 56.1,
       "per": null,
       "pbr": 1.58,
@@ -7753,7 +7752,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -35.29,
+      "perf_1y": -34.19,
       "flags": [
         "赤字TTM"
       ]
@@ -7783,7 +7782,7 @@
       "industry": "インターネットソフトウェア・サービス",
       "industry_raw": "Internet Software/Services",
       "market": "TSE",
-      "perf_1y": 6.42,
+      "perf_1y": 9.95,
       "flags": [
         "出来高過熱"
       ]
@@ -7813,7 +7812,7 @@
       "industry": "専門医療製品",
       "industry_raw": "Medical Specialties",
       "market": "TSE",
-      "perf_1y": 18.97,
+      "perf_1y": 21.47,
       "flags": []
     },
     {
@@ -7841,7 +7840,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -38.95,
+      "perf_1y": -40.51,
       "flags": [
         "小型",
         "低流動性",
@@ -7874,7 +7873,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "NAG",
-      "perf_1y": 11.22,
+      "perf_1y": 14.5,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -7905,7 +7904,7 @@
       "industry": "特殊化学",
       "industry_raw": "Chemicals: Specialty",
       "market": "TSE",
-      "perf_1y": 1.75,
+      "perf_1y": 3.1,
       "flags": [
         "小型"
       ]
@@ -7935,7 +7934,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -24.12,
+      "perf_1y": -24.84,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -7967,7 +7966,7 @@
       "industry": "卸売業者",
       "industry_raw": "Wholesale Distributors",
       "market": "TSE",
-      "perf_1y": -27.16,
+      "perf_1y": -27.38,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -7999,7 +7998,7 @@
       "industry": "飲食店",
       "industry_raw": "Restaurants",
       "market": "TSE",
-      "perf_1y": -6.72,
+      "perf_1y": -7.09,
       "flags": [
         "小型",
         "低流動性",
@@ -8031,7 +8030,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -7.69,
+      "perf_1y": -8.4,
       "flags": [
         "小型",
         "低流動性",
@@ -8063,7 +8062,7 @@
       "industry": "電子部品",
       "industry_raw": "Electronic Components",
       "market": "TSE",
-      "perf_1y": -19.19,
+      "perf_1y": -18.92,
       "flags": [
         "小型",
         "低流動性",
@@ -8096,7 +8095,7 @@
       "industry": "アパレル・フットウェア小売",
       "industry_raw": "Apparel/Footwear Retail",
       "market": "TSE",
-      "perf_1y": -11.11,
+      "perf_1y": -11.44,
       "flags": [
         "小型",
         "低流動性"
@@ -8127,7 +8126,7 @@
       "industry": "人材サービス",
       "industry_raw": "Personnel Services",
       "market": "TSE",
-      "perf_1y": 29.29,
+      "perf_1y": 30.36,
       "flags": [
         "52週高値圏"
       ]
@@ -8188,7 +8187,7 @@
       "industry": "投資銀行・ブローカー",
       "industry_raw": "Investment Banks/Brokers",
       "market": "TSE",
-      "perf_1y": -58.53,
+      "perf_1y": -55.82,
       "flags": [
         "赤字TTM",
         "52週安値圏"
@@ -8219,7 +8218,7 @@
       "industry": "専門店",
       "industry_raw": "Specialty Stores",
       "market": "TSE",
-      "perf_1y": -35.03,
+      "perf_1y": -35.54,
       "flags": [
         "小型",
         "低流動性"
@@ -8250,7 +8249,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -9.96,
+      "perf_1y": -10.62,
       "flags": [
         "小型",
         "出来高過熱",
@@ -8315,7 +8314,7 @@
       "industry": "産業用特殊品",
       "industry_raw": "Industrial Specialties",
       "market": "TSE",
-      "perf_1y": -4.28,
+      "perf_1y": -3.91,
       "flags": []
     },
     {
@@ -8343,7 +8342,7 @@
       "industry": "電気製品",
       "industry_raw": "Electrical Products",
       "market": "TSE",
-      "perf_1y": -24.46,
+      "perf_1y": -22.57,
       "flags": [
         "小型",
         "低流動性",
@@ -8407,7 +8406,7 @@
       "industry": "無線通信",
       "industry_raw": "Wireless Telecommunications",
       "market": "TSE",
-      "perf_1y": 7.4,
+      "perf_1y": 8.63,
       "flags": [
         "52週高値圏"
       ]
@@ -8437,7 +8436,7 @@
       "industry": "データ処理サービス",
       "industry_raw": "Data Processing Services",
       "market": "TSE",
-      "perf_1y": 50.91,
+      "perf_1y": 47.34,
       "flags": []
     },
     {
@@ -8465,7 +8464,7 @@
       "industry": "産業機械",
       "industry_raw": "Industrial Machinery",
       "market": "TSE",
-      "perf_1y": 3.75,
+      "perf_1y": 4.18,
       "flags": [
         "小型",
         "低流動性",
@@ -8497,7 +8496,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -20.7,
+      "perf_1y": -21.7,
       "flags": [
         "小型",
         "低流動性"
@@ -8512,10 +8511,10 @@
       "volume": 18200,
       "relative_volume": 0.18,
       "market_cap": 2062765966,
-      "high_52w": 404,
+      "high_52w": 397,
       "low_52w": 148,
-      "range_position": 39.5,
-      "distance_from_high": 38.4,
+      "range_position": 40.6,
+      "distance_from_high": 37.3,
       "distance_from_low": 68.2,
       "per": null,
       "pbr": 6.75,
@@ -8528,7 +8527,7 @@
       "industry": "ファイナンス・レンタル・リース",
       "industry_raw": "Finance/Rental/Leasing",
       "market": "TSE",
-      "perf_1y": -37.75,
+      "perf_1y": -38.37,
       "flags": [
         "小型",
         "低流動性",
@@ -8560,7 +8559,7 @@
       "industry": "住宅建設",
       "industry_raw": "Homebuilding",
       "market": "TSE",
-      "perf_1y": 5.02,
+      "perf_1y": 2.87,
       "flags": [
         "小型",
         "低流動性",
@@ -8576,10 +8575,10 @@
       "volume": 10600,
       "relative_volume": 0.72,
       "market_cap": 5241546202,
-      "high_52w": 316,
+      "high_52w": 315,
       "low_52w": 224,
-      "range_position": 29.3,
-      "distance_from_high": 20.6,
+      "range_position": 29.7,
+      "distance_from_high": 20.3,
       "distance_from_low": 12.1,
       "per": 19.01,
       "pbr": 0.6,
@@ -8592,7 +8591,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -20.57,
+      "perf_1y": -19.55,
       "flags": [
         "小型",
         "低流動性"
@@ -8623,7 +8622,7 @@
       "industry": "環境サービス",
       "industry_raw": "Environmental Services",
       "market": "TSE",
-      "perf_1y": 5.91,
+      "perf_1y": 4.58,
       "flags": []
     },
     {
@@ -8682,7 +8681,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": -7.66,
+      "perf_1y": -8.99,
       "flags": [
         "小型",
         "低流動性"
@@ -8713,7 +8712,7 @@
       "industry": "インターネットソフトウェア・サービス",
       "industry_raw": "Internet Software/Services",
       "market": "TSE",
-      "perf_1y": -30.79,
+      "perf_1y": -31.54,
       "flags": []
     },
     {
@@ -8741,7 +8740,7 @@
       "industry": "総合保険",
       "industry_raw": "Multi-Line Insurance",
       "market": "TSE",
-      "perf_1y": 50,
+      "perf_1y": 48.26,
       "flags": [
         "小型",
         "低流動性",
@@ -8773,7 +8772,7 @@
       "industry": "バイオテクノロジー",
       "industry_raw": "Biotechnology",
       "market": "TSE",
-      "perf_1y": 16.36,
+      "perf_1y": 19.07,
       "flags": [
         "小型",
         "低流動性"
@@ -8804,7 +8803,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -19.5,
+      "perf_1y": -19.75,
       "flags": [
         "小型",
         "低流動性"
@@ -8865,7 +8864,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": 18.98,
+      "perf_1y": -1.91,
       "flags": [
         "小型",
         "低流動性"
@@ -8896,7 +8895,7 @@
       "industry": "投資銀行・ブローカー",
       "industry_raw": "Investment Banks/Brokers",
       "market": "TSE",
-      "perf_1y": -6.86,
+      "perf_1y": -6.18,
       "flags": [
         "小型",
         "低流動性",
@@ -8928,7 +8927,7 @@
       "industry": "建築製品",
       "industry_raw": "Building Products",
       "market": "TSE",
-      "perf_1y": -2.27,
+      "perf_1y": -1.53,
       "flags": [
         "低流動性",
         "赤字TTM"
@@ -8959,7 +8958,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -53.57,
+      "perf_1y": -52.98,
       "flags": [
         "小型",
         "低流動性",
@@ -8992,7 +8991,7 @@
       "industry": "コンピューター周辺機器",
       "industry_raw": "Computer Peripherals",
       "market": "TSE",
-      "perf_1y": -21.21,
+      "perf_1y": -20.25,
       "flags": [
         "小型",
         "低流動性",
@@ -9025,7 +9024,7 @@
       "industry": "その他消費者特殊品",
       "industry_raw": "Other Consumer Specialties",
       "market": "TSE",
-      "perf_1y": 160,
+      "perf_1y": 170.83,
       "flags": [
         "小型",
         "1年変動大"
@@ -9056,7 +9055,7 @@
       "industry": "インターネット小売",
       "industry_raw": "Internet Retail",
       "market": "TSE",
-      "perf_1y": -9.06,
+      "perf_1y": -9.38,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -9120,7 +9119,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -39.16,
+      "perf_1y": -38.3,
       "flags": [
         "小型",
         "低流動性"
@@ -9151,7 +9150,7 @@
       "industry": "電子専門商社",
       "industry_raw": "Electronics Distributors",
       "market": "TSE",
-      "perf_1y": -58.17,
+      "perf_1y": -57.9,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -9183,7 +9182,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": -14.56,
+      "perf_1y": -14.01,
       "flags": [
         "小型",
         "低流動性",
@@ -9215,7 +9214,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -24.79,
+      "perf_1y": -23.92,
       "flags": [
         "小型",
         "低流動性",
@@ -9247,7 +9246,7 @@
       "industry": "その他消費者向けサービス",
       "industry_raw": "Other Consumer Services",
       "market": "TSE",
-      "perf_1y": 7.29,
+      "perf_1y": 6.85,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -9279,7 +9278,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": 10.74,
+      "perf_1y": 8.5,
       "flags": [
         "小型",
         "52週高値圏"
@@ -9310,7 +9309,7 @@
       "industry": "映画・エンターテインメント",
       "industry_raw": "Movies/Entertainment",
       "market": "TSE",
-      "perf_1y": -12.34,
+      "perf_1y": -10.6,
       "flags": [
         "小型",
         "低流動性"
@@ -9372,7 +9371,7 @@
       "industry": "エンジニアリング・建設",
       "industry_raw": "Engineering & Construction",
       "market": "TSE",
-      "perf_1y": 17.24,
+      "perf_1y": 15.74,
       "flags": [
         "小型",
         "低流動性"
@@ -9403,7 +9402,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -6.85,
+      "perf_1y": -7.48,
       "flags": []
     },
     {
@@ -9431,7 +9430,7 @@
       "industry": "建築製品",
       "industry_raw": "Building Products",
       "market": "TSE",
-      "perf_1y": 2.64,
+      "perf_1y": 3.03,
       "flags": [
         "小型",
         "低流動性",
@@ -9448,10 +9447,10 @@
       "volume": 169000,
       "relative_volume": 1.08,
       "market_cap": 17209165161,
-      "high_52w": 404,
+      "high_52w": 403,
       "low_52w": 193,
-      "range_position": 37.4,
-      "distance_from_high": 32.7,
+      "range_position": 37.6,
+      "distance_from_high": 32.5,
       "distance_from_low": 40.9,
       "per": 20.05,
       "pbr": 1.43,
@@ -9464,7 +9463,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -32.51,
+      "perf_1y": -32.67,
       "flags": []
     },
     {
@@ -9492,7 +9491,7 @@
       "industry": "通信機器",
       "industry_raw": "Telecommunications Equipment",
       "market": "TSE",
-      "perf_1y": 26.98,
+      "perf_1y": 29.38,
       "flags": []
     },
     {
@@ -9520,7 +9519,7 @@
       "industry": "専門医療製品",
       "industry_raw": "Medical Specialties",
       "market": "TSE",
-      "perf_1y": 41.75,
+      "perf_1y": 43.23,
       "flags": [
         "小型",
         "低流動性"
@@ -9536,10 +9535,10 @@
       "relative_volume": 3.44,
       "market_cap": 2913172188,
       "high_52w": 319,
-      "low_52w": 254,
-      "range_position": 33.8,
+      "low_52w": 255,
+      "range_position": 32.8,
       "distance_from_high": 13.5,
-      "distance_from_low": 8.7,
+      "distance_from_low": 8.2,
       "per": null,
       "pbr": 0.42,
       "dividend_yield": 2.54,
@@ -9551,7 +9550,7 @@
       "industry": "卸売業者",
       "industry_raw": "Wholesale Distributors",
       "market": "TSE",
-      "perf_1y": 8.66,
+      "perf_1y": 8.24,
       "flags": [
         "小型",
         "低流動性",
@@ -9584,7 +9583,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -29.52,
+      "perf_1y": -29.7,
       "flags": [
         "小型",
         "低流動性"
@@ -9599,10 +9598,10 @@
       "volume": 60200,
       "relative_volume": 0.91,
       "market_cap": 6693378334,
-      "high_52w": 540,
+      "high_52w": 520,
       "low_52w": 238,
-      "range_position": 13.2,
-      "distance_from_high": 48.5,
+      "range_position": 14.2,
+      "distance_from_high": 46.5,
       "distance_from_low": 16.8,
       "per": 21.99,
       "pbr": 2.3,
@@ -9615,7 +9614,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -48.99,
+      "perf_1y": -47.15,
       "flags": [
         "小型",
         "低流動性",
@@ -9708,7 +9707,7 @@
       "industry": "電気製品",
       "industry_raw": "Electrical Products",
       "market": "TSE",
-      "perf_1y": 23.25,
+      "perf_1y": 24.89,
       "flags": [
         "小型",
         "低流動性",
@@ -9740,7 +9739,7 @@
       "industry": "広告・マーケティングサービス",
       "industry_raw": "Advertising/Marketing Services",
       "market": "TSE",
-      "perf_1y": -22.1,
+      "perf_1y": -22.31,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -9804,7 +9803,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": 13.2,
+      "perf_1y": 13.65,
       "flags": [
         "小型",
         "低流動性"
@@ -9819,10 +9818,10 @@
       "volume": 27200,
       "relative_volume": 1.78,
       "market_cap": 1350872152,
-      "high_52w": 736,
+      "high_52w": 601,
       "low_52w": 208,
-      "range_position": 14.2,
-      "distance_from_high": 61.5,
+      "range_position": 19.1,
+      "distance_from_high": 52.9,
       "distance_from_low": 36.1,
       "per": null,
       "pbr": 3.46,
@@ -9835,12 +9834,11 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -46.9,
+      "perf_1y": -57.38,
       "flags": [
         "極小時価総額",
         "低流動性",
-        "赤字TTM",
-        "52週安値圏"
+        "赤字TTM"
       ]
     },
     {
@@ -9898,7 +9896,7 @@
       "industry": "電子専門商社",
       "industry_raw": "Electronics Distributors",
       "market": "TSE",
-      "perf_1y": 13.49,
+      "perf_1y": 10.85,
       "flags": [
         "小型",
         "低流動性"
@@ -9929,7 +9927,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -9.78,
+      "perf_1y": -10.62,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -9960,7 +9958,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -17.77,
+      "perf_1y": -19.15,
       "flags": []
     },
     {
@@ -9988,7 +9986,7 @@
       "industry": "その他製造",
       "industry_raw": "Miscellaneous Manufacturing",
       "market": "TSE",
-      "perf_1y": 5.13,
+      "perf_1y": 5.51,
       "flags": [
         "小型",
         "低流動性"
@@ -10019,7 +10017,7 @@
       "industry": "電気事業",
       "industry_raw": "Electric Utilities",
       "market": "TSE",
-      "perf_1y": 14.23,
+      "perf_1y": 17.0,
       "flags": [
         "小型",
         "低流動性"
@@ -10034,10 +10032,10 @@
       "volume": 107700,
       "relative_volume": 0.59,
       "market_cap": 18787556511,
-      "high_52w": 916,
+      "high_52w": 903,
       "low_52w": 243,
-      "range_position": 7.1,
-      "distance_from_high": 68.2,
+      "range_position": 7.3,
+      "distance_from_high": 67.8,
       "distance_from_low": 19.8,
       "per": 12.62,
       "pbr": 1.22,
@@ -10050,7 +10048,7 @@
       "industry": "不動産開発",
       "industry_raw": "Real Estate Development",
       "market": "TSE",
-      "perf_1y": -68.84,
+      "perf_1y": -68.4,
       "flags": [
         "52週安値圏"
       ]
@@ -10080,7 +10078,7 @@
       "industry": "建築製品",
       "industry_raw": "Building Products",
       "market": "TSE",
-      "perf_1y": 3.56,
+      "perf_1y": 0.69,
       "flags": [
         "小型",
         "低流動性"
@@ -10111,7 +10109,7 @@
       "industry": "人材サービス",
       "industry_raw": "Personnel Services",
       "market": "TSE",
-      "perf_1y": 3.04,
+      "perf_1y": 3.11,
       "flags": [
         "52週高値圏"
       ]
@@ -10141,7 +10139,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -27.18,
+      "perf_1y": -26.82,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -10174,7 +10172,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -29.98,
+      "perf_1y": -30.97,
       "flags": [
         "小型",
         "低流動性",
@@ -10207,7 +10205,7 @@
       "industry": "特殊化学",
       "industry_raw": "Chemicals: Specialty",
       "market": "TSE",
-      "perf_1y": 51.03,
+      "perf_1y": 49.49,
       "flags": [
         "小型",
         "低流動性"
@@ -10238,7 +10236,7 @@
       "industry": "その他法人向けサービス",
       "industry_raw": "Miscellaneous Commercial Services",
       "market": "TSE",
-      "perf_1y": -30.9,
+      "perf_1y": -32.18,
       "flags": [
         "小型",
         "低流動性",
@@ -10271,7 +10269,7 @@
       "industry": "その他消費者向けサービス",
       "industry_raw": "Other Consumer Services",
       "market": "TSE",
-      "perf_1y": -5.16,
+      "perf_1y": -5.47,
       "flags": [
         "小型",
         "低流動性",
@@ -10304,7 +10302,7 @@
       "industry": "コンピューター通信",
       "industry_raw": "Computer Communications",
       "market": "TSE",
-      "perf_1y": -10.88,
+      "perf_1y": -12.98,
       "flags": [
         "小型",
         "低流動性"
@@ -10335,7 +10333,7 @@
       "industry": "インターネット小売",
       "industry_raw": "Internet Retail",
       "market": "TSE",
-      "perf_1y": -77.89,
+      "perf_1y": -78.16,
       "flags": [
         "小型",
         "低流動性",
@@ -10367,7 +10365,7 @@
       "industry": "百貨店",
       "industry_raw": "Department Stores",
       "market": "TSE",
-      "perf_1y": -42.66,
+      "perf_1y": -45.1,
       "flags": [
         "小型",
         "低流動性"
@@ -10398,7 +10396,7 @@
       "industry": "大手医薬品",
       "industry_raw": "Pharmaceuticals: Major",
       "market": "TSE",
-      "perf_1y": -0.33,
+      "perf_1y": 0,
       "flags": [
         "低流動性"
       ]
@@ -10428,7 +10426,7 @@
       "industry": "産業機械",
       "industry_raw": "Industrial Machinery",
       "market": "TSE",
-      "perf_1y": 4.2,
+      "perf_1y": 4.93,
       "flags": [
         "小型",
         "低流動性"
@@ -10459,7 +10457,7 @@
       "industry": "ITサービス",
       "industry_raw": "Information Technology Services",
       "market": "TSE",
-      "perf_1y": 0,
+      "perf_1y": 0.33,
       "flags": [
         "小型",
         "低流動性"
@@ -10490,7 +10488,7 @@
       "industry": "日用品・パーソナルケア",
       "industry_raw": "Household/Personal Care",
       "market": "TSE",
-      "perf_1y": -9.91,
+      "perf_1y": -10.45,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -10521,7 +10519,7 @@
       "industry": "日用品・パーソナルケア",
       "industry_raw": "Household/Personal Care",
       "market": "TSE",
-      "perf_1y": -35.34,
+      "perf_1y": -35.48,
       "flags": [
         "小型",
         "出来高過熱",
@@ -10538,10 +10536,10 @@
       "volume": 2000,
       "relative_volume": 0.97,
       "market_cap": 1998689890,
-      "high_52w": 433,
+      "high_52w": 424,
       "low_52w": 270,
-      "range_position": 18.4,
-      "distance_from_high": 30.7,
+      "range_position": 19.5,
+      "distance_from_high": 29.2,
       "distance_from_low": 11.1,
       "per": null,
       "pbr": 0.99,
@@ -10554,7 +10552,7 @@
       "industry": "パッケージソフトウェア",
       "industry_raw": "Packaged Software",
       "market": "TSE",
-      "perf_1y": -32.58,
+      "perf_1y": -31.03,
       "flags": [
         "極小時価総額",
         "低流動性",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at_jst": "2026-09-21 15:53:30 JST",
+    "generated_at_jst": "2026-09-22 15:51:58 JST",
     "universe_count": 333,
     "note": "定量一次選抜。最終順位はIR・TDnet・希薄化・事業カタリストを加味して別途更新する。"
   },
@@ -24,7 +24,7 @@
       "eps_ttm": 28.23,
       "roe": 22.48,
       "debt_to_equity": 0.97,
-      "perf_1y": 6.38,
+      "perf_1y": 5.26,
       "flags": [
         "小型"
       ],
@@ -60,7 +60,7 @@
       "eps_ttm": 28.16,
       "roe": 8.55,
       "debt_to_equity": 0.16,
-      "perf_1y": -9.91,
+      "perf_1y": -10.45,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -97,7 +97,7 @@
       "eps_ttm": 16.82,
       "roe": 9.45,
       "debt_to_equity": 0.04,
-      "perf_1y": -25.14,
+      "perf_1y": -25.57,
       "flags": [
         "小型"
       ],
@@ -133,7 +133,7 @@
       "eps_ttm": 6.73,
       "roe": 10.11,
       "debt_to_equity": 0.26,
-      "perf_1y": -59.65,
+      "perf_1y": -58.18,
       "flags": [
         "低位",
         "小型",
@@ -171,7 +171,7 @@
       "eps_ttm": 127.78,
       "roe": 42.38,
       "debt_to_equity": 0.04,
-      "perf_1y": -58.44,
+      "perf_1y": -58.61,
       "flags": [
         "小型",
         "52週安値圏"
@@ -208,7 +208,7 @@
       "eps_ttm": 5.53,
       "roe": 15.1,
       "debt_to_equity": 2.42,
-      "perf_1y": -34.88,
+      "perf_1y": -34.38,
       "flags": [
         "低位",
         "小型",
@@ -246,7 +246,7 @@
       "eps_ttm": 3.71,
       "roe": 3.64,
       "debt_to_equity": 0.14,
-      "perf_1y": -3.81,
+      "perf_1y": -2.88,
       "flags": [
         "小型"
       ],
@@ -281,7 +281,7 @@
       "eps_ttm": 59.96,
       "roe": 43.32,
       "debt_to_equity": 0.89,
-      "perf_1y": -9.78,
+      "perf_1y": -10.62,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -318,7 +318,7 @@
       "eps_ttm": 9.3,
       "roe": 8.89,
       "debt_to_equity": 0.22,
-      "perf_1y": -10.62,
+      "perf_1y": -9.82,
       "flags": [
         "小型",
         "低流動性"
@@ -355,7 +355,7 @@
       "eps_ttm": 83.67,
       "roe": 18.83,
       "debt_to_equity": 0.63,
-      "perf_1y": 14.23,
+      "perf_1y": 17.0,
       "flags": [
         "小型",
         "低流動性"
@@ -392,7 +392,7 @@
       "eps_ttm": 13.03,
       "roe": 2.45,
       "debt_to_equity": 0.19,
-      "perf_1y": -33.97,
+      "perf_1y": -32.95,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -431,7 +431,7 @@
       "eps_ttm": 18.97,
       "roe": 13.18,
       "debt_to_equity": 0.66,
-      "perf_1y": -9.96,
+      "perf_1y": -10.62,
       "flags": [
         "小型",
         "出来高過熱",
@@ -469,7 +469,7 @@
       "eps_ttm": 36.56,
       "roe": 6.94,
       "debt_to_equity": 0.33,
-      "perf_1y": 1.75,
+      "perf_1y": 3.1,
       "flags": [
         "小型"
       ],
@@ -504,7 +504,7 @@
       "eps_ttm": 64.81,
       "roe": 30.8,
       "debt_to_equity": 0.4,
-      "perf_1y": -41.03,
+      "perf_1y": -42.26,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -542,7 +542,7 @@
       "eps_ttm": 1.71,
       "roe": 1.39,
       "debt_to_equity": 0.0,
-      "perf_1y": -10.74,
+      "perf_1y": -11.48,
       "flags": [
         "小型"
       ],
@@ -564,9 +564,9 @@
       "company": "ＡＢＡＬＡＮＣＥ",
       "price": 230,
       "market_cap": 4358700657,
-      "high_52w": 1189,
+      "high_52w": 1126,
       "low_52w": 184,
-      "range_position": 4.6,
+      "range_position": 4.9,
       "sector": "電子テクノロジー",
       "industry": "電子機器・計器",
       "volume": 683900,
@@ -577,7 +577,7 @@
       "eps_ttm": 398.88,
       "roe": 22.73,
       "debt_to_equity": 1.31,
-      "perf_1y": -80.99,
+      "perf_1y": -81.41,
       "flags": [
         "小型",
         "52週安値圏"
@@ -614,7 +614,7 @@
       "eps_ttm": 25.99,
       "roe": 22.73,
       "debt_to_equity": 0.71,
-      "perf_1y": -38.08,
+      "perf_1y": -39.37,
       "flags": [
         "小型",
         "52週安値圏"
@@ -686,7 +686,7 @@
       "eps_ttm": 19.69,
       "roe": 19.51,
       "debt_to_equity": 0.61,
-      "perf_1y": -11.69,
+      "perf_1y": -11.11,
       "flags": [
         "小型"
       ],
@@ -721,7 +721,7 @@
       "eps_ttm": 7.65,
       "roe": 5.81,
       "debt_to_equity": 0.08,
-      "perf_1y": -50.25,
+      "perf_1y": -49.23,
       "flags": [
         "低位",
         "小型",
@@ -760,7 +760,7 @@
       "eps_ttm": 28.23,
       "roe": 22.48,
       "debt_to_equity": 0.97,
-      "perf_1y": 6.38,
+      "perf_1y": 5.26,
       "flags": [
         "小型"
       ],
@@ -796,7 +796,7 @@
       "eps_ttm": 28.16,
       "roe": 8.55,
       "debt_to_equity": 0.16,
-      "perf_1y": -9.91,
+      "perf_1y": -10.45,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -833,7 +833,7 @@
       "eps_ttm": 16.82,
       "roe": 9.45,
       "debt_to_equity": 0.04,
-      "perf_1y": -25.14,
+      "perf_1y": -25.57,
       "flags": [
         "小型"
       ],
@@ -869,7 +869,7 @@
       "eps_ttm": 6.73,
       "roe": 10.11,
       "debt_to_equity": 0.26,
-      "perf_1y": -59.65,
+      "perf_1y": -58.18,
       "flags": [
         "低位",
         "小型",
@@ -907,7 +907,7 @@
       "eps_ttm": 127.78,
       "roe": 42.38,
       "debt_to_equity": 0.04,
-      "perf_1y": -58.44,
+      "perf_1y": -58.61,
       "flags": [
         "小型",
         "52週安値圏"
@@ -944,7 +944,7 @@
       "eps_ttm": 5.53,
       "roe": 15.1,
       "debt_to_equity": 2.42,
-      "perf_1y": -34.88,
+      "perf_1y": -34.38,
       "flags": [
         "低位",
         "小型",
@@ -982,7 +982,7 @@
       "eps_ttm": 3.71,
       "roe": 3.64,
       "debt_to_equity": 0.14,
-      "perf_1y": -3.81,
+      "perf_1y": -2.88,
       "flags": [
         "小型"
       ],
@@ -1017,7 +1017,7 @@
       "eps_ttm": 59.96,
       "roe": 43.32,
       "debt_to_equity": 0.89,
-      "perf_1y": -9.78,
+      "perf_1y": -10.62,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -1054,7 +1054,7 @@
       "eps_ttm": 9.3,
       "roe": 8.89,
       "debt_to_equity": 0.22,
-      "perf_1y": -10.62,
+      "perf_1y": -9.82,
       "flags": [
         "小型",
         "低流動性"
@@ -1091,7 +1091,7 @@
       "eps_ttm": 83.67,
       "roe": 18.83,
       "debt_to_equity": 0.63,
-      "perf_1y": 14.23,
+      "perf_1y": 17.0,
       "flags": [
         "小型",
         "低流動性"
@@ -1128,7 +1128,7 @@
       "eps_ttm": 13.03,
       "roe": 2.45,
       "debt_to_equity": 0.19,
-      "perf_1y": -33.97,
+      "perf_1y": -32.95,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -1167,7 +1167,7 @@
       "eps_ttm": 18.97,
       "roe": 13.18,
       "debt_to_equity": 0.66,
-      "perf_1y": -9.96,
+      "perf_1y": -10.62,
       "flags": [
         "小型",
         "出来高過熱",
@@ -1205,7 +1205,7 @@
       "eps_ttm": 36.56,
       "roe": 6.94,
       "debt_to_equity": 0.33,
-      "perf_1y": 1.75,
+      "perf_1y": 3.1,
       "flags": [
         "小型"
       ],
@@ -1240,7 +1240,7 @@
       "eps_ttm": 64.81,
       "roe": 30.8,
       "debt_to_equity": 0.4,
-      "perf_1y": -41.03,
+      "perf_1y": -42.26,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -1278,7 +1278,7 @@
       "eps_ttm": 1.71,
       "roe": 1.39,
       "debt_to_equity": 0.0,
-      "perf_1y": -10.74,
+      "perf_1y": -11.48,
       "flags": [
         "小型"
       ],
@@ -1300,9 +1300,9 @@
       "company": "ＡＢＡＬＡＮＣＥ",
       "price": 230,
       "market_cap": 4358700657,
-      "high_52w": 1189,
+      "high_52w": 1126,
       "low_52w": 184,
-      "range_position": 4.6,
+      "range_position": 4.9,
       "sector": "電子テクノロジー",
       "industry": "電子機器・計器",
       "volume": 683900,
@@ -1313,7 +1313,7 @@
       "eps_ttm": 398.88,
       "roe": 22.73,
       "debt_to_equity": 1.31,
-      "perf_1y": -80.99,
+      "perf_1y": -81.41,
       "flags": [
         "小型",
         "52週安値圏"
@@ -1350,7 +1350,7 @@
       "eps_ttm": 25.99,
       "roe": 22.73,
       "debt_to_equity": 0.71,
-      "perf_1y": -38.08,
+      "perf_1y": -39.37,
       "flags": [
         "小型",
         "52週安値圏"
@@ -1422,7 +1422,7 @@
       "eps_ttm": 19.69,
       "roe": 19.51,
       "debt_to_equity": 0.61,
-      "perf_1y": -11.69,
+      "perf_1y": -11.11,
       "flags": [
         "小型"
       ],
@@ -1457,7 +1457,7 @@
       "eps_ttm": 7.65,
       "roe": 5.81,
       "debt_to_equity": 0.08,
-      "perf_1y": -50.25,
+      "perf_1y": -49.23,
       "flags": [
         "低位",
         "小型",
@@ -1494,7 +1494,7 @@
       "eps_ttm": 7.64,
       "roe": 29.9,
       "debt_to_equity": 0.1,
-      "perf_1y": -28.49,
+      "perf_1y": -27.32,
       "flags": [
         "小型",
         "52週安値圏"
@@ -1530,7 +1530,7 @@
       "eps_ttm": 8.02,
       "roe": 12.11,
       "debt_to_equity": 0.24,
-      "perf_1y": -54,
+      "perf_1y": -54.9,
       "flags": [
         "小型",
         "52週安値圏"
@@ -1566,7 +1566,7 @@
       "eps_ttm": 22.53,
       "roe": 7.4,
       "debt_to_equity": 0.6,
-      "perf_1y": -7.66,
+      "perf_1y": -8.99,
       "flags": [
         "小型",
         "低流動性"
@@ -1603,7 +1603,7 @@
       "eps_ttm": 31.86,
       "roe": 6.87,
       "debt_to_equity": 0.85,
-      "perf_1y": 4.2,
+      "perf_1y": 4.93,
       "flags": [
         "小型",
         "低流動性"
@@ -1640,7 +1640,7 @@
       "eps_ttm": 27.67,
       "roe": 4.08,
       "debt_to_equity": 0.38,
-      "perf_1y": 13.49,
+      "perf_1y": 10.85,
       "flags": [
         "小型",
         "低流動性"
@@ -1677,7 +1677,7 @@
       "eps_ttm": 39.51,
       "roe": 5.29,
       "debt_to_equity": 0.21,
-      "perf_1y": 17.24,
+      "perf_1y": 15.74,
       "flags": [
         "小型",
         "低流動性"
@@ -1714,7 +1714,7 @@
       "eps_ttm": 30.21,
       "roe": 4.88,
       "debt_to_equity": 0.86,
-      "perf_1y": -20.45,
+      "perf_1y": -20.75,
       "flags": [
         "小型",
         "低流動性"
@@ -1751,7 +1751,7 @@
       "eps_ttm": 9.61,
       "roe": 103.72,
       "debt_to_equity": 0.33,
-      "perf_1y": -6.82,
+      "perf_1y": -3.53,
       "flags": [
         "低位",
         "小型",
@@ -1789,7 +1789,7 @@
       "eps_ttm": 7.78,
       "roe": 23.19,
       "debt_to_equity": 0.67,
-      "perf_1y": -21.52,
+      "perf_1y": -20.51,
       "flags": [
         "小型",
         "低流動性"
@@ -1826,7 +1826,7 @@
       "eps_ttm": 8.29,
       "roe": 32.01,
       "debt_to_equity": 0,
-      "perf_1y": -7.08,
+      "perf_1y": -6.25,
       "flags": [
         "小型",
         "低流動性"
@@ -1863,7 +1863,7 @@
       "eps_ttm": 15.46,
       "roe": 19.43,
       "debt_to_equity": 0.85,
-      "perf_1y": -37.43,
+      "perf_1y": -39.42,
       "flags": [
         "小型",
         "低流動性",
@@ -1938,7 +1938,7 @@
       "eps_ttm": 12.79,
       "roe": 8.43,
       "debt_to_equity": 0.01,
-      "perf_1y": 4.85,
+      "perf_1y": 6.13,
       "flags": [
         "小型",
         "低流動性"
@@ -1975,7 +1975,7 @@
       "eps_ttm": 7.49,
       "roe": 3.45,
       "debt_to_equity": 0.14,
-      "perf_1y": 29.41,
+      "perf_1y": 27.54,
       "flags": [
         "小型"
       ],
@@ -2010,7 +2010,7 @@
       "eps_ttm": 91.15,
       "roe": 10.66,
       "debt_to_equity": 1.71,
-      "perf_1y": 18.98,
+      "perf_1y": -1.91,
       "flags": [
         "小型",
         "低流動性"
@@ -2034,9 +2034,9 @@
       "company": "新都ホールディングス",
       "price": 95,
       "market_cap": 5298083725,
-      "high_52w": 156,
+      "high_52w": 151,
       "low_52w": 89,
-      "range_position": 9.0,
+      "range_position": 9.7,
       "sector": "流通サービス",
       "industry": "卸売業者",
       "volume": 163900,
@@ -2084,7 +2084,7 @@
       "eps_ttm": 42.6,
       "roe": 12.73,
       "debt_to_equity": 0.61,
-      "perf_1y": 5.8,
+      "perf_1y": 5.04,
       "flags": [
         "小型",
         "低流動性"
@@ -2121,7 +2121,7 @@
       "eps_ttm": 54.68,
       "roe": 10.59,
       "debt_to_equity": 0.6,
-      "perf_1y": -11.11,
+      "perf_1y": -11.44,
       "flags": [
         "小型",
         "低流動性"
@@ -2158,7 +2158,7 @@
       "eps_ttm": 16.43,
       "roe": 6.14,
       "debt_to_equity": 0.22,
-      "perf_1y": -56.38,
+      "perf_1y": -55.46,
       "flags": [
         "極小時価総額",
         "低流動性",
@@ -2195,7 +2195,7 @@
       "eps_ttm": 21.37,
       "roe": 12.57,
       "debt_to_equity": 0.01,
-      "perf_1y": 10.74,
+      "perf_1y": 8.5,
       "flags": [
         "小型",
         "52週高値圏"
@@ -2231,7 +2231,7 @@
       "eps_ttm": 30.27,
       "roe": 10.09,
       "debt_to_equity": 0.29,
-      "perf_1y": 13.77,
+      "perf_1y": 15.85,
       "flags": [
         "小型",
         "低流動性",
@@ -2269,7 +2269,7 @@
       "eps_ttm": 7.97,
       "roe": 9.75,
       "debt_to_equity": 1.32,
-      "perf_1y": -21,
+      "perf_1y": -24.04,
       "flags": [
         "低位",
         "小型",
@@ -2295,9 +2295,9 @@
       "company": "アエリア",
       "price": 251,
       "market_cap": 5241546202,
-      "high_52w": 316,
+      "high_52w": 315,
       "low_52w": 224,
-      "range_position": 29.3,
+      "range_position": 29.7,
       "sector": "テクノロジーサービス",
       "industry": "パッケージソフトウェア",
       "volume": 10600,
@@ -2308,7 +2308,7 @@
       "eps_ttm": 13.2,
       "roe": 3.17,
       "debt_to_equity": 0.87,
-      "perf_1y": -20.57,
+      "perf_1y": -19.55,
       "flags": [
         "小型",
         "低流動性"
@@ -2382,7 +2382,7 @@
       "eps_ttm": 3.3,
       "roe": 0.91,
       "debt_to_equity": 0.42,
-      "perf_1y": -22.1,
+      "perf_1y": -22.31,
       "flags": [
         "極小時価総額",
         "低流動性"
@@ -2418,7 +2418,7 @@
       "eps_ttm": 11.21,
       "roe": 8.75,
       "debt_to_equity": 1.21,
-      "perf_1y": 2.15,
+      "perf_1y": 2.7,
       "flags": [
         "小型",
         "低流動性"
@@ -2455,7 +2455,7 @@
       "eps_ttm": 32.75,
       "roe": 18.05,
       "debt_to_equity": 1.1,
-      "perf_1y": -12.34,
+      "perf_1y": -10.6,
       "flags": [
         "小型",
         "低流動性"
@@ -2492,7 +2492,7 @@
       "eps_ttm": 31.67,
       "roe": 41.72,
       "debt_to_equity": 1.56,
-      "perf_1y": -39.16,
+      "perf_1y": -38.3,
       "flags": [
         "小型",
         "低流動性"
@@ -2567,7 +2567,7 @@
       "eps_ttm": 20.59,
       "roe": 11.99,
       "debt_to_equity": 0.23,
-      "perf_1y": -10.88,
+      "perf_1y": -12.98,
       "flags": [
         "小型",
         "低流動性"
