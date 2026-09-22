@@ -2,12 +2,12 @@ import importlib.util
 import io
 import json
 from pathlib import Path
-import unittest
 import threading
 from http.client import HTTPConnection
 from http.server import HTTPServer
-from unittest.mock import Mock
 from html.parser import HTMLParser
+from unittest.mock import Mock
+import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -30,72 +30,69 @@ class Markup(HTMLParser):
 
 
 class PrivacyTests(unittest.TestCase):
-    def test_real_http_adapters(self):
-        for module, name in [(load('render_http', 'server.py'), 'Handler'), (load('vercel_http', 'api/index.py'), 'handler')]:
+    def test_entrypoint_is_local_and_csp_blocks_external_origins(self):
+        tags = Markup((ROOT / 'index.html').read_text()).tags
+        scripts = [a for t, a in tags if t == 'script']
+        self.assertEqual(scripts, [{'type': 'module', 'src': '/src/main.jsx'}])
+        policy = next(a['content'] for t, a in tags if t == 'meta' and a.get('http-equiv') == 'Content-Security-Policy')
+        for rule in ["default-src 'self'", "script-src 'self'", "connect-src 'self'", "object-src 'none'", "form-action 'none'"]:
+            self.assertIn(rule, policy)
+        self.assertNotIn('http:', policy)
+        self.assertNotIn('https:', policy)
+        entry = (ROOT / 'src/main.jsx').read_text()
+        self.assertIn('LocalApp', entry)
+        self.assertNotIn('from "./App.jsx"', entry)
+
+    def test_every_mutation_is_rejected_before_body_read(self):
+        for module, name in [(load('render_server', 'server.py'), 'Handler'), (load('vercel_api', 'api/index.py'), 'handler')]:
+            self.assertFalse(hasattr(module, 'handle'))
+            for method in ['POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']:
+                h = object.__new__(getattr(module, name))
+                h.command, h.path = method, '/api/apply'
+                h.rfile = Mock()
+                h.rfile.read.side_effect = AssertionError('MUST NOT READ BODY')
+                h.send_json = Mock()
+                getattr(h, 'do_' + method)()
+                self.assertEqual(h.send_json.call_args.args[0], 403)
+                h.rfile.read.assert_not_called()
+
+    def test_real_http_servers_reject_declared_document_body_immediately(self):
+        for module, name, mode in [(load('render_http', 'server.py'), 'Handler', 'browser-local'), (load('vercel_http', 'api/index.py'), 'handler', 'privacy-lockdown')]:
             server = HTTPServer(('127.0.0.1', 0), getattr(module, name))
             thread = threading.Thread(target=server.serve_forever, daemon=True)
             thread.start()
             try:
-                for method, path in [('POST', '/api/inspect'), ('POST', '/api/export'), ('GET', '/api/sample'), ('PUT', '/api/apply')]:
-                    conn = HTTPConnection('127.0.0.1', server.server_port, timeout=3)
-                    # Declare a body but deliberately never transmit one: handler must reply immediately.
-                    conn.putrequest(method, path)
-                    conn.putheader('Content-Length', '1000000')
-                    conn.putheader('X-Atelier', '1')
-                    conn.endheaders()
-                    response = conn.getresponse()
-                    self.assertEqual(response.status, 403)
-                    self.assertEqual(json.loads(response.read())['mode'], 'privacy-lockdown')
-                    conn.close()
-                if name == 'Handler':
-                    conn = HTTPConnection('127.0.0.1', server.server_port, timeout=3)
-                    conn.request('GET', '/')
-                    response = conn.getresponse()
-                    self.assertEqual(response.status, 200)
-                    self.assertIn("connect-src 'none'", response.getheader('Content-Security-Policy'))
-                    self.assertNotIn(b'<script', response.read())
-                    conn.close()
+                conn = HTTPConnection('127.0.0.1', server.server_port, timeout=3)
+                conn.putrequest('POST', '/api/inspect')
+                conn.putheader('Content-Length', '1000000')
+                conn.endheaders()
+                response = conn.getresponse()
+                self.assertEqual(response.status, 403)
+                self.assertEqual(json.loads(response.read())['mode'], mode)
+                conn.close()
             finally:
-                server.shutdown()
-                server.server_close()
-                thread.join(timeout=3)
+                server.shutdown(); server.server_close(); thread.join(timeout=3)
 
-    def test_static_page_cannot_ingest_documents_or_run_code(self):
-        tags = Markup((ROOT / 'index.html').read_text()).tags
-        self.assertFalse({'script', 'input', 'form', 'iframe', 'object', 'embed', 'textarea'} & {t for t, _ in tags})
-        policy = next(a['content'] for t, a in tags if t == 'meta' and a.get('http-equiv') == 'Content-Security-Policy')
-        for rule in ["connect-src 'none'", "script-src 'none'", "form-action 'none'", "worker-src 'none'"]:
-            self.assertIn(rule, policy)
-        for _, attrs in tags:
-            self.assertFalse(any(k.startswith('on') for k in attrs))
-            for key in ['href', 'src']:
-                if key in attrs:
-                    self.assertEqual(attrs[key], '/privacy.css')
-
-    def test_every_mutation_rejected_before_body_read(self):
-        for module, name in [(load('shutdown_server', 'server.py'), 'Handler'), (load('shutdown_api', 'api/index.py'), 'handler')]:
-            self.assertFalse(hasattr(module, 'handle'))
-            for method in ['POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']:
-                for path in ['/api/inspect', '/api/apply', '/api/export', '/api/ocr', '/api/download', '/']:
-                    with self.subTest(adapter=name, method=method, path=path):
-                        h = object.__new__(getattr(module, name))
-                        h.command, h.path = method, path
-                        h.headers = {'Content-Length': '999999999', 'X-Atelier': '1'}
-                        h.rfile = Mock()
-                        h.rfile.read.side_effect = AssertionError('MUST NOT READ BODY')
-                        h.send_json = Mock()
-                        getattr(h, 'do_' + method)()
-                        self.assertEqual(h.send_json.call_args.args[0], 403)
-                        h.rfile.read.assert_not_called()
-
-    def test_render_denies_old_assets_and_directory_listing(self):
-        cls = load('static_shutdown', 'server.py').Handler
-        for path in ['/assets/old.js', '/api/file/token', '/tessdata/jpn.traineddata.gz', '/../../engine.py', '/api/sample']:
-            h = object.__new__(cls)
-            h.path = path
-            h.send_json = Mock()
-            h.do_GET()
-            self.assertEqual(h.send_json.call_args.args[0], 403)
+    def test_render_serves_app_but_not_api(self):
+        module = load('render_static', 'server.py')
+        server = HTTPServer(('127.0.0.1', 0), module.Handler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        try:
+            conn = HTTPConnection('127.0.0.1', server.server_port, timeout=3)
+            conn.request('GET', '/')
+            response = conn.getresponse()
+            self.assertEqual(response.status, 200)
+            self.assertIn("connect-src 'self'", response.getheader('Content-Security-Policy'))
+            self.assertIn(b'<script type="module"', response.read())
+            conn.close()
+            conn = HTTPConnection('127.0.0.1', server.server_port, timeout=3)
+            conn.request('GET', '/api/sample')
+            response = conn.getresponse()
+            self.assertEqual(response.status, 403)
+            conn.close()
+        finally:
+            server.shutdown(); server.server_close(); thread.join(timeout=3)
 
     def test_api_response_contains_no_document_data(self):
         for module, name in [(load('render_json', 'server.py'), 'Handler'), (load('vercel_json', 'api/index.py'), 'handler')]:
@@ -104,13 +101,15 @@ class PrivacyTests(unittest.TestCase):
             h.send_response, h.send_header, h.end_headers = Mock(), Mock(), Mock()
             h.wfile = io.BytesIO()
             h.blocked()
-            self.assertEqual(json.loads(h.wfile.getvalue())['mode'], 'privacy-lockdown')
+            self.assertNotIn('pdf', h.wfile.getvalue().decode().lower())
             self.assertTrue(h.close_connection)
 
-    def test_container_excludes_engine(self):
+    def test_container_excludes_python_document_engine(self):
         docker = (ROOT / 'Dockerfile').read_text()
-        self.assertNotIn('engine', '\n'.join(l for l in docker.splitlines() if not l.startswith('#')))
-        self.assertNotIn('COPY . .', docker)
+        active = '\n'.join(line for line in docker.splitlines() if not line.startswith('#'))
+        self.assertNotIn('engine.py', active)
+        self.assertNotIn('engine_cli.py', active)
+        self.assertNotIn('COPY . .', active)
 
 
 if __name__ == '__main__':

@@ -1,15 +1,17 @@
-# Protective shutdown — 2026-09-21
+# Browser-local migration status - 2026-09-22
 
-Verification: production web build passed; full suite passed (64 Python + 2 API + 4 Sites tests); additional real-HTTP adapter coverage added and all 6 privacy tests passed. Direct calls to Render/Vercel adapters reject bodies before reading, and Render serves the script-free notice with CSP. Browser visual verification blocked by ERR_BLOCKED_BY_CLIENT on the local preview. Public deployment and container execution remain unverified.
+This is a working migration checkpoint, not a security certification or public-release approval.
 
-This is NOT a finished offline editor or a security certification.
+The active entrypoint is `src/LocalApp.jsx`. PDF rendering and text extraction use PDF.js in the browser. Page editing uses pdf-lib in the browser. OCR uses self-hosted Tesseract.js assets. DOCX and XLSX files are assembled in the browser. No active document operation calls `/api/*`.
 
-The user explicitly rejects external processing of confidential documents. Previous versions sent PDFs, edits and some OCR inputs/results to Python server endpoints. Browser-local OCR recognition alone did not make the complete workflow local.
+The Render static server and Vercel function reject all document-processing API requests without reading request bodies. The production container copies only built static assets and `server.py`; it does not copy the legacy Python PDF engine.
 
-Current release entrypoint is a script-free static notice. No file picker, drop handler, draft/signature retrieval, document parser or OCR worker is loaded. CSP disables scripts, network APIs, workers and forms. Render, Vercel and development document endpoints reject requests; application code does not read their bodies. Hosting infrastructure could still receive traffic sent by an old client or direct caller: rejecting a request does not undo transmission.
+Implemented: open, render, merge, rotate, delete, duplicate, reorder, blank pages, rasterized Noto Sans JP text, highlight, PDF download, OCR text extraction (up to five selected pages), text-oriented DOCX/XLSX, in-memory undo.
 
-The Render image includes only the notice, CSS and static server. It does not include the PDF engine. Legacy source is retained for migration but is not an active frontend entrypoint. Existing saved drafts are untouched, not erased.
+Deliberately disabled or incomplete: searchable Japanese OCR overlay, visually faithful Office export, rotated-page annotation coordinates, existing-text replacement, verified redaction, encryption, forms, signatures and batch ZIP. Automatic persistence is disabled.
 
-Deployment status is separate from source status. Old public deployments and already-open old tabs are NOT automatically made safe by this commit. Do not use them with confidential files. No historical-upload deletion, provider log purge, or breach determination has been performed.
+Verification: Vite production build passes. 65 Python tests, 2 API rejection tests, 4 static-host tests and 4 browser-local engine tests pass. The local engine tests cover rotate, duplicate, delete, reorder, merge, invalid page removal/order, DOCX/XLSX package structure and active-source checks for document API calls.
 
-Before editing can resume: implement browser-only rendering/editing/export with no server fallback; self-host all required resources; remove automatic persistence; test network requests with synthetic document markers, all error paths and mobile downloads; document unavailable features; verify the exact deployed build. Browser/device compromise and downloaded-file cloud backups remain outside an app's guarantees.
+Visual browser verification is blocked because the required `agent-browser` executable is unavailable in this environment. Docker/container execution is also unverified because Docker/Podman is unavailable. OCR worker execution, Japanese text raster placement and iPhone download behavior therefore remain unverified in a real browser. The public deployment has not been promoted or verified.
+
+Do not use an older public deployment for confidential files. A new source commit does not retroactively make an open old tab safe.

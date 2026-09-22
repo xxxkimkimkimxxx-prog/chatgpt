@@ -16,7 +16,8 @@
     "test:engine": ".venv/bin/python3 -m unittest discover -s tests -p 'test_*.py' -v",
     "test:api": "node --test tests/api.test.mjs",
     "test:sites": "node --test tests/sites-worker.test.mjs",
-    "test": "npm run test:engine && npm run test:api && npm run test:sites"
+    "test:local": "node --test tests/local-engine.test.mjs",
+    "test": "npm run test:engine && npm run test:api && npm run test:sites && npm run test:local"
   },
   "dependencies": {
     "@fontsource/noto-sans-jp": "^5.3.0",
@@ -26,6 +27,10 @@
     "@tesseract.js-data/jpn": "^1.0.0",
     "@tesseract.js-data/jpn_vert": "^1.0.0",
     "@vitejs/plugin-react": "5.0.4",
+    "docx": "9.6.1",
+    "jszip": "3.10.1",
+    "pdf-lib": "1.17.1",
+    "pdfjs-dist": "5.6.205",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "tesseract.js": "^7.0.0",

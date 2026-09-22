@@ -2,25 +2,14 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'none'; connect-src 'none'; style-src 'self'; img-src 'none'; font-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'" />
     <meta name="referrer" content="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="PDF Atelier：文書保護のため、ファイルの読み込みと編集を一時停止しています。" />
-    <link rel="stylesheet" href="/privacy.css" />
+    <meta name="description" content="PDFを外部送信せず、ブラウザー内で編集するPDFツール" />
     <title>PDF Atelier</title>
   </head>
   <body>
-    <main>
-      <p class="brand">PDF Atelier · 保護停止版</p>
-      <h1>文書の読み込みを停止しています</h1>
-      <p>従来版は、PDFの解析・編集・書き出しでサーバーへの送信が必要でした。端末内処理への移行と検証が完了するまで、この画面ではファイルを開けません。</p>
-      <ul>
-        <li>PDF・画像・署名・入力内容を読み込みません。</li>
-        <li>編集プログラム、OCR、通信APIを起動しません。</li>
-        <li>以前の下書きや署名を読み込み・自動保存しません。</li>
-      </ul>
-      <p class="notice">これは「安全に編集できる完成版」ではなく、送信を止めるための一時停止版です。以前から開いている編集画面は閉じてください。</p>
-      <p>この案内ページと表示用CSSの取得では、配信元との通常の通信が発生します。過去の送信データや端末に保存済みの下書きの削除を保証するものではありません。</p>
-    </main>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

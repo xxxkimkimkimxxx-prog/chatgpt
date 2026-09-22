@@ -1,12 +1,12 @@
-"""Protective static release: no document engine or request-body processing."""
+"""Static host for the browser-local editor. API requests are always rejected."""
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 import json
 import os
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 
 STATIC = Path(__file__).resolve().parent / "dist" / "client"
-CSP = "default-src 'none'; script-src 'none'; connect-src 'none'; style-src 'self'; img-src 'none'; font-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+CSP = "default-src 'self'; script-src 'self'; connect-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
 
 
 class Handler(SimpleHTTPRequestHandler):
@@ -21,6 +21,7 @@ class Handler(SimpleHTTPRequestHandler):
         self.send_header("Cache-Control", "no-store")
         self.send_header("X-Content-Type-Options", "nosniff")
         self.send_header("Referrer-Policy", "no-referrer")
+        self.end_headers_called = True
         super().end_headers()
 
     def send_json(self, status, value):
@@ -35,26 +36,30 @@ class Handler(SimpleHTTPRequestHandler):
             self.wfile.write(data)
 
     def blocked(self):
-        # Never read the body, parse PDF data, or import the old engine.
-        self.send_json(403, {"error": "Document processing disabled", "mode": "privacy-lockdown"})
+        # Never read request bodies; browser-local builds have no document API.
+        self.send_json(403, {"error": "Document processing disabled", "mode": "browser-local"})
+
+    def static_request(self, head=False):
+        path = urlparse(self.path).path
+        if path.startswith("/api/"):
+            self.blocked()
+            return
+        relative = unquote(path).lstrip("/")
+        target = (STATIC / relative).resolve()
+        if path != "/" and target.is_relative_to(STATIC.resolve()) and target.is_file():
+            super().do_HEAD() if head else super().do_GET()
+            return
+        if "." in Path(relative).name:
+            self.send_error(404)
+            return
+        self.path = "/index.html"
+        super().do_HEAD() if head else super().do_GET()
 
     def do_GET(self):
-        path = urlparse(self.path).path
-        if path == "/api/health":
-            self.send_json(200, {"ok": True, "mode": "privacy-lockdown", "documentProcessing": False})
-        elif path in ("/", "/index.html", "/privacy.css"):
-            self.path = "/index.html" if path == "/" else path
-            super().do_GET()
-        else:
-            self.blocked()
+        self.static_request()
 
     def do_HEAD(self):
-        path = urlparse(self.path).path
-        if path in ("/", "/index.html", "/privacy.css"):
-            self.path = "/index.html" if path == "/" else path
-            super().do_HEAD()
-        else:
-            self.blocked()
+        self.static_request(head=True)
 
     do_POST = blocked
     do_PUT = blocked

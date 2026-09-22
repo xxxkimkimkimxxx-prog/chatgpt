@@ -1,0 +1,17 @@
+# Prototype Instructions
+
+2026-09-21 PRIVACY OVERRIDE: User requires confidential documents never leave the device and explicitly objects to undisclosed server processing. Stop normal publication and all document ingestion until a browser-local engine is implemented and verified. Current build is a script-free protective shutdown page, NOT a usable confidential editor. No network fallback, telemetry, automatic draft/signature persistence, or server document endpoints may be re-enabled. Existing deployed URLs are NOT confirmed patched. Do not claim historical uploads deleted. Preserve existing user drafts; deletion requires explicit user direction. This overrides earlier server-engine/publication assumptions below.
+
+2026-09-22 LOCAL MIGRATION: Browser-local editor implementation is active in `src/LocalApp.jsx` + `src/localEngine.js`; `src/App.jsx` is legacy and must not be used as the entrypoint. PDFs and user input remain in memory. All `/api/*` mutations stay rejected without reading bodies. Implemented locally: render, merge, rotate, delete, reorder, duplicate, blank page, rasterized Japanese text, highlight, PDF download, OCR text extraction, text-oriented DOCX/XLSX. Still incomplete/unverified: searchable Japanese OCR overlay, visually faithful Office export, real iPhone/browser network audit, public deployment. Do not call release complete.
+
+User decisions: PDF editor uses left page thumbnails, center live preview, right-side text and property entry. Preserve this three-pane workflow. User requests broad real functionality and strict tests; never label a placeholder, unsupported conversion, or unverified browser download as complete. Public Vercel deployment is authorized and currently active. The static Sites worker remains only a frontend handoff; full PDF functionality requires the Python backend.
+
+Durable feature decisions: provide Noto Sans JP and Noto Serif JP (regular/bold); browser-local Japanese/English OCR with transparent searchable PDF overlay; and clearly separated Office exports for visual fidelity versus editability. Never claim pixel-perfect editable Word/Excel conversion. Verify browser OCR, Office archives, and public deployment before calling a release complete.
+
+Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
+
+Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.
+
+When implementing from a selected generated mock, treat that image as the source of truth for layout, component anatomy, density, spacing, color, typography, visible content, and hierarchy.
+
+Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
