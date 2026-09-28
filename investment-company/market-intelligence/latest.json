@@ -1,1 +1,303 @@
-{"date":"2026-09-25","asOf":"07:29 JST","status":"pre-open; no trade decision","marketStance":"Sep24 confirmed narrow AI/semiconductor leadership rather than broad risk-on. Overnight US was flat-to-lower with oil and long yields elevated. AI selective continuation ranks first; financials are tactically downgraded after Sep24 underperformance.","topFresh":["4716 日本オラクル","5801 古河電工（修正の質に注意）","8411 みずほFG（自己株消却）"],"topStructuralThemes":["ai-semiconductor-selective-continuation","rates-oil-crosscurrent","fresh-catalyst","post-boj-financials"],"criticalRisk":"Nikkei strength is concentrated while TOPIX/breadth failed and oil/yields remain high.","candidateCount":32,"fullReportPath":"investment-company/market-intelligence/2026-09-25.json","newsFeedPath":"investment-company/news-feed/2026-09-25.json","dataLimitations":["pre-open cash data unavailable","live PTS not comprehensively captured","complete institutional/foreign/short flow unavailable","Nikkei direct fresh evidence limited","all TDnet primary PDFs not parsed"]}
+{
+  "date": "2026-09-29",
+  "asOf": "07:29 JST",
+  "status": "pre-open; no trade decision",
+  "marketStance": "9/28は67,000円突破後に安値引け。銀行・保険・電力が相対優位、AI半導体は失速。昨夜は米金利・原油上昇と米株安で高duration株に逆風。9/29は権利落ちの見た目下落を分離し、金融/電力の継続性とFresh Catalystを優先確認。",
+  "topFresh": [
+    "6730 アクセル",
+    "7552 ハピネット",
+    "4216 旭有機材",
+    "9759 NSD"
+  ],
+  "topStructuralThemes": [
+    "financials-rate-normalization",
+    "utilities-earnings-rotation",
+    "rates-oil-pressure",
+    "ai-semiconductor-pullback-test",
+    "fresh-catalyst"
+  ],
+  "criticalRisk": "米10年5.251%、Brent $105.28、Fed追加利上げ観測。9/29は9月権利落ち日で指数・個別の見た目下落に機械的要因が混在。",
+  "candidateCount": 30,
+  "candidates": [
+    {
+      "rank": 1,
+      "code": "8306",
+      "name": "三菱UFJ FG",
+      "category": "Sector Leader",
+      "theme": "Banking",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 2,
+      "code": "8316",
+      "name": "三井住友FG",
+      "category": "Sector Leader",
+      "theme": "Banking",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 3,
+      "code": "8411",
+      "name": "みずほFG",
+      "category": "Sector Leader",
+      "theme": "Banking",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 4,
+      "code": "7322",
+      "name": "三十三FG",
+      "category": "Continuation/Trend",
+      "theme": "Regional Bank",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 5,
+      "code": "8388",
+      "name": "阿波銀行",
+      "category": "Continuation/Trend",
+      "theme": "Regional Bank",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 6,
+      "code": "9509",
+      "name": "北海道電力",
+      "category": "Fresh Catalyst",
+      "theme": "Electric Utility",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 7,
+      "code": "9507",
+      "name": "四国電力",
+      "category": "Theme News",
+      "theme": "Electric Utility",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 8,
+      "code": "9505",
+      "name": "北陸電力",
+      "category": "Theme News",
+      "theme": "Electric Utility",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 9,
+      "code": "6730",
+      "name": "アクセル",
+      "category": "Fresh Catalyst",
+      "theme": "Semiconductor/LSI",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 10,
+      "code": "7552",
+      "name": "ハピネット",
+      "category": "Fresh Catalyst",
+      "theme": "Consumer/Entertainment",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 11,
+      "code": "4216",
+      "name": "旭有機材",
+      "category": "Fresh Catalyst",
+      "theme": "Industrial Materials",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 12,
+      "code": "9759",
+      "name": "NSD",
+      "category": "Fresh Catalyst",
+      "theme": "IT Services",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 13,
+      "code": "6857",
+      "name": "アドバンテスト",
+      "category": "押し目/反転",
+      "theme": "AI/Semiconductor",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 14,
+      "code": "8035",
+      "name": "東京エレクトロン",
+      "category": "押し目/反転",
+      "theme": "AI/Semiconductor",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 15,
+      "code": "285A",
+      "name": "キオクシアHD",
+      "category": "押し目/反転",
+      "theme": "AI Memory",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 16,
+      "code": "6146",
+      "name": "ディスコ",
+      "category": "押し目/反転",
+      "theme": "AI/Semiconductor",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 17,
+      "code": "7735",
+      "name": "SCREEN HD",
+      "category": "押し目/反転",
+      "theme": "AI/Semiconductor",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 18,
+      "code": "5803",
+      "name": "フジクラ",
+      "category": "Continuation/Trend",
+      "theme": "AI Infrastructure",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 19,
+      "code": "4062",
+      "name": "イビデン",
+      "category": "押し目/反転",
+      "theme": "AI Infrastructure",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 20,
+      "code": "6920",
+      "name": "レーザーテック",
+      "category": "押し目/反転",
+      "theme": "AI/Semiconductor",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 21,
+      "code": "1605",
+      "name": "INPEX",
+      "category": "Theme News",
+      "theme": "Energy",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 22,
+      "code": "1662",
+      "name": "石油資源開発",
+      "category": "Theme News",
+      "theme": "Energy",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 23,
+      "code": "5020",
+      "name": "ENEOS HD",
+      "category": "Theme News",
+      "theme": "Energy",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 24,
+      "code": "7011",
+      "name": "三菱重工業",
+      "category": "Continuation/Trend",
+      "theme": "Defense",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 25,
+      "code": "7012",
+      "name": "川崎重工業",
+      "category": "Continuation/Trend",
+      "theme": "Defense",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 26,
+      "code": "7013",
+      "name": "IHI",
+      "category": "Continuation/Trend",
+      "theme": "Defense",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 27,
+      "code": "268A",
+      "name": "リガクHD",
+      "category": "Theme News",
+      "theme": "Advanced Measurement",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 28,
+      "code": "7203",
+      "name": "トヨタ自動車",
+      "category": "Theme News",
+      "theme": "Weak-yen Exporter",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 29,
+      "code": "8750",
+      "name": "第一生命HD",
+      "category": "Sector Leader",
+      "theme": "Insurance",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 30,
+      "code": "8766",
+      "name": "東京海上HD",
+      "category": "Sector Leader",
+      "theme": "Insurance",
+      "status": "watch",
+      "holdingsBlind": true
+    }
+  ],
+  "fullReportPath": "investment-company/market-intelligence/2026-09-29.json",
+  "newsFeedPath": "investment-company/news-feed/2026-09-29.json",
+  "dataLimitations": [
+    "TDnet全PDF本文の完全横断は未完了",
+    "日経電子版の当日Fresh記事を直接証拠として取得できず",
+    "SBI証券公開面はchecked-limited",
+    "PTSはNSD等取得可能範囲のみで全銘柄網羅なし",
+    "7:29時点の板/VWAP・リアルタイム外国人フロー・空売り・ETFフローは未取得",
+    "9/29は権利落ちのため前日比をそのまま需給悪化と解釈しない"
+  ]
+}
