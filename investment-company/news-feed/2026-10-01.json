@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-01",
+  "asOf": "2026-10-01T07:33:00+09:00",
+  "window": "72h; priority Sep30 15:00-Oct1 07:30",
+  "items": [
+    {
+      "bucket": "24h",
+      "importance": "A+",
+      "category": "US earnings/AI memory",
+      "title": "Micron record Q4 and above-consensus outlook; long-term supply commitments $32bn",
+      "summary": "AI/HBM demand remains exceptionally strong; 2027-28 supply-demand expected tighter. Direct read-through strongest to memory/test/equipment chain, but Kioxia NAND exposure is not identical to HBM.",
+      "source": "Reuters/Micron",
+      "url": "https://www.reuters.com/business/micron-forecasts-quarterly-revenue-above-estimates-2026-09-30/",
+      "mappedTheme": "ai-memory",
+      "status": "PROMOTED",
+      "relatedStocks": [
+        "285A",
+        "6871",
+        "8035",
+        "6146",
+        "7735"
+      ]
+    },
+    {
+      "bucket": "24h",
+      "importance": "A",
+      "category": "earnings revision",
+      "title": "スルガ銀行 上期経常36%上方修正・通期増額・20円増配",
+      "summary": "銀行テーマに企業固有の利益・還元材料。夜間PTSは2940円比+10.51%の3249円を確認。",
+      "source": "Kabutan/Yahoo Finance",
+      "url": "https://s.kabutan.jp/news/n202609301156/",
+      "mappedTheme": "financials",
+      "status": "PROMOTED",
+      "relatedStocks": [
+        "8358"
+      ]
+    },
+    {
+      "bucket": "24h",
+      "importance": "A",
+      "category": "capex",
+      "title": "ラサ工業 台湾に半導体用高純度リン酸新工場、約188億円",
+      "summary": "2028年度竣工予定。半導体材料の能力増強という一次実需方向だが売上寄与は中期。",
+      "source": "Kabutan disclosure digest",
+      "url": "https://s.kabutan.jp/news/n202609301156/",
+      "mappedTheme": "semiconductor-materials",
+      "status": "DEFERRED",
+      "relatedStocks": [
+        "4022"
+      ]
+    },
+    {
+      "bucket": "24h",
+      "importance": "A",
+      "category": "M&A/capital policy",
+      "title": "三菱化工機が月島HDを株式交換で完全子会社化; 月島は2.5%自社株買い",
+      "summary": "統合比率0.88株。イベントドリブンで通常の業績モメンタムとは分離。",
+      "source": "Kabutan/JPX",
+      "url": "https://s.kabutan.jp/news/n202609301156/",
+      "mappedTheme": "industrial-consolidation",
+      "status": "WATCH",
+      "relatedStocks": [
+        "6331",
+        "6332"
+      ]
+    },
+    {
+      "bucket": "24h",
+      "importance": "B",
+      "category": "market structure",
+      "title": "JPX: 9246 プロジェクトHD 10/1制限値幅上限拡大",
+      "summary": "基準1742円、上限値幅1600円。高ボラ・流動性リスクとして監視。",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/news/1030/20260930-01.html",
+      "mappedTheme": "market-structure",
+      "status": "RISK",
+      "relatedStocks": [
+        "9246"
+      ]
+    },
+    {
+      "bucket": "24h",
+      "importance": "B",
+      "category": "listing risk",
+      "title": "JPX: 4059/9244監理確認中、2410/8798監理審査中",
+      "summary": "上場維持基準関連。候補から原則除外。",
+      "source": "JPX",
+      "url": "https://www.jpx.co.jp/news/1021/20260930-22.html",
+      "mappedTheme": "listing-risk",
+      "status": "REJECT",
+      "relatedStocks": [
+        "4059",
+        "9244",
+        "2410",
+        "8798"
+      ]
+    }
+  ],
+  "deduplication": "Reuters/FISCO/Yahoo/SBI reposts are not counted separately; primary/Reuters preferred.",
+  "dataLimitations": [
+    "TDnet全PDF本文の完全横断は未完了",
+    "日経電子版の直接取得は検索で有効なFresh本文を確保できず",
+    "SBI証券は9/28半導体レポートを確認、10/1朝独自Fresh全面は取得限定",
+    "FISCOの10/1朝独自Freshは取得限定",
+    "全銘柄PTS・7:33板/VWAP・リアルタイム外国人フロー/空売り/ETFフローは未取得"
+  ]
+}
