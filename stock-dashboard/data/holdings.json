@@ -1,51 +1,276 @@
 {
-  "asOf": "2026-09-29 20:24 JST",
-  "positionAsOf": "2026-09-29 20:24 JST",
-  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings. Sep18 GO and Solasia full sales confirmed from user screenshots. Sep29 Clasus Chemical trade confirmed from user-supplied iSPEED screenshots: bought 1,500 shares at average 230 yen and sold all 1,500 shares at average 232 yen, realized P/L +3,000 yen. No Clasus position carried overnight. Kioxia 1-for-3 stock split effective Sep29 is reflected in economic valuation but legacy position fields are retained pending canonical position normalization.",
+  "asOf": "2026-09-30 18:07 JST",
+  "positionAsOf": "2026-09-30 18:07 JST",
+  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings. Sep18 GO and Solasia full sales confirmed from user screenshots. Sep29 Clasus Chemical trade confirmed from user-supplied iSPEED screenshots: bought 1,500 shares at average 230 yen and sold all 1,500 shares at average 232 yen, realized P/L +3,000 yen. No Clasus position carried overnight. Kioxia 1-for-3 stock split effective Sep29 is reflected in economic valuation but legacy position fields are retained pending canonical position normalization. Sep30 user-supplied iSPEED screenshots confirm Clasus Chemical 1,500 shares at average acquisition cost 277 yen, sold at 279 yen (1,400 + 100 shares), realized P/L +3,000 yen; no carry.",
   "positions": [
-    {"code":"285A","name":"キオクシアホールディングス","quantity":1,"averageCost":57878.0,"corporateAction":{"type":"stock_split","effectiveDate":"2026-09-29","ratio":"1:3","adjustedQuantity":3,"adjustedAverageCost":19292.6666666667},"referencePrice":17880,"management":"1株観察用。2026-09-29の1:3株式分割後は実質3株として評価。"},
-    {"code":"2926","name":"篠崎屋","quantity":1000,"averageCost":119.0,"referencePrice":116,"management":"低流動性。利益圏を利用した資金回収候補。"},
-    {"code":"5016","name":"JX金属","quantity":100,"averageCost":3902.0,"referencePrice":3486,"management":"縮小レビュー。ナンピン禁止。"},
-    {"code":"5027","name":"ANYMIND GROUP","quantity":400,"averageCost":830.5,"referencePrice":788,"management":"追加停止。戻り局面で一部縮小を再評価。"},
-    {"code":"8518","name":"日本アジア投資","quantity":200,"averageCost":162.0,"referencePrice":152,"management":"低流動性。優先資金回収候補。"},
-    {"code":"9432","name":"NTT","quantity":200,"averageCost":176.8,"referencePrice":171.3,"management":"2026-09-18の180円売付注文は約定確認なし。保有継続扱い。"}
+    {
+      "code": "285A",
+      "name": "キオクシアホールディングス",
+      "quantity": 1,
+      "averageCost": 57878,
+      "corporateAction": {
+        "type": "stock_split",
+        "effectiveDate": "2026-09-29",
+        "ratio": "1:3",
+        "adjustedQuantity": 3,
+        "adjustedAverageCost": 19292.6666666667
+      },
+      "referencePrice": 17880,
+      "management": "1株観察用。2026-09-29の1:3株式分割後は実質3株として評価。"
+    },
+    {
+      "code": "2926",
+      "name": "篠崎屋",
+      "quantity": 1000,
+      "averageCost": 119,
+      "referencePrice": 116,
+      "management": "低流動性。利益圏を利用した資金回収候補。"
+    },
+    {
+      "code": "5016",
+      "name": "JX金属",
+      "quantity": 100,
+      "averageCost": 3902,
+      "referencePrice": 3486,
+      "management": "縮小レビュー。ナンピン禁止。"
+    },
+    {
+      "code": "5027",
+      "name": "ANYMIND GROUP",
+      "quantity": 400,
+      "averageCost": 830.5,
+      "referencePrice": 788,
+      "management": "追加停止。戻り局面で一部縮小を再評価。"
+    },
+    {
+      "code": "8518",
+      "name": "日本アジア投資",
+      "quantity": 200,
+      "averageCost": 162,
+      "referencePrice": 152,
+      "management": "低流動性。優先資金回収候補。"
+    },
+    {
+      "code": "9432",
+      "name": "NTT",
+      "quantity": 200,
+      "averageCost": 176.8,
+      "referencePrice": 171.3,
+      "management": "2026-09-18の180円売付注文は約定確認なし。保有継続扱い。"
+    }
   ],
   "openTransactionsToday": [],
   "closedToday": [
-    {"code":"646A","name":"クラサスケミカル","quantity":1500,"averageCost":230.0,"buyPrice":230.0,"buyAmount":345000,"sellPrice":232.0,"sellAmount":348000,"realizedPnl":3000,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-29","note":"1,300 shares + 200 shares purchased; all 1,500 shares sold. No carry."}
+    {
+      "code": "646A",
+      "name": "クラサスケミカル",
+      "quantity": 1500,
+      "averageCost": 277,
+      "buyPrice": 277,
+      "buyAmount": 415500,
+      "sellPrice": 279,
+      "sellAmount": 418500,
+      "realizedPnl": 3000,
+      "status": "closed",
+      "market": "TSE",
+      "realizedPnlDate": "2026-09-30",
+      "note": "1,400 shares + 100 shares sold at 279 yen; iSPEED realized P/L total +3,000 yen. No carry."
+    }
   ],
   "recentClosedTransactions": [
-    {"code":"646A","name":"クラサスケミカル","quantity":1500,"averageCost":230.0,"buyPrice":230.0,"sellPrice":232.0,"sellAmount":348000,"realizedPnl":3000,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-29"},
-    {"code":"4597","name":"ソレイジア・ファーマ","quantity":3000,"averageCost":28.9333333333,"sellPrice":30.0,"sellAmount":90000,"realizedPnl":3200,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-18"},
-    {"code":"581A","name":"GO","quantity":200,"averageCost":3185.0,"sellPrice":3220.0,"sellAmount":644000,"realizedPnl":7000,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-18"},
-    {"code":"1571","name":"NF日経インバースETF","quantity":50,"averageCost":310.0,"sellPrice":310.0,"sellAmount":15500,"realizedPnl":0,"status":"closed","market":"TSE"},
-    {"code":"1579","name":"日経平均ブル2倍上場投信","quantity":100,"averageCost":681.0,"sellPrice":674.1,"sellAmount":67410,"realizedPnl":-690,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-13","dateBasis":"user correction"},
-    {"code":"3659","name":"ネクソン","quantity":200,"averageCost":3146.45,"sellPrice":3175.0,"sellAmount":635000,"realizedPnl":5710,"status":"closed","market":"TSE","realizedPnlDate":"2026-09-15"}
+    {
+      "code": "646A",
+      "name": "クラサスケミカル",
+      "quantity": 1500,
+      "averageCost": 277,
+      "buyPrice": 277,
+      "buyAmount": 415500,
+      "sellPrice": 279,
+      "sellAmount": 418500,
+      "realizedPnl": 3000,
+      "status": "closed",
+      "market": "TSE",
+      "realizedPnlDate": "2026-09-30",
+      "note": "1,400 shares + 100 shares sold at 279 yen; iSPEED realized P/L total +3,000 yen. No carry."
+    },
+    {
+      "code": "646A",
+      "name": "クラサスケミカル",
+      "quantity": 1500,
+      "averageCost": 230,
+      "buyPrice": 230,
+      "sellPrice": 232,
+      "sellAmount": 348000,
+      "realizedPnl": 3000,
+      "status": "closed",
+      "market": "TSE",
+      "realizedPnlDate": "2026-09-29"
+    },
+    {
+      "code": "4597",
+      "name": "ソレイジア・ファーマ",
+      "quantity": 3000,
+      "averageCost": 28.9333333333,
+      "sellPrice": 30,
+      "sellAmount": 90000,
+      "realizedPnl": 3200,
+      "status": "closed",
+      "market": "TSE",
+      "realizedPnlDate": "2026-09-18"
+    },
+    {
+      "code": "581A",
+      "name": "GO",
+      "quantity": 200,
+      "averageCost": 3185,
+      "sellPrice": 3220,
+      "sellAmount": 644000,
+      "realizedPnl": 7000,
+      "status": "closed",
+      "market": "TSE",
+      "realizedPnlDate": "2026-09-18"
+    },
+    {
+      "code": "1571",
+      "name": "NF日経インバースETF",
+      "quantity": 50,
+      "averageCost": 310,
+      "sellPrice": 310,
+      "sellAmount": 15500,
+      "realizedPnl": 0,
+      "status": "closed",
+      "market": "TSE"
+    },
+    {
+      "code": "1579",
+      "name": "日経平均ブル2倍上場投信",
+      "quantity": 100,
+      "averageCost": 681,
+      "sellPrice": 674.1,
+      "sellAmount": 67410,
+      "realizedPnl": -690,
+      "status": "closed",
+      "market": "TSE",
+      "realizedPnlDate": "2026-09-13",
+      "dateBasis": "user correction"
+    },
+    {
+      "code": "3659",
+      "name": "ネクソン",
+      "quantity": 200,
+      "averageCost": 3146.45,
+      "sellPrice": 3175,
+      "sellAmount": 635000,
+      "realizedPnl": 5710,
+      "status": "closed",
+      "market": "TSE",
+      "realizedPnlDate": "2026-09-15"
+    }
   ],
   "confirmedRealizedPnlToday": 3000,
-  "confirmedRealizedPnlDate": "2026-09-29",
-  "confirmedRealizedPnlBreakdown": {"646A":3000},
-  "confirmedSeptemberRealizedPnlKnown": 24320,
-  "confirmedSeptemberRealizedPnlCoverageNote": "Known September realized P/L through Sep29 totals +24,320 yen: Sep9 +6,100; Sep13 -690; Sep15 +5,710; Sep18 +10,200; Sep29 +3,000. Other previously unreported dates remain provisional zero where recorded.",
+  "confirmedRealizedPnlDate": "2026-09-30",
+  "confirmedRealizedPnlBreakdown": {
+    "646A": 3000
+  },
+  "confirmedSeptemberRealizedPnlKnown": 27320,
+  "confirmedSeptemberRealizedPnlCoverageNote": "Known September realized P/L through Sep30 totals +27,320 yen: Sep9 +6,100; Sep13 -690; Sep15 +5,710; Sep18 +10,200; Sep29 +3,000; Sep30 +3,000. Sep30 confirmed from iSPEED: Clasus Chemical +3,000.",
   "dailyRealizedPnlSeptember": [
-    {"date":"2026-09-01","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-02","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-03","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-04","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-05","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-06","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-07","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-08","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-09","pnl":6100,"status":"confirmed"},
-    {"date":"2026-09-10","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-11","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-12","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-13","pnl":-690,"status":"user_corrected"},
-    {"date":"2026-09-14","pnl":0,"status":"provisional_zero"},
-    {"date":"2026-09-15","pnl":5710,"status":"confirmed"},
-    {"date":"2026-09-16","pnl":0,"status":"confirmed_no_sale"},
-    {"date":"2026-09-18","pnl":10200,"status":"confirmed"},
-    {"date":"2026-09-29","pnl":3000,"status":"confirmed"}
+    {
+      "date": "2026-09-01",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-02",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-03",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-04",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-05",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-06",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-07",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-08",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-09",
+      "pnl": 6100,
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-09-10",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-11",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-12",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-13",
+      "pnl": -690,
+      "status": "user_corrected"
+    },
+    {
+      "date": "2026-09-14",
+      "pnl": 0,
+      "status": "provisional_zero"
+    },
+    {
+      "date": "2026-09-15",
+      "pnl": 5710,
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-09-16",
+      "pnl": 0,
+      "status": "confirmed_no_sale"
+    },
+    {
+      "date": "2026-09-18",
+      "pnl": 10200,
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-09-29",
+      "pnl": 3000,
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-09-30",
+      "pnl": 3000,
+      "status": "confirmed",
+      "note": "Clasus Chemical 1,500 shares, avg acquisition 277 yen, sold 279 yen; iSPEED realized P/L +3,000."
+    }
   ],
   "derivedPortfolioUnrealizedPnl": -68938,
   "derivedPortfolioUnrealizedPnlBasis": "Sep29 TSE close basis. Kioxia adjusted for 1-for-3 split: 3 shares at effective average cost 19,292.6667 yen. Clasus Chemical fully sold and excluded from open positions.",
