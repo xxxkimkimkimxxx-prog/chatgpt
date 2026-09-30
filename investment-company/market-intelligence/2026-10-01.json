@@ -1,0 +1,271 @@
+{
+  "date": "2026-10-01",
+  "asOf": "07:29 JST",
+  "status": "pre-open; no trade decision",
+  "marketStance": "9/30 was a broad rebound (Nikkei +1.94%, TOPIX +1.67%). Overnight Nasdaq remained firm despite US10Y ~5.29%; softer PCE reduced immediate Fed-hike pressure. Focus: AI/semiconductor follow-through, financials with BOJ tightening optionality, and fresh revisions.",
+  "topFresh": [
+    "8358 Suruga Bank",
+    "3377 Bike O",
+    "6255 NPC",
+    "6594 Nidec (high-risk/review)"
+  ],
+  "topStructuralThemes": [
+    "ai-semiconductor-selective",
+    "financials-rate-normalization",
+    "broadening-risk-on",
+    "fresh-catalyst",
+    "high-yield-duration-risk"
+  ],
+  "criticalRisk": "US10Y remains above 5%; WTI rebounded near $90.6. BOJ may tighten faster. Sep30 +1.9% rebound creates chase/fade risk.",
+  "candidateCount": 30,
+  "candidates": [
+    {
+      "rank": 1,
+      "code": "8358",
+      "name": "スルガ銀行",
+      "category": "Fresh Catalyst",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 2,
+      "code": "6857",
+      "name": "アドバンテスト",
+      "category": "Sector Leader",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 3,
+      "code": "8035",
+      "name": "東京エレクトロン",
+      "category": "Sector Leader",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 4,
+      "code": "5803",
+      "name": "フジクラ",
+      "category": "Continuation/Trend",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 5,
+      "code": "285A",
+      "name": "キオクシアHD",
+      "category": "AI Memory",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 6,
+      "code": "6146",
+      "name": "ディスコ",
+      "category": "AI/Semiconductor",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 7,
+      "code": "6525",
+      "name": "KOKUSAI ELECTRIC",
+      "category": "Continuation/Trend",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 8,
+      "code": "8306",
+      "name": "三菱UFJ FG",
+      "category": "Sector Leader",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 9,
+      "code": "8316",
+      "name": "三井住友FG",
+      "category": "Sector Leader",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 10,
+      "code": "8411",
+      "name": "みずほFG",
+      "category": "Sector Leader",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 11,
+      "code": "3377",
+      "name": "バイク王＆カンパニー",
+      "category": "Fresh Catalyst",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 12,
+      "code": "6255",
+      "name": "エヌ・ピー・シー",
+      "category": "Fresh Catalyst",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 13,
+      "code": "6976",
+      "name": "太陽誘電",
+      "category": "Continuation/Trend",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 14,
+      "code": "4004",
+      "name": "レゾナックHD",
+      "category": "AI/Semiconductor",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 15,
+      "code": "5801",
+      "name": "古河電工",
+      "category": "AI Infrastructure",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 16,
+      "code": "5802",
+      "name": "住友電工",
+      "category": "AI Infrastructure",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 17,
+      "code": "7735",
+      "name": "SCREEN HD",
+      "category": "押し目/反転",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 18,
+      "code": "4062",
+      "name": "イビデン",
+      "category": "押し目/反転",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 19,
+      "code": "6920",
+      "name": "レーザーテック",
+      "category": "押し目/反転",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 20,
+      "code": "9984",
+      "name": "ソフトバンクG",
+      "category": "AI Sentiment",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 21,
+      "code": "8750",
+      "name": "第一生命HD",
+      "category": "Financial",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 22,
+      "code": "8766",
+      "name": "東京海上HD",
+      "category": "Financial",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 23,
+      "code": "1605",
+      "name": "INPEX",
+      "category": "Energy",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 24,
+      "code": "1662",
+      "name": "石油資源開発",
+      "category": "Energy",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 25,
+      "code": "7011",
+      "name": "三菱重工業",
+      "category": "Defense",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 26,
+      "code": "7012",
+      "name": "川崎重工業",
+      "category": "Defense",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 27,
+      "code": "7013",
+      "name": "IHI",
+      "category": "Defense",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 28,
+      "code": "6594",
+      "name": "ニデック",
+      "category": "Special Situation/High Risk",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 29,
+      "code": "9246",
+      "name": "プロジェクトHD",
+      "category": "Special Situation",
+      "status": "watch",
+      "holdingsBlind": true
+    },
+    {
+      "rank": 30,
+      "code": "639A",
+      "name": "グローバル・メモリETF",
+      "category": "Theme Flow",
+      "status": "watch",
+      "holdingsBlind": true
+    }
+  ],
+  "dataLimitations": [
+    "TDnet full-PDF exhaustive scan incomplete",
+    "Nikkei direct fresh evidence unavailable",
+    "SBI checked-limited",
+    "Full PTS unavailable",
+    "Live 07:29 orderbook/VWAP unavailable",
+    "Foreign flow/short/ETF flow incomplete"
+  ]
+}
