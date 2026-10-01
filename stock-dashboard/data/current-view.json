@@ -1,42 +1,127 @@
 {
-  "asOf":"2026-09-15 17:22 JST",
-  "status":"after_close_position_update",
-  "targetSession":"2026-09-16",
-  "newsAsOf":"2026-09-12 16:01 JST",
-  "marketSummary":"2026-09-15大引け後の保有・実現損益更新。ネクソン200株を3,175円で全売却し、現在の保有から除外。1571/1579も保有なし。損益日付はユーザー訂正に従い、未報告日は暫定0円、9/13のみ-690円として整理。",
-  "marketStance":"本更新はポジション・損益同期。新規の市場見通し更新ではない。",
-  "portfolioTotalUnrealizedPnl":-50718,
-  "portfolioPnlBasis":"ネクソン売却後の残存6銘柄について、2026-09-15東証終値とholdings.jsonの平均取得単価で派生計算。",
-  "todayRealizedPnl":5710,
-  "todayRealizedPnlStatus":"Nexon iSPEED 2026-09-15 17:21 screenshot confirmed; other unreported Sep15 P/L treated as 0 per user instruction.",
-  "todayClosedTrades":[
-    {"code":"3659","name":"ネクソン","qty":200,"averageCost":3146.45,"sellPrice":3175.0,"realizedPnl":5710,"positionAfter":0}
+  "asOf": "2026-10-01 15:35 JST",
+  "status": "after_close_position_snapshot",
+  "targetSession": "2026-10-02",
+  "newsAsOf": "2026-09-12 16:01 JST",
+  "marketSummary": "2026-10-01大引け後のiSPEED保有スナップショットを同期。AnyMindは600株・平均取得811.66円へ更新。キオクシアは1:3株式分割後の3株・実質平均取得19,292.6667円を正式反映。",
+  "marketStance": "本更新はユーザー提供iSPEED画像によるポジション同期。",
+  "portfolioTotalUnrealizedPnl": -33779,
+  "portfolioPnlBasis": "iSPEED broker-reported portfolio unrealized P/L at 2026-10-01 15:35 JST.",
+  "todayRealizedPnl": 5710,
+  "todayRealizedPnlStatus": "Nexon iSPEED 2026-09-15 17:21 screenshot confirmed; other unreported Sep15 P/L treated as 0 per user instruction.",
+  "todayClosedTrades": [
+    {
+      "code": "3659",
+      "name": "ネクソン",
+      "qty": 200,
+      "averageCost": 3146.45,
+      "sellPrice": 3175,
+      "realizedPnl": 5710,
+      "positionAfter": 0
+    }
   ],
-  "septemberRealizedPnl":11120,
-  "septemberPnlPolicy":"Unreported days through Sep15 are provisionally 0 unless later corrected; Sep13 is -690 by explicit user correction.",
-  "septemberDailyKey":[
-    {"date":"2026-09-09","pnl":6100,"status":"confirmed"},
-    {"date":"2026-09-13","pnl":-690,"status":"user_corrected"},
-    {"date":"2026-09-15","pnl":5710,"status":"confirmed"}
+  "septemberRealizedPnl": 11120,
+  "septemberPnlPolicy": "Unreported days through Sep15 are provisionally 0 unless later corrected; Sep13 is -690 by explicit user correction.",
+  "septemberDailyKey": [
+    {
+      "date": "2026-09-09",
+      "pnl": 6100,
+      "status": "confirmed"
+    },
+    {
+      "date": "2026-09-13",
+      "pnl": -690,
+      "status": "user_corrected"
+    },
+    {
+      "date": "2026-09-15",
+      "pnl": 5710,
+      "status": "confirmed"
+    }
   ],
-  "nextWatch":[
-    "ネクソンは全売却済み。保有レビュー・評価損益集計から除外する。",
-    "JX金属は100株@3,902円、9/15終値3,654円。含み損-24,800円で最大のマイナス寄与。",
-    "AnyMindは400株@830.5円、9/15終値774円。含み損-22,600円。",
-    "キオクシアは観察用1株。残存保有6銘柄の合計含み損は-50,718円。",
-    "9/15実現損益はネクソン+5,710円。9/13に-690円を計上し、その他未報告日は暫定0円。"
+  "nextWatch": [
+    "AnyMindは600株@811.66円に更新。10/1終値828円で含み益圏。",
+    "キオクシアは株式分割後3株@19,292.6667円として正式管理。",
+    "JX金属は100株@3,902円、10/1 15:35時点3,605円で最大のマイナス寄与。",
+    "iSPEED表示のポートフォリオ評価損益合計は-33,779円。表示値からの単純再計算との差5円は平均取得単価の内部精度/丸め差と扱う。"
   ],
-  "capitalFlow":[],
-  "daytrade":{"status":"session closed; position sync only","candidates":[],"intradayRerank":[],"morningForecastReview":[]},
-  "swing":{"status":"position sync only; see latest-strategy.json for committee plan","candidates":[]},
-  "holdingsUpdate":[
-    {"code":"285A","name":"キオクシアホールディングス","observedAt":"2026-09-15 close","price":51750,"averageCost":57878,"quantity":1,"unrealizedPnl":-6128,"stance":"観察用1株を継続。"},
-    {"code":"2926","name":"篠崎屋","observedAt":"2026-09-15 close","price":123,"averageCost":119,"quantity":1000,"unrealizedPnl":4000,"stance":"利益圏。低流動性のため資金回収候補。"},
-    {"code":"4597","name":"ソレイジア・ファーマ","observedAt":"2026-09-15 close","price":29,"averageCost":28.93,"quantity":3000,"unrealizedPnl":210,"stance":"投機枠、追加停止。"},
-    {"code":"5016","name":"JX金属","observedAt":"2026-09-15 close","price":3654,"averageCost":3902,"quantity":100,"unrealizedPnl":-24800,"stance":"縮小レビュー継続。"},
-    {"code":"5027","name":"ANYMIND GROUP","observedAt":"2026-09-15 close","price":774,"averageCost":830.5,"quantity":400,"unrealizedPnl":-22600,"stance":"追加停止。戻り局面で縮小再評価。"},
-    {"code":"8518","name":"日本アジア投資","observedAt":"2026-09-15 close","price":155,"averageCost":162,"quantity":200,"unrealizedPnl":-1400,"stance":"優先資金回収候補。"}
+  "capitalFlow": [],
+  "daytrade": {
+    "status": "session closed; position sync only",
+    "candidates": [],
+    "intradayRerank": [],
+    "morningForecastReview": []
+  },
+  "swing": {
+    "status": "position sync only; see latest-strategy.json for committee plan",
+    "candidates": []
+  },
+  "holdingsUpdate": [
+    {
+      "code": "285A",
+      "name": "キオクシアホールディングス",
+      "observedAt": "2026-10-01 15:35 JST",
+      "price": 19100,
+      "averageCost": 19292.6666666667,
+      "quantity": 3,
+      "unrealizedPnl": -578,
+      "stance": "株式分割後3株として正式管理。"
+    },
+    {
+      "code": "2926",
+      "name": "篠崎屋",
+      "observedAt": "2026-10-01 15:35 JST",
+      "price": 110,
+      "averageCost": 119,
+      "quantity": 1000,
+      "unrealizedPnl": -9000,
+      "stance": "低流動性。資金回収候補。"
+    },
+    {
+      "code": "5016",
+      "name": "JX金属",
+      "observedAt": "2026-10-01 15:35 JST",
+      "price": 3605,
+      "averageCost": 3902,
+      "quantity": 100,
+      "unrealizedPnl": -29700,
+      "stance": "縮小レビュー継続。"
+    },
+    {
+      "code": "5027",
+      "name": "ANYMIND GROUP",
+      "observedAt": "2026-10-01 15:35 JST",
+      "price": 828,
+      "averageCost": 811.66,
+      "quantity": 600,
+      "unrealizedPnl": 9804,
+      "stance": "600株へ更新。個別約定価格未確認のため平均取得単価811.66円を正本として管理。"
+    },
+    {
+      "code": "8518",
+      "name": "日本アジア投資",
+      "observedAt": "2026-10-01 15:35 JST",
+      "price": 147,
+      "averageCost": 162,
+      "quantity": 200,
+      "unrealizedPnl": -3000,
+      "stance": "優先資金回収候補。"
+    },
+    {
+      "code": "9432",
+      "name": "NTT",
+      "observedAt": "2026-10-01 15:35 JST",
+      "price": 170.3,
+      "averageCost": 176.8,
+      "quantity": 200,
+      "unrealizedPnl": -1300,
+      "stance": "保有継続。"
+    }
   ],
-  "latestNews":[],
-  "lessons":["ネクソンは3,175円で全200株を売却し、取得単価3,146.45円に対して+5,710円を確定。","9/13は-690円として日次損益を修正。","未報告日は暫定0円で管理し、後日証跡が出た場合に上書きする。"]
+  "latestNews": [],
+  "lessons": [
+    "2026-10-01のiSPEED画像に基づきAnyMind保有を400株@830.5円から600株@811.66円へ更新。",
+    "AnyMind追加200株の個別約定価格は画像から確定できないため、推定約定価格を正式なexecutionとしては登録しない。",
+    "キオクシア1:3株式分割後の保有を3株へ正規化。"
+  ]
 }
