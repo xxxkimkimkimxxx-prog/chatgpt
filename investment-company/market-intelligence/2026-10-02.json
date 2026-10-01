@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-02",
+  "asOf": "07:32 JST",
+  "status": "pre-open; no trade decision",
+  "marketStance": "Oct1 Nikkei 68,956.72 (+2,203; +3.30%) led by semiconductors, but only 11 sectors rose and breadth was mixed. US yields briefly hit 5.34% before easing; US equities closed slightly higher. Today tests whether AI/semiconductor momentum broadens or fades under extreme yields.",
+  "topFresh": [
+    "2449 PRAP Japan",
+    "7847 Graphite Design",
+    "3696 Ceres",
+    "3753 Flight Solutions",
+    "7480 Suzuden"
+  ],
+  "topStructuralThemes": [
+    "AI memory / semiconductor continuation",
+    "Fresh Catalyst",
+    "global rates shock",
+    "energy/inflation"
+  ],
+  "candidateCount": 30,
+  "holdingsBlind": true,
+  "fullReportPath": "investment-company/market-intelligence/2026-10-02.json",
+  "newsFeedPath": "investment-company/news-feed/2026-10-02.json",
+  "dataLimitations": [
+    "TDnet all-PDF sweep incomplete",
+    "Nikkei direct fresh evidence unavailable",
+    "SBI market-news public retrieval limited",
+    "all-stock PTS not complete",
+    "07:32 order book/VWAP unavailable",
+    "real-time foreign flow/short/ETF flow unavailable",
+    "exact SOX close not independently verified"
+  ]
+}
