@@ -1,29 +1,29 @@
 {
-  "asOf": "2026-09-30 18:07 JST",
-  "positionAsOf": "2026-09-30 18:07 JST",
-  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings. Sep18 GO and Solasia full sales confirmed from user screenshots. Sep29 Clasus Chemical trade confirmed from user-supplied iSPEED screenshots: bought 1,500 shares at average 230 yen and sold all 1,500 shares at average 232 yen, realized P/L +3,000 yen. No Clasus position carried overnight. Kioxia 1-for-3 stock split effective Sep29 is reflected in economic valuation but legacy position fields are retained pending canonical position normalization. Sep30 user-supplied iSPEED screenshots confirm Clasus Chemical 1,500 shares at average acquisition cost 277 yen, sold at 279 yen (1,400 + 100 shares), realized P/L +3,000 yen; no carry.",
+  "asOf": "2026-10-01 15:35 JST",
+  "positionAsOf": "2026-10-01 15:35 JST",
+  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings. Sep18 GO and Solasia full sales confirmed from user screenshots. Sep29 Clasus Chemical trade confirmed from user-supplied iSPEED screenshots: bought 1,500 shares at average 230 yen and sold all 1,500 shares at average 232 yen, realized P/L +3,000 yen. No Clasus position carried overnight. Kioxia 1-for-3 stock split effective Sep29 is reflected in economic valuation but legacy position fields are retained pending canonical position normalization. Sep30 user-supplied iSPEED screenshots confirm Clasus Chemical 1,500 shares at average acquisition cost 277 yen, sold at 279 yen (1,400 + 100 shares), realized P/L +3,000 yen; no carry. Oct1 user-supplied iSPEED holdings screenshot confirms canonical post-split Kioxia position 3 shares at effective average 19,292.6667 yen, AnyMind increased to 600 shares at displayed average 811.66 yen, and broker-reported total unrealized P/L -33,779 yen at 15:35.",
   "positions": [
     {
       "code": "285A",
       "name": "キオクシアホールディングス",
-      "quantity": 1,
-      "averageCost": 57878,
+      "quantity": 3,
+      "averageCost": 19292.6666666667,
       "corporateAction": {
         "type": "stock_split",
         "effectiveDate": "2026-09-29",
         "ratio": "1:3",
-        "adjustedQuantity": 3,
-        "adjustedAverageCost": 19292.6666666667
+        "preSplitQuantity": 1,
+        "preSplitAverageCost": 57878
       },
-      "referencePrice": 17880,
-      "management": "1株観察用。2026-09-29の1:3株式分割後は実質3株として評価。"
+      "referencePrice": 19100,
+      "management": "2026-09-29の1:3株式分割を正式反映。3株保有。"
     },
     {
       "code": "2926",
       "name": "篠崎屋",
       "quantity": 1000,
       "averageCost": 119,
-      "referencePrice": 116,
+      "referencePrice": 110,
       "management": "低流動性。利益圏を利用した資金回収候補。"
     },
     {
@@ -31,23 +31,23 @@
       "name": "JX金属",
       "quantity": 100,
       "averageCost": 3902,
-      "referencePrice": 3486,
+      "referencePrice": 3605,
       "management": "縮小レビュー。ナンピン禁止。"
     },
     {
       "code": "5027",
       "name": "ANYMIND GROUP",
-      "quantity": 400,
-      "averageCost": 830.5,
-      "referencePrice": 788,
-      "management": "追加停止。戻り局面で一部縮小を再評価。"
+      "quantity": 600,
+      "averageCost": 811.66,
+      "referencePrice": 828,
+      "management": "2026-10-01 iSPEED確認：600株・平均取得811.66円。追加200株の個別約定価格は未確認のため、保有スナップショットを正本とする。"
     },
     {
       "code": "8518",
       "name": "日本アジア投資",
       "quantity": 200,
       "averageCost": 162,
-      "referencePrice": 152,
+      "referencePrice": 147,
       "management": "低流動性。優先資金回収候補。"
     },
     {
@@ -55,7 +55,7 @@
       "name": "NTT",
       "quantity": 200,
       "averageCost": 176.8,
-      "referencePrice": 171.3,
+      "referencePrice": 170.3,
       "management": "2026-09-18の180円売付注文は約定確認なし。保有継続扱い。"
     }
   ],
@@ -272,9 +272,11 @@
       "note": "Clasus Chemical 1,500 shares, avg acquisition 277 yen, sold 279 yen; iSPEED realized P/L +3,000."
     }
   ],
-  "derivedPortfolioUnrealizedPnl": -68938,
-  "derivedPortfolioUnrealizedPnlBasis": "Sep29 TSE close basis. Kioxia adjusted for 1-for-3 split: 3 shares at effective average cost 19,292.6667 yen. Clasus Chemical fully sold and excluded from open positions.",
+  "derivedPortfolioUnrealizedPnl": -33774,
+  "derivedPortfolioUnrealizedPnlBasis": "Derived from displayed per-position quantities, displayed average costs and prices in the 2026-10-01 15:35 iSPEED screenshot. Broker reports -33,779 yen total; 5-yen difference is attributable to hidden average-cost precision/rounding.",
   "estimatedPortfolioCost": null,
   "estimatedPortfolioMarketValue": null,
-  "ruleReference": "data/trading-rules.json"
+  "ruleReference": "data/trading-rules.json",
+  "brokerReportedPortfolioUnrealizedPnl": -33779,
+  "brokerReportedPortfolioUnrealizedPnlAsOf": "2026-10-01 15:35 JST"
 }
