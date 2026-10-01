@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-02",
+  "asOf": "2026-10-02T07:32:00+09:00",
+  "agents": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    28,
+    30,
+    32,
+    33,
+    34
+  ],
+  "sourcesUsed": {
+    "TDnet_IR": "checked-limited; PRAP primary IR verified; all-PDF sweep incomplete",
+    "JPX": "checked-limited; current alert/search pages checked, no exhaustive all notices",
+    "Nikkei": "unavailable-direct-fresh-evidence",
+    "Kabutan": "checked",
+    "YahooFinance": "checked",
+    "SBI": "checked-limited; public market-news retrieval limited",
+    "Reuters_AP": "Reuters checked; AP no-relevant-update",
+    "FISCO_Traders": "checked-limited"
+  },
+  "dataLimitations": [
+    "TDnet all-PDF sweep incomplete",
+    "Nikkei direct fresh evidence unavailable",
+    "SBI market-news public retrieval limited",
+    "all-stock PTS not complete",
+    "07:32 order book/VWAP unavailable",
+    "real-time foreign flow/short/ETF flow unavailable",
+    "exact SOX close not independently verified"
+  ]
+}
