@@ -1,1 +1,31 @@
-{"asOf":"2026-10-01T07:33:00+09:00","topItems":[{"importance":"A+","title":"Micron record Q4 and strong guide","theme":"ai-memory"},{"importance":"A","title":"Suruga Bank upward revision and dividend increase","theme":"financials"},{"importance":"A","title":"Rasa Industries Taiwan semiconductor-material plant","theme":"semiconductor-materials"}],"fullFeedPath":"investment-company/news-feed/2026-10-01.json"}
+{
+  "asOf": "2026-10-02T07:32:00+09:00",
+  "topItems": [
+    {
+      "importance": "A+",
+      "title": "PRAP Japan signs capital/business alliance with Edelman",
+      "theme": "global-communications"
+    },
+    {
+      "importance": "A+",
+      "title": "Graphite Design raises H1 recurring profit 3.9x and full-year forecast",
+      "theme": "fresh-catalyst"
+    },
+    {
+      "importance": "A+",
+      "title": "Ceres announces buyback up to 10.83%",
+      "theme": "capital-return"
+    },
+    {
+      "importance": "A",
+      "title": "Flight Solutions wins large Incredist Premium 3 order",
+      "theme": "payments-hardware"
+    },
+    {
+      "importance": "A",
+      "title": "Suzuden September sales +69.0% YoY",
+      "theme": "factory-automation"
+    }
+  ],
+  "fullFeedPath": "investment-company/news-feed/2026-10-02.json"
+}
