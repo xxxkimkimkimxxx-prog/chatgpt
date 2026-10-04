@@ -28,6 +28,7 @@ function stockRow(x){
       ${detailRow('見送り・破綻',x.skip)}
       ${detailRow('最大リスク',x.risk)}
       ${x.source?`<a class="hzSource" href="${hesc(x.source)}" target="_blank" rel="noopener">根拠情報を開く ↗</a>`:''}
+      <a class="hzStockDetailLink" href="./stock-detail/?code=${encodeURIComponent(String(x.code||''))}">個別銘柄分析を開く →</a>
     </div>
   </article>`;
 }
