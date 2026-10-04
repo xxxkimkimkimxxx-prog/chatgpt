@@ -1,0 +1,167 @@
+{
+  "code": "6920",
+  "name": "レーザーテック",
+  "source": {
+    "label": "Yahoo!ファイナンス（10/2株価・指標 / 9/25信用残）",
+    "checkedAt": "2026-10-04 JST",
+    "quoteUrl": "https://finance.yahoo.co.jp/quote/6920.T",
+    "marginHistoryUrl": "https://finance.yahoo.co.jp/quote/6920.T/history?styl=margin",
+    "note": "信用残は週次公表値13週。取得できないPER・配当・信用倍率は推測せずnull。"
+  },
+  "price": {
+    "value": 46130,
+    "unit": "円",
+    "volume": 6802900,
+    "asOf": "2026-10-02"
+  },
+  "fundamentals": {
+    "dividendPerShare": 351,
+    "dividendYield": 0.76,
+    "perRange": {
+      "min": null,
+      "current": 45.94,
+      "max": null
+    },
+    "pbrRange": {
+      "min": null,
+      "current": 16.75,
+      "max": null
+    },
+    "yearToDateLow": 28660,
+    "yearToDateHigh": 58580
+  },
+  "valuation": [
+    {
+      "label": "年初来レンジ",
+      "center": 46130,
+      "low": 28660,
+      "high": 58580
+    }
+  ],
+  "credit": {
+    "asOf": "2026-09-25",
+    "ratio": 3.38,
+    "buyBalance10k": 138.8,
+    "sellBalance10k": 41.06,
+    "buyChange13wPct": 15.5,
+    "sellChange13wPct": 69.2,
+    "ratioRange": {
+      "period": "13w",
+      "min": 3.38,
+      "max": 11.29
+    },
+    "historyScope": "13週（Yahoo!ファイナンス週次信用残）",
+    "history": [
+      {
+        "date": "2026-07-03",
+        "sellBalance10k": 24.27,
+        "buyBalance10k": 120.14,
+        "ratio": 4.95
+      },
+      {
+        "date": "2026-07-10",
+        "sellBalance10k": 20.6,
+        "buyBalance10k": 133.15,
+        "ratio": 6.46
+      },
+      {
+        "date": "2026-07-17",
+        "sellBalance10k": 17.37,
+        "buyBalance10k": 129.75,
+        "ratio": 7.47
+      },
+      {
+        "date": "2026-07-24",
+        "sellBalance10k": 20.31,
+        "buyBalance10k": 120.57,
+        "ratio": 5.94
+      },
+      {
+        "date": "2026-07-31",
+        "sellBalance10k": 19.03,
+        "buyBalance10k": 119.89,
+        "ratio": 6.3
+      },
+      {
+        "date": "2026-08-07",
+        "sellBalance10k": 26.53,
+        "buyBalance10k": 135.73,
+        "ratio": 5.12
+      },
+      {
+        "date": "2026-08-14",
+        "sellBalance10k": 28.44,
+        "buyBalance10k": 152.83,
+        "ratio": 5.37
+      },
+      {
+        "date": "2026-08-21",
+        "sellBalance10k": 19.23,
+        "buyBalance10k": 179.37,
+        "ratio": 9.33
+      },
+      {
+        "date": "2026-08-28",
+        "sellBalance10k": 17.73,
+        "buyBalance10k": 182.28,
+        "ratio": 10.28
+      },
+      {
+        "date": "2026-09-04",
+        "sellBalance10k": 17.44,
+        "buyBalance10k": 196.91,
+        "ratio": 11.29
+      },
+      {
+        "date": "2026-09-11",
+        "sellBalance10k": 18.26,
+        "buyBalance10k": 176.66,
+        "ratio": 9.67
+      },
+      {
+        "date": "2026-09-18",
+        "sellBalance10k": 37.89,
+        "buyBalance10k": 143.9,
+        "ratio": 3.8
+      },
+      {
+        "date": "2026-09-25",
+        "sellBalance10k": 41.06,
+        "buyBalance10k": 138.8,
+        "ratio": 3.38
+      }
+    ],
+    "daily": [
+      {
+        "date": "09/25",
+        "sellBalance10k": 41.06,
+        "buyBalance10k": 138.8,
+        "ratio": 3.38
+      },
+      {
+        "date": "09/18",
+        "sellBalance10k": 37.89,
+        "buyBalance10k": 143.9,
+        "ratio": 3.8
+      },
+      {
+        "date": "09/11",
+        "sellBalance10k": 18.26,
+        "buyBalance10k": 176.66,
+        "ratio": 9.67
+      },
+      {
+        "date": "09/04",
+        "sellBalance10k": 17.44,
+        "buyBalance10k": 196.91,
+        "ratio": 11.29
+      },
+      {
+        "date": "08/28",
+        "sellBalance10k": 17.73,
+        "buyBalance10k": 182.28,
+        "ratio": 10.28
+      }
+    ]
+  }
+}
