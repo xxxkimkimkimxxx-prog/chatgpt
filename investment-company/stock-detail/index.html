@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#315fd6">
+  <title>個別銘柄分析 | AI Investment Company</title>
+  <link rel="stylesheet" href="./stock-detail.css?v=20261004">
+</head>
+<body>
+  <header class="sdTop">
+    <a class="sdBack" href="../" aria-label="投資会社トップへ戻る">← 投資会社</a>
+    <div class="sdBrand">
+      <div class="sdKicker">STOCK INTELLIGENCE · 信用 / VALUATION / AI</div>
+      <div class="sdTitleLine"><h1 id="stockName">読込中</h1><span id="stockCode">—</span><span id="watchBadge" class="sdBadge hidden"></span><span id="holdingBadge" class="sdBadge hold hidden">保有</span></div>
+    </div>
+    <div class="sdActions">
+      <label class="sdSelectLabel">銘柄
+        <select id="stockSelect" aria-label="銘柄を選択"></select>
+      </label>
+      <button id="refreshBtn" type="button">↻ 更新</button>
+    </div>
+  </header>
+
+  <main class="sdShell">
+    <section class="sdCard sdChartCard">
+      <div class="sdCardHead">
+        <div><b>信用買残・売残と信用倍率の推移</b><small id="creditScope">詳細データ確認中</small></div>
+        <div class="sdLegend"><span class="buy">● 買残</span><span class="sell">● 売残</span><span class="ratio">━ 倍率</span></div>
+      </div>
+      <div class="sdChartWrap">
+        <svg id="creditChart" viewBox="0 0 780 250" role="img" aria-label="信用残と信用倍率の推移"></svg>
+        <div id="chartEmpty" class="sdEmpty hidden">信用残の時系列は未接続です</div>
+      </div>
+    </section>
+
+    <aside class="sdSideTop">
+      <section class="sdCard sdRatioCard">
+        <div class="sdLabel">現在の信用倍率</div>
+        <div class="sdBig"><span id="creditRatio">—</span><small>倍</small></div>
+        <div id="creditAsOf" class="sdAsOf">—</div>
+        <div class="sdRangeTitle"><span>2年レンジ</span><span id="ratioRangeText">—</span></div>
+        <div class="sdRangeBar"><span id="ratioMarker"></span></div>
+        <div class="sdRangeEnds"><span id="ratioMin">最低 —</span><span id="ratioMax">最高 —</span></div>
+      </section>
+      <div class="sdTwin">
+        <section class="sdCard sdMini"><span>信用買残</span><b id="buyBalance">—</b><small id="buyChange">—</small></section>
+        <section class="sdCard sdMini"><span>信用売残</span><b id="sellBalance">—</b><small id="sellChange">—</small></section>
+      </div>
+    </aside>
+
+    <section class="sdCard sdMetrics">
+      <div class="sdCardHead"><b>株価と指標</b><small id="quoteAsOf">—</small></div>
+      <div class="sdQuote">
+        <div><span>株価</span><b id="price">—</b></div>
+        <div><span>前日比</span><b id="change">—</b></div>
+        <div><span>出来高</span><b id="volume">—</b></div>
+        <div><span>予想配当</span><b id="dividend">—</b></div>
+        <div class="wide"><span>予想配当利回り</span><b id="divYield">—</b></div>
+      </div>
+      <div class="sdValTable">
+        <div></div><span>最低</span><span>現在</span><span>最高</span>
+        <b>PER</b><span id="perMin">—</span><strong id="perNow">—</strong><span id="perMax">—</span>
+        <b>PBR</b><span id="pbrMin">—</span><strong id="pbrNow">—</strong><span id="pbrMax">—</span>
+      </div>
+    </section>
+
+    <section class="sdCard sdValuation">
+      <div class="sdCardHead"><b>株価の目安</b><small>丸＝中心 / 帯＝レンジ</small></div>
+      <div id="valuationRows" class="sdValRows"></div>
+      <div id="valuationEmpty" class="sdEmpty compact hidden">バリュエーションデータ未接続</div>
+      <div class="sdCurrentPrice">現在株価 <b id="currentPriceLabel">—</b></div>
+    </section>
+
+    <section class="sdCard sdDaily">
+      <div class="sdCardHead"><b>直近の信用データ</b><small id="dailyStatus">—</small></div>
+      <table>
+        <thead><tr><th>日付</th><th>売残</th><th>買残</th><th>倍率</th></tr></thead>
+        <tbody id="dailyRows"></tbody>
+      </table>
+      <div class="sdAiStrip">
+        <div><span>市場情報部</span><b id="aiRank">ランキング外</b></div>
+        <div><span>分類</span><b id="aiCategory">—</b></div>
+        <div><span>保有</span><b id="aiHolding">なし</b></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="statusBar" class="sdStatus">データ読込中…</div>
+  <script src="./stock-detail.js?v=20261004"></script>
+</body>
+</html>
