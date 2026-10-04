@@ -1,0 +1,54 @@
+{
+  "code": "7974",
+  "name": "任天堂",
+  "source": {
+    "label": "ユーザー提供参考画像",
+    "capturedContextDate": "2026-10-04",
+    "note": "画面上で判読できる数値だけを収録。13週全系列は画像から正確に復元せず、直近5公表日のみ使用。"
+  },
+  "price": {
+    "value": 7849,
+    "unit": "円",
+    "asOf": "参考画像時点"
+  },
+  "fundamentals": {
+    "dividendPerShare": 162,
+    "dividendYield": 2.06,
+    "perRange": {"min": 24.5, "current": 29.2, "max": 53.6},
+    "pbrRange": {"min": 2.60, "current": 3.10, "max": 5.69}
+  },
+  "valuation": [
+    {"label": "PER基準", "center": 9259, "low": 6160, "high": 12861},
+    {"label": "PBR基準", "center": 10048, "low": 6589, "high": 14400},
+    {"label": "目標株価", "center": 10249, "low": 5000, "high": 21260}
+  ],
+  "credit": {
+    "asOf": "2026-09-25",
+    "ratio": 12.70,
+    "buyBalance10k": 895.8,
+    "sellBalance10k": 70.5,
+    "buyChange13wPct": -34.7,
+    "sellChange13wPct": -1.2,
+    "ratioRange2y": {
+      "min": 1.33,
+      "minDate": "2025-06-27",
+      "max": 30.40,
+      "maxDate": "2026-02-13"
+    },
+    "historyScope": "直近5公表日（13週全系列は未接続）",
+    "history": [
+      {"date": "2026-09-25", "sellBalance10k": 70.5, "buyBalance10k": 895.8, "ratio": 12.70},
+      {"date": "2026-09-28", "sellBalance10k": 73.5, "buyBalance10k": 891.5, "ratio": 12.12},
+      {"date": "2026-09-29", "sellBalance10k": 70.5, "buyBalance10k": 909.2, "ratio": 12.89},
+      {"date": "2026-09-30", "sellBalance10k": 72.8, "buyBalance10k": 910.0, "ratio": 12.50},
+      {"date": "2026-10-01", "sellBalance10k": 70.4, "buyBalance10k": 914.5, "ratio": 13.00}
+    ],
+    "daily": [
+      {"date": "10/01", "sellBalance10k": 70.4, "buyBalance10k": 914.5, "ratio": 13.00},
+      {"date": "09/30", "sellBalance10k": 72.8, "buyBalance10k": 910.0, "ratio": 12.50},
+      {"date": "09/29", "sellBalance10k": 70.5, "buyBalance10k": 909.2, "ratio": 12.89},
+      {"date": "09/28", "sellBalance10k": 73.5, "buyBalance10k": 891.5, "ratio": 12.12},
+      {"date": "09/25", "sellBalance10k": 70.5, "buyBalance10k": 895.8, "ratio": 12.70}
+    ]
+  }
+}
