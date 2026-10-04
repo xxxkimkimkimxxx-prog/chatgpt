@@ -13,13 +13,30 @@ function status(t){$('#statusBar').textContent=t}
 function stockName(code){return state.stockMap.get(code)?.name||code}
 function mergeUniverse(){
   const map=new Map();
-  (state.watch?.candidates||[]).forEach(x=>map.set(String(x.code),{...x,code:String(x.code),source:'watchlist'}));
-  (state.holdings?.positions||[]).forEach(x=>{const c=String(x.code),old=map.get(c)||{};map.set(c,{...old,code:c,name:old.name||x.name,holding:true,position:x})});
-  if(!map.has('7974'))map.set('7974',{code:'7974',name:'任天堂',source:'reference-snapshot'});
+  const held=(state.holdings?.positions||[]);
+  held.forEach(x=>{
+    const code=String(x.code);
+    map.set(code,{code,name:x.name,holding:true,position:x,source:'holding'});
+  });
+  let added=0;
+  for(const x of (state.watch?.candidates||[])){
+    const code=String(x.code);
+    if(map.has(code)){
+      map.set(code,{...map.get(code),...x,code,name:x.name||map.get(code).name,holding:true,position:map.get(code).position,source:'holding+watchlist'});
+      continue;
+    }
+    if(added>=10) break;
+    map.set(code,{...x,code,source:'watchlist-top10'});
+    added++;
+  }
   state.stockMap=map;
   const sel=$('#stockSelect');
-  const items=[...map.values()].sort((a,b)=>(a.rank??999)-(b.rank??999)||String(a.code).localeCompare(String(b.code)));
-  sel.innerHTML=items.map(x=>'<option value="'+escapeHtml(x.code)+'">'+escapeHtml(x.code+' '+x.name)+'</option>').join('');
+  const items=[...map.values()].sort((a,b)=>{
+    if(a.holding!==b.holding) return a.holding?-1:1;
+    if(a.holding&&b.holding) return String(a.code).localeCompare(String(b.code));
+    return (a.rank??999)-(b.rank??999);
+  });
+  sel.innerHTML=items.map(x=>'<option value="'+escapeHtml(x.code)+'">'+escapeHtml((x.holding?'★ ':'')+x.code+' '+x.name)+'</option>').join('');
 }
 function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 async function loadDetail(code){try{return await json('./data/'+encodeURIComponent(code)+'.json')}catch(e){return null}}
@@ -100,7 +117,9 @@ async function select(code){
   status(state.code+' 詳細データ読込中…');const detail=await loadDetail(state.code);state.detail=detail;
   renderHeader(state.code,meta,detail);renderQuote(state.code,detail);renderCredit(detail);renderValuation(detail);renderAi(state.code,meta);
   const u=new URL(location.href);u.searchParams.set('code',state.code);history.replaceState(null,'',u);
-  const parts=[state.watch?.asOf&&'候補 '+state.watch.asOf,state.quotes?.asOf&&'株価 '+state.quotes.asOf,detail?.source?.label&&'詳細 '+detail.source.label].filter(Boolean);
+  const heldCount=(state.holdings?.positions||[]).length;
+  const extraCount=Math.max(0,state.stockMap.size-heldCount);
+  const parts=['対象 '+state.stockMap.size+'銘柄（保有'+heldCount+'＋市場情報部上位'+extraCount+'）',state.watch?.asOf&&'候補 '+state.watch.asOf,state.quotes?.asOf&&'株価 '+state.quotes.asOf,detail?.source?.label&&'詳細 '+detail.source.label].filter(Boolean);
   status(parts.join(' / ')||'データソース未取得');
 }
 async function load(){
@@ -108,7 +127,10 @@ async function load(){
   const r=await Promise.allSettled([json(paths.watch),json(paths.holdings),json(paths.quotes)]);
   state.watch=r[0].status==='fulfilled'?r[0].value:null;state.holdings=r[1].status==='fulfilled'?r[1].value:null;state.quotes=r[2].status==='fulfilled'?r[2].value:null;
   mergeUniverse();
-  const q=new URLSearchParams(location.search).get('code');const code=state.stockMap.has(q)?q:(q||'7974');
+  const q=new URLSearchParams(location.search).get('code');
+  const firstHolding=(state.holdings?.positions||[])[0]?.code;
+  const defaultCode=firstHolding?String(firstHolding):([...(state.stockMap.keys())][0]||'285A');
+  const code=state.stockMap.has(q)?q:(q||defaultCode);
   if(!state.stockMap.has(code)){state.stockMap.set(code,{code,name:code});const o=document.createElement('option');o.value=code;o.textContent=code;$('#stockSelect').appendChild(o)}
   await select(code);
 }
