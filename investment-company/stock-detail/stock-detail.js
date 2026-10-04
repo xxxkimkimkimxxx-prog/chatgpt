@@ -66,7 +66,7 @@ function renderQuote(code,detail){
 function balanceText(v){return Number.isFinite(Number(v))?fmt(v,1)+'万株':'—'}
 function renderCredit(detail){
   const c=detail?.credit||{};
-  setText('#creditRatio',Number.isFinite(Number(c.ratio))?Number(c.ratio).toFixed(2):'—');
+  setText('#creditRatio',c.ratio!=null&&Number.isFinite(Number(c.ratio))?Number(c.ratio).toFixed(2):'—');
   setText('#creditAsOf',c.asOf?c.asOf+' 時点':'未取得');
   setText('#buyBalance',balanceText(c.buyBalance10k));setText('#sellBalance',balanceText(c.sellBalance10k));
   setText('#buyChange',c.buyChange13wPct==null?'13週比 未取得':'13週比 '+pct(c.buyChange13wPct));
