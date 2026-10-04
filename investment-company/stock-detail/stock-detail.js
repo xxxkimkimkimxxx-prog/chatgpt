@@ -54,7 +54,7 @@ function renderQuote(code,detail){
   setText('#price',price==null?'未取得':fmt(price)+(detail?.price?.unit||'円'));
   setText('#currentPriceLabel',price==null?'—':fmt(price)+'円');
   setText('#change',q?pct(q.changePct):'—');setChange('#change',q?.changePct);
-  setText('#volume',q?.volume!=null?fmt(q.volume)+'株':'—');
+  const vol=numberOrNull(q?.volume??detail?.price?.volume);setText('#volume',vol==null?'—':fmt(vol)+'株');
   setText('#quoteAsOf',q?.observedAt?'株価 '+q.observedAt:(detail?.price?.asOf||'株価未取得'));
   const div=numberOrNull(detail?.fundamentals?.dividendPerShare),dy=numberOrNull(detail?.fundamentals?.dividendYield);
   setText('#dividend',div==null?'—':fmt(div,detail?.fundamentals?.dividendDecimals||0)+'円');
@@ -71,7 +71,7 @@ function renderCredit(detail){
   setText('#buyBalance',balanceText(c.buyBalance10k));setText('#sellBalance',balanceText(c.sellBalance10k));
   setText('#buyChange',c.buyChange13wPct==null?'13週比 未取得':'13週比 '+pct(c.buyChange13wPct));
   setText('#sellChange',c.sellChange13wPct==null?'13週比 未取得':'13週比 '+pct(c.sellChange13wPct));
-  const rr=c.ratioRange2y||{};
+  const rr=c.ratioRange||c.ratioRange2y||{};
   setText('#ratioRangeText',(rr.min!=null&&rr.max!=null)?Number(rr.min).toFixed(2)+' ～ '+Number(rr.max).toFixed(2)+'倍':'—');
   setText('#ratioMin',rr.min!=null?'最低 '+Number(rr.min).toFixed(2)+'倍':'最低 —');
   setText('#ratioMax',rr.max!=null?'最高 '+Number(rr.max).toFixed(2)+'倍':'最高 —');
@@ -90,14 +90,14 @@ function renderChart(rows,scope){
   if(!Array.isArray(rows)||rows.length<2){svg.innerHTML='';empty.classList.remove('hidden');setText('#creditScope','時系列未接続');return}
   empty.classList.add('hidden');setText('#creditScope',scope||rows.length+'公表日');
   const W=780,H=250,pL=48,pR=48,pT=20,pB=30;
-  const buys=rows.map(x=>Number(x.buyBalance10k)||0),sells=rows.map(x=>Number(x.sellBalance10k)||0),rats=rows.map(x=>Number(x.ratio)||0);
-  const maxBal=Math.max(1,...buys,...sells)*1.12,maxRat=Math.max(1,...rats)*1.15;
+  const buys=rows.map(x=>Number(x.buyBalance10k)||0),sells=rows.map(x=>Number(x.sellBalance10k)||0),rats=rows.map(x=>x.ratio==null?null:Number(x.ratio));
+  const finiteRats=rats.filter(Number.isFinite);const maxBal=Math.max(1,...buys,...sells)*1.12,maxRat=Math.max(1,...finiteRats)*1.15;
   const x=i=>pL+i*(W-pL-pR)/(rows.length-1), yBal=v=>H-pB-(v/maxBal)*(H-pT-pB), yRat=v=>H-pB-(v/maxRat)*(H-pT-pB);
-  const path=(arr,fn)=>arr.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+fn(v).toFixed(1)).join(' ');
+  const path=(arr,fn)=>arr.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+fn(v).toFixed(1)).join(' ');const nullablePath=(arr,fn)=>{let d='',open=false;arr.forEach((v,i)=>{if(!Number.isFinite(v)){open=false;return}d+=(open?'L':'M')+x(i).toFixed(1)+' '+fn(v).toFixed(1)+' ';open=true});return d.trim()};
   let g='';
   for(let i=0;i<5;i++){const yy=pT+i*(H-pT-pB)/4;g+='<line x1="'+pL+'" y1="'+yy+'" x2="'+(W-pR)+'" y2="'+yy+'" stroke="#e5eaf1" stroke-width="1"/><text x="4" y="'+(yy+4)+'" font-size="9" fill="#7b8796">'+fmt(maxBal*(1-i/4),0)+'</text><text x="'+(W-42)+'" y="'+(yy+4)+'" font-size="9" fill="#8057c9">'+(maxRat*(1-i/4)).toFixed(1)+'</text>'}
   const labels=rows.map((r,i)=>{if(rows.length>8&&i%2&&i!==rows.length-1)return'';return '<text x="'+x(i)+'" y="'+(H-7)+'" text-anchor="middle" font-size="9" fill="#7b8796">'+escapeHtml(String(r.date||'').slice(5))+'</text>'}).join('');
-  svg.innerHTML=g+'<path d="'+path(buys,yBal)+'" fill="none" stroke="#2f69c7" stroke-width="3"/><path d="'+path(sells,yBal)+'" fill="none" stroke="#df5f69" stroke-width="2.5"/><path d="'+path(rats,yRat)+'" fill="none" stroke="#8057c9" stroke-width="2.5" stroke-dasharray="7 5"/>'+labels;
+  const rp=nullablePath(rats,yRat);svg.innerHTML=g+'<path d="'+path(buys,yBal)+'" fill="none" stroke="#2f69c7" stroke-width="3"/><path d="'+path(sells,yBal)+'" fill="none" stroke="#df5f69" stroke-width="2.5"/>'+(rp?'<path d="'+rp+'" fill="none" stroke="#8057c9" stroke-width="2.5" stroke-dasharray="7 5"/>':'')+labels;
 }
 function renderValuation(detail){
   const rows=detail?.valuation||[];const wrap=$('#valuationRows'),empty=$('#valuationEmpty');
