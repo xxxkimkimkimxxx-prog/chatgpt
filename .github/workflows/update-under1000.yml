@@ -1,0 +1,67 @@
+name: Update TSE under-1000 screener
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 7 * * 1-5"
+  push:
+    branches: ["main"]
+    paths:
+      - "stock-dashboard/scripts/build_under1000.py"
+      - ".github/workflows/update-under1000.yml"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install market-data dependencies
+        run: pip install --disable-pip-version-check pandas numpy requests yfinance xlrd
+
+      - name: Build screener dataset
+        run: python stock-dashboard/scripts/build_under1000.py
+
+      - name: Commit updated dataset
+        shell: bash
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add stock-dashboard/data/under1000.json
+          if git diff --cached --quiet; then
+            echo "No data change"
+          else
+            git commit -m "data: update TSE under-1000 screener"
+            git push
+          fi
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: "."
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
