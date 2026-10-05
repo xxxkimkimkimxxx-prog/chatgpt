@@ -1,22 +1,22 @@
 {
-  "asOf": "2026-10-01 15:35 JST",
-  "status": "after_close_position_snapshot",
-  "targetSession": "2026-10-02",
+  "asOf": "2026-10-05 19:32 JST",
+  "status": "after_close_position_update",
+  "targetSession": "2026-10-06",
   "newsAsOf": "2026-09-12 16:01 JST",
-  "marketSummary": "2026-10-01大引け後のiSPEED保有スナップショットを同期。AnyMindは600株・平均取得811.66円へ更新。キオクシアは1:3株式分割後の3株・実質平均取得19,292.6667円を正式反映。",
-  "marketStance": "本更新はユーザー提供iSPEED画像によるポジション同期。",
-  "portfolioTotalUnrealizedPnl": -33779,
-  "portfolioPnlBasis": "iSPEED broker-reported portfolio unrealized P/L at 2026-10-01 15:35 JST.",
-  "todayRealizedPnl": 5710,
-  "todayRealizedPnlStatus": "Nexon iSPEED 2026-09-15 17:21 screenshot confirmed; other unreported Sep15 P/L treated as 0 per user instruction.",
+  "marketSummary": "2026-10-05大引け後のポジション同期。キオクシアHD 3株を19,641円で全売却し、保有から除外。iSPEED確定実現損益は+1,044円。残存保有は5銘柄。",
+  "marketStance": "本更新はユーザー提供iSPEED画像による売却・損益同期。",
+  "portfolioTotalUnrealizedPnl": null,
+  "portfolioPnlBasis": "Kioxia full sale reflected; remaining five-position unrealized P/L requires a fresh market-price refresh.",
+  "todayRealizedPnl": 1044,
+  "todayRealizedPnlStatus": "iSPEED-confirmed +1,044 yen on 2026-10-05.",
   "todayClosedTrades": [
     {
-      "code": "3659",
-      "name": "ネクソン",
-      "qty": 200,
-      "averageCost": 3146.45,
-      "sellPrice": 3175,
-      "realizedPnl": 5710,
+      "code": "285A",
+      "name": "キオクシアホールディングス",
+      "qty": 3,
+      "averageCost": 19292.6666666667,
+      "sellPrice": 19641,
+      "realizedPnl": 1044,
       "positionAfter": 0
     }
   ],
@@ -40,8 +40,8 @@
     }
   ],
   "nextWatch": [
+    "キオクシアHDは3株を19,641円で全売却済み。以後、保有レビュー・評価損益集計から除外。",
     "AnyMindは600株@811.66円に更新。10/1終値828円で含み益圏。",
-    "キオクシアは株式分割後3株@19,292.6667円として正式管理。",
     "JX金属は100株@3,902円、10/1 15:35時点3,605円で最大のマイナス寄与。",
     "iSPEED表示のポートフォリオ評価損益合計は-33,779円。表示値からの単純再計算との差5円は平均取得単価の内部精度/丸め差と扱う。"
   ],
@@ -57,16 +57,6 @@
     "candidates": []
   },
   "holdingsUpdate": [
-    {
-      "code": "285A",
-      "name": "キオクシアホールディングス",
-      "observedAt": "2026-10-01 15:35 JST",
-      "price": 19100,
-      "averageCost": 19292.6666666667,
-      "quantity": 3,
-      "unrealizedPnl": -578,
-      "stance": "株式分割後3株として正式管理。"
-    },
     {
       "code": "2926",
       "name": "篠崎屋",
@@ -120,8 +110,16 @@
   ],
   "latestNews": [],
   "lessons": [
+    "2026-10-05、キオクシアHD 3株を19,641円で全売却。iSPEED確定実現損益+1,044円。",
     "2026-10-01のiSPEED画像に基づきAnyMind保有を400株@830.5円から600株@811.66円へ更新。",
-    "AnyMind追加200株の個別約定価格は画像から確定できないため、推定約定価格を正式なexecutionとしては登録しない。",
-    "キオクシア1:3株式分割後の保有を3株へ正規化。"
+    "AnyMind追加200株の個別約定価格は画像から確定できないため、推定約定価格を正式なexecutionとしては登録しない。"
+  ],
+  "octoberRealizedPnl": 1044,
+  "octoberDailyKey": [
+    {
+      "date": "2026-10-05",
+      "pnl": 1044,
+      "status": "confirmed"
+    }
   ]
 }
