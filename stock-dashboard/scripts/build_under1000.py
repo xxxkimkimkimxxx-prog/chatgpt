@@ -9,14 +9,31 @@ import pandas as pd
 import requests
 import yfinance as yf
 
-JPX_URL = "https://www.jpx.co.jp/markets/statistics-equities/misc/tvdivq0000001vg2-att/data_j.xls"
+JPX_INDEX = "https://www.jpx.co.jp/markets/statistics-equities/misc/01.html"
 OUT = Path("stock-dashboard/data/under1000.json")
 JST = ZoneInfo("Asia/Tokyo")
 
 def read_universe():
-    r = requests.get(JPX_URL, timeout=60, headers={"User-Agent":"Mozilla/5.0"})
+    from bs4 import BeautifulSoup
+    from urllib.parse import urljoin
+    headers={"User-Agent":"Mozilla/5.0"}
+    idx=requests.get(JPX_INDEX,timeout=60,headers=headers)
+    idx.raise_for_status()
+    soup=BeautifulSoup(idx.text,"html.parser")
+    candidates=[]
+    for a in soup.select("a[href]"):
+        href=a.get("href","")
+        txt=a.get_text(" ",strip=True)
+        if ("data_j" in href and (".xls" in href or ".xlsx" in href)) or ("東証上場銘柄一覧" in txt and (".xls" in href or ".xlsx" in href)):
+            candidates.append(urljoin(JPX_INDEX,href))
+    if not candidates:
+        raise RuntimeError("JPX listed-issues Excel link was not found")
+    excel_url=candidates[0]
+    print("JPX universe:",excel_url)
+    r=requests.get(excel_url,timeout=60,headers=headers)
     r.raise_for_status()
-    df = pd.read_excel(io.BytesIO(r.content), dtype=str, engine="xlrd")
+    engine="xlrd" if excel_url.lower().split("?")[0].endswith(".xls") else None
+    df=pd.read_excel(io.BytesIO(r.content),dtype=str,engine=engine)
     df.columns = [str(c).strip() for c in df.columns]
     def col(part):
         hits=[c for c in df.columns if part in c]
