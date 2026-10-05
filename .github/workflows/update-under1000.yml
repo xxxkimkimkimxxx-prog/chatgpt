@@ -35,7 +35,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install market-data dependencies
-        run: pip install --disable-pip-version-check pandas numpy requests yfinance xlrd
+        run: pip install --disable-pip-version-check pandas numpy requests yfinance xlrd openpyxl
 
       - name: Build screener dataset
         run: python stock-dashboard/scripts/build_under1000.py
