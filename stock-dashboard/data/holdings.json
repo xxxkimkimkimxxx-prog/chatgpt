@@ -1,23 +1,8 @@
 {
-  "asOf": "2026-10-01 15:35 JST",
-  "positionAsOf": "2026-10-01 15:35 JST",
-  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings. Sep18 GO and Solasia full sales confirmed from user screenshots. Sep29 Clasus Chemical trade confirmed from user-supplied iSPEED screenshots: bought 1,500 shares at average 230 yen and sold all 1,500 shares at average 232 yen, realized P/L +3,000 yen. No Clasus position carried overnight. Kioxia 1-for-3 stock split effective Sep29 is reflected in economic valuation but legacy position fields are retained pending canonical position normalization. Sep30 user-supplied iSPEED screenshots confirm Clasus Chemical 1,500 shares at average acquisition cost 277 yen, sold at 279 yen (1,400 + 100 shares), realized P/L +3,000 yen; no carry. Oct1 user-supplied iSPEED holdings screenshot confirms canonical post-split Kioxia position 3 shares at effective average 19,292.6667 yen, AnyMind increased to 600 shares at displayed average 811.66 yen, and broker-reported total unrealized P/L -33,779 yen at 15:35.",
+  "asOf": "2026-10-05 19:32 JST",
+  "positionAsOf": "2026-10-05 19:32 JST",
+  "source": "Position sizes/average costs from prior iSPEED-confirmed holdings. Sep18 GO and Solasia full sales confirmed from user screenshots. Sep29 Clasus Chemical trade confirmed from user-supplied iSPEED screenshots: bought 1,500 shares at average 230 yen and sold all 1,500 shares at average 232 yen, realized P/L +3,000 yen. No Clasus position carried overnight. Kioxia 1-for-3 stock split effective Sep29 is reflected in economic valuation but legacy position fields are retained pending canonical position normalization. Sep30 user-supplied iSPEED screenshots confirm Clasus Chemical 1,500 shares at average acquisition cost 277 yen, sold at 279 yen (1,400 + 100 shares), realized P/L +3,000 yen; no carry. Oct1 user-supplied iSPEED holdings screenshot confirms canonical post-split Kioxia position 3 shares at effective average 19,292.6667 yen, AnyMind increased to 600 shares at displayed average 811.66 yen, and broker-reported total unrealized P/L -33,779 yen at 15:35. Oct5 user-supplied iSPEED realized-P/L screenshot confirms full sale of Kioxia Holdings: 3 shares sold at 19,641 yen, realized P/L +1,044 yen. Position after sale: 0.",
   "positions": [
-    {
-      "code": "285A",
-      "name": "キオクシアホールディングス",
-      "quantity": 3,
-      "averageCost": 19292.6666666667,
-      "corporateAction": {
-        "type": "stock_split",
-        "effectiveDate": "2026-09-29",
-        "ratio": "1:3",
-        "preSplitQuantity": 1,
-        "preSplitAverageCost": 57878
-      },
-      "referencePrice": 19100,
-      "management": "2026-09-29の1:3株式分割を正式反映。3株保有。"
-    },
     {
       "code": "2926",
       "name": "篠崎屋",
@@ -62,22 +47,35 @@
   "openTransactionsToday": [],
   "closedToday": [
     {
-      "code": "646A",
-      "name": "クラサスケミカル",
-      "quantity": 1500,
-      "averageCost": 277,
-      "buyPrice": 277,
-      "buyAmount": 415500,
-      "sellPrice": 279,
-      "sellAmount": 418500,
-      "realizedPnl": 3000,
+      "code": "285A",
+      "name": "キオクシアホールディングス",
+      "quantity": 3,
+      "averageCost": 19292.6666666667,
+      "sellPrice": 19641,
+      "sellAmount": 58923,
+      "realizedPnl": 1044,
       "status": "closed",
       "market": "TSE",
-      "realizedPnlDate": "2026-09-30",
-      "note": "1,400 shares + 100 shares sold at 279 yen; iSPEED realized P/L total +3,000 yen. No carry."
+      "realizedPnlDate": "2026-10-05",
+      "positionAfter": 0,
+      "note": "iSPEED confirmed realized P/L +1,044 yen. Simple price-difference calculation differs by 1 yen due to broker precision/rounding; iSPEED is authoritative."
     }
   ],
   "recentClosedTransactions": [
+    {
+      "code": "285A",
+      "name": "キオクシアホールディングス",
+      "quantity": 3,
+      "averageCost": 19292.6666666667,
+      "sellPrice": 19641,
+      "sellAmount": 58923,
+      "realizedPnl": 1044,
+      "status": "closed",
+      "market": "TSE",
+      "realizedPnlDate": "2026-10-05",
+      "positionAfter": 0,
+      "note": "iSPEED confirmed realized P/L +1,044 yen. Simple price-difference calculation differs by 1 yen due to broker precision/rounding; iSPEED is authoritative."
+    },
     {
       "code": "646A",
       "name": "クラサスケミカル",
@@ -167,10 +165,10 @@
       "realizedPnlDate": "2026-09-15"
     }
   ],
-  "confirmedRealizedPnlToday": 3000,
-  "confirmedRealizedPnlDate": "2026-09-30",
+  "confirmedRealizedPnlToday": 1044,
+  "confirmedRealizedPnlDate": "2026-10-05",
   "confirmedRealizedPnlBreakdown": {
-    "646A": 3000
+    "285A": 1044
   },
   "confirmedSeptemberRealizedPnlKnown": 27320,
   "confirmedSeptemberRealizedPnlCoverageNote": "Known September realized P/L through Sep30 totals +27,320 yen: Sep9 +6,100; Sep13 -690; Sep15 +5,710; Sep18 +10,200; Sep29 +3,000; Sep30 +3,000. Sep30 confirmed from iSPEED: Clasus Chemical +3,000.",
@@ -272,11 +270,21 @@
       "note": "Clasus Chemical 1,500 shares, avg acquisition 277 yen, sold 279 yen; iSPEED realized P/L +3,000."
     }
   ],
-  "derivedPortfolioUnrealizedPnl": -33774,
-  "derivedPortfolioUnrealizedPnlBasis": "Derived from displayed per-position quantities, displayed average costs and prices in the 2026-10-01 15:35 iSPEED screenshot. Broker reports -33,779 yen total; 5-yen difference is attributable to hidden average-cost precision/rounding.",
+  "derivedPortfolioUnrealizedPnl": null,
+  "derivedPortfolioUnrealizedPnlBasis": "Kioxia removed after confirmed full sale on Oct5. Refresh remaining five positions with current market prices for a new portfolio unrealized P/L.",
   "estimatedPortfolioCost": null,
   "estimatedPortfolioMarketValue": null,
   "ruleReference": "data/trading-rules.json",
-  "brokerReportedPortfolioUnrealizedPnl": -33779,
-  "brokerReportedPortfolioUnrealizedPnlAsOf": "2026-10-01 15:35 JST"
+  "brokerReportedPortfolioUnrealizedPnl": null,
+  "brokerReportedPortfolioUnrealizedPnlAsOf": null,
+  "confirmedOctoberRealizedPnlKnown": 1044,
+  "confirmedOctoberRealizedPnlCoverageNote": "Known October realized P/L through Oct5: +1,044 yen, from full sale of Kioxia Holdings 3 shares at 19,641 yen. iSPEED realized P/L is authoritative.",
+  "dailyRealizedPnlOctober": [
+    {
+      "date": "2026-10-05",
+      "pnl": 1044,
+      "status": "confirmed",
+      "note": "Kioxia Holdings 3 shares fully sold at 19,641 yen; iSPEED realized P/L +1,044."
+    }
+  ]
 }
