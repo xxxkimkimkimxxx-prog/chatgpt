@@ -1,0 +1,15 @@
+{
+  "generatedAt": null,
+  "priceDate": null,
+  "universeAsOf": null,
+  "universeCount": 0,
+  "pricedUniverseCount": 0,
+  "rowsCount": 0,
+  "methodology": {
+    "price": "latest completed daily close available at update time",
+    "volatility": "std of daily adjusted-close returns × sqrt(252), annualized percent",
+    "score": "decile score 1-10 versus all TSE Prime/Standard/Growth domestic common stocks with calculable volatility",
+    "partialHistory": "stocks with fewer than ~220 observations are displayed as reference"
+  },
+  "rows": []
+}
