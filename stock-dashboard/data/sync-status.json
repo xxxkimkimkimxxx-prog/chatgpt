@@ -1,14 +1,23 @@
 {
-  "lastSyncedAtJST":"2026-09-15 17:22",
-  "trigger":"realized_pnl_correction_2026-09-15",
-  "triggerMessageSummary":"User clarified that unreported September days should provisionally be zero and that Sep13 alone carries -690 yen; Sep15 realized P/L is Nexon +5,710 yen.",
-  "updated":["data/holdings.json","data/performance-summary.json","data/current-view.json","data/sync-status.json"],
-  "status":"ready",
-  "primaryPage":"dashboard.html",
-  "latestStrategyPage":"latest.html",
-  "positionCount":6,
-  "todayConfirmedRealizedPnl":5710,
-  "septemberRealizedPnl":11120,
-  "remainingPortfolioUnrealizedPnl":-50718,
-  "note":"Daily attribution corrected: Sep9 +6,100; Sep13 -690; Sep15 +5,710; all other unreported September days through Sep15 provisionally 0. Nexon remains fully closed and excluded from holdings. September cumulative remains +11,120."
+  "lastSyncedAtJST": "2026-10-05 19:32",
+  "trigger": "confirmed_full_sale_285A_2026-10-05",
+  "triggerMessageSummary": "User supplied iSPEED screenshot confirming Kioxia Holdings 3-share full sale at 19,641 yen and realized P/L +1,044 yen.",
+  "updated": [
+    "data/holdings.json",
+    "data/performance-summary.json",
+    "data/current-view.json",
+    "data/executions.json",
+    "data/latest-review.json",
+    "data/sync-status.json"
+  ],
+  "status": "ready",
+  "primaryPage": "dashboard.html",
+  "latestStrategyPage": "latest.html",
+  "positionCount": 5,
+  "todayConfirmedRealizedPnl": 1044,
+  "septemberRealizedPnl": 11120,
+  "remainingPortfolioUnrealizedPnl": null,
+  "note": "Kioxia fully closed and excluded from holdings. Realized P/L uses iSPEED-confirmed +1,044 yen as authoritative. Remaining five-position unrealized P/L will be refreshed from market prices.",
+  "octoberRealizedPnl": 1044,
+  "confirmedCumulativeRealizedPnlKnownSinceAug1": 99064
 }
