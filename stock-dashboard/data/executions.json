@@ -1,5 +1,5 @@
 {
-  "source": "iSPEED screenshots supplied by user; historical executions plus confirmed later executions.",
+  "source": "iSPEED screenshots supplied by user; historical executions plus confirmed later executions. Oct14 iSPEED order inquiry confirms JX Metals additional buy 100 shares at 3,490 yen.",
   "officialRealizedPnl": 42500,
   "executions": [
     {
@@ -813,6 +813,17 @@
       "confirmedPnl": 1044,
       "positionAfter": 0,
       "note": "iSPEED-confirmed realized P/L; fee/rounding not inferred."
+    },
+    {
+      "no": 73,
+      "date": "2026-10-14",
+      "code": "5016",
+      "name": "JX金属",
+      "side": "buy",
+      "qty": 100,
+      "price": 3490,
+      "amount": 349000,
+      "note": "iSPEED order inquiry shows 約定. Resulting holdings screenshot shows 200 shares at average acquisition 3,696 yen."
     }
   ]
 }
