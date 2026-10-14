@@ -1,25 +1,15 @@
 {
-  "asOf": "2026-10-05 19:32 JST",
+  "asOf": "2026-10-14 21:47 JST",
   "status": "after_close_position_update",
-  "targetSession": "2026-10-06",
+  "targetSession": "2026-10-15",
   "newsAsOf": "2026-09-12 16:01 JST",
-  "marketSummary": "2026-10-05大引け後のポジション同期。キオクシアHD 3株を19,641円で全売却し、保有から除外。iSPEED確定実現損益は+1,044円。残存保有は5銘柄。",
-  "marketStance": "本更新はユーザー提供iSPEED画像による売却・損益同期。",
-  "portfolioTotalUnrealizedPnl": null,
-  "portfolioPnlBasis": "Kioxia full sale reflected; remaining five-position unrealized P/L requires a fresh market-price refresh.",
-  "todayRealizedPnl": 1044,
-  "todayRealizedPnlStatus": "iSPEED-confirmed +1,044 yen on 2026-10-05.",
-  "todayClosedTrades": [
-    {
-      "code": "285A",
-      "name": "キオクシアホールディングス",
-      "qty": 3,
-      "averageCost": 19292.6666666667,
-      "sellPrice": 19641,
-      "realizedPnl": 1044,
-      "positionAfter": 0
-    }
-  ],
+  "marketSummary": "2026-10-14大引け後のiSPEED同期。JX金属を100株@3,490円で追加し、200株@平均3,696円へ更新。ソレイジアは3,000株@表示平均28.66円を保有。保有6銘柄のiSPEED表示評価損益合計は-66,059円。",
+  "marketStance": "ポジション同期。JX金属のナンピンで平均取得単価は3,902円→3,696円に低下したが、200株となり価格感応度は1円あたり200円。ソレイジアの32円売注文は未約定のため保有継続。",
+  "portfolioTotalUnrealizedPnl": -66059,
+  "portfolioPnlBasis": "iSPEED broker-reported total unrealized P/L at 2026-10-14 close; authoritative over arithmetic differences caused by displayed average-cost precision.",
+  "todayRealizedPnl": null,
+  "todayRealizedPnlStatus": "No 2026-10-14 realized P/L evidence supplied; not inferred from holdings/order screenshots.",
+  "todayClosedTrades": [],
   "septemberRealizedPnl": 11120,
   "septemberPnlPolicy": "Unreported days through Sep15 are provisionally 0 unless later corrected; Sep13 is -690 by explicit user correction.",
   "septemberDailyKey": [
@@ -40,10 +30,9 @@
     }
   ],
   "nextWatch": [
-    "キオクシアHDは3株を19,641円で全売却済み。以後、保有レビュー・評価損益集計から除外。",
-    "AnyMindは600株@811.66円に更新。10/1終値828円で含み益圏。",
-    "JX金属は100株@3,902円、10/1 15:35時点3,605円で最大のマイナス寄与。",
-    "iSPEED表示のポートフォリオ評価損益合計は-33,779円。表示値からの単純再計算との差5円は平均取得単価の内部精度/丸め差と扱う。"
+    "JX金属：200株@3,696円。10/14終値3,460円、評価損-47,200円。1円変動で200円、100円変動で2万円動く。",
+    "ソレイジア：3,000株@表示平均28.66円。10/14終値27円、iSPEED評価損-4,999円。32円売注文は未約定。",
+    "ポートフォリオ全体：iSPEED評価損益-66,059円。JX金属が最大のマイナス寄与。"
   ],
   "capitalFlow": [],
   "daytrade": {
@@ -60,51 +49,61 @@
     {
       "code": "2926",
       "name": "篠崎屋",
-      "observedAt": "2026-10-01 15:35 JST",
-      "price": 110,
+      "observedAt": "2026-10-14 21:47 JST",
+      "price": 107,
       "averageCost": 119,
       "quantity": 1000,
-      "unrealizedPnl": -9000,
-      "stance": "低流動性。資金回収候補。"
+      "unrealizedPnl": -12000,
+      "stance": "保有継続。"
+    },
+    {
+      "code": "4597",
+      "name": "ソレイジア・ファーマ",
+      "observedAt": "2026-10-14 21:47 JST",
+      "price": 27,
+      "averageCost": 28.66,
+      "quantity": 3000,
+      "unrealizedPnl": -4999,
+      "stance": "3,000株保有。32円売注文は未約定のためポジション変更なし。"
     },
     {
       "code": "5016",
       "name": "JX金属",
-      "observedAt": "2026-10-01 15:35 JST",
-      "price": 3605,
-      "averageCost": 3902,
-      "quantity": 100,
-      "unrealizedPnl": -29700,
-      "stance": "縮小レビュー継続。"
+      "observedAt": "2026-10-14 21:47 JST",
+      "price": 3460,
+      "averageCost": 3696,
+      "quantity": 200,
+      "unrealizedPnl": -47200,
+      "stance": "100株@3,490円の追加買いを反映。平均3,696円。追加ナンピンはリスク集中に注意。"
     },
     {
       "code": "5027",
       "name": "ANYMIND GROUP",
-      "observedAt": "2026-10-01 15:35 JST",
-      "price": 828,
+      "observedAt": "2026-10-14 21:47 JST",
+      "price": 817,
       "averageCost": 811.66,
       "quantity": 600,
-      "unrealizedPnl": 9804,
-      "stance": "600株へ更新。個別約定価格未確認のため平均取得単価811.66円を正本として管理。"
+      "unrealizedPnl": 3200,
+      "stance": "保有継続。"
     },
     {
       "code": "8518",
       "name": "日本アジア投資",
-      "observedAt": "2026-10-01 15:35 JST",
-      "price": 147,
+      "observedAt": "2026-10-14 21:47 JST",
+      "price": 141,
       "averageCost": 162,
       "quantity": 200,
-      "unrealizedPnl": -3000,
-      "stance": "優先資金回収候補。"
+      "unrealizedPnl": -4200,
+      "stance": "保有継続。"
     },
     {
       "code": "9432",
       "name": "NTT",
-      "observedAt": "2026-10-01 15:35 JST",
-      "price": 170.3,
+      "observedAt": "2026-10-14 21:47 JST",
+      "price": 172.5,
       "averageCost": 176.8,
       "quantity": 200,
-      "unrealizedPnl": -1300,
+      "unrealizedPnl": -860,
       "stance": "保有継続。"
     }
   ],
@@ -112,7 +111,9 @@
   "lessons": [
     "2026-10-05、キオクシアHD 3株を19,641円で全売却。iSPEED確定実現損益+1,044円。",
     "2026-10-01のiSPEED画像に基づきAnyMind保有を400株@830.5円から600株@811.66円へ更新。",
-    "AnyMind追加200株の個別約定価格は画像から確定できないため、推定約定価格を正式なexecutionとしては登録しない。"
+    "AnyMind追加200株の個別約定価格は画像から確定できないため、推定約定価格を正式なexecutionとしては登録しない。",
+    "2026-10-14、JX金属を100株@3,490円で追加買い。保有200株、平均取得3,696円へ更新。",
+    "2026-10-14、ソレイジアの保有スナップショットを3,000株@表示平均28.66円へ更新。32円売注文は未約定。"
   ],
   "octoberRealizedPnl": 1044,
   "octoberDailyKey": [
