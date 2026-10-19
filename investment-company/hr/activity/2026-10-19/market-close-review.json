@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-19",
+  "session": "close-review",
+  "asOf": "2026-10-19T16:38:00+09:00",
+  "status": "research_complete_write_attempted",
+  "market": {
+    "nikkeiClose": 64916.7,
+    "nikkeiChangePct": -0.62,
+    "topixClose": 4067.48,
+    "topixChangePct": 0.04
+  },
+  "audit": {
+    "morningGithubReport": false,
+    "morningGithubActivity": false,
+    "previousCloseGithubActivity": false
+  },
+  "dataLimitations": [
+    "Morning GitHub record missing; reconstructed from morning conversation",
+    "Five focal candidates reviewed; full 31-candidate audit incomplete",
+    "VWAP and prime aggregate turnover unavailable"
+  ]
+}
