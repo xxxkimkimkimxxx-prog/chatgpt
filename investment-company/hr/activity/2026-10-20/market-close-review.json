@@ -1,1 +1,90 @@
-{"date":"2026-10-20","status":"review_completed","summary":"Market fell, intraday conditions not verified"}
+{
+  "date": "2026-10-20",
+  "session": "market-close-review",
+  "asOf": "16:34 JST",
+  "market": {
+    "nikkeiClose": 64075.4,
+    "nikkeiPct": -1.3,
+    "topixClose": 4009.21,
+    "topixPct": -1.43,
+    "industryUp": 9,
+    "industryDown": 24
+  },
+  "verdicts": [
+    {
+      "code": "3635",
+      "prevPct": 3.75,
+      "openToClosePct": 1.46,
+      "result": "一部的中",
+      "reason": "好材料で上昇、実際の買い条件成立は未検証"
+    },
+    {
+      "code": "6857",
+      "prevPct": -1.68,
+      "openToClosePct": -1.68,
+      "result": "外れ",
+      "reason": "米SOX反発に反し日本半導体が失速"
+    },
+    {
+      "code": "6658",
+      "prevPct": 18.1,
+      "openToClosePct": 0,
+      "result": "一部的中",
+      "reason": "一値ストップ高、買えたか不明"
+    },
+    {
+      "code": "7417",
+      "prevPct": 3.51,
+      "openToClosePct": -3.07,
+      "result": "一部的中",
+      "reason": "GU後に失速、薄商いリスクが顕在化"
+    },
+    {
+      "code": "485A",
+      "prevPct": -7.55,
+      "openToClosePct": -6.62,
+      "result": "外れ",
+      "reason": "受注実需は確認済みでも株価は続落"
+    }
+  ],
+  "learning": [
+    "SOX反発のみで日本半導体を強気判断しない",
+    "前日比と始値比を分ける",
+    "S高一値と薄板GUは執行可能性を別評価"
+  ],
+  "limitations": [
+    "7:30レポートは事後復元のため正式な事前予測成績に算入しない",
+    "9:10のVWAP/板/スプレッド履歴なし",
+    "約定記録なし"
+  ],
+  "agents": [
+    {
+      "agentId": 26,
+      "title": "成績分析",
+      "taskPerformed": "始値比と前日比、約定可能性を区別",
+      "novelContribution": "前日比プラス3/5を勝率として扱わない",
+      "decisionImpact": "明日からGU失速・同業不一致を強く減点",
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 31,
+      "title": "人事監査",
+      "taskPerformed": "朝の事後復元と役割帰属の独立性を監査",
+      "novelContribution": "個別エージェントの独立実行は立証されていないと明示",
+      "decisionImpact": "人事の正式採点を保留",
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "sources": [
+    "https://news.kobekeizai.jp/blog-entry-23695.html",
+    "https://s.kabutan.jp/news/n202610200834/",
+    "https://finance.matsui.co.jp/news/629092/index",
+    "https://finance.yahoo.co.jp/quote/3635.T",
+    "https://finance.yahoo.co.jp/quote/6857.T",
+    "https://finance.yahoo.co.jp/quote/6658.T",
+    "https://finance.yahoo.co.jp/quote/7417.T",
+    "https://finance.yahoo.co.jp/quote/485A.T"
+  ]
+}
