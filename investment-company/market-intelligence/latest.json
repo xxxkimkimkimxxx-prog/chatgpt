@@ -1,1 +1,23 @@
-{"date":"2026-10-01","asOf":"07:33 JST","status":"pre-open; no trade decision","marketStance":"Sep30 Nikkei 66,753.72 (+1,272.45). Micron record results and strong outlook reinforce AI-memory demand; high bond yields and oil remain macro risks.","topFresh":["8358 Suruga Bank","6332 Tsukishima HD","6331 Mitsubishi Kakoki","4022 Rasa Industries","6255 NPC"],"topStructuralThemes":["AI memory / semiconductor","selective financials","Fresh Catalyst","rates-oil crosscurrent"],"candidateCount":32,"holdingsBlind":true,"fullReportPath":"investment-company/market-intelligence/2026-10-01.json","newsFeedPath":"investment-company/news-feed/2026-10-01.json","dataLimitations":["TDnet all-PDF sweep incomplete","all-stock PTS not complete","07:33 order book/VWAP unavailable","real-time foreign flow/short/ETF flow unavailable","SOX exact Sep30 close not verified"]}
+{
+  "date": "2026-10-20",
+  "asOf": "07:30 JST (backfilled)",
+  "status": "pre-open; no trade decision; backfilled after missing scheduled write",
+  "marketStance": "Neutral-to-cautious: US NASDAQ +1.11% and SOX +1.6% support semiconductor rebound, but breadth remains limited; require 9:00-9:10 confirmation.",
+  "topFresh": [
+    "3635",
+    "6658",
+    "7417"
+  ],
+  "topStructuralThemes": [
+    "semiconductor rebound",
+    "battery storage demand"
+  ],
+  "candidateCount": 5,
+  "holdingsBlind": false,
+  "fullReportPath": "investment-company/market-intelligence/2026-10-20.json",
+  "dataLimitations": [
+    "07:30時点の原本レポートは存在せずbackfill",
+    "板・VWAPは寄り前取得不可",
+    "リアルタイム機関フロー未取得"
+  ]
+}
