@@ -1,1 +1,287 @@
-{"date":"2026-10-20","status":"audited","evidenceGap":["morning_backfilled","no_intraday_execution_data"]}
+{
+  "date": "2026-10-20",
+  "asOf": "16:34 JST",
+  "reviewerAgentId": 31,
+  "reviewerOf31": [
+    1,
+    2
+  ],
+  "selfEvaluation": false,
+  "agentEvidence": [
+    {
+      "agentId": 1,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 2,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 3,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 4,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 5,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 6,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 7,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 8,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 9,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 10,
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 11,
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 12,
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 13,
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 14,
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 15,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 16,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 17,
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 18,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 19,
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 20,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 21,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 22,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 23,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 24,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 25,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 26,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 27,
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 28,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 29,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 30,
+      "opportunityCount": 1,
+      "evidenceCount": 0,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 31,
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "backfilledCount": 0,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 32,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 33,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    },
+    {
+      "agentId": 34,
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "backfilledCount": 1,
+      "independentExecutionVerified": 0
+    }
+  ],
+  "sourceCounts": {
+    "morning": 12,
+    "daytrade": 23,
+    "closeReview": 2,
+    "rolesWithOpportunity": 26,
+    "rolesWithoutOpportunity": 8
+  },
+  "evidenceGap": [
+    "7:30朝原本は事後復元で独立した事前予測ではない",
+    "9:10の板・分足・VWAP履歴なし",
+    "約定ログなし",
+    "役割別ログは独立したAI社員の稼働証拠ではない",
+    "正規close-reviewの保存未完了"
+  ],
+  "processIssues": [
+    {
+      "code": "MORNING_BACKFILL",
+      "status": "recorded"
+    },
+    {
+      "code": "NINE_TEN_SNAPSHOT",
+      "status": "missing"
+    },
+    {
+      "code": "TRADE_EXECUTION",
+      "status": "missing"
+    },
+    {
+      "code": "CANONICAL_CLOSE_REVIEW",
+      "status": "save_failed"
+    }
+  ],
+  "formalGradesAssigned": false,
+  "nextWeeklyReview": "2026-10-26",
+  "noMaterialContributionRoles": [
+    30
+  ]
+}
