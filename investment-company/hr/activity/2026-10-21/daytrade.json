@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-21",
+  "asOf": "07:55 JST",
+  "committee": "daytrade",
+  "status": "preopen",
+  "agentIds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    15,
+    16,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    28,
+    29,
+    32,
+    33,
+    34
+  ],
+  "rankedCandidates": [
+    "7918",
+    "3635",
+    "8708",
+    "6857",
+    "3556"
+  ],
+  "previousCloseReview": "2026-10-20-close-review.json (backfilled)",
+  "morningReport": "partial",
+  "ordersPlaced": false,
+  "finalDecisionMaker": "user",
+  "activitySaveFailure": false
+}
