@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-20",
+  "asOf": "2026-10-20 07:30 JST (backfilled after 09:37 diagnosis)",
+  "session": "preopen-market-intelligence",
+  "backfilled": true,
+  "backfillReason": "Scheduled 07:30 report was absent from GitHub; reconstructed from 10/19 close review, 08:00 committee evidence, and verified inputs already used by the committee.",
+  "marketStance": "Neutral-to-cautious: US NASDAQ +1.11% and SOX +1.6% support semiconductor rebound, but breadth remains limited; require 9:00-9:10 confirmation.",
+  "strongWeakSectors": {
+    "stronger": [
+      "semiconductor rebound candidates",
+      "select Fresh Catalyst"
+    ],
+    "weakerOrUnconfirmed": [
+      "broad market breadth",
+      "thin-liquidity small caps"
+    ]
+  },
+  "topCandidates": [
+    {
+      "code": "3635",
+      "name": "コーエーテクモHD",
+      "bucket": "Fresh Catalyst",
+      "reason": "上期経常120→250億円。ただし運用益寄与と通期据置を精査"
+    },
+    {
+      "code": "6857",
+      "name": "アドバンテスト",
+      "bucket": "Continuation/Sector",
+      "reason": "SOX反発と前日日本市場の戻り。底打ちは未確認"
+    },
+    {
+      "code": "6658",
+      "name": "シライ電子工業",
+      "bucket": "Fresh Catalyst",
+      "reason": "通期経常倍増・増配。ただしPTS出来高1000株"
+    },
+    {
+      "code": "7417",
+      "name": "南陽",
+      "bucket": "Fresh Catalyst",
+      "reason": "上期上方修正。ただしPTS300株・通期据置"
+    },
+    {
+      "code": "485A",
+      "name": "パワーエックス",
+      "bucket": "Theme News",
+      "reason": "東海理化向け10MWh受注を公式IRで確認。受注額・利益率不明"
+    }
+  ],
+  "verificationPoints": [
+    "9:00-9:10初動高安/VWAP/出来高/売買代金",
+    "SOX反発に対する日本半導体同業の追随",
+    "6658/7417の板厚・スプレッド・実売買代金",
+    "485Aが前日寄り天パターンを繰り返さないか"
+  ],
+  "dataLimitations": [
+    "07:30時点の原本レポートは存在せずbackfill",
+    "板・VWAPは寄り前取得不可",
+    "リアルタイム機関フロー未取得"
+  ],
+  "sources": [
+    "investment-company/market-intelligence/2026-10-19-close-review.json",
+    "investment-company/decision-memos/2026-10-20/daytrade.md",
+    "Reuters 2026-10-19 US market/AI rebound",
+    "PowerX official IR 2026-10-19"
+  ]
+}
