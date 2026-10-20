@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-20",
+  "agentId": 26,
+  "title": "成績分析担当",
+  "taskPerformed": "朝の5候補を15:30終値・始値・高安・出来高・売買代金と照合",
+  "keyFindings": [
+    "前日比プラス3/5だが始値比プラス1/5、マイナス3/5、一値S高1/5",
+    "6857と485Aは弱気の終値",
+    "6658は約定不能の可能性があり勝ちとして扱えない"
+  ],
+  "novelContribution": "前日比上昇と寄り後パフォーマンス、執行可能性を分離",
+  "decisionImpact": "翌朝のランキングにGU失速・同業不追随の減点条件を追加",
+  "risksFlagged": [
+    "擬似勝率",
+    "約定不能なS高を的中扱い",
+    "始値基準MFE/MAEと真の取引MFE/MAEの混同"
+  ],
+  "errorsOrMisses": [],
+  "confidence": 0.95,
+  "dataLimitations": [
+    "9:10板・VWAP履歴なし",
+    "実注文履歴なし",
+    "朝レポートは事後復元"
+  ],
+  "sourcesUsed": [
+    "https://finance.yahoo.co.jp/quote/3635.T",
+    "https://finance.yahoo.co.jp/quote/5016.T",
+    "https://finance.yahoo.co.jp/quote/6658.T",
+    "https://finance.yahoo.co.jp/quote/6857.T",
+    "https://finance.yahoo.co.jp/quote/7417.T",
+    "https://finance.yahoo.co.jp/quote/485A.T",
+    "https://news.kobekeizai.jp/blog-entry-23695.html",
+    "https://s.kabutan.jp/news/n202610200834/"
+  ],
+  "duplicationWith": [],
+  "noMaterialContribution": false,
+  "backfilled": false,
+  "metrics": {
+    "candidateCount": 5,
+    "prevClosePositive": 3,
+    "openToClosePositive": 1,
+    "openToCloseNegative": 3,
+    "openToCloseFlat": 1,
+    "tradeWinRate": null,
+    "signalHitRate": null
+  },
+  "evaluations": [
+    {
+      "code": "3635",
+      "verdict": "一部的中",
+      "closeVsPrevPct": 3.75,
+      "closeVsOpenPct": 1.46,
+      "openBasedMFEPerShare": 39.5,
+      "openBasedMAEPerShare": -16.5,
+      "entryConditionVerified": false,
+      "reason": "分足/VWAP/板履歴と約定記録欠損"
+    },
+    {
+      "code": "6857",
+      "verdict": "外れ",
+      "closeVsPrevPct": -1.68,
+      "closeVsOpenPct": -1.68,
+      "openBasedMFEPerShare": 640,
+      "openBasedMAEPerShare": -760,
+      "entryConditionVerified": false,
+      "reason": "分足/VWAP/板履歴と約定記録欠損"
+    },
+    {
+      "code": "6658",
+      "verdict": "一部的中",
+      "closeVsPrevPct": 18.1,
+      "closeVsOpenPct": 0,
+      "openBasedMFEPerShare": 0,
+      "openBasedMAEPerShare": 0,
+      "entryConditionVerified": false,
+      "reason": "分足/VWAP/板履歴と約定記録欠損"
+    },
+    {
+      "code": "7417",
+      "verdict": "一部的中",
+      "closeVsPrevPct": 3.51,
+      "closeVsOpenPct": -3.07,
+      "openBasedMFEPerShare": 56,
+      "openBasedMAEPerShare": -69,
+      "entryConditionVerified": false,
+      "reason": "分足/VWAP/板履歴と約定記録欠損"
+    },
+    {
+      "code": "485A",
+      "verdict": "外れ",
+      "closeVsPrevPct": -7.55,
+      "closeVsOpenPct": -6.62,
+      "openBasedMFEPerShare": 16,
+      "openBasedMAEPerShare": -128,
+      "entryConditionVerified": false,
+      "reason": "分足/VWAP/板履歴と約定記録欠損"
+    }
+  ]
+}
