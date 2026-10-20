@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-21",
+  "asOf": "07:55 JST",
+  "status": "partial_success",
+  "canonical": {
+    "investment-company/decision-memos/2026-10-21/daytrade.md": "stub_created; update blocked",
+    "stock-dashboard/data/daytrade-latest.json": "update blocked; remains 2026-10-20",
+    "investment-company/hr/activity/2026-10-21/daytrade.json": "created summary, no per-agent full records"
+  },
+  "verifiedCreated": [
+    "investment-company/market-intelligence/2026-10-20-close-review.json",
+    "stock-dashboard/data/daytrade-2026-10-21.json",
+    "investment-company/hr/activity/2026-10-21/daytrade-roles-01-05.json",
+    "investment-company/hr/activity/2026-10-21/daytrade-roles-23-29.json",
+    "investment-company/hr/activity/2026-10-21/daytrade-roles-32-34.json"
+  ],
+  "unwrittenAgentIds": [
+    6,
+    7,
+    8,
+    9,
+    15,
+    16,
+    18,
+    20,
+    21,
+    22
+  ],
+  "error": "This tool call was blocked by OpenAI's safety checks. Please double check what you are sending.",
+  "activitySaveFailure": true,
+  "attempts": 2,
+  "backfilledPriorCloseReview": true,
+  "originalMorningReportPartial": true,
+  "independentAgentExecutionVerified": false
+}
