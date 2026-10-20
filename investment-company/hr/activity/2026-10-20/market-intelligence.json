@@ -1,0 +1,298 @@
+{
+  "date": "2026-10-20",
+  "asOf": "2026-10-20 07:30 JST (backfilled)",
+  "committee": "market-intelligence",
+  "backfilled": true,
+  "agents": [
+    {
+      "agentId": 3,
+      "title": "データ検証",
+      "taskPerformed": "前日close-reviewと当日候補データの整合確認",
+      "keyFindings": [
+        "市場情報latestが10/1で陳腐化、7:30原本欠損を検出"
+      ],
+      "novelContribution": "欠損と陳腐化を明示",
+      "decisionImpact": "8:00委員会で未取得値の断定を禁止",
+      "risksFlagged": [
+        "stale data"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.9,
+      "dataLimitations": [
+        "7:30原本欠損"
+      ],
+      "sourcesUsed": [
+        "2026-10-19-close-review",
+        "daytrade evidence"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 4,
+      "title": "マクロ",
+      "taskPerformed": "米国株と日本寄り前地合い整理",
+      "keyFindings": [
+        "NASDAQ/SOX反発でも全面強気は不可"
+      ],
+      "novelContribution": "breadth警戒",
+      "decisionImpact": "地合いを中立寄りに抑制",
+      "risksFlagged": [
+        "反発失速"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.6,
+      "dataLimitations": [],
+      "sourcesUsed": [
+        "Reuters 2026-10-19"
+      ],
+      "duplicationWith": [
+        6
+      ],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 5,
+      "title": "金利・商品",
+      "taskPerformed": "商品・金利の逆風確認",
+      "keyFindings": [
+        "原油関連は主役化せず"
+      ],
+      "novelContribution": "INPEXを補欠化",
+      "decisionImpact": "資源株優先度を下げる",
+      "risksFlagged": [
+        "商品価格逆行"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.5,
+      "dataLimitations": [
+        "リアルタイム金利詳細未保存"
+      ],
+      "sourcesUsed": [
+        "committee evidence"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI",
+      "taskPerformed": "SOX/NASDAQから日本半導体波及を評価",
+      "keyFindings": [
+        "SOX+1.6%で6857を監視昇格"
+      ],
+      "novelContribution": "半導体リバウンド候補化",
+      "decisionImpact": "6857を上位候補へ",
+      "risksFlagged": [
+        "自律反発止まり"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.6,
+      "dataLimitations": [],
+      "sourcesUsed": [
+        "Reuters 2026-10-19"
+      ],
+      "duplicationWith": [
+        4
+      ],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場",
+      "taskPerformed": "指数と業種の分解",
+      "keyFindings": [
+        "日経-0.62%とTOPIX+0.04%を分離"
+      ],
+      "novelContribution": "全面安仮説を否定",
+      "decisionImpact": "業種選別を強化",
+      "risksFlagged": [
+        "指数偏重"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.7,
+      "dataLimitations": [],
+      "sourcesUsed": [
+        "2026-10-19-close-review"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR",
+      "taskPerformed": "Fresh Catalyst抽出",
+      "keyFindings": [
+        "3635/6658/7417を候補化"
+      ],
+      "novelContribution": "業績修正候補発掘",
+      "decisionImpact": "3銘柄を本命候補へ",
+      "risksFlagged": [
+        "通期据置"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.7,
+      "dataLimitations": [
+        "全TDnet網羅性は未検証"
+      ],
+      "sourcesUsed": [
+        "committee evidence"
+      ],
+      "duplicationWith": [
+        29
+      ],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 9,
+      "title": "PTS・スクリーニング",
+      "taskPerformed": "PTS反応と流動性確認",
+      "keyFindings": [
+        "6658=1000株、7417=300株"
+      ],
+      "novelContribution": "薄いPTSを識別",
+      "decisionImpact": "6658/7417の執行順位を低下",
+      "risksFlagged": [
+        "値飛び",
+        "スプレッド"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.8,
+      "dataLimitations": [],
+      "sourcesUsed": [
+        "committee evidence"
+      ],
+      "duplicationWith": [
+        16,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 28,
+      "title": "機関需給",
+      "taskPerformed": "機関フロー取得可否確認",
+      "keyFindings": [
+        "当日実フロー未取得"
+      ],
+      "novelContribution": "未取得を明示",
+      "decisionImpact": "機関需給を推測で埋めない",
+      "risksFlagged": [
+        "flow unavailable"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.9,
+      "dataLimitations": [
+        "リアルタイム機関フロー未取得"
+      ],
+      "sourcesUsed": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 30,
+      "title": "オルタナティブデータ",
+      "taskPerformed": "代替データ探索",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": 0.3,
+      "dataLimitations": [
+        "順位を変える独自代替データなし"
+      ],
+      "sourcesUsed": [],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": true
+    },
+    {
+      "agentId": 32,
+      "title": "技術トレンド",
+      "taskPerformed": "記事起点テーマ探索",
+      "keyFindings": [
+        "485A受注をテーマ候補化"
+      ],
+      "novelContribution": "蓄電池実需テーマを抽出",
+      "decisionImpact": "485AをTheme News候補へ",
+      "risksFlagged": [
+        "思惑先行"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.7,
+      "dataLimitations": [],
+      "sourcesUsed": [
+        "PowerX official IR 2026-10-19"
+      ],
+      "duplicationWith": [
+        33,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 33,
+      "title": "バリューチェーン",
+      "taskPerformed": "蓄電池需要経路整理",
+      "keyFindings": [
+        "メーカー→工場需要家→系統安定化"
+      ],
+      "novelContribution": "収益接続経路を整理",
+      "decisionImpact": "テーマ直接度を補強",
+      "risksFlagged": [
+        "収益寄与時期"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.6,
+      "dataLimitations": [
+        "案件採算未開示"
+      ],
+      "sourcesUsed": [
+        "PowerX official IR 2026-10-19"
+      ],
+      "duplicationWith": [
+        32,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": true
+    },
+    {
+      "agentId": 34,
+      "title": "実需検証",
+      "taskPerformed": "テーマ実需・利益感応度検証",
+      "keyFindings": [
+        "485A 4台10MWh、2027年売上計上。受注額・利益率不明"
+      ],
+      "novelContribution": "実需と利益不確実性を分離",
+      "decisionImpact": "485Aを5位に抑制",
+      "risksFlagged": [
+        "利益感応度不明"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.9,
+      "dataLimitations": [
+        "受注額・利益率非開示"
+      ],
+      "sourcesUsed": [
+        "PowerX official IR 2026-10-19"
+      ],
+      "duplicationWith": [
+        32,
+        33
+      ],
+      "noMaterialContribution": false,
+      "backfilled": true
+    }
+  ]
+}
