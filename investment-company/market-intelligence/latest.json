@@ -1,23 +1,33 @@
 {
-  "date": "2026-10-20",
-  "asOf": "07:30 JST (backfilled)",
-  "status": "pre-open; no trade decision; backfilled after missing scheduled write",
-  "marketStance": "Neutral-to-cautious: US NASDAQ +1.11% and SOX +1.6% support semiconductor rebound, but breadth remains limited; require 9:00-9:10 confirmation.",
+  "date": "2026-10-21",
+  "asOf": "2026-10-21 07:30 JST (pre-open, latest verified overnight sources)",
+  "session": "market-intelligence-morning",
+  "status": "pre-open / no trade decision",
+  "marketStance": "リスク選好は部分回復。ただしAI半導体主導ではなくバリュー・ヘルスケア優位を想定",
   "topFresh": [
-    "3635",
-    "6658",
-    "7417"
+    "7918",
+    "7064",
+    "8708",
+    "3556",
+    "5990"
   ],
   "topStructuralThemes": [
-    "semiconductor rebound",
-    "battery storage demand"
+    "corporate-efficiency",
+    "urban-mining"
   ],
-  "candidateCount": 5,
-  "holdingsBlind": false,
-  "fullReportPath": "investment-company/market-intelligence/2026-10-20.json",
+  "candidateCount": 33,
+  "holdingsBlind": true,
+  "fullReportPath": "investment-company/market-intelligence/2026-10-21.json",
+  "activityPath": "investment-company/hr/activity/2026-10-21/market-intelligence.json",
+  "previousCloseReviewMissing": true,
   "dataLimitations": [
-    "07:30時点の原本レポートは存在せずbackfill",
-    "板・VWAPは寄り前取得不可",
-    "リアルタイム機関フロー未取得"
+    "前営業日close-review本体が404、activityログから部分参照のみ",
+    "10/21当日news-feed/theme-research/decision-memos未作成",
+    "holdingsは10/14、watchlistは10/2で古い",
+    "東証33業種全件の正確な騰落率、7:30時点の先物・PTS・VWAP・板・売買代金ランキング未取得",
+    "SOXは二次情報の暫定値で取引所公式終値を未照合",
+    "TDnet全件API走査と企業IRの全件原本確認未完了",
+    "外国人フロー、ETF需給、信用残・空売り最新値未取得",
+    "会社固有の利益寄与が未開示のテーマはPROMOTED-LIMITED/DEFERRED"
   ]
 }
