@@ -1,0 +1,692 @@
+{
+  "date": "2026-10-21",
+  "asOf": "2026-10-21 16:30 JST",
+  "agentId": 31,
+  "title": "人事評価・組織開発担当",
+  "selfEvaluation": false,
+  "reviewerOf31": [
+    1,
+    2
+  ],
+  "no31SelfScoring": true,
+  "evidencePrinciples": [
+    "役割別分析ログは独立したAI社員の実行証明ではない",
+    "活動機会不足は減点しない",
+    "前日比だけで予測を成功扱いしない",
+    "復元記録はbackfilledを付ける"
+  ],
+  "agentEvidence": [
+    {
+      "agentId": 1,
+      "title": "議長",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "No.9のPTS過熱、No.22の流動性、No.29の利益品質を採用した順位だが、寄り後4/5失速への予防力は不足",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 2,
+      "title": "コンプライアンス",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "発注せず、最終決裁をユーザーに限定。実約定未確認を明示",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "朝原本・決裁書がpartial、保有10/14・成績10/5・watchlist10/2を検出",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 4,
+      "title": "マクロ",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "米ダウとNASDAQの乖離を検出。市場は+0.85%反発",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 5,
+      "title": "金利為替商品",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": true,
+      "keyContribution": "本日材料的な寄与の明確な証跡なし",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 6,
+      "title": "米国株AI",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "半導体全面買いを否定したが、6857は+1.68%反発も寄り後-2.35%",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "前日24業種下落から本日24業種上昇へ転換、指数上昇幅縮小も検証",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "7918・8708の材料発掘は価格反応あり。ただし寄り後継続性は弱い",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 9,
+      "title": "PTS",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "7918夜間PTS148→113、8708約定2500株の注意が寄り後失速に整合",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 10,
+      "title": "決算・業績",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": null,
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 11,
+      "title": "財務CF",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": null,
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 12,
+      "title": "業界構造",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": null,
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 13,
+      "title": "経営者・中計",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": null,
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 14,
+      "title": "バリュエーション",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": null,
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 15,
+      "title": "価格行動",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "初動高安・VWAP基準は有用だが、実際の9:10検証データ未取得",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・板",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "3556特別気配、低流動性の警戒は妥当。3556初値9:21",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 17,
+      "title": "スイング",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": null,
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 18,
+      "title": "執行",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "9:10以降の執行条件設計。ただし実執行ログなし",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 19,
+      "title": "ポートフォリオ",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": null,
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 20,
+      "title": "RR",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "未確定の円建て損失・期待利益を断定しなかった",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 21,
+      "title": "イベント",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "6857決算接近・3556希薄化のリスク警告",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 22,
+      "title": "流動性",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "3556の執行困難性を警告。初値9:21で9:10判定不可",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 23,
+      "title": "空売り",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "7918PTS失速・3556希薄化の空売り側論点",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "上方修正を寄り後継続上昇と同一視しない警告は当日有効",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "前日7417寄り天、6857外れを反映。今日もGU後失速が多発",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 26,
+      "title": "成績分析",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "market_close_review"
+      ],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "前日比と始値比を分け、寄り後マイナス4/5と実約定未確認を検出",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 27,
+      "title": "四半期レビュー",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": null,
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 28,
+      "title": "機関需給",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": true,
+      "keyContribution": "実フロー未取得。定量寄与なし",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "7918費用削減・8708ファンド収益・3635運用益の再現性を区別",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 30,
+      "title": "代替データ",
+      "opportunityCount": 1,
+      "evidenceCount": 0,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": true,
+      "keyContribution": "朝の代替データ独自証跡なし",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 31,
+      "title": "人事評価",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "market_close_review"
+      ],
+      "evidenceGap": [
+        "No.31自己評価不可; No.1とNo.2が手続評価"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "34役割の機会・証拠・原本欠損を監査し、採点を保留",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース発掘",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "3556資源循環提携をテーマ候補化、価格反応はあったが寄り後失速",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 33,
+      "title": "価値連鎖",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "回収網→中古IT→資源循環の接続は整理したが収益感応度は未確定",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    },
+    {
+      "agentId": 34,
+      "title": "実需検証",
+      "opportunityCount": 2,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "morning_stub_no_substantive_evidence",
+        "daytrade_local_backup_full_GitHub_summary_only"
+      ],
+      "evidenceGap": [
+        "07:30朝レポートの役割別詳細欠損",
+        "GitHubの8:00ログはsummaryのみ; ローカル元データあり"
+      ],
+      "independentExecutionVerified": false,
+      "noMaterialContribution": false,
+      "keyContribution": "JX金属出資3.5億円・2.4%の一次情報確認、短期利益寄与未確認",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "日次証跡監査のみ; 正式点数は週次"
+    }
+  ],
+  "totals": {
+    "headcount": 34,
+    "uniqueAgentsWithOpportunity": 26,
+    "totalOpportunityEvents": 37,
+    "substantiveEvidenceEvents": 25,
+    "agentsNoOpportunity": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      17,
+      19,
+      27
+    ]
+  },
+  "operationalIssues": [
+    {
+      "type": "morning_report_partial",
+      "status": "open",
+      "cause": "7:30レポートはmetadataのみ保存",
+      "remediation": "当日朝の予測内容を事後再構成する場合backfilled=true、原本と混同しない"
+    },
+    {
+      "type": "daytrade_memo_stub",
+      "status": "open",
+      "cause": "8:00正規決裁書がstubのみ",
+      "remediation": "ローカル原本から補完し検証"
+    },
+    {
+      "type": "daytrade_activity_summary",
+      "status": "open",
+      "cause": "GitHub正規ログがagentIdsだけ",
+      "remediation": "ローカル元データを補完し独立実行と誤認しない"
+    },
+    {
+      "type": "no_intraday_execution_data",
+      "status": "open",
+      "cause": "9:10板・VWAP・約定記録なし",
+      "remediation": "データ保存経路の設計"
+    },
+    {
+      "type": "stale_holdings_performance_watchlist",
+      "status": "open",
+      "cause": "保有10/14、成績10/5、監視10/2",
+      "remediation": "更新日と証拠不足を毎回明示"
+    }
+  ],
+  "sourcesUsed": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-10-21/daytrade.json",
+    "investment-company/hr/activity/2026-10-21/market-intelligence.json",
+    "local:daytrade_2026-10-21/daytrade-activity.json",
+    "https://www.reuters.com/jp/markets/japan/Q5ZDBGVMTVO53JAUPPTE6AKWVA-2026-10-21/",
+    "https://fu.minkabu.jp/news/723222",
+    "https://kabutan.jp/news/marketnews/?b=n202610210884",
+    "https://zai.diamond.jp/articles/-/497645",
+    "https://finance.yahoo.co.jp/quote/3556.T",
+    "https://finance.yahoo.co.jp/quote/3635.T",
+    "https://finance.yahoo.co.jp/quote/5016.T",
+    "https://finance.yahoo.co.jp/quote/6857.T",
+    "https://finance.yahoo.co.jp/quote/7918.T",
+    "https://finance.yahoo.co.jp/quote/8708.T"
+  ],
+  "gradeAssigned": false,
+  "weeklyEvaluationDue": false,
+  "saveVerification": {
+    "status": "pending",
+    "note": "Write+fetch verification results must be recorded in execution output; this file itself is written before verification"
+  }
+}
