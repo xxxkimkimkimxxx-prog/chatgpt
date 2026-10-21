@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-21",
+  "asOf": "2026-10-21 16:30 JST",
+  "status": "completed_with_evidence_gaps",
+  "market": {
+    "nikkeiClose": 64621.24,
+    "nikkeiChange": 545.82,
+    "nikkeiPct": 0.85,
+    "topixClose": 4043.73,
+    "topixChange": 34.52,
+    "upIndustries": 24,
+    "downIndustries": 9
+  },
+  "candidateResults": [
+    {
+      "code": "7918",
+      "rank": 1,
+      "prevClosePct": 17.82,
+      "openClosePct": -0.83,
+      "verdict": "一部的中"
+    },
+    {
+      "code": "3635",
+      "rank": 2,
+      "prevClosePct": -0.83,
+      "openClosePct": 0.7,
+      "verdict": "一部的中"
+    },
+    {
+      "code": "8708",
+      "rank": 3,
+      "prevClosePct": 0.19,
+      "openClosePct": -2.33,
+      "verdict": "外れ"
+    },
+    {
+      "code": "6857",
+      "rank": 4,
+      "prevClosePct": 1.68,
+      "openClosePct": -2.35,
+      "verdict": "一部的中"
+    },
+    {
+      "code": "3556",
+      "rank": 5,
+      "prevClosePct": 12.22,
+      "openClosePct": -2.42,
+      "verdict": "一部的中"
+    }
+  ],
+  "outcome": {
+    "prevClosePositive": 4,
+    "openClosePositive": 1,
+    "openCloseNegative": 4,
+    "tradeWinRate": null,
+    "entryConditionVerified": false
+  },
+  "sources": {
+    "morning": "investment-company/market-intelligence/2026-10-21.json (partial)",
+    "daytrade": "investment-company/decision-memos/2026-10-21/daytrade.md (stub)",
+    "daytradeActivity": "investment-company/hr/activity/2026-10-21/daytrade.json (summary; local detailed backup)",
+    "previousClose": "investment-company/market-intelligence/2026-10-20-close-review.json (backfilled)",
+    "performanceReview": "investment-company/hr/activity/2026-10-21/performance-review.json",
+    "hrAudit": "investment-company/hr/activity/2026-10-21/hr-audit.json"
+  },
+  "audit": {
+    "headcount": 34,
+    "morningRoles": 12,
+    "daytradeRoles": 23,
+    "closeRoles": 2,
+    "independentExecutionVerified": false,
+    "gradesAssigned": false,
+    "evidenceGaps": [
+      "7:30詳細原本なし",
+      "8:00正規決裁書stub",
+      "9:10板/VWAP/分足なし",
+      "約定記録なし",
+      "保有・成績・watchlist古い"
+    ]
+  },
+  "nextDayLessons": [
+    "前日比と始値比を分ける",
+    "初値9:10以降の銘柄は初動条件の判定時刻を再設定",
+    "半導体反発でも寄り後失速を見送り"
+  ],
+  "backfilled": true,
+  "weeklyEvaluation": false
+}
