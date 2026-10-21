@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-21",
+  "asOf": "16:30 JST",
+  "session": "market-close-review",
+  "agentIds": [
+    26,
+    31
+  ],
+  "performanceReview": "investment-company/hr/activity/2026-10-21/performance-review.json",
+  "hrAudit": "investment-company/hr/activity/2026-10-21/hr-audit.json",
+  "daySummary": "investment-company/hr/daily/2026-10-21.json",
+  "status": "summary-only; detailed data linked"
+}
