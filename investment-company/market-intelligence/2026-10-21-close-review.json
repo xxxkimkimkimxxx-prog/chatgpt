@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-21",
+  "asOf": "16:30 JST",
+  "nikkei": 64621.24,
+  "nikkeiPct": 0.85,
+  "topix": 4043.73,
+  "candidates": [
+    [
+      "7918",
+      "partial"
+    ],
+    [
+      "3635",
+      "partial"
+    ],
+    [
+      "8708",
+      "miss"
+    ],
+    [
+      "6857",
+      "partial"
+    ],
+    [
+      "3556",
+      "partial"
+    ]
+  ],
+  "note": "Detailed verified metrics are in hr/activity/2026-10-21/performance-review.json and hr/daily/2026-10-21.json",
+  "backfilled": true
+}
