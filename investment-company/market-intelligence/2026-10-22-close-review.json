@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-22",
+  "asOf": "16:30 JST",
+  "market": {
+    "nikkei": 62907.84,
+    "nikkeiPct": -2.65,
+    "topix": 3997.5,
+    "topixPct": -1.14
+  },
+  "candidateResults": [
+    [
+      "6196",
+      1436,
+      3.46,
+      -1.58,
+      "partial"
+    ],
+    [
+      "166A",
+      1029,
+      3.63,
+      -2.56,
+      "partial"
+    ],
+    [
+      "8051",
+      1981,
+      1.64,
+      0.66,
+      "partial"
+    ],
+    [
+      "6857",
+      32370,
+      -6.01,
+      -6.17,
+      "miss"
+    ],
+    [
+      "6492",
+      12000,
+      -9.09,
+      -10.25,
+      "miss"
+    ]
+  ],
+  "source": "Yahoo Finance 2026-10-22 15:30",
+  "entryConditionVerified": false,
+  "backfilled": false
+}
