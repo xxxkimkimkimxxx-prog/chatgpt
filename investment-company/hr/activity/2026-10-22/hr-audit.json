@@ -1,14 +1,1 @@
-{
-  "date": "2026-10-22",
-  "agentId": 31,
-  "asOf": "16:30 JST",
-  "selfEvaluation": false,
-  "reviewerOf31": [
-    1,
-    2
-  ],
-  "totalAgents": 34,
-  "opportunityAgents": 26,
-  "daytradeBackfilled": true,
-  "gradeAssigned": false
-}
+{"date":"2026-10-22","agentId":31,"selfEvaluation":false,"reviewerOf31":[1,2],"roles":34,"activeRoles":26,"opportunities":37,"githubDetailedEvidence":14,"localDaytradeEvidence":23,"daytradeGithub":"summary only","evidenceGap":["intraday VWAP/board unavailable","detailed daytrade role log not on GitHub"],"gradeAssigned":false}
