@@ -1,0 +1,737 @@
+{
+  "date": "2026-10-23",
+  "asOf": "2026-10-23 08:00 JST",
+  "committee": "daytrade",
+  "roleSimulation": true,
+  "independentAgentProcessesVerified": false,
+  "decisionSummary": {
+    "rankedCandidates": [
+      "1605",
+      "4047",
+      "6246",
+      "6146"
+    ],
+    "finalDecisionMaker": "user",
+    "ordersPlaced": false
+  },
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "議長",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "No.6/22/29の警告で半導体候補を4位に降格、原油セクターを1位へ"
+      ],
+      "novelContribution": "No.6/22/29の警告で半導体候補を4位に降格、原油セクターを1位へ",
+      "decisionImpact": "No.6/22/29の警告で半導体候補を4位に降格、原油セクターを1位へ",
+      "candidatesPromoted": [
+        "1605"
+      ],
+      "candidatesRejected": [
+        "6857"
+      ],
+      "risksFlagged": [
+        "No.6/22/29の警告で半導体候補を4位に降格、原油セクターを1位へ"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "注文せず、未取得のPTSや期待値を捏造しない"
+      ],
+      "novelContribution": "注文せず、未取得のPTSや期待値を捏造しない",
+      "decisionImpact": "注文せず、未取得のPTSや期待値を捏造しない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "注文せず、未取得のPTSや期待値を捏造しない"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "前日close-review概要版、保有10/14、成績10/05、watchlist10/02の鮮度差を検知"
+      ],
+      "novelContribution": "前日close-review概要版、保有10/14、成績10/05、watchlist10/02の鮮度差を検知",
+      "decisionImpact": "前日close-review概要版、保有10/14、成績10/05、watchlist10/02の鮮度差を検知",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "前日close-review概要版、保有10/14、成績10/05、watchlist10/02の鮮度差を検知"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "米国AI採算懸念と中東原油高を分離"
+      ],
+      "novelContribution": "米国AI採算懸念と中東原油高を分離",
+      "decisionImpact": "米国AI採算懸念と中東原油高を分離",
+      "candidatesPromoted": [
+        "1605"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米国AI採算懸念と中東原油高を分離"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "原油高の受益と円高・供給停止リスクを両建てで評価"
+      ],
+      "novelContribution": "原油高の受益と円高・供給停止リスクを両建てで評価",
+      "decisionImpact": "原油高の受益と円高・供給停止リスクを両建てで評価",
+      "candidatesPromoted": [
+        "1605"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "原油高の受益と円高・供給停止リスクを両建てで評価"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "NASDAQ-2.6%、SOX-6.7%で半導体買い継続仮説を引下げ"
+      ],
+      "novelContribution": "NASDAQ-2.6%、SOX-6.7%で半導体買い継続仮説を引下げ",
+      "decisionImpact": "NASDAQ-2.6%、SOX-6.7%で半導体買い継続仮説を引下げ",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "6857"
+      ],
+      "risksFlagged": [
+        "NASDAQ-2.6%、SOX-6.7%で半導体買い継続仮説を引下げ"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "日経-2.65%とTOPIX-1.14%を分離。鉱業と半導体材料を別扱い"
+      ],
+      "novelContribution": "日経-2.65%とTOPIX-1.14%を分離。鉱業と半導体材料を別扱い",
+      "decisionImpact": "日経-2.65%とTOPIX-1.14%を分離。鉱業と半導体材料を別扱い",
+      "candidatesPromoted": [
+        "1605"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "日経-2.65%とTOPIX-1.14%を分離。鉱業と半導体材料を別扱い"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "4047/6246業績修正と6146決算を抽出"
+      ],
+      "novelContribution": "4047/6246業績修正と6146決算を抽出",
+      "decisionImpact": "4047/6246業績修正と6146決算を抽出",
+      "candidatesPromoted": [
+        "4047",
+        "6246",
+        "6146"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "4047/6246業績修正と6146決算を抽出"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "34候補を分類。信頼できる10/22夜間PTSは未取得"
+      ],
+      "novelContribution": "34候補を分類。信頼できる10/22夜間PTSは未取得",
+      "decisionImpact": "34候補を分類。信頼できる10/22夜間PTSは未取得",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "34候補を分類。信頼できる10/22夜間PTSは未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "4/5が9:10前に高値。再突破条件を必須化"
+      ],
+      "novelContribution": "4/5が9:10前に高値。再突破条件を必須化",
+      "decisionImpact": "4/5が9:10前に高値。再突破条件を必須化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "4/5が9:10前に高値。再突破条件を必須化"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "6246の前日出来高1.67万株を執行制約と判断"
+      ],
+      "novelContribution": "6246の前日出来高1.67万株を執行制約と判断",
+      "decisionImpact": "6246の前日出来高1.67万株を執行制約と判断",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "6246"
+      ],
+      "risksFlagged": [
+        "6246の前日出来高1.67万株を執行制約と判断"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "9:10後の高値再突破＋VWAP維持を条件化。初値遅延時は時計再設定"
+      ],
+      "novelContribution": "9:10後の高値再突破＋VWAP維持を条件化。初値遅延時は時計再設定",
+      "decisionImpact": "9:10後の高値再突破＋VWAP維持を条件化。初値遅延時は時計再設定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "9:10後の高値再突破＋VWAP維持を条件化。初値遅延時は時計再設定"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "価格構造確定前の円建て損益を未算定とし、Rで条件付き管理"
+      ],
+      "novelContribution": "価格構造確定前の円建て損益を未算定とし、Rで条件付き管理",
+      "decisionImpact": "価格構造確定前の円建て損益を未算定とし、Rで条件付き管理",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "価格構造確定前の円建て損益を未算定とし、Rで条件付き管理"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "SOX急落と中東供給不安の同時ショックを監視"
+      ],
+      "novelContribution": "SOX急落と中東供給不安の同時ショックを監視",
+      "decisionImpact": "SOX急落と中東供給不安の同時ショックを監視",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "SOX急落と中東供給不安の同時ショックを監視"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "6246薄商いと6146決算ギャップを警戒し、順位を抑制"
+      ],
+      "novelContribution": "6246薄商いと6146決算ギャップを警戒し、順位を抑制",
+      "decisionImpact": "6246薄商いと6146決算ギャップを警戒し、順位を抑制",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "6246"
+      ],
+      "risksFlagged": [
+        "6246薄商いと6146決算ギャップを警戒し、順位を抑制"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "各候補の寄り天、需給、信用残、期待先取りを検証"
+      ],
+      "novelContribution": "各候補の寄り天、需給、信用残、期待先取りを検証",
+      "decisionImpact": "各候補の寄り天、需給、信用残、期待先取りを検証",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "各候補の寄り天、需給、信用残、期待先取りを検証"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "原油高=INPEX必ず上昇、決算+44%=サプライズ、を否定"
+      ],
+      "novelContribution": "原油高=INPEX必ず上昇、決算+44%=サプライズ、を否定",
+      "decisionImpact": "原油高=INPEX必ず上昇、決算+44%=サプライズ、を否定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "原油高=INPEX必ず上昇、決算+44%=サプライズ、を否定"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "前日9:10前高値の反復防止条件を付与"
+      ],
+      "novelContribution": "前日9:10前高値の反復防止条件を付与",
+      "decisionImpact": "前日9:10前高値の反復防止条件を付与",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "前日9:10前高値の反復防止条件を付与"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "信用倍率と機関当日実フローを区別。後者は未取得"
+      ],
+      "novelContribution": "信用倍率と機関当日実フローを区別。後者は未取得",
+      "decisionImpact": "信用倍率と機関当日実フローを区別。後者は未取得",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "信用倍率と機関当日実フローを区別。後者は未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "4047会社予想+28.3%、6146前年比+44%と市場期待差は別物と警告"
+      ],
+      "novelContribution": "4047会社予想+28.3%、6146前年比+44%と市場期待差は別物と警告",
+      "decisionImpact": "4047会社予想+28.3%、6146前年比+44%と市場期待差は別物と警告",
+      "candidatesPromoted": [
+        "4047"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "4047会社予想+28.3%、6146前年比+44%と市場期待差は別物と警告"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "AI採算懸念、原油高、後工程、給食設備、サイバーのテーマ抽出"
+      ],
+      "novelContribution": "AI採算懸念、原油高、後工程、給食設備、サイバーのテーマ抽出",
+      "decisionImpact": "AI採算懸念、原油高、後工程、給食設備、サイバーのテーマ抽出",
+      "candidatesPromoted": [
+        "6146"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "AI採算懸念、原油高、後工程、給食設備、サイバーのテーマ抽出"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [
+        33
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "半導体後工程装置/消耗品と上流原油感応度を分解"
+      ],
+      "novelContribution": "半導体後工程装置/消耗品と上流原油感応度を分解",
+      "decisionImpact": "半導体後工程装置/消耗品と上流原油感応度を分解",
+      "candidatesPromoted": [
+        "6146",
+        "1605"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "半導体後工程装置/消耗品と上流原油感応度を分解"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "taskPerformed": "寄り前役割別検討",
+      "keyFindings": [
+        "6146公式決算で売上/経常を確認。2961とサイバーは当日一次裏付け不足で昇格禁止"
+      ],
+      "novelContribution": "6146公式決算で売上/経常を確認。2961とサイバーは当日一次裏付け不足で昇格禁止",
+      "decisionImpact": "6146公式決算で売上/経常を確認。2961とサイバーは当日一次裏付け不足で昇格禁止",
+      "candidatesPromoted": [
+        "6146"
+      ],
+      "candidatesRejected": [
+        "2961",
+        "3692"
+      ],
+      "risksFlagged": [
+        "6146公式決算で売上/経常を確認。2961とサイバーは当日一次裏付け不足で昇格禁止"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium-low",
+      "dataLimitations": [
+        "当日板/VWAP/夜間PTS未取得",
+        "テーマ研究個別ファイル未照合"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-23.json",
+        "investment-company/market-intelligence/2026-10-22-close-review.json",
+        "https://www.reuters.com/business/nasdaq-futures-drop-over-1-ai-worries-resurface-oil-climbs-2026-10-22/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "audit": {
+    "morningReport": "found",
+    "previousCloseReview": "found partial",
+    "themeResearch": "directory exists but individual file names inaccessible",
+    "staleHoldings": true,
+    "stalePerformance": true,
+    "staleWatchlist": true,
+    "activitySaveFailure": false,
+    "evidenceGap": [
+      "10/23夜間PTS未確認",
+      "9:00-9:10板・VWAP未取得",
+      "機関当日実フロー未取得",
+      "テーマ当日フォルダ内の個別研究未照合"
+    ]
+  }
+}
