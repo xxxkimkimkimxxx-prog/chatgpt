@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-22",
+  "agentId": 26,
+  "asOf": "16:30 JST",
+  "candidates": [
+    "6196",
+    "166A",
+    "8051",
+    "6857",
+    "6492"
+  ],
+  "outcome": {
+    "positiveVsPreviousClose": 3,
+    "positiveVsOpen": 1,
+    "earlyPeaks": 4
+  },
+  "entryConditionVerified": false,
+  "maeMfe": "unavailable; no execution or intraday VWAP data",
+  "lesson": "同業不追随、GU失速、初動高値未更新を重視",
+  "backfilled": false
+}
