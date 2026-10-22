@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-22",
+  "asOf": "16:30 JST",
+  "market": {
+    "nikkei": 62907.84,
+    "topix": 3997.5
+  },
+  "outcome": "前日比プラス3/5、寄値比プラス1/5。半導体反発仮説は外れ。",
+  "audit": {
+    "morningReport": "present",
+    "daytrade": "missing",
+    "closeReview": "created",
+    "agent31SelfRated": false
+  },
+  "nextDayLessons": [
+    "米株高でも国内同業弱ければ買い見送り",
+    "初動高値が9:10以前なら追い買い禁止",
+    "好決算でも寄値比とVWAP重視"
+  ]
+}
