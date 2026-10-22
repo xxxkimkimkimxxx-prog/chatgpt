@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-22",
+  "agentId": 31,
+  "asOf": "16:30 JST",
+  "selfEvaluation": false,
+  "reviewerOf31": [
+    1,
+    2
+  ],
+  "totalAgents": 34,
+  "opportunityAgents": 26,
+  "daytradeBackfilled": true,
+  "gradeAssigned": false
+}
