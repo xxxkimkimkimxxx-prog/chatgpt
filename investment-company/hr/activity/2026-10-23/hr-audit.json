@@ -82,6 +82,10 @@
     {
       "agentId": 31,
       "action": "原本欠損の再発防止と独立agent稼働証跡の区別、日次証跡のGitHub完全性監査"
+    },
+    {
+      "agentId": 3,
+      "action": "2026-10-22のJX終値を2917円へ訂正し、前日レポートの2974.5円との差異を原因分析。株価は銘柄コード/日付/市場を照合"
     }
   ],
   "audit": {
@@ -174,7 +178,8 @@
       ],
       "errorsOrMisses": [],
       "evidenceGap": [
-        "独立したAI agentプロセス稼働の証明なし。役割別シミュレーション記録"
+        "独立したAI agentプロセス稼働の証明なし。役割別シミュレーション記録",
+        "前回のJX金属10/22終値2974.5円は照合値2917円と不一致。数値検証の再発防止が必要"
       ],
       "confidence": "medium-low",
       "score": null,
@@ -938,5 +943,13 @@
       "grade": null,
       "gradingStatus": "weekly review only; not assigned in daily audit"
     }
-  ]
+  ],
+  "dataQualityCorrection": {
+    "field": "JX金属(5016) 2026-10-22終値",
+    "incorrectPriorReport": 2974.5,
+    "verifiedCorrectValue": 2917,
+    "source": "https://finance.yahoo.co.jp/quote/5016.T/history",
+    "impact": "2026-10-23の前日比・評価損益を誤計算するリスク。2026-10-23終値は2830.5。",
+    "owner": "No.3データ検証責任者の横断検証改善対象。個人の独立実行は未確認"
+  }
 }
