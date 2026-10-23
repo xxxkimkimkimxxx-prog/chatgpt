@@ -336,7 +336,254 @@
         "https://finance.yahoo.co.jp/quote/5016.T",
         "https://s.kabutan.jp/stocks/5016/historical_margins/daily/"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-10-23T16:00:00+09:00",
+      "runAtJST": "2026-10-23T15:56:26+09:00",
+      "marketDate": "2026-10-23",
+      "priceBasis": "10/23東証15:30終値（17時台は16時台の確認済終値据え置き）",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "unrealizedPnlYen": -231476,
+      "previousRunPnlYen": -236836,
+      "deltaYen": 5360,
+      "jx": {
+        "state": "信用整理進行中",
+        "priceYen": 2830.5,
+        "unrealizedPnlYen": -173100,
+        "creditReferenceDate": "2026-10-21"
+      },
+      "audit": {
+        "previousScheduledRunRecordFound": true,
+        "previousDeliveryConfirmed": false,
+        "holdingsStale": true,
+        "positionCountChanged": false,
+        "priceDataMissing": false,
+        "quoteTimestampNotSynchronous": false,
+        "missing": [
+          "non-JX institutional shorts",
+          "non-JX sector-relative metrics",
+          "moving averages",
+          "volume profile",
+          "credit publication timestamp"
+        ],
+        "notificationEnabled": false
+      },
+      "status": "completed_prior_local_audit",
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://s.kabutan.jp/stocks/5016/historical_margins/daily/"
+      ]
+    },
+    {
+      "scheduledAtJST": "2026-10-23T17:00:00+09:00",
+      "runAtJST": "2026-10-23T16:58:12+09:00",
+      "marketDate": "2026-10-23",
+      "priceBasis": "10/23東証15:30終値（17時台は16時台の確認済終値据え置き）",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "positions": [
+        {
+          "code": "2926",
+          "priceYen": 103,
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "unrealizedPnlYen": -16000,
+          "vwapYenApprox": 105.38,
+          "supportYen": [
+            103
+          ],
+          "resistanceYen": [
+            107
+          ],
+          "averagingDecision": "ナンピン見送り",
+          "marketPriceAtJST": "2026-10-23T15:30:00+09:00",
+          "creditReferenceDate": "2026-10-16",
+          "dataLimitations": [
+            "移動平均線・出来高集中帯は未取得",
+            "JX以外の機関空売り差分・定量的同業比較は未取得"
+          ]
+        },
+        {
+          "code": "4597",
+          "priceYen": 27,
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "unrealizedPnlYen": -4980,
+          "vwapYenApprox": 26.47,
+          "supportYen": [
+            25
+          ],
+          "resistanceYen": [
+            27
+          ],
+          "averagingDecision": "ナンピン候補",
+          "marketPriceAtJST": "2026-10-23T15:30:00+09:00",
+          "creditReferenceDate": "2026-10-16",
+          "dataLimitations": [
+            "移動平均線・出来高集中帯は未取得",
+            "JX以外の機関空売り差分・定量的同業比較は未取得"
+          ]
+        },
+        {
+          "code": "5016",
+          "priceYen": 2830.5,
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "unrealizedPnlYen": -173100,
+          "vwapYenApprox": 2762.76,
+          "supportYen": [
+            2693
+          ],
+          "resistanceYen": [
+            2845.5
+          ],
+          "averagingDecision": "ナンピン見送り",
+          "marketPriceAtJST": "2026-10-23T15:30:00+09:00",
+          "creditReferenceDate": "2026-10-21",
+          "dataLimitations": [
+            "移動平均線・出来高集中帯は未取得",
+            "JX以外の機関空売り差分・定量的同業比較は未取得"
+          ]
+        },
+        {
+          "code": "5027",
+          "priceYen": 758,
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "unrealizedPnlYen": -32196,
+          "vwapYenApprox": 744.45,
+          "supportYen": [
+            730
+          ],
+          "resistanceYen": [
+            763
+          ],
+          "averagingDecision": "ナンピン見送り",
+          "marketPriceAtJST": "2026-10-23T15:30:00+09:00",
+          "creditReferenceDate": "2026-10-16",
+          "dataLimitations": [
+            "移動平均線・出来高集中帯は未取得",
+            "JX以外の機関空売り差分・定量的同業比較は未取得"
+          ]
+        },
+        {
+          "code": "8518",
+          "priceYen": 138,
+          "quantity": 200,
+          "averageCostYen": 162,
+          "unrealizedPnlYen": -4800,
+          "vwapYenApprox": 138.16,
+          "supportYen": [
+            136
+          ],
+          "resistanceYen": [
+            142
+          ],
+          "averagingDecision": "ナンピン見送り",
+          "marketPriceAtJST": "2026-10-23T15:30:00+09:00",
+          "creditReferenceDate": "2026-10-16",
+          "dataLimitations": [
+            "移動平均線・出来高集中帯は未取得",
+            "JX以外の機関空売り差分・定量的同業比較は未取得"
+          ]
+        },
+        {
+          "code": "9432",
+          "priceYen": 174.8,
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "unrealizedPnlYen": -400,
+          "vwapYenApprox": 178.41,
+          "supportYen": [
+            174.4
+          ],
+          "resistanceYen": [
+            181.3
+          ],
+          "averagingDecision": "ナンピン見送り",
+          "marketPriceAtJST": "2026-10-23T15:30:00+09:00",
+          "creditReferenceDate": "2026-10-16",
+          "dataLimitations": [
+            "移動平均線・出来高集中帯は未取得",
+            "JX以外の機関空売り差分・定量的同業比較は未取得"
+          ]
+        }
+      ],
+      "unrealizedPnlYen": -231476,
+      "previousRunPnlYen": -231476,
+      "deltaYen": 0,
+      "jx": {
+        "state": "信用整理進行中",
+        "previousState": "信用整理進行中",
+        "stateChanged": false,
+        "priceYen": 2830.5,
+        "previousCloseYen": 2917,
+        "dayHighYen": 2845.5,
+        "dayLowYen": 2693,
+        "volumeShares": 24116400,
+        "turnoverYen": 66627812000,
+        "vwapYenApprox": 2762.76,
+        "unrealizedPnlYen": -173100,
+        "dailyCredit": {
+          "referenceDate": "2026-10-21",
+          "buyShares": 22791700,
+          "sellShares": 722900,
+          "ratio": 31.53,
+          "previousDate": "2026-10-20",
+          "buyChangeShares": -684300,
+          "sellChangeShares": 89200,
+          "ratioChange": -5.52
+        },
+        "weeklyCredit": {
+          "referenceDate": "2026-10-16",
+          "buyShares": 24447600,
+          "sellShares": 535100,
+          "ratio": 45.69
+        },
+        "creditPublicationDate": "未確認（基準日10/21）",
+        "creditUnchangedFromPreviousRun": true,
+        "institutionalShort": {
+          "disclosureDate": "2026-10-21",
+          "calculationDate": "2026-10-19",
+          "nomuraShares": 11106785,
+          "barclaysShares": 14397034,
+          "latestChangeUnverified": true
+        },
+        "sectorRelativeStrength": "10/23終値: JX -2.97%, 住友金属鉱山 -1.15%, フジクラ -1.01%, 古河電工 -1.76%, アドバンテスト -0.09%",
+        "stateReasons": [
+          "日次信用買い残減少も高水準",
+          "大商い・安値2693円から137.5円反発しVWAP回復",
+          "関連4銘柄に劣後し前日安値2896円未回復"
+        ],
+        "forcedLiquidationConfirmed": false,
+        "forcedSellingAbsorption": "一部兆候あり、追証由来かは確認不能",
+        "trend": "下落トレンド内の反発、反転初動未確認"
+      },
+      "audit": {
+        "previousScheduledRunRecordFound": true,
+        "previousDeliveryConfirmed": false,
+        "holdingsStale": true,
+        "positionCountChanged": false,
+        "priceDataMissing": false,
+        "quoteTimestampNotSynchronous": false,
+        "missing": [
+          "non-JX institutional shorts",
+          "non-JX sector-relative metrics",
+          "moving averages",
+          "volume profile",
+          "credit publication timestamp"
+        ],
+        "notificationEnabled": false
+      },
+      "status": "no_new_market_data",
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://s.kabutan.jp/stocks/5016/historical_margins/daily/"
+      ]
     }
   ],
-  "note": "Earlier six detailed runs are preserved in local audit JSON; remote file initially absent."
+  "note": "10/23 17時台は東証終値が16時台から変化なし。信用残も10/21基準据え置き。GitHub保有スナップショットは10/14から未更新。"
 }
