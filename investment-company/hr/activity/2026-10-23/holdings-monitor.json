@@ -1,0 +1,342 @@
+{
+  "date": "2026-10-23",
+  "earlierRunSummaries": [
+    {
+      "scheduledAtJST": "2026-10-23T09:00:00+09:00",
+      "runAtJST": "2026-10-23T09:03:48+09:00",
+      "unrealizedPnlYen": -206516,
+      "jxState": "判定記録なし",
+      "recordScope": "local audit file; summary copied from verified prior execution"
+    },
+    {
+      "scheduledAtJST": "2026-10-23T10:00:00+09:00",
+      "runAtJST": "2026-10-23T10:03:55+09:00",
+      "unrealizedPnlYen": -242776,
+      "jxState": "信用整理未了",
+      "recordScope": "local audit file; summary copied from verified prior execution"
+    },
+    {
+      "scheduledAtJST": "2026-10-23T11:00:00+09:00",
+      "runAtJST": "2026-10-23T11:01:11+09:00",
+      "unrealizedPnlYen": -266736,
+      "jxState": "信用整理未了",
+      "recordScope": "local audit file; summary copied from verified prior execution"
+    },
+    {
+      "scheduledAtJST": "2026-10-23T12:00:00+09:00",
+      "runAtJST": "2026-10-23T12:02:48+09:00",
+      "unrealizedPnlYen": -267876,
+      "jxState": "信用整理未了",
+      "recordScope": "local audit file; summary copied from verified prior execution"
+    },
+    {
+      "scheduledAtJST": "2026-10-23T13:00:00+09:00",
+      "runAtJST": "2026-10-23T13:02:33+09:00",
+      "unrealizedPnlYen": -256116,
+      "jxState": "信用整理未了",
+      "recordScope": "local audit file; summary copied from verified prior execution"
+    },
+    {
+      "scheduledAtJST": "2026-10-23T14:00:00+09:00",
+      "runAtJST": "2026-10-23T14:02:50+09:00",
+      "unrealizedPnlYen": -241716,
+      "jxState": "信用整理進行中",
+      "recordScope": "local audit file; summary copied from verified prior execution"
+    }
+  ],
+  "runs": [
+    {
+      "runAtJST": "2026-10-23T15:02:39+09:00",
+      "scheduledAtJST": "2026-10-23T15:00:00+09:00",
+      "priceBasis": "2026-10-23 東証14:27-14:53, asynchronous prices; VWAP=turnover/volume at earlier observation",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": 104,
+          "priceAtJST": "2026-10-23T14:45:00+09:00",
+          "unrealizedPnlYen": -15000,
+          "lowYen": 103,
+          "highYen": 107,
+          "volumeShares": 115900,
+          "turnoverYen": 12217000,
+          "vwapYenApprox": 105.41,
+          "credit": {
+            "referenceDate": "2026-10-16",
+            "buyShares": 439000,
+            "sellShares": 29700,
+            "ratio": 14.78,
+            "buyChangeShares": -29400,
+            "sellChangeShares": -6400
+          },
+          "supportYen": [
+            103
+          ],
+          "resistanceYen": [
+            107
+          ],
+          "institutionalShort": "not verified for this execution (except JX)",
+          "sectorRelativeStrength": "not quantified",
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "当日高値・VWAP等で持続的反転を確認できず",
+            "信用需給または流動性面に懸念"
+          ],
+          "invalidatingCondition": "103円割れ・VWAP未回復"
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": 26,
+          "priceAtJST": "2026-10-23T14:42:00+09:00",
+          "unrealizedPnlYen": -7980,
+          "lowYen": 25,
+          "highYen": 27,
+          "volumeShares": 101340700,
+          "turnoverYen": 2681148000,
+          "vwapYenApprox": 26.46,
+          "credit": {
+            "referenceDate": "2026-10-16",
+            "buyShares": 19546400,
+            "sellShares": 4508800,
+            "ratio": 4.34,
+            "buyChangeShares": -1474400,
+            "sellChangeShares": 837700
+          },
+          "supportYen": [
+            25
+          ],
+          "resistanceYen": [
+            27
+          ],
+          "institutionalShort": "not verified for this execution (except JX)",
+          "sectorRelativeStrength": "not quantified",
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "当日高値・VWAP等で持続的反転を確認できず",
+            "信用需給または流動性面に懸念"
+          ],
+          "invalidatingCondition": "25円割れ・27円突破未確認"
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": 2825.5,
+          "priceAtJST": "2026-10-23T14:42:00+09:00",
+          "unrealizedPnlYen": -174100,
+          "lowYen": 2693,
+          "highYen": 2826.5,
+          "volumeShares": 21147800,
+          "turnoverYen": 58248995000,
+          "vwapYenApprox": 2754.38,
+          "credit": {
+            "referenceDate": "2026-10-16",
+            "buyShares": 24447600,
+            "sellShares": 535100,
+            "ratio": 45.69,
+            "buyChangeShares": 1006900,
+            "sellChangeShares": -93800
+          },
+          "supportYen": [
+            2693
+          ],
+          "resistanceYen": [
+            2826.5
+          ],
+          "institutionalShort": "not verified for this execution (except JX)",
+          "sectorRelativeStrength": "JX -3.14% vs 5713 -2.19%,5803 -1.37%,5801 -2.17%,6857 -0.68%",
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "10/21日次信用買残は前日比684300株減少、ただし高水準",
+            "2693円から切り返しVWAP回復、2896円は未回復",
+            "関連4銘柄に劣後"
+          ],
+          "invalidatingCondition": "2693円割れ・2754円近辺VWAP再割れ"
+        },
+        {
+          "code": "5027",
+          "name": "AnyMind Group",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": 754,
+          "priceAtJST": "2026-10-23T14:53:00+09:00",
+          "unrealizedPnlYen": -34596,
+          "lowYen": 730,
+          "highYen": 763,
+          "volumeShares": 298800,
+          "turnoverYen": 221910000,
+          "vwapYenApprox": 742.67,
+          "credit": {
+            "referenceDate": "2026-10-16",
+            "buyShares": 1203800,
+            "sellShares": 21200,
+            "ratio": 56.78,
+            "buyChangeShares": -9100,
+            "sellChangeShares": -11100
+          },
+          "supportYen": [
+            730
+          ],
+          "resistanceYen": [
+            763
+          ],
+          "institutionalShort": "not verified for this execution (except JX)",
+          "sectorRelativeStrength": "not quantified",
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "VWAP回復も高値763円から反落",
+            "信用倍率56.78倍で需給懸念"
+          ],
+          "invalidatingCondition": "730円割れ・767円回復未確認"
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": 138,
+          "priceAtJST": "2026-10-23T14:27:00+09:00",
+          "unrealizedPnlYen": -4800,
+          "lowYen": 136,
+          "highYen": 142,
+          "volumeShares": 24900,
+          "turnoverYen": 3447000,
+          "vwapYenApprox": 138.43,
+          "credit": {
+            "referenceDate": "2026-10-16",
+            "buyShares": 1541200,
+            "sellShares": 0,
+            "ratio": null,
+            "buyChangeShares": -2000,
+            "sellChangeShares": 0
+          },
+          "supportYen": [
+            136
+          ],
+          "resistanceYen": [
+            142
+          ],
+          "institutionalShort": "not verified for this execution (except JX)",
+          "sectorRelativeStrength": "not quantified",
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "当日高値・VWAP等で持続的反転を確認できず",
+            "信用需給または流動性面に懸念"
+          ],
+          "invalidatingCondition": "136円割れ・流動性不足"
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": 175,
+          "priceAtJST": "2026-10-23T14:45:00+09:00",
+          "unrealizedPnlYen": -360,
+          "lowYen": 175,
+          "highYen": 181.3,
+          "volumeShares": 163615100,
+          "turnoverYen": 29300281000,
+          "vwapYenApprox": 179.08,
+          "credit": {
+            "referenceDate": "2026-10-16",
+            "buyShares": 82276200,
+            "sellShares": 15210800,
+            "ratio": 5.41,
+            "buyChangeShares": -5284400,
+            "sellChangeShares": -563500
+          },
+          "supportYen": [
+            175
+          ],
+          "resistanceYen": [
+            181.3
+          ],
+          "institutionalShort": "not verified for this execution (except JX)",
+          "sectorRelativeStrength": "not quantified",
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "当日高値・VWAP等で持続的反転を確認できず",
+            "信用需給または流動性面に懸念"
+          ],
+          "invalidatingCondition": "175円割れ・VWAP未回復"
+        }
+      ],
+      "unrealizedPnlYen": -236836,
+      "previousRunPnlYen": -241716,
+      "deltaYen": 4880,
+      "jx": {
+        "state": "信用整理進行中",
+        "previousState": "信用整理進行中",
+        "stateChanged": false,
+        "priceYen": 2825.5,
+        "dayHighYen": 2826.5,
+        "dayLowYen": 2693,
+        "volumeShares": 21147800,
+        "turnoverYen": 58248995000,
+        "vwapYenApprox": 2754.38,
+        "weeklyCredit": {
+          "referenceDate": "2026-10-16",
+          "buyShares": 24447600,
+          "sellShares": 535100,
+          "ratio": 45.69,
+          "buyChangeShares": 1006900,
+          "sellChangeShares": -93800
+        },
+        "dailyCredit": {
+          "referenceDate": "2026-10-21",
+          "buyShares": 22791700,
+          "sellShares": 722900,
+          "ratio": 31.53,
+          "previousDate": "2026-10-20",
+          "buyChangeShares": -684300,
+          "sellChangeShares": 89200
+        },
+        "creditPublishedDate": "unverified; 10/21 is the reference date",
+        "creditUnchangedFromPreviousRun": true,
+        "institutionalShort": {
+          "disclosureDate": "2026-10-21",
+          "calculationDate": "2026-10-19",
+          "nomuraShares": 11106785,
+          "barclaysShares": 14397034,
+          "newChangesVerified": false
+        },
+        "stateReasons": [
+          "日次信用買残は減少するも高水準",
+          "VWAP回復・安値から反発",
+          "関連4銘柄に劣後、前日安値未回復"
+        ],
+        "liquidationCauseConfirmed": false
+      },
+      "audit": {
+        "previousScheduledRunRecordFound": true,
+        "previousDeliveryConfirmed": false,
+        "holdingsStale": true,
+        "positionCountChanged": false,
+        "asynchronousPrices": true,
+        "missing": [
+          "non-JX institutional shorts",
+          "non-JX sector-relative metrics",
+          "moving averages",
+          "volume profile",
+          "credit disclosure timestamp"
+        ],
+        "previousRemoteAuditFileFound": false
+      },
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://s.kabutan.jp/stocks/5016/historical_margins/daily/"
+      ]
+    }
+  ],
+  "note": "Earlier six detailed runs are preserved in local audit JSON; remote file initially absent."
+}
