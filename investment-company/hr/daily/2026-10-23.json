@@ -92,5 +92,13 @@
     "6246は好材料でも売買代金3722.5万円。執行可否を価格の騰落とは独立に評価する",
     "翌週から9:00-10:00の1分/5分足・VWAP・板・実約定の時刻付きスナップショットを保存する"
   ],
-  "saveVerification": "Readback verified after each GitHub write in this run"
+  "saveVerification": "Readback verified after each GitHub write in this run",
+  "dataQualityCorrection": {
+    "field": "JX金属(5016) 2026-10-22終値",
+    "incorrectPriorReport": 2974.5,
+    "verifiedCorrectValue": 2917,
+    "source": "https://finance.yahoo.co.jp/quote/5016.T/history",
+    "impact": "2026-10-23の前日比・評価損益を誤計算するリスク。2026-10-23終値は2830.5。",
+    "owner": "No.3データ検証責任者の横断検証改善対象。個人の独立実行は未確認"
+  }
 }
