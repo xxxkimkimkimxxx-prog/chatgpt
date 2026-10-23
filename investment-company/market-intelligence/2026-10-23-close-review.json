@@ -1,0 +1,269 @@
+{
+  "date": "2026-10-23",
+  "asOf": "2026-10-23 16:30 JST",
+  "reviewerAgentIds": [
+    26,
+    31
+  ],
+  "backfilled": false,
+  "morningHypothesis": {
+    "stance": "弱気、原油・個別業績修正優先、半導体は弱気",
+    "rankedCandidates": [
+      "1605",
+      "4047",
+      "6246",
+      "6146"
+    ],
+    "sourcePaths": [
+      "investment-company/market-intelligence/2026-10-23.json",
+      "investment-company/hr/activity/2026-10-23/daytrade.json",
+      "investment-company/decision-memos/2026-10-23/daytrade.md"
+    ]
+  },
+  "market": {
+    "date": "2026-10-23",
+    "nikkei": {
+      "previousClose": 62907.84,
+      "open": 62667.05,
+      "high": 62786.89,
+      "low": 61462.61,
+      "close": 62693.16,
+      "change": -214.68,
+      "changePct": -0.34,
+      "lowTime": "09:10",
+      "highTime": "15:21"
+    },
+    "topix": {
+      "previousClose": 3997.5,
+      "open": 3985.7,
+      "high": 3986.57,
+      "low": 3907.33,
+      "close": 3965.81,
+      "change": -31.69,
+      "changePct": -0.79,
+      "lowTime": "10:17",
+      "highTime": "09:01"
+    },
+    "sectors": {
+      "advancing": 8,
+      "declining": 25,
+      "leaders": [
+        {
+          "name": "不動産業",
+          "pct": 2.05
+        },
+        {
+          "name": "小売業",
+          "pct": 1.2
+        }
+      ],
+      "weakest": "銀行業"
+    },
+    "context": "NASDAQ/SOX急落で日本株は一時大幅安、日経平均は09:10安値から戻して小幅安で引けた。銀行・非鉄が弱く、不動産・小売は強い。",
+    "sources": [
+      "https://finance.yahoo.co.jp/quote/998407.O",
+      "https://finance.yahoo.co.jp/quote/998405.T",
+      "https://finance.yahoo.co.jp/news/detail/801640c4afe8fdcf0f4a40901d7f8f51219f4b11",
+      "https://news.kobekeizai.jp/blog-entry-23726.html"
+    ]
+  },
+  "marketVerdict": {
+    "classification": "一部的中",
+    "reason": "方向は下落で整合するが、日経は朝-1445円まで下げた後-214.68円で終了。寄り後の反発と強い不動産・小売を事前に十分評価できず",
+    "tags": [
+      "地合い",
+      "需給",
+      "リバーサル"
+    ]
+  },
+  "candidates": [
+    {
+      "code": "1605",
+      "name": "INPEX",
+      "rank": 1,
+      "ohlcv": {
+        "previousClose": 3917,
+        "open": 3897,
+        "high": 3908,
+        "low": 3799,
+        "close": 3860,
+        "volume": 5536100,
+        "turnoverJPY": 21378932000,
+        "highTime": "09:01",
+        "lowTime": "09:44"
+      },
+      "previousCloseReturnPct": -1.46,
+      "openToCloseReturnPct": -0.95,
+      "openToHighPct": 0.28,
+      "openToLowPct": -2.51,
+      "verdict": "外れ",
+      "reasonTags": [
+        "織り込み",
+        "需給",
+        "地合い",
+        "寄り天"
+      ],
+      "signalAssessment": "原油高のSector Alignment仮説は株価に波及せず、9:01に日中高値。始値比-0.95%。",
+      "preOpenWarningsValidated": "No.24の原油高=必ず株高ではないという警告は妥当。前日+3.08%の織り込みを過小評価。",
+      "missedOpportunities": "09:10以降の実際のエントリー可否は不明",
+      "execution": {
+        "entryConditionVerified": false,
+        "skipConditionVerified": false,
+        "exitConditionVerified": false,
+        "reason": "09:00-09:10 minute OHLC/VWAP/board/actual orders unavailable",
+        "actualMFE": null,
+        "actualMAE": null,
+        "realizedPnl": null
+      },
+      "source": "https://finance.yahoo.co.jp/quote/1605.T"
+    },
+    {
+      "code": "4047",
+      "name": "関東電化工業",
+      "rank": 2,
+      "ohlcv": {
+        "previousClose": 1943,
+        "open": 1865,
+        "high": 1993,
+        "low": 1820,
+        "close": 1980,
+        "volume": 2046400,
+        "turnoverJPY": 3911495000,
+        "highTime": "15:21",
+        "lowTime": "09:26"
+      },
+      "previousCloseReturnPct": 1.9,
+      "openToCloseReturnPct": 6.17,
+      "openToHighPct": 6.86,
+      "openToLowPct": -2.41,
+      "verdict": "一部的中",
+      "reasonTags": [
+        "材料解釈",
+        "地合い",
+        "初動下落後反発"
+      ],
+      "signalAssessment": "寄り付きGDから安値を付けた後に引けにかけ上昇。前日比+1.90%、始値比+6.17%。材料方向の選別は有効。",
+      "preOpenWarningsValidated": "No.8の業績修正発見とNo.29の市場期待差の留保が適切。",
+      "missedOpportunities": "9:26安値後の回復を実際に捕捉できたかは未検証",
+      "execution": {
+        "entryConditionVerified": false,
+        "skipConditionVerified": false,
+        "exitConditionVerified": false,
+        "reason": "09:00-09:10 minute OHLC/VWAP/board/actual orders unavailable",
+        "actualMFE": null,
+        "actualMAE": null,
+        "realizedPnl": null
+      },
+      "source": "https://finance.yahoo.co.jp/quote/4047.T"
+    },
+    {
+      "code": "6246",
+      "name": "テクノスマート",
+      "rank": 3,
+      "ohlcv": {
+        "previousClose": 1720,
+        "open": 1734,
+        "high": 1748,
+        "low": 1701,
+        "close": 1730,
+        "volume": 21600,
+        "turnoverJPY": 37225000,
+        "highTime": "13:16",
+        "lowTime": "09:30"
+      },
+      "previousCloseReturnPct": 0.58,
+      "openToCloseReturnPct": -0.23,
+      "openToHighPct": 0.81,
+      "openToLowPct": -1.9,
+      "verdict": "一部的中",
+      "reasonTags": [
+        "流動性不足",
+        "執行条件",
+        "材料織り込み"
+      ],
+      "signalAssessment": "前日比+0.58%だが始値比-0.23%。終日売買代金3722.5万円と薄い。",
+      "preOpenWarningsValidated": "No.16/22の流動性制約は当日の売買代金からも合理的。",
+      "missedOpportunities": "9:30安値後の反発はあったが、スプレッド未取得のため執行機会は不明",
+      "execution": {
+        "entryConditionVerified": false,
+        "skipConditionVerified": false,
+        "exitConditionVerified": false,
+        "reason": "09:00-09:10 minute OHLC/VWAP/board/actual orders unavailable",
+        "actualMFE": null,
+        "actualMAE": null,
+        "realizedPnl": null
+      },
+      "source": "https://finance.yahoo.co.jp/quote/6246.T"
+    },
+    {
+      "code": "6146",
+      "name": "ディスコ",
+      "rank": 4,
+      "ohlcv": {
+        "previousClose": 51230,
+        "open": 48530,
+        "high": 50850,
+        "low": 46100,
+        "close": 49290,
+        "volume": 4383200,
+        "turnoverJPY": 214284106000,
+        "highTime": "09:46",
+        "lowTime": "09:10"
+      },
+      "previousCloseReturnPct": -3.79,
+      "openToCloseReturnPct": 1.57,
+      "openToHighPct": 4.78,
+      "openToLowPct": -5.01,
+      "verdict": "外れ",
+      "reasonTags": [
+        "セクター不一致",
+        "織り込み",
+        "急落後反発"
+      ],
+      "signalAssessment": "前日比-3.79%で好決算の強気方向は外れ。一方、始値比+1.57%、9:10安値から9:46高値へ反発。",
+      "preOpenWarningsValidated": "No.6/29の半導体逆風警告は妥当。No.15/18が想定した高値再突破ルールの有効性は分足なしで判定不能。",
+      "missedOpportunities": "9:10安値後の強い反発機会を順位4位で取り逃した可能性",
+      "execution": {
+        "entryConditionVerified": false,
+        "skipConditionVerified": false,
+        "exitConditionVerified": false,
+        "reason": "09:00-09:10 minute OHLC/VWAP/board/actual orders unavailable",
+        "actualMFE": null,
+        "actualMAE": null,
+        "realizedPnl": null
+      },
+      "source": "https://finance.yahoo.co.jp/quote/6146.T"
+    }
+  ],
+  "classificationCounts": {
+    "的中": 0,
+    "一部的中": 2,
+    "外れ": 2,
+    "検証不能": 0
+  },
+  "classificationCaveat": "上記は材料方向・日足構造の暫定分類。9:10条件付き売買の実現成績は4銘柄すべて検証不能であり勝敗には加算しない。",
+  "learning": [
+    "原油高=INPEX上昇ではない。前日の上昇織り込み・円高・同業追随を確認する",
+    "4047のGD→反発のような相対強度を発見するには、寄り後10-30分のVWAP・出来高・初動安値回復を記録する",
+    "6146は日足マイナスでも始値比プラス、9:10安値から9:46高値まで反発。弱気バイアスで反転機会を排除しない",
+    "6246は好材料でも売買代金3722.5万円。執行可否を価格の騰落とは独立に評価する",
+    "翌週から9:00-10:00の1分/5分足・VWAP・板・実約定の時刻付きスナップショットを保存する"
+  ],
+  "dataLimitations": [
+    "全銘柄の9:10時点VWAP・板・スプレッド・注文履歴未取得",
+    "同業株の引け時点の一部詳細未照合",
+    "先物引け時点と機関投資家実フロー未取得",
+    "候補のMFE/MAEはエントリー価格・約定時刻が未確定で算定不可"
+  ],
+  "dataSources": [
+    "https://finance.yahoo.co.jp/quote/1605.T",
+    "https://finance.yahoo.co.jp/quote/4047.T",
+    "https://finance.yahoo.co.jp/quote/5016.T",
+    "https://finance.yahoo.co.jp/quote/6146.T",
+    "https://finance.yahoo.co.jp/quote/6246.T",
+    "https://finance.yahoo.co.jp/quote/998407.O",
+    "https://finance.yahoo.co.jp/quote/998405.T",
+    "https://finance.yahoo.co.jp/news/detail/801640c4afe8fdcf0f4a40901d7f8f51219f4b11",
+    "https://news.kobekeizai.jp/blog-entry-23726.html"
+  ]
+}
