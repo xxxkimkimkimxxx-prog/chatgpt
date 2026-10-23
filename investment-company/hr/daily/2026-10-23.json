@@ -1,0 +1,96 @@
+{
+  "date": "2026-10-23",
+  "asOf": "2026-10-23 16:30 JST",
+  "weeklyReviewExecuted": false,
+  "weeklyReviewReason": "Friday; Monday only",
+  "market": {
+    "nikkei": 62693.16,
+    "nikkeiChangePct": -0.34,
+    "topix": 3965.81,
+    "topixChangePct": -0.79,
+    "sectorsUp": 8,
+    "sectorsDown": 25
+  },
+  "stanceVerdict": {
+    "classification": "一部的中",
+    "reason": "方向は下落で整合するが、日経は朝-1445円まで下げた後-214.68円で終了。寄り後の反発と強い不動産・小売を事前に十分評価できず",
+    "tags": [
+      "地合い",
+      "需給",
+      "リバーサル"
+    ]
+  },
+  "candidateSummary": [
+    {
+      "code": "1605",
+      "verdict": "外れ",
+      "prevClosePct": -1.46,
+      "openClosePct": -0.95,
+      "entryVerified": false
+    },
+    {
+      "code": "4047",
+      "verdict": "一部的中",
+      "prevClosePct": 1.9,
+      "openClosePct": 6.17,
+      "entryVerified": false
+    },
+    {
+      "code": "6246",
+      "verdict": "一部的中",
+      "prevClosePct": 0.58,
+      "openClosePct": -0.23,
+      "entryVerified": false
+    },
+    {
+      "code": "6146",
+      "verdict": "外れ",
+      "prevClosePct": -3.79,
+      "openClosePct": 1.57,
+      "entryVerified": false
+    }
+  ],
+  "performanceReviewPath": "investment-company/hr/activity/2026-10-23/performance-review.json",
+  "hrAuditPath": "investment-company/hr/activity/2026-10-23/hr-audit.json",
+  "reviewPath": "investment-company/market-intelligence/2026-10-23-close-review.json",
+  "opportunities": 37,
+  "evidenceCount": 37,
+  "activeRoles": 26,
+  "roleCount": 34,
+  "holdings": {
+    "code": "5016",
+    "close": 2830.5,
+    "previousClose": 2917,
+    "unrealizedPnlIf200SharesAt3696": -173100,
+    "holdingsAsOf": "2026-10-14 21:47 JST",
+    "averagingDecision": "見送り：信用需給改善・反転確認できず"
+  },
+  "audit": {
+    "morningReport": "present 07:30",
+    "morningActivity": "present",
+    "daytradeActivity": "present roleSimulation=true",
+    "daytradeMemo": "backfilled after 16:30; original absent",
+    "daytradeLatest": "backfilled after 16:30; original 10/20 stale",
+    "previousCloseReview": "present but summary-only",
+    "todayThemeResearch": "independent file not confirmed",
+    "intradayVWAP": "unavailable",
+    "actualTrades": "not confirmed",
+    "operationalIssue": [
+      "2026-10-22にも08:00原本欠損/概要版問題があったため連続欠損。No.31重大改善事項"
+    ],
+    "evidenceGap": [
+      "08:00原本のGitHub欠損（事後復元、当時存在しなかった）",
+      "役割ログは独立AI実行の証明ではない",
+      "9:10分足・VWAP・板・約定記録なし",
+      "テーマ研究の当日独立ファイル未確認"
+    ]
+  },
+  "nextDayLessons": [
+    "原油高=INPEX上昇ではない。前日の上昇織り込み・円高・同業追随を確認する",
+    "4047のGD→反発のような相対強度を発見するには、寄り後10-30分のVWAP・出来高・初動安値回復を記録する",
+    "6146は日足マイナスでも始値比プラス、9:10安値から9:46高値まで反発。弱気バイアスで反転機会を排除しない",
+    "6246は好材料でも売買代金3722.5万円。執行可否を価格の騰落とは独立に評価する",
+    "翌週から9:00-10:00の1分/5分足・VWAP・板・実約定の時刻付きスナップショットを保存する"
+  ],
+  "saveVerification": "Readback verified after each GitHub write in this run"
+}
