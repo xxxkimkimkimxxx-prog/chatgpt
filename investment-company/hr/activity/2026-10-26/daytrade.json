@@ -1,0 +1,820 @@
+{
+  "date": "2026-10-26",
+  "asOf": "2026-10-26 08:00 JST",
+  "committee": "daytrade",
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "No.22/9のPTS流動性警告で7715を3位に抑え、No.29の利益質検証で9107を4位に抑えた。No.34の一次実需評価によりKOA/6954を優先。"
+      ],
+      "novelContribution": "No.22/9のPTS流動性警告で7715を3位に抑え、No.29の利益質検証で9107を4位に抑えた。No.34の一次実需評価によりKOA/6954を優先。",
+      "decisionImpact": "No.22/9のPTS流動性警告で7715を3位に抑え、No.29の利益質検証で9107を4位に抑えた。No.34の一次実需評価によりKOA/6954を優先。",
+      "candidatesPromoted": [
+        "6999",
+        "6954"
+      ],
+      "candidatesRejected": [
+        "6838"
+      ],
+      "risksFlagged": [
+        "No.22/9のPTS流動性警告で7715を3位に抑え、No.29の利益質検証で9107を4位に抑えた。No.34の一次実需評価によりKOA/6954を優先。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "ユーザー最終決裁、寄前発注禁止、固定金額損失上限を使わない、校正されていない確率を実績勝率と混同しない。"
+      ],
+      "novelContribution": "ユーザー最終決裁、寄前発注禁止、固定金額損失上限を使わない、校正されていない確率を実績勝率と混同しない。",
+      "decisionImpact": "ユーザー最終決裁、寄前発注禁止、固定金額損失上限を使わない、校正されていない確率を実績勝率と混同しない。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "ユーザー最終決裁、寄前発注禁止、固定金額損失上限を使わない、校正されていない確率を実績勝率と混同しない。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "10/26朝レポート・テーマ・10/23部分close-reviewを照合。holdings10/14/performance10/05/watchlist10/02。KOA公式/PTSとファナック公式を再検証。"
+      ],
+      "novelContribution": "10/26朝レポート・テーマ・10/23部分close-reviewを照合。holdings10/14/performance10/05/watchlist10/02。KOA公式/PTSとファナック公式を再検証。",
+      "decisionImpact": "10/26朝レポート・テーマ・10/23部分close-reviewを照合。holdings10/14/performance10/05/watchlist10/02。KOA公式/PTSとファナック公式を再検証。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26朝レポート・テーマ・10/23部分close-reviewを照合。holdings10/14/performance10/05/watchlist10/02。KOA公式/PTSとファナック公式を再検証。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "米金利約5%と中東原油高を警戒。指数間乖離を理由に一律強気を回避。"
+      ],
+      "novelContribution": "米金利約5%と中東原油高を警戒。指数間乖離を理由に一律強気を回避。",
+      "decisionImpact": "米金利約5%と中東原油高を警戒。指数間乖離を理由に一律強気を回避。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米金利約5%と中東原油高を警戒。指数間乖離を理由に一律強気を回避。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        5,
+        6
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "原油高でINPEX上昇と断定しない。ENEOSはM&A実需と原油感応度を区別。"
+      ],
+      "novelContribution": "原油高でINPEX上昇と断定しない。ENEOSはM&A実需と原油感応度を区別。",
+      "decisionImpact": "原油高でINPEX上昇と断定しない。ENEOSはM&A実需と原油感応度を区別。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "1605"
+      ],
+      "risksFlagged": [
+        "原油高でINPEX上昇と断定しない。ENEOSはM&A実需と原油感応度を区別。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        4,
+        21
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "SOX+0.44%は前日-6.72%の穴埋めではない。半導体全面強気を否定。"
+      ],
+      "novelContribution": "SOX+0.44%は前日-6.72%の穴埋めではない。半導体全面強気を否定。",
+      "decisionImpact": "SOX+0.44%は前日-6.72%の穴埋めではない。半導体全面強気を否定。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "6857",
+        "6146"
+      ],
+      "risksFlagged": [
+        "SOX+0.44%は前日-6.72%の穴埋めではない。半導体全面強気を否定。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        7,
+        21
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "10/23不動産+2.05%、海運-2.10%、銀行-2.28%を確認し9107に同業確認条件を付けた。"
+      ],
+      "novelContribution": "10/23不動産+2.05%、海運-2.10%、銀行-2.28%を確認し9107に同業確認条件を付けた。",
+      "decisionImpact": "10/23不動産+2.05%、海運-2.10%、銀行-2.28%を確認し9107に同業確認条件を付けた。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/23不動産+2.05%、海運-2.10%、銀行-2.28%を確認し9107に同業確認条件を付けた。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        6
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "10/23引け後KOA/ファナック/川崎汽船の企業IRを確認、長野計器は二次情報として留保。"
+      ],
+      "novelContribution": "10/23引け後KOA/ファナック/川崎汽船の企業IRを確認、長野計器は二次情報として留保。",
+      "decisionImpact": "10/23引け後KOA/ファナック/川崎汽船の企業IRを確認、長野計器は二次情報として留保。",
+      "candidatesPromoted": [
+        "6999",
+        "6954",
+        "9107"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/23引け後KOA/ファナック/川崎汽船の企業IRを確認、長野計器は二次情報として留保。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.koaglobal.com/news/ir/1023-XX",
+        "https://www.fanuc.co.jp/ja/ir/announce/",
+        "https://www.kline.co.jp/ja/news.html",
+        "https://www.hd.eneos.co.jp/news/release_information/year/2026/20261023_01_01_mr08/"
+      ],
+      "duplicationWith": [
+        29,
+        32
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "PTS KOA97,800株/ファナック90,000株/長野1,100株/川崎3,500株を照合、7715の執行順位を抑制。"
+      ],
+      "novelContribution": "PTS KOA97,800株/ファナック90,000株/長野1,100株/川崎3,500株を照合、7715の執行順位を抑制。",
+      "decisionImpact": "PTS KOA97,800株/ファナック90,000株/長野1,100株/川崎3,500株を照合、7715の執行順位を抑制。",
+      "candidatesPromoted": [
+        "6999",
+        "6954"
+      ],
+      "candidatesRejected": [
+        "7715"
+      ],
+      "risksFlagged": [
+        "PTS KOA97,800株/ファナック90,000株/長野1,100株/川崎3,500株を照合、7715の執行順位を抑制。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/6999.T",
+        "https://finance.yahoo.co.jp/quote/6954.T",
+        "https://finance.yahoo.co.jp/quote/7715.T",
+        "https://finance.yahoo.co.jp/quote/9107.T"
+      ],
+      "duplicationWith": [
+        16,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "GU高値再突破だけでなくGD安値回復→VWAP奪回も条件化。10/23の4047/6146の反転を反映。"
+      ],
+      "novelContribution": "GU高値再突破だけでなくGD安値回復→VWAP奪回も条件化。10/23の4047/6146の反転を反映。",
+      "decisionImpact": "GU高値再突破だけでなくGD安値回復→VWAP奪回も条件化。10/23の4047/6146の反転を反映。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "GU高値再突破だけでなくGD安値回復→VWAP奪回も条件化。10/23の4047/6146の反転を反映。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        18,
+        25
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "板未取得を明記。PTS数量と東証売買代金を分離、7715/9107は寄後の板確認を必須化。"
+      ],
+      "novelContribution": "板未取得を明記。PTS数量と東証売買代金を分離、7715/9107は寄後の板確認を必須化。",
+      "decisionImpact": "板未取得を明記。PTS数量と東証売買代金を分離、7715/9107は寄後の板確認を必須化。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "7715"
+      ],
+      "risksFlagged": [
+        "板未取得を明記。PTS数量と東証売買代金を分離、7715/9107は寄後の板確認を必須化。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/6999.T",
+        "https://finance.yahoo.co.jp/quote/6954.T",
+        "https://finance.yahoo.co.jp/quote/7715.T",
+        "https://finance.yahoo.co.jp/quote/9107.T"
+      ],
+      "duplicationWith": [
+        9,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "9:10以降の指値・分割/条件失効取消を推奨。特別気配は初値後10分観察し直す。"
+      ],
+      "novelContribution": "9:10以降の指値・分割/条件失効取消を推奨。特別気配は初値後10分観察し直す。",
+      "decisionImpact": "9:10以降の指値・分割/条件失効取消を推奨。特別気配は初値後10分観察し直す。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "9:10以降の指値・分割/条件失効取消を推奨。特別気配は初値後10分観察し直す。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        15,
+        20
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "価格構造がない段階で円建て損失・統計的期待利益を算定しない。RRは利確目標に限定。"
+      ],
+      "novelContribution": "価格構造がない段階で円建て損失・統計的期待利益を算定しない。RRは利確目標に限定。",
+      "decisionImpact": "価格構造がない段階で円建て損失・統計的期待利益を算定しない。RRは利確目標に限定。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "価格構造がない段階で円建て損失・統計的期待利益を算定しない。RRは利確目標に限定。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        18,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "金利・中東・原油・決算ギャップ、月末イベントをストレス要因として列挙。"
+      ],
+      "novelContribution": "金利・中東・原油・決算ギャップ、月末イベントをストレス要因として列挙。",
+      "decisionImpact": "金利・中東・原油・決算ギャップ、月末イベントをストレス要因として列挙。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "金利・中東・原油・決算ギャップ、月末イベントをストレス要因として列挙。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        4,
+        5
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "長野PTS1,100株、川崎3,500株、ENEOS700株。薄いPTSから執行可能性を推測しない。"
+      ],
+      "novelContribution": "長野PTS1,100株、川崎3,500株、ENEOS700株。薄いPTSから執行可能性を推測しない。",
+      "decisionImpact": "長野PTS1,100株、川崎3,500株、ENEOS700株。薄いPTSから執行可能性を推測しない。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "7715",
+        "5020"
+      ],
+      "risksFlagged": [
+        "長野PTS1,100株、川崎3,500株、ENEOS700株。薄いPTSから執行可能性を推測しない。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/6999.T",
+        "https://finance.yahoo.co.jp/quote/6954.T",
+        "https://finance.yahoo.co.jp/quote/7715.T",
+        "https://finance.yahoo.co.jp/quote/9107.T"
+      ],
+      "duplicationWith": [
+        9,
+        16
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "KOA+11%・ファナック+7%GUの売り崩し、川崎汽船の業種逆風を空売り目線で評価。"
+      ],
+      "novelContribution": "KOA+11%・ファナック+7%GUの売り崩し、川崎汽船の業種逆風を空売り目線で評価。",
+      "decisionImpact": "KOA+11%・ファナック+7%GUの売り崩し、川崎汽船の業種逆風を空売り目線で評価。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "KOA+11%・ファナック+7%GUの売り崩し、川崎汽船の業種逆風を空売り目線で評価。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        24,
+        25
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "上方修正≠寄後上昇、原油高≠資源株高、ONE持分法利益≠営業利益を検証。"
+      ],
+      "novelContribution": "上方修正≠寄後上昇、原油高≠資源株高、ONE持分法利益≠営業利益を検証。",
+      "decisionImpact": "上方修正≠寄後上昇、原油高≠資源株高、ONE持分法利益≠営業利益を検証。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "上方修正≠寄後上昇、原油高≠資源株高、ONE持分法利益≠営業利益を検証。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        23,
+        25
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "前日比プラスを勝ちにしない。10/22寄り天再発・10/23GD反転を両方学習。"
+      ],
+      "novelContribution": "前日比プラスを勝ちにしない。10/22寄り天再発・10/23GD反転を両方学習。",
+      "decisionImpact": "前日比プラスを勝ちにしない。10/22寄り天再発・10/23GD反転を両方学習。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "前日比プラスを勝ちにしない。10/22寄り天再発・10/23GD反転を両方学習。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        15,
+        23
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "機関実フローは未取得。ファナック自社株買い上限500億円を実際の買い付けと混同しない。"
+      ],
+      "novelContribution": "機関実フローは未取得。ファナック自社株買い上限500億円を実際の買い付けと混同しない。",
+      "decisionImpact": "機関実フローは未取得。ファナック自社株買い上限500億円を実際の買い付けと混同しない。",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "機関実フローは未取得。ファナック自社株買い上限500億円を実際の買い付けと混同しない。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        16
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "KOA上方修正+41.7%、6954+13.9%、9107経常+40.7%に対し営業利益+7.1%。市場コンセンサス未取得を明示。"
+      ],
+      "novelContribution": "KOA上方修正+41.7%、6954+13.9%、9107経常+40.7%に対し営業利益+7.1%。市場コンセンサス未取得を明示。",
+      "decisionImpact": "KOA上方修正+41.7%、6954+13.9%、9107経常+40.7%に対し営業利益+7.1%。市場コンセンサス未取得を明示。",
+      "candidatesPromoted": [
+        "6999",
+        "6954"
+      ],
+      "candidatesRejected": [
+        "9107"
+      ],
+      "risksFlagged": [
+        "KOA上方修正+41.7%、6954+13.9%、9107経常+40.7%に対し営業利益+7.1%。市場コンセンサス未取得を明示。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.koaglobal.com/news/ir/1023-XX",
+        "https://www.fanuc.co.jp/ja/ir/announce/",
+        "https://www.kline.co.jp/ja/news.html",
+        "https://www.hd.eneos.co.jp/news/release_information/year/2026/20261023_01_01_mr08/"
+      ],
+      "duplicationWith": [
+        8,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "週末16件のニュースを重複除外。電子部品・FA、海運、NIPPO垂直統合をテーマ化。"
+      ],
+      "novelContribution": "週末16件のニュースを重複除外。電子部品・FA、海運、NIPPO垂直統合をテーマ化。",
+      "decisionImpact": "週末16件のニュースを重複除外。電子部品・FA、海運、NIPPO垂直統合をテーマ化。",
+      "candidatesPromoted": [
+        "6999",
+        "6954",
+        "5020"
+      ],
+      "candidatesRejected": [
+        "6838"
+      ],
+      "risksFlagged": [
+        "週末16件のニュースを重複除外。電子部品・FA、海運、NIPPO垂直統合をテーマ化。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        8,
+        33
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "AI設備→FA→抵抗器、海運運賃→ONE持分法利益、石油精製→舗装の直接/間接経路を区別。"
+      ],
+      "novelContribution": "AI設備→FA→抵抗器、海運運賃→ONE持分法利益、石油精製→舗装の直接/間接経路を区別。",
+      "decisionImpact": "AI設備→FA→抵抗器、海運運賃→ONE持分法利益、石油精製→舗装の直接/間接経路を区別。",
+      "candidatesPromoted": [
+        "6999",
+        "6954",
+        "9107",
+        "5020"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "AI設備→FA→抵抗器、海運運賃→ONE持分法利益、石油精製→舗装の直接/間接経路を区別。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26.json",
+        "investment-company/market-intelligence/2026-10-23-close-review.json"
+      ],
+      "duplicationWith": [
+        32,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "taskPerformed": "2026-10-26 8:00 JST 寄前委員会・担当役割分析",
+      "keyFindings": [
+        "KOA/ファナック/川崎は会社IRで利益接続確認、ENEOSはM&A事実のみ・当期利益未確認、長野は一次資料不足、6838は検討室のみで除外。"
+      ],
+      "novelContribution": "KOA/ファナック/川崎は会社IRで利益接続確認、ENEOSはM&A事実のみ・当期利益未確認、長野は一次資料不足、6838は検討室のみで除外。",
+      "decisionImpact": "KOA/ファナック/川崎は会社IRで利益接続確認、ENEOSはM&A事実のみ・当期利益未確認、長野は一次資料不足、6838は検討室のみで除外。",
+      "candidatesPromoted": [
+        "6999",
+        "6954",
+        "9107"
+      ],
+      "candidatesRejected": [
+        "6838"
+      ],
+      "risksFlagged": [
+        "KOA/ファナック/川崎は会社IRで利益接続確認、ENEOSはM&A事実のみ・当期利益未確認、長野は一次資料不足、6838は検討室のみで除外。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9:00以降の分足・VWAP・板未取得",
+        "市場コンセンサス・機関実フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.koaglobal.com/news/ir/1023-XX",
+        "https://www.fanuc.co.jp/ja/ir/announce/",
+        "https://www.kline.co.jp/ja/news.html",
+        "https://www.hd.eneos.co.jp/news/release_information/year/2026/20261023_01_01_mr08/"
+      ],
+      "duplicationWith": [
+        29,
+        33
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析証跡。独立した別プロセス実行の証明ではない。"
+    }
+  ],
+  "decisionSummary": {
+    "rankedCandidates": [
+      "6999",
+      "6954",
+      "7715",
+      "9107",
+      "5020"
+    ],
+    "rankChanges": [
+      "No.22/9の薄いPTS警告で7715を3位に抑制",
+      "No.29が9107経常利益と営業利益の差を指摘し4位",
+      "No.34がENEOSの当期利益未確定を指摘し5位",
+      "No.6/24により半導体高ベータを本命から除外"
+    ],
+    "ordersPlaced": false,
+    "finalDecisionMaker": "user"
+  },
+  "audit": {
+    "morningReport": "found",
+    "morningActivity": "found",
+    "previousCloseReview": "found partial",
+    "themeResearch": "found summary",
+    "backfilled": false,
+    "evidenceGap": [
+      "10/23引け後レビューは4候補のみ",
+      "分足/VWAP/板/当日機関フロー未取得",
+      "長野計器一次IR原本未取得"
+    ],
+    "activitySaveFailure": false
+  }
+}
