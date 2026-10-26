@@ -1,0 +1,106 @@
+{
+  "week": "2026-W43",
+  "date": "2026-10-26",
+  "asOf": "2026-10-26 16:54 JST",
+  "auditorRoles": [
+    1,
+    2,
+    31
+  ],
+  "no31SelfScoring": true,
+  "agent31Review": {
+    "reviewers": [
+      1,
+      2
+    ],
+    "method": "No.1/2の役割による監査。独立AIプロセス稼働を意味しない。",
+    "score": 77,
+    "grade": "B",
+    "observations": [
+      "34名分の監査を実施した一方、複数日にわたるGitHub原本欠損の予防策が未完成",
+      "独立稼働証明と役割別分析証跡を区別している"
+    ],
+    "formalAction": "なし"
+  },
+  "scoreWeights": {
+    "accuracy": 25,
+    "novelContribution": 20,
+    "decisionUsefulness": 20,
+    "earlyDiscovery": 15,
+    "uncertaintyManagement": 10,
+    "nonDuplicationEfficiency": 10
+  },
+  "roleCount": 34,
+  "provisionalScores": 26,
+  "evaluationHolds": 8,
+  "independentExecutionVerified": false,
+  "activityEvidenceNotIndependent": true,
+  "weeklySources": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/activity/2026-10-20/hr-audit.json",
+    "investment-company/hr/activity/2026-10-21/hr-audit.json",
+    "investment-company/hr/activity/2026-10-23/hr-audit.json",
+    "investment-company/hr/activity/2026-10-22/market-intelligence.json",
+    "investment-company/hr/activity/2026-10-22/market-close-review.json",
+    "investment-company/hr/activity/2026-10-20/daytrade.json",
+    "investment-company/hr/activity/2026-10-23/daytrade.json",
+    "investment-company/hr/activity/2026-10-21/performance-review.json",
+    "investment-company/hr/activity/2026-10-23/performance-review.json",
+    "investment-company/market-intelligence/2026-10-19-close-review.json",
+    "investment-company/market-intelligence/2026-10-23-close-review.json"
+  ],
+  "operationalIssues": [
+    {
+      "issue": "10/19の個別役割activity・決裁書が欠損",
+      "status": "open",
+      "nextAction": "翌営業日の原本保存監査で再確認"
+    },
+    {
+      "issue": "10/21の市場レポートと決裁書は概要版",
+      "status": "open",
+      "nextAction": "翌営業日の原本保存監査で再確認"
+    },
+    {
+      "issue": "10/22のdaytrade詳細証跡がGitHub欠損",
+      "status": "open",
+      "nextAction": "翌営業日の原本保存監査で再確認"
+    },
+    {
+      "issue": "9:10の板・VWAP・分足・約定履歴なし",
+      "status": "open",
+      "nextAction": "翌営業日の原本保存監査で再確認"
+    },
+    {
+      "issue": "performance-summaryは2026-10-05時点",
+      "status": "open",
+      "nextAction": "翌営業日の原本保存監査で再確認"
+    },
+    {
+      "issue": "過去4週の週次評価が未保存",
+      "status": "open",
+      "nextAction": "翌営業日の原本保存監査で再確認"
+    }
+  ],
+  "sourceDataFreshness": {
+    "performanceSummary": "2026-10-05 19:32 JST",
+    "agentScorecardBefore": "2026-09-06 21:52 JST"
+  },
+  "scorecardUpdatePlanned": true,
+  "weeklyJsonReadbackVerified": true,
+  "weeklyMarkdownReadbackVerified": true,
+  "previousWeekDeltaStatus": "unavailable",
+  "rollingScoreStatus": "insufficient_weekly_history",
+  "formalPersonnelChanges": "none; user approval required",
+  "dataQualityRules": [
+    "当日以前に取得可能な情報のみを評価",
+    "活動機会なしを減点しない",
+    "前日比だけを成功に数えない",
+    "実約定と9:10分足がないため取引勝率・MFE/MAEは不明",
+    "No.31自己採点禁止"
+  ],
+  "saveAudit": {
+    "scorecard": "pending",
+    "audit": "pending"
+  }
+}
