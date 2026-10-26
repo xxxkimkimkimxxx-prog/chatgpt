@@ -100,7 +100,47 @@
     "No.31自己採点禁止"
   ],
   "saveAudit": {
-    "scorecard": "pending",
-    "audit": "pending"
+    "verifiedFiles": [
+      {
+        "path": "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "verified": true
+      },
+      {
+        "path": "investment-company/hr/activity/2026-10-26/market-close-review.json",
+        "verified": true
+      },
+      {
+        "path": "investment-company/hr/activity/2026-10-26/performance-review.json",
+        "verified": true
+      },
+      {
+        "path": "investment-company/hr/activity/2026-10-26/hr-audit.json",
+        "verified": true
+      },
+      {
+        "path": "investment-company/hr/daily/2026-10-26.json",
+        "verified": true
+      },
+      {
+        "path": "investment-company/hr/weekly/2026-W43.json",
+        "verified": true
+      },
+      {
+        "path": "investment-company/hr/weekly/2026-W43.md",
+        "verified": true
+      },
+      {
+        "path": "investment-company/hr/agent-scorecard.json",
+        "verified": true
+      },
+      {
+        "path": "investment-company/hr/audit/2026-W43.json",
+        "verified": true
+      }
+    ],
+    "verifiedCount": 9,
+    "unverifiedCount": 0,
+    "method": "fetch_file after create_file/update_file; date or week and nonempty content confirmed",
+    "checkedAt": "2026-10-26 16:54 JST"
   }
 }
