@@ -227,8 +227,10 @@
       "実注文・約定・最新保有更新なし",
       "当日機関投資家フロー/市場コンセンサス未取得"
     ],
-    "activitySaveFailure": null,
-    "saveStatus": "pending_write_verify"
+    "activitySaveFailure": false,
+    "saveStatus": "all_three_primary_files_saved_and_fetch_verified_2026-10-27",
+    "primaryVerifiedCount": 3,
+    "backfillVerifiedCount": 3
   },
   "sources": [
     "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
