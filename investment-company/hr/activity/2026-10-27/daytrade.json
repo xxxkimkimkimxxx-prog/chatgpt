@@ -1,0 +1,727 @@
+{
+  "date": "2026-10-27",
+  "asOf": "2026-10-27 08:00 JST",
+  "committee": "daytrade",
+  "sourceMemo": "investment-company/decision-memos/2026-10-27/daytrade.md",
+  "agentCount": 23,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "No.6のSOX反発とNo.34の企業実需を採用し6857/5803を上位。No.22のPTS薄商い、No.29の8060の負の市場反応で8060/2908を下位に。"
+      ],
+      "novelContribution": "No.6のSOX反発とNo.34の企業実需を採用し6857/5803を上位。No.22のPTS薄商い、No.29の8060の負の市場反応で8060/2908を下位に。",
+      "decisionImpact": "6857/5803昇格、8060/2908抑制",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [
+        "1605",
+        "9663"
+      ],
+      "risksFlagged": [
+        "No.6のSOX反発とNo.34の企業実需を採用し6857/5803を上位。No.22のPTS薄商い、No.29の8060の負の市場反応で8060/2908を下位に。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "寄り前買値断定、AIによる発注、固定損失上限、未校正確率を実績勝率とすることを禁止。"
+      ],
+      "novelContribution": "寄り前買値断定、AIによる発注、固定損失上限、未校正確率を実績勝率とすることを禁止。",
+      "decisionImpact": "全候補を条件付き・未承認に限定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り前買値断定、AIによる発注、固定損失上限、未校正確率を実績勝率とすることを禁止。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "2026-10-27朝の正規GitHub報告欠損とholdings/performance/watchlistの陳腐化を確認。8060のPTS下落、6857/5803のPTS反発を価格ソース照合。"
+      ],
+      "novelContribution": "2026-10-27朝の正規GitHub報告欠損とholdings/performance/watchlistの陳腐化を確認。8060のPTS下落、6857/5803のPTS反発を価格ソース照合。",
+      "decisionImpact": "古い入力を最新扱いしない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "2026-10-27朝の正規GitHub報告欠損とholdings/performance/watchlistの陳腐化を確認。8060のPTS下落、6857/5803のPTS反発を価格ソース照合。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得",
+        "7:30朝レポート原本欠損"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/8060.T/history",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "米国10/26はNASDAQ+0.83%、SOX約+2.8%。10/26日本は日経-0.8%とTOPIX+0.18%の乖離。"
+      ],
+      "novelContribution": "米国10/26はNASDAQ+0.83%、SOX約+2.8%。10/26日本は日経-0.8%とTOPIX+0.18%の乖離。",
+      "decisionImpact": "指数全面強気を否定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米国10/26はNASDAQ+0.83%、SOX約+2.8%。10/26日本は日経-0.8%とTOPIX+0.18%の乖離。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "原油が外交緩和報道で反落し、前日のエネルギー優位の持続性は不確か。"
+      ],
+      "novelContribution": "原油が外交緩和報道で反落し、前日のエネルギー優位の持続性は不確か。",
+      "decisionImpact": "1605を本命から除外",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "1605"
+      ],
+      "risksFlagged": [
+        "原油が外交緩和報道で反落し、前日のエネルギー優位の持続性は不確か。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "米SOX+2.8%でも10/22の急落分を回復したとは限らない。AIテスタを持つ6857は実需と相対強度を条件に候補化。"
+      ],
+      "novelContribution": "米SOX+2.8%でも10/22の急落分を回復したとは限らない。AIテスタを持つ6857は実需と相対強度を条件に候補化。",
+      "decisionImpact": "6857を最優先へ",
+      "candidatesPromoted": [
+        "6857"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米SOX+2.8%でも10/22の急落分を回復したとは限らない。AIテスタを持つ6857は実需と相対強度を条件に候補化。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://www.advantest.com/ja/investors/financial-highlights/review/"
+      ],
+      "duplicationWith": [
+        7,
+        32
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "10/26日経-0.80%/TOPIX+0.18%の乖離。10/27は半導体同業と電線同業の一致を要求。"
+      ],
+      "novelContribution": "10/26日経-0.80%/TOPIX+0.18%の乖離。10/27は半導体同業と電線同業の一致を要求。",
+      "decisionImpact": "セクター不一致なら見送り",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26日経-0.80%/TOPIX+0.18%の乖離。10/27は半導体同業と電線同業の一致を要求。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "10/26 15:30キヤノンMJ公式決算で経常+20.7%。フジッコは14:30の上方修正が場中で既反応。"
+      ],
+      "novelContribution": "10/26 15:30キヤノンMJ公式決算で経常+20.7%。フジッコは14:30の上方修正が場中で既反応。",
+      "decisionImpact": "8060新規材料、2908は織り込みを区別",
+      "candidatesPromoted": [
+        "8060"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26 15:30キヤノンMJ公式決算で経常+20.7%。フジッコは14:30の上方修正が場中で既反応。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://corporate.jp.canon/ir/news",
+        "https://s.minkabu.jp/stock/2908/news"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "6857 PTS32,160円+3.51%、5803 PTS4,104円+3.17%、8060 PTS4,100円-3.51%、2908 PTS1,630.6円で100株。"
+      ],
+      "novelContribution": "6857 PTS32,160円+3.51%、5803 PTS4,104円+3.17%、8060 PTS4,100円-3.51%、2908 PTS1,630.6円で100株。",
+      "decisionImpact": "薄い2908 PTSを価格予測根拠にしない",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [
+        "2908"
+      ],
+      "risksFlagged": [
+        "6857 PTS32,160円+3.51%、5803 PTS4,104円+3.17%、8060 PTS4,100円-3.51%、2908 PTS1,630.6円で100株。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://finance.yahoo.co.jp/quote/8060.T/history",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "duplicationWith": [
+        16,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "10/26 6999初値09:15、6954日中高値09:08。初値が遅れた銘柄は初値後10分観察に変更。"
+      ],
+      "novelContribution": "10/26 6999初値09:15、6954日中高値09:08。初値が遅れた銘柄は初値後10分観察に変更。",
+      "decisionImpact": "寄り天回避と反転型の2経路を明文化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26 6999初値09:15、6954日中高値09:08。初値が遅れた銘柄は初値後10分観察に変更。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "6857東証11,473,600株、5803東証24,543,700株。2908は173,400株で薄いPTS100株。"
+      ],
+      "novelContribution": "6857東証11,473,600株、5803東証24,543,700株。2908は173,400株で薄いPTS100株。",
+      "decisionImpact": "2908を流動性条件で降格",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "2908"
+      ],
+      "risksFlagged": [
+        "6857東証11,473,600株、5803東証24,543,700株。2908は173,400株で薄いPTS100株。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "初値後10分、VWAP奪回/初動高値更新、5分足出来高、板厚・スプレッドを全て要求。"
+      ],
+      "novelContribution": "初値後10分、VWAP奪回/初動高値更新、5分足出来高、板厚・スプレッドを全て要求。",
+      "decisionImpact": "初値09:10以降は観察時計を再設定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "初値後10分、VWAP奪回/初動高値更新、5分足出来高、板厚・スプレッドを全て要求。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "価格構造に基づくRと目標1.8〜2.0Rを設定。未確定価格で円建て損益を創作しない。"
+      ],
+      "novelContribution": "価格構造に基づくRと目標1.8〜2.0Rを設定。未確定価格で円建て損益を創作しない。",
+      "decisionImpact": "高額株も単元未満株を許容、実執行可否確認",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "価格構造に基づくRと目標1.8〜2.0Rを設定。未確定価格で円建て損益を創作しない。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "今週FOMC・米大型テック決算、10/28アドバンテスト決算。イベント直前のリスクとギャップを監視。"
+      ],
+      "novelContribution": "今週FOMC・米大型テック決算、10/28アドバンテスト決算。イベント直前のリスクとギャップを監視。",
+      "decisionImpact": "6857は決算前ポジション持越しリスク警告",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "今週FOMC・米大型テック決算、10/28アドバンテスト決算。イベント直前のリスクとギャップを監視。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "8060は好決算でもPTS-3.51%。2908のPTSは100株のみ。板とスプレッド不良なら一律見送り。"
+      ],
+      "novelContribution": "8060は好決算でもPTS-3.51%。2908のPTSは100株のみ。板とスプレッド不良なら一律見送り。",
+      "decisionImpact": "8060/2908の執行優先順位を抑制",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "2908"
+      ],
+      "risksFlagged": [
+        "8060は好決算でもPTS-3.51%。2908のPTSは100株のみ。板とスプレッド不良なら一律見送り。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "6857/5803はSOX反発のGU後失速、8060は決算出尽くし、2908は場中発表既反応をショート仮説として提示。"
+      ],
+      "novelContribution": "6857/5803はSOX反発のGU後失速、8060は決算出尽くし、2908は場中発表既反応をショート仮説として提示。",
+      "decisionImpact": "全4候補に空売り目線を付与",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "6857/5803はSOX反発のGU後失速、8060は決算出尽くし、2908は場中発表既反応をショート仮説として提示。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "米SOX+2.8%でも日本個別株は必ず上がらない。AI実需は既知で追加利益寄与は未証明。"
+      ],
+      "novelContribution": "米SOX+2.8%でも日本個別株は必ず上がらない。AI実需は既知で追加利益寄与は未証明。",
+      "decisionImpact": "5803/6857の強気前提を弱めた",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米SOX+2.8%でも日本個別株は必ず上がらない。AI実需は既知で追加利益寄与は未証明。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "10/26本命5/5前日比上昇、始値比2/5のみ。GU飛び付き・寄り天・薄いPTSの失敗を再発防止。"
+      ],
+      "novelContribution": "10/26本命5/5前日比上昇、始値比2/5のみ。GU飛び付き・寄り天・薄いPTSの失敗を再発防止。",
+      "decisionImpact": "買い条件を厳格化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26本命5/5前日比上昇、始値比2/5のみ。GU飛び付き・寄り天・薄いPTSの失敗を再発防止。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "当日機関フロー・信用残の最新検証は不可。保有JXの信用需給を推測しない。"
+      ],
+      "novelContribution": "機関投資家実フロー未取得のため独自の新規需給証拠なし",
+      "decisionImpact": "機関フロー根拠の昇格は行わない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "当日機関フロー・信用残の最新検証は不可。保有JXの信用需給を推測しない。"
+      ],
+      "errorsOrMisses": [
+        "最新の機関実フロー未取得"
+      ],
+      "confidence": "low",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "stock-dashboard/data/holdings.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "8060は経常+20.7%でもPTS-3.51%、市場期待未取得で好決算と株価上昇を区別。"
+      ],
+      "novelContribution": "8060は経常+20.7%でもPTS-3.51%、市場期待未取得で好決算と株価上昇を区別。",
+      "decisionImpact": "8060を3位に抑制",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "8060"
+      ],
+      "risksFlagged": [
+        "8060は経常+20.7%でもPTS-3.51%、市場期待未取得で好決算と株価上昇を区別。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://corporate.jp.canon/ir/news",
+        "https://finance.yahoo.co.jp/quote/8060.T/history"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "10/26 Anthropic IPO申請を起点に米AI株・SOX反発というニュースを抽出。"
+      ],
+      "novelContribution": "10/26 Anthropic IPO申請を起点に米AI株・SOX反発というニュースを抽出。",
+      "decisionImpact": "AIテスト・光通信へ波及候補を設定",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26 Anthropic IPO申請を起点に米AI株・SOX反発というニュースを抽出。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/"
+      ],
+      "duplicationWith": [
+        33
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "Anthropic→AI投資期待→半導体テスタ6857とDC光通信5803を直接/周辺に分解。"
+      ],
+      "novelContribution": "Anthropic→AI投資期待→半導体テスタ6857とDC光通信5803を直接/周辺に分解。",
+      "decisionImpact": "単なる連想企業を除外",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [
+        "6838"
+      ],
+      "risksFlagged": [
+        "Anthropic→AI投資期待→半導体テスタ6857とDC光通信5803を直接/周辺に分解。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://www.fujikura.co.jp/news/pressrelease/2025071813824swrwtc.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyFindings": [
+        "6857は企業決算・AI/HPCテスト装置の実需、5803は超多心光ケーブル海外DC納入済みを企業一次情報で確認。8060は公式3Q増益確認。"
+      ],
+      "novelContribution": "6857は企業決算・AI/HPCテスト装置の実需、5803は超多心光ケーブル海外DC納入済みを企業一次情報で確認。8060は公式3Q増益確認。",
+      "decisionImpact": "6857/5803を優先、AI関連の無契約連想株6838は除外",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [
+        "6838"
+      ],
+      "risksFlagged": [
+        "6857は企業決算・AI/HPCテスト装置の実需、5803は超多心光ケーブル海外DC納入済みを企業一次情報で確認。8060は公式3Q増益確認。"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "寄り前につき当日分足・VWAP・板未取得",
+        "市場コンセンサス/当日機関フロー未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.advantest.com/ja/investors/financial-highlights/review/",
+        "https://www.fujikura.co.jp/news/pressrelease/2025071813824swrwtc.html",
+        "https://corporate.jp.canon/ir/news"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "evidenceType": "単一実行内の役割別分析。独立したAIプロセス稼働の証明ではない。"
+    }
+  ],
+  "activitySaveFailure": null,
+  "saveAudit": {
+    "status": "pending_write_verify",
+    "evidenceGap": [
+      "2026-10-27 07:30 original report/activity absent at initial check",
+      "2026-10-27 original theme-research absent at initial check",
+      "9:00以降の分足/VWAP/板・スプレッドは寄り前で未取得",
+      "実注文・約定・最新保有更新なし",
+      "当日機関投資家フロー/市場コンセンサス未取得"
+    ]
+  },
+  "backfilled": false
+}
