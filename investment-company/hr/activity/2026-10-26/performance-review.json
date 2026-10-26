@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-26",
+  "asOf": "2026-10-26 16:54 JST",
+  "agentId": 26,
+  "title": "トレード日誌・成績分析担当",
+  "taskPerformed": "朝の5候補と日経/TOPIXの実績を照合し、前日比・始値比・実執行可否を分離",
+  "keyFindings": [
+    "候補5銘柄すべて前日比上昇、ただし始値比上昇2/5・下落3/5。売買成功率とは異なる",
+    "KOA初値09:15で9:10までの判定は適用不能、ファナック高値09:08で寄り天警告に合致",
+    "日経-0.80%、TOPIX+0.18%で指数と広い市場の乖離が顕著",
+    "VWAP/板/注文ログ未取得のため5候補すべてエントリー条件は検証不能"
+  ],
+  "candidateResults": [
+    {
+      "code": "6999",
+      "rank": 1,
+      "previousCloseReturnPct": 11.22,
+      "openToCloseReturnPct": -2.05,
+      "classification": "一部的中",
+      "firstTradeTime": "09:15",
+      "highTime": "09:15",
+      "entryConditionVerified": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "realizedPnl": null,
+      "risks": [
+        "織り込み",
+        "寄り後失速",
+        "執行条件"
+      ]
+    },
+    {
+      "code": "6954",
+      "rank": 2,
+      "previousCloseReturnPct": 0.93,
+      "openToCloseReturnPct": -4.21,
+      "classification": "一部的中",
+      "firstTradeTime": "09:08",
+      "highTime": "09:08",
+      "entryConditionVerified": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "realizedPnl": null,
+      "risks": [
+        "織り込み",
+        "寄り後失速",
+        "執行条件"
+      ]
+    },
+    {
+      "code": "7715",
+      "rank": 3,
+      "previousCloseReturnPct": 1.06,
+      "openToCloseReturnPct": -0.78,
+      "classification": "一部的中",
+      "firstTradeTime": "09:00",
+      "highTime": "09:20",
+      "entryConditionVerified": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "realizedPnl": null,
+      "risks": [
+        "織り込み",
+        "寄り後失速",
+        "執行条件"
+      ]
+    },
+    {
+      "code": "9107",
+      "rank": 4,
+      "previousCloseReturnPct": 2.59,
+      "openToCloseReturnPct": 1.43,
+      "classification": "一部的中",
+      "firstTradeTime": "09:00",
+      "highTime": "14:03",
+      "entryConditionVerified": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "realizedPnl": null,
+      "risks": [
+        "セクター整合",
+        "執行条件未検証"
+      ]
+    },
+    {
+      "code": "5020",
+      "rank": 5,
+      "previousCloseReturnPct": 3.42,
+      "openToCloseReturnPct": 1.49,
+      "classification": "一部的中",
+      "firstTradeTime": "09:00",
+      "highTime": "14:24",
+      "entryConditionVerified": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "realizedPnl": null,
+      "risks": [
+        "セクター整合",
+        "執行条件未検証"
+      ]
+    }
+  ],
+  "metrics": {
+    "candidateCount": 5,
+    "positiveVsPreviousClose": 5,
+    "positiveVsOpen": 2,
+    "negativeVsOpen": 3,
+    "verifiedTradeCount": 0,
+    "tradeWinRate": null,
+    "actualMFE": null,
+    "actualMAE": null
+  },
+  "novelContribution": "前日比5/5上昇を擬似勝率にしない。寄り後2/5のみプラス、初値遅延・寄り天を検出",
+  "decisionImpact": "No.15/18の9:10判断を初値形成時刻に応じて再設定し、GU後失速を採点対象に追加",
+  "errorsOrMisses": [],
+  "risksFlagged": [
+    "PTS先行織り込み",
+    "寄り天",
+    "初値遅延",
+    "分足・実約定欠損"
+  ],
+  "confidence": "high for OHLC, low for execution",
+  "dataLimitations": [
+    "9:00〜9:10の分足/VWAP/板・スプレッド未取得",
+    "実注文・約定履歴なし",
+    "機関投資家の実フローと個別材料の因果寄与は未検証",
+    "保有・売買実績データの更新遅延"
+  ],
+  "sourcesUsed": [
+    "https://finance.yahoo.co.jp/quote/6999.T",
+    "https://finance.yahoo.co.jp/quote/6954.T",
+    "https://finance.yahoo.co.jp/quote/7715.T",
+    "https://finance.yahoo.co.jp/quote/9107.T",
+    "https://finance.yahoo.co.jp/quote/5020.T",
+    "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/"
+  ],
+  "duplicationWith": [],
+  "noMaterialContribution": false,
+  "backfilled": false,
+  "roleEvidenceType": "単一実行内の役割別分析記録。独立AIプロセスの稼働証明ではない"
+}
