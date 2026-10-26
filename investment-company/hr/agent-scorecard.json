@@ -1,55 +1,1201 @@
 {
-  "version":"1.3",
-  "asOf":"2026-09-06 21:52 JST",
-  "evaluationWindow":"first full-company dry run plus theme-research integration rerun",
-  "policyPath":"investment-company/hr/evaluation-policy.md",
-  "minimumEvaluationPeriod":"4 weeks or sufficient case count",
-  "status":"tracking_active",
-  "formalGradesAssigned":false,
-  "agents":[
-    {"id":1,"title":"投資委員会議長","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"短期イベントと構造テーマを時間軸別に統合"},
-    {"id":2,"title":"投資方針・コンプライアンス担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"最新ルールとAI非発注原則の逸脱防止"},
-    {"id":3,"title":"データ検証責任者","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"GDP二次速報日を9/8 08:50へ公式訂正。一方、初回保存前に誤日付を阻止できなかったため公式カレンダー照合ゲートを改善項目とする"},
-    {"id":4,"title":"グローバルマクロ担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"雇用・中東・政策・中国資本注入を統合"},
-    {"id":5,"title":"金利・為替・商品担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"原油/金利経路からINPEX・MUFGの異因子価値を明確化"},
-    {"id":6,"title":"米国株・AI担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"米指数安と半導体相対強を分離"},
-    {"id":7,"title":"日本市場・セクター担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"狭い指数上昇を検出。No.28との境界を継続観察"},
-    {"id":8,"title":"TDnet・IR・イベント担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"泉州電業・ナトコ・カナモト・小森等の保有外Fresh Catalyst発掘"},
-    {"id":9,"title":"スクリーニング・PTS担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"材料と価格反応・流動性を分離"},
-    {"id":10,"title":"決算・業績担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"業績モメンタム比較を実施"},
-    {"id":11,"title":"財務・キャッシュフロー担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"キオクシア巨額CAPEX/FCFリスクを指摘し準主力化に寄与"},
-    {"id":12,"title":"業界構造・競争優位担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"収益ドライバー比較。No.13との重複率を継続計測"},
-    {"id":13,"title":"経営者・中期計画担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"中計KPI設定。No.12との役割境界を要観察"},
-    {"id":14,"title":"バリュエーション・資本政策担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"成長と価格を分離し高PERの金利感応度を反映"},
-    {"id":15,"title":"デイトレ・価格行動担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"9:00-9:10条件を具体化"},
-    {"id":16,"title":"出来高・需給・板担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"薄商い材料株を降格。No.28との重複要観察"},
-    {"id":17,"title":"スイング・相対強度担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"フジクラ対古河の相対強度差を反映"},
-    {"id":18,"title":"執行設計担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"寄り追い回避・条件付き執行を設計"},
-    {"id":19,"title":"ポートフォリオ担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"AI因子集中と異因子分散を明示し高い初期貢献"},
-    {"id":20,"title":"ポジション・RR担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"週末に架空のエントリー価格を置かず、月曜価格形成後にRR計算する方針を維持"},
-    {"id":21,"title":"イベント・ストレス担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"イラン攻撃/OPEC+で金曜PTS・先物・原油終値の陳腐化を検出し高い初期貢献"},
-    {"id":22,"title":"流動性・ギャップ担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"小型株・GUの出口リスクを選別"},
-    {"id":23,"title":"空売りファンド担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"本命の寄り天・価格過熱ケースを提示"},
-    {"id":24,"title":"前提破壊担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"戦争=原油株高、SOX高=日本半導体高等の単純前提を条件付き化"},
-    {"id":25,"title":"失敗パターン担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"買値執着・GU追い・含み損長期化を警戒"},
-    {"id":26,"title":"トレード日誌・成績分析担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"平均損失>平均利益の構造課題を特定"},
-    {"id":27,"title":"投資仮説・四半期レビュー担当","grade":null,"score":null,"cases":1,"status":"probation","preliminaryObservation":"日立/フジクラ/MUFG等に再審査KPIと破綻条件を設定"},
-    {"id":28,"title":"機関投資家需給担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"専用フローデータ不足。No.7/16との固有領域差を継続確認"},
-    {"id":29,"title":"決算期待値担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"好決算とPTS反応の乖離を指摘し高い初期貢献"},
-    {"id":30,"title":"オルタナティブデータ担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"独自データ寄与は依然限定的。捏造回避は適切。4週間の供給実績を観察"},
-    {"id":31,"title":"人事評価・組織開発担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"34名の成果・重複・精度事故を正式評価せず記録。評価者はNo.1/2"},
-    {"id":32,"title":"ニュース・技術トレンド発掘担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"初案件で5構造テーマを形成し既存探索の穴を補完。発見速度/false positiveを今後測定"},
-    {"id":33,"title":"テーマ・バリューチェーンマッピング担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"価値連鎖で日立/NEC/Trend Micro等を候補化し、単なる関連株列挙を回避"},
-    {"id":34,"title":"テーマ実需・収益感応度検証担当","grade":null,"score":null,"cases":1,"status":"new_hire_probation","preliminaryObservation":"一次情報検証により日立をスイング1位・中長期主力へ、NEC/Trend Microを中長期候補へ昇格させ高い初期貢献"}
+  "version": "1.4",
+  "asOf": "2026-10-26 16:54 JST",
+  "evaluationWindow": "2026-10-19 to 2026-10-23",
+  "policyPath": "investment-company/hr/evaluation-policy.md",
+  "minimumEvaluationPeriod": "4 weeks or sufficient case count",
+  "status": "tracking_active",
+  "formalGradesAssigned": false,
+  "agents": [
+    {
+      "id": 1,
+      "title": "投資委員会議長",
+      "grade": "B",
+      "score": 76,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "短期イベントと構造テーマを時間軸別に統合",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "No.9のPTS過熱、No.22の流動性、No.29の利益品質を採用した順位だが、寄り後4/5失速への予防力は不足"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "No.9のPTS過熱、No.22の流動性、No.29の利益品質を採用した順位だが、寄り後4/5失速への予防力は不足",
+      "improvementAction": "候補順位変更の根拠を事前に数値化し、翌日再現性を検証",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 19,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "grade": "A",
+      "score": 86,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "最新ルールとAI非発注原則の逸脱防止",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "発注せず、最終決裁をユーザーに限定。実約定未確認を明示"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "発注せず、最終決裁をユーザーに限定。実約定未確認を明示",
+      "improvementAction": "役割ログが独立実行ではない点と実売買不明を毎回明示",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 16,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 3,
+      "title": "データ検証責任者",
+      "grade": "B",
+      "score": 70,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "GDP二次速報日を9/8 08:50へ公式訂正。一方、初回保存前に誤日付を阻止できなかったため公式カレンダー照合ゲートを改善項目とする",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "朝原本・決裁書がpartial、保有10/14・成績10/5・watchlist10/2を検出"
+      ],
+      "errorsOrMisses": [
+        "10/22のJX終値誤記の事後訂正。事前の数値照合が不十分"
+      ],
+      "duplication": null,
+      "decisionImpact": "朝原本・決裁書がpartial、保有10/14・成績10/5・watchlist10/2を検出",
+      "improvementAction": "株価の銘柄コード・市場・日付・終値を二重照合し誤記を事前阻止",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 17,
+        "novelContribution": 14,
+        "decisionUsefulness": 14,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 4,
+      "title": "グローバルマクロ担当",
+      "grade": "B",
+      "score": 78,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "雇用・中東・政策・中国資本注入を統合",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "米ダウとNASDAQの乖離を検出。市場は+0.85%反発"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "米ダウとNASDAQの乖離を検出。市場は+0.85%反発",
+      "improvementAction": "地合い方向だけでなく業種間の反転と指数乖離を条件化",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 16,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 5,
+      "title": "金利・為替・商品担当",
+      "grade": "C",
+      "score": 69,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "原油/金利経路からINPEX・MUFGの異因子価値を明確化",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "本日材料的な寄与の明確な証跡なし"
+      ],
+      "errorsOrMisses": [
+        "10/23原油高からINPEXを最上位にした仮説は不成立"
+      ],
+      "duplication": null,
+      "decisionImpact": "本日材料的な寄与の明確な証跡なし",
+      "improvementAction": "原油先物の当日方向と前日までの織り込みを分離",
+      "recommendedAction": "重点改善・降格保留",
+      "weeklyScoreBreakdown": {
+        "accuracy": 17,
+        "novelContribution": 13,
+        "decisionUsefulness": 14,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 6,
+      "title": "米国株・AI担当",
+      "grade": "B",
+      "score": 78,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "米指数安と半導体相対強を分離",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "半導体全面買いを否定したが、6857は+1.68%反発も寄り後-2.35%"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "半導体全面買いを否定したが、6857は+1.68%反発も寄り後-2.35%",
+      "improvementAction": "半導体セクター逆風下でも個別の寄り後反転を別枠監視",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 7,
+      "title": "日本市場・セクター担当",
+      "grade": "B",
+      "score": 75,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "狭い指数上昇を検出。No.28との境界を継続観察",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "前日24業種下落から本日24業種上昇へ転換、指数上昇幅縮小も検証"
+      ],
+      "errorsOrMisses": [],
+      "duplication": "No.28との役割境界を継続確認",
+      "decisionImpact": "前日24業種下落から本日24業種上昇へ転換、指数上昇幅縮小も検証",
+      "improvementAction": "指数の強弱と業種内の相対強度を分ける",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 15,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 8,
+      "title": "TDnet・IR・イベント担当",
+      "grade": "A",
+      "score": 88,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "泉州電業・ナトコ・カナモト・小森等の保有外Fresh Catalyst発掘",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "7918・8708の材料発掘は価格反応あり。ただし寄り後継続性は弱い"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "7918・8708の材料発掘は価格反応あり。ただし寄り後継続性は弱い",
+      "improvementAction": "IR材料の発見に加え実際の寄り後継続性を追跡",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 22,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 13,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 9,
+      "title": "スクリーニング・PTS担当",
+      "grade": "B",
+      "score": 73,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "材料と価格反応・流動性を分離",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "7918夜間PTS148→113、8708約定2500株の注意が寄り後失速に整合"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "7918夜間PTS148→113、8708約定2500株の注意が寄り後失速に整合",
+      "improvementAction": "PTSは出来高・約定時刻とセットで評価、未取得は欠損",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 19,
+        "novelContribution": 14,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 7,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 10,
+      "title": "決算・業績担当",
+      "grade": null,
+      "score": null,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "業績モメンタム比較を実施",
+      "gradeStatus": "evidence_insufficient_hold",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceGap": [
+        "評価可能な役割別活動証跡なし"
+      ],
+      "keyContributions": [],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": null,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "recommendedAction": "評価保留・役割維持",
+      "weeklyScoreBreakdown": null,
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 11,
+      "title": "財務・キャッシュフロー担当",
+      "grade": null,
+      "score": null,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "キオクシア巨額CAPEX/FCFリスクを指摘し準主力化に寄与",
+      "gradeStatus": "evidence_insufficient_hold",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceGap": [
+        "評価可能な役割別活動証跡なし"
+      ],
+      "keyContributions": [],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": null,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "recommendedAction": "評価保留・役割維持",
+      "weeklyScoreBreakdown": null,
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 12,
+      "title": "業界構造・競争優位担当",
+      "grade": null,
+      "score": null,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "収益ドライバー比較。No.13との重複率を継続計測",
+      "gradeStatus": "evidence_insufficient_hold",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceGap": [
+        "評価可能な役割別活動証跡なし"
+      ],
+      "keyContributions": [],
+      "errorsOrMisses": [],
+      "duplication": "No.13との重複は今回未評価",
+      "decisionImpact": null,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "recommendedAction": "評価保留・役割維持",
+      "weeklyScoreBreakdown": null,
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 13,
+      "title": "経営者・中期計画担当",
+      "grade": null,
+      "score": null,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "中計KPI設定。No.12との役割境界を要観察",
+      "gradeStatus": "evidence_insufficient_hold",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceGap": [
+        "評価可能な役割別活動証跡なし"
+      ],
+      "keyContributions": [],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": null,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "recommendedAction": "評価保留・役割維持",
+      "weeklyScoreBreakdown": null,
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 14,
+      "title": "バリュエーション・資本政策担当",
+      "grade": null,
+      "score": null,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "成長と価格を分離し高PERの金利感応度を反映",
+      "gradeStatus": "evidence_insufficient_hold",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceGap": [
+        "評価可能な役割別活動証跡なし"
+      ],
+      "keyContributions": [],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": null,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "recommendedAction": "評価保留・役割維持",
+      "weeklyScoreBreakdown": null,
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 15,
+      "title": "デイトレ・価格行動担当",
+      "grade": "C",
+      "score": 67,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "9:00-9:10条件を具体化",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足",
+        "9:10分足/VWAP/板・実約定履歴未取得"
+      ],
+      "keyContributions": [
+        "初動高安・VWAP基準は有用だが、実際の9:10検証データ未取得"
+      ],
+      "errorsOrMisses": [
+        "9:10時点のVWAP・分足証拠なし。反転機会の評価が不十分"
+      ],
+      "duplication": null,
+      "decisionImpact": "初動高安・VWAP基準は有用だが、実際の9:10検証データ未取得",
+      "improvementAction": "9:10以降の反転と初値遅延に対応する検証可能な条件を追加",
+      "recommendedAction": "重点改善・降格保留",
+      "weeklyScoreBreakdown": {
+        "accuracy": 17,
+        "novelContribution": 13,
+        "decisionUsefulness": 13,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 7,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 16,
+      "title": "出来高・需給・板担当",
+      "grade": "A",
+      "score": 82,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "薄商い材料株を降格。No.28との重複要観察",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "3556特別気配、低流動性の警戒は妥当。3556初値9:21"
+      ],
+      "errorsOrMisses": [],
+      "duplication": "No.28と需給領域の境界に注意",
+      "decisionImpact": "3556特別気配、低流動性の警戒は妥当。3556初値9:21",
+      "improvementAction": "売買代金・板・スプレッドの時刻付き取得を開始",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 16,
+        "decisionUsefulness": 17,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 17,
+      "title": "スイング・相対強度担当",
+      "grade": null,
+      "score": null,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "フジクラ対古河の相対強度差を反映",
+      "gradeStatus": "evidence_insufficient_hold",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceGap": [
+        "評価可能な役割別活動証跡なし"
+      ],
+      "keyContributions": [],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": null,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "recommendedAction": "評価保留・役割維持",
+      "weeklyScoreBreakdown": null,
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 18,
+      "title": "執行設計担当",
+      "grade": "C",
+      "score": 65,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "寄り追い回避・条件付き執行を設計",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足",
+        "9:10分足/VWAP/板・実約定履歴未取得"
+      ],
+      "keyContributions": [
+        "9:10以降の執行条件設計。ただし実執行ログなし"
+      ],
+      "errorsOrMisses": [
+        "約定時刻・板・VWAP未保存で実際の買い条件を検証不能"
+      ],
+      "duplication": null,
+      "decisionImpact": "9:10以降の執行条件設計。ただし実執行ログなし",
+      "improvementAction": "条件付き買い・撤退を分足/VWAP/注文履歴で検証可能にする",
+      "recommendedAction": "重点改善・降格保留",
+      "weeklyScoreBreakdown": {
+        "accuracy": 17,
+        "novelContribution": 12,
+        "decisionUsefulness": 13,
+        "earlyDiscovery": 9,
+        "uncertaintyManagement": 7,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 19,
+      "title": "ポートフォリオ担当",
+      "grade": null,
+      "score": null,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "AI因子集中と異因子分散を明示し高い初期貢献",
+      "gradeStatus": "evidence_insufficient_hold",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceGap": [
+        "評価可能な役割別活動証跡なし"
+      ],
+      "keyContributions": [],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": null,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "recommendedAction": "評価保留・役割維持",
+      "weeklyScoreBreakdown": null,
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 20,
+      "title": "ポジション・RR担当",
+      "grade": "B",
+      "score": 79,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "週末に架空のエントリー価格を置かず、月曜価格形成後にRR計算する方針を維持",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "未確定の円建て損失・期待利益を断定しなかった"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "未確定の円建て損失・期待利益を断定しなかった",
+      "improvementAction": "約定前に架空の円建て損益を置かず構造的撤退線を明示",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 21,
+      "title": "イベント・ストレス担当",
+      "grade": "B",
+      "score": 79,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "イラン攻撃/OPEC+で金曜PTS・先物・原油終値の陳腐化を検出し高い初期貢献",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "6857決算接近・3556希薄化のリスク警告"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "6857決算接近・3556希薄化のリスク警告",
+      "improvementAction": "イベントと地合いの複合ショックの影響を同業と照合",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 22,
+      "title": "流動性・ギャップ担当",
+      "grade": "A",
+      "score": 89,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "小型株・GUの出口リスクを選別",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "3556の執行困難性を警告。初値9:21で9:10判定不可"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "3556の執行困難性を警告。初値9:21で9:10判定不可",
+      "improvementAction": "PTS薄商いとGU後の出口リスクの実証を続ける",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 13,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 23,
+      "title": "空売りファンド担当",
+      "grade": "A",
+      "score": 80,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "本命の寄り天・価格過熱ケースを提示",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "7918PTS失速・3556希薄化の空売り側論点"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "7918PTS失速・3556希薄化の空売り側論点",
+      "improvementAction": "空売り理由と実際の価格行動の一致率を記録",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 16,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 24,
+      "title": "前提破壊担当",
+      "grade": "A",
+      "score": 89,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "戦争=原油株高、SOX高=日本半導体高等の単純前提を条件付き化",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "上方修正を寄り後継続上昇と同一視しない警告は当日有効"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "上方修正を寄り後継続上昇と同一視しない警告は当日有効",
+      "improvementAction": "材料が株価に織り込まれているかを事前チェック",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 13,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 25,
+      "title": "失敗パターン担当",
+      "grade": "A",
+      "score": 80,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "買値執着・GU追い・含み損長期化を警戒",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "前日7417寄り天、6857外れを反映。今日もGU後失速が多発"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "前日7417寄り天、6857外れを反映。今日もGU後失速が多発",
+      "improvementAction": "同じ寄り天・材料出尽くし失敗の再発を定量追跡",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 26,
+      "title": "トレード日誌・成績分析担当",
+      "grade": "A",
+      "score": 88,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "平均損失>平均利益の構造課題を特定",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 4,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "9:10分足/VWAP/板・実約定履歴未取得"
+      ],
+      "keyContributions": [
+        "前日比と始値比を分け、寄り後マイナス4/5と実約定未確認を検出"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "前日比と始値比を分け、寄り後マイナス4/5と実約定未確認を検出",
+      "improvementAction": "前日比と始値比、実約定可能性を分離しMFE/MAE未取得を解消",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 27,
+      "title": "投資仮説・四半期レビュー担当",
+      "grade": null,
+      "score": null,
+      "cases": 1,
+      "status": "probation",
+      "preliminaryObservation": "日立/フジクラ/MUFG等に再審査KPIと破綻条件を設定",
+      "gradeStatus": "evidence_insufficient_hold",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceGap": [
+        "評価可能な役割別活動証跡なし"
+      ],
+      "keyContributions": [],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": null,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "recommendedAction": "評価保留・役割維持",
+      "weeklyScoreBreakdown": null,
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 28,
+      "title": "機関投資家需給担当",
+      "grade": "C",
+      "score": 69,
+      "cases": 1,
+      "status": "new_hire_probation",
+      "preliminaryObservation": "専用フローデータ不足。No.7/16との固有領域差を継続確認",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "実フロー未取得。定量寄与なし"
+      ],
+      "errorsOrMisses": [
+        "機関投資家の実フロー未取得。定量独自貢献が限定的"
+      ],
+      "duplication": null,
+      "decisionImpact": "実フロー未取得。定量寄与なし",
+      "improvementAction": "機関フローの未取得と推定需給を混同せず定量資料を確保",
+      "recommendedAction": "重点改善・降格保留",
+      "weeklyScoreBreakdown": {
+        "accuracy": 18,
+        "novelContribution": 13,
+        "decisionUsefulness": 13,
+        "earlyDiscovery": 9,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 29,
+      "title": "決算期待値担当",
+      "grade": "A",
+      "score": 87,
+      "cases": 1,
+      "status": "new_hire_probation",
+      "preliminaryObservation": "好決算とPTS反応の乖離を指摘し高い初期貢献",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 3,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "7918費用削減・8708ファンド収益・3635運用益の再現性を区別"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "7918費用削減・8708ファンド収益・3635運用益の再現性を区別",
+      "improvementAction": "業績修正率とコンセンサス差、寄り付き織り込みを別評価",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 17,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 30,
+      "title": "オルタナティブデータ担当",
+      "grade": "D",
+      "score": 55,
+      "cases": 1,
+      "status": "new_hire_probation",
+      "preliminaryObservation": "独自データ寄与は依然限定的。捏造回避は適切。4週間の供給実績を観察",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 2,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "朝の代替データ独自証跡なし"
+      ],
+      "errorsOrMisses": [
+        "複数日noMaterialContribution。実務的な追加情報が不足"
+      ],
+      "duplication": null,
+      "decisionImpact": "朝の代替データ独自証跡なし",
+      "improvementAction": "独自の代替データが出せない理由と探索コストを記録、成果ゼロ継続を改善",
+      "recommendedAction": "改善計画・4週継続観察",
+      "weeklyScoreBreakdown": {
+        "accuracy": 16,
+        "novelContribution": 9,
+        "decisionUsefulness": 10,
+        "earlyDiscovery": 7,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 5
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 31,
+      "title": "人事評価・組織開発担当",
+      "grade": "B",
+      "score": 77,
+      "cases": 1,
+      "status": "new_hire_probation",
+      "preliminaryObservation": "34名の成果・重複・精度事故を正式評価せず記録。評価者はNo.1/2",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 4,
+      "opportunityCount": 4,
+      "evidenceGap": [
+        "本人による自己採点は禁止。No.1/2による役割別監査評価"
+      ],
+      "keyContributions": [
+        "34役割の機会・証拠・原本欠損を監査し、採点を保留"
+      ],
+      "errorsOrMisses": [
+        "朝・決裁書の原本欠損が連続。復旧はしたが恒久対策が未完成"
+      ],
+      "duplication": null,
+      "decisionImpact": "34役割の機会・証拠・原本欠損を監査し、採点を保留",
+      "improvementAction": "朝・決裁書原本欠損の再発防止とGitHub保存監査を優先",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "grade": "B",
+      "score": 76,
+      "cases": 1,
+      "status": "new_hire_probation",
+      "preliminaryObservation": "初案件で5構造テーマを形成し既存探索の穴を補完。発見速度/false positiveを今後測定",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "3556資源循環提携をテーマ候補化、価格反応はあったが寄り後失速"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "3556資源循環提携をテーマ候補化、価格反応はあったが寄り後失速",
+      "improvementAction": "ニュース抽出から実需確認への到達率を測る",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 15,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "grade": "B",
+      "score": 75,
+      "cases": 1,
+      "status": "new_hire_probation",
+      "preliminaryObservation": "価値連鎖で日立/NEC/Trend Micro等を候補化し、単なる関連株列挙を回避",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "回収網→中古IT→資源循環の接続は整理したが収益感応度は未確定"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "回収網→中古IT→資源循環の接続は整理したが収益感応度は未確定",
+      "improvementAction": "バリューチェーン整理が候補順位を変えたか記録",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 15,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "weeklyReviewWeek": "2026-W43"
+    },
+    {
+      "id": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "grade": "A",
+      "score": 88,
+      "cases": 1,
+      "status": "new_hire_probation",
+      "preliminaryObservation": "一次情報検証により日立をスイング1位・中長期主力へ、NEC/Trend Microを中長期候補へ昇格させ高い初期貢献",
+      "gradeStatus": "provisional_one_week_not_formal",
+      "formalGrade": null,
+      "previousWeekDelta": null,
+      "rollingScore": null,
+      "trend": "insufficient_weekly_history",
+      "evidenceCount": 6,
+      "opportunityCount": 8,
+      "evidenceGap": [
+        "機会に対し一次詳細証跡不足"
+      ],
+      "keyContributions": [
+        "JX金属出資3.5億円・2.4%の一次情報確認、短期利益寄与未確認"
+      ],
+      "errorsOrMisses": [],
+      "duplication": null,
+      "decisionImpact": "JX金属出資3.5億円・2.4%の一次情報確認、短期利益寄与未確認",
+      "improvementAction": "一次資料で売上/受注への直接寄与と織り込みを検証",
+      "recommendedAction": "役割維持・改善を追跡",
+      "weeklyScoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "weeklyReviewWeek": "2026-W43"
+    }
   ],
-  "organizationActions":[
-    {"date":"2026-09-06","type":"no-change","reason":"Insufficient sample for firing/merger decisions; retain all 34 agents on probation."},
-    {"date":"2026-09-06","type":"process-improvement","reason":"Add mandatory official-calendar validation gate before saving macro/event dates."}
+  "organizationActions": [
+    {
+      "date": "2026-09-06",
+      "type": "no-change",
+      "reason": "Insufficient sample for firing/merger decisions; retain all 34 agents on probation."
+    },
+    {
+      "date": "2026-09-06",
+      "type": "process-improvement",
+      "reason": "Add mandatory official-calendar validation gate before saving macro/event dates."
+    }
   ],
-  "notes":[
+  "notes": [
     "No formal grade until minimum evidence threshold is met.",
     "Outcome-only scoring is prohibited.",
     "Agent 31 is evaluated by agents 1 and 2, not by self-evaluation.",
     "Agents 32-34 now have one qualifying theme-research case; measure timeliness, primary-source verification, value-chain coverage, rejected-stock accuracy, false-positive rate and promotion rate."
-  ]
+  ],
+  "lastWeeklyReview": "2026-W43",
+  "weeklyHistoryAvailable": 1,
+  "rollingWindowWeeks": 4,
+  "rollingScoreStatus": "not_enough_prior_weeks"
 }
