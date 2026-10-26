@@ -1,1 +1,23 @@
-{"date":"2026-10-26","asOf":"2026-10-26 07:34 JST","session":"morning","status":"pre-open/no trade decision","fullReportPath":"investment-company/market-intelligence/2026-10-26.json","activityPath":"investment-company/hr/activity/2026-10-26/market-intelligence.json","candidateCount":36,"topFresh":["6999","6954","7715","9107","5020","8366","8714","6254"],"marketStance":"中東情勢を背景とする原油高と米10年金利約5%が重し。SOXは前日-6.72%から+0.44%と小反発に留まり、半導体の全面回復は未確認。業績上方修正・自社株買いなど個別材料の選別を優先。","holdingsBlind":true,"previousCloseReviewPartial":true,"dataLimitations":["10/26 07:30時点の先物・ドル円気配は未取得。CME 10/23終値とOSE夜間06:00を明示して使用。","個別PTSは網羅未取得。3908の10/23夜間PTSは薄商いでランキング加点なし。","全候補の相対強度・出来高ランキング、信用残、空売り、外国人フロー、ETF需給は未取得。"]}
+{
+  "date": "2026-10-27",
+  "asOf": "2026-10-27 08:00 JST",
+  "session": "market-intelligence-backfill",
+  "status": "backfilled_0800_original_0730_missing",
+  "fullReportPath": "investment-company/market-intelligence/2026-10-27.json",
+  "activityPath": "investment-company/hr/activity/2026-10-27/market-intelligence.json",
+  "themePath": "investment-company/theme-research/2026-10-27/summary.json",
+  "candidateCount": 4,
+  "topFresh": [
+    "8060",
+    "2908"
+  ],
+  "marketStance": "米SOX反発、個別は条件付き。10/26寄り天教訓を重視",
+  "holdingsBlind": true,
+  "previousCloseReviewPartial": false,
+  "backfilled": true,
+  "dataLimitations": [
+    "07:30原本未検出、08:00資料から復元",
+    "当日分足/VWAP/板未取得",
+    "最新先物リアルタイム未検証"
+  ]
+}
