@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-26",
+  "asOf": "2026-10-26 16:54 JST",
+  "session": "close-review",
+  "reviewerAgentIds": [
+    26,
+    31
+  ],
+  "market": {
+    "nikkei": {
+      "previousClose": 62693.16,
+      "open": 62449.96,
+      "close": 62189.65,
+      "change": -503.51,
+      "changePct": -0.8
+    },
+    "topix": {
+      "previousClose": 3965.81,
+      "open": 3963.1,
+      "close": 3972.98,
+      "change": 7.17,
+      "changePct": 0.18
+    },
+    "sectorContext": "日経は半導体・テック安で下落、TOPIXは小幅高。資源・エネルギーが相対強。",
+    "source": "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/"
+  },
+  "morningHypothesis": {
+    "sourcePaths": [
+      "investment-company/market-intelligence/2026-10-26.json",
+      "investment-company/decision-memos/2026-10-26/daytrade.md",
+      "investment-company/hr/activity/2026-10-26/market-intelligence.json",
+      "investment-company/hr/activity/2026-10-26/daytrade.json"
+    ],
+    "rankedCandidates": [
+      "6999",
+      "6954",
+      "7715",
+      "9107",
+      "5020"
+    ],
+    "stance": "中立〜慎重。個別業績材料を優先し半導体全面反発に慎重"
+  },
+  "marketVerdict": {
+    "classification": "一部的中",
+    "reason": "日経平均は下落、TOPIXは上昇。個別好材料の株価上昇は多かったがGU後失速3/5で寄り付き後の買い条件成立は不明"
+  },
+  "candidates": [
+    {
+      "code": "6999",
+      "name": "KOA",
+      "morningRank": 1,
+      "ohlcv": {
+        "previousClose": 1889,
+        "open": 2145,
+        "high": 2186,
+        "low": 2028,
+        "close": 2101,
+        "volume": 5106700,
+        "turnoverJPY": 10696283000,
+        "firstTradeTime": "09:15",
+        "highTime": "09:15"
+      },
+      "previousCloseReturnPct": 11.22,
+      "openToCloseReturnPct": -2.05,
+      "classification": "一部的中",
+      "classificationBasis": "前日比は上昇だが寄り付きから終値は下落。GU後失速を含み実取引の成功とは言えない",
+      "reasonTags": [
+        "織り込み",
+        "寄り後失速",
+        "執行条件"
+      ],
+      "preOpenRiskAssessment": "初値09:15で9:00〜9:10の判断は適用不可。PTS先行織り込み後の下落",
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualEntry": null,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAt0910": null,
+      "orderBookAt0910": null,
+      "reasonCannotVerify": "09:00〜09:10分足/VWAP/板、時刻付き実注文・約定履歴が未取得",
+      "source": "https://finance.yahoo.co.jp/quote/6999.T"
+    },
+    {
+      "code": "6954",
+      "name": "ファナック",
+      "morningRank": 2,
+      "ohlcv": {
+        "previousClose": 5587,
+        "open": 5887,
+        "high": 5935,
+        "low": 5620,
+        "close": 5639,
+        "volume": 13619500,
+        "turnoverJPY": 78157018000,
+        "firstTradeTime": "09:08",
+        "highTime": "09:08"
+      },
+      "previousCloseReturnPct": 0.93,
+      "openToCloseReturnPct": -4.21,
+      "classification": "一部的中",
+      "classificationBasis": "前日比は上昇だが寄り付きから終値は下落。GU後失速を含み実取引の成功とは言えない",
+      "reasonTags": [
+        "織り込み",
+        "寄り後失速",
+        "執行条件"
+      ],
+      "preOpenRiskAssessment": "09:08に日中高値、GU追いの寄り天警戒は妥当",
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualEntry": null,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAt0910": null,
+      "orderBookAt0910": null,
+      "reasonCannotVerify": "09:00〜09:10分足/VWAP/板、時刻付き実注文・約定履歴が未取得",
+      "source": "https://finance.yahoo.co.jp/quote/6954.T"
+    },
+    {
+      "code": "7715",
+      "name": "長野計器",
+      "morningRank": 3,
+      "ohlcv": {
+        "previousClose": 3780,
+        "open": 3850,
+        "high": 3970,
+        "low": 3770,
+        "close": 3820,
+        "volume": 343300,
+        "turnoverJPY": 1322794000,
+        "firstTradeTime": "09:00",
+        "highTime": "09:20"
+      },
+      "previousCloseReturnPct": 1.06,
+      "openToCloseReturnPct": -0.78,
+      "classification": "一部的中",
+      "classificationBasis": "前日比は上昇だが寄り付きから終値は下落。GU後失速を含み実取引の成功とは言えない",
+      "reasonTags": [
+        "織り込み",
+        "寄り後失速",
+        "執行条件"
+      ],
+      "preOpenRiskAssessment": "薄い夜間PTSに対する警戒は妥当。前日比プラスでも始値比マイナス",
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualEntry": null,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAt0910": null,
+      "orderBookAt0910": null,
+      "reasonCannotVerify": "09:00〜09:10分足/VWAP/板、時刻付き実注文・約定履歴が未取得",
+      "source": "https://finance.yahoo.co.jp/quote/7715.T"
+    },
+    {
+      "code": "9107",
+      "name": "川崎汽船",
+      "morningRank": 4,
+      "ohlcv": {
+        "previousClose": 3326,
+        "open": 3364,
+        "high": 3449,
+        "low": 3317,
+        "close": 3412,
+        "volume": 3958000,
+        "turnoverJPY": 13451662000,
+        "firstTradeTime": "09:00",
+        "highTime": "14:03"
+      },
+      "previousCloseReturnPct": 2.59,
+      "openToCloseReturnPct": 1.43,
+      "classification": "一部的中",
+      "classificationBasis": "前日比と始値比の方向は上昇。ただし寄り後の買い条件・実約定未検証",
+      "reasonTags": [
+        "セクター整合",
+        "執行条件未検証"
+      ],
+      "preOpenRiskAssessment": "海運の業績材料とセクター反応は整合するが実買い条件不明",
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualEntry": null,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAt0910": null,
+      "orderBookAt0910": null,
+      "reasonCannotVerify": "09:00〜09:10分足/VWAP/板、時刻付き実注文・約定履歴が未取得",
+      "source": "https://finance.yahoo.co.jp/quote/9107.T"
+    },
+    {
+      "code": "5020",
+      "name": "ENEOS",
+      "morningRank": 5,
+      "ohlcv": {
+        "previousClose": 1418,
+        "open": 1445,
+        "high": 1470.5,
+        "low": 1440,
+        "close": 1466.5,
+        "volume": 9384100,
+        "turnoverJPY": 13699334000,
+        "firstTradeTime": "09:00",
+        "highTime": "14:24"
+      },
+      "previousCloseReturnPct": 3.42,
+      "openToCloseReturnPct": 1.49,
+      "classification": "一部的中",
+      "classificationBasis": "前日比と始値比の方向は上昇。ただし寄り後の買い条件・実約定未検証",
+      "reasonTags": [
+        "セクター整合",
+        "執行条件未検証"
+      ],
+      "preOpenRiskAssessment": "原油関連セクターが強い。M&A発表単独の寄与は切り分け不能",
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualEntry": null,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAt0910": null,
+      "orderBookAt0910": null,
+      "reasonCannotVerify": "09:00〜09:10分足/VWAP/板、時刻付き実注文・約定履歴が未取得",
+      "source": "https://finance.yahoo.co.jp/quote/5020.T"
+    }
+  ],
+  "classificationCounts": {
+    "的中": 0,
+    "一部的中": 5,
+    "外れ": 0,
+    "検証不能": 0
+  },
+  "tradePerformance": {
+    "verifiedTrades": 0,
+    "tradeWinRate": null,
+    "profitFactor": null,
+    "actualMFE": null,
+    "actualMAE": null,
+    "statement": "日足の仮説分類と実取引勝率を分離。実約定・分足なしで売買成功を主張しない"
+  },
+  "keyLessons": [
+    "GU後の始値比下落を重視。6999初値09:15、6954高値09:08は初動時計・寄り天条件を改善",
+    "前日比プラス5/5でも始値比プラスは2/5で、5勝と評価しない",
+    "薄い夜間PTSは現物の継続上昇を保証しない",
+    "市場全体の下落とTOPIX/業種の上昇を分ける",
+    "実約定・9:10分足・VWAP・板を収集し執行可能性を検証する"
+  ],
+  "dataLimitations": [
+    "9:00〜9:10の分足/VWAP/板・スプレッド未取得",
+    "実注文・約定履歴なし",
+    "機関投資家の実フローと個別材料の因果寄与は未検証",
+    "保有・売買実績データの更新遅延"
+  ],
+  "dataSources": [
+    "https://finance.yahoo.co.jp/quote/6999.T",
+    "https://finance.yahoo.co.jp/quote/6954.T",
+    "https://finance.yahoo.co.jp/quote/7715.T",
+    "https://finance.yahoo.co.jp/quote/9107.T",
+    "https://finance.yahoo.co.jp/quote/5020.T",
+    "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/"
+  ],
+  "backfilled": false
+}
