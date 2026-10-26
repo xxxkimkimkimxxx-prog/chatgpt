@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-26",
+  "asOf": "2026-10-26 16:54 JST",
+  "session": "hr-daily",
+  "focus": "人事評価・組織改善",
+  "weeklyReviewExecuted": true,
+  "weeklyReviewWeek": "2026-W43",
+  "weeklyReviewPaths": [
+    "investment-company/hr/weekly/2026-W43.json",
+    "investment-company/hr/weekly/2026-W43.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/audit/2026-W43.json"
+  ],
+  "weeklyScores": {
+    "total": 34,
+    "provisionalScored": 26,
+    "held": 8,
+    "formalGradesAssigned": false,
+    "previousWeekDelta": null,
+    "rollingScore": null
+  },
+  "hrSummary": {
+    "dailyActiveRoles": 26,
+    "dailyOpportunities": 37,
+    "dailyEvidenceRecords": 37,
+    "topContributors": [
+      22,
+      24,
+      8,
+      26,
+      29,
+      34
+    ],
+    "improvementTargets": [
+      3,
+      5,
+      15,
+      18,
+      28,
+      30,
+      31
+    ],
+    "formalChanges": "none; user approval required"
+  },
+  "performanceEvidence": {
+    "market": "日経-0.80%、TOPIX+0.18%",
+    "candidateCount": 5,
+    "positiveVsPreviousClose": 5,
+    "positiveVsOpen": 2,
+    "negativeVsOpen": 3,
+    "verifiedTrades": 0,
+    "actualTradeWinRate": null
+  },
+  "sourcePaths": [
+    "investment-company/market-intelligence/2026-10-26-close-review.json",
+    "investment-company/hr/activity/2026-10-26/market-close-review.json",
+    "investment-company/hr/activity/2026-10-26/performance-review.json",
+    "investment-company/hr/activity/2026-10-26/hr-audit.json",
+    "investment-company/hr/activity/2026-10-26/market-intelligence.json",
+    "investment-company/hr/activity/2026-10-26/daytrade.json",
+    "investment-company/hr/activity/2026-10-26/performance-review.json",
+    "investment-company/hr/weekly/2026-W43.json",
+    "investment-company/organization/agents.json"
+  ],
+  "operationalIssues": [
+    {
+      "code": "INTRADAY_SNAPSHOT_MISSING",
+      "status": "open",
+      "details": "9:10板・VWAP・分足/実約定なし",
+      "ownerAgentIds": [
+        15,
+        16,
+        18,
+        26
+      ]
+    },
+    {
+      "code": "PRIOR_WEEK_CANONICAL_SOURCE_GAPS",
+      "status": "open",
+      "details": "10/19活動・10/21概要版・10/22daytrade詳細欠損",
+      "ownerAgentIds": [
+        3,
+        31
+      ]
+    },
+    {
+      "code": "STALE_PERFORMANCE_SUMMARY",
+      "status": "open",
+      "details": "実売買成績は10/05時点",
+      "ownerAgentIds": [
+        26,
+        31
+      ]
+    },
+    {
+      "code": "WEEKLY_HISTORY_INSUFFICIENT",
+      "status": "open",
+      "details": "前週週次評価なし。4週rollingと前週差はnull",
+      "ownerAgentIds": [
+        31
+      ]
+    }
+  ],
+  "backfilled": false,
+  "saveVerificationNote": "各ファイルを個別にfetch_fileで再読込し、完全一致を確認する。実結果は実行ログで確認"
+}
