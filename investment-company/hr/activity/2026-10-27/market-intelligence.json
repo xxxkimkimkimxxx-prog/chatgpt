@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-27",
+  "asOf": "2026-10-27 08:00 JST",
+  "committee": "market-intelligence",
+  "backfilled": true,
+  "original0730ExecutionVerified": false,
+  "agents": [],
+  "evidenceGap": [
+    "07:30実行役割別活動ログは存在しない。08:00に資料復元した事実のみ記録。",
+    "独立した市場情報部エージェント活動の証拠はない。"
+  ],
+  "sourceReport": "investment-company/market-intelligence/2026-10-27.json"
+}
