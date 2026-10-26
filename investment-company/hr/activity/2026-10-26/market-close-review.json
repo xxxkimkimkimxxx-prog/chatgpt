@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-26",
+  "asOf": "2026-10-26 16:54 JST",
+  "session": "market-close-review",
+  "agentIds": [
+    26,
+    31
+  ],
+  "taskPerformed": "朝の5候補・市場の前日比と始値比を検証し、週次人事評価の根拠へ反映",
+  "keyFindings": [
+    "候補5銘柄すべて前日比上昇、ただし始値比上昇2/5・下落3/5。売買成功率とは異なる",
+    "KOA初値09:15で9:10までの判定は適用不能、ファナック高値09:08で寄り天警告に合致",
+    "日経-0.80%、TOPIX+0.18%で指数と広い市場の乖離が顕著",
+    "VWAP/板/注文ログ未取得のため5候補すべてエントリー条件は検証不能"
+  ],
+  "novelContribution": "前日比5/5上昇を擬似勝率にしない。寄り後2/5のみプラス、初値遅延・寄り天を検出",
+  "decisionImpact": "No.15/18の初動条件、No.22のPTS薄商い、No.31の評価証拠品質へフィードバック",
+  "sourceReviewPath": "investment-company/market-intelligence/2026-10-26-close-review.json",
+  "sourcesUsed": [
+    "https://finance.yahoo.co.jp/quote/6999.T",
+    "https://finance.yahoo.co.jp/quote/6954.T",
+    "https://finance.yahoo.co.jp/quote/7715.T",
+    "https://finance.yahoo.co.jp/quote/9107.T",
+    "https://finance.yahoo.co.jp/quote/5020.T",
+    "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/"
+  ],
+  "backfilled": false,
+  "evidenceGap": [
+    "9:10分足/VWAP/板と注文・約定履歴が未取得"
+  ],
+  "independentExecutionVerified": false
+}
