@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-27",
+  "asOf": "2026-10-27 08:00 JST",
+  "backfilled": true,
+  "original0730ThemeVerified": false,
+  "validationBy": "08:00委員会のNo.32/33/34役割別分析（独立実行ではない）",
+  "themes": [
+    {
+      "name": "AI半導体テスト実需",
+      "status": "PROMOTED-CONDITIONAL",
+      "newsOrigin": "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+      "beneficiaries": [
+        "6857"
+      ],
+      "primaryEvidence": [
+        "https://www.advantest.com/ja/investors/financial-highlights/review/",
+        "https://www.advantest.com/ja/news/2026/20260422.html"
+      ],
+      "earningsExposure": "事業実需確認、当日追加利益額は未確認",
+      "risk": "10/28決算とSOX反発の織り込み"
+    },
+    {
+      "name": "AIデータセンター光通信",
+      "status": "PROMOTED-CONDITIONAL",
+      "newsOrigin": "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+      "beneficiaries": [
+        "5803"
+      ],
+      "primaryEvidence": [
+        "https://www.fujikura.co.jp/news/pressrelease/2025071813824swrwtc.html",
+        "https://www.fujikura.co.jp/news/pressrelease/2026030913824swr_wtc.html"
+      ],
+      "earningsExposure": "海外DC向け納入実績あり、当日増益寄与未確認",
+      "risk": "既知の実需とAI設備投資採算懸念"
+    },
+    {
+      "name": "キヤノンMJ業績改善",
+      "status": "PROMOTED-LIMITED",
+      "newsOrigin": "https://corporate.jp.canon/ir/news",
+      "beneficiaries": [
+        "8060"
+      ],
+      "primaryEvidence": [
+        "https://corporate.jp.canon/ir/news"
+      ],
+      "earningsExposure": "3Q累計経常+20.7%",
+      "risk": "PTS-3.51%、コンセンサス不明"
+    },
+    {
+      "name": "フジッコ価格転嫁・上期修正",
+      "status": "DEFERRED",
+      "newsOrigin": "https://s.minkabu.jp/stock/2908/news",
+      "beneficiaries": [
+        "2908"
+      ],
+      "primaryEvidence": [],
+      "earningsExposure": "上期経常予想約29%増額、一次本文未取得",
+      "risk": "場中発表後に既反応、PTS100株"
+    }
+  ]
+}
