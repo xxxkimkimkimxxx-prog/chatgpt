@@ -1,0 +1,816 @@
+{
+  "date": "2026-10-26",
+  "asOf": "2026-10-26 16:54 JST",
+  "agentId": 31,
+  "title": "人事評価・組織開発担当",
+  "selfEvaluation": false,
+  "evaluatorOfAgent31": [
+    1,
+    2
+  ],
+  "agent31IndependentReview": {
+    "reviewers": [
+      1,
+      2
+    ],
+    "method": "議長とコンプライアンスの役割別監査（独立AIプロセス稼働の証明ではない）",
+    "weeklyProvisionalScore": 77,
+    "observation": "週次評価を実施した一方、前週原本欠損の再発防止が未完了。日次・週次ファイルの保存監査を優先",
+    "formalAction": "none"
+  },
+  "totalRoles": 34,
+  "activeRoles": 26,
+  "opportunities": 37,
+  "evidenceCount": 37,
+  "noOpportunityRoles": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    17,
+    19,
+    27
+  ],
+  "noMaterialContributionRoles": [
+    30
+  ],
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "No.22/9のPTS流動性警告で7715を3位に抑え、No.29の利益質検証で9107を4位に抑えた。No.34の一次実需評価によりKOA/6954を優先。"
+      ],
+      "decisionImpact": "No.22/9のPTS流動性警告で7715を3位に抑え、No.29の利益質検証で9107を4位に抑えた。No.34の一次実需評価によりKOA/6954を優先。",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "ユーザー最終決裁、寄前発注禁止、固定金額損失上限を使わない、校正されていない確率を実績勝率と混同しない。"
+      ],
+      "decisionImpact": "ユーザー最終決裁、寄前発注禁止、固定金額損失上限を使わない、校正されていない確率を実績勝率と混同しない。",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "古いlatest/holdings/watchlistを検出",
+        "10/26朝レポート・テーマ・10/23部分close-reviewを照合。holdings10/14/performance10/05/watchlist10/02。KOA公式/PTSとファナック公式を再検証。"
+      ],
+      "decisionImpact": "10/26朝レポート・テーマ・10/23部分close-reviewを照合。holdings10/14/performance10/05/watchlist10/02。KOA公式/PTSとファナック公式を再検証。",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "指数間乖離と原油ショックを区別",
+        "米金利約5%と中東原油高を警戒。指数間乖離を理由に一律強気を回避。"
+      ],
+      "decisionImpact": "米金利約5%と中東原油高を警戒。指数間乖離を理由に一律強気を回避。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        5,
+        6
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "限月/基準日時点の混同を防止",
+        "原油高でINPEX上昇と断定しない。ENEOSはM&A実需と原油感応度を区別。"
+      ],
+      "decisionImpact": "原油高でINPEX上昇と断定しない。ENEOSはM&A実需と原油感応度を区別。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        4,
+        21
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "日本半導体の一律強気昇格を抑制",
+        "SOX+0.44%は前日-6.72%の穴埋めではない。半導体全面強気を否定。"
+      ],
+      "decisionImpact": "SOX+0.44%は前日-6.72%の穴埋めではない。半導体全面強気を否定。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        7,
+        21
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "33業種全件を参照し指数下落と内需優位を分離",
+        "10/23不動産+2.05%、海運-2.10%、銀行-2.28%を確認し9107に同業確認条件を付けた。"
+      ],
+      "decisionImpact": "10/23不動産+2.05%、海運-2.10%、銀行-2.28%を確認し9107に同業確認条件を付けた。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        6
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "利益予想と一時益/検討段階を区別",
+        "10/23引け後KOA/ファナック/川崎汽船の企業IRを確認、長野計器は二次情報として留保。"
+      ],
+      "decisionImpact": "10/23引け後KOA/ファナック/川崎汽船の企業IRを確認、長野計器は二次情報として留保。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        29,
+        32
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "流動性不明の小型株を条件付き候補に留める",
+        "PTS KOA97,800株/ファナック90,000株/長野1,100株/川崎3,500株を照合、7715の執行順位を抑制。"
+      ],
+      "decisionImpact": "PTS KOA97,800株/ファナック90,000株/長野1,100株/川崎3,500株を照合、7715の執行順位を抑制。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        16,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 10,
+      "title": "決算・業績担当",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [
+        "当日は割当活動機会なし。評価減点しない"
+      ],
+      "novelContributions": [],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 11,
+      "title": "財務・キャッシュフロー担当",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [
+        "当日は割当活動機会なし。評価減点しない"
+      ],
+      "novelContributions": [],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 12,
+      "title": "業界構造・競争優位担当",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [
+        "当日は割当活動機会なし。評価減点しない"
+      ],
+      "novelContributions": [],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 13,
+      "title": "経営者・中期計画担当",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [
+        "当日は割当活動機会なし。評価減点しない"
+      ],
+      "novelContributions": [],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 14,
+      "title": "バリュエーション・資本政策担当",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [
+        "当日は割当活動機会なし。評価減点しない"
+      ],
+      "novelContributions": [],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [
+        "09:10分足/VWAP/板/実約定の検証データなし"
+      ],
+      "novelContributions": [
+        "GU高値再突破だけでなくGD安値回復→VWAP奪回も条件化。10/23の4047/6146の反転を反映。"
+      ],
+      "decisionImpact": "GU高値再突破だけでなくGD安値回復→VWAP奪回も条件化。10/23の4047/6146の反転を反映。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        18,
+        25
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [
+        "09:10分足/VWAP/板/実約定の検証データなし"
+      ],
+      "novelContributions": [
+        "板未取得を明記。PTS数量と東証売買代金を分離、7715/9107は寄後の板確認を必須化。"
+      ],
+      "decisionImpact": "板未取得を明記。PTS数量と東証売買代金を分離、7715/9107は寄後の板確認を必須化。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        9,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 17,
+      "title": "スイング・相対強度担当",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [
+        "当日は割当活動機会なし。評価減点しない"
+      ],
+      "novelContributions": [],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [
+        "09:10分足/VWAP/板/実約定の検証データなし"
+      ],
+      "novelContributions": [
+        "9:10以降の指値・分割/条件失効取消を推奨。特別気配は初値後10分観察し直す。"
+      ],
+      "decisionImpact": "9:10以降の指値・分割/条件失効取消を推奨。特別気配は初値後10分観察し直す。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        15,
+        20
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 19,
+      "title": "ポートフォリオ担当",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [
+        "当日は割当活動機会なし。評価減点しない"
+      ],
+      "novelContributions": [],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [
+        "09:10分足/VWAP/板/実約定の検証データなし"
+      ],
+      "novelContributions": [
+        "価格構造がない段階で円建て損失・統計的期待利益を算定しない。RRは利確目標に限定。"
+      ],
+      "decisionImpact": "価格構造がない段階で円建て損失・統計的期待利益を算定しない。RRは利確目標に限定。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        18,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "金利・中東・原油・決算ギャップ、月末イベントをストレス要因として列挙。"
+      ],
+      "decisionImpact": "金利・中東・原油・決算ギャップ、月末イベントをストレス要因として列挙。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        4,
+        5
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [
+        "09:10分足/VWAP/板/実約定の検証データなし"
+      ],
+      "novelContributions": [
+        "長野PTS1,100株、川崎3,500株、ENEOS700株。薄いPTSから執行可能性を推測しない。"
+      ],
+      "decisionImpact": "長野PTS1,100株、川崎3,500株、ENEOS700株。薄いPTSから執行可能性を推測しない。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        9,
+        16
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "KOA+11%・ファナック+7%GUの売り崩し、川崎汽船の業種逆風を空売り目線で評価。"
+      ],
+      "decisionImpact": "KOA+11%・ファナック+7%GUの売り崩し、川崎汽船の業種逆風を空売り目線で評価。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        24,
+        25
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "上方修正≠寄後上昇、原油高≠資源株高、ONE持分法利益≠営業利益を検証。"
+      ],
+      "decisionImpact": "上方修正≠寄後上昇、原油高≠資源株高、ONE持分法利益≠営業利益を検証。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        23,
+        25
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "前日比プラスを勝ちにしない。10/22寄り天再発・10/23GD反転を両方学習。"
+      ],
+      "decisionImpact": "前日比プラスを勝ちにしない。10/22寄り天再発・10/23GD反転を両方学習。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        15,
+        23
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 26,
+      "title": "トレード日誌・成績分析担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "16:30_performance_review"
+      ],
+      "evidenceGap": [
+        "09:10分足/VWAP/板/実約定の検証データなし"
+      ],
+      "novelContributions": [
+        "前日比5/5上昇を擬似勝率にしない。寄り後2/5のみプラス、初値遅延・寄り天を検出"
+      ],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 27,
+      "title": "投資仮説・四半期レビュー担当",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceTypes": [],
+      "evidenceGap": [
+        "当日は割当活動機会なし。評価減点しない"
+      ],
+      "novelContributions": [],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "正式決定なしの統合報道をリスク警告",
+        "機関実フローは未取得。ファナック自社株買い上限500億円を実際の買い付けと混同しない。"
+      ],
+      "decisionImpact": "機関実フローは未取得。ファナック自社株買い上限500億円を実際の買い付けと混同しない。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        16
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "KOA上方修正+41.7%、6954+13.9%、9107経常+40.7%に対し営業利益+7.1%。市場コンセンサス未取得を明示。"
+      ],
+      "decisionImpact": "KOA上方修正+41.7%、6954+13.9%、9107経常+40.7%に対し営業利益+7.1%。市場コンセンサス未取得を明示。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        8,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 30,
+      "title": "オルタナティブデータ担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "07:30_market_intelligence"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "実際の取引と単なる検討を区別"
+      ],
+      "decisionImpact": "監視候補の順位・証拠区分・引け後検証条件に反映（売買判断なし）",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        33
+      ],
+      "noMaterialContribution": true,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 31,
+      "title": "人事評価・組織開発担当",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceTypes": [
+        "16:30_hr_audit"
+      ],
+      "evidenceGap": [
+        "No.31の自己採点禁止。No.1/2が監査"
+      ],
+      "novelContributions": [
+        "34役割の日次監査と前週34役割の暫定週次評価を実施。No.1/2による自己評価排除"
+      ],
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "Reuters/株探/Yahoo転載を重複計上せず",
+        "週末16件のニュースを重複除外。電子部品・FA、海運、NIPPO垂直統合をテーマ化。"
+      ],
+      "decisionImpact": "週末16件のニュースを重複除外。電子部品・FA、海運、NIPPO垂直統合をテーマ化。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        8,
+        8,
+        33
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "直接/間接受益を分けた",
+        "AI設備→FA→抵抗器、海運運賃→ONE持分法利益、石油精製→舗装の直接/間接経路を区別。"
+      ],
+      "decisionImpact": "AI設備→FA→抵抗器、海運運賃→ONE持分法利益、石油精製→舗装の直接/間接経路を区別。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        32,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceTypes": [
+        "07:30_market_intelligence",
+        "08:00_daytrade"
+      ],
+      "evidenceGap": [],
+      "novelContributions": [
+        "6838のデータセンター検討をREJECT",
+        "KOA/ファナック/川崎は会社IRで利益接続確認、ENEOSはM&A事実のみ・当期利益未確認、長野は一次資料不足、6838は検討室のみで除外。"
+      ],
+      "decisionImpact": "KOA/ファナック/川崎は会社IRで利益接続確認、ENEOSはM&A事実のみ・当期利益未確認、長野は一次資料不足、6838は検討室のみで除外。",
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        29,
+        33
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "independentExecutionVerified": false
+    }
+  ],
+  "independentAgentProcessesVerified": false,
+  "weeklyReviewWeek": "2026-W43",
+  "weeklyScoredAgents": 26,
+  "weeklyHeldAgents": 8,
+  "operationalIssues": [
+    {
+      "code": "INTRADAY_SNAPSHOT_MISSING",
+      "status": "open",
+      "details": "9:10板・VWAP・分足/実約定なし",
+      "ownerAgentIds": [
+        15,
+        16,
+        18,
+        26
+      ]
+    },
+    {
+      "code": "PRIOR_WEEK_CANONICAL_SOURCE_GAPS",
+      "status": "open",
+      "details": "10/19活動・10/21概要版・10/22daytrade詳細欠損",
+      "ownerAgentIds": [
+        3,
+        31
+      ]
+    },
+    {
+      "code": "STALE_PERFORMANCE_SUMMARY",
+      "status": "open",
+      "details": "実売買成績は10/05時点",
+      "ownerAgentIds": [
+        26,
+        31
+      ]
+    },
+    {
+      "code": "WEEKLY_HISTORY_INSUFFICIENT",
+      "status": "open",
+      "details": "前週週次評価なし。4週rollingと前週差はnull",
+      "ownerAgentIds": [
+        31
+      ]
+    }
+  ],
+  "dataLimitations": [
+    "活動ログは単一実行内の役割別分析記録であり独立AI社員稼働の証明ではない",
+    "当日の実約定は未確認",
+    "GitHubの保存検証は個別ファイルの書込後に実施"
+  ],
+  "backfilled": false
+}
