@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-28",
+  "asOf": "2026-10-28 08:00 JST",
+  "backfilled": true,
+  "original0730ThemeVerified": false,
+  "validationBy": "08:00委員会 No.32/33/34 役割別分析。独立実行ではない",
+  "themes": [
+    {
+      "name": "半導体材料・電子材料の実需",
+      "beneficiaries": [
+        "4063"
+      ],
+      "newsOrigin": "https://www.radionikkei.jp/marketpress/post_16280.html",
+      "primaryEvidence": [
+        "https://www.shinetsu.co.jp/jp/ir/ir-data/ir-results/"
+      ],
+      "directness": "高",
+      "earningsExposure": "電子材料営業利益2189億円(+28%)の報道。企業短信確認",
+      "risk": "PTS+5.03%、通期予想据置"
+    },
+    {
+      "name": "AI/HPC半導体テスト",
+      "beneficiaries": [
+        "6857"
+      ],
+      "newsOrigin": "https://www.radionikkei.jp/marketpress/post_16280.html",
+      "primaryEvidence": [
+        "https://www.advantest.com/ja/investors/ir-calendar/"
+      ],
+      "directness": "高",
+      "earningsExposure": "既存テスタ事業の実需。10/28決算前で新規利益額未取得",
+      "risk": "10/28 15:30決算・PTS+4.11%"
+    },
+    {
+      "name": "AIデータセンター光通信",
+      "beneficiaries": [
+        "5803"
+      ],
+      "newsOrigin": "https://www.radionikkei.jp/marketpress/post_16280.html",
+      "primaryEvidence": [
+        "https://www.fujikura.co.jp/news/pressrelease/2026030913824swr_wtc.html"
+      ],
+      "directness": "高",
+      "earningsExposure": "海外DC納入の既存IRで実需確認。新規受注額未確認",
+      "risk": "前日寄り天、PTS+4.18%"
+    },
+    {
+      "name": "製薬・新薬・ロイヤルティ",
+      "beneficiaries": [
+        "4519"
+      ],
+      "newsOrigin": "https://www.chugai-pharm.co.jp/news/detail/20261027170000_1629.html",
+      "primaryEvidence": [
+        "https://www.chugai-pharm.co.jp/news/detail/20261027170000_1629.html"
+      ],
+      "directness": "高",
+      "earningsExposure": "Core売上10681億円、営業利益5361億円",
+      "risk": "ERP出荷前倒し/一時金、PTS小幅高"
+    }
+  ],
+  "evidenceGap": [
+    "07:30原本未確認",
+    "個別テーマの利益感応度は一部のみ定量化"
+  ]
+}
