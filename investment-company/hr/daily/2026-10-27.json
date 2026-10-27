@@ -183,7 +183,18 @@
       "investment-company/hr/activity/2026-10-27/hr-audit.json",
       "investment-company/hr/daily/2026-10-27.json"
     ],
-    "verificationStatus": "verify_individually_after_write",
-    "note": "最終保存結果は個別fetch_fileで検証"
+    "verificationStatus": "verified_all_5_by_fetch_file",
+    "note": "最終保存結果は個別fetch_fileで検証",
+    "verifiedCount": 5,
+    "unverifiedCount": 0,
+    "failedCount": 0,
+    "verifiedPaths": [
+      "investment-company/market-intelligence/2026-10-27-close-review.json",
+      "investment-company/hr/activity/2026-10-27/market-close-review.json",
+      "investment-company/hr/activity/2026-10-27/performance-review.json",
+      "investment-company/hr/activity/2026-10-27/hr-audit.json",
+      "investment-company/hr/daily/2026-10-27.json"
+    ],
+    "verificationMethod": "GitHub fetch_file, JSON date=2026-10-27 and expected content keys checked"
   }
 }
