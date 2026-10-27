@@ -1,0 +1,314 @@
+{
+  "date": "2026-10-27",
+  "asOf": "2026-10-27 16:30 JST",
+  "session": "close-review",
+  "purpose": "No.26の予測検証をNo.31の人事監査へ接続する。投資推奨ではない",
+  "reviewerRoleIds": [
+    26,
+    31
+  ],
+  "independentAgentProcessesVerified": false,
+  "market": {
+    "nikkei": {
+      "previousClose": 62189.65,
+      "open": 62569.08,
+      "high": 63684.69,
+      "low": 62389.47,
+      "close": 63268.37,
+      "change": 1078.72,
+      "changePct": 1.73,
+      "source": "https://finance.yahoo.co.jp/quote/998407.O"
+    },
+    "topix": {
+      "previousClose": 3972.98,
+      "open": 3987.31,
+      "high": 4004.96,
+      "low": 3969.12,
+      "close": 3997.37,
+      "change": 24.39,
+      "changePct": 0.61,
+      "source": "https://finance.yahoo.co.jp/quote/998405.T"
+    },
+    "marketHypothesis": "10/26米NASDAQ/SOX反発を背景に半導体・光通信の反転を条件付き監視",
+    "marketVerdict": "一部的中：日経・TOPIXは上昇、個別の寄り付き後継続はまちまち。指数上昇を取引成功としない"
+  },
+  "morningInputs": {
+    "sourcePaths": [
+      "investment-company/organization/agents.json",
+      "investment-company/hr/evaluation-policy.md",
+      "investment-company/hr/agent-scorecard.json",
+      "investment-company/hr/weekly/2026-W43.json",
+      "investment-company/market-intelligence/2026-10-27.json",
+      "investment-company/market-intelligence/latest.json",
+      "investment-company/decision-memos/2026-10-27/daytrade.md",
+      "investment-company/hr/activity/2026-10-27/daytrade.json",
+      "investment-company/hr/activity/2026-10-27/market-intelligence.json",
+      "investment-company/theme-research/2026-10-27/summary.json",
+      "investment-company/market-intelligence/2026-10-26-close-review.json",
+      "stock-dashboard/data/performance-summary.json"
+    ],
+    "marketIntelligenceBackfilled": true,
+    "themeResearchBackfilled": true,
+    "daytradeActivityBackfilled": false,
+    "rankedCodes": [
+      "6857",
+      "5803",
+      "8060",
+      "2908"
+    ],
+    "morningCandidateProbability": [
+      0.52,
+      0.51,
+      0.48,
+      0.46
+    ],
+    "morningConfidence": [
+      0.56,
+      0.54,
+      0.48,
+      0.41
+    ],
+    "preOpenTradeApproval": false
+  },
+  "performanceSummary": {
+    "candidateCount": 4,
+    "positiveVsPreviousClose": 2,
+    "negativeVsPreviousClose": 2,
+    "positiveVsOpen": 1,
+    "negativeVsOpen": 3,
+    "verifiedTrades": 0,
+    "verifiedTradeWinRate": null,
+    "verifiedProfitFactor": null
+  },
+  "candidates": [
+    {
+      "code": "6857",
+      "name": "アドバンテスト",
+      "rank": 1,
+      "previousClose": 31070,
+      "open": 33330,
+      "high": 34320,
+      "low": 33020,
+      "close": 33860,
+      "volume": 13127700,
+      "turnoverJPY": 444070830000,
+      "openTime": "09:09",
+      "highTime": "10:14",
+      "lowTime": "09:11",
+      "source": "https://finance.yahoo.co.jp/quote/6857.T",
+      "directionVerdict": "的中",
+      "reasonTags": [
+        "米半導体反発",
+        "セクター整合",
+        "初値遅延",
+        "執行条件未検証"
+      ],
+      "assessment": "前日比・始値比とも上昇。09:09初値から10分観察ルールは有効な設計だが、09:19時点のVWAP/分足・板がなく実際の買い条件は検証不能",
+      "previousCloseReturnPct": 8.98,
+      "openToCloseReturnPct": 1.59,
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null
+    },
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "rank": 2,
+      "previousClose": 3978,
+      "open": 4176,
+      "high": 4220,
+      "low": 4041,
+      "close": 4092,
+      "volume": 28086200,
+      "turnoverJPY": 115722544000,
+      "openTime": "09:06",
+      "highTime": "09:06",
+      "lowTime": "10:54",
+      "source": "https://finance.yahoo.co.jp/quote/5803.T",
+      "directionVerdict": "一部的中",
+      "reasonTags": [
+        "寄り天",
+        "織り込み",
+        "ギャップアップ",
+        "執行条件未検証"
+      ],
+      "assessment": "前日比上昇も始値比下落。09:06初値と同時に日中高値を形成。No.23/24/25のGU失速警告が現実化。No.34の実需確認は妥当でも寄り後上昇を保証しない",
+      "previousCloseReturnPct": 2.87,
+      "openToCloseReturnPct": -2.01,
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null
+    },
+    {
+      "code": "8060",
+      "name": "キヤノンマーケティングジャパン",
+      "rank": 3,
+      "previousClose": 4249,
+      "open": 4109,
+      "high": 4135,
+      "low": 3978,
+      "close": 4026,
+      "volume": 963100,
+      "turnoverJPY": null,
+      "openTime": null,
+      "highTime": null,
+      "lowTime": null,
+      "source": "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+      "directionVerdict": "外れ",
+      "reasonTags": [
+        "決算材料出尽くし",
+        "事前期待との乖離",
+        "PTS弱含み",
+        "執行条件未検証"
+      ],
+      "assessment": "前日比-5.25%、始値比-2.02%。上昇候補としては不成立。一方No.29/22のPTS-3.51%警戒と順位抑制は有用。決算の実数と株価反応を混同しなかった",
+      "previousCloseReturnPct": -5.25,
+      "openToCloseReturnPct": -2.02,
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null
+    },
+    {
+      "code": "2908",
+      "name": "フジッコ",
+      "rank": 4,
+      "previousClose": 1638,
+      "open": 1644,
+      "high": 1644,
+      "low": 1603,
+      "close": 1605,
+      "volume": 64800,
+      "turnoverJPY": 104684000,
+      "openTime": "09:00",
+      "highTime": "09:00",
+      "lowTime": "13:37",
+      "source": "https://finance.yahoo.co.jp/quote/2908.T",
+      "directionVerdict": "外れ",
+      "reasonTags": [
+        "寄り天",
+        "材料出尽くし",
+        "流動性不足",
+        "PTS薄商い",
+        "執行条件未検証"
+      ],
+      "assessment": "前日比-2.01%、始値比-2.37%。09:00が日中高値。No.22/25のPTS100株と既反応警告は適切。上昇候補に残した妥当性は再検証が必要",
+      "previousCloseReturnPct": -2.01,
+      "openToCloseReturnPct": -2.37,
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null
+    }
+  ],
+  "rootCauses": [
+    {
+      "category": "織り込み/需給",
+      "evidence": "5803は09:06高値のGU失速。2908は09:00高値で材料出尽くし型",
+      "roleImpact": "No.23/24/25の警戒は有用。No.15/18は実執行検証ができない"
+    },
+    {
+      "category": "材料解釈/事前期待",
+      "evidence": "8060は決算増益でも株価-5.25%。PTS-3.51%の事前警告あり",
+      "roleImpact": "No.29の順位抑制は妥当。No.8の材料発掘と買い判断は別KPI"
+    },
+    {
+      "category": "地合い/セクター",
+      "evidence": "指数は日経+1.73%、TOPIX+0.61%。6857は始値比+1.59%、5803は-2.01%",
+      "roleImpact": "No.6/7/34はセクターと個別実需を分離して評価"
+    },
+    {
+      "category": "執行条件/データ欠損",
+      "evidence": "全4銘柄の分足/VWAP/板/実注文なし",
+      "roleImpact": "No.26は4銘柄すべて実取引成否を検証不能とする"
+    }
+  ],
+  "dataLimitations": [
+    {
+      "code": "MORNING_ORIGINAL_UNVERIFIED",
+      "detail": "07:30原本とactivityは08:00のbackfill。07:30実行の証拠なし",
+      "backfilled": true,
+      "source": "investment-company/market-intelligence/2026-10-27.json",
+      "ownerAgentIds": [
+        3,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "THEME_ORIGINAL_UNVERIFIED",
+      "detail": "theme-research/2026-10-27/summary.jsonは08:00補完。元の07:30実需調査は未確認",
+      "backfilled": true,
+      "source": "investment-company/theme-research/2026-10-27/summary.json",
+      "ownerAgentIds": [
+        3,
+        31,
+        34
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "INTRADAY_EXECUTION_EVIDENCE_MISSING",
+      "detail": "09:00以降の分足、9:10/初値後10分のVWAP・板・スプレッド、実注文/約定なし。売買条件・MFE/MAE・実勝率を検証できない",
+      "backfilled": false,
+      "ownerAgentIds": [
+        15,
+        16,
+        18,
+        20,
+        26,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "STALE_PORTFOLIO_PERFORMANCE",
+      "detail": "holdings=10/14、performance=10/05、watchlist=10/02の記録。現在の保有・実現損益を保証しない",
+      "backfilled": false,
+      "ownerAgentIds": [
+        3,
+        26,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "MARKET_MICROSTRUCTURE_UNAVAILABLE",
+      "detail": "当日個別VWAP・先物・同業全銘柄・機関実フロー・板履歴の一貫した保存なし",
+      "backfilled": false,
+      "ownerAgentIds": [
+        7,
+        16,
+        28
+      ],
+      "operationalIssue": true
+    }
+  ],
+  "actualTrades": [],
+  "actualTradeWinRate": null,
+  "actualMFE": null,
+  "actualMAE": null,
+  "backfilled": false
+}
