@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-27",
+  "asOf": "2026-10-27 16:30 JST",
+  "session": "hr-daily",
+  "focus": "人事評価・組織改善",
+  "weeklyReviewExecuted": false,
+  "weeklyReviewReason": "火曜日のため前日週次評価を参照し日次監査のみ",
+  "baselineWeek": "2026-W43",
+  "hrSummary": {
+    "totalRoles": 34,
+    "rolesWithOpportunity": 25,
+    "rolesWithoutOpportunity": 9,
+    "evidenceRecords": 28,
+    "opportunityRecords": 28,
+    "materialNoContributionRoles": [
+      28
+    ],
+    "topContributors": [
+      29,
+      23,
+      24,
+      25,
+      22,
+      26
+    ],
+    "improvementTargets": [
+      3,
+      15,
+      18,
+      26,
+      28,
+      31
+    ],
+    "formalPersonnelChanges": "none"
+  },
+  "performanceEvidence": {
+    "market": {
+      "nikkeiChangePct": 1.73,
+      "topixChangePct": 0.61
+    },
+    "candidateCount": 4,
+    "positiveVsPreviousClose": 2,
+    "negativeVsPreviousClose": 2,
+    "positiveVsOpen": 1,
+    "negativeVsOpen": 3,
+    "verifiedTrades": 0,
+    "verifiedTradeWinRate": null,
+    "verifiedProfitFactor": null,
+    "actualTradeWinRate": null,
+    "actualPnl": null
+  },
+  "nextDayImprovementActions": [
+    {
+      "ownerAgentIds": [
+        15,
+        16,
+        18,
+        26
+      ],
+      "action": "初値形成時刻、初値後10分の分足・VWAP・板・スプレッド、約定可能性の証拠保存を共通工程化",
+      "priority": "critical",
+      "status": "proposed"
+    },
+    {
+      "ownerAgentIds": [
+        3,
+        31
+      ],
+      "action": "07:30原本とactivityの保存・再読込を時刻付きで検査し、欠損を当日朝の段階で検知",
+      "priority": "critical",
+      "status": "proposed"
+    },
+    {
+      "ownerAgentIds": [
+        8,
+        29,
+        34
+      ],
+      "action": "IR材料の真偽・市場期待との差・当日実需の新規性を別KPIで評価",
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "ownerAgentIds": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "action": "寄り天警告の的中とfalse alarmを両方集計し、過度な見送りも評価",
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "ownerAgentIds": [
+        28
+      ],
+      "action": "機関実フロー未取得時は独自貢献なしと明記し、公開需給代替データの取得可否を報告",
+      "priority": "medium",
+      "status": "proposed"
+    }
+  ],
+  "operationalIssues": [
+    {
+      "code": "MORNING_ORIGINAL_UNVERIFIED",
+      "detail": "07:30原本とactivityは08:00のbackfill。07:30実行の証拠なし",
+      "backfilled": true,
+      "source": "investment-company/market-intelligence/2026-10-27.json",
+      "ownerAgentIds": [
+        3,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "THEME_ORIGINAL_UNVERIFIED",
+      "detail": "theme-research/2026-10-27/summary.jsonは08:00補完。元の07:30実需調査は未確認",
+      "backfilled": true,
+      "source": "investment-company/theme-research/2026-10-27/summary.json",
+      "ownerAgentIds": [
+        3,
+        31,
+        34
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "INTRADAY_EXECUTION_EVIDENCE_MISSING",
+      "detail": "09:00以降の分足、9:10/初値後10分のVWAP・板・スプレッド、実注文/約定なし。売買条件・MFE/MAE・実勝率を検証できない",
+      "backfilled": false,
+      "ownerAgentIds": [
+        15,
+        16,
+        18,
+        20,
+        26,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "STALE_PORTFOLIO_PERFORMANCE",
+      "detail": "holdings=10/14、performance=10/05、watchlist=10/02の記録。現在の保有・実現損益を保証しない",
+      "backfilled": false,
+      "ownerAgentIds": [
+        3,
+        26,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "MARKET_MICROSTRUCTURE_UNAVAILABLE",
+      "detail": "当日個別VWAP・先物・同業全銘柄・機関実フロー・板履歴の一貫した保存なし",
+      "backfilled": false,
+      "ownerAgentIds": [
+        7,
+        16,
+        28
+      ],
+      "operationalIssue": true
+    }
+  ],
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/weekly/2026-W43.json",
+    "investment-company/market-intelligence/2026-10-27.json",
+    "investment-company/decision-memos/2026-10-27/daytrade.md",
+    "investment-company/hr/activity/2026-10-27/daytrade.json",
+    "investment-company/theme-research/2026-10-27/summary.json",
+    "investment-company/market-intelligence/2026-10-26-close-review.json",
+    "stock-dashboard/data/performance-summary.json"
+  ],
+  "backfilled": false,
+  "saveAudit": {
+    "expectedFiles": 5,
+    "writeSucceededPaths": [
+      "investment-company/market-intelligence/2026-10-27-close-review.json",
+      "investment-company/hr/activity/2026-10-27/market-close-review.json",
+      "investment-company/hr/activity/2026-10-27/performance-review.json",
+      "investment-company/hr/activity/2026-10-27/hr-audit.json",
+      "investment-company/hr/daily/2026-10-27.json"
+    ],
+    "verificationStatus": "verify_individually_after_write",
+    "note": "最終保存結果は個別fetch_fileで検証"
+  }
+}
