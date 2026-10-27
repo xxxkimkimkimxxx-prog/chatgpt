@@ -2625,6 +2625,385 @@
         "https://s.kabutan.jp/stocks/5027",
         "https://kabu365.net/karauri/code/5016"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-10-27T16:00:00+09:00",
+      "runAtJST": "2026-10-27T15:56:31+09:00",
+      "marketDate": "2026-10-27",
+      "status": "completed_tse_closes_some_volume_stale",
+      "marketOpen": true,
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST (iSPEED screenshots; after close)",
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "currentPriceYen": 107,
+          "priceAsOfJST": "2026-10-27T15:30:00+09:00",
+          "priceBasis": "2026-10-27 東証終値",
+          "priceSource": "https://finance.yahoo.co.jp/quote/2926.T",
+          "priorCloseYen": 105,
+          "unrealizedPnlYen": -12000,
+          "previousRunPnlYen": -13000,
+          "deltaYen": 1000,
+          "dayOpenYen": 106,
+          "dayHighYen": 107,
+          "dayLowYen": 105,
+          "volumeShares": 112200,
+          "turnoverYen": 11919000,
+          "volumeAsOfJST": "2026-10-27T15:30:00+09:00",
+          "vwapYen": 106.23,
+          "vwapEstimated": true,
+          "vwapDataMayBeIncomplete": false,
+          "supportYen": [
+            105,
+            103
+          ],
+          "resistanceYen": [
+            107,
+            110
+          ],
+          "credit": {
+            "referenceDate": "2026-10-23",
+            "buyShares": 405200,
+            "buyChangeShares": -33800,
+            "sellShares": 38600,
+            "sellChangeShares": 8900,
+            "ratio": 10.5
+          },
+          "institutionalShortChanges": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "終値は概算VWAPを上回るが当日高値107円を上抜けず",
+            "信用買残は前週比33,800株減少したが倍率10.50倍、低流動性"
+          ],
+          "invalidatingCondition": "105円・103円割れ"
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "currentPriceYen": 28,
+          "priceAsOfJST": "2026-10-27T15:30:00+09:00",
+          "priceBasis": "2026-10-27 東証終値",
+          "priceSource": "https://finance.yahoo.co.jp/quote/4597.T",
+          "priorCloseYen": 27,
+          "unrealizedPnlYen": -1980,
+          "previousRunPnlYen": -4980,
+          "deltaYen": 3000,
+          "dayOpenYen": 28,
+          "dayHighYen": 28,
+          "dayLowYen": 27,
+          "volumeShares": 91341800,
+          "turnoverYen": 2522947000,
+          "volumeAsOfJST": "2026-10-27T15:19:00+09:00",
+          "vwapYen": 27.62,
+          "vwapEstimated": true,
+          "vwapDataMayBeIncomplete": true,
+          "supportYen": [
+            27,
+            26
+          ],
+          "resistanceYen": [
+            28,
+            29
+          ],
+          "credit": {
+            "referenceDate": "2026-10-23",
+            "buyShares": 18373400,
+            "buyChangeShares": -1173000,
+            "sellShares": 4379200,
+            "sellChangeShares": -129600,
+            "ratio": 4.2
+          },
+          "institutionalShortChanges": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "28円で引けたが当日高値を上回らず、28円超への定着未確認",
+            "信用買残117.3万株減少するも売買高が多く上値の売り圧力確認が必要"
+          ],
+          "invalidatingCondition": "27円割れ、次いで26円割れ"
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "currentPriceYen": 2905,
+          "priceAsOfJST": "2026-10-27T15:30:00+09:00",
+          "priceBasis": "2026-10-27 東証終値",
+          "priceSource": "https://finance.yahoo.co.jp/quote/5016.T",
+          "priorCloseYen": 2826.5,
+          "unrealizedPnlYen": -158200,
+          "previousRunPnlYen": -163600,
+          "deltaYen": 5400,
+          "dayOpenYen": 2900,
+          "dayHighYen": 2946.5,
+          "dayLowYen": 2876,
+          "volumeShares": 12015100,
+          "turnoverYen": 34925908000,
+          "volumeAsOfJST": "2026-10-27T15:30:00+09:00",
+          "vwapYen": 2906.83,
+          "vwapEstimated": true,
+          "vwapDataMayBeIncomplete": false,
+          "supportYen": [
+            2876,
+            2787,
+            2693
+          ],
+          "resistanceYen": [
+            2946.5,
+            2896
+          ],
+          "credit": {
+            "referenceDate": "2026-10-23",
+            "buyShares": 21737900,
+            "buyChangeShares": -2709700,
+            "sellShares": 698900,
+            "sellChangeShares": 163800,
+            "ratio": 31.1
+          },
+          "institutionalShortChanges": "10/26公表・10/23計算日 Morgan Stanley MUFG +195,058株。5機関合計5.33%→5.35%、10/27新規公表未確認",
+          "sectorRelativeStrengthToday": "JX+2.78%、住友金属鉱山+3.19%、フジクラ+2.87%、古河電工+0.39%、アドバンテスト+8.98%（全て10/27終値）",
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "後場安値2876円から2905円へ戻したが朝高値2946.5円を突破せず",
+            "終値が当日概算VWAPをわずかに下回る",
+            "信用買残は前週比270.97万株減少も倍率31.10倍で需給整理完了せず"
+          ],
+          "invalidatingCondition": "2876円割れ、次に2787円・2693円割れ"
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "currentPriceYen": 779,
+          "priceAsOfJST": "2026-10-27T15:30:00+09:00",
+          "priceBasis": "2026-10-27 東証終値",
+          "priceSource": "https://finance.yahoo.co.jp/quote/5027.T",
+          "priorCloseYen": 771,
+          "unrealizedPnlYen": -19596,
+          "previousRunPnlYen": -21396,
+          "deltaYen": 1800,
+          "dayOpenYen": 770,
+          "dayHighYen": 780,
+          "dayLowYen": 751,
+          "volumeShares": 200500,
+          "turnoverYen": 153987000,
+          "volumeAsOfJST": "2026-10-27T15:24:00+09:00",
+          "vwapYen": 768.01,
+          "vwapEstimated": true,
+          "vwapDataMayBeIncomplete": true,
+          "supportYen": [
+            751,
+            745
+          ],
+          "resistanceYen": [
+            780,
+            790
+          ],
+          "credit": {
+            "referenceDate": "2026-10-23",
+            "buyShares": 1217300,
+            "buyChangeShares": 13500,
+            "sellShares": 5500,
+            "sellChangeShares": -15700,
+            "ratio": 221.33
+          },
+          "institutionalShortChanges": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "終値779円は概算VWAPを上回るが780円の当日高値未突破",
+            "信用買残+13,500株・信用倍率221.33倍と需給偏重"
+          ],
+          "invalidatingCondition": "751円割れ、次に745円割れ"
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "currentPriceYen": 138,
+          "priceAsOfJST": "2026-10-27T15:30:00+09:00",
+          "priceBasis": "2026-10-27 東証終値",
+          "priceSource": "https://finance.yahoo.co.jp/quote/8518.T",
+          "priorCloseYen": 138,
+          "unrealizedPnlYen": -4800,
+          "previousRunPnlYen": -5000,
+          "deltaYen": 200,
+          "dayOpenYen": 138,
+          "dayHighYen": 139,
+          "dayLowYen": 137,
+          "volumeShares": 9700,
+          "turnoverYen": 1334000,
+          "volumeAsOfJST": "2026-10-27T14:49:00+09:00",
+          "vwapYen": 137.53,
+          "vwapEstimated": true,
+          "vwapDataMayBeIncomplete": true,
+          "supportYen": [
+            137,
+            136
+          ],
+          "resistanceYen": [
+            139,
+            142
+          ],
+          "credit": {
+            "referenceDate": "2026-10-23",
+            "buyShares": 1555600,
+            "buyChangeShares": 14400,
+            "sellShares": 0,
+            "sellChangeShares": 0,
+            "ratio": null
+          },
+          "institutionalShortChanges": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "出来高9700株と薄商いで反発の信頼性不足",
+            "信用買残+14,400株、信用売残0で倍率算出不可"
+          ],
+          "invalidatingCondition": "137円・136円割れ"
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "currentPriceYen": 174,
+          "priceAsOfJST": "2026-10-27T15:30:00+09:00",
+          "priceBasis": "2026-10-27 東証終値",
+          "priceSource": "https://finance.yahoo.co.jp/quote/9432.T",
+          "priorCloseYen": 176.4,
+          "unrealizedPnlYen": -560,
+          "previousRunPnlYen": -580,
+          "deltaYen": 20,
+          "dayOpenYen": 175,
+          "dayHighYen": 176.1,
+          "dayLowYen": 173.4,
+          "volumeShares": 222100700,
+          "turnoverYen": 38731018000,
+          "volumeAsOfJST": "2026-10-27T15:30:00+09:00",
+          "vwapYen": 174.38,
+          "vwapEstimated": true,
+          "vwapDataMayBeIncomplete": false,
+          "supportYen": [
+            173.4,
+            173
+          ],
+          "resistanceYen": [
+            176.1,
+            178
+          ],
+          "credit": {
+            "referenceDate": "2026-10-23",
+            "buyShares": 73231000,
+            "buyChangeShares": -9045200,
+            "sellShares": 15252100,
+            "sellChangeShares": 41300,
+            "ratio": 4.8
+          },
+          "institutionalShortChanges": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "前日終値176.4円・当日概算VWAPを下回り下落継続",
+            "信用買残904.52万株減少も当日安値173.4円からの反発は弱い"
+          ],
+          "invalidatingCondition": "173.4円割れ、次に173円割れ"
+        }
+      ],
+      "unrealizedPnlYen": -197136,
+      "previousRunPnlYen": -208556,
+      "deltaYen": 11420,
+      "fullyCurrentValuationAvailable": true,
+      "valuationMethod": "(2026-10-27東証終値-登録平均取得単価)×保有株数",
+      "jx": {
+        "state": "信用整理進行中",
+        "previousState": "信用整理進行中",
+        "stateChanged": false,
+        "priceYen": 2905,
+        "priceAsOfJST": "2026-10-27T15:30:00+09:00",
+        "previousCloseYen": 2826.5,
+        "unrealizedPnlYen": -158200,
+        "dayHighYen": 2946.5,
+        "dayLowYen": 2876,
+        "volumeShares": 12015100,
+        "turnoverYen": 34925908000,
+        "vwapYen": 2906.83,
+        "credit": {
+          "referenceDate": "2026-10-23",
+          "publicationDate": "2026-10-27掲載確認（厳密な初回公表日時未確認）",
+          "buyShares": 21737900,
+          "sellShares": 698900,
+          "ratio": 31.1,
+          "weeklyBuyChangeShares": -2709700,
+          "weeklySellChangeShares": 163800,
+          "previousDailyReferenceDate": "2026-10-22",
+          "previousDailyBuyShares": 22855300,
+          "dailyBuyChangeShares": -1117400,
+          "dailySellChangeShares": -47000
+        },
+        "creditUnchangedFromPreviousRun": true,
+        "institutionalShort": {
+          "latestPublicationDate": "2026-10-26",
+          "latestCalculationDate": "2026-10-23",
+          "fiveInstitutionAggregatePct": 5.35,
+          "previousAggregatePct": 5.33,
+          "aggregateChangePp": 0.02,
+          "morganStanleyMufgChangeShares": 195058,
+          "newSincePreviousRun": false
+        },
+        "sectorRelativeStrengthToday": "JX+2.78%、住友金属鉱山+3.19%、フジクラ+2.87%、古河電工+0.39%、アドバンテスト+8.98%（全て10/27終値）",
+        "stateReasons": [
+          "10/23基準の信用買残は前週比270.97万株減少したが倍率31.10倍と高い",
+          "10/27安値2876円から終値2905円に切り返したが概算VWAP2906.83円を下回る",
+          "当日高値2946.5円を未回復で非鉄同業・半導体関連の大半に劣後"
+        ],
+        "forcedLiquidationCauseConfirmed": false,
+        "forcedSellingAbsorption": "当日安値2876円から終値2905円に戻すが吸収完了の確認なし。追証由来かどうか不明",
+        "trend": "下落トレンド内の戻り。反転確認未達"
+      },
+      "audit": {
+        "previousScheduledRunRecordFound": true,
+        "previousScheduledRunAtJST": "2026-10-27T15:00:00+09:00",
+        "previousDeliveryConfirmed": false,
+        "notificationEnabled": false,
+        "holdingsStale": true,
+        "holdingsAgeDays": 13,
+        "positionCountChanged": false,
+        "missing": [
+          "保有データは10/14以降の売買未反映の可能性",
+          "全銘柄の移動平均・出来高集中帯",
+          "JX以外の機関空売り差分・定量的な同業相対強度",
+          "4597・5027・8518の出来高売買代金が15:30時点未更新",
+          "信用残の正確な初回公表日時",
+          "通知配信成功記録"
+        ],
+        "note": "全銘柄の15:30東証終値は確認済み。売買代金/出来高は一部遅延し概算VWAPは暫定"
+      },
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/2926.T",
+        "https://finance.yahoo.co.jp/quote/4597.T",
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://finance.yahoo.co.jp/quote/5027.T",
+        "https://finance.yahoo.co.jp/quote/8518.T",
+        "https://finance.yahoo.co.jp/quote/9432.T",
+        "https://finance.yahoo.co.jp/quote/5016.T/history?styl=margin",
+        "https://kabu365.net/karauri/code/5016",
+        "https://finance.yahoo.co.jp/quote/5713.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://finance.yahoo.co.jp/quote/5801.T",
+        "https://finance.yahoo.co.jp/quote/6857.T"
+      ]
     }
   ]
 }
