@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-27",
+  "asOf": "2026-10-27 16:30 JST",
+  "committee": "market-close-review",
+  "roleEvidenceType": "same-run analytical role records, not independently executed agents",
+  "independentAgentProcessesVerified": false,
+  "backfilled": false,
+  "agents": [
+    {
+      "agentId": 26,
+      "title": "トレード日誌・成績分析担当",
+      "taskPerformed": "4候補の日足と寄り後継続性の照合",
+      "keyFindings": [
+        "前日比プラス2/4、始値比プラス1/4",
+        "5803は09:06寄り天、2908は09:00寄り天",
+        "実約定と分足なしのため実取引成功は0件と断定せず未検証"
+      ],
+      "novelContribution": "前日比と始値比、材料的中と執行成功を分離",
+      "decisionImpact": "No.15/18に実際の条件成立を記録する業務改善を要求",
+      "noMaterialContribution": false,
+      "evidenceCount": 1,
+      "opportunityCount": 1,
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "backfilled": false
+    },
+    {
+      "agentId": 31,
+      "title": "人事評価・組織開発担当",
+      "taskPerformed": "34役割の活動機会・独自貢献・欠損・重複を監査",
+      "keyFindings": [
+        "07:30朝原本は08:00補完のみ",
+        "No.28は実フロー未取得で独自貢献なし",
+        "No.22/23/24/25/29の警告が価格反応と整合"
+      ],
+      "novelContribution": "証拠件数と実際の独立稼働を区別し、再発する運用欠損を責任者別に割当",
+      "decisionImpact": "正式な人事処分は提案せず改善責任を明確化",
+      "noMaterialContribution": false,
+      "evidenceCount": 1,
+      "opportunityCount": 1,
+      "sourcesUsed": [
+        "investment-company/organization/agents.json",
+        "investment-company/hr/evaluation-policy.md",
+        "investment-company/hr/agent-scorecard.json",
+        "investment-company/hr/weekly/2026-W43.json",
+        "investment-company/market-intelligence/2026-10-27.json",
+        "investment-company/market-intelligence/latest.json",
+        "investment-company/decision-memos/2026-10-27/daytrade.md",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/market-intelligence.json",
+        "investment-company/theme-research/2026-10-27/summary.json",
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "stock-dashboard/data/performance-summary.json"
+      ],
+      "backfilled": false
+    }
+  ]
+}
