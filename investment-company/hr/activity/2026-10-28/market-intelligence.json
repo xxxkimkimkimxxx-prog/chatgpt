@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-28",
+  "asOf": "2026-10-28 08:00 JST",
+  "session": "market-intelligence-backfill-from-0800",
+  "backfilled": true,
+  "original0730ExecutionVerified": false,
+  "agentCount": 0,
+  "agentIndependentExecutionVerified": false,
+  "sourceReport": "investment-company/market-intelligence/2026-10-28.json",
+  "evidenceGap": [
+    "2026-10-28 07:30市場情報部の正規レポート/activity未検出",
+    "2026-10-28テーマ研究原本未検出",
+    "09:00以降の実際のVWAP/分足/板/スプレッドは寄り前未取得",
+    "当日実際の注文/約定、機関投資家実フロー、全候補の市場コンセンサス未取得",
+    "保有株の最新取引による数量変更未確認"
+  ],
+  "notes": "市場情報部の独立した07:30活動証跡ではなく08:00検証情報からの復元"
+}
