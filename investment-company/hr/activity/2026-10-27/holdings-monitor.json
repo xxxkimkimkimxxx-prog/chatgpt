@@ -2286,15 +2286,15 @@
           "quantity": 1000,
           "averageCostYen": 119,
           "currentPriceYen": 106,
-          "currentPriceAtJST": "2026-10-27T13:57:00+09:00",
-          "priceSource": "2026-10-27 13:57の前回監視記録（最新約定未取得）",
+          "currentPriceAtJST": "2026-10-27T13:52:00+09:00",
+          "priceSource": "2026-10-27 13:52の前回監視記録（最新約定未取得）",
           "priorCloseYen": 105,
           "unrealizedPnlYen": -13000,
           "dayHighYen": 107,
           "dayLowYen": 105,
           "volumeShares": 109600,
-          "turnoverYen": 11640000,
-          "volumeAsOfJST": "13:28頃（前回記録）",
+          "turnoverYen": 11641000,
+          "volumeAsOfJST": "13:40（前回記録）",
           "vwapYen": 106.21,
           "supportYen": [
             105,
@@ -2320,7 +2320,7 @@
             "信用買い残は前週比33,800株減少したが倍率10.50倍"
           ],
           "invalidatingCondition": "105円割れ、次に103円割れ",
-          "marketDataCaveat": "13:57の前回値据え置き、14時台最新約定取得不能"
+          "marketDataCaveat": "13:52の前回値据え置き、15時台最新約定取得不能"
         },
         {
           "code": "4597",
@@ -2609,7 +2609,7 @@
         "holdingsAgeDays": 13,
         "positionCountChanged": false,
         "missing": [
-          "篠崎屋の13:57以降の場中約定価格",
+          "篠崎屋の13:52以降の場中約定価格",
           "全銘柄の同時点価格・移動平均線・出来高集中帯",
           "JX以外の最新機関空売り差分と定量的な同業比較",
           "一部銘柄の直近出来高・売買代金・VWAP",
