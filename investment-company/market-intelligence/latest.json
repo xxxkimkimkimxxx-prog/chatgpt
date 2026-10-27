@@ -1,23 +1,24 @@
 {
-  "date": "2026-10-27",
-  "asOf": "2026-10-27 08:00 JST",
-  "session": "market-intelligence-backfill",
-  "status": "backfilled_0800_original_0730_missing",
-  "fullReportPath": "investment-company/market-intelligence/2026-10-27.json",
-  "activityPath": "investment-company/hr/activity/2026-10-27/market-intelligence.json",
-  "themePath": "investment-company/theme-research/2026-10-27/summary.json",
+  "date": "2026-10-28",
+  "asOf": "2026-10-28 08:00 JST",
+  "session": "market-intelligence-backfill-from-0800",
+  "status": "backfilled_original_0730_missing",
+  "fullReportPath": "investment-company/market-intelligence/2026-10-28.json",
+  "activityPath": "investment-company/hr/activity/2026-10-28/market-intelligence.json",
+  "themePath": "investment-company/theme-research/2026-10-28/summary.json",
   "candidateCount": 4,
   "topFresh": [
-    "8060",
-    "2908"
+    "4063",
+    "4519"
   ],
-  "marketStance": "米SOX反発、個別は条件付き。10/26寄り天教訓を重視",
+  "marketStance": "GU警戒、寄り天と決算期待差を優先",
   "holdingsBlind": true,
-  "previousCloseReviewPartial": false,
   "backfilled": true,
+  "original0730ExecutionVerified": false,
   "dataLimitations": [
-    "07:30原本未検出、08:00資料から復元",
-    "当日分足/VWAP/板未取得",
-    "最新先物リアルタイム未検証"
+    "07:30原本・活動証跡・テーマ研究原本未確認",
+    "当日分足/VWAP/板・実約定未取得",
+    "機関実フロー・市場コンセンサス未取得",
+    "holdings 10/14、performance 10/05、watchlist 10/02の陳腐化"
   ]
 }
