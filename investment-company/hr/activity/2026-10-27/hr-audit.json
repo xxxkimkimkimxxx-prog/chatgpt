@@ -1,0 +1,1578 @@
+{
+  "date": "2026-10-27",
+  "asOf": "2026-10-27 16:30 JST",
+  "agentId": 31,
+  "title": "人事評価・組織開発担当",
+  "purpose": "34役割の証拠・機会・意思決定影響を日次監査。独立AI実行の証明ではない",
+  "totalRoles": 34,
+  "rolesWithOpportunity": 25,
+  "rolesWithoutOpportunity": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    17,
+    19,
+    27,
+    30
+  ],
+  "totalEvidenceRecords": 28,
+  "totalOpportunityRecords": 28,
+  "noMaterialContributionRoleIds": [
+    28
+  ],
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "department": "経営企画・人材開発室",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "No.6のSOX反発とNo.34の企業実需を採用し6857/5803を上位。No.22のPTS薄商い、No.29の8060の負の市場反応で8060/2908を下位に。",
+        "No.6/34による6857優先とNo.22/29による8060/2908降格を事後検証。6857は始値比プラス、8060/2908は下落"
+      ],
+      "novelContribution": "No.6/34による6857優先とNo.22/29による8060/2908降格を事後検証。6857は始値比プラス、8060/2908は下落",
+      "decisionImpact": "順位変更に用いた反対意見の有用性を再確認",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [
+        "1605",
+        "9663"
+      ],
+      "risksFlagged": [
+        "No.6のSOX反発とNo.34の企業実需を採用し6857/5803を上位。No.22のPTS薄商い、No.29の8060の負の市場反応で8060/2908を下位に。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "順位変更前後の代替順位と結果を毎回対照",
+      "previousWeekProvisionalScore": 76,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "department": "経営企画・人材開発室",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "寄り前買値断定、AIによる発注、固定損失上限、未校正確率を実績勝率とすることを禁止。",
+        "発注なし・未校正勝率を実績と混同しない。No.31自己採点を禁止"
+      ],
+      "novelContribution": "発注なし・未校正勝率を実績と混同しない。No.31自己採点を禁止",
+      "decisionImpact": "人事監査の利益相反防止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り前買値断定、AIによる発注、固定損失上限、未校正確率を実績勝率とすることを禁止。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "保存成功の読み戻しログも監査",
+      "previousWeekProvisionalScore": 86,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "department": "経営企画・人材開発室",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 2,
+      "evidenceCount": 2,
+      "evidenceGap": [
+        "07:30正規原本欠損"
+      ],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "2026-10-27朝の正規GitHub報告欠損とholdings/performance/watchlistの陳腐化を確認。8060のPTS下落、6857/5803のPTS反発を価格ソース照合。",
+        "当日終値と前日終値・始値を銘柄コードと日付で照合。07:30原本欠損を明示"
+      ],
+      "novelContribution": "当日終値と前日終値・始値を銘柄コードと日付で照合。07:30原本欠損を明示",
+      "decisionImpact": "当日株価と古いポートフォリオの混同を防止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "2026-10-27朝の正規GitHub報告欠損とholdings/performance/watchlistの陳腐化を確認。8060のPTS下落、6857/5803のPTS反発を価格ソース照合。"
+      ],
+      "errorsOrMisses": [
+        "07:30原本欠損の再発を未解決"
+      ],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/8060.T/history",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "取得時刻・データソース・二重照合を機械的に記録",
+      "previousWeekProvisionalScore": 70,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "department": "市場情報部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "米国10/26はNASDAQ+0.83%、SOX約+2.8%。10/26日本は日経-0.8%とTOPIX+0.18%の乖離。"
+      ],
+      "novelContribution": "米国10/26はNASDAQ+0.83%、SOX約+2.8%。10/26日本は日経-0.8%とTOPIX+0.18%の乖離。",
+      "decisionImpact": "指数全面強気を否定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米国10/26はNASDAQ+0.83%、SOX約+2.8%。10/26日本は日経-0.8%とTOPIX+0.18%の乖離。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "地合い方向だけでなく業種間の反転と指数乖離を条件化",
+      "previousWeekProvisionalScore": 78,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "department": "市場情報部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "原油が外交緩和報道で反落し、前日のエネルギー優位の持続性は不確か。"
+      ],
+      "novelContribution": "原油が外交緩和報道で反落し、前日のエネルギー優位の持続性は不確か。",
+      "decisionImpact": "1605を本命から除外",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "1605"
+      ],
+      "risksFlagged": [
+        "原油が外交緩和報道で反落し、前日のエネルギー優位の持続性は不確か。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "原油先物の当日方向と前日までの織り込みを分離",
+      "previousWeekProvisionalScore": 69,
+      "previousWeekProvisionalGrade": "C",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "department": "市場情報部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "米SOX+2.8%でも10/22の急落分を回復したとは限らない。AIテスタを持つ6857は実需と相対強度を条件に候補化。",
+        "6857は始値比上昇も5803は始値比下落。SOX反発から一律上昇とは判断できない"
+      ],
+      "novelContribution": "6857は始値比上昇も5803は始値比下落。SOX反発から一律上昇とは判断できない",
+      "decisionImpact": "業種内相対強度条件の必要性を確認",
+      "candidatesPromoted": [
+        "6857"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米SOX+2.8%でも10/22の急落分を回復したとは限らない。AIテスタを持つ6857は実需と相対強度を条件に候補化。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [
+        7,
+        32
+      ],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://www.advantest.com/ja/investors/financial-highlights/review/",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "米SOX→日本個別の反応を事後校正",
+      "previousWeekProvisionalScore": 78,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "department": "市場情報部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "10/26日経-0.80%/TOPIX+0.18%の乖離。10/27は半導体同業と電線同業の一致を要求。"
+      ],
+      "novelContribution": "10/26日経-0.80%/TOPIX+0.18%の乖離。10/27は半導体同業と電線同業の一致を要求。",
+      "decisionImpact": "セクター不一致なら見送り",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26日経-0.80%/TOPIX+0.18%の乖離。10/27は半導体同業と電線同業の一致を要求。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/world/asia-pacific/japans-nikkei-edges-lower-tech-sector-weighs-energy-shares-rise-2026-10-26/",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "指数の強弱と業種内の相対強度を分ける",
+      "previousWeekProvisionalScore": 75,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "department": "市場情報部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "10/26 15:30キヤノンMJ公式決算で経常+20.7%。フジッコは14:30の上方修正が場中で既反応。",
+        "8060の決算増益発見は事実だが、10/27株価は-5.25%"
+      ],
+      "novelContribution": "8060の決算増益発見は事実だが、10/27株価は-5.25%",
+      "decisionImpact": "材料発掘と取引適合性を別KPIへ",
+      "candidatesPromoted": [
+        "8060"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26 15:30キヤノンMJ公式決算で経常+20.7%。フジッコは14:30の上方修正が場中で既反応。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://corporate.jp.canon/ir/news",
+        "https://s.minkabu.jp/stock/2908/news",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "市場期待・PTS反応をNo.29と事前突合",
+      "previousWeekProvisionalScore": 88,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "department": "市場情報部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "6857 PTS32,160円+3.51%、5803 PTS4,104円+3.17%、8060 PTS4,100円-3.51%、2908 PTS1,630.6円で100株。"
+      ],
+      "novelContribution": "6857 PTS32,160円+3.51%、5803 PTS4,104円+3.17%、8060 PTS4,100円-3.51%、2908 PTS1,630.6円で100株。",
+      "decisionImpact": "薄い2908 PTSを価格予測根拠にしない",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [
+        "2908"
+      ],
+      "risksFlagged": [
+        "6857 PTS32,160円+3.51%、5803 PTS4,104円+3.17%、8060 PTS4,100円-3.51%、2908 PTS1,630.6円で100株。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [
+        16,
+        22
+      ],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://finance.yahoo.co.jp/quote/8060.T/history",
+        "https://finance.yahoo.co.jp/quote/2908.T",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "PTSは出来高・約定時刻とセットで評価、未取得は欠損",
+      "previousWeekProvisionalScore": 73,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 10,
+      "title": "決算・業績担当",
+      "department": "ファンダメンタル調査部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "previousWeekProvisionalScore": null,
+      "previousWeekProvisionalGrade": "保留",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 11,
+      "title": "財務・キャッシュフロー担当",
+      "department": "ファンダメンタル調査部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "previousWeekProvisionalScore": null,
+      "previousWeekProvisionalGrade": "保留",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 12,
+      "title": "業界構造・競争優位担当",
+      "department": "ファンダメンタル調査部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "previousWeekProvisionalScore": null,
+      "previousWeekProvisionalGrade": "保留",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 13,
+      "title": "経営者・中期計画担当",
+      "department": "ファンダメンタル調査部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "previousWeekProvisionalScore": null,
+      "previousWeekProvisionalGrade": "保留",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 14,
+      "title": "バリュエーション・資本政策担当",
+      "department": "ファンダメンタル調査部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "previousWeekProvisionalScore": null,
+      "previousWeekProvisionalGrade": "保留",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "department": "戦術・テクニカル・執行部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [
+        "分足/VWAP/板・実約定欠損"
+      ],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "10/26 6999初値09:15、6954日中高値09:08。初値が遅れた銘柄は初値後10分観察に変更。",
+        "09:09初値の6857と09:06初値の5803を区別。5803は初値時に日中高値"
+      ],
+      "novelContribution": "09:09初値の6857と09:06初値の5803を区別。5803は初値時に日中高値",
+      "decisionImpact": "初値後10分ルールの必要性を裏付け",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26 6999初値09:15、6954日中高値09:08。初値が遅れた銘柄は初値後10分観察に変更。"
+      ],
+      "errorsOrMisses": [
+        "分足/VWAP/板・実約定の保存がなく執行条件の成立判定不可"
+      ],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "初値後10分の分足・VWAPスナップショットを取得",
+      "previousWeekProvisionalScore": 67,
+      "previousWeekProvisionalGrade": "C",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "department": "戦術・テクニカル・執行部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [
+        "分足/VWAP/板・実約定欠損"
+      ],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "6857東証11,473,600株、5803東証24,543,700株。2908は173,400株で薄いPTS100株。"
+      ],
+      "novelContribution": "6857東証11,473,600株、5803東証24,543,700株。2908は173,400株で薄いPTS100株。",
+      "decisionImpact": "2908を流動性条件で降格",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "2908"
+      ],
+      "risksFlagged": [
+        "6857東証11,473,600株、5803東証24,543,700株。2908は173,400株で薄いPTS100株。"
+      ],
+      "errorsOrMisses": [
+        "分足/VWAP/板・実約定の保存がなく執行条件の成立判定不可"
+      ],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://finance.yahoo.co.jp/quote/2908.T",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "売買代金・板・スプレッドの時刻付き取得を開始",
+      "previousWeekProvisionalScore": 82,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 17,
+      "title": "スイング・相対強度担当",
+      "department": "戦術・テクニカル・執行部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "previousWeekProvisionalScore": null,
+      "previousWeekProvisionalGrade": "保留",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "department": "戦術・テクニカル・執行部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [
+        "分足/VWAP/板・実約定欠損"
+      ],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "初値後10分、VWAP奪回/初動高値更新、5分足出来高、板厚・スプレッドを全て要求。",
+        "当日条件成立を判定する証拠が欠損"
+      ],
+      "novelContribution": "当日条件成立を判定する証拠が欠損",
+      "decisionImpact": "実行可能な執行評価が未完成",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "初値後10分、VWAP奪回/初動高値更新、5分足出来高、板厚・スプレッドを全て要求。"
+      ],
+      "errorsOrMisses": [
+        "分足/VWAP/板・実約定の保存がなく執行条件の成立判定不可"
+      ],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "時刻付き条件成立/不成立、注文可否、失効理由を記録",
+      "previousWeekProvisionalScore": 65,
+      "previousWeekProvisionalGrade": "C",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 19,
+      "title": "ポートフォリオ担当",
+      "department": "リスク管理部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "previousWeekProvisionalScore": null,
+      "previousWeekProvisionalGrade": "保留",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "department": "リスク管理部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "価格構造に基づくRと目標1.8〜2.0Rを設定。未確定価格で円建て損益を創作しない。"
+      ],
+      "novelContribution": "価格構造に基づくRと目標1.8〜2.0Rを設定。未確定価格で円建て損益を創作しない。",
+      "decisionImpact": "高額株も単元未満株を許容、実執行可否確認",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "価格構造に基づくRと目標1.8〜2.0Rを設定。未確定価格で円建て損益を創作しない。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "約定前に架空の円建て損益を置かず構造的撤退線を明示",
+      "previousWeekProvisionalScore": 79,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "department": "リスク管理部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "今週FOMC・米大型テック決算、10/28アドバンテスト決算。イベント直前のリスクとギャップを監視。"
+      ],
+      "novelContribution": "今週FOMC・米大型テック決算、10/28アドバンテスト決算。イベント直前のリスクとギャップを監視。",
+      "decisionImpact": "6857は決算前ポジション持越しリスク警告",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "今週FOMC・米大型テック決算、10/28アドバンテスト決算。イベント直前のリスクとギャップを監視。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "イベントと地合いの複合ショックの影響を同業と照合",
+      "previousWeekProvisionalScore": 79,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "department": "リスク管理部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "8060は好決算でもPTS-3.51%。2908のPTSは100株のみ。板とスプレッド不良なら一律見送り。",
+        "2908はPTS100株のみ、当日出来高64800株で09:00寄り天"
+      ],
+      "novelContribution": "2908はPTS100株のみ、当日出来高64800株で09:00寄り天",
+      "decisionImpact": "流動性警告と順位抑制の妥当性を裏付け",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "2908"
+      ],
+      "risksFlagged": [
+        "8060は好決算でもPTS-3.51%。2908のPTSは100株のみ。板とスプレッド不良なら一律見送り。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "板・スプレッド実測がない時は条件未検証とする",
+      "previousWeekProvisionalScore": 89,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "department": "レッドチーム",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "6857/5803はSOX反発のGU後失速、8060は決算出尽くし、2908は場中発表既反応をショート仮説として提示。",
+        "5803と2908の寄り天リスクが顕在化"
+      ],
+      "novelContribution": "5803と2908の寄り天リスクが顕在化",
+      "decisionImpact": "買い条件を厳格化する反対意見に実証的価値",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "6857/5803はSOX反発のGU後失速、8060は決算出尽くし、2908は場中発表既反応をショート仮説として提示。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "リスクの発生頻度とfalse alarmを記録",
+      "previousWeekProvisionalScore": 80,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "department": "レッドチーム",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "米SOX+2.8%でも日本個別株は必ず上がらない。AI実需は既知で追加利益寄与は未証明。",
+        "5803の実需確認は妥当でも当日始値比下落"
+      ],
+      "novelContribution": "5803の実需確認は妥当でも当日始値比下落",
+      "decisionImpact": "実需と短期株価の非同一性を確認",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米SOX+2.8%でも日本個別株は必ず上がらない。AI実需は既知で追加利益寄与は未証明。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "新規性・事前期待・織り込みを分ける",
+      "previousWeekProvisionalScore": 89,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "department": "レッドチーム",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "10/26本命5/5前日比上昇、始値比2/5のみ。GU飛び付き・寄り天・薄いPTSの失敗を再発防止。",
+        "10/26に続き10/27も前日比上昇と寄り後失速の乖離を検出"
+      ],
+      "novelContribution": "10/26に続き10/27も前日比上昇と寄り後失速の乖離を検出",
+      "decisionImpact": "同じ寄り天失敗の再発警戒",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26本命5/5前日比上昇、始値比2/5のみ。GU飛び付き・寄り天・薄いPTSの失敗を再発防止。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-26-close-review.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "前日比上昇を買い成功にしないルールを自動テスト",
+      "previousWeekProvisionalScore": 80,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 26,
+      "title": "トレード日誌・成績分析担当",
+      "department": "バックオフィス",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [
+        "分足/VWAP/板・実約定欠損"
+      ],
+      "taskPerformed": "当日予測検証",
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [
+        "分足/VWAP/板・実約定の保存がなく執行条件の成立判定不可"
+      ],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "前日比と始値比、実約定可能性を分離しMFE/MAE未取得を解消",
+      "previousWeekProvisionalScore": 88,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 27,
+      "title": "投資仮説・四半期レビュー担当",
+      "department": "バックオフィス",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "次回担当機会で一次証拠と意思決定影響を残す",
+      "previousWeekProvisionalScore": null,
+      "previousWeekProvisionalGrade": "保留",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "department": "市場情報部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "機関投資家実フロー未取得のため独自の新規需給証拠なし"
+      ],
+      "novelContribution": "機関投資家実フロー未取得のため独自の新規需給証拠なし",
+      "decisionImpact": "機関実フロー未取得のため候補順位への独自影響なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "当日機関フロー・信用残の最新検証は不可。保有JXの信用需給を推測しない。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "stock-dashboard/data/holdings.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": true,
+      "backfilled": false,
+      "improvementAction": "取得可能な公式需給指標を明記、未取得なら無貢献扱い",
+      "previousWeekProvisionalScore": 69,
+      "previousWeekProvisionalGrade": "C",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "department": "ファンダメンタル調査部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "8060は経常+20.7%でもPTS-3.51%、市場期待未取得で好決算と株価上昇を区別。",
+        "8060は決算増益でもPTS弱含み、現物は-5.25%。事前の順位抑制が妥当"
+      ],
+      "novelContribution": "8060は決算増益でもPTS弱含み、現物は-5.25%。事前の順位抑制が妥当",
+      "decisionImpact": "材料出尽くしリスクの事前検知",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "8060"
+      ],
+      "risksFlagged": [
+        "8060は経常+20.7%でもPTS-3.51%、市場期待未取得で好決算と株価上昇を区別。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://corporate.jp.canon/ir/news",
+        "https://finance.yahoo.co.jp/quote/8060.T/history",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "コンセンサス取得可否とPTSの流動性を分離",
+      "previousWeekProvisionalScore": 87,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 30,
+      "title": "オルタナティブデータ担当",
+      "department": "市場情報部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "evidenceGap": [
+        "当日は割当活動機会なし。減点・欠勤扱いにしない"
+      ],
+      "taskPerformed": null,
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "not_applicable",
+      "dataLimitations": [],
+      "sourcesUsed": [],
+      "noMaterialContribution": null,
+      "backfilled": false,
+      "improvementAction": "独自の代替データが出せない理由と探索コストを記録、成果ゼロ継続を改善",
+      "previousWeekProvisionalScore": 55,
+      "previousWeekProvisionalGrade": "D",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 31,
+      "title": "人事評価・組織開発担当",
+      "department": "経営企画・人材開発室",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [
+        "07:30正規原本欠損"
+      ],
+      "taskPerformed": "34役割人事監査",
+      "keyContributions": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [
+        "分足/VWAP/板・実約定の保存がなく執行条件の成立判定不可",
+        "07:30原本欠損の再発を未解決"
+      ],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "朝・決裁書原本欠損の再発防止とGitHub保存監査を優先",
+      "previousWeekProvisionalScore": 77,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "10/26 Anthropic IPO申請を起点に米AI株・SOX反発というニュースを抽出。"
+      ],
+      "novelContribution": "10/26 Anthropic IPO申請を起点に米AI株・SOX反発というニュースを抽出。",
+      "decisionImpact": "AIテスト・光通信へ波及候補を設定",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/26 Anthropic IPO申請を起点に米AI株・SOX反発というニュースを抽出。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [
+        33
+      ],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "ニュース抽出から実需確認への到達率を測る",
+      "previousWeekProvisionalScore": 76,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "Anthropic→AI投資期待→半導体テスタ6857とDC光通信5803を直接/周辺に分解。"
+      ],
+      "novelContribution": "Anthropic→AI投資期待→半導体テスタ6857とDC光通信5803を直接/周辺に分解。",
+      "decisionImpact": "単なる連想企業を除外",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [
+        "6838"
+      ],
+      "risksFlagged": [
+        "Anthropic→AI投資期待→半導体テスタ6857とDC光通信5803を直接/周辺に分解。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/us-stock-futures-edge-up-oil-falls-heading-into-earnings-barrage-2026-10-26/",
+        "https://www.fujikura.co.jp/news/pressrelease/2025071813824swrwtc.html",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "バリューチェーン整理が候補順位を変えたか記録",
+      "previousWeekProvisionalScore": 75,
+      "previousWeekProvisionalGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "roleEvidenceType": "single-run role-analysis record; no independent agent process verified",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "evidenceGap": [],
+      "taskPerformed": "2026-10-27 08:00 JST デイトレ委員会・役割別分析",
+      "keyContributions": [
+        "6857は企業決算・AI/HPCテスト装置の実需、5803は超多心光ケーブル海外DC納入済みを企業一次情報で確認。8060は公式3Q増益確認。",
+        "6857/5803の実需確認は成立。ただし5803は寄り天"
+      ],
+      "novelContribution": "6857/5803の実需確認は成立。ただし5803は寄り天",
+      "decisionImpact": "一次資料での実需証明と短期価格上昇を別評価",
+      "candidatesPromoted": [
+        "6857",
+        "5803"
+      ],
+      "candidatesRejected": [
+        "6838"
+      ],
+      "risksFlagged": [
+        "6857は企業決算・AI/HPCテスト装置の実需、5803は超多心光ケーブル海外DC納入済みを企業一次情報で確認。8060は公式3Q増益確認。"
+      ],
+      "errorsOrMisses": [],
+      "duplication": [],
+      "confidence": "limited_by_execution_evidence",
+      "dataLimitations": [
+        "当日分足/VWAP/板・実約定未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.advantest.com/ja/investors/financial-highlights/review/",
+        "https://www.fujikura.co.jp/news/pressrelease/2025071813824swrwtc.html",
+        "https://corporate.jp.canon/ir/news",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "https://finance.yahoo.co.jp/quote/6857.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://s.kabutan.jp/stocks/8060/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/2908.T"
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false,
+      "improvementAction": "既知の実需と当日新規材料の区別を強化",
+      "previousWeekProvisionalScore": 88,
+      "previousWeekProvisionalGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none"
+    }
+  ],
+  "agent31IndependentReview": {
+    "evaluatedAgentId": 31,
+    "selfEvaluation": false,
+    "independentAgentProcessesVerified": false,
+    "evaluators": [
+      {
+        "agentId": 1,
+        "title": "投資委員会議長",
+        "finding": "34役割を機会・証拠で分けて監査する運用は妥当。欠損が継続しているため原本保存の予防統制が必要",
+        "decision": "週次暫定77点Bを維持。新たな独立稼働の証拠はない"
+      },
+      {
+        "agentId": 2,
+        "title": "投資方針・コンプライアンス担当",
+        "finding": "No.31が自己採点しないこと、実売買未確認とバックフィルを明記すること、評価保留者を低評価しないことを検査",
+        "decision": "正式等級・人事処分は行わず、データ欠損の再発を監査指摘"
+      }
+    ]
+  },
+  "previousWeekBaseline": "investment-company/hr/weekly/2026-W43.json",
+  "weeklyScoresUpdated": false,
+  "formalChanges": [],
+  "organizationalRecommendations": [
+    {
+      "ownerAgentIds": [
+        15,
+        16,
+        18,
+        26
+      ],
+      "action": "初値形成時刻、初値後10分の分足・VWAP・板・スプレッド、約定可能性の証拠保存を共通工程化",
+      "priority": "critical",
+      "status": "proposed"
+    },
+    {
+      "ownerAgentIds": [
+        3,
+        31
+      ],
+      "action": "07:30原本とactivityの保存・再読込を時刻付きで検査し、欠損を当日朝の段階で検知",
+      "priority": "critical",
+      "status": "proposed"
+    },
+    {
+      "ownerAgentIds": [
+        8,
+        29,
+        34
+      ],
+      "action": "IR材料の真偽・市場期待との差・当日実需の新規性を別KPIで評価",
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "ownerAgentIds": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "action": "寄り天警告の的中とfalse alarmを両方集計し、過度な見送りも評価",
+      "priority": "high",
+      "status": "proposed"
+    },
+    {
+      "ownerAgentIds": [
+        28
+      ],
+      "action": "機関実フロー未取得時は独自貢献なしと明記し、公開需給代替データの取得可否を報告",
+      "priority": "medium",
+      "status": "proposed"
+    }
+  ],
+  "operationalIssues": [
+    {
+      "code": "MORNING_ORIGINAL_UNVERIFIED",
+      "detail": "07:30原本とactivityは08:00のbackfill。07:30実行の証拠なし",
+      "backfilled": true,
+      "source": "investment-company/market-intelligence/2026-10-27.json",
+      "ownerAgentIds": [
+        3,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "THEME_ORIGINAL_UNVERIFIED",
+      "detail": "theme-research/2026-10-27/summary.jsonは08:00補完。元の07:30実需調査は未確認",
+      "backfilled": true,
+      "source": "investment-company/theme-research/2026-10-27/summary.json",
+      "ownerAgentIds": [
+        3,
+        31,
+        34
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "INTRADAY_EXECUTION_EVIDENCE_MISSING",
+      "detail": "09:00以降の分足、9:10/初値後10分のVWAP・板・スプレッド、実注文/約定なし。売買条件・MFE/MAE・実勝率を検証できない",
+      "backfilled": false,
+      "ownerAgentIds": [
+        15,
+        16,
+        18,
+        20,
+        26,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "STALE_PORTFOLIO_PERFORMANCE",
+      "detail": "holdings=10/14、performance=10/05、watchlist=10/02の記録。現在の保有・実現損益を保証しない",
+      "backfilled": false,
+      "ownerAgentIds": [
+        3,
+        26,
+        31
+      ],
+      "operationalIssue": true
+    },
+    {
+      "code": "MARKET_MICROSTRUCTURE_UNAVAILABLE",
+      "detail": "当日個別VWAP・先物・同業全銘柄・機関実フロー・板履歴の一貫した保存なし",
+      "backfilled": false,
+      "ownerAgentIds": [
+        7,
+        16,
+        28
+      ],
+      "operationalIssue": true
+    }
+  ],
+  "backfilled": false
+}
