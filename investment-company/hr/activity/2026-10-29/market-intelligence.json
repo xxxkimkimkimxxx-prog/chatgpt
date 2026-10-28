@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-29",
+  "asOf": "2026-10-29 08:00 JST",
+  "session": "market-intelligence-backfill-from-0800",
+  "backfilled": true,
+  "original0730ExecutionVerified": false,
+  "sourceMemo": "investment-company/decision-memos/2026-10-29/daytrade.md",
+  "roleIds": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    28,
+    30,
+    32,
+    33,
+    34
+  ],
+  "summary": "08:00決裁書の検証済み内容のみを復元。07:30独立稼働の証拠ではない",
+  "evidenceGap": [
+    "2026-10-29 07:30市場情報部原本・activity未検出",
+    "2026-10-29テーマ研究原本未検出",
+    "当日9時以降の分足/VWAP/板/実約定未取得",
+    "機関投資家実フロー・市場コンセンサス未取得",
+    "保有株数量と売買実績が10/14以降未更新",
+    "TOPIX終値の外部資料差異未解消"
+  ]
+}
