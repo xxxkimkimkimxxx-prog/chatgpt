@@ -6,7 +6,7 @@
   "finalDecisionMaker": "user",
   "tradeApproved": false,
   "ordersPlaced": false,
-  "activitySaveFailure": null,
+  "activitySaveFailure": false,
   "market": {
     "nikkeiClose20261028": 63954.19,
     "nikkeiChangePct": 1.08,
@@ -249,5 +249,16 @@
     "保有株数量と売買実績が10/14以降未更新",
     "TOPIX終値の外部資料差異未解消"
   ],
-  "backfilled": false
+  "backfilled": false,
+  "gitHubSaveAudit": {
+    "primaryFilesWritten": 3,
+    "primaryFilesReadBackVerified": 3,
+    "primaryFilesFailed": 0,
+    "primaryVerifiedAt": "2026-10-29 morning committee run",
+    "paths": [
+      "investment-company/decision-memos/2026-10-29/daytrade.md",
+      "stock-dashboard/data/daytrade-latest.json",
+      "investment-company/hr/activity/2026-10-29/daytrade.json"
+    ]
+  }
 }
