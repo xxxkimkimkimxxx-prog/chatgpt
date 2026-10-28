@@ -1,0 +1,313 @@
+{
+  "date": "2026-10-29",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-10-29T09:00:00+09:00",
+      "runAtJST": "2026-10-29T08:56:15+09:00",
+      "marketDate": "2026-10-29",
+      "marketOpen": true,
+      "status": "preopen_partial_no_2026_10_29_tse_quotes",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST (iSPEED screenshots; after close)",
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "referenceCloseDate": "2026-10-28",
+          "referenceClosePnlYen": null,
+          "previousDayHighYen": null,
+          "previousDayLowYen": null,
+          "credit": {
+            "referenceDate": "2026-10-27",
+            "buyShares": 397100,
+            "sellShares": 38100,
+            "ratio": 10.42,
+            "buyChangeFromPriorDay": -6800,
+            "sellChangeFromPriorDay": 4200,
+            "previousRatio": 11.91,
+            "publicationDate": "2026-10-29までにサイト掲載確認（正確な初回公表日時未確認）",
+            "unchangedFromPreviousRun": false
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecisionToday": "判定保留（東証寄付前）",
+          "averagingReasons": [
+            "10/29寄付前で当日のVWAP・出来高・価格行動は未取得",
+            "10/28の監視水準と直近信用残を参考に追加購入を見送り"
+          ],
+          "invalidatingCondition": null
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "referenceCloseDate": "2026-10-28",
+          "referenceClosePnlYen": null,
+          "previousDayHighYen": null,
+          "previousDayLowYen": null,
+          "credit": {
+            "referenceDate": "2026-10-27",
+            "buyShares": 19275500,
+            "sellShares": 5973700,
+            "ratio": 3.23,
+            "buyChangeFromPriorDay": -226900,
+            "sellChangeFromPriorDay": 1379700,
+            "previousRatio": 4.25,
+            "publicationDate": "2026-10-29までにサイト掲載確認（正確な初回公表日時未確認）",
+            "unchangedFromPreviousRun": false
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecisionToday": "判定保留（東証寄付前）",
+          "averagingReasons": [
+            "10/29寄付前で当日のVWAP・出来高・価格行動は未取得",
+            "10/28の監視水準と直近信用残を参考に追加購入を見送り"
+          ],
+          "invalidatingCondition": null
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "referenceCloseDate": "2026-10-28",
+          "referenceClosePnlYen": null,
+          "previousDayHighYen": 3103,
+          "previousDayLowYen": 2985.5,
+          "credit": {
+            "referenceDate": "2026-10-27",
+            "buyShares": 21577200,
+            "sellShares": 691000,
+            "ratio": 31.23,
+            "buyChangeFromPriorDay": -113900,
+            "sellChangeFromPriorDay": 100,
+            "previousRatio": 31.4,
+            "publicationDate": "2026-10-29までにサイト掲載確認（正確な初回公表日時未確認）",
+            "unchangedFromPreviousRun": false
+          },
+          "institutionalShort": {
+            "latestCalculationDate": "2026-10-26",
+            "aggregatePct": 4.83,
+            "previousCalculationDate": "2026-10-23",
+            "previousAggregatePct": 5.35,
+            "changePp": -0.52,
+            "source": "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E",
+            "newSincePreviousRun": true,
+            "reportNote": "10/27・10/28の合計値は10/26の報告値繰越、当日新規公表の意味ではない"
+          },
+          "sectorRelativeStrengthToday": null,
+          "averagingDecisionToday": "判定保留（東証寄付前）",
+          "averagingReasons": [
+            "10/28終値3084円は同日VWAP3051.40円を上回り反発確認判定を維持",
+            "10/27信用買残は113900株減、機関空売り比率は10/26計算で前回5.35%から4.83%へ減少",
+            "10/29場中価格・VWAP・出来高・同業相対強度が未取得で新たな買い条件成立とは判定不可"
+          ],
+          "invalidatingCondition": "10/28VWAP3051.4円・当日安値2985.5円を下回れば反発評価を再検討"
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "referenceCloseDate": "2026-10-28",
+          "referenceClosePnlYen": null,
+          "previousDayHighYen": null,
+          "previousDayLowYen": null,
+          "credit": {
+            "referenceDate": "2026-10-27",
+            "buyShares": 1214300,
+            "sellShares": 0,
+            "ratio": null,
+            "buyChangeFromPriorDay": 10800,
+            "sellChangeFromPriorDay": -1500,
+            "previousRatio": 802.33,
+            "publicationDate": "2026-10-29までにサイト掲載確認（正確な初回公表日時未確認）",
+            "unchangedFromPreviousRun": false
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecisionToday": "判定保留（東証寄付前）",
+          "averagingReasons": [
+            "10/29寄付前で当日のVWAP・出来高・価格行動は未取得",
+            "10/28の監視水準と直近信用残を参考に追加購入を見送り"
+          ],
+          "invalidatingCondition": null
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "referenceCloseDate": "2026-10-28",
+          "referenceClosePnlYen": null,
+          "previousDayHighYen": null,
+          "previousDayLowYen": null,
+          "credit": {
+            "referenceDate": "2026-10-26",
+            "buyShares": 1554400,
+            "sellShares": 0,
+            "ratio": null,
+            "buyChangeFromPriorDay": -1200,
+            "sellChangeFromPriorDay": 0,
+            "previousRatio": null,
+            "publicationDate": "2026-10-29までにサイト掲載確認（正確な初回公表日時未確認）",
+            "unchangedFromPreviousRun": true
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecisionToday": "判定保留（東証寄付前）",
+          "averagingReasons": [
+            "10/29寄付前で当日のVWAP・出来高・価格行動は未取得",
+            "10/28の監視水準と直近信用残を参考に追加購入を見送り"
+          ],
+          "invalidatingCondition": null
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "referenceCloseDate": "2026-10-28",
+          "referenceClosePnlYen": null,
+          "previousDayHighYen": null,
+          "previousDayLowYen": null,
+          "credit": {
+            "referenceDate": "2026-10-26",
+            "buyShares": 72727900,
+            "sellShares": 15468900,
+            "ratio": 4.7,
+            "buyChangeFromPriorDay": -503100,
+            "sellChangeFromPriorDay": 216800,
+            "previousRatio": 4.8,
+            "publicationDate": "2026-10-29までにサイト掲載確認（正確な初回公表日時未確認）",
+            "unchangedFromPreviousRun": true
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecisionToday": "判定保留（東証寄付前）",
+          "averagingReasons": [
+            "10/29寄付前で当日のVWAP・出来高・価格行動は未取得",
+            "10/28の監視水準と直近信用残を参考に追加購入を見送り"
+          ],
+          "invalidatingCondition": null
+        }
+      ],
+      "unrealizedPnlYen": null,
+      "previousConfirmedPnlYen": -158156,
+      "deltaFromPreviousRunYen": null,
+      "referencePreviousClosePnlYen": -158156,
+      "valuationMethod": "10/29寄付前につき当日価格未取得。10/28終値評価は参考表示のみで10/29現在評価とは扱わない。",
+      "jx": {
+        "state": "反発確認",
+        "stateAsOf": "2026-10-28 15:30 JST",
+        "stateProvisional": true,
+        "previousState": "反発確認",
+        "stateChanged": false,
+        "currentPriceYen": null,
+        "previousCloseYen": 3084,
+        "referencePnlYen": -122400,
+        "previousDayHighYen": 3103,
+        "previousDayLowYen": 2985.5,
+        "previousDayVolumeShares": 14108100,
+        "previousDayTurnoverYen": 43049462000,
+        "previousDayVwapYen": 3051.4,
+        "credit": {
+          "referenceDate": "2026-10-27",
+          "buyShares": 21577200,
+          "sellShares": 691000,
+          "ratio": 31.23,
+          "buyChangeFromPriorDay": -113900,
+          "sellChangeFromPriorDay": 100,
+          "previousRatio": 31.4,
+          "publicationDate": "2026-10-29までにサイト掲載確認（正確な初回公表日時未確認）",
+          "unchangedFromPreviousRun": false
+        },
+        "institutionalShort": {
+          "latestCalculationDate": "2026-10-26",
+          "aggregatePct": 4.83,
+          "previousCalculationDate": "2026-10-23",
+          "previousAggregatePct": 5.35,
+          "changePp": -0.52,
+          "source": "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E",
+          "newSincePreviousRun": true,
+          "reportNote": "10/27・10/28の合計値は10/26の報告値繰越、当日新規公表の意味ではない"
+        },
+        "sectorRelativeStrengthToday": null,
+        "forcedLiquidationCauseConfirmed": false,
+        "forcedSellingAbsorption": "10/28の高値更新・VWAP上の引けは吸収の可能性を示すが追証由来かは不明。10/29の確認は未実施",
+        "trend": "10/28短期反発確認を維持。10/29寄付前で継続性未確認",
+        "averagingDecisionToday": "判定保留（前回はナンピン候補）",
+        "watchPricesYen": {
+          "support": [
+            3060,
+            3051.4,
+            2985.5
+          ],
+          "resistance": [
+            3103,
+            3127
+          ]
+        },
+        "stateReasons": [
+          "10/28終値3084円は同日VWAP3051.4円を上回り高値3103円",
+          "10/27信用買残21577200株は10/26比113900株減、倍率31.23倍と高水準",
+          "10/26計算の機関空売り残高は前回比0.52ポイント減の4.83%。10/29の価格行動は未確認"
+        ]
+      },
+      "audit": {
+        "previousScheduledRunRecordFound": true,
+        "previousScheduledRunAtJST": "2026-10-28T17:00:00+09:00",
+        "previousRunAtJST": "2026-10-28T17:00:57+09:00",
+        "previousDeliveryConfirmed": false,
+        "notificationEnabled": false,
+        "holdingsStale": true,
+        "holdingsAgeDays": 15,
+        "positionCountChanged": false,
+        "missing": [
+          "10/29寄付前の全6銘柄東証約定価格・当日VWAP・出来高・売買代金・高安値",
+          "10/29同業相対強度と当日の反転価格行動",
+          "10/14以降の保有売買反映未確認",
+          "全6銘柄の25日移動平均と出来高集中帯の最新検証",
+          "8518と9432の10/27信用残未取得",
+          "配信成功証跡"
+        ],
+        "notes": [
+          "10/28 17時予定分のGitHub実行記録あり",
+          "当日寄付前のため前日終値を当日価格と誤認せず、当日評価損益は算出保留",
+          "10/27信用残は2926、4597、5016、5027で更新",
+          "JX機関空売り合計は10/26計算で5.35%から4.83%へ減少"
+        ]
+      },
+      "sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E",
+        "https://kikan.watch/stocks/2926-%E7%AF%A0%E5%B4%8E%E5%B1%8B",
+        "https://kikan.watch/stocks/4597-%E3%82%BD%E3%83%AC%E3%82%A4%E3%82%B8%E3%82%A2%E3%83%BB%E3%83%95%E3%82%A1%E3%83%BC%E3%83%9E",
+        "https://kikan.watch/stocks/5027-AnyMindGroup",
+        "https://stocks.monex.co.jp/5016.T/historical"
+      ]
+    }
+  ]
+}
