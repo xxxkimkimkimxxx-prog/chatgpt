@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-28",
+  "asOf": "2026-10-28 16:30 JST",
+  "session": "close-review",
+  "purpose": "No.26の成績検証とNo.31の人事監査のための事後検証。翌日推奨ではない",
+  "reviewerRoleIds": [
+    26,
+    31
+  ],
+  "independentAgentProcessesVerified": false,
+  "market": {
+    "nikkei": {
+      "previousClose": 63268.37,
+      "close": 63954.19,
+      "change": 685.82,
+      "changePct": 1.08,
+      "source": "https://s.kabutan.jp/news/n202610280938/"
+    },
+    "topix": {
+      "previousClose": 3997.37,
+      "close": 3996.53,
+      "change": -0.84,
+      "changePct": -0.02,
+      "source": "https://kr.investing.com/indices/topix-historical-data"
+    },
+    "breadth": {
+      "primeAdvancers": 431,
+      "primeDecliners": 1092,
+      "unchanged": 25,
+      "risingSectors": 10,
+      "totalSectors": 33,
+      "source": "https://s.kabutan.jp/news/n202610280938/"
+    },
+    "marketVerdict": "一部的中：日経平均上昇だがTOPIX微落、プライム市場は値下がり優勢。指数と候補の始値後持続性が乖離"
+  },
+  "morningInputs": {
+    "sourcePaths": [
+      "investment-company/organization/agents.json",
+      "investment-company/hr/evaluation-policy.md",
+      "investment-company/hr/agent-scorecard.json",
+      "investment-company/market-intelligence/2026-10-28.json",
+      "investment-company/decision-memos/2026-10-28/daytrade.md",
+      "investment-company/hr/activity/2026-10-28/daytrade.json",
+      "investment-company/hr/activity/2026-10-28/market-intelligence.json",
+      "investment-company/market-intelligence/2026-10-27-close-review.json",
+      "investment-company/theme-research/2026-10-28/summary.json",
+      "stock-dashboard/data/performance-summary.json"
+    ],
+    "marketIntelligenceBackfilled": true,
+    "original0730ExecutionVerified": false,
+    "themeResearchBackfilled": true,
+    "daytradeActivityBackfilled": false,
+    "rankedCodes": [
+      "4063",
+      "4519",
+      "6857",
+      "5803"
+    ],
+    "preOpenTradeApproval": false
+  },
+  "performanceSummary": {
+    "candidateCount": 4,
+    "positiveVsPreviousClose": 3,
+    "negativeVsPreviousClose": 1,
+    "positiveVsOpen": 0,
+    "negativeVsOpen": 4,
+    "verifiedTrades": 0,
+    "verifiedTradeWinRate": null,
+    "actualPnl": null
+  },
+  "candidates": [
+    {
+      "code": "4063",
+      "name": "信越化学工業",
+      "rank": 1,
+      "previousClose": 5850,
+      "open": 6038,
+      "high": 6115,
+      "low": 5919,
+      "close": 6004,
+      "volume": 12417500,
+      "turnoverJPY": null,
+      "source": "https://s.kabutan.jp/stocks/4063/historical_prices/daily",
+      "previousCloseReturnPct": 2.63,
+      "openToCloseReturnPct": -0.56,
+      "conditionalRiseProbability": 0.54,
+      "confidence": 0.63,
+      "directionVerdict": "一部的中",
+      "tradeOutcomeVerdict": "検証不能",
+      "reasonTags": [
+        "業績材料",
+        "GU後失速",
+        "織り込み",
+        "執行条件未検証"
+      ],
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null,
+      "openTime": null,
+      "highTime": null,
+      "lowTime": null,
+      "assessment": "前日終値比では上昇したが始値から終値は下落。上昇予想の方向と実行可能な買い判断は別。"
+    },
+    {
+      "code": "4519",
+      "name": "中外製薬",
+      "rank": 2,
+      "previousClose": 6688,
+      "open": 6788,
+      "high": 6844,
+      "low": 6614,
+      "close": 6614,
+      "volume": 3542700,
+      "turnoverJPY": null,
+      "source": "https://s.kabutan.jp/stocks/4519/historical_prices/daily",
+      "previousCloseReturnPct": -1.11,
+      "openToCloseReturnPct": -2.56,
+      "conditionalRiseProbability": 0.51,
+      "confidence": 0.57,
+      "directionVerdict": "外れ",
+      "tradeOutcomeVerdict": "検証不能",
+      "reasonTags": [
+        "好決算でも下落",
+        "医薬品セクター不一致",
+        "織り込み",
+        "執行条件未検証"
+      ],
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null,
+      "openTime": null,
+      "highTime": null,
+      "lowTime": null,
+      "assessment": "前日終値比・始値比とも下落。朝の上昇候補として不成立。"
+    },
+    {
+      "code": "6857",
+      "name": "アドバンテスト",
+      "rank": 3,
+      "previousClose": 33860,
+      "open": 35400,
+      "high": 35410,
+      "low": 34180,
+      "close": 34930,
+      "volume": 13369900,
+      "turnoverJPY": null,
+      "source": "https://s.kabutan.jp/stocks/6857/historical_prices/daily",
+      "previousCloseReturnPct": 3.16,
+      "openToCloseReturnPct": -1.33,
+      "conditionalRiseProbability": 0.5,
+      "confidence": 0.49,
+      "directionVerdict": "一部的中",
+      "tradeOutcomeVerdict": "検証不能",
+      "reasonTags": [
+        "半導体セクター整合",
+        "GU後失速",
+        "決算イベント",
+        "執行条件未検証"
+      ],
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null,
+      "openTime": null,
+      "highTime": null,
+      "lowTime": null,
+      "assessment": "前日終値比では上昇したが始値から終値は下落。上昇予想の方向と実行可能な買い判断は別。"
+    },
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "rank": 4,
+      "previousClose": 4092,
+      "open": 4200,
+      "high": 4218,
+      "low": 4032,
+      "close": 4111,
+      "volume": 37283100,
+      "turnoverJPY": null,
+      "source": "https://s.kabutan.jp/stocks/5803/historical_prices/daily",
+      "previousCloseReturnPct": 0.46,
+      "openToCloseReturnPct": -2.12,
+      "conditionalRiseProbability": 0.48,
+      "confidence": 0.46,
+      "directionVerdict": "一部的中",
+      "tradeOutcomeVerdict": "検証不能",
+      "reasonTags": [
+        "連続寄り天型",
+        "既知材料",
+        "GU後失速",
+        "執行条件未検証"
+      ],
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null,
+      "openTime": null,
+      "highTime": null,
+      "lowTime": null,
+      "assessment": "前日終値比では上昇したが始値から終値は下落。上昇予想の方向と実行可能な買い判断は別。"
+    }
+  ],
+  "rootCauses": [
+    {
+      "tag": "地合い/指数偏重",
+      "finding": "日経+1.08%だがTOPIX-0.02%、プライム値下がり1092対値上がり431。No.7の指数偏重警告が妥当"
+    },
+    {
+      "tag": "織り込み/寄り天",
+      "finding": "4候補とも始値比マイナス。GU後の持続性がなく、前日比プラス3銘柄を売買成功と判定しない"
+    },
+    {
+      "tag": "決算期待差",
+      "finding": "4519は決算増益でも前日比・始値比マイナス。No.24/29の利益品質警告は有効だが順位2位の妥当性に課題"
+    },
+    {
+      "tag": "データ欠損/執行条件",
+      "finding": "VWAP/分足/板・実約定がなく買い・見送り・撤退条件の実際の成立は検証不能"
+    }
+  ],
+  "dataLimitations": [
+    "07:30市場情報部の正規原本・独立実行証跡がなく、08:00時点のbackfillのみ",
+    "初値後10分の分足/VWAP/板/スプレッド・条件成立時刻が未保存",
+    "実注文/約定が未確認のため実取引成績・MFE/MAE・計画損失の実現を検証不能",
+    "holdings=10/14、performance-summary=10/05、watchlist=10/02の陳腐化",
+    "4銘柄の正確な日中売買代金・業種別相対騰落・当日機関実フローの統一データ未取得",
+    "朝の上昇確率は未校正の主観値で、統計的勝率ではない"
+  ],
+  "actualTrades": null,
+  "actualTradeWinRate": null,
+  "actualMFE": null,
+  "actualMAE": null,
+  "backfilled": false
+}
