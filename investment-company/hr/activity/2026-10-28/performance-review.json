@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-28",
+  "asOf": "2026-10-28 16:30 JST",
+  "agentId": 26,
+  "title": "トレード日誌・成績分析担当",
+  "taskPerformed": "08:00の4候補を10/28確定日足OHLC・出来高と照合し前日比と始値比を分離",
+  "sourceMorningMemo": "investment-company/decision-memos/2026-10-28/daytrade.md",
+  "candidateVerifications": [
+    {
+      "code": "4063",
+      "name": "信越化学工業",
+      "rank": 1,
+      "previousCloseReturnPct": 2.63,
+      "openToCloseReturnPct": -0.56,
+      "classification": "一部的中",
+      "tradeOutcomeVerdict": "検証不能",
+      "reasonTags": [
+        "業績材料",
+        "GU後失速",
+        "織り込み",
+        "執行条件未検証"
+      ],
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualMFE": null,
+      "actualMAE": null,
+      "source": "https://s.kabutan.jp/stocks/4063/historical_prices/daily"
+    },
+    {
+      "code": "4519",
+      "name": "中外製薬",
+      "rank": 2,
+      "previousCloseReturnPct": -1.11,
+      "openToCloseReturnPct": -2.56,
+      "classification": "外れ",
+      "tradeOutcomeVerdict": "検証不能",
+      "reasonTags": [
+        "好決算でも下落",
+        "医薬品セクター不一致",
+        "織り込み",
+        "執行条件未検証"
+      ],
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualMFE": null,
+      "actualMAE": null,
+      "source": "https://s.kabutan.jp/stocks/4519/historical_prices/daily"
+    },
+    {
+      "code": "6857",
+      "name": "アドバンテスト",
+      "rank": 3,
+      "previousCloseReturnPct": 3.16,
+      "openToCloseReturnPct": -1.33,
+      "classification": "一部的中",
+      "tradeOutcomeVerdict": "検証不能",
+      "reasonTags": [
+        "半導体セクター整合",
+        "GU後失速",
+        "決算イベント",
+        "執行条件未検証"
+      ],
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualMFE": null,
+      "actualMAE": null,
+      "source": "https://s.kabutan.jp/stocks/6857/historical_prices/daily"
+    },
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "rank": 4,
+      "previousCloseReturnPct": 0.46,
+      "openToCloseReturnPct": -2.12,
+      "classification": "一部的中",
+      "tradeOutcomeVerdict": "検証不能",
+      "reasonTags": [
+        "連続寄り天型",
+        "既知材料",
+        "GU後失速",
+        "執行条件未検証"
+      ],
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualMFE": null,
+      "actualMAE": null,
+      "source": "https://s.kabutan.jp/stocks/5803/historical_prices/daily"
+    }
+  ],
+  "metrics": {
+    "candidateCount": 4,
+    "positiveVsPreviousClose": 3,
+    "negativeVsPreviousClose": 1,
+    "positiveVsOpen": 0,
+    "negativeVsOpen": 4,
+    "verifiedTrades": 0,
+    "verifiedTradeWinRate": null,
+    "actualPnl": null
+  },
+  "marketVerdict": "一部的中：日経平均上昇だがTOPIX微落、プライム市場は値下がり優勢。指数と候補の始値後持続性が乖離",
+  "novelContribution": "4候補の前日比プラス3/4に対し始値比プラス0/4を分離し、見かけの的中率を防止",
+  "decisionImpact": "No.1/7/15/18/23/24/25/29/31の順位・執行条件・反対意見の品質評価に利用",
+  "errorsOrMisses": [],
+  "risksFlagged": [
+    "全候補が始値比マイナス",
+    "07:30原本未確認",
+    "分足・VWAP・板・実約定欠損"
+  ],
+  "confidence": "high_for_OHLC_low_for_executability",
+  "dataLimitations": [
+    "07:30市場情報部の正規原本・独立実行証跡がなく、08:00時点のbackfillのみ",
+    "初値後10分の分足/VWAP/板/スプレッド・条件成立時刻が未保存",
+    "実注文/約定が未確認のため実取引成績・MFE/MAE・計画損失の実現を検証不能",
+    "holdings=10/14、performance-summary=10/05、watchlist=10/02の陳腐化",
+    "4銘柄の正確な日中売買代金・業種別相対騰落・当日機関実フローの統一データ未取得",
+    "朝の上昇確率は未校正の主観値で、統計的勝率ではない"
+  ],
+  "sourcesUsed": [
+    "https://s.kabutan.jp/stocks/4063/historical_prices/daily",
+    "https://s.kabutan.jp/stocks/4519/historical_prices/daily",
+    "https://s.kabutan.jp/stocks/5803/historical_prices/daily",
+    "https://s.kabutan.jp/stocks/6857/historical_prices/daily",
+    "https://s.kabutan.jp/news/n202610280938/",
+    "https://kr.investing.com/indices/topix-historical-data"
+  ],
+  "duplicationWith": [],
+  "noMaterialContribution": false,
+  "backfilled": false,
+  "roleEvidenceType": "single-run role-analysis record; independent agent process not verified"
+}
