@@ -152,7 +152,18 @@
   "backfilled": false,
   "saveAudit": {
     "plannedFiles": 5,
-    "writeStatus": "pending_readback_verification",
-    "note": "正確な保存成否はこのファイルを含む5ファイルの再取得で確認"
+    "writeSucceeded": 5,
+    "writeFailed": 0,
+    "readbackVerified": 5,
+    "verificationDate": "2026-10-28",
+    "paths": [
+      "investment-company/market-intelligence/2026-10-28-close-review.json",
+      "investment-company/hr/activity/2026-10-28/market-close-review.json",
+      "investment-company/hr/activity/2026-10-28/performance-review.json",
+      "investment-company/hr/daily/2026-10-28.json",
+      "investment-company/hr/activity/2026-10-28/hr-audit.json"
+    ],
+    "activitySaveFailure": false,
+    "note": "初回5ファイルの読み戻し成功を確認。日次ファイル自体の最終更新はこの後に再検証"
   }
 }
