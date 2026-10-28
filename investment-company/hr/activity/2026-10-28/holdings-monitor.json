@@ -1,0 +1,336 @@
+{
+  "date": "2026-10-28",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-10-28T09:00:00+09:00",
+      "runAtJST": "2026-10-28T09:03:20+09:00",
+      "marketDate": "2026-10-28",
+      "marketOpen": true,
+      "status": "partial_intraday_quotes_unavailable",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST (iSPEED screenshots; after close)",
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "previousCloseDate": "2026-10-27",
+          "dayHighYen": null,
+          "dayLowYen": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "credit": {
+            "referenceDate": "2026-10-26",
+            "publicationDate": "2026-10-28までに掲載確認（正確な初回公表日時未確認）",
+            "buyShares": 403900,
+            "sellShares": 33900,
+            "ratio": 11.91,
+            "buyChangeFromPriorDay": -1300,
+            "sellChangeFromPriorDay": -4700,
+            "previousReferenceDate": "2026-10-23",
+            "previousRatio": 10.5
+          },
+          "institutionalShortChange": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "判定保留（追加購入見送り）",
+          "averagingReasons": [
+            "10/28の当日価格・VWAP・出来高を確認できず反転条件が未成立",
+            "10/26基準信用残の変化を確認、直近支持線と抵抗線は10/27基準の監視水準"
+          ],
+          "invalidatingCondition": "undefined円割れ"
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "previousCloseDate": "2026-10-27",
+          "dayHighYen": null,
+          "dayLowYen": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "credit": {
+            "referenceDate": "2026-10-26",
+            "publicationDate": "2026-10-28までに掲載確認（正確な初回公表日時未確認）",
+            "buyShares": 19502400,
+            "sellShares": 4594000,
+            "ratio": 4.25,
+            "buyChangeFromPriorDay": 1129000,
+            "sellChangeFromPriorDay": 214800,
+            "previousReferenceDate": "2026-10-23",
+            "previousRatio": 4.2
+          },
+          "institutionalShortChange": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "判定保留（追加購入見送り）",
+          "averagingReasons": [
+            "10/28の当日価格・VWAP・出来高を確認できず反転条件が未成立",
+            "10/26基準信用残の変化を確認、直近支持線と抵抗線は10/27基準の監視水準"
+          ],
+          "invalidatingCondition": "undefined円割れ"
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "previousCloseDate": "2026-10-27",
+          "dayHighYen": null,
+          "dayLowYen": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "credit": {
+            "referenceDate": "2026-10-26",
+            "publicationDate": "2026-10-28までに掲載確認（正確な初回公表日時未確認）",
+            "buyShares": 21691100,
+            "sellShares": 690900,
+            "ratio": 31.4,
+            "buyChangeFromPriorDay": -46800,
+            "sellChangeFromPriorDay": -8000,
+            "previousReferenceDate": "2026-10-23",
+            "previousRatio": 31.1
+          },
+          "institutionalShortChange": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "判定保留（追加購入見送り）",
+          "averagingReasons": [
+            "10/28東証約定値・VWAP・出来高が未取得で反転条件を確認できない",
+            "10/26基準信用買い残は10/23比46,800株減少、ただし信用倍率31.40倍と高い",
+            "10/27終値2,905円は同日VWAP2,906.83円を下回り戻り高値2,946.5円を未突破"
+          ],
+          "invalidatingCondition": "2,876円割れ、次に2,787円・2,693円割れ"
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "previousCloseDate": "2026-10-27",
+          "dayHighYen": null,
+          "dayLowYen": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "credit": {
+            "referenceDate": "2026-10-26",
+            "publicationDate": "2026-10-28までに掲載確認（正確な初回公表日時未確認）",
+            "buyShares": 1203500,
+            "sellShares": 1500,
+            "ratio": 802.33,
+            "buyChangeFromPriorDay": -13800,
+            "sellChangeFromPriorDay": -4000,
+            "previousReferenceDate": "2026-10-23",
+            "previousRatio": 221.33
+          },
+          "institutionalShortChange": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "判定保留（追加購入見送り）",
+          "averagingReasons": [
+            "10/28東証約定値・出来高・VWAPが未取得で上抜け定着未確認",
+            "10/27 15:30 Metaとのライブコマース提携発表、夜間PTS 927円（23:59、前日東証終値比+19.00%）は東証株価ではない",
+            "10/26基準信用倍率802.33倍は売り残1,500株への縮小が主因、信用買い残は10/23比13,800株減少"
+          ],
+          "invalidatingCondition": "undefined円割れ"
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "previousCloseDate": "2026-10-27",
+          "dayHighYen": null,
+          "dayLowYen": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "credit": {
+            "referenceDate": "2026-10-26",
+            "publicationDate": "2026-10-28までに掲載確認（正確な初回公表日時未確認）",
+            "buyShares": 1554400,
+            "sellShares": 0,
+            "ratio": null,
+            "buyChangeFromPriorDay": -1200,
+            "sellChangeFromPriorDay": 0,
+            "previousReferenceDate": "2026-10-23",
+            "previousRatio": null
+          },
+          "institutionalShortChange": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "判定保留（追加購入見送り）",
+          "averagingReasons": [
+            "10/28の当日価格・VWAP・出来高を確認できず反転条件が未成立",
+            "10/26基準信用残の変化を確認、直近支持線と抵抗線は10/27基準の監視水準"
+          ],
+          "invalidatingCondition": "undefined円割れ"
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "currentPriceYen": null,
+          "currentPriceAsOfJST": null,
+          "currentPnlYen": null,
+          "previousCloseDate": "2026-10-27",
+          "dayHighYen": null,
+          "dayLowYen": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "credit": {
+            "referenceDate": "2026-10-26",
+            "publicationDate": "2026-10-28までに掲載確認（正確な初回公表日時未確認）",
+            "buyShares": 72727900,
+            "sellShares": 15468900,
+            "ratio": 4.7,
+            "buyChangeFromPriorDay": -503100,
+            "sellChangeFromPriorDay": 216800,
+            "previousReferenceDate": "2026-10-23",
+            "previousRatio": 4.8
+          },
+          "institutionalShortChange": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "判定保留（追加購入見送り）",
+          "averagingReasons": [
+            "10/28の当日価格・VWAP・出来高を確認できず反転条件が未成立",
+            "10/26基準信用残の変化を確認、直近支持線と抵抗線は10/27基準の監視水準"
+          ],
+          "invalidatingCondition": "undefined円割れ"
+        }
+      ],
+      "unrealizedPnlYen": null,
+      "previousRunPnlYen": -197136,
+      "deltaYen": null,
+      "previousCloseReferencePnlYen": -197136,
+      "valuationMethod": "当日東証約定値未取得につき当日損益は算出せず。前日終値の参考損益のみ表示。夜間PTSは評価に使用しない。",
+      "jx": {
+        "state": "信用整理進行中",
+        "previousState": "信用整理進行中",
+        "stateChanged": false,
+        "stateBasis": "当日価格情報不足につき前回状態を暫定維持",
+        "currentPriceYen": null,
+        "previousCloseYen": 2905,
+        "previousClosePnlYen": -158200,
+        "dayHighYen": null,
+        "dayLowYen": null,
+        "volumeShares": null,
+        "turnoverYen": null,
+        "vwapYen": null,
+        "previousDayHighYen": 2946.5,
+        "previousDayLowYen": 2876,
+        "previousDayVolumeShares": 12015100,
+        "previousDayTurnoverYen": 34925908000,
+        "previousDayVwapYen": 2906.83,
+        "credit": {
+          "referenceDate": "2026-10-26",
+          "publicationDate": "2026-10-28までに掲載確認（初回公表日時未確認）",
+          "buyShares": 21691100,
+          "sellShares": 690900,
+          "ratio": 31.4,
+          "previousReferenceDate": "2026-10-23",
+          "previousBuyShares": 21737900,
+          "previousSellShares": 698900,
+          "previousRatio": 31.1,
+          "buyChangeShares": -46800,
+          "sellChangeShares": -8000,
+          "ratioChange": 0.3,
+          "unchangedFromPreviousRun": false,
+          "weeklyReferenceDate": "2026-10-23",
+          "weeklyBuyChangeShares": -2709700
+        },
+        "institutionalShort": {
+          "latestConfirmedPublicationDate": "2026-10-26",
+          "latestCalculationDate": "2026-10-23",
+          "fiveInstitutionAggregatePct": 5.35,
+          "previousAggregatePct": 5.33,
+          "newSincePreviousRun": false,
+          "morganStanleyMufgChangeShares": 195058
+        },
+        "sectorRelativeStrengthToday": null,
+        "stateReasons": [
+          "10/26信用買い残が10/23比46,800株減少し整理は小幅進展",
+          "信用倍率31.10→31.40倍と依然高く、売り残も減少",
+          "10/28場中の戻り高値・VWAP・相対強度を確認できず反発昇格不可"
+        ],
+        "forcedLiquidationCauseConfirmed": false,
+        "forcedSellingAbsorption": "10/27後場の2,876円から2,905円への戻りは参考材料。10/28の吸収兆候は未確認、追証由来の証拠なし",
+        "trend": "前日まで下落トレンド内の戻り。10/28の反転初動は未確認",
+        "averagingDecision": "判定保留（追加購入見送り）",
+        "watchPricesYen": {
+          "support": [
+            2876,
+            2787,
+            2693
+          ],
+          "resistance": [
+            2906.83,
+            2946.5
+          ]
+        }
+      },
+      "overnightNote": {
+        "code": "5027",
+        "previousCloseYen": 779,
+        "nightPtsYen": 927,
+        "nightPtsAsOfJST": "2026-10-27T23:59:00+09:00",
+        "nightPtsChangePct": 19,
+        "usedInPortfolioPnl": false,
+        "disclosure": "2026-10-27 15:30 Metaとライブコマース領域でのパートナーシップを発表",
+        "caveat": "夜間PTSは東証約定価格ではなく、出来高・価格の継続性未検証"
+      },
+      "audit": {
+        "previousScheduledRunRecordFound": true,
+        "previousScheduledRunAtJST": "2026-10-27T17:00:00+09:00",
+        "previousRunAtJST": "2026-10-27T17:01:10+09:00",
+        "previousDeliveryConfirmed": false,
+        "notificationEnabled": false,
+        "holdingsStale": true,
+        "holdingsAgeDays": 14,
+        "positionCountChanged": false,
+        "missing": [
+          "2026-10-28全6銘柄の東証場中約定価格",
+          "当日高値安値・出来高・売買代金・VWAP",
+          "当日同業相対強度と反転価格行動",
+          "全銘柄の移動平均線・出来高集中帯",
+          "JX以外の最新機関空売り差分",
+          "信用残の正確な初回公表日時",
+          "配信成功の証跡"
+        ],
+        "note": "09:03時点で市場情報サイトの東証当日欄は--:--/未表示。前日終値を当日価格と誤認せず損益計算保留。10/26日次信用残は全6銘柄更新。"
+      },
+      "sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://finance.yahoo.co.jp/quote/5027.T",
+        "https://jp.kabumap.com/servlets/kabumap/Action?SRC=basic%2Fnews%2Fbase&codetext=5027",
+        "https://s.kabutan.jp/stocks/2926/historical_margins/daily/",
+        "https://s.kabutan.jp/stocks/4597/historical_margins/daily/",
+        "https://s.kabutan.jp/stocks/5016/historical_margins/daily/",
+        "https://s.kabutan.jp/stocks/5027/historical_margins/daily/",
+        "https://s.kabutan.jp/stocks/8518/historical_margins/daily/",
+        "https://s.kabutan.jp/stocks/9432/historical_margins/daily/",
+        "https://kabu365.net/karauri/code/5016"
+      ]
+    }
+  ]
+}
