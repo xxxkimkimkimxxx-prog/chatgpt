@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-28",
+  "asOf": "2026-10-28 16:30 JST",
+  "session": "market-close-review",
+  "agentId": 26,
+  "collaboratingRoleIds": [
+    3,
+    7,
+    26,
+    31
+  ],
+  "sourceMorningMemo": "investment-company/decision-memos/2026-10-28/daytrade.md",
+  "market": {
+    "nikkei": {
+      "previousClose": 63268.37,
+      "close": 63954.19,
+      "change": 685.82,
+      "changePct": 1.08,
+      "source": "https://s.kabutan.jp/news/n202610280938/"
+    },
+    "topix": {
+      "previousClose": 3997.37,
+      "close": 3996.53,
+      "change": -0.84,
+      "changePct": -0.02,
+      "source": "https://kr.investing.com/indices/topix-historical-data"
+    },
+    "breadth": {
+      "primeAdvancers": 431,
+      "primeDecliners": 1092,
+      "unchanged": 25,
+      "risingSectors": 10,
+      "totalSectors": 33,
+      "source": "https://s.kabutan.jp/news/n202610280938/"
+    },
+    "marketVerdict": "一部的中：日経平均上昇だがTOPIX微落、プライム市場は値下がり優勢。指数と候補の始値後持続性が乖離"
+  },
+  "performanceSummary": {
+    "candidateCount": 4,
+    "positiveVsPreviousClose": 3,
+    "negativeVsPreviousClose": 1,
+    "positiveVsOpen": 0,
+    "negativeVsOpen": 4,
+    "verifiedTrades": 0,
+    "verifiedTradeWinRate": null,
+    "actualPnl": null
+  },
+  "rootCauses": [
+    {
+      "tag": "地合い/指数偏重",
+      "finding": "日経+1.08%だがTOPIX-0.02%、プライム値下がり1092対値上がり431。No.7の指数偏重警告が妥当"
+    },
+    {
+      "tag": "織り込み/寄り天",
+      "finding": "4候補とも始値比マイナス。GU後の持続性がなく、前日比プラス3銘柄を売買成功と判定しない"
+    },
+    {
+      "tag": "決算期待差",
+      "finding": "4519は決算増益でも前日比・始値比マイナス。No.24/29の利益品質警告は有効だが順位2位の妥当性に課題"
+    },
+    {
+      "tag": "データ欠損/執行条件",
+      "finding": "VWAP/分足/板・実約定がなく買い・見送り・撤退条件の実際の成立は検証不能"
+    }
+  ],
+  "novelContribution": "日経+1.08%の指数上昇とプライム値下がり多数・候補4/4始値比下落の乖離を識別",
+  "decisionImpact": "No.7/23/24/25の警告を検証しNo.1/15/18/29の改善指示に反映",
+  "evidenceGap": [
+    "07:30市場情報部の正規原本・独立実行証跡がなく、08:00時点のbackfillのみ",
+    "初値後10分の分足/VWAP/板/スプレッド・条件成立時刻が未保存",
+    "実注文/約定が未確認のため実取引成績・MFE/MAE・計画損失の実現を検証不能",
+    "holdings=10/14、performance-summary=10/05、watchlist=10/02の陳腐化",
+    "4銘柄の正確な日中売買代金・業種別相対騰落・当日機関実フローの統一データ未取得",
+    "朝の上昇確率は未校正の主観値で、統計的勝率ではない"
+  ],
+  "backfilled": false,
+  "roleEvidenceType": "single-run role-analysis record"
+}
