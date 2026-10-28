@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-29",
+  "asOf": "2026-10-29 08:00 JST",
+  "backfilled": true,
+  "originalThemeResearchVerified": false,
+  "sourceMemo": "investment-company/decision-memos/2026-10-29/daytrade.md",
+  "roleIds": [
+    32,
+    33,
+    34
+  ],
+  "themes": [
+    {
+      "name": "AI/HPC半導体試験装置",
+      "code": "6857",
+      "demandEvidence": "10/28決算・会社予想上方修正、上期利益",
+      "source": "https://www.advantest.com/ja/investors/ir-library/",
+      "earningsLink": "直接",
+      "rank": 1
+    },
+    {
+      "name": "半導体・IT機器流通",
+      "code": "2760",
+      "demandEvidence": "10/28決算 上期経常利益前年同期+100.5%、通期上方修正",
+      "source": "https://s.kabutan.jp/news/k202610280047/",
+      "earningsLink": "直接",
+      "rank": 2
+    },
+    {
+      "name": "GPUインフラ・国産クラウド",
+      "code": "3778",
+      "demandEvidence": "10/28決算 GPUインフラ売上101.24億円(+258.9%)",
+      "source": "https://www.sakura.ad.jp/corporate/ir/",
+      "earningsLink": "直接だが減価償却・設備投資負担あり",
+      "rank": 3
+    }
+  ],
+  "evidenceGap": [
+    "独立した07:30テーマ研究原本は未確認",
+    "テーマ部員の独立稼働は未検証"
+  ]
+}
