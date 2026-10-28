@@ -1,0 +1,863 @@
+{
+  "date": "2026-10-29",
+  "asOf": "2026-10-29 08:00 JST",
+  "committee": "daytrade",
+  "sourceMemo": "investment-company/decision-memos/2026-10-29/daytrade.md",
+  "agentCount": 23,
+  "independentAgentProcessesVerified": false,
+  "roleEvidenceType": "single-run role-analysis; do not treat as 23 independent processes",
+  "activitySaveFailure": null,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "No.8・34の一次決算で6857/2760を上位、No.22・25の寄り天/特別気配警告で3778を3位、No.29のPTS逆行で6501除外"
+      ],
+      "novelContribution": "No.8・34の一次決算で6857/2760を上位、No.22・25の寄り天/特別気配警告で3778を3位、No.29のPTS逆行で6501除外",
+      "decisionImpact": "6857・2760昇格、3778降格、6501除外",
+      "candidatesPromoted": [
+        "6857",
+        "2760",
+        "3778"
+      ],
+      "candidatesRejected": [
+        "6501",
+        "5803"
+      ],
+      "risksFlagged": [
+        "No.8・34の一次決算で6857/2760を上位、No.22・25の寄り天/特別気配警告で3778を3位、No.29のPTS逆行で6501除外"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "AI発注禁止、未確定の損益額・勝率の捏造禁止、固定損失額上限の不使用、単元未満株許容"
+      ],
+      "novelContribution": "AI発注禁止、未確定の損益額・勝率の捏造禁止、固定損失額上限の不使用、単元未満株許容",
+      "decisionImpact": "寄り前新規買い未承認・RRのみ条件付表示",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "AI発注禁止、未確定の損益額・勝率の捏造禁止、固定損失額上限の不使用、単元未満株許容"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "6857決算通期純利益+12.3%と自社株買い上限2800億を別扱い。TOPIX別値、7:30原本欠損、古いholdingsを警告"
+      ],
+      "novelContribution": "6857決算通期純利益+12.3%と自社株買い上限2800億を別扱い。TOPIX別値、7:30原本欠損、古いholdingsを警告",
+      "decisionImpact": "TOPIX断定を回避、データ制限を全候補に付記",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "6857決算通期純利益+12.3%と自社株買い上限2800億を別扱い。TOPIX別値、7:30原本欠損、古いholdingsを警告"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "FOMCは3.75-4.00%据置、10対2で利上げ支持2名。日本のリスク選好への影響は不確実"
+      ],
+      "novelContribution": "FOMCは3.75-4.00%据置、10対2で利上げ支持2名。日本のリスク選好への影響は不確実",
+      "decisionImpact": "全候補の指数・先物確認を必須化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "FOMCは3.75-4.00%据置、10対2で利上げ支持2名。日本のリスク選好への影響は不確実"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "米10年債利回り04:12時点5.043%、WTI102.51ドルは時刻限定参考。個別企業への収益感応度を未検証"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "金利・原油の一律強気加点を禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米10年債利回り04:12時点5.043%、WTI102.51ドルは時刻限定参考。個別企業への収益感応度を未検証"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "AI半導体テスタ需要は6857公式IRで確認。米NASDAQ/SOX最終終値は未取得"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "6857の実需評価は加点、SOX数値は未記入",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "AI半導体テスタ需要は6857公式IRで確認。米NASDAQ/SOX最終終値は未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "10/28日経+1.08%に対し東証プライム値下がり1092/値上がり431、指数上昇は広範な買いでない"
+      ],
+      "novelContribution": "10/28日経+1.08%に対し東証プライム値下がり1092/値上がり431、指数上昇は広範な買いでない",
+      "decisionImpact": "全候補で同業・TOPIX・先物の追随条件を強化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/28日経+1.08%に対し東証プライム値下がり1092/値上がり431、指数上昇は広範な買いでない"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "10/28決算・修正・自社株買い：6857、2760、3778の新規材料を抽出"
+      ],
+      "novelContribution": "10/28決算・修正・自社株買い：6857、2760、3778の新規材料を抽出",
+      "decisionImpact": "3候補をFresh Catalyst審査へ",
+      "candidatesPromoted": [
+        "6857",
+        "2760",
+        "3778"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/28決算・修正・自社株買い：6857、2760、3778の新規材料を抽出"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "PTS6857 +7.96%/9.21万株、2760 +2.98%/7200株、3778 -0.88%/6.57万株"
+      ],
+      "novelContribution": "PTS6857 +7.96%/9.21万株、2760 +2.98%/7200株、3778 -0.88%/6.57万株",
+      "decisionImpact": "6857流動性優位、2760薄板注意、3778降格",
+      "candidatesPromoted": [
+        "6857",
+        "2760",
+        "3778"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "PTS6857 +7.96%/9.21万株、2760 +2.98%/7200株、3778 -0.88%/6.57万株"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "前日4/4始値比マイナス。初値後10分の高安、VWAP再奪回と初動高値再突破の二経路を指定"
+      ],
+      "novelContribution": "前日4/4始値比マイナス。初値後10分の高安、VWAP再奪回と初動高値再突破の二経路を指定",
+      "decisionImpact": "GU飛び付き禁止・遅延初値の判定窓を変更",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "前日4/4始値比マイナス。初値後10分の高安、VWAP再奪回と初動高値再突破の二経路を指定"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "現物とPTS出来高を分離。6857現物1336.99万株、2760現物45.6万株、3778現物456.49万株"
+      ],
+      "novelContribution": "現物とPTS出来高を分離。6857現物1336.99万株、2760現物45.6万株、3778現物456.49万株",
+      "decisionImpact": "2760の板確認を必須、3778特別気配を厳格審査",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "現物とPTS出来高を分離。6857現物1336.99万株、2760現物45.6万株、3778現物456.49万株"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "初値形成から10分後の条件成立時刻・無効化時刻を要記録。前日約定条件の再現は不可"
+      ],
+      "novelContribution": "初値形成から10分後の条件成立時刻・無効化時刻を要記録。前日約定条件の再現は不可",
+      "decisionImpact": "3候補すべて事前成行不可・執行検証保留",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "初値形成から10分後の条件成立時刻・無効化時刻を要記録。前日約定条件の再現は不可"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "実買値・撤退位置・数量なしでは円建てR・期待利益は算定不能。目標RRのみ仮置き"
+      ],
+      "novelContribution": "実買値・撤退位置・数量なしでは円建てR・期待利益は算定不能。目標RRのみ仮置き",
+      "decisionImpact": "RR1.9/1.8/2.1、最大損失額はnull",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "実買値・撤退位置・数量なしでは円建てR・期待利益は算定不能。目標RRのみ仮置き"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "FOMCのタカ派反対票と10/30日銀会合、決算翌日のギャップリスク"
+      ],
+      "novelContribution": "FOMCのタカ派反対票と10/30日銀会合、決算翌日のギャップリスク",
+      "decisionImpact": "高GUとマクロ変動時は見送りを優先",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "FOMCのタカ派反対票と10/30日銀会合、決算翌日のギャップリスク"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "3778前日ストップ高、PTS反落、約定困難と値幅制限を重視。2760夜間7200株"
+      ],
+      "novelContribution": "3778前日ストップ高、PTS反落、約定困難と値幅制限を重視。2760夜間7200株",
+      "decisionImpact": "3778を3位へ、初値未成立はノートレード",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "3778前日ストップ高、PTS反落、約定困難と値幅制限を重視。2760夜間7200株"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "6857は決算発表後PTS+8%で寄り天、2760は薄いPTSで値飛び、3778はS高後の売り圧力"
+      ],
+      "novelContribution": "6857は決算発表後PTS+8%で寄り天、2760は薄いPTSで値飛び、3778はS高後の売り圧力",
+      "decisionImpact": "各候補のVWAP割れ/高値再突破失敗を反対理由に",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "6857は決算発表後PTS+8%で寄り天、2760は薄いPTSで値飛び、3778はS高後の売り圧力"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "上方修正とコンセンサス超過は別。自社株買い上限と実行済み額も別。GPU売上成長とFCF創出は別"
+      ],
+      "novelContribution": "上方修正とコンセンサス超過は別。自社株買い上限と実行済み額も別。GPU売上成長とFCF創出は別",
+      "decisionImpact": "6857/3778の強気仮説を条件付きへ弱めた",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "上方修正とコンセンサス超過は別。自社株買い上限と実行済み額も別。GPU売上成長とFCF創出は別"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "10/28 4候補全て始値比マイナス、フジクラの連続寄り天。既知材料銘柄を惰性で再推薦しない"
+      ],
+      "novelContribution": "10/28 4候補全て始値比マイナス、フジクラの連続寄り天。既知材料銘柄を惰性で再推薦しない",
+      "decisionImpact": "5803を本命から除外、新材料3社へ入替",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "6501",
+        "5803"
+      ],
+      "risksFlagged": [
+        "10/28 4候補全て始値比マイナス、フジクラの連続寄り天。既知材料銘柄を惰性で再推薦しない"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "6857/2760/3778の当日機関実フロー未取得。5016の信用倍率は45.69→31.10だがなお高い"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "需給改善を機関買いと断定せず、5016のナンピンは条件未成立",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "6857/2760/3778の当日機関実フロー未取得。5016の信用倍率は45.69→31.10だがなお高い"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "6857会社純利益予想+12.3%でもPTS+7.96%で織り込み。6501は通期微修正に対しPTS-2.58%"
+      ],
+      "novelContribution": "6857会社純利益予想+12.3%でもPTS+7.96%で織り込み。6501は通期微修正に対しPTS-2.58%",
+      "decisionImpact": "6501除外、6857確率を過大評価しない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "6501",
+        "5803"
+      ],
+      "risksFlagged": [
+        "6857会社純利益予想+12.3%でもPTS+7.96%で織り込み。6501は通期微修正に対しPTS-2.58%"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "AIテスタ・半導体商社・国産GPUインフラの3つのニュース起点テーマを抽出"
+      ],
+      "novelContribution": "AIテスタ・半導体商社・国産GPUインフラの3つのニュース起点テーマを抽出",
+      "decisionImpact": "既知AI連想株5803より企業発表のある3社へ優先",
+      "candidatesPromoted": [
+        "6857",
+        "2760",
+        "3778"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "AIテスタ・半導体商社・国産GPUインフラの3つのニュース起点テーマを抽出"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "AI需要→半導体試験6857、半導体流通2760、GPUクラウド売上3778の直接度を分類"
+      ],
+      "novelContribution": "AI需要→半導体試験6857、半導体流通2760、GPUクラウド売上3778の直接度を分類",
+      "decisionImpact": "直接収益寄与のない周辺連想株を除外",
+      "candidatesPromoted": [
+        "6857",
+        "2760",
+        "3778"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "AI需要→半導体試験6857、半導体流通2760、GPUクラウド売上3778の直接度を分類"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [
+        32
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "taskPerformed": "2026-10-29寄り前デイトレ投資委員会の役割別検証",
+      "keyFindings": [
+        "6857テスタの上期実績、2760半導体商社の上期実績、3778 GPU事業売上101.24億(+258.9%)を企業一次IRと照合"
+      ],
+      "novelContribution": "6857テスタの上期実績、2760半導体商社の上期実績、3778 GPU事業売上101.24億(+258.9%)を企業一次IRと照合",
+      "decisionImpact": "3778を単なるAI連想から実需確認済み候補へ昇格。ただしPTS/値幅制限で3位",
+      "candidatesPromoted": [
+        "6857",
+        "2760",
+        "3778"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "6857テスタの上期実績、2760半導体商社の上期実績、3778 GPU事業売上101.24億(+258.9%)を企業一次IRと照合"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "medium",
+      "dataLimitations": [
+        "当日9時以降の分足/VWAP/板・実約定未取得",
+        "当日機関フロー・市場コンセンサス未取得",
+        "07:30原本・当日テーマ研究原本未検出"
+      ],
+      "sourcesUsed": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://s.kabutan.jp/stocks/3778",
+        "investment-company/market-intelligence/2026-10-28-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "evidenceGap": [
+    "2026-10-29 07:30市場情報部原本・activity未検出",
+    "2026-10-29テーマ研究原本未検出",
+    "当日9時以降の分足/VWAP/板/実約定未取得",
+    "機関投資家実フロー・市場コンセンサス未取得",
+    "保有株数量と売買実績が10/14以降未更新",
+    "TOPIX終値の外部資料差異未解消"
+  ],
+  "backfilled": false
+}
