@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-29",
+  "asOf": "2026-10-29 08:00 JST",
+  "session": "market-intelligence-backfill-from-0800",
+  "backfilled": true,
+  "original0730ExecutionVerified": false,
+  "sourceMemo": "investment-company/decision-memos/2026-10-29/daytrade.md",
+  "reason": "07:30市場情報部原本が存在しないため、08:00時点に検証できた決算・市場情報のみから復元。07:30時点の実行は主張しない",
+  "market": {
+    "nikkeiClose20261028": 63954.19,
+    "nikkeiChangePct": 1.08,
+    "topixFromGithubCloseReview": 3996.53,
+    "topixDataDiscrepancy": "外部資料に3991.71という別値があり、TOPIXは検証要。指数広がりの判断には値下がり1092/値上がり431を優先",
+    "primeAdvancers": 431,
+    "primeDecliners": 1092,
+    "fomcRateRange": "3.75-4.00% 据え置き（10対2、2名は利上げ主張）",
+    "cmeNikkeiFutures": 64790,
+    "cmeFuturesAsOf": "2026-10-29 04:12 JST、リアルタイムではない",
+    "nasdaqClose20261028": null,
+    "soxClose20261028": null,
+    "stance": "前日の日経+1.08%は幅広い上昇ではない。FOMC据置でもタカ派反対票、半導体決算好調だがGU寄り天警戒",
+    "sources": [
+      "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "https://fx.minkabu.jp/news/382887"
+    ]
+  },
+  "candidates": [
+    {
+      "code": "6857",
+      "name": "アドバンテスト",
+      "rank": 1,
+      "category": "Fresh Catalyst / Sector Alignment / Theme News",
+      "material": "10/28上期最終利益3680億円（前年同期約2.2倍）、通期純利益予想6600→7415億円（+12.3%）、自己株取得枠最大2800億円。AI/HPC半導体テスタ実需を会社IRで確認",
+      "newsOrigin": "10/28企業決算・自己株買い開示と10/29 7:01決算ニュース",
+      "sources": [
+        "https://www.advantest.com/ja/investors/ir-library/",
+        "https://s.kabutan.jp/stocks/6857",
+        "https://s.kabutan.jp/news/k202610280046/"
+      ]
+    },
+    {
+      "code": "2760",
+      "name": "東京エレクトロン デバイス",
+      "rank": 2,
+      "category": "Fresh Catalyst / Sector Alignment",
+      "material": "10/28上期経常利益73.54億円（前年同期+100.5%）、通期経常予想136→160億円（+17.6%）、年間配当129→151円",
+      "newsOrigin": "10/28決算短信・業績予想修正・増配",
+      "sources": [
+        "https://s.kabutan.jp/news/k202610280047/",
+        "https://s.kabutan.jp/stocks/2760",
+        "https://disclosure.catr.jp/companies/eeaa0/6730/tdnet/d7934/789296"
+      ]
+    },
+    {
+      "code": "3778",
+      "name": "さくらインターネット",
+      "rank": 3,
+      "category": "Theme News / Continuation Momentum",
+      "material": "10/28上期GPUインフラ事業売上101.24億円（前年同期+258.9%）、通期経常予想23→39億円（約+70%）。10/28現物はストップ高+16.95%",
+      "newsOrigin": "10/28企業決算短信・通期予想修正。GPU実需を売上セグメントで確認",
+      "sources": [
+        "https://www.sakura.ad.jp/corporate/ir/",
+        "https://s.kabutan.jp/stocks/3778",
+        "https://j-market.info/stocks/3778"
+      ]
+    }
+  ],
+  "evidenceGap": [
+    "2026-10-29 07:30市場情報部原本・activity未検出",
+    "2026-10-29テーマ研究原本未検出",
+    "当日9時以降の分足/VWAP/板/実約定未取得",
+    "機関投資家実フロー・市場コンセンサス未取得",
+    "保有株数量と売買実績が10/14以降未更新",
+    "TOPIX終値の外部資料差異未解消"
+  ]
+}
