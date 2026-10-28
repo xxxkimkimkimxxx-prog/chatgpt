@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-28",
+  "asOf": "2026-10-28 16:30 JST",
+  "session": "hr-daily",
+  "focus": "人事評価・組織改善",
+  "weeklyReviewExecuted": false,
+  "weeklyReviewReason": "水曜日のため日次監査。週次基準2026-W43を維持",
+  "baselineWeek": "2026-W43",
+  "hrSummary": {
+    "totalRoles": 34,
+    "rolesWithOpportunity": 25,
+    "rolesWithoutOpportunity": 9,
+    "evidenceRecords": 27,
+    "opportunityRecords": 27,
+    "materialNoContributionRoles": [
+      5,
+      28
+    ],
+    "topContributors": [
+      7,
+      23,
+      24,
+      25,
+      26,
+      21
+    ],
+    "improvementTargets": [
+      1,
+      3,
+      15,
+      18,
+      29,
+      31
+    ],
+    "formalPersonnelChanges": "none"
+  },
+  "performanceEvidence": {
+    "market": {
+      "nikkei": {
+        "previousClose": 63268.37,
+        "close": 63954.19,
+        "change": 685.82,
+        "changePct": 1.08,
+        "source": "https://s.kabutan.jp/news/n202610280938/"
+      },
+      "topix": {
+        "previousClose": 3997.37,
+        "close": 3996.53,
+        "change": -0.84,
+        "changePct": -0.02,
+        "source": "https://kr.investing.com/indices/topix-historical-data"
+      },
+      "breadth": {
+        "primeAdvancers": 431,
+        "primeDecliners": 1092,
+        "unchanged": 25,
+        "risingSectors": 10,
+        "totalSectors": 33,
+        "source": "https://s.kabutan.jp/news/n202610280938/"
+      },
+      "marketVerdict": "一部的中：日経平均上昇だがTOPIX微落、プライム市場は値下がり優勢。指数と候補の始値後持続性が乖離"
+    },
+    "candidateCount": 4,
+    "positiveVsPreviousClose": 3,
+    "positiveVsOpen": 0,
+    "verifiedTrades": 0,
+    "verifiedTradeWinRate": null,
+    "actualPnl": null
+  },
+  "nextDayImprovementActions": [
+    {
+      "owner": [
+        15,
+        16,
+        18,
+        26
+      ],
+      "proposal": "初値後10分の分足/VWAP/板・売買条件の成立時刻を保存し翌日検証可能にする",
+      "status": "proposed"
+    },
+    {
+      "owner": [
+        3,
+        31
+      ],
+      "proposal": "07:30原本の存在とSHA読戻しを8:00前に確認し欠損を早期検知",
+      "status": "proposed"
+    },
+    {
+      "owner": [
+        1,
+        7,
+        23,
+        24,
+        25,
+        29
+      ],
+      "proposal": "指数上昇でも市場内部が弱い日はGU候補の順位を再審査。反対意見採否を記録",
+      "status": "proposed"
+    }
+  ],
+  "operationalIssues": [
+    {
+      "code": "MORNING_ORIGINAL_UNVERIFIED",
+      "detail": "07:30市場情報部の正規原本・独立実行証跡がなく、08:00時点のbackfillのみ",
+      "operationalIssue": true,
+      "carryForward": true
+    },
+    {
+      "code": "INTRADAY_EXECUTION_EVIDENCE_MISSING",
+      "detail": "初値後10分の分足/VWAP/板/スプレッド・条件成立時刻が未保存",
+      "operationalIssue": true,
+      "carryForward": true
+    },
+    {
+      "code": "TRADE_EVIDENCE_MISSING",
+      "detail": "実注文/約定が未確認のため実取引成績・MFE/MAE・計画損失の実現を検証不能",
+      "operationalIssue": true,
+      "carryForward": true
+    },
+    {
+      "code": "STALE_SOURCE_FILES",
+      "detail": "holdings=10/14、performance-summary=10/05、watchlist=10/02の陳腐化",
+      "operationalIssue": true,
+      "carryForward": true
+    },
+    {
+      "code": "MARKET_MICROSTRUCTURE_GAP",
+      "detail": "4銘柄の正確な日中売買代金・業種別相対騰落・当日機関実フローの統一データ未取得",
+      "operationalIssue": true,
+      "carryForward": true
+    },
+    {
+      "code": "UNCALIBRATED_PROBABILITY",
+      "detail": "朝の上昇確率は未校正の主観値で、統計的勝率ではない",
+      "operationalIssue": true,
+      "carryForward": true
+    }
+  ],
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/market-intelligence/2026-10-28.json",
+    "investment-company/decision-memos/2026-10-28/daytrade.md",
+    "investment-company/hr/activity/2026-10-28/daytrade.json",
+    "investment-company/hr/activity/2026-10-28/market-intelligence.json",
+    "investment-company/market-intelligence/2026-10-27-close-review.json",
+    "investment-company/theme-research/2026-10-28/summary.json",
+    "stock-dashboard/data/performance-summary.json"
+  ],
+  "backfilled": false,
+  "saveAudit": {
+    "plannedFiles": 5,
+    "writeStatus": "pending_readback_verification",
+    "note": "正確な保存成否はこのファイルを含む5ファイルの再取得で確認"
+  }
+}
