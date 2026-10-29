@@ -20,7 +20,7 @@
           "currentPriceAsOfJST": null,
           "currentPnlYen": null,
           "referenceCloseDate": "2026-10-29",
-          "referenceClosePnlYen": null,
+          "referenceClosePnlYen": -14000,
           "credit": {
             "referenceDate": "2026-10-28",
             "buyShares": 397100,
@@ -40,10 +40,22 @@
             "出来高54300株・約定32回で薄商い、信用倍率11.54倍",
             "10/30当日価格行動未確認"
           ],
-          "invalidatingCondition": null,
+          "invalidatingCondition": "105円付近の支持線割れ（前日水準、当日更新待ち）",
           "sources": [
             "https://s.kabutan.jp/stocks/2926",
             "https://s.kabutan.jp/stocks/2926/historical_margins/daily"
+          ],
+          "referenceClosePriceYen": 105,
+          "previousDayVolumeShares": 54300,
+          "previousDayTurnoverYen": 5754000,
+          "previousDayVwapYen": 105.97,
+          "previousDaySupportYen": [
+            105
+          ],
+          "previousDayResistanceYen": [
+            105.97,
+            107,
+            108
           ]
         },
         {
@@ -55,7 +67,7 @@
           "currentPriceAsOfJST": null,
           "currentPnlYen": null,
           "referenceCloseDate": "2026-10-29",
-          "referenceClosePnlYen": null,
+          "referenceClosePnlYen": -1980,
           "credit": {
             "referenceDate": "2026-10-28",
             "buyShares": 21786600,
@@ -75,10 +87,23 @@
             "10/29終値28円はVWAP28.95円下、戻り高値30円未突破",
             "10/30当日価格行動未確認"
           ],
-          "invalidatingCondition": null,
+          "invalidatingCondition": "28円付近の支持線割れ（前日水準、当日更新待ち）",
           "sources": [
             "https://s.kabutan.jp/stocks/4597",
             "https://s.kabutan.jp/stocks/4597/historical_margins/daily"
+          ],
+          "referenceClosePriceYen": 28,
+          "previousDayVolumeShares": 90894300,
+          "previousDayTurnoverYen": 2631000000,
+          "previousDayVwapYen": 28.95,
+          "previousDaySupportYen": [
+            28,
+            27
+          ],
+          "previousDayResistanceYen": [
+            28.95,
+            29,
+            30
           ]
         },
         {
@@ -90,7 +115,7 @@
           "currentPriceAsOfJST": null,
           "currentPnlYen": null,
           "referenceCloseDate": "2026-10-29",
-          "referenceClosePnlYen": null,
+          "referenceClosePnlYen": -109000,
           "credit": {
             "referenceDate": "2026-10-28",
             "buyShares": 21246400,
@@ -121,10 +146,25 @@
             "10/29終値3151円はVWAP3130.43円上、大商い23007900株",
             "10/30寄付き前で3170円突破や当日相対強度は未確認"
           ],
-          "invalidatingCondition": null,
+          "invalidatingCondition": "3130.43円付近の支持線割れ（前日水準、当日更新待ち）",
           "sources": [
             "https://s.kabutan.jp/stocks/5016",
             "https://s.kabutan.jp/stocks/5016/historical_margins/daily"
+          ],
+          "referenceClosePriceYen": 3151,
+          "previousDayVolumeShares": 23007900,
+          "previousDayTurnoverYen": 72024540000,
+          "previousDayVwapYen": 3130.43,
+          "previousDaySupportYen": [
+            3130.43,
+            3103,
+            3084,
+            3045,
+            2985.5
+          ],
+          "previousDayResistanceYen": [
+            3170,
+            3357.36
           ]
         },
         {
@@ -136,7 +176,7 @@
           "currentPriceAsOfJST": null,
           "currentPnlYen": null,
           "referenceCloseDate": "2026-10-29",
-          "referenceClosePnlYen": null,
+          "referenceClosePnlYen": -30996,
           "credit": {
             "referenceDate": "2026-10-28",
             "buyShares": 1720700,
@@ -156,10 +196,23 @@
             "10/29安値750円へ更新し終値760円はVWAP764.75円下",
             "10/30当日価格行動未確認"
           ],
-          "invalidatingCondition": null,
+          "invalidatingCondition": "750円付近の支持線割れ（前日水準、当日更新待ち）",
           "sources": [
             "https://s.kabutan.jp/stocks/5027",
             "https://s.kabutan.jp/stocks/5027/historical_margins/daily"
+          ],
+          "referenceClosePriceYen": 760,
+          "previousDayVolumeShares": 755900,
+          "previousDayTurnoverYen": 578000000,
+          "previousDayVwapYen": 764.75,
+          "previousDaySupportYen": [
+            750,
+            751
+          ],
+          "previousDayResistanceYen": [
+            764.89,
+            782,
+            791
           ]
         },
         {
@@ -171,7 +224,7 @@
           "currentPriceAsOfJST": null,
           "currentPnlYen": null,
           "referenceCloseDate": "2026-10-29",
-          "referenceClosePnlYen": null,
+          "referenceClosePnlYen": -4800,
           "credit": {
             "referenceDate": "2026-10-28",
             "buyShares": 1563300,
@@ -191,10 +244,21 @@
             "10/28信用買残が3500株増、139円突破未確認",
             "10/30当日価格行動未確認"
           ],
-          "invalidatingCondition": null,
+          "invalidatingCondition": "136円付近の支持線割れ（前日水準、当日更新待ち）",
           "sources": [
             "https://s.kabutan.jp/stocks/8518",
             "https://s.kabutan.jp/stocks/8518/historical_margins/daily"
+          ],
+          "referenceClosePriceYen": 138,
+          "previousDayVolumeShares": 9400,
+          "previousDayTurnoverYen": 1290000,
+          "previousDayVwapYen": 137.61,
+          "previousDaySupportYen": [
+            136,
+            137
+          ],
+          "previousDayResistanceYen": [
+            139
           ]
         },
         {
@@ -206,7 +270,7 @@
           "currentPriceAsOfJST": null,
           "currentPnlYen": null,
           "referenceCloseDate": "2026-10-29",
-          "referenceClosePnlYen": null,
+          "referenceClosePnlYen": -1060,
           "credit": {
             "referenceDate": "2026-10-28",
             "buyShares": 80126300,
@@ -226,10 +290,22 @@
             "10/29終値171.5円はVWAP171.33円を僅かに上回るのみ",
             "10/30当日価格行動未確認"
           ],
-          "invalidatingCondition": null,
+          "invalidatingCondition": "170.1円付近の支持線割れ（前日水準、当日更新待ち）",
           "sources": [
             "https://s.kabutan.jp/stocks/9432",
             "https://s.kabutan.jp/stocks/9432/historical_margins/daily"
+          ],
+          "referenceClosePriceYen": 171.5,
+          "previousDayVolumeShares": 262847600,
+          "previousDayTurnoverYen": 45034000000,
+          "previousDayVwapYen": 171.33,
+          "previousDaySupportYen": [
+            170.1,
+            170
+          ],
+          "previousDayResistanceYen": [
+            172.8,
+            174.6
           ]
         }
       ],
