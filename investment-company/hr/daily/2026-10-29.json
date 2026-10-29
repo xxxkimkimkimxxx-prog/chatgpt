@@ -218,8 +218,9 @@
   "backfilled": false,
   "saveAudit": {
     "plannedFiles": 5,
-    "writeSucceeded": null,
-    "writeFailed": null,
-    "readbackVerified": null
+    "writeSucceeded": 5,
+    "writeFailed": 0,
+    "readbackVerified": 5,
+    "notes": "GitHubのcreate_file/update_file後に5ファイルすべてfetch_fileで日付・内容を確認。GitHub API書込エラーなし"
   }
 }
