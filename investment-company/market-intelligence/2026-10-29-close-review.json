@@ -1,0 +1,237 @@
+{
+  "date": "2026-10-29",
+  "asOf": "2026-10-29 16:30 JST",
+  "session": "close-review",
+  "purpose": "No.26成績分析・No.31人事監査の証拠。翌日推奨ではない",
+  "reviewerRoleIds": [
+    26,
+    31
+  ],
+  "independentAgentProcessesVerified": false,
+  "market": {
+    "nikkei": {
+      "previousClose": 63954.19,
+      "close": 64659.47,
+      "change": 705.28,
+      "changePct": 1.1,
+      "source": "https://zai.diamond.jp/articles/-/498145"
+    },
+    "topix": {
+      "previousClose": 3991.71,
+      "close": 4003.28,
+      "change": 11.57,
+      "changePct": 0.29,
+      "source": "https://zai.diamond.jp/articles/-/498145"
+    },
+    "priorDayTopixCorrection": {
+      "date": "2026-10-28",
+      "wrongGithubValue": 3996.53,
+      "verifiedCorrectValue": 3991.71,
+      "correctChange": -5.66,
+      "correctPct": -0.14,
+      "source": "https://s.kabutan.jp/news/n202610281001/",
+      "severity": "high_data_quality_issue"
+    },
+    "breadth": {
+      "finalPrimeAdvancers": null,
+      "finalPrimeDecliners": null,
+      "at1000": {
+        "advancers": 396,
+        "decliners": 1101,
+        "source": "https://finance.matsui.co.jp/news/632153/index"
+      },
+      "note": "10:00の市場内部値は終値ではない。引け時点の騰落銘柄数は未検証"
+    },
+    "marketVerdict": "指数は上昇したが10:00の市場内部は下落銘柄優勢。指数上昇を市場全面高と誤認しない"
+  },
+  "morningInputs": {
+    "memo": "investment-company/decision-memos/2026-10-29/daytrade.md",
+    "activity": "investment-company/hr/activity/2026-10-29/daytrade.json",
+    "original0730ExecutionVerified": false,
+    "marketIntelligenceBackfilled": true,
+    "themeResearchBackfilled": true,
+    "preOpenTradeApproval": false,
+    "rankedCodes": [
+      "6857",
+      "2760",
+      "3778"
+    ]
+  },
+  "performanceSummary": {
+    "candidateCount": 3,
+    "positiveVsPreviousClose": 1,
+    "negativeVsPreviousClose": 2,
+    "positiveVsOpen": 1,
+    "negativeVsOpen": 2,
+    "verifiedTrades": 0,
+    "verifiedTradeWinRate": null,
+    "actualPnl": null,
+    "notes": "候補方向と実取引成績は別。前日比と始値比を分離"
+  },
+  "candidates": [
+    {
+      "code": "6857",
+      "name": "アドバンテスト",
+      "rank": 1,
+      "prev": 34930,
+      "open": 36500,
+      "high": 38120,
+      "low": 35790,
+      "close": 37030,
+      "volume": 24991600,
+      "source": "https://s.kabutan.jp/stocks/6857/historical_prices/daily/",
+      "material": "10/28決算上方修正・自己株取得枠",
+      "risks": [
+        "GU後の売り圧力",
+        "利益確定",
+        "半導体同業不追随"
+      ],
+      "preWarning": "高寄り・織り込み・決算期待との差を警戒",
+      "previousCloseReturnPct": 6.01,
+      "openToCloseReturnPct": 1.45,
+      "directionVerdict": "的中",
+      "tradeOutcomeVerdict": "検証不能",
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null,
+      "firstTenMinuteData": null,
+      "turnoverJPY": null,
+      "reasonTags": [
+        "GU後の売り圧力",
+        "利益確定",
+        "半導体同業不追随"
+      ],
+      "notes": "決算方向仮説は整合し始値比も上昇。ただし高値38120から失速し、条件成立の有無は不明"
+    },
+    {
+      "code": "2760",
+      "name": "東京エレクトロン デバイス",
+      "rank": 2,
+      "prev": 4700,
+      "open": 4770,
+      "high": 4845,
+      "low": 4260,
+      "close": 4360,
+      "volume": 968300,
+      "source": "https://s.kabutan.jp/stocks/2760/historical_prices/daily/",
+      "material": "10/28決算上方修正・増配",
+      "risks": [
+        "GU後失速",
+        "材料出尽くし",
+        "セクター不一致",
+        "期待値織り込み"
+      ],
+      "preWarning": "PTS薄商い・既に10/28場中に期待先取り・前日GU失速",
+      "previousCloseReturnPct": -7.23,
+      "openToCloseReturnPct": -8.6,
+      "directionVerdict": "外れ",
+      "tradeOutcomeVerdict": "検証不能",
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null,
+      "firstTenMinuteData": null,
+      "turnoverJPY": null,
+      "reasonTags": [
+        "GU後失速",
+        "材料出尽くし",
+        "セクター不一致",
+        "期待値織り込み"
+      ],
+      "notes": "上方修正と増配でも前日比-7.23%、始値比-8.60%。薄いPTSと寄り天警告を順位/見送りへ十分反映できなかった"
+    },
+    {
+      "code": "3778",
+      "name": "さくらインターネット",
+      "rank": 3,
+      "prev": 3470,
+      "open": 3270,
+      "high": 3380,
+      "low": 3140,
+      "close": 3230,
+      "volume": 4476400,
+      "source": "https://s.kabutan.jp/stocks/3778/historical_prices/daily/",
+      "material": "GPUインフラ実需・通期上方修正",
+      "risks": [
+        "前日ストップ高の反動",
+        "織り込み",
+        "需給悪化",
+        "材料出尽くし"
+      ],
+      "preWarning": "前日ストップ高・PTSマイナス・高値追いリスク",
+      "previousCloseReturnPct": -6.92,
+      "openToCloseReturnPct": -1.22,
+      "directionVerdict": "外れ",
+      "tradeOutcomeVerdict": "検証不能",
+      "entryConditionVerified": null,
+      "skipConditionVerified": null,
+      "exitConditionVerified": null,
+      "actualTradeVerified": false,
+      "actualPnl": null,
+      "actualMFE": null,
+      "actualMAE": null,
+      "vwapAtEntry": null,
+      "orderBookAtEntry": null,
+      "firstTenMinuteData": null,
+      "turnoverJPY": null,
+      "reasonTags": [
+        "前日ストップ高の反動",
+        "織り込み",
+        "需給悪化",
+        "材料出尽くし"
+      ],
+      "notes": "前日ストップ高後の反動を警告し3位に降格。株価は下落、見送り警告の方向は妥当だが条件実測は不能"
+    }
+  ],
+  "rootCauses": [
+    "2760は決算上方修正と増配を過大評価し、PTS薄商い・既存GU失速・材料織り込みを順位に十分反映できなかった",
+    "3778は前日ストップ高後の需給反動を事前警告し順位を3位に抑えたが、条件成立の事後検証不能",
+    "6857は材料の収益直接性を評価した方向判断が整合。ただし高値からの失速があり、無条件の買い成功ではない",
+    "10/28 TOPIXの誤数値が既存レビューに残存。No.3の事前数値検証とNo.31の監査ゲートに不備"
+  ],
+  "dataLimitations": [
+    "07:30市場情報部の正規原本が存在せず、08:00決裁書からのbackfilled=true復元のみ",
+    "テーマ研究は08:00時点のbackfilled=true復元で独立実行証拠なし",
+    "初値後10分の分足・VWAP・板・スプレッド・買い/見送り/撤退条件成立時刻未保存",
+    "実注文/約定履歴がなく実取引勝率・実損益・MFE/MAEは検証不能",
+    "当日機関実フロー・決算コンセンサス・終値時点市場騰落銘柄数・銘柄別正確な売買代金未取得",
+    "保有株10/14・performance-summary10/05・watchlist10/02で陳腐化",
+    "10/28 TOPIXのGitHub記録3996.53は誤値。正値3991.71（-5.66）と外部確認。既存記録の訂正が必要",
+    "条件付き上昇確率は未校正の主観値"
+  ],
+  "actualTrades": null,
+  "actualTradeWinRate": null,
+  "actualMFE": null,
+  "actualMAE": null,
+  "backfilled": false,
+  "sourcesUsed": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/decision-memos/2026-10-29/daytrade.md",
+    "investment-company/hr/activity/2026-10-29/daytrade.json",
+    "investment-company/market-intelligence/2026-10-29.json",
+    "investment-company/hr/activity/2026-10-29/market-intelligence.json",
+    "investment-company/theme-research/2026-10-29/summary.json",
+    "investment-company/market-intelligence/2026-10-28-close-review.json",
+    "investment-company/hr/daily/2026-10-28.json",
+    "investment-company/hr/weekly/2026-W43.json",
+    "stock-dashboard/data/performance-summary.json",
+    "https://s.kabutan.jp/stocks/6857/historical_prices/daily/",
+    "https://s.kabutan.jp/stocks/2760/historical_prices/daily/",
+    "https://s.kabutan.jp/stocks/3778/historical_prices/daily/",
+    "https://zai.diamond.jp/articles/-/498145",
+    "https://s.kabutan.jp/news/n202610281001/"
+  ]
+}
