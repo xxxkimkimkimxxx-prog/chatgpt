@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-30",
+  "asOf": "2026-10-30 07:56 JST（寄り前確認）",
+  "backfilled": true,
+  "originalThemeResearchVerified": false,
+  "roleIds": [
+    32,
+    33,
+    34
+  ],
+  "sourceMemo": "investment-company/decision-memos/2026-10-30/daytrade.md",
+  "themes": [
+    {
+      "name": "テーマパーク・国内観光の実需",
+      "code": "4661",
+      "evidence": "入園者と客単価上昇、通期経常+16.5%",
+      "source": "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+      "rank": 1
+    },
+    {
+      "name": "データセンター電源・エネルギー設備",
+      "code": "6504",
+      "evidence": "エネルギー部門営業利益189→299億、会社がDC需要増を明示",
+      "source": "https://www.fujielectric.co.jp/ir/library/detail/summary.html",
+      "rank": 2
+    },
+    {
+      "name": "系統用蓄電池・EMS",
+      "code": "6622",
+      "evidence": "EMS受注見通し450億/前年比2.6倍、10/29業績上方修正",
+      "source": "https://www.daihen.co.jp/newinfo_2026/news_260916.html",
+      "rank": 3
+    }
+  ],
+  "evidenceGap": [
+    "独立した07:30テーマ研究原本は未確認",
+    "受注見通しを確定売上と誤認しない"
+  ]
+}
