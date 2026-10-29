@@ -757,7 +757,11 @@
     "保有株の現在数量・平均取得は10/14以降未確認"
   ],
   "saveAudit": {
-    "verifiedPrimaryPaths": [],
+    "verifiedPrimaryPaths": [
+      "investment-company/decision-memos/2026-10-30/daytrade.md",
+      "stock-dashboard/data/daytrade-latest.json",
+      "investment-company/hr/activity/2026-10-30/daytrade.json"
+    ],
     "verifiedOptionalPaths": [
       "investment-company/market-intelligence/2026-10-30.json",
       "investment-company/hr/activity/2026-10-30/market-intelligence.json",
@@ -765,6 +769,7 @@
       "investment-company/market-intelligence/latest.json"
     ],
     "failedPaths": [],
-    "retryResults": []
+    "retryResults": [],
+    "verificationNote": "7ファイルをGitHub fetch_fileで読み戻し、日付と主要内容、23役割の必須16項目を確認。activityはこの監査追記後に再読込する。"
   }
 }
