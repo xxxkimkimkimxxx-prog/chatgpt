@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-30",
+  "asOf": "2026-10-30 07:56 JST（寄り前確認）",
+  "session": "market-intelligence-backfill-from-preopen",
+  "backfilled": true,
+  "original0730ExecutionVerified": false,
+  "roleIds": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    28,
+    30,
+    32,
+    33,
+    34
+  ],
+  "sourceMemo": "investment-company/decision-memos/2026-10-30/daytrade.md",
+  "evidenceGap": [
+    "2026-10-30 07:30市場情報部の正規原本・activity未確認（同時刻の独立実行を証明できない）",
+    "当日テーマ研究の独立原本未確認。今回のテーマ研究は単一実行からの再構成",
+    "10/29 close-reviewで指摘された10/28 TOPIX誤記の元ファイル訂正は今回対象外",
+    "初値後10分の実測分足・VWAP・板・スプレッド、実約定履歴は寄り前には未取得",
+    "機関実フローと市場コンセンサス未取得",
+    "CME/大阪先物の10/30朝の信頼できる同時刻値未確認（数値を記載しない）",
+    "holdings=10/14、performance-summary=10/05、watchlist=10/02で陳腐化",
+    "保有株の現在数量・平均取得は10/14以降未確認"
+  ]
+}
