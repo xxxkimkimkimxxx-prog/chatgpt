@@ -1,26 +1,30 @@
 {
-  "date": "2026-10-29",
-  "asOf": "2026-10-29 08:00 JST",
-  "session": "market-intelligence-backfill-from-0800",
+  "date": "2026-10-30",
+  "asOf": "2026-10-30 07:56 JST（寄り前確認）",
+  "session": "market-intelligence-backfill-from-preopen",
   "status": "backfilled_original_0730_missing",
-  "fullReportPath": "investment-company/market-intelligence/2026-10-29.json",
-  "activityPath": "investment-company/hr/activity/2026-10-29/market-intelligence.json",
-  "themePath": "investment-company/theme-research/2026-10-29/summary.json",
-  "candidateCount": 3,
+  "fullReportPath": "investment-company/market-intelligence/2026-10-30.json",
+  "activityPath": "investment-company/hr/activity/2026-10-30/market-intelligence.json",
+  "themePath": "investment-company/theme-research/2026-10-30/summary.json",
+  "candidateCount": 4,
   "topFresh": [
-    "6857",
-    "2760"
+    "4661",
+    "9101",
+    "6504",
+    "6622"
   ],
-  "marketStance": "前日の日経+1.08%は幅広い上昇ではない。FOMC据置でもタカ派反対票、半導体決算好調だがGU寄り天警戒",
+  "marketStance": "日銀イベント＋米AIハイテク売りを警戒。新規決算材料を優先、半導体全面反発の仮定は却下",
   "holdingsBlind": true,
   "backfilled": true,
   "original0730ExecutionVerified": false,
-  "dataLimitations": [
-    "2026-10-29 07:30市場情報部原本・activity未検出",
-    "2026-10-29テーマ研究原本未検出",
-    "当日9時以降の分足/VWAP/板/実約定未取得",
-    "機関投資家実フロー・市場コンセンサス未取得",
-    "保有株数量と売買実績が10/14以降未更新",
-    "TOPIX終値の外部資料差異未解消"
+  "evidenceGap": [
+    "2026-10-30 07:30市場情報部の正規原本・activity未確認（同時刻の独立実行を証明できない）",
+    "当日テーマ研究の独立原本未確認。今回のテーマ研究は単一実行からの再構成",
+    "10/29 close-reviewで指摘された10/28 TOPIX誤記の元ファイル訂正は今回対象外",
+    "初値後10分の実測分足・VWAP・板・スプレッド、実約定履歴は寄り前には未取得",
+    "機関実フローと市場コンセンサス未取得",
+    "CME/大阪先物の10/30朝の信頼できる同時刻値未確認（数値を記載しない）",
+    "holdings=10/14、performance-summary=10/05、watchlist=10/02で陳腐化",
+    "保有株の現在数量・平均取得は10/14以降未確認"
   ]
 }
