@@ -1178,8 +1178,8 @@
           "sectorRelativeStrengthToday": null,
           "averagingDecision": "ナンピン見送り",
           "averagingReasons": [
-            "VWAP106.12円超だが当日高値107円を突破できず、出来高2.99万株と低流動性",
-            "信用倍率10.42倍で上値追随の需給改善未確認"
+            "VWAP106.13円上だが107円の突破・定着なし",
+            "出来高3万株と薄商い、信用倍率10.42倍"
           ],
           "invalidatingCondition": "106円割れ"
         },
@@ -1225,10 +1225,10 @@
           "sectorRelativeStrengthToday": null,
           "averagingDecision": "ナンピン見送り",
           "averagingReasons": [
-            "当日安値28円付近でVWAP29円を下回り、反転未確認",
-            "信用買い残減少・倍率3.23倍への改善はあるが、30円突破を確認できない"
+            "29円はVWAP28.99円付近で30円抵抗未突破",
+            "信用買い残減少は改善材料だが反転を確認できず"
           ],
-          "invalidatingCondition": "28円割れ、次に27円"
+          "invalidatingCondition": "28円割れ"
         },
         {
           "code": "5016",
@@ -1248,7 +1248,7 @@
           "volumeAsOfJST": "2026-10-29T11:30:00+09:00",
           "vwapYen": 3104.48,
           "vwapEstimated": true,
-          "vwapPriceTimeMismatch": true,
+          "vwapPriceTimeMismatch": false,
           "supportYen": [
             3084,
             3045,
@@ -1256,7 +1256,7 @@
           ],
           "resistanceYen": [
             3103,
-            3111.06,
+            3104.48,
             3155
           ],
           "credit": {
@@ -1281,11 +1281,11 @@
           "sectorRelativeStrengthToday": "JX -0.62%(10:51)、住友金属鉱山+1.26%(10:32)、フジクラ+0.29%(10:40)、古河電工+2.38%(10:55)、アドバンテスト+5.07%(10:53)。非同時点比較、4銘柄すべてに劣後",
           "averagingDecision": "ナンピン見送り",
           "averagingReasons": [
-            "10:02高値3155円から10:51には3065円へ反落しVWAP3111.06円を下回った",
-            "前日終値3084円も下回り、関連4銘柄に相対劣後",
-            "信用買い残は減少しているが2157.72万株・信用倍率31.23倍と高水準"
+            "高値3155円から3092円へ反落しVWAP3104.48円を下回る",
+            "前日終値3084円回復も同業比の強さは混在",
+            "信用買い残2157.72万株・倍率31.23倍と高水準"
           ],
-          "invalidatingCondition": "3045円割れ、次に前日安値2985.5円"
+          "invalidatingCondition": "3045円割れ、次に2985.5円割れ"
         },
         {
           "code": "5027",
@@ -1307,11 +1307,11 @@
           "vwapEstimated": true,
           "vwapPriceTimeMismatch": false,
           "supportYen": [
-            757,
+            756,
             751
           ],
           "resistanceYen": [
-            771.14,
+            769.4,
             782,
             791
           ],
@@ -1329,10 +1329,10 @@
           "sectorRelativeStrengthToday": null,
           "averagingDecision": "ナンピン見送り",
           "averagingReasons": [
-            "760円はVWAP771.14円下、当日安値757円近辺で下落圧力継続",
-            "信用買い残は前日比1.08万株増、売り残ゼロで倍率算出不可"
+            "安値756円を更新、前場764円はVWAP769.40円下",
+            "信用買い残前日比10800株増"
           ],
-          "invalidatingCondition": "757円割れ、次に751円"
+          "invalidatingCondition": "756円割れ"
         },
         {
           "code": "8518",
@@ -1354,11 +1354,9 @@
           "vwapEstimated": true,
           "vwapPriceTimeMismatch": false,
           "supportYen": [
-            137,
             136
           ],
           "resistanceYen": [
-            138,
             139
           ],
           "credit": {
@@ -1375,8 +1373,8 @@
           "sectorRelativeStrengthToday": null,
           "averagingDecision": "ナンピン見送り",
           "averagingReasons": [
-            "VWAP137円超だが出来高3600株・約定7回と極端な低流動性",
-            "9:39以降の東証約定更新を確認できず、反発の信頼性が低い"
+            "最終約定9:39、出来高3600株と極端な低流動性",
+            "信用買い残155.44万株で反発の信頼性が低い"
           ],
           "invalidatingCondition": "136円割れ"
         },
@@ -1398,14 +1396,14 @@
           "volumeAsOfJST": "2026-10-29T11:30:00+09:00",
           "vwapYen": 171.26,
           "vwapEstimated": true,
-          "vwapPriceTimeMismatch": true,
+          "vwapPriceTimeMismatch": false,
           "supportYen": [
             170.1,
             170
           ],
           "resistanceYen": [
-            171.9,
-            172.8
+            172.8,
+            174.6
           ],
           "credit": {
             "referenceDate": "2026-10-27",
@@ -1421,10 +1419,10 @@
           "sectorRelativeStrengthToday": null,
           "averagingDecision": "ナンピン見送り",
           "averagingReasons": [
-            "安値170.1円から戻すも前日終値171.9円・始値171.9円を回復できず",
-            "10/27信用買い残が前日比571.83万株増、倍率5.34倍に悪化"
+            "172.3円はVWAP171.26円を上回るも高値172.8円未突破",
+            "信用買い残が571.83万株増、倍率5.34倍に悪化"
           ],
-          "invalidatingCondition": "170.1円割れ、次に170円"
+          "invalidatingCondition": "170.1円割れ"
         }
       ],
       "unrealizedPnlYen": -166076,
@@ -1528,8 +1526,13 @@
         "https://finance.yahoo.co.jp/quote/8518.T",
         "https://finance.yahoo.co.jp/quote/9432.T",
         "https://s.kabutan.jp/stocks/5016/historical_margins/daily",
-        "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E"
-      ]
+        "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E",
+        "https://finance.yahoo.co.jp/quote/5713.T",
+        "https://finance.yahoo.co.jp/quote/5803.T",
+        "https://finance.yahoo.co.jp/quote/5801.T",
+        "https://finance.yahoo.co.jp/quote/6857.T"
+      ],
+      "valuationMethod": "10/29東証前場11:30約定値（8518のみ9:39最終約定）を用い(価格-平均取得単価)×株数。VWAPは売買代金÷出来高の概算。"
     }
   ]
 }
