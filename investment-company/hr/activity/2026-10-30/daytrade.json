@@ -1,0 +1,770 @@
+{
+  "date": "2026-10-30",
+  "asOf": "2026-10-30 07:56 JST（寄り前確認）",
+  "committee": "daytrade",
+  "agentCount": 23,
+  "independentAgentProcessesVerified": false,
+  "roleEvidenceType": "single-run analytical role attribution; not independent agent execution",
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "新規決算・米ハイテク下落・日銀イベントを統合",
+      "keyFindings": [
+        "No.34の実需確認で4661/6504/6622を昇格、No.29の営業/経常差で9101を2位に抑制、No.22/25のPTS過熱・前日失敗で6622を4位、6857/2760/3778を除外"
+      ],
+      "novelContribution": "No.34の実需確認で4661/6504/6622を昇格、No.29の営業/経常差で9101を2位に抑制、No.22/25のPTS過熱・前日失敗で6622を4位、6857/2760/3778を除外",
+      "decisionImpact": "寄り前買い未承認",
+      "candidatesPromoted": [
+        "4661",
+        "9101",
+        "6504",
+        "6622"
+      ],
+      "candidatesRejected": [
+        "6857",
+        "2760",
+        "3778",
+        "2914",
+        "4502"
+      ],
+      "risksFlagged": [
+        "順位反映が曖昧にならないよう根拠を明文化"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "順位反映が曖昧にならないよう根拠を明文化",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス",
+      "taskPerformed": "AI発注権限と損益表記を監査",
+      "keyFindings": [
+        "未確定の買値・最大損失・統計的期待値を捏造せず、固定損失額ルールを使わない"
+      ],
+      "novelContribution": "未確定の買値・最大損失・統計的期待値を捏造せず、固定損失額ルールを使わない",
+      "decisionImpact": "未承認・注文なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "根拠なき数値と過去の独立稼働主張を禁止"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "根拠なき数値と過去の独立稼働主張を禁止",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "一次開示・株価・日付・分割を照合",
+      "keyFindings": [
+        "ダイヘンの10/1 1対5分割、10/28 TOPIX誤記、holdings陳腐化を検出"
+      ],
+      "novelContribution": "ダイヘンの10/1 1対5分割、10/28 TOPIX誤記、holdings陳腐化を検出",
+      "decisionImpact": "データ欠損を明示",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "元ファイルTOPIX訂正は今回未実施"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "元ファイルTOPIX訂正は今回未実施",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ",
+      "taskPerformed": "米国株・日銀イベントのマクロ影響",
+      "keyFindings": [
+        "米10/29 NASDAQ -1.37%、日銀10/30結果発表前"
+      ],
+      "novelContribution": "米10/29 NASDAQ -1.37%、日銀10/30結果発表前",
+      "decisionImpact": "セクター全面高仮説を棄却",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "先物同時刻値未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "先物同時刻値未取得",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品",
+      "taskPerformed": "金利・為替・商品への感応度を審査",
+      "keyFindings": [
+        "最新金利/為替/商品価格を十分検証できず個別の加点を控えた"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "金利・原油起点の順位変更なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "独自の実測寄与なし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.25,
+      "dataLimitations": [
+        "独自の実測寄与なし",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [
+        4,
+        21
+      ],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI",
+      "taskPerformed": "米国AI・半導体地合い",
+      "keyFindings": [
+        "Alphabet決算後のAI設備投資採算懸念と半導体株下落"
+      ],
+      "novelContribution": "Alphabet決算後のAI設備投資採算懸念と半導体株下落",
+      "decisionImpact": "6857等の継続上昇を本命から外す",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "日本株への翌日波及は未確定"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "日本株への翌日波及は未確定",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-slide-mixed-big-tech-results-test-ai-trade-2026-10-29/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター",
+      "taskPerformed": "日本指数・セクター",
+      "keyFindings": [
+        "10/29日経64659.47/TOPIX4003.28、半導体指数依存を警戒"
+      ],
+      "novelContribution": "10/29日経64659.47/TOPIX4003.28、半導体指数依存を警戒",
+      "decisionImpact": "同業追随を全候補で必須",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10/30市場内部データは未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "10/30市場内部データは未取得",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント",
+      "taskPerformed": "10/29会社決算・業績修正",
+      "keyFindings": [
+        "4661/9101/6504/6622の一次開示を確認"
+      ],
+      "novelContribution": "4661/9101/6504/6622の一次開示を確認",
+      "decisionImpact": "新規決算4銘柄を候補化",
+      "candidatesPromoted": [
+        "4661",
+        "9101",
+        "6504",
+        "6622"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "コンセンサス未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "コンセンサス未取得",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS",
+      "taskPerformed": "夜間PTSと現物流動性",
+      "keyFindings": [
+        "4661 +4.10%/2.61万株、9101 +2.36%/2000株、6504 +0.11%/4900株、6622 +9.37%/1.64万株"
+      ],
+      "novelContribution": "4661 +4.10%/2.61万株、9101 +2.36%/2000株、6504 +0.11%/4900株、6622 +9.37%/1.64万株",
+      "decisionImpact": "薄い9101と過熱6622を減点",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "PTSは現物の約定可能価格ではない"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "PTSは現物の約定可能価格ではない",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動",
+      "taskPerformed": "初動価格構造の執行前審査",
+      "keyFindings": [
+        "前日3候補のうち始値比上昇1件、実買い条件は検証不能"
+      ],
+      "novelContribution": "前日3候補のうち始値比上昇1件、実買い条件は検証不能",
+      "decisionImpact": "初値形成後10分・VWAP二経路を必須",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "分足未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "分足未取得",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板",
+      "taskPerformed": "板・出来高・スプレッド審査",
+      "keyFindings": [
+        "現物とPTS売買代金を分離。6622現物27.99億円と夜間0.41億円を区別"
+      ],
+      "novelContribution": "現物とPTS売買代金を分離。6622現物27.99億円と夜間0.41億円を区別",
+      "decisionImpact": "6622/9101の板厚確認を厳格化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り板未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "寄り板未取得",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [
+        9,
+        22
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計",
+      "taskPerformed": "執行設計",
+      "keyFindings": [
+        "初値後10分で高値更新またはVWAP奪回、条件不成立は見送り"
+      ],
+      "novelContribution": "初値後10分で高値更新またはVWAP奪回、条件不成立は見送り",
+      "decisionImpact": "成行飛び付き禁止、約定時刻ログを要求",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "約定価格未確定"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "約定価格未確定",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR",
+      "taskPerformed": "ポジションとRR設計",
+      "keyFindings": [
+        "RR1.9/1.9/1.9/2.1を条件付き提示、円建てRはnull"
+      ],
+      "novelContribution": "RR1.9/1.9/1.9/2.1を条件付き提示、円建てRはnull",
+      "decisionImpact": "損切り構造・ギャップ・スリッページを必須化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "統計的期待利益は算定不能"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "統計的期待利益は算定不能",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス",
+      "taskPerformed": "日銀イベントストレス",
+      "keyFindings": [
+        "10/30昼の政策決定と15:30会見、米AI株安"
+      ],
+      "novelContribution": "10/30昼の政策決定と15:30会見、米AI株安",
+      "decisionImpact": "日銀発表前後のギャップを見送り条件へ",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "会合結果未公表"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "会合結果未公表",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.boj.or.jp/en/about/calendar/index.htm",
+        "https://www.reuters.com/business/nasdaq-futures-slide-mixed-big-tech-results-test-ai-trade-2026-10-29/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ",
+      "taskPerformed": "PTS・信用・ギャップリスク",
+      "keyFindings": [
+        "6622信用倍率55.82倍かつPTS+9.37%、9101夜間2000株"
+      ],
+      "novelContribution": "6622信用倍率55.82倍かつPTS+9.37%、9101夜間2000株",
+      "decisionImpact": "6622を4位、9101を条件付き2位",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "信用倍率は10/23の週次値"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "信用倍率は10/23の週次値",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド",
+      "taskPerformed": "各本命の空売り目線",
+      "keyFindings": [
+        "4661高GU、9101ONE利益、6504半導体減益、6622過熱信用を反対材料に"
+      ],
+      "novelContribution": "4661高GU、9101ONE利益、6504半導体減益、6622過熱信用を反対材料に",
+      "decisionImpact": "4銘柄すべてVWAP割れ/初動高値失敗で見送り",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "貸株可否は未確認"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "貸株可否は未確認",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊",
+      "taskPerformed": "強気前提の破壊",
+      "keyFindings": [
+        "9101経常+850億と営業+250億の差、6504半導体減益、6622受注≠売上、4661周年需要"
+      ],
+      "novelContribution": "9101経常+850億と営業+250億の差、6504半導体減益、6622受注≠売上、4661周年需要",
+      "decisionImpact": "見かけの好決算で無条件昇格を禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "市場期待差未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "市場期待差未取得",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン",
+      "taskPerformed": "前日失敗の再発防止",
+      "keyFindings": [
+        "2760前日比-7.23%/始値比-8.60%、3778前日比-6.92%/始値比-1.22%"
+      ],
+      "novelContribution": "2760前日比-7.23%/始値比-8.60%、3778前日比-6.92%/始値比-1.22%",
+      "decisionImpact": "2760/3778除外、6622を過熱で4位",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "2760",
+        "3778",
+        "6857"
+      ],
+      "risksFlagged": [
+        "分足未取得のため取引勝敗は不明"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "分足未取得のため取引勝敗は不明",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-10-29-close-review.json"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給",
+      "taskPerformed": "機関需給・信用残",
+      "keyFindings": [
+        "公開信用倍率は確認したが当日機関フローは未取得"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "機関買いを断定しない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "独自の機関需給発見はなし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.25,
+      "dataLimitations": [
+        "独自の機関需給発見はなし",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/stocks/5016",
+        "https://s.kabutan.jp/stocks/6622"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値",
+      "taskPerformed": "事前期待と利益品質",
+      "keyFindings": [
+        "4661会社経常+16.5%対PTS+4.1%、9101経常+34%対営業+13.5%、6504会社経常+6.1%対PTS+0.1%"
+      ],
+      "novelContribution": "4661会社経常+16.5%対PTS+4.1%、9101経常+34%対営業+13.5%、6504会社経常+6.1%対PTS+0.1%",
+      "decisionImpact": "9101/6504の順位を慎重にし、2914/4502を本命から除外",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "2914",
+        "4502"
+      ],
+      "risksFlagged": [
+        "アナリストコンセンサス未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "アナリストコンセンサス未取得",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html",
+        "https://www.daihen.co.jp/ir/summary_pdf/2026_1029_gyosekiyosou.pdf"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘",
+      "taskPerformed": "ニュース起点テーマ抽出",
+      "keyFindings": [
+        "米AI投資採算懸念、系統用蓄電池実需、レジャー周年需要"
+      ],
+      "novelContribution": "米AI投資採算懸念、系統用蓄電池実需、レジャー周年需要",
+      "decisionImpact": "AI連想より実需テーマへ重点を移した",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "一部記事は企業開示と区別"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "一部記事は企業開示と区別",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [
+        33,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーン",
+      "taskPerformed": "テーマ価値連鎖",
+      "keyFindings": [
+        "蓄電池受注→ダイヘン電力設備、データセンター→富士電機電源システム、観光→OLC客単価"
+      ],
+      "novelContribution": "蓄電池受注→ダイヘン電力設備、データセンター→富士電機電源システム、観光→OLC客単価",
+      "decisionImpact": "直接受益と周辺連想を区別",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "未上場供給先の売上感応度は不明"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "未上場供給先の売上感応度は不明",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://s.kabutan.jp/stocks/4661/",
+        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
+        "https://s.kabutan.jp/stocks/9101",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html"
+      ],
+      "duplicationWith": [
+        32,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度",
+      "taskPerformed": "一次情報による実需検証",
+      "keyFindings": [
+        "ダイヘンEMS受注見通し450億/前年比2.6倍、富士電機エネルギー部門営業利益189→299億、OLC入園者/客単価増"
+      ],
+      "novelContribution": "ダイヘンEMS受注見通し450億/前年比2.6倍、富士電機エネルギー部門営業利益189→299億、OLC入園者/客単価増",
+      "decisionImpact": "6622/6504/4661を連想ではなく直接実需候補として採用。ただしPTSで6622降格",
+      "candidatesPromoted": [
+        "4661",
+        "6504",
+        "6622"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "EMS受注は将来見通しで確定売上ではない"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.58,
+      "dataLimitations": [
+        "EMS受注は将来見通しで確定売上ではない",
+        "市場コンセンサス・機関実フロー・寄り後板/VWAPは未取得"
+      ],
+      "sourcesUsed": [
+        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
+        "https://www.fujielectric.co.jp/ir/library/detail/summary.html",
+        "https://www.daihen.co.jp/ir/summary_pdf/2026_1029_gyosekiyosou.pdf",
+        "https://www.daihen.co.jp/newinfo_2026/news_260916.html"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "backfilled": false,
+  "activitySaveFailure": false,
+  "sourceMemo": "investment-company/decision-memos/2026-10-30/daytrade.md",
+  "evidenceGap": [
+    "2026-10-30 07:30市場情報部の正規原本・activity未確認（同時刻の独立実行を証明できない）",
+    "当日テーマ研究の独立原本未確認。今回のテーマ研究は単一実行からの再構成",
+    "10/29 close-reviewで指摘された10/28 TOPIX誤記の元ファイル訂正は今回対象外",
+    "初値後10分の実測分足・VWAP・板・スプレッド、実約定履歴は寄り前には未取得",
+    "機関実フローと市場コンセンサス未取得",
+    "CME/大阪先物の10/30朝の信頼できる同時刻値未確認（数値を記載しない）",
+    "holdings=10/14、performance-summary=10/05、watchlist=10/02で陳腐化",
+    "保有株の現在数量・平均取得は10/14以降未確認"
+  ],
+  "saveAudit": {
+    "verifiedPrimaryPaths": [],
+    "verifiedOptionalPaths": [
+      "investment-company/market-intelligence/2026-10-30.json",
+      "investment-company/hr/activity/2026-10-30/market-intelligence.json",
+      "investment-company/theme-research/2026-10-30/summary.json",
+      "investment-company/market-intelligence/latest.json"
+    ],
+    "failedPaths": [],
+    "retryResults": []
+  }
+}
