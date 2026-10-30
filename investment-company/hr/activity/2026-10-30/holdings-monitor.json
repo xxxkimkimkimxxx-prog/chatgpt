@@ -2067,6 +2067,510 @@
         "https://s.kabutan.jp/stocks/5016/historical_margins/daily",
         "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-10-30T14:00:00+09:00",
+      "runAtJST": "2026-10-30T14:02:49+09:00",
+      "marketDate": "2026-10-30",
+      "marketOpen": true,
+      "status": "intraday_quotes_non_synchronous",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST (iSPEED screenshots; after close)",
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "currentPriceYen": 114,
+          "priceAsOfJST": "2026-10-30T13:48:00+09:00",
+          "priceSource": "https://s.kabutan.jp/stocks/2926",
+          "unrealizedPnlYen": -5000,
+          "deltaFromPreviousRunYen": -1000,
+          "dayOpenYen": 107,
+          "dayHighYen": 124,
+          "dayLowYen": 107,
+          "volumeShares": 2458100,
+          "turnoverYen": 288000000,
+          "turnoverRoundedToMillionYen": true,
+          "vwapYen": 117.18,
+          "vwapAsOfJST": "2026-10-30T13:48:00+09:00 (page snapshot; may differ from trade time)",
+          "volumePriceTimeNotGuaranteedSame": true,
+          "supportYen": [
+            107,
+            105
+          ],
+          "resistanceYen": [
+            117.18,
+            119,
+            124
+          ],
+          "credit": {
+            "referenceDate": "2026-10-28",
+            "buyShares": 397100,
+            "sellShares": 34400,
+            "ratio": 11.54,
+            "buyChangeFromPriorDay": 0,
+            "sellChangeFromPriorDay": -3700,
+            "publicationDate": "2026-10-30までに株探日次信用残ページで掲載確認（初回公表日時未確認）",
+            "unchangedFromPreviousRun": true
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "朝の高値124円から114円へ反落しVWAP117.18円下",
+            "出来高は増加したが107～108円突破後の支持線化が未確認"
+          ],
+          "invalidatingCondition": "107円割れ、次に105円割れ",
+          "sources": [
+            "https://s.kabutan.jp/stocks/2926",
+            "https://s.kabutan.jp/stocks/2926/historical_margins/daily"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "currentPriceYen": 27,
+          "priceAsOfJST": "2026-10-30T13:11:00+09:00",
+          "priceSource": "https://s.kabutan.jp/stocks/4597",
+          "unrealizedPnlYen": -4980,
+          "deltaFromPreviousRunYen": 0,
+          "dayOpenYen": 29,
+          "dayHighYen": 29,
+          "dayLowYen": 27,
+          "volumeShares": 92879100,
+          "turnoverYen": 2592000000,
+          "turnoverRoundedToMillionYen": true,
+          "vwapYen": 27.91,
+          "vwapAsOfJST": "2026-10-30T13:11:00+09:00 (page snapshot; may differ from trade time)",
+          "volumePriceTimeNotGuaranteedSame": true,
+          "supportYen": [
+            27
+          ],
+          "resistanceYen": [
+            27.91,
+            29,
+            30
+          ],
+          "credit": {
+            "referenceDate": "2026-10-28",
+            "buyShares": 21786600,
+            "sellShares": 5112400,
+            "ratio": 4.26,
+            "buyChangeFromPriorDay": 2511100,
+            "sellChangeFromPriorDay": -861300,
+            "publicationDate": "2026-10-30までに株探日次信用残ページで掲載確認（初回公表日時未確認）",
+            "unchangedFromPreviousRun": true
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "当日安値27円近辺でVWAP27.91円を下回る",
+            "10/28信用買い残が前日比251.11万株増加"
+          ],
+          "invalidatingCondition": "27円割れ",
+          "sources": [
+            "https://s.kabutan.jp/stocks/4597",
+            "https://s.kabutan.jp/stocks/4597/historical_margins/daily"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "currentPriceYen": 2964,
+          "priceAsOfJST": "2026-10-30T13:55:00+09:00",
+          "priceSource": "https://finance.yahoo.co.jp/quote/5016.T",
+          "unrealizedPnlYen": -146400,
+          "deltaFromPreviousRunYen": 3300,
+          "dayOpenYen": 3020,
+          "dayHighYen": 3050,
+          "dayLowYen": 2915,
+          "volumeShares": 11115200,
+          "turnoverYen": 33055759000,
+          "turnoverRoundedToMillionYen": false,
+          "vwapYen": 2974.73,
+          "vwapAsOfJST": "2026-10-30T13:18:00+09:00",
+          "volumePriceTimeNotGuaranteedSame": true,
+          "supportYen": [
+            2915,
+            2876
+          ],
+          "resistanceYen": [
+            2974.73,
+            2985.5,
+            3045,
+            3050
+          ],
+          "credit": {
+            "referenceDate": "2026-10-28",
+            "buyShares": 21246400,
+            "sellShares": 752400,
+            "ratio": 28.24,
+            "buyChangeFromPriorDay": -330800,
+            "sellChangeFromPriorDay": 61400,
+            "publicationDate": "2026-10-30までに株探日次信用残ページで掲載確認（初回公表日時未確認）",
+            "unchangedFromPreviousRun": true
+          },
+          "institutionalShort": {
+            "latestCalculationDate": "2026-10-28",
+            "carryForwardThrough": "2026-10-29",
+            "aggregateShares": 49893968,
+            "aggregatePct": 5.24,
+            "previousDate": "2026-10-27",
+            "previousPct": 5.31,
+            "changePp": -0.07,
+            "reportingInstitutions": 6,
+            "previousReportPopulationNotComparable": true,
+            "source": "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E"
+          },
+          "sectorRelativeStrengthToday": [
+            {
+              "code": "5016",
+              "name": "JX金属",
+              "pct": -5.93,
+              "time": "13:55"
+            },
+            {
+              "code": "5713",
+              "name": "住友金属鉱山",
+              "pct": -4.05,
+              "time": "13:39"
+            },
+            {
+              "code": "5803",
+              "name": "フジクラ",
+              "pct": -6.08,
+              "time": "13:42"
+            },
+            {
+              "code": "5801",
+              "name": "古河電工",
+              "pct": -7.41,
+              "time": "13:34"
+            },
+            {
+              "code": "6857",
+              "name": "アドバンテスト",
+              "pct": -5.83,
+              "time": "13:25"
+            }
+          ],
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "前日安値3045円と10/28安値2985.5円を割り込み安値2915円を記録",
+            "13:55現在2964円は13:18時点VWAP2974.73円下",
+            "信用買い残減少も2124.64万株・倍率28.24倍と依然高水準"
+          ],
+          "invalidatingCondition": "2915円割れ、次に2876円割れ",
+          "sources": [
+            "https://s.kabutan.jp/stocks/5016",
+            "https://s.kabutan.jp/stocks/5016/historical_margins/daily",
+            "https://finance.yahoo.co.jp/quote/5016.T",
+            "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "currentPriceYen": 751,
+          "priceAsOfJST": "2026-10-30T13:36:00+09:00",
+          "priceSource": "https://s.kabutan.jp/stocks/5027",
+          "unrealizedPnlYen": -36396,
+          "deltaFromPreviousRunYen": -6600,
+          "dayOpenYen": 755,
+          "dayHighYen": 778,
+          "dayLowYen": 751,
+          "volumeShares": 238000,
+          "turnoverYen": 182000000,
+          "turnoverRoundedToMillionYen": true,
+          "vwapYen": 763.76,
+          "vwapAsOfJST": "2026-10-30T13:36:00+09:00 (page snapshot; may differ from trade time)",
+          "volumePriceTimeNotGuaranteedSame": true,
+          "supportYen": [
+            751,
+            750
+          ],
+          "resistanceYen": [
+            763.76,
+            778
+          ],
+          "credit": {
+            "referenceDate": "2026-10-28",
+            "buyShares": 1720700,
+            "sellShares": 0,
+            "ratio": null,
+            "buyChangeFromPriorDay": 506400,
+            "sellChangeFromPriorDay": 0,
+            "publicationDate": "2026-10-30までに株探日次信用残ページで掲載確認（初回公表日時未確認）",
+            "unchangedFromPreviousRun": true
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "13:34に751円へ当日安値更新しVWAP763.76円下",
+            "10/28信用買い残が前日比50.64万株（約41.7%）増加"
+          ],
+          "invalidatingCondition": "750円割れ",
+          "sources": [
+            "https://s.kabutan.jp/stocks/5027",
+            "https://s.kabutan.jp/stocks/5027/historical_margins/daily"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "currentPriceYen": 137,
+          "priceAsOfJST": "2026-10-30T13:17:00+09:00",
+          "priceSource": "https://s.kabutan.jp/stocks/8518",
+          "unrealizedPnlYen": -5000,
+          "deltaFromPreviousRunYen": 200,
+          "dayOpenYen": 136,
+          "dayHighYen": 138,
+          "dayLowYen": 136,
+          "volumeShares": 6700,
+          "turnoverYen": 1000000,
+          "turnoverRoundedToMillionYen": true,
+          "vwapYen": 136.48,
+          "vwapAsOfJST": "2026-10-30T13:17:00+09:00 (page snapshot; may differ from trade time)",
+          "volumePriceTimeNotGuaranteedSame": true,
+          "supportYen": [
+            136
+          ],
+          "resistanceYen": [
+            138,
+            139
+          ],
+          "credit": {
+            "referenceDate": "2026-10-28",
+            "buyShares": 1563300,
+            "sellShares": 0,
+            "ratio": null,
+            "buyChangeFromPriorDay": 3500,
+            "sellChangeFromPriorDay": 0,
+            "publicationDate": "2026-10-30までに株探日次信用残ページで掲載確認（初回公表日時未確認）",
+            "unchangedFromPreviousRun": true
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "出来高6700株・約定19回と極端に流動性が低い",
+            "139円突破や出来高増を伴う反転確認なし"
+          ],
+          "invalidatingCondition": "136円割れ",
+          "sources": [
+            "https://s.kabutan.jp/stocks/8518",
+            "https://s.kabutan.jp/stocks/8518/historical_margins/daily"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "currentPriceYen": 173.3,
+          "priceAsOfJST": "2026-10-30T13:46:00+09:00",
+          "priceSource": "https://s.kabutan.jp/stocks/9432",
+          "unrealizedPnlYen": -700,
+          "deltaFromPreviousRunYen": 20,
+          "dayOpenYen": 172.7,
+          "dayHighYen": 174.1,
+          "dayLowYen": 172.6,
+          "volumeShares": 86347800,
+          "turnoverYen": 14966000000,
+          "turnoverRoundedToMillionYen": true,
+          "vwapYen": 173.32,
+          "vwapAsOfJST": "2026-10-30T13:46:00+09:00 (page snapshot; may differ from trade time)",
+          "volumePriceTimeNotGuaranteedSame": true,
+          "supportYen": [
+            172.6,
+            171.5
+          ],
+          "resistanceYen": [
+            174.1,
+            174.6
+          ],
+          "credit": {
+            "referenceDate": "2026-10-28",
+            "buyShares": 80126300,
+            "sellShares": 14318900,
+            "ratio": 5.6,
+            "buyChangeFromPriorDay": 1680100,
+            "sellChangeFromPriorDay": -375100,
+            "publicationDate": "2026-10-30までに株探日次信用残ページで掲載確認（初回公表日時未確認）",
+            "unchangedFromPreviousRun": true
+          },
+          "institutionalShort": null,
+          "sectorRelativeStrengthToday": null,
+          "averagingDecision": "ナンピン見送り",
+          "averagingReasons": [
+            "VWAP173.32円近辺で明確な上抜け定着なし",
+            "10/28信用買い残+168.01万株、信用倍率5.60倍へ悪化"
+          ],
+          "invalidatingCondition": "172.6円割れ",
+          "sources": [
+            "https://s.kabutan.jp/stocks/9432",
+            "https://s.kabutan.jp/stocks/9432/historical_margins/daily"
+          ]
+        }
+      ],
+      "unrealizedPnlYen": -198476,
+      "previousScheduledRunPnlYen": -194396,
+      "deltaFromPreviousScheduledRunYen": -4080,
+      "valuationMethod": "10/30 13:11～13:55の非同時点の東証場中価格で算出。表示平均取得単価使用、税手数料除外。",
+      "jx": {
+        "state": "信用整理進行中",
+        "previousState": "信用整理進行中",
+        "stateChanged": false,
+        "stateProvisional": true,
+        "currentPriceYen": 2964,
+        "currentPnlYen": -146400,
+        "previousCloseYen": 3151,
+        "changeFromPreviousCloseYen": -187,
+        "changeFromPreviousClosePct": -5.93,
+        "dayOpenYen": 3020,
+        "dayHighYen": 3050,
+        "dayLowYen": 2915,
+        "volumeShares": 11115200,
+        "turnoverYen": 33055759000,
+        "vwapYen": 2974.73,
+        "vwapAsOfJST": "2026-10-30T13:18:00+09:00",
+        "credit": {
+          "referenceDate": "2026-10-28",
+          "buyShares": 21246400,
+          "sellShares": 752400,
+          "ratio": 28.24,
+          "buyChangeFromPriorDay": -330800,
+          "sellChangeFromPriorDay": 61400,
+          "publicationDate": "2026-10-30までに株探日次信用残ページで掲載確認（初回公表日時未確認）",
+          "unchangedFromPreviousRun": true,
+          "previousReferenceDate": "2026-10-27",
+          "previousBuyShares": 21577200,
+          "previousSellShares": 691000,
+          "previousRatio": 31.23
+        },
+        "institutionalShort": {
+          "latestCalculationDate": "2026-10-28",
+          "carryForwardThrough": "2026-10-29",
+          "aggregateShares": 49893968,
+          "aggregatePct": 5.24,
+          "previousDate": "2026-10-27",
+          "previousPct": 5.31,
+          "changePp": -0.07,
+          "reportingInstitutions": 6,
+          "previousReportPopulationNotComparable": true,
+          "source": "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E"
+        },
+        "sectorRelativeStrengthToday": [
+          {
+            "code": "5016",
+            "name": "JX金属",
+            "pct": -5.93,
+            "time": "13:55"
+          },
+          {
+            "code": "5713",
+            "name": "住友金属鉱山",
+            "pct": -4.05,
+            "time": "13:39"
+          },
+          {
+            "code": "5803",
+            "name": "フジクラ",
+            "pct": -6.08,
+            "time": "13:42"
+          },
+          {
+            "code": "5801",
+            "name": "古河電工",
+            "pct": -7.41,
+            "time": "13:34"
+          },
+          {
+            "code": "6857",
+            "name": "アドバンテスト",
+            "pct": -5.83,
+            "time": "13:25"
+          }
+        ],
+        "forcedLiquidationCauseConfirmed": false,
+        "creditUnwinding": "10/28時点信用買残は前日比330800株減少。ただし当日10/30の信用残は未公表。",
+        "forcedSellingAbsorption": "2915円から49円戻したがVWAP2974.73円未回復。追証・強制決済由来の投げ売りか不明、吸収完了は認定不可。",
+        "trend": "前日反発後に3045円、2985.5円を下抜け。短期反転未確認、下落トレンド継続を警戒。",
+        "averagingDecision": "ナンピン見送り",
+        "watchPricesYen": {
+          "support": [
+            2915,
+            2876
+          ],
+          "resistance": [
+            2974.73,
+            2985.5,
+            3045,
+            3050
+          ]
+        },
+        "stateReasons": [
+          "10/28信用買残は21246400株へ減少したが倍率28.24倍と高水準",
+          "10/30は前日安値3045円を割り込み2915円まで下落、13:55株価2964円は13:18VWAP2974.73円下",
+          "関連4銘柄中2銘柄に相対優位、2銘柄に劣後。反転・需給改善の複数条件未達"
+        ]
+      },
+      "audit": {
+        "previousScheduledRunRecordFound": true,
+        "previousScheduledRunAtJST": "2026-10-30T13:00:00+09:00",
+        "previousRunAtJST": "2026-10-30T13:01:05+09:00",
+        "previousDeliveryConfirmed": false,
+        "notificationEnabled": false,
+        "holdingsStale": true,
+        "holdingsAgeDays": 16,
+        "positionCountChanged": false,
+        "missing": [
+          "10/14以降の実売買反映確認",
+          "10/29以降の全銘柄日次信用残",
+          "全銘柄の最新移動平均線と出来高集中帯",
+          "JX以外の機関空売り差分と定量的同業比較",
+          "場中価格・VWAP・出来高の同時刻スナップショット",
+          "外部通知配信証跡"
+        ],
+        "notes": [
+          "前回13時予定分の実行記録13:01:05を確認",
+          "JX信用残は10/28公表値据え置き、機関空売りは10/28計算分まで、10/29は繰越",
+          "株探とYahooの非同時点価格を使用、リアルタイム同時評価ではない"
+        ]
+      },
+      "sources": [
+        "https://s.kabutan.jp/stocks/2926",
+        "https://s.kabutan.jp/stocks/2926/historical_margins/daily",
+        "https://s.kabutan.jp/stocks/4597",
+        "https://s.kabutan.jp/stocks/4597/historical_margins/daily",
+        "https://s.kabutan.jp/stocks/5016",
+        "https://s.kabutan.jp/stocks/5016/historical_margins/daily",
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://kikan.watch/stocks/5016-JX%E9%87%91%E5%B1%9E",
+        "https://s.kabutan.jp/stocks/5027",
+        "https://s.kabutan.jp/stocks/5027/historical_margins/daily",
+        "https://s.kabutan.jp/stocks/8518",
+        "https://s.kabutan.jp/stocks/8518/historical_margins/daily",
+        "https://s.kabutan.jp/stocks/9432",
+        "https://s.kabutan.jp/stocks/9432/historical_margins/daily",
+        "https://s.kabutan.jp/stocks/5713",
+        "https://s.kabutan.jp/stocks/5803",
+        "https://s.kabutan.jp/stocks/5801",
+        "https://s.kabutan.jp/stocks/6857"
+      ]
     }
   ]
 }
