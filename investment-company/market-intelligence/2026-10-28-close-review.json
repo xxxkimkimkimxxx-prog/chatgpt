@@ -18,10 +18,10 @@
     },
     "topix": {
       "previousClose": 3997.37,
-      "close": 3996.53,
-      "change": -0.84,
-      "changePct": -0.02,
-      "source": "https://kr.investing.com/indices/topix-historical-data"
+      "close": 3991.71,
+      "change": -5.66,
+      "changePct": -0.14,
+      "source": "https://jp.investing.com/indices/topix-historical-data"
     },
     "breadth": {
       "primeAdvancers": 431,
@@ -225,7 +225,7 @@
   "rootCauses": [
     {
       "tag": "地合い/指数偏重",
-      "finding": "日経+1.08%だがTOPIX-0.02%、プライム値下がり1092対値上がり431。No.7の指数偏重警告が妥当"
+      "finding": "日経+1.08%だがTOPIX-0.14%、プライム値下がり1092対値上がり431。No.7の指数偏重警告が妥当"
     },
     {
       "tag": "織り込み/寄り天",
@@ -252,5 +252,26 @@
   "actualTradeWinRate": null,
   "actualMFE": null,
   "actualMAE": null,
-  "backfilled": false
+  "backfilled": false,
+  "correctionAudit": {
+    "correctedAt": "2026-10-30 16:30 JST",
+    "correctedByRoleIds": [
+      3,
+      26,
+      31
+    ],
+    "original": {
+      "topixClose": 3996.53,
+      "change": -0.84,
+      "changePct": -0.02
+    },
+    "corrected": {
+      "topixClose": 3991.71,
+      "change": -5.66,
+      "changePct": -0.14
+    },
+    "source": "https://jp.investing.com/indices/topix-historical-data",
+    "reason": "10/29人事監査で誤記検出。10/30に元データを訂正",
+    "backfilled": false
+  }
 }
