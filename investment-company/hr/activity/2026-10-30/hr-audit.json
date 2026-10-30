@@ -1053,9 +1053,9 @@
       "evidenceGap": true
     },
     {
-      "code": "TOPIX_20261028_SOURCE_UNCORRECTED",
-      "detail": "10/28 TOPIX元レビューの3996.53は誤値。正値3991.71、元ファイル訂正未完了",
-      "evidenceGap": true
+      "code": "TOPIX_20261028_SOURCE_CORRECTED",
+      "detail": "10/28 TOPIX元レビューを3991.71へ訂正済み。履歴を保存",
+      "evidenceGap": false
     },
     {
       "code": "INTRADAY_AND_EXECUTION_MISSING",
