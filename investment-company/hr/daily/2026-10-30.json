@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-30",
+  "asOf": "2026-10-30 16:30 JST",
+  "session": "hr-daily",
+  "focus": "人事評価・組織改善",
+  "weeklyReviewExecuted": false,
+  "weeklyReviewReason": "金曜日のため日次監査。週次評価は次の月曜日",
+  "baselineWeek": "2026-W43",
+  "hrSummary": {
+    "totalRoles": 34,
+    "rolesWithOpportunity": 25,
+    "rolesWithoutOpportunity": 9,
+    "evidenceRecords": 25,
+    "materialNoContributionRoles": [
+      5,
+      28
+    ],
+    "topContributors": [
+      26,
+      22,
+      23,
+      24,
+      25,
+      29,
+      34
+    ],
+    "improvementTargets": [
+      1,
+      3,
+      9,
+      15,
+      18,
+      22,
+      29,
+      31
+    ],
+    "formalPersonnelChanges": "none",
+    "notes": "23件の寄り前役割別分析記録＋No.26/31の当日監査。独立AI社員の実行証明ではない。週次暫定点数維持、日次点数なし"
+  },
+  "performanceEvidence": {
+    "candidateCount": 4,
+    "positivePreviousCloseReturnCount": 3,
+    "positiveOpenToCloseReturnCount": 1,
+    "actualTradeVerifiedCount": 0,
+    "entryConditionVerifiedCount": 0,
+    "actualTradeWinRate": null,
+    "actualPnl": null,
+    "candidates": [
+      {
+        "code": "4661",
+        "name": "オリエンタルランド",
+        "rank": 1,
+        "previousCloseReturnPct": 8.45,
+        "openToCloseReturnPct": -0.35,
+        "entryConditionVerified": null,
+        "tradeOutcomeVerdict": "検証不能"
+      },
+      {
+        "code": "9101",
+        "name": "日本郵船",
+        "rank": 2,
+        "previousCloseReturnPct": 5.55,
+        "openToCloseReturnPct": 1.38,
+        "entryConditionVerified": null,
+        "tradeOutcomeVerdict": "検証不能"
+      },
+      {
+        "code": "6504",
+        "name": "富士電機",
+        "rank": 3,
+        "previousCloseReturnPct": -7.7,
+        "openToCloseReturnPct": -2.02,
+        "entryConditionVerified": null,
+        "tradeOutcomeVerdict": "検証不能"
+      },
+      {
+        "code": "6622",
+        "name": "ダイヘン",
+        "rank": 4,
+        "previousCloseReturnPct": 1.48,
+        "openToCloseReturnPct": -2.63,
+        "entryConditionVerified": null,
+        "tradeOutcomeVerdict": "検証不能"
+      }
+    ]
+  },
+  "nextDayImprovementActions": [
+    "優先1：No.3/31の原本・数値訂正の完了確認ゲートを作る",
+    "優先2：No.15/16/18/26の分足・VWAP・板・約定条件ログを共同仕様化する",
+    "優先3：No.1/22/25/29は6504失敗と9101成功の双方でリスク警告の重みを校正する",
+    "正式な統合・降格・廃止は4週以上の評価または十分な案件数とユーザー承認が必要"
+  ],
+  "operationalIssues": [
+    {
+      "code": "0730_ORIGINAL_MISSING",
+      "detail": "07:30市場情報部原本は08:00単一実行からの復元のみ",
+      "evidenceGap": true
+    },
+    {
+      "code": "THEME_BACKFILLED",
+      "detail": "当日テーマ研究はbackfilled=trueで独立実行未確認",
+      "evidenceGap": true
+    },
+    {
+      "code": "TOPIX_20261028_SOURCE_UNCORRECTED",
+      "detail": "10/28 TOPIX元レビューの3996.53は誤値。正値3991.71、元ファイル訂正未完了",
+      "evidenceGap": true
+    },
+    {
+      "code": "INTRADAY_AND_EXECUTION_MISSING",
+      "detail": "分足・VWAP・板・実注文・約定なし。取引勝率/MFE/MAEは算定不能",
+      "evidenceGap": true
+    },
+    {
+      "code": "STALE_PERFORMANCE",
+      "detail": "performance-summary最終更新 2026-10-05 19:32 JST",
+      "evidenceGap": true
+    }
+  ],
+  "sourcePaths": [
+    "investment-company/decision-memos/2026-10-30/daytrade.md",
+    "investment-company/hr/activity/2026-10-30/daytrade.json",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/evaluation-policy.md",
+    "https://s.kabutan.jp/stocks/4661/historical_prices/daily",
+    "https://s.kabutan.jp/stocks/9101/historical_prices/daily",
+    "https://s.kabutan.jp/stocks/6504/historical_prices/daily",
+    "https://s.kabutan.jp/stocks/6622/historical_prices/daily"
+  ],
+  "backfilled": false,
+  "saveAudit": {
+    "status": "pending_verification",
+    "verifiedPaths": [],
+    "failedPaths": []
+  }
+}
