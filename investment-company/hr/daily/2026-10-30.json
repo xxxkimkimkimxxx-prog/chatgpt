@@ -102,9 +102,9 @@
       "evidenceGap": true
     },
     {
-      "code": "TOPIX_20261028_SOURCE_UNCORRECTED",
-      "detail": "10/28 TOPIX元レビューの3996.53は誤値。正値3991.71、元ファイル訂正未完了",
-      "evidenceGap": true
+      "code": "TOPIX_20261028_SOURCE_CORRECTED",
+      "detail": "10/28 TOPIX誤値3996.53を3991.71へ元レビューで訂正済み。訂正履歴を記録",
+      "evidenceGap": false
     },
     {
       "code": "INTRADAY_AND_EXECUTION_MISSING",
@@ -129,8 +129,17 @@
   ],
   "backfilled": false,
   "saveAudit": {
-    "status": "pending_verification",
-    "verifiedPaths": [],
-    "failedPaths": []
+    "status": "verified_by_fetch_file",
+    "verifiedPaths": [
+      "investment-company/market-intelligence/2026-10-30-close-review.json",
+      "investment-company/hr/activity/2026-10-30/market-close-review.json",
+      "investment-company/hr/activity/2026-10-30/performance-review.json",
+      "investment-company/hr/activity/2026-10-30/hr-audit.json",
+      "investment-company/hr/daily/2026-10-30.json"
+    ],
+    "failedPaths": [],
+    "verifiedCount": 5,
+    "unverifiedCount": 0,
+    "verificationDate": "2026-10-30"
   }
 }
