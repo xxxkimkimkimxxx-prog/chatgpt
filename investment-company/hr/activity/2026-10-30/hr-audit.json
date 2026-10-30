@@ -1,0 +1,1073 @@
+{
+  "date": "2026-10-30",
+  "asOf": "2026-10-30 16:30 JST",
+  "agentId": 31,
+  "title": "人事評価・組織開発担当",
+  "purpose": "34役割の活動機会・証拠・独自貢献・判断影響・見逃し・重複・改善行動を監査",
+  "totalRoles": 34,
+  "rolesWithOpportunity": 25,
+  "rolesWithoutOpportunity": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    17,
+    19,
+    27,
+    30
+  ],
+  "totalEvidenceRecords": 25,
+  "totalOpportunityRecords": 25,
+  "countMethod": "23件の寄り前役割別記録＋No.26の引け後検証1件＋No.31の監査1件。同一役割の他の再構成記録は重複加算しない",
+  "noMaterialContributionRoleIds": [
+    5,
+    28
+  ],
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "department": "経営企画・人材開発室",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=1"
+      ],
+      "keyContribution": "No.34実需・No.29利益品質・No.22/25ギャップ警告を順位へ反映。6504を3位に残した妥当性に課題",
+      "novelContributionVerified": true,
+      "decisionImpact": "寄り前買い未承認",
+      "risksFlagged": [
+        "順位反映が曖昧にならないよう根拠を明文化"
+      ],
+      "errorsOrMisses": [
+        "6504の順位に弱い市場反応のリスクを十分反映できず"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "リスク警告の採否を順位差分・拒否条件に記録。6504順位の事前合理性を再検証",
+      "baselineWeeklyScore": 76,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "department": "経営企画・人材開発室",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=2"
+      ],
+      "keyContribution": "未約定を実損益・実勝率に換算せず、ユーザー最終決裁を維持",
+      "novelContributionVerified": true,
+      "decisionImpact": "未承認・注文なし",
+      "risksFlagged": [
+        "根拠なき数値と過去の独立稼働主張を禁止"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 86,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "department": "経営企画・人材開発室",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=3"
+      ],
+      "keyContribution": "ダイヘン株式分割・10/28 TOPIX誤値を検出したが元データ未訂正",
+      "novelContributionVerified": true,
+      "decisionImpact": "データ欠損を明示",
+      "risksFlagged": [
+        "元ファイルTOPIX訂正は今回未実施"
+      ],
+      "errorsOrMisses": [
+        "10/28 TOPIX元ファイルの訂正未完了"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "10/28 TOPIX元ファイル訂正と指数2系統照合を実装",
+      "baselineWeeklyScore": 70,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "department": "市場情報部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=4"
+      ],
+      "keyContribution": "米ハイテク下落と日銀イベントを警戒。日中個別反応の因果は未確定",
+      "novelContributionVerified": true,
+      "decisionImpact": "セクター全面高仮説を棄却",
+      "risksFlagged": [
+        "先物同時刻値未取得"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 78,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "department": "市場情報部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=5"
+      ],
+      "keyContribution": "当日固有の金利・為替・商品からの順位変更証拠なし",
+      "novelContributionVerified": false,
+      "decisionImpact": "金利・原油起点の順位変更なし",
+      "risksFlagged": [
+        "独自の実測寄与なし"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        4,
+        21
+      ],
+      "noMaterialContribution": true,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "当日固有の為替/商品要因がない場合はnoMaterialContributionを維持",
+      "baselineWeeklyScore": 69,
+      "baselineGrade": "C",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "department": "市場情報部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=6"
+      ],
+      "keyContribution": "米AI設備投資採算懸念による半導体集中回避の根拠を提供",
+      "novelContributionVerified": true,
+      "decisionImpact": "6857等の継続上昇を本命から外す",
+      "risksFlagged": [
+        "日本株への翌日波及は未確定"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 78,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "department": "市場情報部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=7"
+      ],
+      "keyContribution": "指数とセクターを分離して監視。引け時点の業種別全データは未取得",
+      "novelContributionVerified": true,
+      "decisionImpact": "同業追随を全候補で必須",
+      "risksFlagged": [
+        "10/30市場内部データは未取得"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 75,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "department": "市場情報部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=8"
+      ],
+      "keyContribution": "4社の決算・業績修正材料を抽出。6504の市場反応は弱く価格予測とは別",
+      "novelContributionVerified": true,
+      "decisionImpact": "新規決算4銘柄を候補化",
+      "risksFlagged": [
+        "コンセンサス未取得"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 88,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "department": "市場情報部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=9"
+      ],
+      "keyContribution": "PTS出来高と価格を提示。9101は薄いPTSでも上昇し警告の偽陽性を検証",
+      "novelContributionVerified": true,
+      "decisionImpact": "薄い9101と過熱6622を減点",
+      "risksFlagged": [
+        "PTSは現物の約定可能価格ではない"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "PTS薄商い警告の偽陽性を9101で検証し閾値を再調整",
+      "baselineWeeklyScore": 73,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 10,
+      "title": "決算・業績担当",
+      "department": "ファンダメンタル調査部",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": null,
+      "baselineGrade": null,
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 11,
+      "title": "財務・キャッシュフロー担当",
+      "department": "ファンダメンタル調査部",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": null,
+      "baselineGrade": null,
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 12,
+      "title": "業界構造・競争優位担当",
+      "department": "ファンダメンタル調査部",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": null,
+      "baselineGrade": null,
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 13,
+      "title": "経営者・中期計画担当",
+      "department": "ファンダメンタル調査部",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": null,
+      "baselineGrade": null,
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 14,
+      "title": "バリュエーション・資本政策担当",
+      "department": "ファンダメンタル調査部",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": null,
+      "baselineGrade": null,
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "department": "戦術・テクニカル・執行部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=15"
+      ],
+      "keyContribution": "初値後10分・VWAP監視条件を設定したが実測分足なし",
+      "novelContributionVerified": true,
+      "decisionImpact": "初値形成後10分・VWAP二経路を必須",
+      "risksFlagged": [
+        "分足未取得"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "初値形成後10分の分足・VWAPを実測保存",
+      "baselineWeeklyScore": 67,
+      "baselineGrade": "C",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "department": "戦術・テクニカル・執行部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=16"
+      ],
+      "keyContribution": "現物売買代金とPTS流動性を分離。実際の板・スプレッド未取得",
+      "novelContributionVerified": true,
+      "decisionImpact": "6622/9101の板厚確認を厳格化",
+      "risksFlagged": [
+        "寄り板未取得"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        9,
+        22
+      ],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "板厚・スプレッド・現物売買代金の時系列取得を実装",
+      "baselineWeeklyScore": 82,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 17,
+      "title": "スイング・相対強度担当",
+      "department": "戦術・テクニカル・執行部",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": null,
+      "baselineGrade": null,
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "department": "戦術・テクニカル・執行部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=18"
+      ],
+      "keyContribution": "初動高値/VWAP条件を設計。成立時刻・失効時刻は未検証",
+      "novelContributionVerified": true,
+      "decisionImpact": "成行飛び付き禁止、約定時刻ログを要求",
+      "risksFlagged": [
+        "約定価格未確定"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "エントリー/見送り/撤退条件の成立・失効時刻を保存",
+      "baselineWeeklyScore": 65,
+      "baselineGrade": "C",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 19,
+      "title": "ポートフォリオ担当",
+      "department": "リスク管理部",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": null,
+      "baselineGrade": null,
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "department": "リスク管理部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=20"
+      ],
+      "keyContribution": "RR目標と計画損失式を示し、未確定の円建て損益を捏造せず",
+      "novelContributionVerified": true,
+      "decisionImpact": "損切り構造・ギャップ・スリッページを必須化",
+      "risksFlagged": [
+        "統計的期待利益は算定不能"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 79,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "department": "リスク管理部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=21"
+      ],
+      "keyContribution": "日銀決定と米ハイテク下落をイベントリスクに反映。損失回避の実証なし",
+      "novelContributionVerified": true,
+      "decisionImpact": "日銀発表前後のギャップを見送り条件へ",
+      "risksFlagged": [
+        "会合結果未公表"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 79,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "department": "リスク管理部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=22"
+      ],
+      "keyContribution": "6622大幅PTSと信用需給、9101薄いPTSを警告。6622失速は整合、9101上昇は偽陽性検証対象",
+      "novelContributionVerified": true,
+      "decisionImpact": "6622を4位、9101を条件付き2位",
+      "risksFlagged": [
+        "信用倍率は10/23の週次値"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "PTS警告の精度を6622の真陽性と9101の偽陽性で評価",
+      "baselineWeeklyScore": 89,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "department": "レッドチーム",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=23"
+      ],
+      "keyContribution": "GU後の寄り天・戻り売り仮説を提示。4661・6622で始値比下落と整合",
+      "novelContributionVerified": true,
+      "decisionImpact": "4銘柄すべてVWAP割れ/初動高値失敗で見送り",
+      "risksFlagged": [
+        "貸株可否は未確認"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 80,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "department": "レッドチーム",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=24"
+      ],
+      "keyContribution": "6504半導体減益・9101営業と経常の差・6622受注≠売上を指摘。6504下落は整合",
+      "novelContributionVerified": true,
+      "decisionImpact": "見かけの好決算で無条件昇格を禁止",
+      "risksFlagged": [
+        "市場期待差未取得"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 89,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "department": "レッドチーム",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=25"
+      ],
+      "keyContribution": "連続寄り天失敗を踏まえ6622を4位へ抑制。寄り後下落と整合",
+      "novelContributionVerified": true,
+      "decisionImpact": "2760/3778除外、6622を過熱で4位",
+      "risksFlagged": [
+        "分足未取得のため取引勝敗は不明"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 80,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 26,
+      "title": "トレード日誌・成績分析担当",
+      "department": "バックオフィス",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/market-intelligence/2026-10-30-close-review.json"
+      ],
+      "keyContribution": "4候補の前日比3/4上昇・始値比1/4上昇を分離。売買条件・約定の未検証を明示",
+      "novelContributionVerified": true,
+      "decisionImpact": "事後検証の方向的中と売買成功を分離",
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "始値・終値だけでなく約定可能性と条件成立を別フィールドで検証",
+      "baselineWeeklyScore": 88,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": true,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 27,
+      "title": "投資仮説・四半期レビュー担当",
+      "department": "バックオフィス",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": null,
+      "baselineGrade": null,
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "department": "市場情報部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=28"
+      ],
+      "keyContribution": "当日固有の機関実フローなし。新たな順位変更証拠なし",
+      "novelContributionVerified": false,
+      "decisionImpact": "機関買いを断定しない",
+      "risksFlagged": [
+        "独自の機関需給発見はなし"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "機関フローの取得可能範囲を明示し未取得を推測で補完しない",
+      "baselineWeeklyScore": 69,
+      "baselineGrade": "C",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "department": "ファンダメンタル調査部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=29"
+      ],
+      "keyContribution": "6504の弱いPTSと利益品質を認識したが3位の順位抑制が不十分。9101の利益内訳を区別",
+      "novelContributionVerified": true,
+      "decisionImpact": "9101/6504の順位を慎重にし、2914/4502を本命から除外",
+      "risksFlagged": [
+        "アナリストコンセンサス未取得"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "6504の利益品質/織り込み警告を候補順位へ定量的に反映",
+      "baselineWeeklyScore": 87,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 30,
+      "title": "オルタナティブデータ担当",
+      "department": "市場情報部",
+      "opportunityCount": 0,
+      "evidenceCount": 0,
+      "sourceEvidence": [],
+      "keyContribution": null,
+      "novelContributionVerified": false,
+      "decisionImpact": null,
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": null,
+      "evidenceGap": [
+        "当日の役割別評価機会なし（減点しない）"
+      ],
+      "improvementAction": "次回担当機会に一次情報と判断影響を保存",
+      "baselineWeeklyScore": 55,
+      "baselineGrade": "D",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 31,
+      "title": "人事評価・組織開発担当",
+      "department": "経営企画・人材開発室",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/hr-audit.json"
+      ],
+      "keyContribution": "34役割の証拠と活動機会を監査。元データ訂正と7:30原本欠損を未解決として残す",
+      "novelContributionVerified": true,
+      "decisionImpact": "改善対象と証拠欠損の監査",
+      "risksFlagged": [],
+      "errorsOrMisses": [
+        "朝原本欠損と指数誤値の予防統制が未完了"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "7:30原本の存在確認・読み戻し検証と誤値訂正完了確認を実装",
+      "baselineWeeklyScore": 77,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": true,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=32"
+      ],
+      "keyContribution": "米AI投資採算懸念・レジャー・蓄電池テーマを抽出",
+      "novelContributionVerified": true,
+      "decisionImpact": "AI連想より実需テーマへ重点を移した",
+      "risksFlagged": [
+        "一部記事は企業開示と区別"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        33,
+        34
+      ],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 76,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=33"
+      ],
+      "keyContribution": "電源設備・EMS・観光のバリューチェーンを整理",
+      "novelContributionVerified": true,
+      "decisionImpact": "直接受益と周辺連想を区別",
+      "risksFlagged": [
+        "未上場供給先の売上感応度は不明"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [
+        32,
+        34
+      ],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 75,
+      "baselineGrade": "B",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "opportunityCount": 1,
+      "evidenceCount": 1,
+      "sourceEvidence": [
+        "investment-company/hr/activity/2026-10-30/daytrade.json#agentId=34"
+      ],
+      "keyContribution": "4661来園者/客単価、6504電源設備、6622 EMS受注見通しを一次情報で確認。価格反応との乖離を監査",
+      "novelContributionVerified": true,
+      "decisionImpact": "6622/6504/4661を連想ではなく直接実需候補として採用。ただしPTSで6622降格",
+      "risksFlagged": [
+        "EMS受注は将来見通しで確定売上ではない"
+      ],
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "evidenceGap": [
+        "実際の売買条件成立・約定・VWAP・板履歴は未取得"
+      ],
+      "improvementAction": "役割固有の独自貢献と判断影響を次回記録",
+      "baselineWeeklyScore": 88,
+      "baselineGrade": "A",
+      "dailyScore": null,
+      "dailyGrade": "not_assigned_daily",
+      "formalAction": "none",
+      "backfilled": false,
+      "independentAgentProcessVerified": false
+    }
+  ],
+  "agent31IndependentReview": {
+    "reviewedByRoleIds": [
+      1,
+      2
+    ],
+    "independentProcessesVerified": false,
+    "review": "No.31の自己採点を禁止。No.1は証拠欠損の解消状況、No.2は未確認の独立稼働・実売買・保存成功を断定していないかを監査。No.31の本日点数は保留"
+  },
+  "previousWeekBaseline": "2026-W43",
+  "weeklyScoresUpdated": false,
+  "formalChanges": "none",
+  "organizationalRecommendations": [
+    "優先1：No.3/31の原本・数値訂正の完了確認ゲートを作る",
+    "優先2：No.15/16/18/26の分足・VWAP・板・約定条件ログを共同仕様化する",
+    "優先3：No.1/22/25/29は6504失敗と9101成功の双方でリスク警告の重みを校正する",
+    "正式な統合・降格・廃止は4週以上の評価または十分な案件数とユーザー承認が必要"
+  ],
+  "operationalIssues": [
+    {
+      "code": "0730_ORIGINAL_MISSING",
+      "detail": "07:30市場情報部原本は08:00単一実行からの復元のみ",
+      "evidenceGap": true
+    },
+    {
+      "code": "THEME_BACKFILLED",
+      "detail": "当日テーマ研究はbackfilled=trueで独立実行未確認",
+      "evidenceGap": true
+    },
+    {
+      "code": "TOPIX_20261028_SOURCE_UNCORRECTED",
+      "detail": "10/28 TOPIX元レビューの3996.53は誤値。正値3991.71、元ファイル訂正未完了",
+      "evidenceGap": true
+    },
+    {
+      "code": "INTRADAY_AND_EXECUTION_MISSING",
+      "detail": "分足・VWAP・板・実注文・約定なし。取引勝率/MFE/MAEは算定不能",
+      "evidenceGap": true
+    },
+    {
+      "code": "STALE_PERFORMANCE",
+      "detail": "performance-summary最終更新 2026-10-05 19:32 JST",
+      "evidenceGap": true
+    }
+  ],
+  "backfilled": false,
+  "independentAgentProcessesVerified": false
+}
