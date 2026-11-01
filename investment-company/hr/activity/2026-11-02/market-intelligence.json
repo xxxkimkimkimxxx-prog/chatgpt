@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-02",
+  "asOf": "2026-11-02 08:04 JST (調査開始・寄り前)",
+  "agentIds": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    28,
+    32,
+    33,
+    34
+  ],
+  "taskPerformed": "8:04以降のデイトレ委員会内で市場情報の代替調査。7:30原本の再現ではない",
+  "backfilled": true,
+  "original0730ExecutionVerified": false,
+  "sourcesUsed": [
+    "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+    "https://finance.yahoo.co.jp/quote/998407.O/history",
+    "https://finance.yahoo.co.jp/quote/998405.T/history",
+    "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+    "https://www.boj.or.jp/mopo/mpmdeci/state_2026/",
+    "https://www.jpx.co.jp/derivatives/rules/holidaytrading/",
+    "https://www.traders.co.jp/market_jp/earnings_revsions",
+    "https://finance.matsui.co.jp/news/633096/index",
+    "https://disclosure.catr.jp/companies/dc28e/47881/disclosures",
+    "https://s.kabutan.jp/stocks/4082",
+    "https://fusokk.co.jp/ir_cat/press-release",
+    "https://fusokk.co.jp/electronicmaterials/quartron-ultra-high-purity-colloidal-silica",
+    "https://disclosure.catr.jp/companies/f47c3/47999/tdnet/df9f0/790620",
+    "https://s.kabutan.jp/stocks/4368",
+    "https://www.avio.co.jp/company/ir/release.html",
+    "https://www.avio.co.jp/company/ir/library/tansin.html",
+    "https://www.avio.co.jp/company/outline/profile.html",
+    "https://s.kabutan.jp/stocks/6946",
+    "https://www.enplas.co.jp/ir/",
+    "https://www.enplas.co.jp/category/news/ir-news/",
+    "https://s.kabutan.jp/stocks/6961",
+    "investment-company/market-intelligence/2026-10-30-close-review.json"
+  ],
+  "evidenceGap": [
+    "2026-11-02 07:30市場情報部の正規原本と当該時間の独立実行証跡がない。2026-10-30 latest.jsonは前営業日の補完版",
+    "2026-11-02 当日テーマ研究の独立原本がない。以下のテーマ記録は本委員会の調査を出典付きで再構成したbackfill",
+    "2026-10-14以降の実保有株・注文/約定履歴未取得。6銘柄の現保有数量は未検証",
+    "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+    "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+    "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない",
+    "8:04時点の大阪先物日中取引(8:45開始)の同時刻価格は未確定。夜間最終6:00値のみ"
+  ]
+}
