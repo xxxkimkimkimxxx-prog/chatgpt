@@ -799,5 +799,13 @@
     "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない",
     "8:04時点の大阪先物日中取引(8:45開始)の同時刻価格は未確定。夜間最終6:00値のみ"
   ],
-  "activitySaveFailure": null
+  "activitySaveFailure": false,
+  "gitHubSaveAudit": {
+    "verifiedAt": "2026-11-02 08:00 JST run, after readback",
+    "verifiedCoreFiles": 3,
+    "verifiedTotalFiles": 7,
+    "unverifiedFiles": 0,
+    "verification": "fetch_file readback, date and key content verified",
+    "independentAgentProcessesVerified": false
+  }
 }
