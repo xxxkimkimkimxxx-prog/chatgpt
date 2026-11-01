@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-02",
+  "asOf": "2026-11-02 08:04 JST (調査開始・寄り前)",
+  "session": "market-intelligence-backfill-from-daytrade",
+  "backfilled": true,
+  "original0730ExecutionVerified": false,
+  "market": {
+    "date": "2026-11-02",
+    "asOf": "2026-11-02 08:04 JST (調査開始・寄り前)",
+    "previousJapan": {
+      "date": "2026-10-30",
+      "nikkeiClose": 63290.11,
+      "nikkeiChangePct": -2.12,
+      "topixClose": 3965.07,
+      "topixChangePct": -0.95
+    },
+    "usLastSession": {
+      "date": "2026-10-30",
+      "nasdaqChangePct": -2.86,
+      "sp500ChangePct": -1.82,
+      "dowChangePct": -1.09,
+      "soxChangePctApprox": -7.2,
+      "source": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/"
+    },
+    "osakaNikkeiFutures": {
+      "contract": "2026-12",
+      "tradeDate": "2026-11-02",
+      "lastVerified": 62420,
+      "at": "2026-11-02 06:00 JST (夜間最終参考値)",
+      "change": -1070,
+      "liveAt0804": null,
+      "source": "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/"
+    },
+    "boj": {
+      "date": "2026-10-30",
+      "policyRate": "1.25%据え置き（公表報道・公式公表文参照）",
+      "note": "日銀ETF売却ペース見直し資料も10/30に掲載。詳細影響は未定量"
+    },
+    "calendar": {
+      "nov3": "2026-11-03文化の日で東証現物休場、11/02は通常営業。翌現物営業日は11/04"
+    },
+    "stance": "米SOX-7.2%、日経先物夜間-1070円で地合いは強い逆風。Fresh Catalystを条件付き監視するが、現物寄り後のセクター一致・VWAP回復がなければ全候補ノートレード",
+    "sources": [
+      "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+      "https://finance.yahoo.co.jp/quote/998407.O/history",
+      "https://finance.yahoo.co.jp/quote/998405.T/history",
+      "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+      "https://www.boj.or.jp/mopo/mpmdeci/state_2026/",
+      "https://www.jpx.co.jp/derivatives/rules/holidaytrading/"
+    ]
+  },
+  "candidateCodes": [
+    "4082",
+    "4368",
+    "6946",
+    "6961"
+  ],
+  "sourceReport": "investment-company/decision-memos/2026-11-02/daytrade.md",
+  "evidenceGap": [
+    "2026-11-02 07:30市場情報部の正規原本と当該時間の独立実行証跡がない。2026-10-30 latest.jsonは前営業日の補完版",
+    "2026-11-02 当日テーマ研究の独立原本がない。以下のテーマ記録は本委員会の調査を出典付きで再構成したbackfill",
+    "2026-10-14以降の実保有株・注文/約定履歴未取得。6銘柄の現保有数量は未検証",
+    "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+    "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+    "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない",
+    "8:04時点の大阪先物日中取引(8:45開始)の同時刻価格は未確定。夜間最終6:00値のみ"
+  ]
+}
