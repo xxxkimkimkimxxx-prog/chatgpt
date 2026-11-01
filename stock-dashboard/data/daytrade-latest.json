@@ -1,338 +1,378 @@
 {
-  "date": "2026-10-30",
-  "asOf": "2026-10-30 07:56 JST（寄り前確認）",
+  "date": "2026-11-02",
+  "asOf": "2026-11-02 08:04 JST (調査開始・寄り前)",
   "committee": "daytrade",
   "finalDecisionMaker": "user",
   "newBuysApproved": false,
   "ordersPlaced": false,
   "independentAgentProcessesVerified": false,
   "market": {
-    "date": "2026-10-30",
-    "asOf": "2026-10-30 07:56 JST（寄り前確認）",
+    "date": "2026-11-02",
+    "asOf": "2026-11-02 08:04 JST (調査開始・寄り前)",
     "previousJapan": {
-      "nikkeiClose": 64659.47,
-      "topixClose": 4003.28,
-      "closeDate": "2026-10-29"
+      "date": "2026-10-30",
+      "nikkeiClose": 63290.11,
+      "nikkeiChangePct": -2.12,
+      "topixClose": 3965.07,
+      "topixChangePct": -0.95
     },
-    "usPreviousSession": {
-      "sessionDate": "2026-10-29",
-      "nasdaqPct": -1.37,
-      "sp500Pct": -0.3,
-      "dowPct": -0.25,
-      "semiconductorPctApprox": -1.4,
-      "notes": "Alphabet決算後のAI設備投資採算懸念でハイテク下落。Reuters 10/29"
+    "usLastSession": {
+      "date": "2026-10-30",
+      "nasdaqChangePct": -2.86,
+      "sp500ChangePct": -1.82,
+      "dowChangePct": -1.09,
+      "soxChangePctApprox": -7.2,
+      "source": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/"
+    },
+    "osakaNikkeiFutures": {
+      "contract": "2026-12",
+      "tradeDate": "2026-11-02",
+      "lastVerified": 62420,
+      "at": "2026-11-02 06:00 JST (夜間最終参考値)",
+      "change": -1070,
+      "liveAt0804": null,
+      "source": "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/"
     },
     "boj": {
-      "meeting": "2026-10-29〜30",
-      "statementDate": "2026-10-30",
-      "decisionBeforeRelease": "未公表",
-      "impact": "昼前後の政策発表と15:30会見で指数・円金利・為替の急変リスク"
+      "date": "2026-10-30",
+      "policyRate": "1.25%据え置き（公表報道・公式公表文参照）",
+      "note": "日銀ETF売却ペース見直し資料も10/30に掲載。詳細影響は未定量"
     },
-    "futures": {
-      "verifiedMorningQuote": null
+    "calendar": {
+      "nov3": "2026-11-03文化の日で東証現物休場、11/02は通常営業。翌現物営業日は11/04"
     },
-    "marketStance": "日銀イベント＋米AIハイテク売りを警戒。新規決算材料を優先、半導体全面反発の仮定は却下",
+    "stance": "米SOX-7.2%、日経先物夜間-1070円で地合いは強い逆風。Fresh Catalystを条件付き監視するが、現物寄り後のセクター一致・VWAP回復がなければ全候補ノートレード",
     "sources": [
-      "https://www.reuters.com/business/nasdaq-futures-slide-mixed-big-tech-results-test-ai-trade-2026-10-29/",
-      "https://www.boj.or.jp/en/about/calendar/index.htm"
+      "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+      "https://finance.yahoo.co.jp/quote/998407.O/history",
+      "https://finance.yahoo.co.jp/quote/998405.T/history",
+      "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+      "https://www.boj.or.jp/mopo/mpmdeci/state_2026/",
+      "https://www.jpx.co.jp/derivatives/rules/holidaytrading/"
     ]
   },
   "priorReview": {
-    "date": "2026-10-29",
-    "path": "investment-company/market-intelligence/2026-10-29-close-review.json",
-    "morningCandidates": 3,
-    "positiveVsPrevClose": 1,
+    "date": "2026-10-30",
+    "path": "investment-company/market-intelligence/2026-10-30-close-review.json",
+    "positiveVsPreviousClose": 3,
     "positiveVsOpen": 1,
     "actualTradesVerified": 0,
     "lessons": [
-      "2760は上方修正と増配でも前日比-7.23%・始値比-8.60%。薄いPTSと既存GU失速を順位に十分反映できなかった",
-      "3778は前日ストップ高後の反動で前日比-6.92%・始値比-1.22%。警告は有効だが約定条件の実測はできない",
-      "6857は方向整合も高値から失速。始値比上昇を実売買成功と誤認しない",
-      "10/28 TOPIXの元レビュー誤記は別途訂正が必要"
+      "10/30朝4候補は前日終値比上昇3/4、始値比上昇1/4、実取引の成立検証0/4。方向予測と約定可能な利益を分離",
+      "4661は+8.45%前日比でも始値比-0.35%、日中高値が始値。寄り天リスクを重視",
+      "9101はPTS2000株でも始値比+1.38%。PTS薄商いだけを一律除外しない。現物売買代金・板で判定",
+      "6504は上方修正・実需確認でも-7.70%前日比、始値比-2.02%。好材料と市場期待差の分離を強化",
+      "6622はPTS+9.37%でも始値比-2.63%。過熱と信用需給を順位に反映",
+      "10/30の市場指数終値はGitHub前日レビューでnullだったため、外部終値2ソースから補完。原本を改竄せず出典付きで当日分析へ反映",
+      "初値後10分、板、VWAP、実約定データがないため前日売買成績の実証は不能"
     ],
     "applied": [
-      "PTS夜間出来高と現物流動性を分離し、夜間薄商いの9101は順位を抑制",
-      "大幅GU期待と信用買い残が重い6622は実需を確認しても4位へ抑制",
-      "既知AI関連の6857・2760・3778は本命から外し新規の非AI決算・電力設備実需へ入替",
-      "指数・同業・初値後10分VWAPの一致を全候補で必須化",
-      "日銀結果発表前のイベントストレスを全候補に付加"
+      "No.29が弱いPTS・市場期待差で1944/285A/6920を除外",
+      "No.22が夜間PTSと現物流動性を分離し、現物板を条件に追加",
+      "No.23〜25が米SOX急落と寄り天反復を強気シナリオに反映",
+      "No.3が10/30日経/TOPIX終値を外部2系統で確認",
+      "No.34が企業一次情報の事業実体を確認、AI関連収益比率が不明な銘柄はテーマ加点を抑制"
     ]
   },
   "candidates": [
     {
       "rank": 1,
-      "code": "4661",
-      "name": "オリエンタルランド",
+      "code": "4082",
+      "name": "第一稀元素化学工業",
       "category": [
         "Fresh Catalyst",
         "Sector Alignment"
       ],
-      "prevClose": 3170,
-      "pts": 3300,
-      "ptsAt": "2026-10-29 23:58 JST",
-      "ptsVolume": 26100,
-      "ptsTurnoverJPY": 86000000,
-      "previousCashVolume": 7026900,
-      "previousCashTurnoverJPY": 22212000000,
-      "probability": 0.52,
-      "confidence": 0.6,
-      "rr": 1.9,
-      "material": "10/29通期経常予想1680.57→1957.84億円(+16.5%)。上期経常は予想比+34.0%。入園者・客単価増が会社開示で確認できる。",
-      "newsOrigin": "10/29会社業績修正・決算",
-      "directness": "高（入園者数と客単価が直接売上を形成）",
-      "earningsSensitivity": "通期経常+277.27億円。年間入園者見通し2800万→2850万人(+1.8%)。",
-      "expectationGap": "会社従来予想比+16.5%、市場コンセンサス未取得",
-      "pricedIn": "PTS+4.10%、前日終値比。10/29終値時点は決算未反映",
-      "institutional": "実際の機関買い越し未確認。10/23信用倍率0.80倍（信用売り残243.52万株・買い残193.91万株）",
-      "liquidity": "前日現物約702.69万株/222.12億円。PTS2.61万株/0.86億円",
+      "prevClose": 1701,
+      "pts": 1712,
+      "ptsAt": "2026-10-30 23:55 JST",
+      "ptsVolume": 10000,
+      "ptsTurnoverJPY": 17000000,
+      "cashVolume": 276400,
+      "cashTurnoverJPY": 475000000,
+      "creditRatio": 2.46,
+      "creditAsOf": "2026-10-23",
+      "probability": 0.49,
+      "confidence": 0.54,
+      "rr": 2.1,
+      "material": "10/30会社業績修正: 2027/3期連結経常利益予想20億円→33億円(+65%)。上期経常9億円→26.2億円。排ガス浄化触媒向け販売数量、販売価格改定、為替が寄与。",
+      "newsOrigin": "10/30 15:30 会社の業績予想修正（TDnet掲載の開示資料）",
+      "directness": "高: 触媒材料の販売数量と価格改定が収益に直結。レアメタル・ハフニウムの話題は当該修正の主要因と確認できないため加点しない",
+      "earningsSensitivity": "通期経常+13億円、+65%。下期は原料高・需要減リスク。下期想定為替157円/ドル。",
+      "expectationGap": "会社従来予想比+65%、市場コンセンサス未取得",
+      "pricedIn": "10/30終値1701円(前日比-5.34%)、夜間PTS1712円(+0.65%)。PTS高値1755円から終値1712円へ失速、材料の持続買い未確認",
+      "institutional": "10/23信用買残927000株・売残376300株、信用倍率2.46倍。実際の機関売買フロー未取得",
+      "liquidity": "10/30現物276400株・4.75億円、夜間PTS10000株・約0.17億円。現物は中位、板/スプレッド確認必須",
       "peers": [
-        "4661と同業のテーマパーク・旅行・レジャー株",
-        "観光・消費関連指数"
+        "触媒・特殊化学材料関連",
+        "化学セクター指数"
       ],
-      "buy": "初値後10分の高値更新または安値切り上げからVWAP奪回、売買代金増加、観光・消費関連の相対強度、RR>=1.9",
-      "skip": "大幅GU後の初動高値更新失敗、VWAP割れ、板スプレッド拡大、セクター不追随",
-      "invalidate": "入園者・客単価の改善期待に反する需給、初動安値割れ後のVWAP回復不能",
+      "buy": "初値形成後10分で安値切上げ→VWAP奪回、初動高値再突破、売買代金増加、化学セクター相対強度、実際のRR>=2.1",
+      "skip": "PTS高値1755円への戻り失敗、VWAP下定着、初動安値割れ、指数急落、板薄/スプレッド拡大",
+      "invalidate": "材料効果が為替・価格転嫁に偏り需要減懸念が優勢、初動安値割れ後VWAP回復不能",
       "redTeam": {
-        "openingTop": "PTS+4.1%を消化する高寄り後に利確集中",
-        "exhaustion": "増益修正は発表済みで追加材料がなければ出尽くし",
-        "short": "初動高値更新失敗とVWAP割れを狙う。ただし貸株・空売り規制未確認",
-        "weakness": "一時的周年需要の持続性と高いPER、事前コンセンサス未確認"
+        "openingTop": "前日-5.34%でもPTSは小幅反発のみ。高寄りなら上値で戻り売り",
+        "exhaustion": "通期+65%でも会社予想との差に過ぎず、市場期待超過は未確認",
+        "short": "初動高値未更新、VWAP割れ、出来高を伴う前日安値1696円割れを売り側の仮説とする（空売り可否未確認）",
+        "weakness": "原料高・価格転嫁・為替に利益が左右され、下期の需要低下懸念"
       },
       "sources": [
-        "https://www.olc.co.jp/ja/news/news_olc/20261029_2/main/0/link/20261029_2.pdf",
-        "https://s.kabutan.jp/stocks/4661/"
+        "https://www.traders.co.jp/market_jp/earnings_revsions",
+        "https://finance.matsui.co.jp/news/633096/index",
+        "https://disclosure.catr.jp/companies/dc28e/47881/disclosures",
+        "https://s.kabutan.jp/stocks/4082"
       ],
-      "ptsChangePct": 4.1,
+      "ptsChangePct": 0.65,
+      "observation": "9:00〜9:10に初値形成時刻・初動高値安値・VWAP・5分足出来高・売買代金・日経平均/TOPIX・大阪日経先物(8:45以降)・同業相対強度・板厚・スプレッドを記録。初値が9:10以降なら初値後10分へ判定窓を移す。実際の買値を寄り前に断定しない。",
       "maxPlannedLossJPY": null,
       "expectedProfitJPY": null,
-      "targetProfit": "RR=1.9倍の計画損失R",
-      "lossFormula": "R=(実買値−構造的撤退価格)×数量＋手数料・スリッページ。ギャップ時の実損失はRを超え得る",
+      "targetProfit": "2.1R（計画損失Rの2.1倍。統計的期待利益ではない）",
+      "lossFormula": "R=(実買値−構造的撤退価格)×株数+手数料・スリッページ。ギャップ時は計画R超過あり",
       "executionStatus": "preopen_unapproved",
-      "observation": "9:00〜9:10に初値形成時刻・初動高安・VWAP・5分足出来高/売買代金・日経平均/TOPIX/先物・同業・板厚・スプレッドを確認。初値が9:10以降なら初値形成後10分へ判定窓を移動"
+      "probabilityCalibration": "uncalibrated_subjective_conditional_not_empirical"
     },
     {
       "rank": 2,
-      "code": "9101",
-      "name": "日本郵船",
-      "category": [
-        "Fresh Catalyst",
-        "Sector Alignment"
-      ],
-      "prevClose": 7151,
-      "pts": 7320,
-      "ptsAt": "2026-10-29 20:58 JST",
-      "ptsVolume": 2000,
-      "ptsTurnoverJPY": 14000000,
-      "previousCashVolume": 3562500,
-      "previousCashTurnoverJPY": 25526000000,
-      "probability": 0.5,
-      "confidence": 0.55,
-      "rr": 1.9,
-      "material": "10/29通期経常予想2500→3350億円(+34.0%)、営業利益1850→2100億円(+13.5%)。ONE持分法利益とドライバルク・エネルギー市況を会社開示で確認。",
-      "newsOrigin": "10/29会社業績予想修正",
-      "directness": "高（運賃市況→ONE持分法利益）だが営業利益と経常利益の改善幅は異なる",
-      "earningsSensitivity": "通期経常+850億円、営業利益+250億円、純利益+900億円",
-      "expectationGap": "会社従来予想比経常+34.0%、市場コンセンサス未取得",
-      "pricedIn": "PTS+2.36%。夜間出来高2000株で価格の代表性が弱い",
-      "institutional": "当日機関実フロー未取得。10/23信用倍率1.64倍（株探）",
-      "liquidity": "前日現物356.25万株/255.26億円、PTS2000株/0.14億円。現物流動性は高いが夜間薄い",
-      "peers": [
-        "商船三井9104",
-        "川崎汽船9107"
-      ],
-      "buy": "初値後10分の高値再突破とVWAP上維持、海運同業追随、現物売買代金増、RR>=1.9",
-      "skip": "PTSだけの高値追い、海運同業不追随、VWAP下定着、板薄/ギャップ拡大",
-      "invalidate": "コンテナ運賃反転、ONE利益寄与への期待剥落、初動安値割れ",
-      "redTeam": {
-        "openingTop": "薄いPTSでGUした後に戻り売り",
-        "exhaustion": "業績修正が既に海運市況から予想されていた可能性",
-        "short": "初動高値未更新・海運同業不追随時の売り目線",
-        "weakness": "経常+850億円のうち営業利益増は+250億円。持分法利益依存"
-      },
-      "sources": [
-        "https://www.nyk.com/ir/news/2026/__icsFiles/afieldfile/2026/10/29/20261029jpn.pdf",
-        "https://s.kabutan.jp/stocks/9101"
-      ],
-      "ptsChangePct": 2.36,
-      "maxPlannedLossJPY": null,
-      "expectedProfitJPY": null,
-      "targetProfit": "RR=1.9倍の計画損失R",
-      "lossFormula": "R=(実買値−構造的撤退価格)×数量＋手数料・スリッページ。ギャップ時の実損失はRを超え得る",
-      "executionStatus": "preopen_unapproved",
-      "observation": "9:00〜9:10に初値形成時刻・初動高安・VWAP・5分足出来高/売買代金・日経平均/TOPIX/先物・同業・板厚・スプレッドを確認。初値が9:10以降なら初値形成後10分へ判定窓を移動"
-    },
-    {
-      "rank": 3,
-      "code": "6504",
-      "name": "富士電機",
-      "category": [
-        "Fresh Catalyst",
-        "Theme News",
-        "Sector Alignment"
-      ],
-      "prevClose": 13385,
-      "pts": 13400,
-      "ptsAt": "2026-10-29 23:38 JST",
-      "ptsVolume": 4900,
-      "ptsTurnoverJPY": 66000000,
-      "previousCashVolume": 2483300,
-      "previousCashTurnoverJPY": 33271000000,
-      "probability": 0.49,
-      "confidence": 0.53,
-      "rr": 1.9,
-      "material": "10/29通期経常1570→1665億円(+6.1%)。エネルギー部門上期営業利益189→299億円、インダストリー111→209億円。データセンター電源設備の需要増を一次情報で確認。",
-      "newsOrigin": "10/29会社決算＋データセンター設備投資の企業説明",
-      "directness": "高（エネルギー設備・電源システムの売上利益寄与を確認）",
-      "earningsSensitivity": "通期経常+95億円。上期エネルギー営業利益+110億円、インダストリー+99億円。一方、半導体営業利益は90→64億円",
-      "expectationGap": "会社従来予想比経常+6.1%、市場コンセンサス未取得",
-      "pricedIn": "PTS+0.11%で反応乏しい。上方修正は事前期待に近かった可能性（未検証）",
-      "institutional": "当日機関フロー未確認。10/23信用倍率32.17倍",
-      "liquidity": "前日現物248.33万株/332.71億円、PTS4900株/0.66億円",
-      "peers": [
-        "日立6501",
-        "三菱電機6503",
-        "ダイヘン6622"
-      ],
-      "buy": "初値後10分の安値切り上げとVWAP奪回、電力設備同業の相対強度、現物出来高増、RR>=1.9",
-      "skip": "PTS反応鈍く寄り後もVWAP下、半導体事業減益の懸念、同業不追随",
-      "invalidate": "エネルギー/インダストリーの改善が続かず初動安値割れ",
-      "redTeam": {
-        "openingTop": "好決算でもPTS無反応で寄りの買い需要が不足",
-        "exhaustion": "すでに7月に上方修正済みで追加のサプライズが小さい",
-        "short": "VWAP下で反発失敗なら売り優位",
-        "weakness": "半導体セグメント減益、純利益に政策保有株式売却益、期待値との差不明"
-      },
-      "sources": [
-        "https://www.fujielectric.co.jp/ir/library/detail/summary.html",
-        "https://s.kabutan.jp/stocks/6504/"
-      ],
-      "ptsChangePct": 0.11,
-      "maxPlannedLossJPY": null,
-      "expectedProfitJPY": null,
-      "targetProfit": "RR=1.9倍の計画損失R",
-      "lossFormula": "R=(実買値−構造的撤退価格)×数量＋手数料・スリッページ。ギャップ時の実損失はRを超え得る",
-      "executionStatus": "preopen_unapproved",
-      "observation": "9:00〜9:10に初値形成時刻・初動高安・VWAP・5分足出来高/売買代金・日経平均/TOPIX/先物・同業・板厚・スプレッドを確認。初値が9:10以降なら初値形成後10分へ判定窓を移動"
-    },
-    {
-      "rank": 4,
-      "code": "6622",
-      "name": "ダイヘン",
+      "code": "4368",
+      "name": "扶桑化学工業",
       "category": [
         "Fresh Catalyst",
         "Theme News"
       ],
-      "prevClose": 2367,
-      "pts": 2588.8,
-      "ptsAt": "2026-10-29 23:54 JST",
-      "ptsVolume": 16400,
-      "ptsTurnoverJPY": 41000000,
-      "previousCashVolume": 1184800,
-      "previousCashTurnoverJPY": 2799000000,
+      "prevClose": 2889,
+      "pts": 2911,
+      "ptsAt": "2026-10-30 23:58 JST",
+      "ptsVolume": 4400,
+      "ptsTurnoverJPY": 13000000,
+      "cashVolume": 767100,
+      "cashTurnoverJPY": 2236000000,
+      "creditRatio": 47.14,
+      "creditAsOf": "2026-10-23",
       "probability": 0.47,
-      "confidence": 0.49,
-      "rr": 2.1,
-      "material": "10/29通期営業利益250→300億円(+20.0%)、経常255→305億円(+19.6%)。会社は半導体設備投資と蓄電池システム受注増を理由に挙げる。9/16発表のEMS受注見通し450億円（前年比約2.6倍）を一次確認。",
-      "newsOrigin": "10/29会社修正＋9/16 EMS受注拡大ニュース",
-      "directness": "高（電力・蓄電設備の受注実需）だがEMS受注450億円は将来見通しで実現売上ではない",
-      "earningsSensitivity": "通期営業利益+50億円、経常+50億円。EMS受注見通し450億円、収益率は未開示",
-      "expectationGap": "会社従来予想比営業+20%、市場コンセンサス未取得",
-      "pricedIn": "PTS+9.37%、現物終値比。10/29に先回り上昇なしでも夜間高騰は過熱リスク",
-      "institutional": "機関実フロー未取得。10/23信用倍率55.82倍、買い残96.56万株",
-      "liquidity": "前日現物118.48万株/27.99億円、PTS1.64万株/0.41億円。値飛び・板厚要確認",
+      "confidence": 0.53,
+      "rr": 2.2,
+      "material": "10/30上期売上455.96億円(+20.9%)、営業利益132.94億円(+36.4%)。通期営業利益予想243億円→280億円(+15.2%)。会社公式製品資料で半導体CMP研磨向け超高純度コロイダルシリカを確認。",
+      "newsOrigin": "10/30 16:00 会社第2四半期決算＋会社公式電子材料製品情報",
+      "directness": "高: 半導体CMP用シリカの製造・供給は公式確認。今回の増益のうちAI用途の寄与額は未開示",
+      "earningsSensitivity": "通期営業利益予想+37億円(+15.2%)、上期営業利益前年同期比+36.4%。電子材料の個別増益寄与は未分離",
+      "expectationGap": "会社従来予想比営業+15.2%、市場コンセンサス未取得",
+      "pricedIn": "10/30終値2889円(-5.43%)、夜間PTS2911円(+0.76%)。PTS高値3004.5円から反落。米SOX-7.2%でセクター逆風",
+      "institutional": "10/23信用買残1041800株・売残22100株、信用倍率47.14倍。機関実フロー未取得",
+      "liquidity": "10/30現物767100株・22.36億円、夜間PTS4400株・0.13億円。夜間代表性低い",
       "peers": [
-        "富士電機6504",
-        "三菱電機6503",
-        "蓄電池設備関連"
+        "半導体材料株",
+        "信越化学4063",
+        "SUMCO3436"
       ],
-      "buy": "初値形成後10分の高値再突破、VWAP維持、板厚・スプレッドと売買代金が十分、RR>=2.1",
-      "skip": "特別気配・大幅GUでRR不足、寄り天、薄板、スプレッド拡大、信用買いの投げ売り",
-      "invalidate": "蓄電池受注の収益化懸念、初動安値割れとVWAP回復不能",
+      "buy": "9:00〜9:10初動高安確認、初値後10分VWAP維持、現物出来高/売買代金増加、半導体材料同業の相対強度、RR>=2.2",
+      "skip": "米SOX急落の連れ安、信用買い売り圧、PTS小幅高だけの飛び付き、VWAP割れ、スプレッド拡大",
+      "invalidate": "CMP需要の増益寄与期待が崩れ、同業が弱く初動安値割れ後反発失敗",
       "redTeam": {
-        "openingTop": "PTS+9.37%でGUの利益確定圧力が大きい",
-        "exhaustion": "業績修正・EMSニュースは発表済み",
-        "short": "初値後10分高値更新失敗とVWAP割れを狙う。貸株可否未確認",
-        "weakness": "信用倍率55.82倍、EMS受注は売上確定でない。10/1の1対5分割で過去価格比較に注意"
+        "openingTop": "決算後のPTS反発は小さく、米半導体急落の売りが寄り後に優勢となり得る",
+        "exhaustion": "高成長は既知、会社上方修正が市場期待未達の可能性",
+        "short": "同業連れ安、VWAP下反発失敗、信用買いの解消を売り側の仮説とする",
+        "weakness": "AI関連売上比率未開示、信用倍率47倍、米SOX急落"
       },
       "sources": [
-        "https://www.daihen.co.jp/ir/summary_pdf/2026_1029_gyosekiyosou.pdf",
-        "https://www.daihen.co.jp/newinfo_2026/news_260916.html",
-        "https://s.kabutan.jp/stocks/6622"
+        "https://fusokk.co.jp/ir_cat/press-release",
+        "https://fusokk.co.jp/electronicmaterials/quartron-ultra-high-purity-colloidal-silica",
+        "https://disclosure.catr.jp/companies/f47c3/47999/tdnet/df9f0/790620",
+        "https://s.kabutan.jp/stocks/4368"
       ],
-      "ptsChangePct": 9.37,
+      "ptsChangePct": 0.76,
+      "observation": "9:00〜9:10に初値形成時刻・初動高値安値・VWAP・5分足出来高・売買代金・日経平均/TOPIX・大阪日経先物(8:45以降)・同業相対強度・板厚・スプレッドを記録。初値が9:10以降なら初値後10分へ判定窓を移す。実際の買値を寄り前に断定しない。",
       "maxPlannedLossJPY": null,
       "expectedProfitJPY": null,
-      "targetProfit": "RR=2.1倍の計画損失R",
-      "lossFormula": "R=(実買値−構造的撤退価格)×数量＋手数料・スリッページ。ギャップ時の実損失はRを超え得る",
+      "targetProfit": "2.2R（計画損失Rの2.2倍。統計的期待利益ではない）",
+      "lossFormula": "R=(実買値−構造的撤退価格)×株数+手数料・スリッページ。ギャップ時は計画R超過あり",
       "executionStatus": "preopen_unapproved",
-      "observation": "9:00〜9:10に初値形成時刻・初動高安・VWAP・5分足出来高/売買代金・日経平均/TOPIX/先物・同業・板厚・スプレッドを確認。初値が9:10以降なら初値形成後10分へ判定窓を移動"
+      "probabilityCalibration": "uncalibrated_subjective_conditional_not_empirical"
+    },
+    {
+      "rank": 3,
+      "code": "6946",
+      "name": "日本アビオニクス",
+      "category": [
+        "Fresh Catalyst",
+        "Theme News"
+      ],
+      "prevClose": 5910,
+      "pts": 5960,
+      "ptsAt": "2026-10-30 23:54 JST",
+      "ptsVolume": 2600,
+      "ptsTurnoverJPY": 15000000,
+      "cashVolume": 187400,
+      "cashTurnoverJPY": 1133000000,
+      "creditRatio": 3984,
+      "creditAsOf": "2026-10-23",
+      "probability": 0.46,
+      "confidence": 0.49,
+      "rr": 2.2,
+      "material": "10/30 18:00に通期経常利益予想を約17%上方修正し最高益見通し上乗せ。会社一次開示確認。情報システム/電子機器事業は実在するが、防衛需要が今回の増益に占める比率は未確認。",
+      "newsOrigin": "10/30 18:00 会社の通期業績予想修正・第2四半期決算",
+      "directness": "中: 防衛関連の電子機器・情報システムの事業実体は公式確認。防衛受注の今回増益寄与額は未取得",
+      "earningsSensitivity": "通期経常予想約+17%（改定前後の絶対額は一次原本本文未照合）。部門別寄与額未取得",
+      "expectationGap": "会社従来予想比約+17%、市場コンセンサス未取得",
+      "pricedIn": "10/30終値5910円(-9.22%)、PTS5960円(+0.85%)。PTS2600株のみ、弱い反応",
+      "institutional": "10/23信用買残398400株・売残100株、信用倍率3984倍は分母が極小のため単独比較不可。機関実フロー未取得",
+      "liquidity": "10/30現物187400株・11.33億円、PTS2600株・0.15億円。スタンダード上場、値飛びに注意",
+      "peers": [
+        "防衛・電子機器関連",
+        "三菱重工7011",
+        "IHI7013"
+      ],
+      "buy": "初値後10分の高値再突破、VWAP上定着、現物売買代金と板厚増加、防衛同業相対強度、RR>=2.2",
+      "skip": "薄い板/スプレッド拡大、PTS反応弱、初動安値割れ、特別気配で実際に約定できない",
+      "invalidate": "業績修正の持続性を裏付ける受注が確認できず、初動安値割れ後VWAP回復不能",
+      "redTeam": {
+        "openingTop": "前日-9.22%の下落トレンドで、上方修正後のPTSは+0.85%にとどまる",
+        "exhaustion": "会社上方修正は既に開示されており、寄りで買いが出ない可能性",
+        "short": "初動高値未更新とVWAP下の戻り売り、薄い板を警戒。空売り可能性は未確認",
+        "weakness": "信用売残100株による倍率3984倍の錯覚、PTS薄商い、業績の防衛寄与は未定量"
+      },
+      "sources": [
+        "https://www.avio.co.jp/company/ir/release.html",
+        "https://www.avio.co.jp/company/ir/library/tansin.html",
+        "https://www.avio.co.jp/company/outline/profile.html",
+        "https://s.kabutan.jp/stocks/6946"
+      ],
+      "ptsChangePct": 0.85,
+      "observation": "9:00〜9:10に初値形成時刻・初動高値安値・VWAP・5分足出来高・売買代金・日経平均/TOPIX・大阪日経先物(8:45以降)・同業相対強度・板厚・スプレッドを記録。初値が9:10以降なら初値後10分へ判定窓を移す。実際の買値を寄り前に断定しない。",
+      "maxPlannedLossJPY": null,
+      "expectedProfitJPY": null,
+      "targetProfit": "2.2R（計画損失Rの2.2倍。統計的期待利益ではない）",
+      "lossFormula": "R=(実買値−構造的撤退価格)×株数+手数料・スリッページ。ギャップ時は計画R超過あり",
+      "executionStatus": "preopen_unapproved",
+      "probabilityCalibration": "uncalibrated_subjective_conditional_not_empirical"
+    },
+    {
+      "rank": 4,
+      "code": "6961",
+      "name": "エンプラス",
+      "category": [
+        "Fresh Catalyst",
+        "Continuation Momentum"
+      ],
+      "prevClose": 8650,
+      "pts": 8605,
+      "ptsAt": "2026-10-30 23:40 JST",
+      "ptsVolume": 5000,
+      "ptsTurnoverJPY": 44000000,
+      "cashVolume": 417800,
+      "cashTurnoverJPY": 3596000000,
+      "creditRatio": 27.92,
+      "creditAsOf": "2026-10-23",
+      "probability": 0.43,
+      "confidence": 0.46,
+      "rr": 2.3,
+      "material": "10/30会社開示で通期経常利益予想を約40%上方修正、年間配当を30円増額。精密プラスチック・半導体検査用部材の事業実体は確認、今回のAI売上寄与は未定量。",
+      "newsOrigin": "10/30 15:30 会社業績・配当予想修正",
+      "directness": "中: 上方修正自体は一次情報、AI半導体関連の収益寄与比率は未確認でテーマ加点しない",
+      "earningsSensitivity": "通期経常予想約+40%（改定前後の金額は一次資料本文未照合）、増配30円",
+      "expectationGap": "会社従来予想比経常約+40%、市場コンセンサス未取得",
+      "pricedIn": "10/30終値8650円(-9.04%)、夜間PTS8605円(-0.52%)。PTS高値9110円から8605円へ失速。10/30初値9:13で遅延",
+      "institutional": "10/23信用買残220600株・売残7900株、信用倍率27.92倍。機関実フロー未取得",
+      "liquidity": "10/30現物417800株・35.96億円、夜間PTS5000株・0.44億円",
+      "peers": [
+        "半導体検査・部材関連",
+        "アドバンテスト6857",
+        "日本マイクロニクス6871"
+      ],
+      "buy": "9:10以前に初値がつかなければ初値後10分観察。VWAP奪回→高値更新、半導体同業相対強度、出来高増、RR>=2.3",
+      "skip": "PTS高値9110円からの急落、SOX-7.2%の地合い、9:10以降初値形成時の飛び付き、初動安値割れ",
+      "invalidate": "上方修正を上回る市場期待が剥落し、VWAP回復不能・同業不追随",
+      "redTeam": {
+        "openingTop": "前日大幅下落、PTSも高値から約5.5%失速。寄り天・戻り売りが主シナリオ",
+        "exhaustion": "経常+40%でも市場期待との差は未確認、配当増額だけで反転保証なし",
+        "short": "初値遅延後の買い枯れ、VWAP割れ、半導体同業の連れ安を警戒",
+        "weakness": "米SOX-7.2%、信用倍率27.92倍、AI収益寄与未定量"
+      },
+      "sources": [
+        "https://www.enplas.co.jp/ir/",
+        "https://www.enplas.co.jp/category/news/ir-news/",
+        "https://s.kabutan.jp/stocks/6961"
+      ],
+      "ptsChangePct": -0.52,
+      "observation": "9:00〜9:10に初値形成時刻・初動高値安値・VWAP・5分足出来高・売買代金・日経平均/TOPIX・大阪日経先物(8:45以降)・同業相対強度・板厚・スプレッドを記録。初値が9:10以降なら初値後10分へ判定窓を移す。実際の買値を寄り前に断定しない。",
+      "maxPlannedLossJPY": null,
+      "expectedProfitJPY": null,
+      "targetProfit": "2.3R（計画損失Rの2.3倍。統計的期待利益ではない）",
+      "lossFormula": "R=(実買値−構造的撤退価格)×株数+手数料・スリッページ。ギャップ時は計画R超過あり",
+      "executionStatus": "preopen_unapproved",
+      "probabilityCalibration": "uncalibrated_subjective_conditional_not_empirical"
     }
   ],
   "rejected": [
     {
-      "code": "6857",
-      "reason": "前日方向整合でも米NASDAQ/SOX下落・連日の寄り天学習。Fresh Catalystではなくなった"
+      "code": "1944",
+      "name": "きんでん",
+      "reason": "10/30経常予想960→1050億円(+9.4%)でも同日株価-8.82%、PTS5850円(終値5894円を下回る)、夜間2100株。No.29/23により本命除外。"
     },
     {
-      "code": "2760",
-      "reason": "10/29始値比-8.60%の失敗と薄いPTS。理由なく連日推薦しない"
+      "code": "285A",
+      "name": "キオクシアHD",
+      "reason": "上期増益でも10-12月期利益見通しが前期比微増と報じられ、PTS11805.5円は東証13470円を大幅下回る。買い見送り。"
     },
     {
-      "code": "3778",
-      "reason": "前日ストップ高反動で下落。実測執行条件なし"
+      "code": "6920",
+      "name": "レーザーテック",
+      "reason": "7-9月期経常-46%、米SOX-7.2%、PTS34769円は終値37700円を下回る。弱気トレンド中の逆張りを避ける。"
     },
     {
-      "code": "2914",
-      "reason": "会社業績は増益修正だが夜間PTSは東証終値を下回り、短期の買い需要弱い"
-    },
-    {
-      "code": "4502",
-      "reason": "会社の通期見通し改善は為替効果の寄与が大きく、株価も前日に上昇。Fresh Catalystの優先度を下げる"
+      "code": "6981",
+      "name": "村田製作所",
+      "reason": "10/30業績上方修正は場中14:00発表で既に値動きに反映、PTS6100円は終値6358円を下回る。Fresh Catalystではない。"
     }
   ],
   "holdingsReview": {
-    "sourceAsOf": "2026-10-14 21:47 JST",
-    "positionsInSnapshot": 6,
+    "asOf": "2026-10-14 21:47 JST",
     "stale": true,
+    "positionsSnapshot": 6,
+    "latestConfirmed": false,
+    "items": [
+      "2926",
+      "4597",
+      "5016",
+      "5027",
+      "8518",
+      "9432"
+    ],
     "jx": {
       "code": "5016",
-      "quantityAssumed": 200,
-      "averageCostAssumed": 3696,
-      "closeDate": "2026-10-29",
-      "close": 3151,
-      "referenceUnrealizedJPY": -109000,
-      "pts": 3130,
-      "ptsAt": "2026-10-29 21:13 JST",
-      "creditRatioDate": "2026-10-23",
-      "creditRatio": 31.1,
-      "creditBuyShares": 21737900,
-      "creditSellShares": 698900,
-      "verdict": "ナンピン見送り（条件未成立）",
-      "conditions": "米半導体軟調下で同業相対強度、初動安値切上げ、VWAP奪回、出来高、信用需給継続改善を確認。保有株の実数量を先に照合",
-      "source": "https://s.kabutan.jp/stocks/5016"
+      "snapshotQuantity": 200,
+      "snapshotAverageCost": 3696,
+      "closeDate": "2026-10-30",
+      "close": 2955,
+      "referenceUnrealizedJPY": -148200,
+      "pts": 2860.1,
+      "ptsAt": "2026-10-30 23:58 JST",
+      "ptsVolume": 82300,
+      "prevLow": 2915,
+      "verdict": "ナンピン見送り",
+      "reasons": "10/30終値2955円(-6.22%)、PTS2860.1円(-3.21%)、米半導体売り。支持線・VWAP・信用需給・相対強度の反転条件未成立。数量は10/14仮定のみ。"
     },
-    "otherHoldings": "2926,4597,5027,8518,9432は当日固有の新材料・注文履歴未確認。低位株・低流動性は安易な買い増しを避ける"
+    "other": "他5銘柄は保有数・現在材料・流動性を未更新のため新規売買を承認しない"
   },
   "evidenceGap": [
-    "2026-10-30 07:30市場情報部の正規原本・activity未確認（同時刻の独立実行を証明できない）",
-    "当日テーマ研究の独立原本未確認。今回のテーマ研究は単一実行からの再構成",
-    "10/29 close-reviewで指摘された10/28 TOPIX誤記の元ファイル訂正は今回対象外",
-    "初値後10分の実測分足・VWAP・板・スプレッド、実約定履歴は寄り前には未取得",
-    "機関実フローと市場コンセンサス未取得",
-    "CME/大阪先物の10/30朝の信頼できる同時刻値未確認（数値を記載しない）",
-    "holdings=10/14、performance-summary=10/05、watchlist=10/02で陳腐化",
-    "保有株の現在数量・平均取得は10/14以降未確認"
+    "2026-11-02 07:30市場情報部の正規原本と当該時間の独立実行証跡がない。2026-10-30 latest.jsonは前営業日の補完版",
+    "2026-11-02 当日テーマ研究の独立原本がない。以下のテーマ記録は本委員会の調査を出典付きで再構成したbackfill",
+    "2026-10-14以降の実保有株・注文/約定履歴未取得。6銘柄の現保有数量は未検証",
+    "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+    "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+    "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない",
+    "8:04時点の大阪先物日中取引(8:45開始)の同時刻価格は未確定。夜間最終6:00値のみ"
   ],
   "sourceState": {
     "agents": "2026-09-09",
     "holdings": "2026-10-14",
     "performance": "2026-10-05",
     "watchlist": "2026-10-02",
-    "marketLatestOnRead": "2026-10-29 08:00 JST backfilled",
+    "marketLatestOnRead": "2026-10-30 07:56 JST backfilled",
     "original0730Verified": false,
     "themeOriginalVerified": false
   },
-  "activityPath": "investment-company/hr/activity/2026-10-30/daytrade.json",
-  "decisionMemoPath": "investment-company/decision-memos/2026-10-30/daytrade.md",
-  "activitySaveFailure": false
+  "activityPath": "investment-company/hr/activity/2026-11-02/daytrade.json",
+  "decisionMemoPath": "investment-company/decision-memos/2026-11-02/daytrade.md",
+  "backfilled": false,
+  "activitySaveFailure": null
 }
