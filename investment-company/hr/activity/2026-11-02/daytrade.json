@@ -1,0 +1,803 @@
+{
+  "date": "2026-11-02",
+  "asOf": "2026-11-02 08:04 JST (調査開始・寄り前)",
+  "committee": "daytrade",
+  "agentProcessType": "single-execution role-based analysis; not independent agents",
+  "independentAgentProcessesVerified": false,
+  "backfilled": false,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "4候補統合・順位決裁",
+      "keyFindings": [
+        "No.8/29/34の10/30会社材料とNo.23/25の寄り天反対意見を比較"
+      ],
+      "novelContribution": "No.8/29/34の10/30会社材料とNo.23/25の寄り天反対意見を比較",
+      "decisionImpact": "4082を1位、4368を2位。No.29の弱いPTS警告で1944を除外",
+      "candidatesPromoted": [
+        "4082",
+        "4368",
+        "6946",
+        "6961"
+      ],
+      "candidatesRejected": [
+        "1944",
+        "285A",
+        "6920",
+        "6981"
+      ],
+      "risksFlagged": [
+        "朝の上昇確率は未校正"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "taskPerformed": "ルール逸脱監査",
+      "keyFindings": [
+        "固定損失額上限を採用せず、寄り前買値と約定勝率を捏造しない"
+      ],
+      "novelContribution": "固定損失額上限を採用せず、寄り前買値と約定勝率を捏造しない",
+      "decisionImpact": "新規買い未承認・発注なし、最終決裁をユーザーへ留保",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "実測板なし・実約定なし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "数値・日付・ソース照合",
+      "keyFindings": [
+        "10/30日経63290.11、TOPIX3965.07、SOX-7.2%、11/03休場を別ソース照合"
+      ],
+      "novelContribution": "10/30日経63290.11、TOPIX3965.07、SOX-7.2%、11/03休場を別ソース照合",
+      "decisionImpact": "10/30 close-reviewの指数nullを出典付きで補完、原本は改変しない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "7:30原本未確認"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.75,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/",
+        "https://www.jpx.co.jp/derivatives/rules/holidaytrading/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "taskPerformed": "米市場と日銀マクロ審査",
+      "keyFindings": [
+        "NASDAQ-2.86%、SOX約-7.2%、日経夜間先物62420円"
+      ],
+      "novelContribution": "NASDAQ-2.86%、SOX約-7.2%、日経夜間先物62420円",
+      "decisionImpact": "全候補の強気確信度を抑制し、寄り後の指数確認を必須化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "8:45以降の日中先物未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "taskPerformed": "金利・為替・商品感応度",
+      "keyFindings": [
+        "10/30日銀政策据え置き、4082の為替前提157円/ドル"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "独自のリアルタイム金利・商品価格による順位変更なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "金利・商品同時刻値未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.2,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [
+        4,
+        21
+      ],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "taskPerformed": "米国半導体・AI連鎖",
+      "keyFindings": [
+        "米SOX-7.2%、AI設備投資採算懸念"
+      ],
+      "novelContribution": "米SOX-7.2%、AI設備投資採算懸念",
+      "decisionImpact": "4368/6961を半導体連れ安リスクで下位に抑制",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "285A",
+        "6920"
+      ],
+      "risksFlagged": [
+        "AI需要実需と当日株価は別"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "taskPerformed": "日本指数・セクター",
+      "keyFindings": [
+        "10/30日経-2.12%、TOPIX-0.95%、半導体セクター弱い"
+      ],
+      "novelContribution": "10/30日経-2.12%、TOPIX-0.95%、半導体セクター弱い",
+      "decisionImpact": "全候補の同業相対強度を必須化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "11/02場中セクター値未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "taskPerformed": "10/30決算・TDnet調査",
+      "keyFindings": [
+        "4082経常+65%、4368営業+15%、6946経常+17%、6961経常+40%"
+      ],
+      "novelContribution": "4082経常+65%、4368営業+15%、6946経常+17%、6961経常+40%",
+      "decisionImpact": "10/30引け後Fresh Catalyst候補を抽出",
+      "candidatesPromoted": [
+        "4082",
+        "4368",
+        "6946",
+        "6961"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "会社予想とコンセンサスは異なる"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "taskPerformed": "PTS・現物スクリーニング",
+      "keyFindings": [
+        "4082/4368/6946のPTSは小幅高、6961は小幅安。PTS出来高1万/4400/2600/5000株"
+      ],
+      "novelContribution": "4082/4368/6946のPTSは小幅高、6961は小幅安。PTS出来高1万/4400/2600/5000株",
+      "decisionImpact": "PTSだけで順位決定せず現物売買代金と分離",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "1944"
+      ],
+      "risksFlagged": [
+        "PTS取引は過去時刻"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "taskPerformed": "初動価格行動条件設計",
+      "keyFindings": [
+        "初値遅延時は初値後10分を判定窓とする"
+      ],
+      "novelContribution": "初値遅延時は初値後10分を判定窓とする",
+      "decisionImpact": "9:00〜9:10の初動高安とVWAP確認条件を全候補へ",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "分足未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "taskPerformed": "出来高・板・スプレッド審査",
+      "keyFindings": [
+        "4082現物4.75億円、6946現物11.33億円、夜間PTSはいずれも薄い"
+      ],
+      "novelContribution": "4082現物4.75億円、6946現物11.33億円、夜間PTSはいずれも薄い",
+      "decisionImpact": "板厚/スプレッドの条件未確認なら見送り",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "当日板未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "taskPerformed": "注文・撤退設計",
+      "keyFindings": [
+        "買値・撤退価格を寄り前に固定しない"
+      ],
+      "novelContribution": "買値・撤退価格を寄り前に固定しない",
+      "decisionImpact": "初値後10分の反転、VWAP、構造的撤退をセットで確認",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "約定実績なし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "taskPerformed": "RRと計画損失",
+      "keyFindings": [
+        "目標RR=2.1/2.2/2.2/2.3、数量未定"
+      ],
+      "novelContribution": "目標RR=2.1/2.2/2.2/2.3、数量未定",
+      "decisionImpact": "円建て計画損失と統計的期待利益を未算定と明示",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "数量・価格未定"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "taskPerformed": "イベントストレス",
+      "keyFindings": [
+        "11/03東証現物休場、10/30日銀公表、米AI売り"
+      ],
+      "novelContribution": "11/03東証現物休場、10/30日銀公表、米AI売り",
+      "decisionImpact": "連休前の流動性低下と持越ギャップを警告",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "祝日取引と現物取引を区別"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "taskPerformed": "流動性・ギャップ審査",
+      "keyFindings": [
+        "10/30 1944の夜間PTS2100株、6946のPTS2600株、4082の現物4.75億円"
+      ],
+      "novelContribution": "10/30 1944の夜間PTS2100株、6946のPTS2600株、4082の現物4.75億円",
+      "decisionImpact": "PTS薄商いだけの一律除外は避け、現物板確認を必須化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "1944"
+      ],
+      "risksFlagged": [
+        "実際の寄り板未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "taskPerformed": "空売り視点",
+      "keyFindings": [
+        "全4候補の初動高値未更新/VWAP割れをショート仮説として列挙"
+      ],
+      "novelContribution": "全4候補の初動高値未更新/VWAP割れをショート仮説として列挙",
+      "decisionImpact": "6961を4位に抑制、寄り天理由を全候補に明記",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "空売り規制/貸株可否未確認"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "taskPerformed": "強気前提の破壊",
+      "keyFindings": [
+        "4082利益は価格転嫁/為替、4368 AI寄与額未開示、6946防衛寄与未開示"
+      ],
+      "novelContribution": "4082利益は価格転嫁/為替、4368 AI寄与額未開示、6946防衛寄与未開示",
+      "decisionImpact": "Theme Newsの連想加点を抑制",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "事前コンセンサス未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "taskPerformed": "失敗パターン照合",
+      "keyFindings": [
+        "前営業日4661/6622寄り天、6504好決算でも下落、9101薄PTSでも上昇"
+      ],
+      "novelContribution": "前営業日4661/6622寄り天、6504好決算でも下落、9101薄PTSでも上昇",
+      "decisionImpact": "寄り付き買い禁止、PTS単独排除も禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "10分足と実取引なし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "taskPerformed": "信用需給監査",
+      "keyFindings": [
+        "4082 2.46倍、4368 47.14倍、6946 3984倍(売残100株)、6961 27.92倍"
+      ],
+      "novelContribution": "4082 2.46倍、4368 47.14倍、6946 3984倍(売残100株)、6961 27.92倍",
+      "decisionImpact": "6946倍率の分母錯覚と4368信用買残104万株を警告",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "機関実フロー未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "taskPerformed": "市場期待と決算品質",
+      "keyFindings": [
+        "会社上方修正≠市場期待超過、1944/6961はPTS弱く前日急落"
+      ],
+      "novelContribution": "会社上方修正≠市場期待超過、1944/6961はPTS弱く前日急落",
+      "decisionImpact": "1944除外、6961を4位に抑制",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "1944",
+        "285A",
+        "6920"
+      ],
+      "risksFlagged": [
+        "市場コンセンサス未取得"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "taskPerformed": "ニュース起点テーマ抽出",
+      "keyFindings": [
+        "10/30決算/米AI設備投資採算懸念/防衛電子機器/触媒素材を調査"
+      ],
+      "novelContribution": "10/30決算/米AI設備投資採算懸念/防衛電子機器/触媒素材を調査",
+      "decisionImpact": "化学・防衛の非AI Fresh Catalystを候補化",
+      "candidatesPromoted": [
+        "4082",
+        "6946"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "独立7:30調査の証拠なし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "taskPerformed": "バリューチェーン分解",
+      "keyFindings": [
+        "4082自動車触媒材料、4368半導体CMPシリカ、6946防衛電子、6961半導体検査部材"
+      ],
+      "novelContribution": "4082自動車触媒材料、4368半導体CMPシリカ、6946防衛電子、6961半導体検査部材",
+      "decisionImpact": "一次事業と連想テーマを区別",
+      "candidatesPromoted": [
+        "4082",
+        "4368",
+        "6946"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "収益内訳未開示"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+        "https://finance.yahoo.co.jp/quote/998407.O/history",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/futures/%E6%97%A5%E7%B5%8C225%E5%85%88%E7%89%A9/",
+        "https://www.boj.or.jp/mopo/mpmdeci/state_2026/"
+      ],
+      "duplicationWith": [
+        32,
+        34
+      ],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "taskPerformed": "テーマ実需・収益感応度",
+      "keyFindings": [
+        "4368のCMPシリカを公式製品情報で確認、4082の触媒数量/価格改定を開示資料で確認。6946の防衛事業は実在、寄与額未取得"
+      ],
+      "novelContribution": "4368のCMPシリカを公式製品情報で確認、4082の触媒数量/価格改定を開示資料で確認。6946の防衛事業は実在、寄与額未取得",
+      "decisionImpact": "4368をテーマ検証済みに、6961のAI関連収益比率未確認としてTheme News加点なし",
+      "candidatesPromoted": [
+        "4368",
+        "4082"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "テーマ別売上利益寄与額未開示"
+      ],
+      "errorsOrMisses": [],
+      "confidence": 0.52,
+      "dataLimitations": [
+        "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+        "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+        "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない"
+      ],
+      "sourcesUsed": [
+        "https://disclosure.catr.jp/companies/dc28e/47881/disclosures",
+        "https://fusokk.co.jp/ir_cat/press-release",
+        "https://fusokk.co.jp/electronicmaterials/quartron-ultra-high-purity-colloidal-silica",
+        "https://disclosure.catr.jp/companies/f47c3/47999/tdnet/df9f0/790620",
+        "https://www.avio.co.jp/company/ir/release.html",
+        "https://www.avio.co.jp/company/ir/library/tansin.html",
+        "https://www.avio.co.jp/company/outline/profile.html",
+        "https://www.enplas.co.jp/ir/",
+        "https://www.enplas.co.jp/category/news/ir-news/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "evidenceGap": [
+    "2026-11-02 07:30市場情報部の正規原本と当該時間の独立実行証跡がない。2026-10-30 latest.jsonは前営業日の補完版",
+    "2026-11-02 当日テーマ研究の独立原本がない。以下のテーマ記録は本委員会の調査を出典付きで再構成したbackfill",
+    "2026-10-14以降の実保有株・注文/約定履歴未取得。6銘柄の現保有数量は未検証",
+    "performance-summary=2026-10-05、watchlist=2026-10-02で陳腐化",
+    "市場コンセンサス・当日機関実フロー・寄り後分足/VWAP/板/スプレッド・実約定履歴は未取得",
+    "条件付き上昇確率は統計校正なし。VWAP/MFE/MAE・実取引損益は捏造しない",
+    "8:04時点の大阪先物日中取引(8:45開始)の同時刻価格は未確定。夜間最終6:00値のみ"
+  ],
+  "activitySaveFailure": null
+}
