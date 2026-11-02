@@ -28,7 +28,15 @@
       "successMetric": "警告採否と順位変更が100%追跡可能で、同型の失敗反復率が低下",
       "rollbackCondition": "記録負荷のみ増え意思決定差分が生じない状態が5営業日継続",
       "status": "active_trial",
-      "observations": []
+      "observations": [
+        {
+          "date": "2026-11-02",
+          "stage": "pre_effective_baseline",
+          "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
+          "evidence": "investment-company/hr/weekly/2026-W44.json",
+          "verdict": "pending_no_post_effective_data"
+        }
+      ]
     },
     {
       "improvementId": "EXP-20261102-02",
@@ -53,7 +61,15 @@
       "successMetric": "全候補でsignalVerdictとexecutionVerdictが分離され、未確認値を成功扱いしない",
       "rollbackCondition": "なし（統制強化のため原則維持、運用不能ならmodify）",
       "status": "active_trial",
-      "observations": []
+      "observations": [
+        {
+          "date": "2026-11-02",
+          "stage": "pre_effective_baseline",
+          "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
+          "evidence": "investment-company/hr/weekly/2026-W44.json",
+          "verdict": "pending_no_post_effective_data"
+        }
+      ]
     },
     {
       "improvementId": "EXP-20261102-03",
@@ -75,7 +91,15 @@
       "successMetric": "すべての主要入力にfreshnessStatusが付き、blockedデータ由来の断定が0件",
       "rollbackCondition": "分類基準が過度に厳しく有効データを継続的に遮断する場合はmodify",
       "status": "active_trial",
-      "observations": []
+      "observations": [
+        {
+          "date": "2026-11-02",
+          "stage": "pre_effective_baseline",
+          "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
+          "evidence": "investment-company/hr/weekly/2026-W44.json",
+          "verdict": "pending_no_post_effective_data"
+        }
+      ]
     }
   ],
   "governance": {
@@ -94,5 +118,8 @@
       "compliance_removal",
       "formal_hiring_demotion_merge_abolition"
     ]
-  }
+  },
+  "lastReviewAt": "2026-11-02 16:51 JST",
+  "nextEvaluationDate": "2026-11-04",
+  "trialChangesThisRun": "none; existing three trials remain active until post-effective evidence"
 }
