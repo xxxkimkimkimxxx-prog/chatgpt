@@ -326,7 +326,11 @@
       "stock-dashboard/data/daytrade-latest.json",
       "investment-company/hr/activity/2026-11-03/daytrade.json"
     ],
-    "writeResults": "pending",
-    "readbackVerified": false
+    "writeSucceeded": 3,
+    "writeFailed": 0,
+    "readbackVerified": true,
+    "activitySaveFailure": false,
+    "verifiedAt": "2026-11-03 08:03 JST",
+    "verificationMethod": "fetch_file after create_file/update_file; content/date checked"
   }
 }
