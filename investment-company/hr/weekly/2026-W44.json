@@ -1,0 +1,1545 @@
+{
+  "week": "2026-W44",
+  "period": {
+    "start": "2026-10-26",
+    "end": "2026-10-30"
+  },
+  "generatedAt": "2026-11-02 16:51 JST",
+  "focus": "人事評価・組織改善",
+  "totalAgents": 34,
+  "counts": {
+    "scored": 25,
+    "held": 9,
+    "roleRecords": 137,
+    "rolesWithOpportunity": 26
+  },
+  "independentAgentProcessesVerified": false,
+  "scoreStatus": "provisional, not formal; subjective 6-dimension rubric anchored to prior W43 baseline with small evidence-backed adjustments; no fabricated agent executions",
+  "weights": {
+    "accuracy": 25,
+    "novelContribution": 20,
+    "decisionUsefulness": 20,
+    "earlyDiscovery": 15,
+    "uncertaintyManagement": 10,
+    "nonDuplicationEfficiency": 10
+  },
+  "weekOnWeek": {
+    "previousWeek": "2026-W43",
+    "previousScored": 26,
+    "currentScored": 25,
+    "previousHeld": 8,
+    "currentHeld": 9,
+    "reason": "No.30は1件の活動機会があるが独自代替データの証拠がなくW44評点保留。No10-14/17/19/27は担当機会なし"
+  },
+  "performanceContext": {
+    "candidateCount": 20,
+    "positivePreviousClose": 14,
+    "positiveOpenToClose": 5,
+    "actualTradesVerified": 0,
+    "actualPnl": null,
+    "actualMFE": null,
+    "actualMAE": null,
+    "conclusion": "70%の前日比上昇と25%の始値比上昇は実取引勝率を意味しない"
+  },
+  "topContributors": [
+    26,
+    22,
+    24,
+    25,
+    8,
+    34
+  ],
+  "improvementTargets": [
+    1,
+    3,
+    15,
+    18,
+    28,
+    29,
+    31
+  ],
+  "organizationalOptions": [
+    {
+      "proposal": "No15・16・18・26の時刻付き執行検証を共通スキーマ化",
+      "type": "workflow_not_merger",
+      "approvalRequired": false
+    },
+    {
+      "proposal": "No16とNo28の短期板需給・機関フローの責任境界を明文化",
+      "type": "role_boundary",
+      "approvalRequired": false
+    },
+    {
+      "proposal": "No31の証拠監査をNo1/2が独立観点で再チェック",
+      "type": "oversight",
+      "approvalRequired": false
+    },
+    {
+      "proposal": "No30の独自データ探索成果を4週追跡後に役割統合の是非を検討",
+      "type": "formal_reorganization_deferred",
+      "approvalRequired": true
+    }
+  ],
+  "fourWeekTrend": {
+    "weeks": [
+      "2026-W41",
+      "2026-W42",
+      "2026-W43",
+      "2026-W44"
+    ],
+    "availableWeeks": [
+      "2026-W43",
+      "2026-W44"
+    ],
+    "missingWeeks": [
+      "2026-W41",
+      "2026-W42"
+    ],
+    "note": "W44は暫定評点。4週の実測トレンドはまだ算定不能"
+  },
+  "evidenceGaps": [
+    "7:30原本は10/27〜30で独立実行確認なし（backfilledのみ）",
+    "全20候補の9:10分足/VWAP/板/実注文・約定履歴なし",
+    "No30の独自代替データなし",
+    "performance-summary 10/05で陳腐化",
+    "W41/W42週次原本がない"
+  ],
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "department": "経営企画・人材開発室",
+      "score": 73,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 76,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": -3,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "IR/実需とリスク警告を統合し候補順位を決定"
+      ],
+      "issues": [
+        "強気材料を採用しても寄り天警告が順位へ反映されない"
+      ],
+      "improvementAction": "反対意見をaccepted/rejected/conditionalとrankDeltaで記録",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 19,
+        "novelContribution": 15,
+        "decisionUsefulness": 13,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 76,
+        "2026-W44": 73
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "department": "経営企画・人材開発室",
+      "score": 86,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 86,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 0,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "未承認発注を回避しユーザー最終決裁を維持"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "No.31監査と権限逸脱防止を別ログで照合",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 16,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 86,
+        "2026-W44": 86
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "department": "経営企画・人材開発室",
+      "score": 66,
+      "grade": "C",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 70,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": -4,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "10/28 TOPIX誤値を事後訂正し古いデータを識別"
+      ],
+      "issues": [
+        "10/28 TOPIX誤記と7:30原本欠損を事前阻止できない"
+      ],
+      "improvementAction": "市場終値の二系統照合と原本保存ゲートを設定",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 13,
+        "novelContribution": 14,
+        "decisionUsefulness": 14,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 70,
+        "2026-W44": 66
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "department": "市場情報部",
+      "score": 78,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 78,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": 0,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "米国株・政策と国内セクター逆風を整理"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "指数・業種の乖離を判定条件へ",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 16,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 78,
+        "2026-W44": 78
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "department": "市場情報部",
+      "score": 68,
+      "grade": "C",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 69,
+      "previousWeekGrade": "C",
+      "previousWeekDelta": -1,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "金利・商品変動の一律強気加点を抑制"
+      ],
+      "issues": [
+        "金利・商品当日値に基づく固有の判断変更が乏しい"
+      ],
+      "improvementAction": "同時刻金利・商品データ取得不可なら独自寄与なしを明示",
+      "noMaterialContribution": true,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 16,
+        "novelContribution": 13,
+        "decisionUsefulness": 14,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 69,
+        "2026-W44": 68
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "department": "市場情報部",
+      "score": 78,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 78,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": 0,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "半導体セクター全面買いを抑制"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "米SOXと個別日本株の非連動例を追跡",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 78,
+        "2026-W44": 78
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "department": "市場情報部",
+      "score": 76,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 75,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": 1,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "指数上昇と市場内部の乖離を指摘"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "指数と市場内部の強弱を分離",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 15,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 75,
+        "2026-W44": 76
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "department": "市場情報部",
+      "score": 88,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 88,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 0,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "企業IR・決算材料を本命候補へ接続"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "IR発見と寄り後継続性を別KPI化",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 22,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 13,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 88,
+        "2026-W44": 88
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "department": "市場情報部",
+      "score": 72,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 73,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": -1,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "PTS過熱と現物流動性の差を評価"
+      ],
+      "issues": [
+        "PTS反応と現物寄り後継続性の乖離"
+      ],
+      "improvementAction": "PTS約定時刻・出来高と現物売買代金を別管理",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 19,
+        "novelContribution": 14,
+        "decisionUsefulness": 14,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 7,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 73,
+        "2026-W44": 72
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 10,
+      "title": "決算・業績担当",
+      "department": "ファンダメンタル調査部",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": null,
+      "previousWeekGrade": null,
+      "previousWeekDelta": null,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会で決算の一次資料と順位への影響を記録",
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": null,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 11,
+      "title": "財務・キャッシュフロー担当",
+      "department": "ファンダメンタル調査部",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": null,
+      "previousWeekGrade": null,
+      "previousWeekDelta": null,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会でBS・CF根拠と判断への影響を記録",
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": null,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 12,
+      "title": "業界構造・競争優位担当",
+      "department": "ファンダメンタル調査部",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": null,
+      "previousWeekGrade": null,
+      "previousWeekDelta": null,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会で競争優位の根拠を保存",
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": null,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 13,
+      "title": "経営者・中期計画担当",
+      "department": "ファンダメンタル調査部",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": null,
+      "previousWeekGrade": null,
+      "previousWeekDelta": null,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会で中計実績照合",
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": null,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 14,
+      "title": "バリュエーション・資本政策担当",
+      "department": "ファンダメンタル調査部",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": null,
+      "previousWeekGrade": null,
+      "previousWeekDelta": null,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会で期待バリュエーションと希薄化検証",
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": null,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "department": "戦術・テクニカル・執行部",
+      "score": 65,
+      "grade": "C",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 67,
+      "previousWeekGrade": "C",
+      "previousWeekDelta": -2,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "GU/GDと初値遅延の執行条件を定義"
+      ],
+      "issues": [
+        "初値後10分の分足・VWAP検証未実施"
+      ],
+      "improvementAction": "初値後10分の分足・VWAPを時刻付き保存",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 15,
+        "novelContribution": 13,
+        "decisionUsefulness": 13,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 7,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 67,
+        "2026-W44": 65
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "department": "戦術・テクニカル・執行部",
+      "score": 82,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 82,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 0,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "PTSと現物板・売買代金を区別"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "板・スプレッドの実測取得可否を記録",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 16,
+        "decisionUsefulness": 17,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 82,
+        "2026-W44": 82
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 17,
+      "title": "スイング・相対強度担当",
+      "department": "戦術・テクニカル・執行部",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": null,
+      "previousWeekGrade": null,
+      "previousWeekDelta": null,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "スイング担当機会で相対強度を検証",
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": null,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "department": "戦術・テクニカル・執行部",
+      "score": 63,
+      "grade": "C",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 65,
+      "previousWeekGrade": "C",
+      "previousWeekDelta": -2,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "初値後10分・VWAPによる執行条件を設計"
+      ],
+      "issues": [
+        "注文可能性と執行条件成立時刻の記録なし"
+      ],
+      "improvementAction": "執行条件成立・失効時刻を保存",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 15,
+        "novelContribution": 12,
+        "decisionUsefulness": 13,
+        "earlyDiscovery": 9,
+        "uncertaintyManagement": 7,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 65,
+        "2026-W44": 63
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 19,
+      "title": "ポートフォリオ担当",
+      "department": "リスク管理部",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": null,
+      "previousWeekGrade": null,
+      "previousWeekDelta": null,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "ポートフォリオ担当機会で保有更新を先行確認",
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": null,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "department": "リスク管理部",
+      "score": 79,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 79,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": 0,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "実約定不明の損益額を算定しなかった"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "約定前の円建て期待利益捏造を禁止",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 79,
+        "2026-W44": 79
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "department": "リスク管理部",
+      "score": 80,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 79,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": 1,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "決算・政策イベントとギャップを警告"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "決算・政策・休日ギャップの複合リスクを監査",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 79,
+        "2026-W44": 80
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "department": "リスク管理部",
+      "score": 89,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 89,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 0,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "薄いPTS・特別気配の約定困難性を警告"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "薄いPTS警告のfalse alarmと機会損失も検証",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 13,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 89,
+        "2026-W44": 89
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "department": "レッドチーム",
+      "score": 80,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 80,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 0,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "寄り天・空売り側の弱点を提示"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "ショート仮説の反証条件を明示",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 16,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 80,
+        "2026-W44": 80
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "department": "レッドチーム",
+      "score": 89,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 89,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 0,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "好決算≠寄り後上昇の前提を検証"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "強気前提の崩壊条件を企業資料と照合",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 13,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 89,
+        "2026-W44": 89
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "department": "レッドチーム",
+      "score": 81,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 80,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 1,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "既知の寄り天候補を降格・除外"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "寄り天の再発タグとfalse alarmを追跡",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 21,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 13,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 80,
+        "2026-W44": 81
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 26,
+      "title": "トレード日誌・成績分析担当",
+      "department": "バックオフィス",
+      "score": 88,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 88,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 0,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "20候補の前日比14/20と始値比5/20を分離"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "方向・執行・リスクを分けた結果判定",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/performance-review.json",
+        "investment-company/hr/activity/2026-10-27/performance-review.json",
+        "investment-company/hr/activity/2026-10-28/performance-review.json",
+        "investment-company/hr/activity/2026-10-29/performance-review.json",
+        "investment-company/hr/activity/2026-10-30/performance-review.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 88,
+        "2026-W44": 88
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 27,
+      "title": "投資仮説・四半期レビュー担当",
+      "department": "バックオフィス",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": null,
+      "previousWeekGrade": null,
+      "previousWeekDelta": null,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "四半期レビュー機会で買い理由を再審査",
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": null,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "department": "市場情報部",
+      "score": 67,
+      "grade": "C",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 69,
+      "previousWeekGrade": "C",
+      "previousWeekDelta": -2,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "機関実フロー不明を明記"
+      ],
+      "issues": [
+        "機関投資家の実フローがなく独自加点不可"
+      ],
+      "improvementAction": "機関フロー不明と信用残を区別",
+      "noMaterialContribution": true,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 16,
+        "novelContribution": 13,
+        "decisionUsefulness": 13,
+        "earlyDiscovery": 9,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 69,
+        "2026-W44": 67
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "department": "ファンダメンタル調査部",
+      "score": 84,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 87,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": -3,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "利益品質・市場期待差の検証と一部除外"
+      ],
+      "issues": [
+        "好決算と市場期待差・織り込みを順位へ反映不足"
+      ],
+      "improvementAction": "コンセンサス未取得なら期待差を未確認と記載",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 17,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 87,
+        "2026-W44": 84
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 30,
+      "title": "オルタナティブデータ担当",
+      "department": "市場情報部",
+      "score": null,
+      "grade": null,
+      "gradingStatus": "hold_insufficient_evidence",
+      "previousWeekScore": 55,
+      "previousWeekGrade": "D",
+      "previousWeekDelta": null,
+      "evidenceCount": 1,
+      "opportunityCount": 1,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "10/26市場情報部に役割ログ1件、独自代替データは未確認"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "代替データ探索の成果・所要時間を計測",
+      "noMaterialContribution": true,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": null,
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 55,
+        "2026-W44": null
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 31,
+      "title": "人事評価・組織開発担当",
+      "department": "経営企画・人材開発室",
+      "score": 74,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 77,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": -3,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "34役割の機会・証拠・欠損を監査"
+      ],
+      "issues": [
+        "原本欠損の予防統制未完成"
+      ],
+      "improvementAction": "翌朝への改善適用確認と原本欠損の事前検知",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/hr-audit.json",
+        "investment-company/hr/activity/2026-10-27/hr-audit.json",
+        "investment-company/hr/activity/2026-10-28/hr-audit.json",
+        "investment-company/hr/activity/2026-10-29/hr-audit.json",
+        "investment-company/hr/activity/2026-10-30/hr-audit.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 17,
+        "novelContribution": 15,
+        "decisionUsefulness": 16,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 77,
+        "2026-W44": 74
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "score": 76,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 76,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": 0,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "ニュース起点のテーマ候補を抽出"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "ニュースの新規性と候補昇格を紐付け",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 15,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 11,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 76,
+        "2026-W44": 76
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "score": 75,
+      "grade": "B",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 75,
+      "previousWeekGrade": "B",
+      "previousWeekDelta": 0,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "直接・間接受益のバリューチェーンを整理"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "テーマ連想と直接受益を分離",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 20,
+        "novelContribution": 15,
+        "decisionUsefulness": 15,
+        "earlyDiscovery": 10,
+        "uncertaintyManagement": 8,
+        "nonDuplicationEfficiency": 7
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 75,
+        "2026-W44": 75
+      },
+      "formalActionApproved": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "department": "テーマ・ニュースリサーチ部",
+      "score": 88,
+      "grade": "A",
+      "gradingStatus": "provisional_rubric_based_not_formal",
+      "previousWeekScore": 88,
+      "previousWeekGrade": "A",
+      "previousWeekDelta": 0,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "evidenceMethod": "one role-specific activity record per assignment; no duplicate HR audit agent rows counted",
+      "independentAgentProcessVerified": false,
+      "keyContributions": [
+        "企業一次資料で実需確認し連想株を除外"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "一次情報による収益感応度の未定量部分を明記",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "scoreBreakdown": {
+        "accuracy": 23,
+        "novelContribution": 18,
+        "decisionUsefulness": 18,
+        "earlyDiscovery": 12,
+        "uncertaintyManagement": 9,
+        "nonDuplicationEfficiency": 8
+      },
+      "rollingFourWeeks": {
+        "2026-W41": null,
+        "2026-W42": null,
+        "2026-W43": 88,
+        "2026-W44": 88
+      },
+      "formalActionApproved": false
+    }
+  ],
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-10-26/daytrade.json",
+    "investment-company/hr/activity/2026-10-27/daytrade.json",
+    "investment-company/hr/activity/2026-10-28/daytrade.json",
+    "investment-company/hr/activity/2026-10-29/daytrade.json",
+    "investment-company/hr/activity/2026-10-30/daytrade.json",
+    "investment-company/hr/activity/2026-10-26/market-intelligence.json",
+    "investment-company/hr/activity/2026-10-26/performance-review.json",
+    "investment-company/hr/activity/2026-10-27/performance-review.json",
+    "investment-company/hr/activity/2026-10-28/performance-review.json",
+    "investment-company/hr/activity/2026-10-29/performance-review.json",
+    "investment-company/hr/activity/2026-10-30/performance-review.json",
+    "investment-company/hr/activity/2026-10-26/hr-audit.json",
+    "investment-company/hr/activity/2026-10-27/hr-audit.json",
+    "investment-company/hr/activity/2026-10-28/hr-audit.json",
+    "investment-company/hr/activity/2026-10-29/hr-audit.json",
+    "investment-company/hr/activity/2026-10-30/hr-audit.json",
+    "investment-company/market-intelligence/2026-10-26-close-review.json",
+    "investment-company/market-intelligence/2026-10-27-close-review.json",
+    "investment-company/market-intelligence/2026-10-28-close-review.json",
+    "investment-company/market-intelligence/2026-10-29-close-review.json",
+    "investment-company/market-intelligence/2026-10-30-close-review.json"
+  ],
+  "backfilled": false
+}
