@@ -1,0 +1,98 @@
+{
+  "version": "1.0",
+  "asOf": "2026-11-02",
+  "purpose": "人事評価を翌営業日の投資委員会へ閉ループ接続する",
+  "maxActiveTrials": 3,
+  "activeTrials": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "title": "反対意見→順位変更の帰属記録",
+      "hypothesis": "レッドチームと期待値担当の警告を採否・rankDeltaまで記録すれば、好材料の過大評価と同じ失敗の反復を減らせる",
+      "evidence": [
+        "直近の日次監査で、警告を把握しても候補順位へ十分反映されない事例が反復"
+      ],
+      "ownerAgents": [
+        1,
+        23,
+        24,
+        25,
+        29,
+        31
+      ],
+      "affectedProcess": [
+        "daytrade_ranking",
+        "hr_attribution"
+      ],
+      "change": "No.1は主要な反対意見ごとにaccepted/rejected/conditional、rankDelta、条件変更を記録する",
+      "effectiveFrom": "2026-11-04",
+      "successMetric": "警告採否と順位変更が100%追跡可能で、同型の失敗反復率が低下",
+      "rollbackCondition": "記録負荷のみ増え意思決定差分が生じない状態が5営業日継続",
+      "status": "active_trial",
+      "observations": []
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "title": "売買可能性と方向予測の分離",
+      "hypothesis": "前日比ではなく、始値比・条件成立・約定可能性を別評価すれば疑似勝率を排除できる",
+      "evidence": [
+        "直近複数日で前日比上昇数に対し始値比上昇数が大幅に少ない"
+      ],
+      "ownerAgents": [
+        15,
+        16,
+        18,
+        26,
+        31
+      ],
+      "affectedProcess": [
+        "execution_review",
+        "performance_scoring"
+      ],
+      "change": "entryConditionVerifiedが確認できない候補は取引成功と数えず、signal/execution/riskを別判定する",
+      "effectiveFrom": "2026-11-04",
+      "successMetric": "全候補でsignalVerdictとexecutionVerdictが分離され、未確認値を成功扱いしない",
+      "rollbackCondition": "なし（統制強化のため原則維持、運用不能ならmodify）",
+      "status": "active_trial",
+      "observations": []
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "title": "入力データ鮮度ゲート",
+      "hypothesis": "更新日だけでなく利用可否を分類すれば、古い保有・成績・監視リストを現在値として誤利用するリスクを下げられる",
+      "evidence": [
+        "holdings/performance/watchlistの陳腐化警告が継続"
+      ],
+      "ownerAgents": [
+        3,
+        31
+      ],
+      "affectedProcess": [
+        "data_validation",
+        "holdings_review"
+      ],
+      "change": "入力ごとにcurrent/usable_with_warning/blockedを判定し、blockedは現保有前提の判断根拠に使用しない",
+      "effectiveFrom": "2026-11-04",
+      "successMetric": "すべての主要入力にfreshnessStatusが付き、blockedデータ由来の断定が0件",
+      "rollbackCondition": "分類基準が過度に厳しく有効データを継続的に遮断する場合はmodify",
+      "status": "active_trial",
+      "observations": []
+    }
+  ],
+  "governance": {
+    "autonomousChangesAllowed": [
+      "logging",
+      "validation",
+      "ranking_weights_or_gates",
+      "handoff",
+      "evaluation_metrics",
+      "freshness_controls"
+    ],
+    "userApprovalRequired": [
+      "order_placement",
+      "final_decision_authority",
+      "risk_limit_relaxation",
+      "compliance_removal",
+      "formal_hiring_demotion_merge_abolition"
+    ]
+  }
+}
