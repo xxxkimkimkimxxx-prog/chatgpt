@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-02",
+  "asOf": "2026-11-02 16:51 JST",
+  "session": "hr-daily",
+  "focus": "人事評価・組織改善",
+  "weeklyReviewExecuted": true,
+  "weeklyReviewWeek": "2026-W44",
+  "weeklyReviewPaths": [
+    "investment-company/hr/weekly/2026-W44.json",
+    "investment-company/hr/weekly/2026-W44.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/audit/2026-W44.json"
+  ],
+  "hrSummary": {
+    "totalRoles": 34,
+    "rolesWithOpportunity": 25,
+    "rolesWithoutOpportunity": 9,
+    "roleEvidenceRecords": 25,
+    "topContributors": [
+      26,
+      8,
+      22,
+      24,
+      25,
+      34
+    ],
+    "improvementTargets": [
+      1,
+      3,
+      15,
+      18,
+      28,
+      29,
+      31
+    ],
+    "formalPersonnelChanges": "none"
+  },
+  "performanceEvidence": {
+    "candidateCount": 4,
+    "finalCloseVerifiedCount": 2,
+    "finalCloseMissingCount": 2,
+    "verifiedPositivePreviousClose": 2,
+    "verifiedPositiveOpenToClose": 2,
+    "fullFourCandidateDirectionScore": null,
+    "actualTradeVerifiedCount": 0,
+    "actualTradeWinRate": null,
+    "actualPnl": null,
+    "actualMFE": null,
+    "actualMAE": null,
+    "note": "4候補中2件の15:30終値のみ確認。場中値を確定終値に算入しない"
+  },
+  "market": {
+    "nikkei": {
+      "previousClose": 63290.11,
+      "open": 62972.02,
+      "close": 63081.86,
+      "changePct": -0.33,
+      "source": "https://stocks.monex.co.jp/JP:$MNK/historical"
+    },
+    "topix": {
+      "previousClose": 3965.07,
+      "close": 3930.28,
+      "changePct": -0.88,
+      "source": "https://finance.yahoo.co.jp/quote/998405.T/history"
+    }
+  },
+  "weeklyContext": {
+    "period": "2026-10-26 to 2026-10-30",
+    "candidateCount": 20,
+    "positiveVsPreviousClose": 14,
+    "positiveVsOpen": 5,
+    "verifiedTradeCount": 0
+  },
+  "nextTradingDay": "2026-11-04",
+  "nextDayImprovementActions": [
+    "No1/23-25/29：反対意見の採否とrankDeltaを保存",
+    "No15/16/18/26：signal/execution/riskを分離",
+    "No3/31：入力鮮度をcurrent/usable_with_warning/blockedに分類"
+  ],
+  "processImprovementIds": [
+    "EXP-20261102-01",
+    "EXP-20261102-02",
+    "EXP-20261102-03"
+  ],
+  "processImprovementStatus": "active_trial; effective 2026-11-04; effect not yet measurable",
+  "operationalIssues": [
+    {
+      "code": "FINAL_CLOSE_PARTIAL",
+      "detail": "4082と6946の15:30確定終値未取得。場中値のみ",
+      "evidenceGap": true
+    },
+    {
+      "code": "INTRADAY_EXECUTION_MISSING",
+      "detail": "9:00〜9:10の分足/VWAP/板/スプレッド/条件成立時刻なし",
+      "evidenceGap": true
+    },
+    {
+      "code": "ACTUAL_ORDERS_MISSING",
+      "detail": "実注文/約定履歴なし。実取引勝率・損益・MFE・MAE検証不能",
+      "evidenceGap": true
+    },
+    {
+      "code": "0730_ORIGINAL_UNVERIFIED",
+      "detail": "7:30市場情報部正規原本なし、8:04以降の補完版のみ",
+      "backfilled": true,
+      "source": "investment-company/hr/activity/2026-11-02/market-intelligence.json",
+      "evidenceGap": true
+    },
+    {
+      "code": "THEME_ORIGINAL_UNVERIFIED",
+      "detail": "テーマ研究は8:04以降の補完版で独立実行未確認",
+      "backfilled": true,
+      "source": "investment-company/theme-research/2026-11-02/summary.json",
+      "evidenceGap": true
+    },
+    {
+      "code": "STALE_INPUTS",
+      "detail": "holdings=10/14、performance=10/05、watchlist=10/02",
+      "evidenceGap": true
+    }
+  ],
+  "sourcePaths": [
+    "investment-company/hr/activity/2026-11-02/daytrade.json",
+    "investment-company/decision-memos/2026-11-02/daytrade.md",
+    "investment-company/hr/weekly/2026-W44.json",
+    "https://jp.investing.com/equities/daiichi-kigenso-kagaku-kogyo-co-ltd-historical-data",
+    "https://stocks.monex.co.jp/4368.T/historical",
+    "https://jp.investing.com/equities/nippon-avionics-co",
+    "https://jp.investing.com/equities/enplas-corp-historical-data",
+    "https://stocks.monex.co.jp/JP:$MNK/historical",
+    "https://finance.yahoo.co.jp/quote/998405.T/history"
+  ],
+  "backfilled": false,
+  "saveAudit": {
+    "plannedFiles": 11,
+    "weeklyVerified": 4,
+    "dailyVerification": "pending"
+  }
+}
