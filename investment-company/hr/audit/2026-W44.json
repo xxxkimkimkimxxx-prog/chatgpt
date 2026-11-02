@@ -1,0 +1,686 @@
+{
+  "week": "2026-W44",
+  "date": "2026-11-02",
+  "asOf": "2026-11-02 16:51 JST",
+  "auditorRoles": [
+    31,
+    1,
+    2
+  ],
+  "agent31SelfScoring": false,
+  "agent31Review": {
+    "reviewerRoles": [
+      1,
+      2
+    ],
+    "independentProcessVerified": false,
+    "score": 74,
+    "observations": [
+      "34役割の機会と証拠を整理したが7:30原本欠損の予防策は未完成",
+      "No31の評価はNo1/2の役割視点から実施し自己採点は回避"
+    ]
+  },
+  "roleCount": 34,
+  "provisionalScores": 25,
+  "evaluationHolds": 9,
+  "activityEvidenceNotIndependent": true,
+  "scoreWeights": {
+    "accuracy": 25,
+    "novelContribution": 20,
+    "decisionUsefulness": 20,
+    "earlyDiscovery": 15,
+    "uncertaintyManagement": 10,
+    "nonDuplicationEfficiency": 10
+  },
+  "performanceContext": {
+    "candidateCount": 20,
+    "positivePreviousClose": 14,
+    "positiveOpenToClose": 5,
+    "actualTradesVerified": 0,
+    "actualPnl": null,
+    "actualMFE": null,
+    "actualMAE": null,
+    "conclusion": "70%の前日比上昇と25%の始値比上昇は実取引勝率を意味しない"
+  },
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-10-26/daytrade.json",
+    "investment-company/hr/activity/2026-10-27/daytrade.json",
+    "investment-company/hr/activity/2026-10-28/daytrade.json",
+    "investment-company/hr/activity/2026-10-29/daytrade.json",
+    "investment-company/hr/activity/2026-10-30/daytrade.json",
+    "investment-company/hr/activity/2026-10-26/market-intelligence.json",
+    "investment-company/hr/activity/2026-10-26/performance-review.json",
+    "investment-company/hr/activity/2026-10-27/performance-review.json",
+    "investment-company/hr/activity/2026-10-28/performance-review.json",
+    "investment-company/hr/activity/2026-10-29/performance-review.json",
+    "investment-company/hr/activity/2026-10-30/performance-review.json",
+    "investment-company/hr/activity/2026-10-26/hr-audit.json",
+    "investment-company/hr/activity/2026-10-27/hr-audit.json",
+    "investment-company/hr/activity/2026-10-28/hr-audit.json",
+    "investment-company/hr/activity/2026-10-29/hr-audit.json",
+    "investment-company/hr/activity/2026-10-30/hr-audit.json",
+    "investment-company/market-intelligence/2026-10-26-close-review.json",
+    "investment-company/market-intelligence/2026-10-27-close-review.json",
+    "investment-company/market-intelligence/2026-10-28-close-review.json",
+    "investment-company/market-intelligence/2026-10-29-close-review.json",
+    "investment-company/market-intelligence/2026-10-30-close-review.json"
+  ],
+  "agentEvidence": [
+    {
+      "agentId": 1,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 73,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "強気材料を採用しても寄り天警告が順位へ反映されない"
+      ],
+      "improvementAction": "反対意見をaccepted/rejected/conditionalとrankDeltaで記録"
+    },
+    {
+      "agentId": 2,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 86,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "No.31監査と権限逸脱防止を別ログで照合"
+    },
+    {
+      "agentId": 3,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 66,
+      "grade": "C",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "10/28 TOPIX誤記と7:30原本欠損を事前阻止できない"
+      ],
+      "improvementAction": "市場終値の二系統照合と原本保存ゲートを設定"
+    },
+    {
+      "agentId": 4,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 78,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "指数・業種の乖離を判定条件へ"
+    },
+    {
+      "agentId": 5,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 68,
+      "grade": "C",
+      "noMaterialContribution": true,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "金利・商品当日値に基づく固有の判断変更が乏しい"
+      ],
+      "improvementAction": "同時刻金利・商品データ取得不可なら独自寄与なしを明示"
+    },
+    {
+      "agentId": 6,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 78,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "米SOXと個別日本株の非連動例を追跡"
+    },
+    {
+      "agentId": 7,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 76,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "指数と市場内部の強弱を分離"
+    },
+    {
+      "agentId": 8,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 88,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "IR発見と寄り後継続性を別KPI化"
+    },
+    {
+      "agentId": 9,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 72,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "PTS反応と現物寄り後継続性の乖離"
+      ],
+      "improvementAction": "PTS約定時刻・出来高と現物売買代金を別管理"
+    },
+    {
+      "agentId": 10,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会で決算の一次資料と順位への影響を記録"
+    },
+    {
+      "agentId": 11,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会でBS・CF根拠と判断への影響を記録"
+    },
+    {
+      "agentId": 12,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会で競争優位の根拠を保存"
+    },
+    {
+      "agentId": 13,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会で中計実績照合"
+    },
+    {
+      "agentId": 14,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "担当機会で期待バリュエーションと希薄化検証"
+    },
+    {
+      "agentId": 15,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 65,
+      "grade": "C",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "初値後10分の分足・VWAP検証未実施"
+      ],
+      "improvementAction": "初値後10分の分足・VWAPを時刻付き保存"
+    },
+    {
+      "agentId": 16,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 82,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "板・スプレッドの実測取得可否を記録"
+    },
+    {
+      "agentId": 17,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "スイング担当機会で相対強度を検証"
+    },
+    {
+      "agentId": 18,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 63,
+      "grade": "C",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "注文可能性と執行条件成立時刻の記録なし"
+      ],
+      "improvementAction": "執行条件成立・失効時刻を保存"
+    },
+    {
+      "agentId": 19,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "ポートフォリオ担当機会で保有更新を先行確認"
+    },
+    {
+      "agentId": 20,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 79,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "約定前の円建て期待利益捏造を禁止"
+    },
+    {
+      "agentId": 21,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 80,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "決算・政策・休日ギャップの複合リスクを監査"
+    },
+    {
+      "agentId": 22,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 89,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "薄いPTS警告のfalse alarmと機会損失も検証"
+    },
+    {
+      "agentId": 23,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 80,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "ショート仮説の反証条件を明示"
+    },
+    {
+      "agentId": 24,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 89,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "強気前提の崩壊条件を企業資料と照合"
+    },
+    {
+      "agentId": 25,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 81,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "寄り天の再発タグとfalse alarmを追跡"
+    },
+    {
+      "agentId": 26,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 88,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/performance-review.json",
+        "investment-company/hr/activity/2026-10-27/performance-review.json",
+        "investment-company/hr/activity/2026-10-28/performance-review.json",
+        "investment-company/hr/activity/2026-10-29/performance-review.json",
+        "investment-company/hr/activity/2026-10-30/performance-review.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "方向・執行・リスクを分けた結果判定"
+    },
+    {
+      "agentId": 27,
+      "evidenceCount": 0,
+      "opportunityCount": 0,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": null,
+      "evidenceSources": [],
+      "issues": [
+        "前週の担当機会なし。減点対象外"
+      ],
+      "improvementAction": "四半期レビュー機会で買い理由を再審査"
+    },
+    {
+      "agentId": 28,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 67,
+      "grade": "C",
+      "noMaterialContribution": true,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "機関投資家の実フローがなく独自加点不可"
+      ],
+      "improvementAction": "機関フロー不明と信用残を区別"
+    },
+    {
+      "agentId": 29,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 84,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json"
+      ],
+      "issues": [
+        "好決算と市場期待差・織り込みを順位へ反映不足"
+      ],
+      "improvementAction": "コンセンサス未取得なら期待差を未確認と記載"
+    },
+    {
+      "agentId": 30,
+      "evidenceCount": 1,
+      "opportunityCount": 1,
+      "score": null,
+      "grade": null,
+      "noMaterialContribution": true,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "代替データ探索の成果・所要時間を計測"
+    },
+    {
+      "agentId": 31,
+      "evidenceCount": 5,
+      "opportunityCount": 5,
+      "score": 74,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/hr-audit.json",
+        "investment-company/hr/activity/2026-10-27/hr-audit.json",
+        "investment-company/hr/activity/2026-10-28/hr-audit.json",
+        "investment-company/hr/activity/2026-10-29/hr-audit.json",
+        "investment-company/hr/activity/2026-10-30/hr-audit.json"
+      ],
+      "issues": [
+        "原本欠損の予防統制未完成"
+      ],
+      "improvementAction": "翌朝への改善適用確認と原本欠損の事前検知"
+    },
+    {
+      "agentId": 32,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 76,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "ニュースの新規性と候補昇格を紐付け"
+    },
+    {
+      "agentId": 33,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 75,
+      "grade": "B",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "テーマ連想と直接受益を分離"
+    },
+    {
+      "agentId": 34,
+      "evidenceCount": 6,
+      "opportunityCount": 6,
+      "score": 88,
+      "grade": "A",
+      "noMaterialContribution": false,
+      "evidenceSources": [
+        "investment-company/hr/activity/2026-10-26/daytrade.json",
+        "investment-company/hr/activity/2026-10-27/daytrade.json",
+        "investment-company/hr/activity/2026-10-28/daytrade.json",
+        "investment-company/hr/activity/2026-10-29/daytrade.json",
+        "investment-company/hr/activity/2026-10-30/daytrade.json",
+        "investment-company/hr/activity/2026-10-26/market-intelligence.json"
+      ],
+      "issues": [
+        "実約定・分足証拠がなく執行有効性未検証"
+      ],
+      "improvementAction": "一次情報による収益感応度の未定量部分を明記"
+    }
+  ],
+  "evidenceGaps": [
+    "7:30原本は10/27〜30で独立実行確認なし（backfilledのみ）",
+    "全20候補の9:10分足/VWAP/板/実注文・約定履歴なし",
+    "No30の独自代替データなし",
+    "performance-summary 10/05で陳腐化",
+    "W41/W42週次原本がない"
+  ],
+  "formalPersonnelChanges": "none",
+  "backfilled": false
+}
