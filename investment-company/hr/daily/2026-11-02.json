@@ -133,7 +133,25 @@
   "backfilled": false,
   "saveAudit": {
     "plannedFiles": 11,
-    "weeklyVerified": 4,
-    "dailyVerification": "pending"
+    "writeSucceeded": 11,
+    "writeFailed": 0,
+    "readbackVerified": 11,
+    "verificationMethod": "fetch_file after create_file/update_file; date/week and content fields checked",
+    "weeklyVerifiedPaths": [
+      "investment-company/hr/weekly/2026-W44.json",
+      "investment-company/hr/weekly/2026-W44.md",
+      "investment-company/hr/agent-scorecard.json",
+      "investment-company/hr/audit/2026-W44.json"
+    ],
+    "dailyVerifiedPaths": [
+      "investment-company/market-intelligence/2026-11-02-close-review.json",
+      "investment-company/hr/activity/2026-11-02/market-close-review.json",
+      "investment-company/hr/activity/2026-11-02/performance-review.json",
+      "investment-company/hr/activity/2026-11-02/hr-audit.json",
+      "investment-company/hr/daily/2026-11-02.json",
+      "investment-company/hr/process-improvements/current.json",
+      "investment-company/hr/process-improvements/2026-11-02.json"
+    ],
+    "activitySaveFailure": false
   }
 }
