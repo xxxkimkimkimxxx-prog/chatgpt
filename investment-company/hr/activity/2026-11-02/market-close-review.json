@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-02",
+  "asOf": "2026-11-02 16:51 JST",
+  "agentId": 3,
+  "title": "データ検証責任者",
+  "taskPerformed": "指数・候補OHLCと欠損の引け後監査",
+  "keyFindings": [
+    "日経63,081.86、TOPIX3,930.28",
+    "確定終値2件、場中値2件"
+  ],
+  "novelContribution": "場中値を終値扱いしない",
+  "decisionImpact": "No26の確定方向成績を2候補に限定",
+  "errorsOrMisses": [],
+  "risksFlagged": [
+    "FINAL_CLOSE_PARTIAL",
+    "INTRADAY_EXECUTION_MISSING",
+    "ACTUAL_ORDERS_MISSING",
+    "0730_ORIGINAL_UNVERIFIED",
+    "THEME_ORIGINAL_UNVERIFIED",
+    "STALE_INPUTS"
+  ],
+  "confidence": 0.65,
+  "dataLimitations": [
+    {
+      "code": "FINAL_CLOSE_PARTIAL",
+      "detail": "4082と6946の15:30確定終値未取得。場中値のみ",
+      "evidenceGap": true
+    },
+    {
+      "code": "INTRADAY_EXECUTION_MISSING",
+      "detail": "9:00〜9:10の分足/VWAP/板/スプレッド/条件成立時刻なし",
+      "evidenceGap": true
+    },
+    {
+      "code": "ACTUAL_ORDERS_MISSING",
+      "detail": "実注文/約定履歴なし。実取引勝率・損益・MFE・MAE検証不能",
+      "evidenceGap": true
+    },
+    {
+      "code": "0730_ORIGINAL_UNVERIFIED",
+      "detail": "7:30市場情報部正規原本なし、8:04以降の補完版のみ",
+      "backfilled": true,
+      "source": "investment-company/hr/activity/2026-11-02/market-intelligence.json",
+      "evidenceGap": true
+    },
+    {
+      "code": "THEME_ORIGINAL_UNVERIFIED",
+      "detail": "テーマ研究は8:04以降の補完版で独立実行未確認",
+      "backfilled": true,
+      "source": "investment-company/theme-research/2026-11-02/summary.json",
+      "evidenceGap": true
+    },
+    {
+      "code": "STALE_INPUTS",
+      "detail": "holdings=10/14、performance=10/05、watchlist=10/02",
+      "evidenceGap": true
+    }
+  ],
+  "sourcesUsed": [
+    "https://jp.investing.com/equities/daiichi-kigenso-kagaku-kogyo-co-ltd-historical-data",
+    "https://stocks.monex.co.jp/4368.T/historical",
+    "https://jp.investing.com/equities/nippon-avionics-co",
+    "https://jp.investing.com/equities/enplas-corp-historical-data",
+    "https://stocks.monex.co.jp/JP:$MNK/historical",
+    "https://finance.yahoo.co.jp/quote/998405.T/history"
+  ],
+  "duplicationWith": [
+    26
+  ],
+  "noMaterialContribution": false,
+  "backfilled": false
+}
