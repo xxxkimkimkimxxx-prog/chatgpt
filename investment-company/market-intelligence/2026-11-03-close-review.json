@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-03",
+  "asOf": "2026-11-03 16:34 JST",
+  "marketStatus": "JPX cash equity market closed - Culture Day",
+  "nextCashTradingDay": "2026-11-04",
+  "cashOHLC": null,
+  "candidates": [],
+  "actualTradeCount": 0,
+  "tradeWinRate": null,
+  "mfe": null,
+  "mae": null,
+  "referencePriorSession": "investment-company/market-intelligence/2026-11-02-close-review.json",
+  "priorSessionVerifiedCloses": 2,
+  "priorSessionMissingCloses": 2,
+  "backfilled": false,
+  "evidenceGap": [
+    "JPX現物休場のため当日OHLC・VWAP・約定は存在しない",
+    "11/2候補4082・6946の確定終値は前回記録で未検証",
+    "9:00-9:10の分足・板・実注文履歴がない",
+    "7:30正規原本と独立テーマ研究原本が確認できない",
+    "holdings 10/14・performance 10/05・watchlist 10/02の鮮度不足",
+    "34役割の独立プロセス稼働は検証できない"
+  ],
+  "sourcesUsed": [
+    "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+    "https://www.jpx.co.jp/derivatives/rules/holidaytrading/index.html",
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/process-improvements/current.json",
+    "investment-company/hr/activity/2026-11-03/daytrade.json",
+    "investment-company/decision-memos/2026-11-03/daytrade.md",
+    "investment-company/market-intelligence/2026-11-02-close-review.json",
+    "investment-company/hr/weekly/2026-W44.json",
+    "investment-company/theme-research/2026-11-02/summary.json",
+    "stock-dashboard/data/performance-summary.json"
+  ]
+}
