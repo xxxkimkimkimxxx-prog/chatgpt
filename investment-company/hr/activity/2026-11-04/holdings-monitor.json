@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-04",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-11-04T09:00:00+09:00",
+      "observedAtJST": "2026-11-04T08:58:05+09:00",
+      "status": "pre_open_no_current_tse_quotes",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（寄付き前・当日価格未取得）"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（寄付き前・当日価格未取得）"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（寄付き前・当日価格未取得）"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（寄付き前・当日価格未取得）"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（寄付き前・当日価格未取得）"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（寄付き前・当日価格未取得）"
+        }
+      ],
+      "portfolioUnrealizedPnlYen": null,
+      "previousConfirmedPnlYen": -234236,
+      "previousConfirmedPnlDate": "2026-11-02",
+      "jx": {
+        "code": "5016",
+        "previousStatus": "信用整理未了",
+        "currentStatus": "判定保留（前回状態維持）",
+        "creditReferenceDate": "2026-10-30",
+        "creditBuyShares": 21159700,
+        "creditSellShares": 696100,
+        "creditRatio": 30.4,
+        "creditUnchangedFromPreviousReport": true,
+        "creditPublicationDate": "未確認",
+        "priceYen": null,
+        "volumeShares": null,
+        "vwapYen": null,
+        "shortSellingChange": null
+      },
+      "previousScheduledRunRecord": "11/03休場のため監査対象外。11/02 17時の記録は今回未検証",
+      "missingData": [
+        "当日東証場中価格",
+        "当日出来高・VWAP",
+        "当日相対強度",
+        "新規信用残",
+        "前回予定時刻の実行記録確認"
+      ],
+      "notificationSent": false,
+      "notes": "09:00寄付き前。11/02終値の再通知を回避。前回確認した支持抵抗水準は新たに検証していない。"
+    }
+  ]
+}
