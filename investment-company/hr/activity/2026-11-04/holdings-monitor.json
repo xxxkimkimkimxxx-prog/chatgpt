@@ -1365,6 +1365,156 @@
         "機関空売り・同業相対強度"
       ],
       "notes": "16時枠は当日終値のみ使用する規則のため、14時台の場中値を終値として転用せず。検索結果の多くは11/02終値のまま。"
+    },
+    {
+      "scheduledAtJST": "2026-11-04T17:00:00+09:00",
+      "observedAtJST": "2026-11-04T17:04:04+09:00",
+      "status": "close_confirmed_five_yahoo_one_kabutan",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "marketPriceYen": 104,
+          "unrealizedPnlYen": -15000,
+          "averagingDecision": "見送り",
+          "reasons": [
+            "信用買残増加、反転の出来高確認不足"
+          ],
+          "supportResistance": null,
+          "credit": "2026-10-30基準の前回確認値;新規比較なし",
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "marketPriceYen": 25,
+          "unrealizedPnlYen": -10980,
+          "averagingDecision": "見送り",
+          "reasons": [
+            "25円安値圏、需給改善未確認"
+          ],
+          "supportResistance": null,
+          "credit": "2026-10-30基準の前回確認値;新規比較なし",
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "marketPriceYen": 2824,
+          "unrealizedPnlYen": -174400,
+          "averagingDecision": "見送り",
+          "reasons": [
+            "安値2607円から戻すも前日比大幅安、信用買残高止まり"
+          ],
+          "supportResistance": {
+            "support": [
+              2607
+            ],
+            "resistance": [
+              2901
+            ],
+            "note": "当日安値・高値"
+          },
+          "credit": "2026-10-30基準の前回確認値;新規比較なし",
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5027",
+          "name": "AnyMind",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "marketPriceYen": 721,
+          "unrealizedPnlYen": -54396,
+          "averagingDecision": "見送り",
+          "reasons": [
+            "信用買残増加、終値は当日高値727円未達"
+          ],
+          "supportResistance": null,
+          "credit": "2026-10-30基準の前回確認値;新規比較なし",
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "marketPriceYen": 133,
+          "unrealizedPnlYen": -5800,
+          "averagingDecision": "見送り",
+          "reasons": [
+            "薄商いと信用買残増加"
+          ],
+          "supportResistance": null,
+          "credit": "2026-10-30基準の前回確認値;新規比較なし",
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "marketPriceYen": 164,
+          "unrealizedPnlYen": -2560,
+          "averagingDecision": "見送り",
+          "reasons": [
+            "前日比6%安、需給改善未確認"
+          ],
+          "supportResistance": null,
+          "credit": "2026-10-30基準の前回確認値;新規比較なし",
+          "sectorRelativeStrength": null
+        }
+      ],
+      "portfolioUnrealizedPnlYen": -263136,
+      "previousReportedPnlYen": -281036,
+      "changeFromPreviousReportYen": 17900,
+      "jx": {
+        "currentStatus": "信用整理未了（暫定維持）",
+        "previousStatus": "信用整理未了",
+        "priceYen": 2824,
+        "previousCloseYen": 2926,
+        "highYen": 2901,
+        "lowYen": 2607,
+        "volumeShares": 24849800,
+        "turnoverThousandYen": 67987896,
+        "vwapYen": null,
+        "creditReferenceDate": "2026-10-30",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 21159700,
+        "creditSellShares": 696100,
+        "creditRatio": 30.4,
+        "creditUnchangedFromPreviousReport": true,
+        "creditBuyChangeShares": -578200,
+        "forcedLiquidationAbsorption": "安値から217円反発。ただし強制決済由来とは断定不可",
+        "trend": "戻りはあるが前日比-3.49%で反発確認条件未達",
+        "sectorRelativeStrength": null,
+        "shortSellingChange": null
+      },
+      "previousScheduledRunRecord": "16:00記録は直前の実行報告で保存済みとされるが、今回の監査ファイルで個別確認は未実施",
+      "missingData": [
+        "信用残最新公表値",
+        "全銘柄の機関空売り変化",
+        "同業相対強度",
+        "移動平均・出来高集中帯",
+        "全銘柄の終値VWAP",
+        "篠崎屋の終値は株探14:37表示104円で終値確証不足"
+      ],
+      "sourceUrls": [
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://finance.yahoo.co.jp/quote/4597.T",
+        "https://finance.yahoo.co.jp/quote/5027.T",
+        "https://finance.yahoo.co.jp/quote/8518.T",
+        "https://finance.yahoo.co.jp/quote/9432.T",
+        "https://s.kabutan.jp/stocks/2926"
+      ]
     }
   ]
 }
