@@ -239,6 +239,158 @@
       ],
       "notificationSent": false,
       "notes": "参照サイトは11/02終値表示のまま。古い価格を11/04場中値として扱わず。全銘柄判定保留。"
+    },
+    {
+      "scheduledAtJST": "2026-11-04T12:00:00+09:00",
+      "observedAtJST": "2026-11-04T11:59:27+09:00",
+      "status": "incomplete_intraday_quote_unavailable",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "supportResistance": null,
+          "volume": null,
+          "vwap": null,
+          "credit": null,
+          "sectorRelativeStrength": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/04 12:00時点の検証可能な当日場中価格・支持線・VWAP・信用需給を取得できず"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "supportResistance": null,
+          "volume": null,
+          "vwap": null,
+          "credit": null,
+          "sectorRelativeStrength": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/04 12:00時点の検証可能な当日場中価格・支持線・VWAP・信用需給を取得できず"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "supportResistance": null,
+          "volume": null,
+          "vwap": null,
+          "credit": null,
+          "sectorRelativeStrength": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/04 12:00時点の検証可能な当日場中価格・支持線・VWAP・信用需給を取得できず"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "supportResistance": null,
+          "volume": null,
+          "vwap": null,
+          "credit": null,
+          "sectorRelativeStrength": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/04 12:00時点の検証可能な当日場中価格・支持線・VWAP・信用需給を取得できず"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "supportResistance": null,
+          "volume": null,
+          "vwap": null,
+          "credit": null,
+          "sectorRelativeStrength": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/04 12:00時点の検証可能な当日場中価格・支持線・VWAP・信用需給を取得できず"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "supportResistance": null,
+          "volume": null,
+          "vwap": null,
+          "credit": null,
+          "sectorRelativeStrength": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/04 12:00時点の検証可能な当日場中価格・支持線・VWAP・信用需給を取得できず"
+          ]
+        }
+      ],
+      "portfolioUnrealizedPnlYen": null,
+      "changeFromPreviousNotificationYen": null,
+      "previousConfirmedPnlYen": -234236,
+      "previousConfirmedPnlDate": "2026-11-02",
+      "jx": {
+        "code": "5016",
+        "previousStatus": "信用整理未了",
+        "currentStatus": "判定保留（前回状態維持）",
+        "previousCloseYen": 2926,
+        "previousCloseDate": "2026-11-02",
+        "previousCloseUnrealizedPnlYen": -154000,
+        "previousDayLowYen": 2870,
+        "previousDayHighYen": 2962,
+        "previousDayVolumeShares": 12745600,
+        "previousDayTurnoverYen": 37222720850,
+        "previousDayVwapYen": 2920.4,
+        "creditReferenceDate": "2026-10-30",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 21159700,
+        "creditSellShares": 696100,
+        "creditRatio": 30.4,
+        "creditUnchangedFromPreviousReport": true,
+        "priceYen": null,
+        "volumeShares": null,
+        "vwapYen": null,
+        "shortSellingChange": null,
+        "creditUnwinding": "新規確認不可",
+        "forcedLiquidationAbsorption": "判定不可",
+        "trend": "当日反転確認不可"
+      },
+      "previousScheduledRunRecord": "11:00記録なし（11:00実行報告では保存失敗と明記）",
+      "previousScheduledRunMissing": true,
+      "missingData": [
+        "11/04場中価格6銘柄",
+        "支持抵抗線・出来高・VWAP・信用需給・相対強度",
+        "JX最新信用残公表日・機関空売り動向"
+      ],
+      "notificationSent": false,
+      "notes": "11/04の12時直前に取得可能な公開サイトは11/02価格のまま。前回11:00監査保存欠落を検知。"
     }
   ]
 }
