@@ -1,218 +1,249 @@
 {
-  "date": "2026-11-04",
-  "asOf": "2026-11-04 07:57 JST (pre-open)",
+  "date": "2026-11-05",
+  "asOf": "2026-11-05 08:00 JST pre-open (data accessed during run)",
   "session": "daytrade",
   "marketOpen": true,
   "finalDecisionMaker": "user",
   "newBuyApproved": false,
   "independentAgentProcessesVerified": false,
-  "rankingBasis": "材料の一次情報・期待値差・流動性不確実性・レッドチームを反映した条件付き監視順位。売買推奨・勝率の統計保証ではない",
   "market": {
-    "lastSession": "2026-11-02",
-    "nikkeiClose": 63081.86,
-    "nikkeiChangePct": -0.33,
-    "topixClose": 3930.28,
-    "topixChangePct": -0.88,
-    "usNasdaqNov3Pct": 0.83,
-    "usSP500Nov3Pct": 0.36,
-    "usDowNov3Pct": -0.38,
-    "usNvidiaNov3Pct": 2.3,
-    "source": [
-      "https://www.reuters.com/business/retail-consumer/us-stock-futures-mixed-apple-slides-midterms-loom-2026-11-03/"
-    ]
+    "nov4Nikkei": 62188.63,
+    "nov4NikkeiPct": -1.42,
+    "nov4Topix": 3895.38,
+    "nov4TopixPct": -0.89,
+    "nov4Source": "https://www.smartstocknotes.jp/2026/11/04/trend-20261104/",
+    "usNov4": "US major tech rallied after midterms; AI infrastructure supply chain impact mixed",
+    "usSource": "https://www.reuters.com/business/retail-consumer/democrats-midterm-sweep-fuels-750-billion-big-tech-rally-2026-11-04/"
   },
+  "rankingBasis": "継続監視の暫定順位。11/4確定終値・当日新規材料未確認のためFresh Catalystとしての新規推奨ではない",
   "candidates": [
     {
       "rank": 1,
-      "code": "6890",
-      "name": "フェローテック",
+      "code": "9104",
+      "name": "商船三井",
       "bucket": [
-        "Fresh Catalyst",
-        "Theme News",
+        "Continuation Momentum",
         "Sector Alignment"
       ],
-      "material": "11/2会社開示：変則9か月決算の経常利益予想550→660億円（+20%）。半導体製造装置用セラミックス・石英、AIデータセンター光トランシーバー用サーモモジュール需要",
-      "article": "11/2業績修正開示と11/2株探",
-      "directness": "高（会社が具体的な製品需要を明示）",
-      "earningsSensitivity": "経常利益予想+110億円。ただしAI単独寄与は未開示",
-      "expectationGap": "会社予想比+20%、市場コンセンサス未取得",
-      "pricedIn": "11/2引け後開示。11/3祝日を挟んだPTS反応未確認",
+      "material": "11/2経常利益予想上方修正2250→2950億円。11/4終値・同業追随未検証",
+      "directness": "高・海運市況",
+      "earningsSensitivity": "+700億円の会社予想修正（11/2資料ベース）",
+      "expectationGap": "コンセンサスの同時点比較未確認",
+      "pricedIn": "11/4に初回反応済み、材料出尽くし警戒",
+      "redTeam": "上方修正は市場期待未達の可能性、同業不一致・寄り天・海運市況反落。空売り目線はVWAP下で戻り売り",
+      "confidence": "低",
+      "sources": [
+        "https://ir.mol.co.jp/ja/ir/ir_news.html"
+      ],
+      "conditionalRiseProbability": null,
+      "probabilityReason": "校正標本不足",
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "11/2終値7631円、PTS出来高・寄り板未確認",
-      "buy": "初動高値突破またはVWAP回復、同業相対強度・売買代金増、スプレッド許容、RR>=2",
-      "skip": "大幅GU後VWAP割れ、初動高値更新失敗、同業弱い、板薄い",
-      "invalidation": "初動安値割れ後のVWAP回復失敗または会社材料の訂正",
-      "redTeam": "材料は二度目の上方修正で期待先行の可能性。半導体地合いと一致しなければ寄り天、空売り側は初動高値失敗とVWAP割れを狙う。AI単独利益は不明",
-      "conditionalRiseProbability": null,
-      "confidence": "中（材料は一次資料、寄り前需給未確認）",
+      "liquidity": "11/5寄り前の板・売買代金未取得",
+      "check0900to0910": [
+        "初動高安（初値遅延時は初値後10分）",
+        "VWAP",
+        "出来高・売買代金",
+        "日経/TOPIX/先物",
+        "同業",
+        "板厚・スプレッド"
+      ],
+      "buyCondition": "初動高値更新またはVWAP奪回後の定着、同業一致、出来高・板厚確認、構造的損切りと目標でRR>=2",
+      "skipCondition": "大幅GUでRR<2、VWAP下・初動安値割れ、薄板・スプレッド過大、同業逆行、材料出尽くし",
+      "invalidation": "初動安値割れ後のVWAP回復失敗、または材料訂正",
+      "plannedMaxLoss": null,
+      "expectedProfit": null,
+      "rr": null,
       "rrTarget": 2,
-      "sources": [
-        "https://financialfilings.com/filings/ferrotec-corporation/earnings-release/2026/75330494/",
-        "https://s.kabutan.jp/news/k202611020059/"
-      ]
+      "rrReason": "エントリー・損切り・数量未確定。2Rは選別基準で期待利益ではない",
+      "tradeApproval": false
     },
     {
       "rank": 2,
       "code": "7480",
       "name": "スズデン",
       "bucket": [
-        "Fresh Catalyst",
-        "Theme News"
+        "Continuation Momentum",
+        "Fresh Catalyst"
       ],
-      "material": "11/2経常利益予想42.6→50.3億円（+18.1%）、配当176→202円。半導体・データセンター投資需要が会社説明の追い風",
-      "article": "11/2決算・業績修正記事と開示一覧",
-      "directness": "中〜高（顧客設備投資需要の言及、AI単独受注は未定量）",
-      "earningsSensitivity": "経常予想+7.7億円。AI単独寄与不明",
-      "expectationGap": "会社予想比+18.1%、市場予想未取得",
-      "pricedIn": "2回目の上方修正、織り込み懸念。PTS未確認",
+      "material": "11/2経常利益予想42.6→50.3億円、増配176→202円。11/4反応未検証",
+      "directness": "中高・設備投資需要",
+      "earningsSensitivity": "+7.7億円会社予想修正",
+      "expectationGap": "市場予想未取得",
+      "pricedIn": "11/4初回反応済み、株式処分信託による売り需給懸念",
+      "redTeam": "大株主売却需給・薄板・材料出尽くし。空売り目線は上値売り圧力とVWAP割れ",
+      "confidence": "低",
+      "sources": [
+        "https://treelazy.com/stock-jp/7480/conference"
+      ],
+      "conditionalRiseProbability": null,
+      "probabilityReason": "校正標本不足",
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "東証スタンダード、寄り板・現物売買代金未確認",
-      "buy": "初値後高値再突破、VWAP維持、出来高・板厚・同業追随、RR>=2",
-      "skip": "主要株主の株式処分信託による需給懸念が優勢、薄板、VWAP割れ",
-      "invalidation": "初動安値割れ・反発失敗",
-      "redTeam": "11/2筆頭株主の株式処分信託開示が売り圧力要因。好決算・増配だけで買い需要を保証しない。空売り側は上値の供給増と寄り天を重視",
-      "conditionalRiseProbability": null,
-      "confidence": "中低（需給不確実性）",
+      "liquidity": "11/5寄り前の板・売買代金未取得",
+      "check0900to0910": [
+        "初動高安（初値遅延時は初値後10分）",
+        "VWAP",
+        "出来高・売買代金",
+        "日経/TOPIX/先物",
+        "同業",
+        "板厚・スプレッド"
+      ],
+      "buyCondition": "初動高値更新またはVWAP奪回後の定着、同業一致、出来高・板厚確認、構造的損切りと目標でRR>=2",
+      "skipCondition": "大幅GUでRR<2、VWAP下・初動安値割れ、薄板・スプレッド過大、同業逆行、材料出尽くし",
+      "invalidation": "初動安値割れ後のVWAP回復失敗、または材料訂正",
+      "plannedMaxLoss": null,
+      "expectedProfit": null,
+      "rr": null,
       "rrTarget": 2,
-      "sources": [
-        "https://treelazy.com/stock-jp/7480/conference",
-        "https://finance.yahoo.co.jp/news/detail/9c07e9eec7d8b2ebb7f1fd37c37216f05999b1af"
-      ]
+      "rrReason": "エントリー・損切り・数量未確定。2Rは選別基準で期待利益ではない",
+      "tradeApproval": false
     },
     {
       "rank": 3,
-      "code": "9104",
-      "name": "商船三井",
-      "bucket": [
-        "Fresh Catalyst",
-        "Sector Alignment"
-      ],
-      "material": "11/2会社開示で通期経常利益2250→2950億円（+31.1%）。ドライバルク・エネルギー・ONEの市況改善",
-      "article": "11/2会社IRと決算報道",
-      "directness": "高（海運市況・持分法利益の実業績）",
-      "earningsSensitivity": "経常予想+700億円、持分法利益比率の追加確認が必要",
-      "expectationGap": "会社予想比+31.1%。外部集計コンセンサス3192.5億円に対して会社予想2950億円と下回る可能性（時点・定義要確認）",
-      "pricedIn": "上方修正は2回目、PTS未確認",
-      "pts": null,
-      "institutionalFlow": null,
-      "liquidity": "東証プライム、11/2終値7579円。板・売買代金未確認",
-      "buy": "初動高値更新、VWAP上、川崎汽船・日本郵船の追随、RR>=2",
-      "skip": "同業不一致、ONE収益の持続性懸念、寄り天",
-      "invalidation": "VWAP下で初動安値割れ",
-      "redTeam": "市場予想に未達なら好材料出尽くし。空売り側は海運市況反落と経常利益依存を重視",
-      "conditionalRiseProbability": null,
-      "confidence": "中低（期待値比較が不完全）",
-      "rrTarget": 2,
-      "sources": [
-        "https://ir.mol.co.jp/ja/ir/ir_news.html",
-        "https://finance.yahoo.co.jp/news/detail/9c07e9eec7d8b2ebb7f1fd37c37216f05999b1af"
-      ]
-    },
-    {
-      "rank": 4,
       "code": "6200",
       "name": "インソース",
       "bucket": [
+        "Continuation Momentum",
         "Fresh Catalyst"
       ],
-      "material": "11/2決算、翌期経常利益62.2→68.5億円（+10%）、7期連続最高益予想。研修・動画・サブスク収益",
-      "article": "11/2株探決算速報",
-      "directness": "高（研修需要の既存事業）",
-      "earningsSensitivity": "翌期経常利益+6.3億円見込み。コンセンサス未取得",
-      "expectationGap": "前期実績比+10%、市場予想未取得",
-      "pricedIn": "安定成長が評価済みの可能性、PTS未確認",
+      "material": "11/2翌期経常利益+10%予想、研修・動画・サブスク事業。11/4反応未検証",
+      "directness": "高・既存事業",
+      "earningsSensitivity": "翌期経常利益+6.3億円見込み",
+      "expectationGap": "市場予想未取得",
+      "pricedIn": "安定成長期待が織り込まれた可能性",
+      "redTeam": "市場期待に対するサプライズ不足、低出来高の寄り天、空売り目線はVWAP下への失速",
+      "confidence": "低",
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/6200.T"
+      ],
+      "conditionalRiseProbability": null,
+      "probabilityReason": "校正標本不足",
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "現物板・売買代金未確認",
-      "buy": "初動高値更新・VWAP上維持・市場全体に対する相対強度・RR>=2",
-      "skip": "出来高不足、寄り天、指数・同業に劣後",
-      "invalidation": "初動安値割れ・VWAP再奪回失敗",
-      "redTeam": "増益率は市場期待次第でサプライズ不足。材料出尽くし、寄り後利食いを警戒",
-      "conditionalRiseProbability": null,
-      "confidence": "中低（二次資料のみ）",
+      "liquidity": "11/5寄り前の板・売買代金未取得",
+      "check0900to0910": [
+        "初動高安（初値遅延時は初値後10分）",
+        "VWAP",
+        "出来高・売買代金",
+        "日経/TOPIX/先物",
+        "同業",
+        "板厚・スプレッド"
+      ],
+      "buyCondition": "初動高値更新またはVWAP奪回後の定着、同業一致、出来高・板厚確認、構造的損切りと目標でRR>=2",
+      "skipCondition": "大幅GUでRR<2、VWAP下・初動安値割れ、薄板・スプレッド過大、同業逆行、材料出尽くし",
+      "invalidation": "初動安値割れ後のVWAP回復失敗、または材料訂正",
+      "plannedMaxLoss": null,
+      "expectedProfit": null,
+      "rr": null,
       "rrTarget": 2,
+      "rrReason": "エントリー・損切り・数量未確定。2Rは選別基準で期待利益ではない",
+      "tradeApproval": false
+    },
+    {
+      "rank": 4,
+      "code": "6890",
+      "name": "フェローテック",
+      "bucket": [
+        "Continuation Momentum",
+        "Theme News"
+      ],
+      "material": "11/2会社予想経常550→660億円。11/4は8,081円初値後11:05に7,611円まで下落した途中観測",
+      "directness": "高・半導体部材と光トランシーバー向け",
+      "earningsSensitivity": "+110億円会社予想修正、AI単独寄与不明",
+      "expectationGap": "市場予想未取得",
+      "pricedIn": "11/4大幅GU後の売りを確認、材料出尽くしリスク高",
+      "redTeam": "前日寄り天型、売り圧力継続・半導体セクター不一致、空売り目線は戻りVWAP失敗。反発仮説は弱い",
+      "confidence": "低",
       "sources": [
-        "https://finance.yahoo.co.jp/news/detail/9c07e9eec7d8b2ebb7f1fd37c37216f05999b1af"
-      ]
+        "https://financialfilings.com/filings/ferrotec-corporation/earnings-release/2026/75330494/"
+      ],
+      "conditionalRiseProbability": null,
+      "probabilityReason": "校正標本不足",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "11/5寄り前の板・売買代金未取得",
+      "check0900to0910": [
+        "初動高安（初値遅延時は初値後10分）",
+        "VWAP",
+        "出来高・売買代金",
+        "日経/TOPIX/先物",
+        "同業",
+        "板厚・スプレッド"
+      ],
+      "buyCondition": "初動高値更新またはVWAP奪回後の定着、同業一致、出来高・板厚確認、構造的損切りと目標でRR>=2",
+      "skipCondition": "大幅GUでRR<2、VWAP下・初動安値割れ、薄板・スプレッド過大、同業逆行、材料出尽くし",
+      "invalidation": "初動安値割れ後のVWAP回復失敗、または材料訂正",
+      "plannedMaxLoss": null,
+      "expectedProfit": null,
+      "rr": null,
+      "rrTarget": 2,
+      "rrReason": "エントリー・損切り・数量未確定。2Rは選別基準で期待利益ではない",
+      "tradeApproval": false
     }
   ],
-  "watchConditions": "9:00〜9:10の初動高値・安値、VWAP、出来高、売買代金、日経/TOPIX/先物、同業、板厚、スプレッドを確認。初値が遅れた場合は初値後10分で評価。",
-  "conditionalProbabilityPolicy": "未校正確率を捏造しないためnull。十分な事例蓄積後に校正",
-  "pnlPolicy": "計画損失R=(実買値-構造的撤退価格)*株数+費用・スリッページ。買値・撤退値・数量未確定につき円建て最大計画損失/統計期待利益はnull。目標利益は2Rであり期待値ではない",
-  "freshness": {
-    "holdings": {
-      "asOf": "2026-10-14",
-      "status": "blocked",
-      "reason": "現在の保有数量・発注判断には使用不可。参考銘柄の抽出のみ"
-    },
-    "performance": {
-      "asOf": "2026-10-05",
-      "status": "blocked",
-      "reason": "最新の成績とみなさない"
-    },
-    "watchlist": {
-      "asOf": "2026-10-02",
-      "status": "usable_with_warning",
-      "reason": "探索の参考のみ、当日順位根拠に使用しない"
-    },
-    "marketIntelligenceLatest": {
-      "asOf": "2026-11-02",
-      "status": "blocked",
-      "reason": "11/4の7:30原本ではない"
-    }
+  "holdings": {
+    "sourceAsOf": "2026-10-14",
+    "freshnessStatus": "blocked",
+    "referenceCodes": [
+      "2926",
+      "4597",
+      "5016",
+      "5027",
+      "8518",
+      "9432"
+    ],
+    "currentPositionsVerified": false,
+    "jxAveraging": "見送り・現保有と現在需給未確認"
   },
-  "previousCloseReview": "2026-11-02",
-  "previousLearning": [
-    "11/2候補4件中2件の確定終値のみ確認、未検証2件を成功/失敗に数えない",
-    "方向と執行を分離しVWAP・板・実約定なしの勝率を作らない",
-    "前週寄り天多発を踏まえ、GUだけで買わず初値後10分確認"
-  ],
-  "improvements": [
+  "inputFreshness": {
+    "holdings": "blocked",
+    "performance": "blocked",
+    "watchlist": "usable_with_warning",
+    "marketIntelligenceLatest": "blocked"
+  },
+  "improvementApplications": [
     {
       "improvementId": "EXP-20261102-01",
       "applied": true,
       "affectedCandidates": [
-        "6890",
-        "7480",
         "9104",
-        "6200"
+        "7480",
+        "6200",
+        "6890"
       ],
-      "rankDelta": {
-        "7480": -1,
-        "9104": -1
-      },
+      "rankDelta": null,
       "conditionChanges": [
-        "No.23/24/25/29の警告採否を明示",
-        "7480は筆頭株主売却需給の警戒を追加",
-        "9104は会社予想と外部市場予想の差を警戒"
+        "6890を前日1位から暫定4位に降格。ただし前日順位との比較であり、当日反対意見を除いた反実仮想rankDeltaではない",
+        "23-25の寄り天・材料出尽くし警告を全候補の条件に適用"
       ],
-      "reason": "反対意見を条件へ反映。仮順位との差は分析上の相対調整であり過去の正式順位との差ではない",
-      "votes": [
+      "reason": "11/4の6890途中観測と前日レビューの検証欠損",
+      "warningDecisions": [
         {
-          "agentId": 23,
-          "code": "6890",
-          "verdict": "conditional",
-          "reason": "寄り天とVWAP割れ警戒"
+          "agentIds": [
+            23,
+            24,
+            25
+          ],
+          "candidate": "6890",
+          "decision": "accepted",
+          "preRank": 1,
+          "postRank": 4,
+          "rankDelta": -3,
+          "rankDeltaType": "previous_day_rank_change_not_counterfactual",
+          "reason": "前日GU後の急落途中観測を重視"
         },
         {
-          "agentId": 24,
-          "code": "9104",
-          "verdict": "accepted",
-          "reason": "経常利益修正とコンセンサス差の可能性"
-        },
-        {
-          "agentId": 25,
-          "code": "7480",
-          "verdict": "accepted",
-          "reason": "株式処分信託と寄り天の重複リスク"
-        },
-        {
-          "agentId": 29,
-          "code": "6200",
-          "verdict": "conditional",
-          "reason": "市場予想未確認"
+          "agentIds": [
+            24,
+            29
+          ],
+          "candidate": "9104",
+          "decision": "conditional",
+          "preRank": null,
+          "postRank": 1,
+          "rankDelta": null,
+          "reason": "会社予想上方修正は確認済みだが市場期待との差未確認"
         }
       ]
     },
@@ -220,46 +251,41 @@
       "improvementId": "EXP-20261102-02",
       "applied": true,
       "affectedCandidates": [
-        "6890",
-        "7480",
         "9104",
-        "6200"
+        "7480",
+        "6200",
+        "6890"
       ],
-      "rankDelta": {},
+      "rankDelta": null,
       "conditionChanges": [
-        "signalVerdict=unverified",
-        "executionVerdict=unverified",
-        "actualTradeVerdict=unverified"
+        "Signal/Execution/Riskを分離し条件成立未確認を成功扱いしない"
       ],
-      "reason": "寄り前に実際の約定可能性を成功と認定しない"
+      "reason": "11/4確定終値0/4、執行条件0/4"
     },
     {
       "improvementId": "EXP-20261102-03",
       "applied": true,
       "affectedCandidates": [
-        "5016",
-        "2926",
-        "4597",
-        "5027",
-        "8518",
-        "9432"
+        "9104",
+        "7480",
+        "6200",
+        "6890"
       ],
-      "rankDelta": {},
+      "rankDelta": null,
       "conditionChanges": [
-        "古い保有データを現保有の断定に使わない"
+        "holdings=blocked; performance=blocked; watchlist=usable_with_warning; market-intelligence/latest=blocked"
       ],
-      "reason": "holdings/performance blocked、watchlist warning"
+      "reason": "更新日10/14,10/05,10/02,11/02"
     }
   ],
   "evidenceGap": [
-    "11/4 7:30市場情報部の正規原本未確認。latest.jsonは11/2補完版",
-    "11/4テーマ研究の独立原本未確認。本委員会の調査を独立稼働とは扱わない",
-    "11/2 close-reviewで4082/6946の確定終値未取得",
-    "当日PTS・寄り前先物同時刻値・機関実フロー・コンセンサスの大部分未取得",
-    "9:00〜9:10の実測VWAP・板・約定条件は寄り前のため未取得",
-    "holdings 10/14、performance 10/05、watchlist 10/02。現在保有数量と実績はblocked",
-    "11/3休場のため前営業日は11/2"
+    "11/5 7:30市場情報部原本未取得",
+    "11/5独立テーマ研究原本未取得",
+    "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+    "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+    "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+    "現保有・実約定履歴未取得"
   ],
-  "activitySaveFailure": false,
-  "backfilled": false
+  "backfilled": false,
+  "activitySaveFailure": null
 }
