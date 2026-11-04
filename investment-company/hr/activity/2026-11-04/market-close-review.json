@@ -1,0 +1,98 @@
+{
+  "date": "2026-11-04",
+  "agentIds": [
+    3,
+    26
+  ],
+  "findings": {
+    "date": "2026-11-04",
+    "asOf": "2026-11-04 16:33 JST",
+    "sourceStatus": "partial_intraday_only",
+    "candidates": [
+      {
+        "code": "6890",
+        "previousClose": 7631,
+        "open": 8081,
+        "close": null,
+        "finalCloseVerified": false,
+        "previousCloseToClosePct": null,
+        "openToClosePct": null,
+        "entryConditionVerified": null,
+        "actualTradeVerified": false,
+        "vwapAt0910": null,
+        "mfe": null,
+        "mae": null,
+        "tradeOutcomeVerdict": "unverifiable",
+        "sources": [
+          "https://finance.matsui.co.jp/stock/6890/chart/index",
+          "https://finance.yahoo.co.jp/quote/6890.T/chart"
+        ]
+      },
+      {
+        "code": "7480",
+        "previousClose": null,
+        "open": null,
+        "close": null,
+        "finalCloseVerified": false,
+        "previousCloseToClosePct": null,
+        "openToClosePct": null,
+        "entryConditionVerified": null,
+        "actualTradeVerified": false,
+        "vwapAt0910": null,
+        "mfe": null,
+        "mae": null,
+        "tradeOutcomeVerdict": "unverifiable",
+        "sources": []
+      },
+      {
+        "code": "9104",
+        "previousClose": null,
+        "open": null,
+        "close": null,
+        "finalCloseVerified": false,
+        "previousCloseToClosePct": null,
+        "openToClosePct": null,
+        "entryConditionVerified": null,
+        "actualTradeVerified": false,
+        "vwapAt0910": null,
+        "mfe": null,
+        "mae": null,
+        "tradeOutcomeVerdict": "unverifiable",
+        "sources": []
+      },
+      {
+        "code": "6200",
+        "previousClose": null,
+        "open": null,
+        "close": null,
+        "finalCloseVerified": false,
+        "previousCloseToClosePct": null,
+        "openToClosePct": null,
+        "entryConditionVerified": null,
+        "actualTradeVerified": false,
+        "vwapAt0910": null,
+        "mfe": null,
+        "mae": null,
+        "tradeOutcomeVerdict": "unverifiable",
+        "sources": []
+      }
+    ],
+    "verifiedIntradayObservation": {
+      "code": "6890",
+      "open": 8081,
+      "highAt0909": 8249,
+      "priceAt1105": 7611,
+      "previousClose": 7631,
+      "note": "11:05時点、確定終値ではない。始値比-5.82%、前日比-0.26%。初値後に急落しGU追いリスクが顕在化",
+      "source": "https://finance.matsui.co.jp/stock/6890/chart/index"
+    },
+    "actualTradesVerified": 0,
+    "evidenceGap": [
+      "4候補の11/4確定終値未確認",
+      "9:00-9:10分足/VWAP/板/スプレッド/約定条件未取得",
+      "実注文/約定履歴なし"
+    ],
+    "backfilled": false
+  },
+  "backfilled": false
+}
