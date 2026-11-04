@@ -1,0 +1,787 @@
+{
+  "date": "2026-11-05",
+  "session": "daytrade",
+  "roleRecordCount": 23,
+  "independentAgentProcessesVerified": false,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "6890の前日1位→暫定4位。反実仮想rankDeltaは算定不能"
+      ],
+      "novelContribution": "6890の前日1位→暫定4位。反実仮想rankDeltaは算定不能",
+      "decisionImpact": "6890の前日1位→暫定4位。反実仮想rankDeltaは算定不能",
+      "candidatesPromoted": [
+        "9104"
+      ],
+      "candidatesRejected": [
+        "6890"
+      ],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "未承認発注・未校正確率の断定を禁止"
+      ],
+      "novelContribution": "未承認発注・未校正確率の断定を禁止",
+      "decisionImpact": "未承認発注・未校正確率の断定を禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "古い入力4系統を利用可否分類"
+      ],
+      "novelContribution": "古い入力4系統を利用可否分類",
+      "decisionImpact": "古い入力4系統を利用可否分類",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "米中間選挙後の政策不確実性を警戒"
+      ],
+      "novelContribution": "米中間選挙後の政策不確実性を警戒",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "米大型テック高とAI設備投資制約の二面性を警戒"
+      ],
+      "novelContribution": "米大型テック高とAI設備投資制約の二面性を警戒",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "11/4日経・TOPIX下落、11/5セクター追随必須"
+      ],
+      "novelContribution": "11/4日経・TOPIX下落、11/5セクター追随必須",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "11/2業績修正材料は既知。11/4以降の新規一次開示未確認"
+      ],
+      "novelContribution": "11/2業績修正材料は既知。11/4以降の新規一次開示未確認",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "当日PTS・網羅的スクリーニング未実施"
+      ],
+      "novelContribution": "当日PTS・網羅的スクリーニング未実施",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "9:00-9:10初動高安とVWAPの確認を条件化"
+      ],
+      "novelContribution": "9:00-9:10初動高安とVWAPの確認を条件化",
+      "decisionImpact": "9:00-9:10初動高安とVWAPの確認を条件化",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "テクニカル",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "初動安値割れ・VWAP回復失敗を無効化条件に設定"
+      ],
+      "novelContribution": "初動安値割れ・VWAP回復失敗を無効化条件に設定",
+      "decisionImpact": "初動安値割れ・VWAP回復失敗を無効化条件に設定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "板・スプレッド・注文履歴不在につき執行成功判定禁止"
+      ],
+      "novelContribution": "板・スプレッド・注文履歴不在につき執行成功判定禁止",
+      "decisionImpact": "板・スプレッド・注文履歴不在につき執行成功判定禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "リスク管理",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "構造的撤退価格・数量未確定につき円建て損失算定保留"
+      ],
+      "novelContribution": "構造的撤退価格・数量未確定につき円建て損失算定保留",
+      "decisionImpact": "構造的撤退価格・数量未確定につき円建て損失算定保留",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "需給",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "機関実フロー未取得"
+      ],
+      "novelContribution": "機関実フロー未取得",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "薄板・ギャップ・RR未達を見送り条件に設定"
+      ],
+      "novelContribution": "薄板・ギャップ・RR未達を見送り条件に設定",
+      "decisionImpact": "薄板・ギャップ・RR未達を見送り条件に設定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "寄り天レッドチーム",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "6890寄り天再発警戒"
+      ],
+      "novelContribution": "6890寄り天再発警戒",
+      "decisionImpact": "6890寄り天再発警戒",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "6890寄り天再発警戒"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊レッドチーム",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "材料出尽くし・市場期待未達を警告"
+      ],
+      "novelContribution": "材料出尽くし・市場期待未達を警告",
+      "decisionImpact": "材料出尽くし・市場期待未達を警告",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "材料出尽くし・市場期待未達を警告"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "需給レッドチーム",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "7480大株主売り需給を警告"
+      ],
+      "novelContribution": "7480大株主売り需給を警告",
+      "decisionImpact": "7480大株主売り需給を警告",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "7480大株主売り需給を警告"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "テーマ",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "期待値・決算",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "9104の市場期待差未確認につき条件付き採用"
+      ],
+      "novelContribution": "9104の市場期待差未確認につき条件付き採用",
+      "decisionImpact": "9104の市場期待差未確認につき条件付き採用",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "テーマ抽出",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ関連銘柄",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需検証",
+      "taskPerformed": "本実行内での役割別分析。独立エージェント実行の証拠なし",
+      "keyFindings": [
+        "6890のAI需要は過去の会社開示ベース、新規当日一次情報なし"
+      ],
+      "novelContribution": "6890のAI需要は過去の会社開示ベース、新規当日一次情報なし",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/5 7:30市場情報部原本未取得",
+        "11/5独立テーマ研究原本未取得",
+        "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+        "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+        "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+        "現保有・実約定履歴未取得"
+      ],
+      "sourcesUsed": [
+        "investment-company/market-intelligence/2026-11-04-close-review.json",
+        "investment-company/decision-memos/2026-11-04/daytrade.md"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    }
+  ],
+  "improvementApplications": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "applied": true,
+      "affectedCandidates": [
+        "9104",
+        "7480",
+        "6200",
+        "6890"
+      ],
+      "rankDelta": null,
+      "conditionChanges": [
+        "6890を前日1位から暫定4位に降格。ただし前日順位との比較であり、当日反対意見を除いた反実仮想rankDeltaではない",
+        "23-25の寄り天・材料出尽くし警告を全候補の条件に適用"
+      ],
+      "reason": "11/4の6890途中観測と前日レビューの検証欠損",
+      "warningDecisions": [
+        {
+          "agentIds": [
+            23,
+            24,
+            25
+          ],
+          "candidate": "6890",
+          "decision": "accepted",
+          "preRank": 1,
+          "postRank": 4,
+          "rankDelta": -3,
+          "rankDeltaType": "previous_day_rank_change_not_counterfactual",
+          "reason": "前日GU後の急落途中観測を重視"
+        },
+        {
+          "agentIds": [
+            24,
+            29
+          ],
+          "candidate": "9104",
+          "decision": "conditional",
+          "preRank": null,
+          "postRank": 1,
+          "rankDelta": null,
+          "reason": "会社予想上方修正は確認済みだが市場期待との差未確認"
+        }
+      ]
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "applied": true,
+      "affectedCandidates": [
+        "9104",
+        "7480",
+        "6200",
+        "6890"
+      ],
+      "rankDelta": null,
+      "conditionChanges": [
+        "Signal/Execution/Riskを分離し条件成立未確認を成功扱いしない"
+      ],
+      "reason": "11/4確定終値0/4、執行条件0/4"
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "applied": true,
+      "affectedCandidates": [
+        "9104",
+        "7480",
+        "6200",
+        "6890"
+      ],
+      "rankDelta": null,
+      "conditionChanges": [
+        "holdings=blocked; performance=blocked; watchlist=usable_with_warning; market-intelligence/latest=blocked"
+      ],
+      "reason": "更新日10/14,10/05,10/02,11/02"
+    }
+  ],
+  "priorDayLearning": "6890寄り天途中観測。4候補終値0/4、執行検証0/4。確率・損益を捏造しない",
+  "evidenceGap": [
+    "11/5 7:30市場情報部原本未取得",
+    "11/5独立テーマ研究原本未取得",
+    "11/4候補4銘柄の確定終値と実際の条件成立時刻未検証",
+    "11/5寄り前PTS・先物同時刻・機関需給・板・スプレッド未取得",
+    "11/4米国市場の終値は一部報道で方向確認、数値・銘柄別同時刻精査未完了",
+    "現保有・実約定履歴未取得"
+  ],
+  "backfilled": false,
+  "activitySaveFailure": null
+}
