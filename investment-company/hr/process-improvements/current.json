@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "asOf": "2026-11-02",
+  "asOf": "2026-11-05",
   "purpose": "人事評価を翌営業日の投資委員会へ閉ループ接続する",
   "maxActiveTrials": 3,
   "activeTrials": [
@@ -35,6 +35,14 @@
           "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
           "evidence": "investment-company/hr/weekly/2026-W44.json",
           "verdict": "pending_no_post_effective_data"
+        },
+        {
+          "date": "2026-11-05",
+          "stage": "post_effective_audit",
+          "finding": "6890は11/4の1位から11/5の暫定4位に降格したが、同日内の反対意見を除いた順位差は測定不能。反対意見の採否は記録された。",
+          "verdict": "continue_measurement",
+          "evidence": "investment-company/decision-memos/2026-11-05/daytrade.md",
+          "nextAction": "No.1: 反対意見ごとに採否・理由・同一時点の変更前後順位・条件変更を記録"
         }
       ]
     },
@@ -68,6 +76,14 @@
           "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
           "evidence": "investment-company/hr/weekly/2026-W44.json",
           "verdict": "pending_no_post_effective_data"
+        },
+        {
+          "date": "2026-11-05",
+          "stage": "post_effective_audit",
+          "finding": "11/5は4候補中確定終値確認1件、条件成立検証0件。実際の取引成功を捏造せず分離できているが、取得率の改善は未達。",
+          "verdict": "modify_operational_handoff_not_rule",
+          "evidence": "investment-company/hr/activity/2026-11-05/performance-review.json",
+          "nextAction": "No.3/26: 15:30後に確定四本値の取得を優先。No.15/18: 実測9:00-9:10データがなければ実行成績を保留"
         }
       ]
     },
@@ -98,6 +114,14 @@
           "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
           "evidence": "investment-company/hr/weekly/2026-W44.json",
           "verdict": "pending_no_post_effective_data"
+        },
+        {
+          "date": "2026-11-05",
+          "stage": "post_effective_audit",
+          "finding": "11/5朝の決裁書は古い保有・成績データをblockedとして扱い、現保有やナンピンの断定を回避した。誤利用ゼロの独立監査は未了。",
+          "verdict": "continue_measurement",
+          "evidence": "investment-company/decision-memos/2026-11-05/daytrade.md",
+          "nextAction": "No.3/31: blocked入力を引用した全主張を抽出し、誤利用と過剰遮断を件数で測る"
         }
       ]
     }
@@ -119,7 +143,7 @@
       "formal_hiring_demotion_merge_abolition"
     ]
   },
-  "lastReviewAt": "2026-11-02 16:51 JST",
-  "nextEvaluationDate": "2026-11-04",
-  "trialChangesThisRun": "none; existing three trials remain active until post-effective evidence"
+  "lastReviewAt": "2026-11-05 16:31 JST",
+  "nextEvaluationDate": "2026-11-06",
+  "trialChangesThisRun": "Three existing trials retained; EXP-02 handoff procedure clarified without changing risk rules. No new experiments."
 }
