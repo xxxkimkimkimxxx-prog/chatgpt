@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-05",
+  "agentIds": [
+    3,
+    26
+  ],
+  "taskPerformed": "株価ソースの照合とデータ欠損監査",
+  "sourceUrls": [
+    "https://finance.yahoo.co.jp/quote/9104.T",
+    "https://finance.yahoo.co.jp/quote/7480.T",
+    "https://s.minkabu.jp/stock/6200/daily_bar",
+    "https://finance.yahoo.co.jp/quote/6890.T"
+  ],
+  "verifiedCloseCount": 1,
+  "evidenceGap": [
+    "11/5の9104,6200,6890確定終値が未取得",
+    "全4銘柄の9:00-9:10時刻付きVWAP・板・約定可能性が未取得",
+    "実注文・約定証跡なし",
+    "7:30市場情報部の当日原本未確認",
+    "23件は役割別記録で独立実行の証拠ではない"
+  ]
+}
