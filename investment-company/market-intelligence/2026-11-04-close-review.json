@@ -1,74 +1,79 @@
 {
   "date": "2026-11-04",
   "asOf": "2026-11-04 16:33 JST",
-  "sourceStatus": "partial_intraday_only",
+  "sourceStatus": "final_daily_ohlc_backfilled_execution_unverified",
   "candidates": [
     {
       "code": "6890",
       "previousClose": 7631,
       "open": 8081,
-      "close": null,
-      "finalCloseVerified": false,
-      "previousCloseToClosePct": null,
-      "openToClosePct": null,
+      "close": 7951,
+      "finalCloseVerified": true,
+      "previousCloseToClosePct": 4.19,
+      "openToClosePct": -1.61,
       "entryConditionVerified": null,
       "actualTradeVerified": false,
       "vwapAt0910": null,
       "mfe": null,
       "mae": null,
-      "tradeOutcomeVerdict": "unverifiable",
+      "tradeOutcomeVerdict": "execution_unverifiable",
       "sources": [
-        "https://finance.matsui.co.jp/stock/6890/chart/index",
-        "https://finance.yahoo.co.jp/quote/6890.T/chart"
+        "https://s.minkabu.jp/stock/6890/daily_bar"
       ]
     },
     {
       "code": "7480",
-      "previousClose": null,
-      "open": null,
-      "close": null,
-      "finalCloseVerified": false,
-      "previousCloseToClosePct": null,
-      "openToClosePct": null,
+      "previousClose": 3360,
+      "open": 3770,
+      "close": 3735,
+      "finalCloseVerified": true,
+      "previousCloseToClosePct": 11.16,
+      "openToClosePct": -0.93,
       "entryConditionVerified": null,
       "actualTradeVerified": false,
       "vwapAt0910": null,
       "mfe": null,
       "mae": null,
-      "tradeOutcomeVerdict": "unverifiable",
-      "sources": []
+      "tradeOutcomeVerdict": "execution_unverifiable",
+      "sources": [
+        "https://minkabu.jp/stock/7480/daily_bar"
+      ]
     },
     {
       "code": "9104",
-      "previousClose": null,
-      "open": null,
-      "close": null,
-      "finalCloseVerified": false,
-      "previousCloseToClosePct": null,
-      "openToClosePct": null,
+      "previousClose": 7579,
+      "open": 7600,
+      "close": 7640,
+      "finalCloseVerified": true,
+      "previousCloseToClosePct": 0.8,
+      "openToClosePct": 0.53,
       "entryConditionVerified": null,
       "actualTradeVerified": false,
       "vwapAt0910": null,
       "mfe": null,
       "mae": null,
-      "tradeOutcomeVerdict": "unverifiable",
-      "sources": []
+      "tradeOutcomeVerdict": "execution_unverifiable",
+      "sources": [
+        "https://www.traders.co.jp/stocks/61_9104/historical"
+      ]
     },
     {
       "code": "6200",
-      "previousClose": null,
-      "open": null,
-      "close": null,
-      "finalCloseVerified": false,
-      "previousCloseToClosePct": null,
-      "openToClosePct": null,
+      "previousClose": 679,
+      "open": 689,
+      "close": 697,
+      "finalCloseVerified": true,
+      "previousCloseToClosePct": 2.65,
+      "openToClosePct": 1.16,
       "entryConditionVerified": null,
       "actualTradeVerified": false,
       "vwapAt0910": null,
       "mfe": null,
       "mae": null,
-      "tradeOutcomeVerdict": "unverifiable",
-      "sources": []
+      "tradeOutcomeVerdict": "execution_unverifiable",
+      "sources": [
+        "https://s.minkabu.jp/stock/6200/daily_bar"
+      ]
     }
   ],
   "verifiedIntradayObservation": {
@@ -82,9 +87,17 @@
   },
   "actualTradesVerified": 0,
   "evidenceGap": [
-    "4候補の11/4確定終値未確認",
-    "9:00-9:10分足/VWAP/板/スプレッド/約定条件未取得",
-    "実注文/約定履歴なし"
+    "11/4の9:00-9:10実測VWAP・板・約定条件が未確認",
+    "実注文・約定証跡なし"
   ],
-  "backfilled": false
+  "backfilled": true,
+  "finalCloseCoverage": "4/4",
+  "finalCloseVerifiedCount": 4,
+  "backfillSources": [
+    "https://s.minkabu.jp/stock/6890/daily_bar",
+    "https://minkabu.jp/stock/7480/daily_bar",
+    "https://www.traders.co.jp/stocks/61_9104/historical",
+    "https://s.minkabu.jp/stock/6200/daily_bar"
+  ],
+  "backfillDate": "2026-11-05"
 }
