@@ -1734,6 +1734,184 @@
       ],
       "notificationSent": false,
       "notes": "15時報告の価格を16時終値として流用せず。"
+    },
+    {
+      "scheduledAtJST": "2026-11-05T17:00:00+09:00",
+      "observedAtJST": "2026-11-05T17:04:52+09:00",
+      "status": "closing_quotes_unverified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（直前の見送り判断維持）",
+          "reasons": [
+            "2026-11-05 15:30東証終値の確証未取得",
+            "VWAP・信用残・同業相対強度の当日終値整合未確認"
+          ],
+          "supportResistance": null,
+          "volume": null,
+          "turnover": null,
+          "vwap": null,
+          "credit": null,
+          "shortSelling": null,
+          "relativeStrength": null
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（直前の見送り判断維持）",
+          "reasons": [
+            "2026-11-05 15:30東証終値の確証未取得",
+            "VWAP・信用残・同業相対強度の当日終値整合未確認"
+          ],
+          "supportResistance": null,
+          "volume": null,
+          "turnover": null,
+          "vwap": null,
+          "credit": null,
+          "shortSelling": null,
+          "relativeStrength": null
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（直前の見送り判断維持）",
+          "reasons": [
+            "2026-11-05 15:30東証終値の確証未取得",
+            "VWAP・信用残・同業相対強度の当日終値整合未確認"
+          ],
+          "supportResistance": {
+            "supportCandidatesYen": [
+              2607,
+              2652
+            ],
+            "resistanceCandidatesYen": [
+              2818
+            ],
+            "basis": "11/04安値と11/05 13:42までの場中データ、終値での有効性未確認"
+          },
+          "volume": null,
+          "turnover": null,
+          "vwap": null,
+          "credit": null,
+          "shortSelling": null,
+          "relativeStrength": null
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（直前の見送り判断維持）",
+          "reasons": [
+            "2026-11-05 15:30東証終値の確証未取得",
+            "VWAP・信用残・同業相対強度の当日終値整合未確認"
+          ],
+          "supportResistance": null,
+          "volume": null,
+          "turnover": null,
+          "vwap": null,
+          "credit": null,
+          "shortSelling": null,
+          "relativeStrength": null
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（直前の見送り判断維持）",
+          "reasons": [
+            "2026-11-05 15:30東証終値の確証未取得",
+            "VWAP・信用残・同業相対強度の当日終値整合未確認"
+          ],
+          "supportResistance": null,
+          "volume": null,
+          "turnover": null,
+          "vwap": null,
+          "credit": null,
+          "shortSelling": null,
+          "relativeStrength": null
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "marketPriceYen": null,
+          "unrealizedPnlYen": null,
+          "averagingDecision": "判定保留（直前の見送り判断維持）",
+          "reasons": [
+            "2026-11-05 15:30東証終値の確証未取得",
+            "VWAP・信用残・同業相対強度の当日終値整合未確認"
+          ],
+          "supportResistance": null,
+          "volume": null,
+          "turnover": null,
+          "vwap": null,
+          "credit": null,
+          "shortSelling": null,
+          "relativeStrength": null
+        }
+      ],
+      "portfolioUnrealizedPnlYen": null,
+      "changeFromPreviousNotificationYen": null,
+      "previousReportedPortfolioPnlYen": -293776,
+      "previousReportedPnlBasis": "11/05 15時枠の時刻混在場中価格、終値ではない",
+      "jx": {
+        "previousStatus": "信用整理未了",
+        "currentStatus": "信用整理未了（暫定維持・終値未検証）",
+        "currentCloseYen": null,
+        "latestVerifiedIntradayYen": 2659,
+        "latestVerifiedIntradayTimeJST": "2026-11-05 13:42",
+        "intradayHighYen": 2818,
+        "intradayLowYen": 2652,
+        "intradayVolumeShares": 12237300,
+        "intradayDataSource": "https://s.kabutan.jp/stocks/5016/historical_prices/daily/",
+        "creditReferenceDate": "2026-10-30",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 21159700,
+        "creditBuyWeeklyChange": -578200,
+        "creditSellShares": 696100,
+        "creditRatio": 30.4,
+        "creditUnchangedFromPreviousReport": true,
+        "creditUnwinding": "10/30申込分の買い残は前週比減少、依然高水準。新規公表確認なし",
+        "forcedLiquidationAbsorption": "確認不可。売買原因を追証と断定できない",
+        "trend": "13:42時点は前日終値・VWAP下とみられるが、終値での反転確認不可",
+        "relativeStrength": null,
+        "shortSellingChange": null,
+        "statusChanged": false
+      },
+      "previousScheduledRunRecord": "2026-11-05 16:00 record exists",
+      "previousScheduledRunMissing": false,
+      "missingData": [
+        "11/05東証終値全6銘柄",
+        "11/05終値時点のVWAP・出来高・売買代金・主要支持線",
+        "信用残公表日・最新機関空売り・同業相対強度",
+        "10/14以降の保有情報更新"
+      ],
+      "notificationSent": false,
+      "notes": "11/05 13:42までの場中値を17時終値として誤認しない。確認可能な株探ページが更新遅延。"
     }
   ]
 }
