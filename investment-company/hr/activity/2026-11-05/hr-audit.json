@@ -1,0 +1,362 @@
+{
+  "date": "2026-11-05",
+  "agentId": 31,
+  "independentExecutionVerified": false,
+  "roleRecords": [
+    {
+      "agentId": 1,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": "6890の前日順位1→当日暫定4。反実仮想順位差は不明",
+      "issues": null
+    },
+    {
+      "agentId": 2,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 3,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": "入力鮮度の区分を記録",
+      "issues": null
+    },
+    {
+      "agentId": 4,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 5,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 6,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 7,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 8,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 9,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 10,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 11,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 12,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 13,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 14,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 15,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 16,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 17,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 18,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 19,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 20,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 21,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 22,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 23,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 24,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 25,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 26,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": "終値・執行可能性を区別し、未確認の勝率を作らない",
+      "issues": "4銘柄のうち終値確認1、執行検証0"
+    },
+    {
+      "agentId": 27,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 28,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 29,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 30,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 31,
+      "opportunity": false,
+      "morningRoleRecordVerified": false,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": "34役割の独立実行と個別貢献は未立証"
+    },
+    {
+      "agentId": 32,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 33,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    },
+    {
+      "agentId": 34,
+      "opportunity": true,
+      "morningRoleRecordVerified": true,
+      "independentExecutionVerified": false,
+      "scoreChange": null,
+      "grade": "evaluation_on_hold",
+      "contributionVerified": null,
+      "issues": null
+    }
+  ],
+  "roleRecordCount": 34,
+  "verifiedMorningRoleRecords": 23,
+  "formalScoreChanges": 0,
+  "independentCheckOfAgent31": {
+    "agent1": "評価証跡が不十分なため正式評価保留",
+    "agent2": "根拠不明の点数変更を禁止",
+    "independentProcessVerified": false
+  },
+  "evidenceGap": [
+    "11/5の9104,6200,6890確定終値が未取得",
+    "全4銘柄の9:00-9:10時刻付きVWAP・板・約定可能性が未取得",
+    "実注文・約定証跡なし",
+    "7:30市場情報部の当日原本未確認",
+    "23件は役割別記録で独立実行の証拠ではない"
+  ]
+}
