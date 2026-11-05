@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-05",
+  "agentId": 26,
+  "candidates": [
+    {
+      "code": "9104",
+      "prevClose": 7640,
+      "open": 7295,
+      "close": null,
+      "observation": {
+        "price": 6997,
+        "time": "14:51",
+        "changePct": -8.42
+      },
+      "source": "https://finance.yahoo.co.jp/quote/9104.T",
+      "prevCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "7480",
+      "prevClose": 3735,
+      "open": 3705,
+      "close": 3565,
+      "source": "https://finance.yahoo.co.jp/quote/7480.T",
+      "prevCloseToClosePct": -4.55,
+      "openToClosePct": -3.78,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "6200",
+      "prevClose": 697,
+      "open": null,
+      "close": null,
+      "observation": {
+        "price": 718,
+        "time": "10:43"
+      },
+      "source": "https://s.minkabu.jp/stock/6200/daily_bar",
+      "prevCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "6890",
+      "prevClose": 7951,
+      "open": 7380,
+      "close": null,
+      "observation": {
+        "price": 6682,
+        "time": "12:47",
+        "changePct": -15.96
+      },
+      "source": "https://finance.yahoo.co.jp/quote/6890.T",
+      "prevCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "executionVerdict": "unverifiable"
+    }
+  ],
+  "signalVerdict": "not_scorable_for_all",
+  "executionVerdict": "unverifiable",
+  "finalCloseVerifiedCount": 1,
+  "entryConditionVerifiedCount": 0,
+  "sourceUrls": [
+    "https://finance.yahoo.co.jp/quote/9104.T",
+    "https://finance.yahoo.co.jp/quote/7480.T",
+    "https://s.minkabu.jp/stock/6200/daily_bar",
+    "https://finance.yahoo.co.jp/quote/6890.T"
+  ],
+  "evidenceGap": [
+    "11/5の9104,6200,6890確定終値が未取得",
+    "全4銘柄の9:00-9:10時刻付きVWAP・板・約定可能性が未取得",
+    "実注文・約定証跡なし",
+    "7:30市場情報部の当日原本未確認",
+    "23件は役割別記録で独立実行の証拠ではない"
+  ],
+  "backfilled": false
+}
