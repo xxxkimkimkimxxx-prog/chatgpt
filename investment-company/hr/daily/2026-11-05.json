@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-05",
+  "focus": "人事評価・組織改善",
+  "summary": {
+    "roles": 34,
+    "morningRoleRecords": 23,
+    "independentExecutionVerified": false,
+    "closeVerified": "1/4",
+    "entryVerified": "0/4",
+    "formalScoreChanges": 0
+  },
+  "topContributors": [
+    {
+      "id": 3,
+      "evidence": "古い入力の利用遮断を記録"
+    },
+    {
+      "id": 23,
+      "evidence": "6890の寄り天警告を順位条件へ反映。ただし事故回避効果未立証"
+    },
+    {
+      "id": 26,
+      "evidence": "確定終値・実約定の欠損を成功に計上しない"
+    }
+  ],
+  "improvementNeeded": [
+    1,
+    3,
+    15,
+    18,
+    26,
+    31
+  ],
+  "rootCauses": [
+    "11/4終値は本日取得可能だったのに前日レビューに未反映",
+    "11/5の一部終値と分足・VWAP・板の取得不足",
+    "rankDeltaの反実仮想が欠落"
+  ],
+  "nextActions": [
+    "No.3/26: 翌日までに全4銘柄の11/5確定終値をソース付き照合",
+    "No.15/18: 9:00-9:10の条件成立を証拠で確認、なければnull",
+    "No.1/31: 警告の採否と前後順位の差を別記録"
+  ],
+  "evidenceGap": [
+    "11/5の9104,6200,6890確定終値が未取得",
+    "全4銘柄の9:00-9:10時刻付きVWAP・板・約定可能性が未取得",
+    "実注文・約定証跡なし",
+    "7:30市場情報部の当日原本未確認",
+    "23件は役割別記録で独立実行の証拠ではない"
+  ],
+  "backfilled": false
+}
