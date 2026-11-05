@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-06",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-11-06T09:00:00+09:00",
+      "observedAtJST": "2026-11-06T08:57:29+09:00",
+      "status": "pre_open_previous_close_verified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "previousCloseYen": 103,
+          "previousCloseDate": "2026-11-05",
+          "previousClosePnlYen": -16000,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/06寄付前、当日約定価格未確認",
+            "当日VWAP・信用需給・相対強度未取得"
+          ]
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "previousCloseYen": 24,
+          "previousCloseDate": "2026-11-05",
+          "previousClosePnlYen": -13980,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/06寄付前、当日約定価格未確認",
+            "当日VWAP・信用需給・相対強度未取得"
+          ]
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "previousCloseYen": 2637.5,
+          "previousCloseDate": "2026-11-05",
+          "previousClosePnlYen": -211700,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/06寄付前、当日約定価格未確認",
+            "当日VWAP・信用需給・相対強度未取得"
+          ]
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "previousCloseYen": 727,
+          "previousCloseDate": "2026-11-05",
+          "previousClosePnlYen": -50796,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/06寄付前、当日約定価格未確認",
+            "当日VWAP・信用需給・相対強度未取得"
+          ]
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "previousCloseYen": 133,
+          "previousCloseDate": "2026-11-05",
+          "previousClosePnlYen": -5800,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/06寄付前、当日約定価格未確認",
+            "当日VWAP・信用需給・相対強度未取得"
+          ]
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "previousCloseYen": 164.9,
+          "previousCloseDate": "2026-11-05",
+          "previousClosePnlYen": -2380,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/06寄付前、当日約定価格未確認",
+            "当日VWAP・信用需給・相対強度未取得"
+          ]
+        }
+      ],
+      "previousClosePortfolioPnlYen": -300656,
+      "portfolioPnlYen": null,
+      "changeFromPreviousNotificationYen": null,
+      "previousReportedPnlYen": -293776,
+      "previousReportedBasis": "2026-11-05 15時枠、場中混合時刻",
+      "jx": {
+        "currentStatus": "信用整理未了（暫定維持・11/06判定保留）",
+        "previousStatus": "信用整理未了",
+        "previousCloseYen": 2637.5,
+        "previousClosePnlYen": -211700,
+        "previousDayHighYen": 2818,
+        "previousDayLowYen": 2585.5,
+        "previousDayVolumeShares": 18776100,
+        "previousDayTurnoverYen": 50449119000,
+        "previousDayVwapYen": 2686.88,
+        "creditReferenceDate": "2026-11-04",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 19924300,
+        "creditSellShares": 582200,
+        "creditRatio": 34.22,
+        "creditBuyChangeFromNov2": -866300,
+        "creditRatioNov2": 31.27,
+        "creditUnchangedFromPreviousReport": false,
+        "creditUnwinding": "買い残は減少、倍率は上昇。整理一巡未確認",
+        "forcedLiquidationAbsorption": "11/05安値更新・VWAP下引け、吸収未確認",
+        "trend": "下落継続優勢。11/06寄付後未確認",
+        "supportYen": [
+          2585.5
+        ],
+        "resistanceYen": [
+          2686.88,
+          2818
+        ]
+      },
+      "previousScheduledRunRecord": "2026-11-05 17:00（前日監査ファイルに記録）",
+      "previousScheduledRunMissing": false,
+      "missingData": [
+        "11/06当日株価（寄付前）",
+        "11/06当日出来高・VWAP",
+        "機関空売り・同業相対強度",
+        "保有情報10/14以降の更新"
+      ],
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/5016.T/history",
+        "https://s.kabutan.jp/stocks/5016/historical_margins/daily",
+        "https://finance.yahoo.co.jp/quote/2926.T/history"
+      ],
+      "notificationSent": false
+    }
+  ]
+}
