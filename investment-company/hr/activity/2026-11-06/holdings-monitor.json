@@ -472,6 +472,181 @@
         "https://finance.yahoo.co.jp/quote/5016.T/chart"
       ],
       "notificationSent": false
+    },
+    {
+      "scheduledAtJST": "2026-11-06T13:00:00+09:00",
+      "observedAtJST": "2026-11-06T12:55:12+09:00",
+      "status": "partial_intraday_prices_verified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": null,
+      "previousScheduledRunMissing": true,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "previousCloseYen": 103,
+          "previousClosePnlYen": -16000,
+          "currentPriceYen": null,
+          "currentPriceTimestampJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "当日価格・VWAP・信用需給を検証できず"
+          ],
+          "supportResistance": null,
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "previousCloseYen": 24,
+          "previousClosePnlYen": -13980,
+          "currentPriceYen": null,
+          "currentPriceTimestampJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "当日価格・VWAP・信用需給を検証できず"
+          ],
+          "supportResistance": null,
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "previousCloseYen": 2637.5,
+          "previousClosePnlYen": -211700,
+          "currentPriceYen": 2467.5,
+          "currentPriceTimestampJST": "2026-11-06T11:30:00+09:00",
+          "currentPnlYen": -245700,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "前日安値2585.5円を大幅に割り込み、11:30でも前日比6.44%安",
+            "寄付安値2187.5円から反発するもVWAP回復・需給一巡未確認"
+          ],
+          "supportResistance": "当日安値2187.5円、前日安値2585.5円、当日高値2474円",
+          "volumeShares": 16580100,
+          "vwapYen": null,
+          "creditAndShortInterest": "11/04基準買い19924300株・売り582200株・倍率34.22倍、正式公表日未確認",
+          "sectorRelativeStrength": "11:00時点非鉄金属が33業種中最下位、個別相対強度は未計算"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "previousCloseYen": 727,
+          "previousClosePnlYen": -50796,
+          "currentPriceYen": null,
+          "currentPriceTimestampJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "当日価格・VWAP・信用需給を検証できず"
+          ],
+          "supportResistance": null,
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "previousCloseYen": 133,
+          "previousClosePnlYen": -5800,
+          "currentPriceYen": null,
+          "currentPriceTimestampJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "当日価格・VWAP・信用需給を検証できず"
+          ],
+          "supportResistance": null,
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "previousCloseYen": 164.9,
+          "previousClosePnlYen": -2380,
+          "currentPriceYen": null,
+          "currentPriceTimestampJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "当日価格・VWAP・信用需給を検証できず"
+          ],
+          "supportResistance": null,
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        }
+      ],
+      "portfolioPnlYen": null,
+      "changeFromPreviousNotificationYen": null,
+      "previousClosePortfolioPnlYen": -300656,
+      "jx": {
+        "status": "信用整理未了（暫定維持）",
+        "statusChange": false,
+        "currentPriceYen": 2467.5,
+        "currentPriceTimestampJST": "2026-11-06T11:30:00+09:00",
+        "currentPnlYen": -245700,
+        "previousCloseYen": 2637.5,
+        "changeYen": -170,
+        "highYen": 2474,
+        "lowYen": 2187.5,
+        "openYen": 2187.5,
+        "volumeShares": 16580100,
+        "turnoverYen": null,
+        "vwapYen": null,
+        "creditReferenceDate": "2026-11-04",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 19924300,
+        "creditSellShares": 582200,
+        "creditRatio": 34.22,
+        "creditBuyChangeFromNov2": -866300,
+        "creditUnchangedFromPreviousReport": true,
+        "creditUnwinding": "買い残減少だが倍率高止まり。前日安値割れで整理一巡未確認",
+        "forcedSellingAbsorption": "寄付安値から戻すもVWAPと午後の反転未確認。強制決済由来か不明",
+        "trend": "前日安値割れ・下落継続優勢",
+        "supportYen": [
+          2187.5
+        ],
+        "resistanceYen": [
+          2474,
+          2585.5
+        ]
+      },
+      "missingData": [
+        "5銘柄の11/06場中価格",
+        "全銘柄当日VWAP・機関空売り",
+        "JX売買代金と午後価格",
+        "信用残正式公表日",
+        "保有情報10/14以降の更新"
+      ],
+      "sources": [
+        "https://minkabu.jp/stock/5016/chart",
+        "https://minkabu.jp/news/4652187"
+      ],
+      "notificationSent": false
     }
   ]
 }
