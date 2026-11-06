@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-06",
+  "agentId": 26,
+  "source": "investment-company/decision-memos/2026-11-06/daytrade.md",
+  "candidates": [
+    {
+      "code": "8306",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "8316",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "9104",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    }
+  ],
+  "verifiedFinalCloseCount": 0,
+  "totalCandidates": 3,
+  "verifiedEntryCount": 0,
+  "signalSuccessRate": null,
+  "executionSuccessRate": null,
+  "actualPnl": null,
+  "vwap": null,
+  "mfe": null,
+  "mae": null,
+  "warning": "Do not equate intraday direction with tradeable performance; no confirmed execution data",
+  "evidenceGap": [
+    "11/6 three morning candidates 8306/8316/9104: complete official close and opening prices not independently verified at this audit",
+    "11/6 09:00-09:10 VWAP/orderbook/entry-condition evidence absent",
+    "No independently verified actual orders or fills",
+    "11/6 07:30 market intelligence original and independent theme research absent",
+    "Morning 23 role records do not prove independent agent processes",
+    "11/5 prior close-review covers only 1/4 confirmed closes",
+    "No.31 independent external review by No.1/2 not evidenced"
+  ],
+  "backfilled": false
+}
