@@ -1159,6 +1159,144 @@
         "https://s.kabutan.jp/stocks/5016/historical_prices/daily/"
       ],
       "notificationSent": false
+    },
+    {
+      "scheduledAtJST": "2026-11-06T17:00:00+09:00",
+      "observedAtJST": "2026-11-06T16:58:25+09:00",
+      "status": "partial_close_verified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "changeFromPreviousNotificationYen": null,
+      "previousClosePortfolioPnlYen": -300656,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/6終値未確認、信用需給・VWAP・相対強度の検証不足"
+          ],
+          "supportResistance": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/6終値未確認、信用需給・VWAP・相対強度の検証不足"
+          ],
+          "supportResistance": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "currentPriceYen": 2435,
+          "currentPnlYen": -252200,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/6終値2435円、前日比-7.68%、前日安値2585.5円割れ",
+            "VWAP約2352.6円を上回るが下落トレンドと信用倍率高止まり、反発確認に不足"
+          ],
+          "supportResistance": {
+            "support": [
+              2187.5
+            ],
+            "resistance": [
+              2474,
+              2585.5
+            ]
+          },
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/6終値未確認、信用需給・VWAP・相対強度の検証不足"
+          ],
+          "supportResistance": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/6終値未確認、信用需給・VWAP・相対強度の検証不足"
+          ],
+          "supportResistance": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/6終値未確認、信用需給・VWAP・相対強度の検証不足"
+          ],
+          "supportResistance": null,
+          "creditAndShortInterest": null,
+          "sectorRelativeStrength": null
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了（暫定維持）",
+        "statusChange": false,
+        "closeYen": 2435,
+        "previousCloseYen": 2637.5,
+        "changeYen": -202.5,
+        "highYen": 2474,
+        "lowYen": 2187.5,
+        "volumeShares": 26147600,
+        "turnoverYen": 61515222000,
+        "vwapYen": 2352.61,
+        "creditReferenceDate": "2026-11-04",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 19924300,
+        "creditSellShares": 582200,
+        "creditRatio": 34.22,
+        "creditBuyChangeFromNov2": -866300,
+        "creditUnchangedFromPreviousReport": true,
+        "creditUnwinding": "買い残減少も倍率高止まり、整理一巡未確認",
+        "forcedSellingAbsorption": "寄付安値から反発したが追証起因は検証不能",
+        "trend": "下落継続優勢"
+      },
+      "missingData": [
+        "他5銘柄11/6終値",
+        "全銘柄の最新信用残・機関空売り・相対強度",
+        "保有情報10/14以降更新"
+      ],
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/5016.T/chart"
+      ]
     }
   ]
 }
