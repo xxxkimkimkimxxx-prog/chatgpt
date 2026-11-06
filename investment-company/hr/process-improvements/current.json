@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "asOf": "2026-11-05",
+  "asOf": "2026-11-06",
   "purpose": "人事評価を翌営業日の投資委員会へ閉ループ接続する",
   "maxActiveTrials": 3,
   "activeTrials": [
@@ -43,6 +43,14 @@
           "verdict": "continue_measurement",
           "evidence": "investment-company/decision-memos/2026-11-05/daytrade.md",
           "nextAction": "No.1: 反対意見ごとに採否・理由・同一時点の変更前後順位・条件変更を記録"
+        },
+        {
+          "date": "2026-11-06",
+          "stage": "post_effective_audit",
+          "finding": "11/6 morning memo accepts red-team warnings, but same-time counterfactual rankDelta is absent",
+          "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
+          "verdict": "modify_handoff",
+          "nextAction": "No.1 must capture pre-warning and post-warning rank snapshots, not compare rankings across dates"
         }
       ]
     },
@@ -84,6 +92,14 @@
           "verdict": "modify_operational_handoff_not_rule",
           "evidence": "investment-company/hr/activity/2026-11-05/performance-review.json",
           "nextAction": "No.3/26: 15:30後に確定四本値の取得を優先。No.15/18: 実測9:00-9:10データがなければ実行成績を保留"
+        },
+        {
+          "date": "2026-11-06",
+          "stage": "post_effective_audit",
+          "finding": "11/6 morning activity separates signal from execution, but 0/3 candidates have verified entry conditions and final closes",
+          "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
+          "verdict": "modify_data_collection",
+          "nextAction": "No.3/26 collect dated official OHLC after close; No.15/18 capture timestamped entry conditions or null"
         }
       ]
     },
@@ -122,6 +138,14 @@
           "verdict": "continue_measurement",
           "evidence": "investment-company/decision-memos/2026-11-05/daytrade.md",
           "nextAction": "No.3/31: blocked入力を引用した全主張を抽出し、誤利用と過剰遮断を件数で測る"
+        },
+        {
+          "date": "2026-11-06",
+          "stage": "post_effective_audit",
+          "finding": "11/6 morning memo blocks stale holdings/performance; false-block rate and stale-data misuse not yet independently counted",
+          "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
+          "verdict": "keep_trial_measure",
+          "nextAction": "No.3/31 count actual stale-input misuse and false blocks"
         }
       ]
     }
@@ -143,7 +167,7 @@
       "formal_hiring_demotion_merge_abolition"
     ]
   },
-  "lastReviewAt": "2026-11-05 16:31 JST",
-  "nextEvaluationDate": "2026-11-06",
-  "trialChangesThisRun": "Three existing trials retained; EXP-02 handoff procedure clarified without changing risk rules. No new experiments."
+  "lastReviewAt": "2026-11-06 afternoon audit",
+  "nextEvaluationDate": "2026-11-09",
+  "trialChangesThisRun": "No new trial; modify evidence handoffs for EXP-01/02, keep measuring EXP-03; no risk or authority changes"
 }
