@@ -1575,6 +1575,200 @@
         "https://s.kabutan.jp/stocks/9432"
       ],
       "notificationSent": false
+    },
+    {
+      "scheduledAtJST": "2026-11-09T17:00:00+09:00",
+      "observedAtJST": "2026-11-09T17:00:16+09:00",
+      "status": "all_six_official_close_verified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-09T16:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": -340896,
+      "previousClosePortfolioPnlYen": -384696,
+      "changeFromPreviousCloseYen": 43800,
+      "changeFromPreviousNotificationYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "previousCloseYen": 101,
+          "currentPriceYen": 102,
+          "currentPnlYen": -17000,
+          "dayLowYen": 101,
+          "dayHighYen": 103,
+          "volumeShares": 88700,
+          "supportYen": 101,
+          "resistanceYen": 103,
+          "averagingDecision": "判定保留",
+          "creditAndShortInterest": "当日更新未確認",
+          "sectorRelativeStrength": "未検証",
+          "institutionalShortInterest": "最新未検証",
+          "reasons": [
+            "当日反発だけでは需給改善と戻り高値突破を確認できない",
+            "信用需給・VWAPまたは相対強度の検証不足"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "previousCloseYen": 23,
+          "currentPriceYen": 23,
+          "currentPnlYen": -16980,
+          "dayLowYen": 23,
+          "dayHighYen": 25,
+          "volumeShares": 97362300,
+          "supportYen": 23,
+          "resistanceYen": 25,
+          "averagingDecision": "ナンピン見送り",
+          "creditAndShortInterest": "当日更新未確認",
+          "sectorRelativeStrength": "未検証",
+          "institutionalShortInterest": "最新未検証",
+          "reasons": [
+            "当日反発だけでは需給改善と戻り高値突破を確認できない",
+            "信用需給・VWAPまたは相対強度の検証不足"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "previousCloseYen": 2435,
+          "currentPriceYen": 2524,
+          "currentPnlYen": -234400,
+          "dayLowYen": 2443,
+          "dayHighYen": 2596,
+          "volumeShares": 18415500,
+          "supportYen": 2443,
+          "resistanceYen": 2596,
+          "averagingDecision": "ナンピン見送り",
+          "creditAndShortInterest": "当日更新未確認",
+          "sectorRelativeStrength": "未検証",
+          "institutionalShortInterest": "最新未検証",
+          "reasons": [
+            "終値2524円は当日VWAP2538.66円を下回る",
+            "買残は11/5基準18955200株へ減少したが依然高水準"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "AnyMind",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "previousCloseYen": 668,
+          "currentPriceYen": 707,
+          "currentPnlYen": -62796,
+          "dayLowYen": 683,
+          "dayHighYen": 721,
+          "volumeShares": 275500,
+          "supportYen": 683,
+          "resistanceYen": 721,
+          "averagingDecision": "ナンピン見送り",
+          "creditAndShortInterest": "当日更新未確認",
+          "sectorRelativeStrength": "未検証",
+          "institutionalShortInterest": "最新未検証",
+          "reasons": [
+            "当日反発だけでは需給改善と戻り高値突破を確認できない",
+            "信用需給・VWAPまたは相対強度の検証不足"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "previousCloseYen": 122,
+          "currentPriceYen": 125,
+          "currentPnlYen": -7400,
+          "dayLowYen": 122,
+          "dayHighYen": 127,
+          "volumeShares": 16500,
+          "supportYen": 122,
+          "resistanceYen": 127,
+          "averagingDecision": "判定保留",
+          "creditAndShortInterest": "当日更新未確認",
+          "sectorRelativeStrength": "未検証",
+          "institutionalShortInterest": "最新未検証",
+          "reasons": [
+            "当日反発だけでは需給改善と戻り高値突破を確認できない",
+            "信用需給・VWAPまたは相対強度の検証不足"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "previousCloseYen": 160.2,
+          "currentPriceYen": 165.2,
+          "currentPnlYen": -2320,
+          "dayLowYen": 161.1,
+          "dayHighYen": 165.8,
+          "volumeShares": 221088200,
+          "supportYen": 161.1,
+          "resistanceYen": 165.8,
+          "averagingDecision": "ナンピン見送り",
+          "creditAndShortInterest": "当日更新未確認",
+          "sectorRelativeStrength": "未検証",
+          "institutionalShortInterest": "最新未検証",
+          "reasons": [
+            "当日反発だけでは需給改善と戻り高値突破を確認できない",
+            "信用需給・VWAPまたは相対強度の検証不足"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了（暫定維持）",
+        "statusChange": false,
+        "closeYen": 2524,
+        "previousCloseYen": 2435,
+        "pnlYen": -234400,
+        "highYen": 2596,
+        "lowYen": 2443,
+        "volumeShares": 18415500,
+        "turnoverYen": 46750000000,
+        "vwapYen": 2538.66,
+        "creditReferenceDate": "2026-11-05",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 18955200,
+        "creditSellShares": 600700,
+        "creditRatio": 31.56,
+        "creditBuyChangeFromPrevious": -969100,
+        "creditUnchangedFromPreviousReport": false,
+        "forcedSellingAbsorption": "安値切り上げはあるがVWAP割れ引け、追証由来か確認不能",
+        "trend": "短期反発だが下落トレンド反転未確認",
+        "supportYen": [
+          2443,
+          2187.5
+        ],
+        "resistanceYen": [
+          2538.66,
+          2596
+        ]
+      },
+      "missingData": [
+        "10/14以降の保有情報更新",
+        "全銘柄の機関空売り・同業相対強度",
+        "信用残正式公表日",
+        "前回通知比較用の同条件確定値"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/2926/historical_prices/daily",
+        "https://s.kabutan.jp/stocks/4597/historical_prices/daily",
+        "https://s.kabutan.jp/stocks/5016/historical_prices/daily",
+        "https://s.kabutan.jp/stocks/5027/historical_prices/daily",
+        "https://s.kabutan.jp/stocks/8518/historical_prices/daily",
+        "https://s.kabutan.jp/stocks/9432/historical_prices/daily",
+        "https://s.kabutan.jp/stocks/5016/historical_margins/daily"
+      ],
+      "notificationSent": false
     }
   ]
 }
