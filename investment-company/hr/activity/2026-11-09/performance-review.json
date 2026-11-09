@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-09",
+  "agentId": 26,
+  "candidates": [
+    {
+      "code": "8058",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "8031",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "8053",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    }
+  ],
+  "finalCloseCoverage": "0/3",
+  "entryConditionCoverage": "0/3",
+  "actualTradeCountVerified": 0,
+  "signalSuccessRate": null,
+  "executionSuccessRate": null,
+  "actualPnl": null,
+  "mfe": null,
+  "mae": null,
+  "evidenceGap": [
+    "11/9 official candidate OHLC (8058/8031/8053) not independently verified",
+    "11/9 09:00-09:10 VWAP/orderbook/entry conditions missing",
+    "No independently verified orders or fills",
+    "7:30 original and independent theme research missing",
+    "No.31 independent review by separately executing No.1 and No.2 unverified",
+    "Prior 11/6 3 candidates official OHLC 0/3"
+  ]
+}
