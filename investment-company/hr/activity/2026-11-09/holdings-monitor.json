@@ -549,6 +549,193 @@
         "https://finance.yahoo.co.jp/quote/5016.T"
       ],
       "notificationSent": false
+    },
+    {
+      "scheduledAtJST": "2026-11-09T12:00:00+09:00",
+      "observedAtJST": "2026-11-09T12:01:32+09:00",
+      "status": "partial_intraday_quotes_stale",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST (iSPEED screenshots; after close)",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-09T11:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "previousClosePortfolioPnlYen": -384696,
+      "previousCloseDate": "2026-11-06",
+      "portfolioPnlYen": null,
+      "changeFromPreviousNotificationYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "previousCloseYen": 101,
+          "currentPriceYen": null,
+          "quoteTimeJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "11/9未検証",
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": "未取得",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未検証",
+          "priceAction": "未検証",
+          "reasons": [
+            "12時近傍の当日株価・VWAP・信用需給・相対強度が未確認"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "previousCloseYen": 23,
+          "currentPriceYen": null,
+          "quoteTimeJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "11/9未検証",
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": "未取得",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未検証",
+          "priceAction": "未検証",
+          "reasons": [
+            "12時近傍の当日株価・VWAP・信用需給・相対強度が未確認"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "previousCloseYen": 2435,
+          "currentPriceYen": 2549,
+          "quoteTimeJST": "10:19",
+          "currentPnlYen": -229400,
+          "averagingDecision": "ナンピン見送り",
+          "supportResistance": "支持2443円（11/9安値）、2187.5円（11/6安値）、抵抗2560円（11/9高値）・2585.5円（11/5安値近傍）",
+          "volumeShares": 6603400,
+          "vwapYen": null,
+          "creditAndShortInterest": "11/5取引日表示：買残19924300、売残582200、34.22倍、買残前回比-866300。正式公表日未確認",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "11/9 09:49フルヤ金属+11.28%に対しJX+4.68%（10:19）、時間差あり",
+          "priceAction": "11/9安値2443から10:19時点2549へ上昇、前日高値2474を突破。VWAPと後場未確認",
+          "reasons": [
+            "前日高値2474突破も同業フルヤ金属比では上昇率が劣後",
+            "信用買残が約1992万株と高水準、当日VWAPと後場反転未確認"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "previousCloseYen": 668,
+          "currentPriceYen": null,
+          "quoteTimeJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "11/9未検証",
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": "未取得",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未検証",
+          "priceAction": "未検証",
+          "reasons": [
+            "12時近傍の当日株価・VWAP・信用需給・相対強度が未確認"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "previousCloseYen": 122,
+          "currentPriceYen": null,
+          "quoteTimeJST": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "11/9未検証",
+          "volumeShares": null,
+          "vwapYen": null,
+          "creditAndShortInterest": "未取得",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未検証",
+          "priceAction": "未検証",
+          "reasons": [
+            "12時近傍の当日株価・VWAP・信用需給・相対強度が未確認"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "previousCloseYen": 160.2,
+          "currentPriceYen": 162.7,
+          "quoteTimeJST": "09:09",
+          "currentPnlYen": -2820,
+          "averagingDecision": "判定保留",
+          "supportResistance": "支持161.1円（11/9安値）、159円（11/6安値）、抵抗162.9円（11/9高値）",
+          "volumeShares": 27074400,
+          "vwapYen": null,
+          "creditAndShortInterest": "未取得",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未検証",
+          "priceAction": "11/9寄付161.5、09:09 162.7、安値161.1",
+          "reasons": [
+            "12時近傍の当日株価・VWAP・信用需給・相対強度が未確認"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了（暫定維持・当日信用残とVWAP未確認）",
+        "statusChange": false,
+        "quoteYen": 2549,
+        "quoteTimeJST": "2026-11-09T10:19:00+09:00",
+        "dayChangeYen": 114,
+        "dayChangePercent": 4.68,
+        "dayHighYen": 2560,
+        "dayLowYen": 2443,
+        "volumeShares": 6603400,
+        "volumeAsOfJST": "10:18",
+        "turnoverYen": null,
+        "vwapYen": null,
+        "currentPnlYen": -229400,
+        "creditReferenceDate": "2026-11-05（取引日表示）",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 19924300,
+        "creditSellShares": 582200,
+        "creditRatio": 34.22,
+        "creditBuyChange": -866300,
+        "creditUnchangedFromPreviousReport": true,
+        "forcedSellingAbsorption": "11/6大商いと長い下ヒゲ、11/9寄付後反発を確認。ただし強制決済由来か不明",
+        "trend": "短期反発の初動候補だが反発確認条件未達",
+        "reasons": [
+          "前日高値2474円突破",
+          "信用買残約1992万株と高水準",
+          "当日VWAP・後場・同業相対強度改善未確認"
+        ]
+      },
+      "missingData": [
+        "12時近傍の6銘柄株価（2銘柄は午前の時刻付き価格のみ）",
+        "当日VWAP・機関空売り・売買代金",
+        "残り4銘柄の11/9価格",
+        "信用残正式公表日",
+        "10/14以降の保有情報更新"
+      ],
+      "sources": [
+        "https://minkabu.jp/stock/5016/chart",
+        "https://s.minkabu.jp/stock/9432/chart",
+        "https://www.traders.co.jp/stocks/61_5016/"
+      ],
+      "notificationSent": false
     }
   ]
 }
