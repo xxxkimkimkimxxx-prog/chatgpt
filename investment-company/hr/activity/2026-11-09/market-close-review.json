@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-09",
+  "agentId": 3,
+  "taskPerformed": "Close data audit",
+  "verifiedFinalCloses": 0,
+  "candidateCount": 3,
+  "source": "investment-company/decision-memos/2026-11-09/daytrade.md",
+  "backfilled": false,
+  "evidenceGap": [
+    "11/9 official candidate OHLC (8058/8031/8053) not independently verified",
+    "11/9 09:00-09:10 VWAP/orderbook/entry conditions missing",
+    "No independently verified orders or fills",
+    "7:30 original and independent theme research missing",
+    "No.31 independent review by separately executing No.1 and No.2 unverified",
+    "Prior 11/6 3 candidates official OHLC 0/3"
+  ]
+}
