@@ -1,0 +1,181 @@
+{
+  "date": "2026-11-09",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-11-09T09:00:00+09:00",
+      "observedAtJST": "2026-11-09T09:00:32+09:00",
+      "status": "opening_price_unverified_previous_close_reference",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST (iSPEED screenshots; after close)",
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-06T17:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "previousClosePortfolioPnlYen": -384696,
+      "previousCloseDate": "2026-11-06",
+      "portfolioPnlYen": null,
+      "changeFromPreviousNotificationYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "previousCloseYen": 101,
+          "previousCloseDate": "2026-11-06",
+          "previousClosePnlYen": -18000,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "未検証",
+          "volumeVwap": "当日未取得",
+          "creditAndShortInterest": "最新未検証",
+          "sectorRelativeStrength": "11/9寄付前未取得",
+          "reasons": [
+            "11/9 09:00時点で日時付き当日約定株価を確認できない",
+            "当日VWAP・需給・反転価格行動未確認"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "previousCloseYen": 23,
+          "previousCloseDate": "2026-11-06",
+          "previousClosePnlYen": -16980,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "未検証",
+          "volumeVwap": "当日未取得",
+          "creditAndShortInterest": "最新未検証",
+          "sectorRelativeStrength": "11/9寄付前未取得",
+          "reasons": [
+            "11/9 09:00時点で日時付き当日約定株価を確認できない",
+            "当日VWAP・需給・反転価格行動未確認"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "previousCloseYen": 2435,
+          "previousCloseDate": "2026-11-06",
+          "previousClosePnlYen": -252200,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "ナンピン見送り",
+          "supportResistance": "支持2187.5円、抵抗2474円・2585.5円（11/6時点）",
+          "volumeVwap": "11/6出来高26147600株、VWAP2352.6円",
+          "creditAndShortInterest": "11/4基準買残19924300株、売残582200株、倍率34.22倍、正式公表日未確認",
+          "sectorRelativeStrength": "11/9寄付前未取得",
+          "reasons": [
+            "11/9 09:00時点で日時付き当日約定株価を確認できない",
+            "当日VWAP・需給・反転価格行動未確認"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "previousCloseYen": 668,
+          "previousCloseDate": "2026-11-06",
+          "previousClosePnlYen": -86196,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "未検証",
+          "volumeVwap": "当日未取得",
+          "creditAndShortInterest": "最新未検証",
+          "sectorRelativeStrength": "11/9寄付前未取得",
+          "reasons": [
+            "11/9 09:00時点で日時付き当日約定株価を確認できない",
+            "当日VWAP・需給・反転価格行動未確認"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "previousCloseYen": 122,
+          "previousCloseDate": "2026-11-06",
+          "previousClosePnlYen": -8000,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "未検証",
+          "volumeVwap": "当日未取得",
+          "creditAndShortInterest": "最新未検証",
+          "sectorRelativeStrength": "11/9寄付前未取得",
+          "reasons": [
+            "11/9 09:00時点で日時付き当日約定株価を確認できない",
+            "当日VWAP・需給・反転価格行動未確認"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "previousCloseYen": 160.2,
+          "previousCloseDate": "2026-11-06",
+          "previousClosePnlYen": -3320,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "averagingDecision": "判定保留",
+          "supportResistance": "未検証",
+          "volumeVwap": "当日未取得",
+          "creditAndShortInterest": "最新未検証",
+          "sectorRelativeStrength": "11/9寄付前未取得",
+          "reasons": [
+            "11/9 09:00時点で日時付き当日約定株価を確認できない",
+            "当日VWAP・需給・反転価格行動未確認"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了（暫定維持）",
+        "statusChange": false,
+        "previousCloseYen": 2435,
+        "previousClosePnlYen": -252200,
+        "previousDayHighYen": 2474,
+        "previousDayLowYen": 2187.5,
+        "previousDayVolumeShares": 26147600,
+        "previousDayTurnoverYen": 61515222000,
+        "previousDayVwapYen": 2352.6,
+        "creditReferenceDate": "2026-11-04",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 19924300,
+        "creditSellShares": 582200,
+        "creditRatio": 34.22,
+        "creditBuyChangeFromNov2": -866300,
+        "creditUnchangedFromPreviousReport": true,
+        "forcedSellingAbsorption": "11/6安値から反発したが追証由来か未確認",
+        "trend": "下落優勢、11/9寄付前未検証",
+        "supportYen": [
+          2187.5
+        ],
+        "resistanceYen": [
+          2474,
+          2585.5
+        ]
+      },
+      "missingData": [
+        "11/9場中6銘柄株価",
+        "11/9出来高・VWAP・売買代金",
+        "最新信用残正式公表日・機関空売り・セクター相対強度",
+        "10/14以降の保有情報更新"
+      ],
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/5016.T/history",
+        "https://finance.matsui.co.jp/stock/5016/index"
+      ],
+      "notificationSent": false
+    }
+  ]
+}
