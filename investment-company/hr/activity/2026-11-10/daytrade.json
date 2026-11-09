@@ -1,0 +1,766 @@
+{
+  "date": "2026-11-10",
+  "runType": "preopen",
+  "independentAgentExecutionVerified": false,
+  "activitySaveFailure": null,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "No.23-25/29の反対意見をconditional採用。買い条件厳格化、純粋なrankDelta未検証",
+      "novelContribution": "No.23-25/29の反対意見をconditional採用。買い条件厳格化、純粋なrankDelta未検証",
+      "decisionImpact": "No.23-25/29の反対意見をconditional採用。買い条件厳格化、純粋なrankDelta未検証",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "コンプライアンス",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "発注権限なし・未確認の買値断定禁止",
+      "novelContribution": "発注権限なし・未確認の買値断定禁止",
+      "decisionImpact": "発注権限なし・未確認の買値断定禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "古い入力をblocked、11/9検証欠損を明示",
+      "novelContribution": "古い入力をblocked、11/9検証欠損を明示",
+      "decisionImpact": "古い入力をblocked、11/9検証欠損を明示",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日独自の検証可能な追加情報なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利為替商品",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日独自の検証可能な追加情報なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株AI",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日独自の検証可能な追加情報なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場セクター",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "11/9銀行強含みを8306監視理由に採用",
+      "novelContribution": "11/9銀行強含みを8306監視理由に採用",
+      "decisionImpact": "11/9銀行強含みを8306監視理由に採用",
+      "candidatesPromoted": [
+        "8306"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "IRイベント",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日独自の検証可能な追加情報なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニングPTS",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日独自の検証可能な追加情報なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "価格行動",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "9:00-9:10初動高安/VWAP必須",
+      "novelContribution": "9:00-9:10初動高安/VWAP必須",
+      "decisionImpact": "9:00-9:10初動高安/VWAP必須",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高板",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "出来高・板・スプレッド未確認なら買い不可",
+      "novelContribution": "出来高・板・スプレッド未確認なら買い不可",
+      "decisionImpact": "出来高・板・スプレッド未確認なら買い不可",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "条件成立時刻・実約定未確認のため発注案保留",
+      "novelContribution": "条件成立時刻・実約定未確認のため発注案保留",
+      "decisionImpact": "条件成立時刻・実約定未確認のため発注案保留",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "RR",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "損切り点未確定のため損失/期待利益/RR算定保留",
+      "novelContribution": "損切り点未確定のため損失/期待利益/RR算定保留",
+      "decisionImpact": "損切り点未確定のため損失/期待利益/RR算定保留",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベントストレス",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "11/10決算予定・米CPI予定をイベントリスクとして注意",
+      "novelContribution": "11/10決算予定・米CPI予定をイベントリスクとして注意",
+      "decisionImpact": "11/10決算予定・米CPI予定をイベントリスクとして注意",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性ギャップ",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "ギャップ・薄板なら見送り",
+      "novelContribution": "ギャップ・薄板なら見送り",
+      "decisionImpact": "ギャップ・薄板なら見送り",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "寄り天・ショート視点を買い条件に反映",
+      "novelContribution": "寄り天・ショート視点を買い条件に反映",
+      "decisionImpact": "寄り天・ショート視点を買い条件に反映",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り天",
+        "材料織り込み",
+        "期待差未確認"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "期待差と材料実需未検証を弱気論点に追加",
+      "novelContribution": "期待差と材料実需未検証を弱気論点に追加",
+      "decisionImpact": "期待差と材料実需未検証を弱気論点に追加",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り天",
+        "材料織り込み",
+        "期待差未確認"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "前日急反発後の材料出尽くし・戻り売りを警戒",
+      "novelContribution": "前日急反発後の材料出尽くし・戻り売りを警戒",
+      "decisionImpact": "前日急反発後の材料出尽くし・戻り売りを警戒",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り天",
+        "材料織り込み",
+        "期待差未確認"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関需給",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日独自の検証可能な追加情報なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "コンセンサス欠損で上方修正を新鮮材料扱いしない",
+      "novelContribution": "コンセンサス欠損で上方修正を新鮮材料扱いしない",
+      "decisionImpact": "コンセンサス欠損で上方修正を新鮮材料扱いしない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り天",
+        "材料織り込み",
+        "期待差未確認"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日独自の検証可能な追加情報なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "バリューチェーン",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日独自の検証可能な追加情報なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "実需検証",
+      "taskPerformed": "2026-11-10寄り前の役割別検討（独立プロセス実行の証拠なし）",
+      "keyFindings": "当日一次情報で収益寄与を検証できずTheme News優先昇格なし",
+      "novelContribution": "当日一次情報で収益寄与を検証できずTheme News優先昇格なし",
+      "decisionImpact": "当日一次情報で収益寄与を検証できずTheme News優先昇格なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+        "当日テーマ研究の独立原本未確認",
+        "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+        "11/9米国株/SOXの確定数値未検証",
+        "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+        "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+      ],
+      "sourcesUsed": [
+        "GitHub 11/9 close-review",
+        "株探 2026-11-09 market close",
+        "GitHub process-improvements"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "improvements": [
+    {
+      "improvementId": "EXP-01",
+      "applied": true,
+      "affectedCandidates": [
+        "8306",
+        "5803",
+        "8035",
+        "5016"
+      ],
+      "rankDelta": null,
+      "conditionChanges": "レッドチーム警告採用でVWAP・同業一致・寄り天回避を必須化。反実仮想順位未取得",
+      "reason": "反対意見の採否と実順位変更の因果は未検証"
+    },
+    {
+      "improvementId": "EXP-02",
+      "applied": true,
+      "affectedCandidates": [
+        "8306",
+        "5803",
+        "8035",
+        "5016"
+      ],
+      "rankDelta": 0,
+      "conditionChanges": "方向予測と約定可能性を分離。買い条件成立未検証なら実績認定禁止",
+      "reason": "11/9執行検証0/3"
+    },
+    {
+      "improvementId": "EXP-03",
+      "applied": true,
+      "affectedCandidates": [
+        "5016"
+      ],
+      "rankDelta": 0,
+      "conditionChanges": "古い保有数量・損益・監視順位を現時点の事実に利用しない",
+      "reason": "10月更新データをblocked"
+    }
+  ],
+  "opposition": [
+    {
+      "agentId": 23,
+      "verdict": "accepted",
+      "conditionChanges": "VWAP下抜け見送り",
+      "rankDelta": null
+    },
+    {
+      "agentId": 24,
+      "verdict": "conditional",
+      "conditionChanges": "決算一次情報未検証は材料加点禁止",
+      "rankDelta": null
+    },
+    {
+      "agentId": 25,
+      "verdict": "accepted",
+      "conditionChanges": "寄り天警戒",
+      "rankDelta": null
+    },
+    {
+      "agentId": 29,
+      "verdict": "accepted",
+      "conditionChanges": "市場期待差未検証なら新鮮材料扱いしない",
+      "rankDelta": null
+    }
+  ],
+  "evidenceGap": [
+    "7:30市場情報部の2026-11-10原本未確認（latestは11/2）",
+    "当日テーマ研究の独立原本未確認",
+    "11/9 close-review候補8058/8031/8053の四本値・執行条件未検証",
+    "11/9米国株/SOXの確定数値未検証",
+    "当日PTS、板、機関実フロー、決算一次IRの詳細未検証",
+    "holdings 10/14, performance 10/5, watchlist 10/2 はblocked"
+  ],
+  "backfilled": false
+}
