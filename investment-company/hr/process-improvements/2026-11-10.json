@@ -1,0 +1,191 @@
+{
+  "version": "1.0",
+  "asOf": "2026-11-06",
+  "purpose": "人事評価を翌営業日の投資委員会へ閉ループ接続する",
+  "maxActiveTrials": 3,
+  "activeTrials": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "title": "反対意見→順位変更の帰属記録",
+      "hypothesis": "レッドチームと期待値担当の警告を採否・rankDeltaまで記録すれば、好材料の過大評価と同じ失敗の反復を減らせる",
+      "evidence": [
+        "直近の日次監査で、警告を把握しても候補順位へ十分反映されない事例が反復"
+      ],
+      "ownerAgents": [
+        1,
+        23,
+        24,
+        25,
+        29,
+        31
+      ],
+      "affectedProcess": [
+        "daytrade_ranking",
+        "hr_attribution"
+      ],
+      "change": "No.1は主要な反対意見ごとにaccepted/rejected/conditional、rankDelta、条件変更を記録する",
+      "effectiveFrom": "2026-11-04",
+      "successMetric": "警告採否と順位変更が100%追跡可能で、同型の失敗反復率が低下",
+      "rollbackCondition": "記録負荷のみ増え意思決定差分が生じない状態が5営業日継続",
+      "status": "active_trial",
+      "observations": [
+        {
+          "date": "2026-11-02",
+          "stage": "pre_effective_baseline",
+          "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
+          "evidence": "investment-company/hr/weekly/2026-W44.json",
+          "verdict": "pending_no_post_effective_data"
+        },
+        {
+          "date": "2026-11-05",
+          "stage": "post_effective_audit",
+          "finding": "6890は11/4の1位から11/5の暫定4位に降格したが、同日内の反対意見を除いた順位差は測定不能。反対意見の採否は記録された。",
+          "verdict": "continue_measurement",
+          "evidence": "investment-company/decision-memos/2026-11-05/daytrade.md",
+          "nextAction": "No.1: 反対意見ごとに採否・理由・同一時点の変更前後順位・条件変更を記録"
+        },
+        {
+          "date": "2026-11-06",
+          "stage": "post_effective_audit",
+          "finding": "11/6 morning memo accepts red-team warnings, but same-time counterfactual rankDelta is absent",
+          "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
+          "verdict": "modify_handoff",
+          "nextAction": "No.1 must capture pre-warning and post-warning rank snapshots, not compare rankings across dates"
+        },
+        {
+          "date": "2026-11-10",
+          "stage": "afternoon_audit",
+          "finding": "Morning activity documents safeguards but timestamped execution and verified closes absent; effectiveness unproven",
+          "verdict": "continue_measurement_no_new_evidence"
+        }
+      ]
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "title": "売買可能性と方向予測の分離",
+      "hypothesis": "前日比ではなく、始値比・条件成立・約定可能性を別評価すれば疑似勝率を排除できる",
+      "evidence": [
+        "直近複数日で前日比上昇数に対し始値比上昇数が大幅に少ない"
+      ],
+      "ownerAgents": [
+        15,
+        16,
+        18,
+        26,
+        31
+      ],
+      "affectedProcess": [
+        "execution_review",
+        "performance_scoring"
+      ],
+      "change": "entryConditionVerifiedが確認できない候補は取引成功と数えず、signal/execution/riskを別判定する",
+      "effectiveFrom": "2026-11-04",
+      "successMetric": "全候補でsignalVerdictとexecutionVerdictが分離され、未確認値を成功扱いしない",
+      "rollbackCondition": "なし（統制強化のため原則維持、運用不能ならmodify）",
+      "status": "active_trial",
+      "observations": [
+        {
+          "date": "2026-11-02",
+          "stage": "pre_effective_baseline",
+          "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
+          "evidence": "investment-company/hr/weekly/2026-W44.json",
+          "verdict": "pending_no_post_effective_data"
+        },
+        {
+          "date": "2026-11-05",
+          "stage": "post_effective_audit",
+          "finding": "11/5は4候補中確定終値確認1件、条件成立検証0件。実際の取引成功を捏造せず分離できているが、取得率の改善は未達。",
+          "verdict": "modify_operational_handoff_not_rule",
+          "evidence": "investment-company/hr/activity/2026-11-05/performance-review.json",
+          "nextAction": "No.3/26: 15:30後に確定四本値の取得を優先。No.15/18: 実測9:00-9:10データがなければ実行成績を保留"
+        },
+        {
+          "date": "2026-11-06",
+          "stage": "post_effective_audit",
+          "finding": "11/6 morning activity separates signal from execution, but 0/3 candidates have verified entry conditions and final closes",
+          "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
+          "verdict": "modify_data_collection",
+          "nextAction": "No.3/26 collect dated official OHLC after close; No.15/18 capture timestamped entry conditions or null"
+        },
+        {
+          "date": "2026-11-10",
+          "stage": "afternoon_audit",
+          "finding": "Morning activity documents safeguards but timestamped execution and verified closes absent; effectiveness unproven",
+          "verdict": "continue_measurement_no_new_evidence"
+        }
+      ]
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "title": "入力データ鮮度ゲート",
+      "hypothesis": "更新日だけでなく利用可否を分類すれば、古い保有・成績・監視リストを現在値として誤利用するリスクを下げられる",
+      "evidence": [
+        "holdings/performance/watchlistの陳腐化警告が継続"
+      ],
+      "ownerAgents": [
+        3,
+        31
+      ],
+      "affectedProcess": [
+        "data_validation",
+        "holdings_review"
+      ],
+      "change": "入力ごとにcurrent/usable_with_warning/blockedを判定し、blockedは現保有前提の判断根拠に使用しない",
+      "effectiveFrom": "2026-11-04",
+      "successMetric": "すべての主要入力にfreshnessStatusが付き、blockedデータ由来の断定が0件",
+      "rollbackCondition": "分類基準が過度に厳しく有効データを継続的に遮断する場合はmodify",
+      "status": "active_trial",
+      "observations": [
+        {
+          "date": "2026-11-02",
+          "stage": "pre_effective_baseline",
+          "finding": "11/2時点では11/4適用前。前週20候補の前日比上昇14、始値比上昇5、実約定確認0。改善効果は未検証",
+          "evidence": "investment-company/hr/weekly/2026-W44.json",
+          "verdict": "pending_no_post_effective_data"
+        },
+        {
+          "date": "2026-11-05",
+          "stage": "post_effective_audit",
+          "finding": "11/5朝の決裁書は古い保有・成績データをblockedとして扱い、現保有やナンピンの断定を回避した。誤利用ゼロの独立監査は未了。",
+          "verdict": "continue_measurement",
+          "evidence": "investment-company/decision-memos/2026-11-05/daytrade.md",
+          "nextAction": "No.3/31: blocked入力を引用した全主張を抽出し、誤利用と過剰遮断を件数で測る"
+        },
+        {
+          "date": "2026-11-06",
+          "stage": "post_effective_audit",
+          "finding": "11/6 morning memo blocks stale holdings/performance; false-block rate and stale-data misuse not yet independently counted",
+          "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
+          "verdict": "keep_trial_measure",
+          "nextAction": "No.3/31 count actual stale-input misuse and false blocks"
+        },
+        {
+          "date": "2026-11-10",
+          "stage": "afternoon_audit",
+          "finding": "Morning activity documents safeguards but timestamped execution and verified closes absent; effectiveness unproven",
+          "verdict": "continue_measurement_no_new_evidence"
+        }
+      ]
+    }
+  ],
+  "governance": {
+    "autonomousChangesAllowed": [
+      "logging",
+      "validation",
+      "ranking_weights_or_gates",
+      "handoff",
+      "evaluation_metrics",
+      "freshness_controls"
+    ],
+    "userApprovalRequired": [
+      "order_placement",
+      "final_decision_authority",
+      "risk_limit_relaxation",
+      "compliance_removal",
+      "formal_hiring_demotion_merge_abolition"
+    ]
+  },
+  "lastReviewAt": "2026-11-10 afternoon",
+  "nextEvaluationDate": "2026-11-11",
+  "trialChangesThisRun": "No new trials or unverified efficacy claims; retain existing active trials"
+}
