@@ -1,0 +1,1004 @@
+{
+  "date": "2026-11-11",
+  "runType": "preopen",
+  "independentAgentExecutionVerified": false,
+  "activitySaveFailure": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "stock-dashboard/data/holdings.json",
+    "stock-dashboard/data/performance-summary.json",
+    "stock-dashboard/data/watchlist.json",
+    "investment-company/market-intelligence/latest.json",
+    "investment-company/market-intelligence/2026-11-10-close-review.json",
+    "investment-company/hr/process-improvements/current.json"
+  ],
+  "freshness": {
+    "holdings": {
+      "asOf": "2026-10-14",
+      "status": "blocked"
+    },
+    "performance": {
+      "asOf": "2026-10-05",
+      "status": "blocked"
+    },
+    "watchlist": {
+      "asOf": "2026-10-02",
+      "status": "blocked"
+    },
+    "marketIntelligenceLatest": {
+      "asOf": "2026-11-02",
+      "status": "blocked"
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "code": "9984",
+      "name": "ソフトバンクグループ",
+      "category": "Fresh Catalyst",
+      "confidence": "low",
+      "upProbability": null,
+      "catalyst": "11/10 15:30発表の中間最終損失7680億円。前日株価は発表前に約13.9%上昇",
+      "directness": "direct",
+      "earningsSensitivity": "高いが投資評価損益・NAV内訳未精査",
+      "expectationGap": "市場予想未取得",
+      "pricedIn": "前日急騰で織込み不明",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "大型高流動性だが当日板未確認",
+      "entry": "9:00-9:10初動高値を出来高伴い更新、VWAP上、指数・AI同業が追随",
+      "skip": "ギャップ後VWAP下、板薄・スプレッド拡大、同業不一致",
+      "invalidation": "初動安値割れまたは決算評価損失懸念による持続売り",
+      "redTeam": "赤字・NAV評価損・前日急騰の材料出尽くし、米AI下落を利用した空売り優位。反発継続前提が脆い"
+    },
+    {
+      "rank": 2,
+      "code": "5803",
+      "name": "フジクラ",
+      "category": "Fresh Catalyst",
+      "confidence": "low",
+      "upProbability": null,
+      "catalyst": "11/10 14:00通期経常予想約1%下方修正、配当42円増額。朝高から失速",
+      "directness": "direct",
+      "earningsSensitivity": "業績修正は直接、配当と業績の相反",
+      "expectationGap": "コンセンサス未取得",
+      "pricedIn": "決算発表後の失速で弱い可能性",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "大型株だが当日板未確認",
+      "entry": "初動高値更新、VWAP上、AIインフラ同業追随、前日終値上回り定着",
+      "skip": "初動安値割れ、VWAP下、決算売り継続",
+      "invalidation": "配当評価より業績下方修正が支配し高値更新失敗",
+      "redTeam": "前日寄り天に近い失速、利益予想下方修正、配当材料の織込み、米AI逆風を理由にショートが入り得る"
+    },
+    {
+      "rank": 3,
+      "code": "5016",
+      "name": "JX金属",
+      "category": "Continuation Momentum",
+      "confidence": "low",
+      "upProbability": null,
+      "catalyst": "11/9中間営業利益前年同期比+115.3%、通期予想修正、オキサイド提携、11/5硫酸銅増産",
+      "directness": "direct",
+      "earningsSensitivity": "半導体材料・金属価格に直接。ただし利益寄与額未精査",
+      "expectationGap": "コンセンサス未取得",
+      "pricedIn": "決算後2営業日目で既織込み懸念",
+      "pts": null,
+      "institutionalFlow": "信用買い残の重さは既知、最新値未確認",
+      "liquidity": "当日出来高・板未確認",
+      "entry": "9:00-9:10初動高値更新・VWAP上・半導体材料同業優位・出来高確認",
+      "skip": "半導体逆風、VWAP下、信用買い戻り売り、初動安値割れ",
+      "invalidation": "決算増益にもかかわらず相対強度が継続低下",
+      "redTeam": "決算期待先行、半導体需給逆風、信用買いの戻り売り、提携収益化の時間差。好決算=上昇という前提が脆い"
+    },
+    {
+      "rank": 4,
+      "code": "8035",
+      "name": "東京エレクトロン",
+      "category": "Sector Alignment",
+      "confidence": "low",
+      "upProbability": null,
+      "catalyst": "TSMC 10月売上高前年同月比+59.7%というセクター実需指標",
+      "directness": "indirect",
+      "earningsSensitivity": "TSMC設備投資から受注への転換は未検証",
+      "expectationGap": "市場期待未確認",
+      "pricedIn": "前日の半導体反発に一部反映可能性",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "大型高流動性だが当日板未確認",
+      "entry": "VWAP上、6857/6146追随、初動高値更新・指数相対強度プラス",
+      "skip": "SOX下落を引き継ぎ同業不一致、初動安値割れ",
+      "invalidation": "半導体同業が一斉にVWAP割れ",
+      "redTeam": "TSMC売上は装置受注と同義でない、前日反発の巻き戻し、米AI株下落、期待先行の寄り天"
+    }
+  ],
+  "improvementsApplied": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "applied": true,
+      "affectedCandidates": [
+        "9984",
+        "5803",
+        "5016",
+        "8035"
+      ],
+      "rankDelta": null,
+      "conditionChanges": [
+        "反対意見に基づきVWAP・同業確認を必須化",
+        "反対意見なしの基準順位がないため純粋rankDeltaは未計測"
+      ],
+      "reason": "GitHub active_trialを適用。測定に必要な実測値は欠損"
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "applied": true,
+      "affectedCandidates": [
+        "9984",
+        "5803",
+        "5016",
+        "8035"
+      ],
+      "rankDelta": null,
+      "conditionChanges": [
+        "方向と執行の成否を分離、約定未検証は成功扱い禁止"
+      ],
+      "reason": "GitHub active_trialを適用。測定に必要な実測値は欠損"
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "applied": true,
+      "affectedCandidates": [
+        "9984",
+        "5803",
+        "5016",
+        "8035"
+      ],
+      "rankDelta": null,
+      "conditionChanges": [
+        "10/14保有、10/5成績、10/2監視をblocked。現保有数量の断定禁止"
+      ],
+      "reason": "GitHub active_trialを適用。測定に必要な実測値は欠損"
+    }
+  ],
+  "redTeamDecisions": [
+    {
+      "code": "9984",
+      "fromAgents": [
+        23,
+        24,
+        25,
+        29
+      ],
+      "decision": "conditional",
+      "reason": "赤字・NAV評価損・前日急騰の材料出尽くし、米AI下落を利用した空売り優位。反発継続前提が脆い",
+      "rankBeforeRedTeam": null,
+      "rankAfterRedTeam": 1,
+      "rankDelta": null,
+      "conditionChange": "ギャップ後VWAP下、板薄・スプレッド拡大、同業不一致"
+    },
+    {
+      "code": "5803",
+      "fromAgents": [
+        23,
+        24,
+        25,
+        29
+      ],
+      "decision": "conditional",
+      "reason": "前日寄り天に近い失速、利益予想下方修正、配当材料の織込み、米AI逆風を理由にショートが入り得る",
+      "rankBeforeRedTeam": null,
+      "rankAfterRedTeam": 2,
+      "rankDelta": null,
+      "conditionChange": "初動安値割れ、VWAP下、決算売り継続"
+    },
+    {
+      "code": "5016",
+      "fromAgents": [
+        23,
+        24,
+        25,
+        29
+      ],
+      "decision": "conditional",
+      "reason": "決算期待先行、半導体需給逆風、信用買いの戻り売り、提携収益化の時間差。好決算=上昇という前提が脆い",
+      "rankBeforeRedTeam": null,
+      "rankAfterRedTeam": 3,
+      "rankDelta": null,
+      "conditionChange": "半導体逆風、VWAP下、信用買い戻り売り、初動安値割れ"
+    },
+    {
+      "code": "8035",
+      "fromAgents": [
+        23,
+        24,
+        25,
+        29
+      ],
+      "decision": "conditional",
+      "reason": "TSMC売上は装置受注と同義でない、前日反発の巻き戻し、米AI株下落、期待先行の寄り天",
+      "rankBeforeRedTeam": null,
+      "rankAfterRedTeam": 4,
+      "rankDelta": null,
+      "conditionChange": "SOX下落を引き継ぎ同業不一致、初動安値割れ"
+    }
+  ],
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "レッドチームの反対意見を条件付き採用。rankDeltaは基準順位欠損のため未測定",
+      "novelContribution": "レッドチームの反対意見を条件付き採用。rankDeltaは基準順位欠損のため未測定",
+      "decisionImpact": "レッドチームの反対意見を条件付き採用。rankDeltaは基準順位欠損のため未測定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "最終決裁はユーザー、発注なし、価格未確定でRR捏造禁止",
+      "novelContribution": "最終決裁はユーザー、発注なし、価格未確定でRR捏造禁止",
+      "decisionImpact": "最終決裁はユーザー、発注なし、価格未確定でRR捏造禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "保有・成績・監視リストをblockedとし当日市場データ欠損を検出",
+      "novelContribution": "保有・成績・監視リストをblockedとし当日市場データ欠損を検出",
+      "decisionImpact": "保有・成績・監視リストをblockedとし当日市場データ欠損を検出",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "米国インフレとAIセクター不安を確認",
+      "novelContribution": "米国インフレとAIセクター不安を確認",
+      "decisionImpact": "米国インフレとAIセクター不安を確認",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "金利・為替・商品現値未検証のため加点なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "米AI株下落の国内波及リスク",
+      "novelContribution": "米AI株下落の国内波及リスク",
+      "decisionImpact": "米AI株下落の国内波及リスク",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "前日日経+2.87%、指数寄与が技術株に偏在",
+      "novelContribution": "前日日経+2.87%、指数寄与が技術株に偏在",
+      "decisionImpact": "前日日経+2.87%、指数寄与が技術株に偏在",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "11/10 SBG・フジクラ決算、11/9 JX決算を確認",
+      "novelContribution": "11/10 SBG・フジクラ決算、11/9 JX決算を確認",
+      "decisionImpact": "11/10 SBG・フジクラ決算、11/9 JX決算を確認",
+      "candidatesPromoted": [
+        "9984",
+        "5803",
+        "5016"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "PTS未取得、Fresh Catalyst優先で仮選定",
+      "novelContribution": "PTS未取得、Fresh Catalyst優先で仮選定",
+      "decisionImpact": "PTS未取得、Fresh Catalyst優先で仮選定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "初動高安・VWAPの確認ゲート",
+      "novelContribution": "初動高安・VWAPの確認ゲート",
+      "decisionImpact": "初動高安・VWAPの確認ゲート",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "初動高安・VWAPの確認ゲート"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "出来高・売買代金・板・スプレッド未確認なら見送り",
+      "novelContribution": "出来高・売買代金・板・スプレッド未確認なら見送り",
+      "decisionImpact": "出来高・売買代金・板・スプレッド未確認なら見送り",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "出来高・売買代金・板・スプレッド未確認なら見送り"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "実測エントリー価格と撤退点未定、注文案なし",
+      "novelContribution": "実測エントリー価格と撤退点未定、注文案なし",
+      "decisionImpact": "実測エントリー価格と撤退点未定、注文案なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "実測エントリー価格と撤退点未定、注文案なし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "最大計画損失・期待利益・RR未算定",
+      "novelContribution": "最大計画損失・期待利益・RR未算定",
+      "decisionImpact": "最大計画損失・期待利益・RR未算定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "最大計画損失・期待利益・RR未算定"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "米CPI後の金利・AI株ストレスを警戒",
+      "novelContribution": "米CPI後の金利・AI株ストレスを警戒",
+      "decisionImpact": "米CPI後の金利・AI株ストレスを警戒",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "米CPI後の金利・AI株ストレスを警戒"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "ギャップアップと寄り天・スプレッド拡大を警戒",
+      "novelContribution": "ギャップアップと寄り天・スプレッド拡大を警戒",
+      "decisionImpact": "ギャップアップと寄り天・スプレッド拡大を警戒",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "ギャップアップと寄り天・スプレッド拡大を警戒"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "4候補の空売り論点を提示",
+      "novelContribution": "4候補の空売り論点を提示",
+      "decisionImpact": "4候補の空売り論点を提示",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "4候補の空売り論点を提示"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "材料と期待値の乖離・織り込みを疑義",
+      "novelContribution": "材料と期待値の乖離・織り込みを疑義",
+      "decisionImpact": "材料と期待値の乖離・織り込みを疑義",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "材料と期待値の乖離・織り込みを疑義"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "前日フジクラ失速と未検証成功認定を警告",
+      "novelContribution": "前日フジクラ失速と未検証成功認定を警告",
+      "decisionImpact": "前日フジクラ失速と未検証成功認定を警告",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "前日フジクラ失速と未検証成功認定を警告"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "最新信用・機関フロー欠損、JXの買い残を警戒",
+      "novelContribution": "最新信用・機関フロー欠損、JXの買い残を警戒",
+      "decisionImpact": "最新信用・機関フロー欠損、JXの買い残を警戒",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "最新信用・機関フロー欠損、JXの買い残を警戒"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "コンセンサス未取得のため決算サプライズ認定禁止",
+      "novelContribution": "コンセンサス未取得のため決算サプライズ認定禁止",
+      "decisionImpact": "コンセンサス未取得のため決算サプライズ認定禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "コンセンサス未取得のため決算サプライズ認定禁止"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "TSMC月次売上という記事起点テーマを抽出",
+      "novelContribution": "TSMC月次売上という記事起点テーマを抽出",
+      "decisionImpact": "TSMC月次売上という記事起点テーマを抽出",
+      "candidatesPromoted": [
+        "8035"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "TSMC→装置メーカーの価値連鎖を間接として分類",
+      "novelContribution": "TSMC→装置メーカーの価値連鎖を間接として分類",
+      "decisionImpact": "TSMC→装置メーカーの価値連鎖を間接として分類",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "taskPerformed": "本実行での役割別分析。独立したエージェントプロセスの実行証拠なし",
+      "keyFindings": "TSMC売上と8035の受注利益を同一視せず直接度を低く評価",
+      "novelContribution": "TSMC売上と8035の受注利益を同一視せず直接度を低く評価",
+      "decisionImpact": "TSMC売上と8035の受注利益を同一視せず直接度を低く評価",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "TSMC売上と8035の受注利益を同一視せず直接度を低く評価"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+        "当日テーマ研究独立原本未取得",
+        "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+        "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+        "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+        "最新の保有・約定履歴未取得",
+        "期待利益・損失・RR算定用の実測価格構造未確定"
+      ],
+      "sourcesUsed": [
+        "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261110&idx=nk225",
+        "https://group.softbank/event/earnings_2026q2",
+        "https://www.jx-nmm.com/newsrelease/",
+        "https://s.kabutan.jp/stocks/5803/news",
+        "https://www.reuters.com/business/nvidia-selloff-deepens-adding-to-ai-jitters-2026-11-10/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "evidenceGap": [
+    "2026-11-11 7:30市場情報部の正規原本未取得。latestは11/2",
+    "当日テーマ研究独立原本未取得",
+    "11/10候補4件の確定OHLC・執行条件がclose-reviewで未検証",
+    "11/10米国市場の全指数確定値・11/11先物・PTS未検証",
+    "9:00-9:10 VWAP/板/スプレッド・機関実フロー未取得",
+    "最新の保有・約定履歴未取得",
+    "期待利益・損失・RR算定用の実測価格構造未確定"
+  ],
+  "backfilled": false,
+  "finalDecisionMaker": "user"
+}
