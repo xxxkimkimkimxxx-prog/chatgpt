@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-10",
+  "runType": "market_close_hr_audit",
+  "independentAgentExecutionVerified": false,
+  "sourcePaths": [
+    "investment-company/hr/activity/2026-11-10/daytrade.json",
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/process-improvements/current.json"
+  ],
+  "backfilled": false,
+  "evidenceGap": [
+    "verified 2026-11-10 OHLC for all 4 candidates",
+    "intraday VWAP and timestamped entry conditions",
+    "orders and fills",
+    "independent No.1/No.2 assessment of No.31",
+    "complete previous-week activity evidence"
+  ],
+  "dataFreshness": {
+    "performanceSummary": "blocked_asOf_2026-10-05"
+  },
+  "assessment": "No verified execution success; morning role notes are not independent agent runs",
+  "candidates": [
+    {
+      "code": "8306",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "evidenceGap": [
+        "2026-11-10 verified close/open not obtained",
+        "timestamped 09:00-09:10 conditions absent"
+      ]
+    },
+    {
+      "code": "5803",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "evidenceGap": [
+        "2026-11-10 verified close/open not obtained",
+        "timestamped 09:00-09:10 conditions absent"
+      ]
+    },
+    {
+      "code": "8035",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "evidenceGap": [
+        "2026-11-10 verified close/open not obtained",
+        "timestamped 09:00-09:10 conditions absent"
+      ]
+    },
+    {
+      "code": "5016",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "evidenceGap": [
+        "2026-11-10 verified close/open not obtained",
+        "timestamped 09:00-09:10 conditions absent"
+      ]
+    }
+  ],
+  "role": "market-close-review",
+  "finding": "Unverified 16:30 close data not imputed"
+}
