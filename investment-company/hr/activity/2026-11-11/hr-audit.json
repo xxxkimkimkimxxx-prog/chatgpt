@@ -1,0 +1,428 @@
+{
+  "date": "2026-11-11",
+  "runType": "market_close_hr_audit",
+  "independentAgentExecutionVerified": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-11-11/daytrade.json",
+    "investment-company/decision-memos/2026-11-11/daytrade.md",
+    "investment-company/market-intelligence/2026-11-10-close-review.json",
+    "investment-company/hr/process-improvements/current.json",
+    "stock-dashboard/data/performance-summary.json"
+  ],
+  "backfilled": false,
+  "evidenceGap": [
+    "11/11確定始値・終値の一次照合未完了",
+    "9:00-9:10実測VWAP・板・スプレッド・条件成立ログなし",
+    "注文約定履歴なし",
+    "No.31に対するNo.1/2の独立実行監査なし",
+    "当日7:30市場情報原本とテーマ研究原本未確認"
+  ],
+  "agentsAudited": 34,
+  "morningRoleRecords": 23,
+  "verifiedFinalCloseCoverage": "0/4",
+  "verifiedExecutionCoverage": "0/4",
+  "assessment": "役割別記録は23件。独立実行証明なし。朝の4候補の実測検証は保留。",
+  "trials": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "status": "active_trial",
+      "verdict": "modify_handoff",
+      "observation": "朝の採否記録は存在するが同一時点rankDeltaがnull",
+      "successMetricVerified": false
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "status": "active_trial",
+      "verdict": "modify_data_collection",
+      "observation": "朝のsignal/execution分離は存在するが実測条件なし",
+      "successMetricVerified": false
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "status": "active_trial",
+      "verdict": "keep_measure",
+      "observation": "古いholdings/performance/watchlistはblocked。過剰遮断率は未測定",
+      "successMetricVerified": false
+    }
+  ],
+  "agentAudits": [
+    {
+      "agentId": 1,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "反対意見の同一時点順位差と翌朝反映の監査",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 2,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 3,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "確定四本値の出典付き照合",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 4,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 5,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 6,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 7,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 8,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 9,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 10,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 11,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 12,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 13,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 14,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 15,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "時刻付き執行条件の収集",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 16,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "時刻付き執行条件の収集",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 17,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 18,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "時刻付き執行条件の収集",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 19,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 20,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 21,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 22,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 23,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 24,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 25,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 26,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "確定四本値の出典付き照合",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 27,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 28,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 29,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 30,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 31,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "反対意見の同一時点順位差と翌朝反映の監査",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 32,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 33,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    },
+    {
+      "agentId": 34,
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "score": null,
+      "grade": "evaluation_pending",
+      "independentExecutionVerified": false,
+      "contributionVerified": false,
+      "improvementInstruction": "役割別の独自証拠・重複・判断影響を記録",
+      "evidenceGap": "個別活動機会・成果の網羅的監査未完了"
+    }
+  ],
+  "no31IndependentAudit": "unverified"
+}
