@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-11",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-11-11T09:00:00+09:00",
+      "observedAtJST": "2026-11-11T09:02:59+09:00",
+      "status": "intraday_unverified_partial_prior_close_verified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST (iSPEED screenshots; after close)",
+      "holdingsStale": true,
+      "holdingsBlobSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-10T17:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "changeFromPreviousNotificationYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "verifiedPriorCloseYen": 102,
+          "verifiedPriorCloseDate": "2026-11-10",
+          "priorClosePnlYen": -17000,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/11 9時台の日時付き価格・VWAP・相対強度が未検証",
+            "信用需給と価格反転の同時確認が不足"
+          ],
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得"
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "verifiedPriorCloseYen": null,
+          "verifiedPriorCloseDate": null,
+          "priorClosePnlYen": null,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "supportYen": 23,
+          "resistanceYen": 25,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/11 9時台の日時付き価格・VWAP・相対強度が未検証",
+            "信用需給と価格反転の同時確認が不足"
+          ],
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得"
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "verifiedPriorCloseYen": 2641,
+          "verifiedPriorCloseDate": "2026-11-10",
+          "priorClosePnlYen": -211000,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "supportYen": 2485,
+          "resistanceYen": 2689.5,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/11 9時台の日時付き価格・VWAP・相対強度が未検証",
+            "信用需給と価格反転の同時確認が不足"
+          ],
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得"
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "verifiedPriorCloseYen": null,
+          "verifiedPriorCloseDate": null,
+          "priorClosePnlYen": null,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "supportYen": 683,
+          "resistanceYen": 721,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/11 9時台の日時付き価格・VWAP・相対強度が未検証",
+            "信用需給と価格反転の同時確認が不足"
+          ],
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得"
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "verifiedPriorCloseYen": null,
+          "verifiedPriorCloseDate": null,
+          "priorClosePnlYen": null,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "supportYen": 122,
+          "resistanceYen": 127,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/11 9時台の日時付き価格・VWAP・相対強度が未検証",
+            "信用需給と価格反転の同時確認が不足"
+          ],
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得"
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "verifiedPriorCloseYen": 164.5,
+          "verifiedPriorCloseDate": "2026-11-10",
+          "priorClosePnlYen": -2460,
+          "currentPriceYen": null,
+          "currentPnlYen": null,
+          "supportYen": 163.6,
+          "resistanceYen": 166.2,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/11 9時台の日時付き価格・VWAP・相対強度が未検証",
+            "信用需給と価格反転の同時確認が不足"
+          ],
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得"
+        }
+      ],
+      "jx": {
+        "status": "信用整理進行中（暫定維持）",
+        "statusChange": false,
+        "previousCloseYen": 2641,
+        "previousCloseDate": "2026-11-10",
+        "previousClosePnlYen": -211000,
+        "dayHighYen": 2689.5,
+        "dayLowYen": 2485,
+        "dayVolumeShares": 38455400,
+        "dayTurnoverYen": 99422628000,
+        "dayVwapYen": 2585.4,
+        "creditReferenceDate": "2026-11-06",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16532600,
+        "creditSellShares": 570000,
+        "creditRatio": 29,
+        "creditBuyChangeShares": -4627100,
+        "creditUnchangedFromPreviousReport": true,
+        "forcedSellingAbsorption": "11/10終値はVWAP超え、安値切り上げ。追証由来の投げ売り吸収は特定不可",
+        "trend": "11/10反発、11/11の継続性未検証",
+        "supportYen": [
+          2585.4,
+          2485,
+          2443
+        ],
+        "resistanceYen": [
+          2689.5
+        ],
+        "reasons": [
+          "11/6週次信用買い残462.71万株減少",
+          "11/10終値2641円はVWAP2585.4円を上回る",
+          "11/11価格・相対強度・機関空売り未取得につき昇格保留"
+        ]
+      },
+      "missingData": [
+        "11/11場中6銘柄株価",
+        "11/10終値3銘柄",
+        "11/11全銘柄VWAP・相対強度・機関空売り",
+        "信用残正式公表日時",
+        "10/14以降保有更新"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/5016/",
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://s.kabutan.jp/stocks/2926/historical_prices/daily",
+        "https://s.kabutan.jp/stocks/9432"
+      ],
+      "notificationSent": false
+    }
+  ]
+}
