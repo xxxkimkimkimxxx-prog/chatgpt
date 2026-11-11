@@ -1461,6 +1461,160 @@
         "https://s.kabutan.jp/stocks/9432/"
       ],
       "notificationSent": false
+    },
+    {
+      "scheduledAtJST": "2026-11-11T16:00:00+09:00",
+      "observedAtJST": "2026-11-11T16:01:30+09:00",
+      "status": "closing_prices_unverified_reference_only",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-11T15:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "referenceMixedTimestampPnlYen": -287716,
+      "changeFromPreviousNotificationYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "lastReferencePriceYen": 104,
+          "lastReferencePnlYen": -15000,
+          "verifiedCloseYen": null,
+          "verifiedClosePnlYen": null,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/11東証終値未検証",
+            "当日終値基準のVWAP・出来高・相対強度・機関空売りが不足"
+          ],
+          "creditBalance": "11/6公表基準の前回監査値を参照、今回更新未確認",
+          "sectorRelativeStrength": "未取得",
+          "institutionalShortInterest": "未取得"
+        },
+        {
+          "code": "4597",
+          "lastReferencePriceYen": 25,
+          "lastReferencePnlYen": -10980,
+          "verifiedCloseYen": null,
+          "verifiedClosePnlYen": null,
+          "supportYen": 23,
+          "resistanceYen": 25,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/11東証終値未検証",
+            "当日終値基準のVWAP・出来高・相対強度・機関空売りが不足"
+          ],
+          "creditBalance": "11/6公表基準の前回監査値を参照、今回更新未確認",
+          "sectorRelativeStrength": "未取得",
+          "institutionalShortInterest": "未取得"
+        },
+        {
+          "code": "5016",
+          "lastReferencePriceYen": 2683.5,
+          "lastReferencePnlYen": -202500,
+          "verifiedCloseYen": null,
+          "verifiedClosePnlYen": null,
+          "supportYen": 2547.5,
+          "resistanceYen": 2697,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/11東証終値未検証",
+            "当日終値基準のVWAP・出来高・相対強度・機関空売りが不足"
+          ],
+          "creditBalance": "11/6公表基準の前回監査値を参照、今回更新未確認",
+          "sectorRelativeStrength": "未取得",
+          "institutionalShortInterest": "未取得"
+        },
+        {
+          "code": "5027",
+          "lastReferencePriceYen": 729,
+          "lastReferencePnlYen": -49596,
+          "verifiedCloseYen": null,
+          "verifiedClosePnlYen": null,
+          "supportYen": 683,
+          "resistanceYen": 729,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/11東証終値未検証",
+            "当日終値基準のVWAP・出来高・相対強度・機関空売りが不足"
+          ],
+          "creditBalance": "11/6公表基準の前回監査値を参照、今回更新未確認",
+          "sectorRelativeStrength": "未取得",
+          "institutionalShortInterest": "未取得"
+        },
+        {
+          "code": "8518",
+          "lastReferencePriceYen": 127,
+          "lastReferencePnlYen": -7000,
+          "verifiedCloseYen": null,
+          "verifiedClosePnlYen": null,
+          "supportYen": 122,
+          "resistanceYen": 127,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/11東証終値未検証",
+            "当日終値基準のVWAP・出来高・相対強度・機関空売りが不足"
+          ],
+          "creditBalance": "11/6公表基準の前回監査値を参照、今回更新未確認",
+          "sectorRelativeStrength": "未取得",
+          "institutionalShortInterest": "未取得"
+        },
+        {
+          "code": "9432",
+          "lastReferencePriceYen": 163.6,
+          "lastReferencePnlYen": -2640,
+          "verifiedCloseYen": null,
+          "verifiedClosePnlYen": null,
+          "supportYen": 163.6,
+          "resistanceYen": 166.2,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/11東証終値未検証",
+            "当日終値基準のVWAP・出来高・相対強度・機関空売りが不足"
+          ],
+          "creditBalance": "11/6公表基準の前回監査値を参照、今回更新未確認",
+          "sectorRelativeStrength": "未取得",
+          "institutionalShortInterest": "未取得"
+        }
+      ],
+      "jx": {
+        "status": "信用整理進行中（暫定維持）",
+        "statusChange": false,
+        "lastObservedPriceYen": 2683.5,
+        "lastObservedAtJST": "2026-11-11T13:32:00+09:00",
+        "lastObservedPnlYen": -202500,
+        "dayHighReferenceYen": 2697,
+        "dayLowReferenceYen": 2547.5,
+        "dayVolumeReferenceShares": 14609900,
+        "dayVwapReferenceYen": 2623.75,
+        "creditReferenceDate": "2026-11-06",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16532600,
+        "creditSellShares": 570000,
+        "creditRatio": 29,
+        "creditBuyChangeShares": -4627100,
+        "creditUnchangedFromPreviousReport": true,
+        "reasons": [
+          "信用買残前週比462.71万株減少",
+          "13:32参考値はVWAP超え、前日高値一時突破",
+          "終値と相対強度未確認のため昇格保留"
+        ],
+        "forcedSellingAbsorption": "大商いとVWAP回復は観測、追証由来の売り吸収は特定不可",
+        "trend": "反転初動の可能性はあるが終値確認待ち"
+      },
+      "missingData": [
+        "11/11東証終値6銘柄",
+        "全銘柄の当日確定VWAP・信用需給・機関空売り・相対強度",
+        "信用残正式公表日時",
+        "10/14以降の保有更新"
+      ],
+      "sources": [
+        "https://www.traders.co.jp/stocks/61_5016/historical",
+        "https://minkabu.jp/stock/5016/chart"
+      ],
+      "notificationSent": false
     }
   ]
 }
