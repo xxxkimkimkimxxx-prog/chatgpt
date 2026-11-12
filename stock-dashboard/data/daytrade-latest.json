@@ -1,123 +1,133 @@
 {
-  "date": "2026-11-12",
-  "asOf": "2026-11-12 08:00 JST",
+  "date": "2026-11-13",
+  "asOf": "2026-11-13 08:03 JST",
   "status": "conditional_watch_only",
-  "finalDecisionMaker": "user",
   "candidates": [
     {
       "rank": 1,
-      "code": "5714",
-      "name": "DOWAホールディングス",
+      "code": "3556",
+      "name": "リネットジャパングループ",
       "category": "Fresh Catalyst",
-      "catalyst": "11/11中間決算の増益・通期予想/配当修正（一次IR本文と市場期待差の精査は未完了）",
-      "directness": "direct",
-      "earningsSensitivity": "高い可能性、改定額の利益寄与は未照合",
-      "expectationGap": "未確認",
-      "pricedIn": "決算後初営業日、PTS未確認",
-      "risk": "資源価格・円相場・好決算織込み、寄り天と利益確定売り",
-      "upProbability": null,
+      "material": "11/13 08:00決算速報: 前期経常11.9億円、今期予想15億円、初配当12円",
+      "source": "https://s.kabutan.jp/news/k202611130002/",
+      "directness": "high",
+      "earningsSensitivity": "high",
+      "expectationGap": "市場コンセンサス未取得",
+      "pricedIn": "発表直後だがPTS未確認",
+      "redTeam": [
+        "寄り付き買い殺到後の寄り天",
+        "今期成長・初配当の先取り",
+        "板薄・高スプレッドなら空売り優位",
+        "利益成長の持続性未検証"
+      ],
+      "probability": null,
       "confidence": "low",
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "9:00以降の出来高・売買代金・板・スプレッド未確認",
-      "entry": "9:00-9:10初動高値を出来高伴い更新、VWAP上、TOPIX/先物・同業一致、板とスプレッド許容",
-      "skip": "初動安値割れ、VWAP下、同業不一致、スプレッド拡大、過大ギャップ",
-      "invalidation": "材料評価に反し相対強度低下が継続",
-      "maximumPlannedLoss": null,
+      "liquidity": "未検証",
+      "buyCondition": "一次IR確認後、9:00-9:10 初動高値/安値、実測VWAP、出来高、売買代金、日経平均/TOPIX、日経先物、同業、板厚、スプレッドを確認。VWAP上かつ初動高値更新、同業追随、許容可能な板・スプレッド",
+      "skipCondition": "一次IR未確認、VWAP割れ、初動安値割れ、同業不一致、過大ギャップ、板薄・値幅制限で約定不能",
+      "invalidation": "出来高を伴う初動安値割れ、材料解釈の訂正",
+      "maxPlannedLoss": null,
       "expectedProfit": null,
-      "RR": null,
-      "redTeam": {
-        "shortThesis": "資源価格・円相場・好決算織込み、寄り天と利益確定売り",
-        "openingSpikeRisk": "寄り付きギャップ後の戻り売り",
-        "pricedInRisk": "既知材料が事前に織り込まれている可能性",
-        "bullCaseWeakness": "市場予想と実際の利益感応度が未確認"
-      }
+      "rr": null
     },
     {
       "rank": 2,
-      "code": "5076",
-      "name": "インフロニアHD",
+      "code": "6943",
+      "name": "NKKスイッチズ",
       "category": "Fresh Catalyst",
-      "catalyst": "11/11中間決算で増収増益・通期予想修正",
-      "directness": "direct",
-      "earningsSensitivity": "直接、改定内訳未検証",
+      "material": "11/12通期営業利益予想340→1100百万円との二次集計",
+      "source": "https://tipleso.com/kaiji/joho-shusei/",
+      "directness": "high_if_primary_confirmed",
+      "earningsSensitivity": "high",
       "expectationGap": "未確認",
-      "pricedIn": "PTS未確認",
-      "risk": "建設原価・受注採算・改定期待先行、寄り天",
-      "upProbability": null,
+      "pricedIn": "未確認",
+      "redTeam": [
+        "薄商い・寄り天",
+        "上方修正の一時要因",
+        "値幅制限・約定不能",
+        "元の利益水準が低く伸び率を過大評価"
+      ],
+      "probability": null,
       "confidence": "low",
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "9:00以降の出来高・売買代金・板・スプレッド未確認",
-      "entry": "9:00-9:10初動高値を出来高伴い更新、VWAP上、TOPIX/先物・同業一致、板とスプレッド許容",
-      "skip": "初動安値割れ、VWAP下、同業不一致、スプレッド拡大、過大ギャップ",
-      "invalidation": "材料評価に反し相対強度低下が継続",
-      "maximumPlannedLoss": null,
+      "liquidity": "未検証",
+      "buyCondition": "一次IR確認後、9:00-9:10 初動高値/安値、実測VWAP、出来高、売買代金、日経平均/TOPIX、日経先物、同業、板厚、スプレッドを確認。VWAP上かつ初動高値更新、同業追随、許容可能な板・スプレッド",
+      "skipCondition": "一次IR未確認、VWAP割れ、初動安値割れ、同業不一致、過大ギャップ、板薄・値幅制限で約定不能",
+      "invalidation": "出来高を伴う初動安値割れ、材料解釈の訂正",
+      "maxPlannedLoss": null,
       "expectedProfit": null,
-      "RR": null,
-      "redTeam": {
-        "shortThesis": "建設原価・受注採算・改定期待先行、寄り天",
-        "openingSpikeRisk": "寄り付きギャップ後の戻り売り",
-        "pricedInRisk": "既知材料が事前に織り込まれている可能性",
-        "bullCaseWeakness": "市場予想と実際の利益感応度が未確認"
-      }
+      "rr": null
     },
     {
       "rank": 3,
-      "code": "5803",
-      "name": "フジクラ",
-      "category": "Continuation Momentum / Sector Alignment",
-      "catalyst": "AIインフラ関連、11/10業績修正と増配が混在。米AIインフラ株反発報道は間接材料",
-      "directness": "indirect",
-      "earningsSensitivity": "AI設備投資から受注・利益への波及未定量化",
+      "code": "7122",
+      "name": "近畿車輛",
+      "category": "Fresh Catalyst",
+      "material": "11/12通期営業利益予想100→400百万円との二次集計",
+      "source": "https://tipleso.com/kaiji/joho-shusei/",
+      "directness": "high_if_primary_confirmed",
+      "earningsSensitivity": "high",
       "expectationGap": "未確認",
-      "pricedIn": "既知材料、11/11反発の織込み警戒",
-      "risk": "業績下方修正、AI投資減速、反発後の利食い・寄り天",
-      "upProbability": null,
+      "pricedIn": "未確認",
+      "redTeam": [
+        "薄商いとギャップ寄り天",
+        "修正材料の出尽くし",
+        "短期売り優勢・スプレッド拡大",
+        "絶対利益規模が小さい"
+      ],
+      "probability": null,
       "confidence": "low",
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "9:00以降の出来高・売買代金・板・スプレッド未確認",
-      "entry": "9:00-9:10初動高値を出来高伴い更新、VWAP上、TOPIX/先物・同業一致、板とスプレッド許容",
-      "skip": "初動安値割れ、VWAP下、同業不一致、スプレッド拡大、過大ギャップ",
-      "invalidation": "材料評価に反し相対強度低下が継続",
-      "maximumPlannedLoss": null,
+      "liquidity": "未検証",
+      "buyCondition": "一次IR確認後、9:00-9:10 初動高値/安値、実測VWAP、出来高、売買代金、日経平均/TOPIX、日経先物、同業、板厚、スプレッドを確認。VWAP上かつ初動高値更新、同業追随、許容可能な板・スプレッド",
+      "skipCondition": "一次IR未確認、VWAP割れ、初動安値割れ、同業不一致、過大ギャップ、板薄・値幅制限で約定不能",
+      "invalidation": "出来高を伴う初動安値割れ、材料解釈の訂正",
+      "maxPlannedLoss": null,
       "expectedProfit": null,
-      "RR": null,
-      "redTeam": {
-        "shortThesis": "業績下方修正、AI投資減速、反発後の利食い・寄り天",
-        "openingSpikeRisk": "寄り付きギャップ後の戻り売り",
-        "pricedInRisk": "既知材料が事前に織り込まれている可能性",
-        "bullCaseWeakness": "市場予想と実際の利益感応度が未確認"
-      }
+      "rr": null
+    },
+    {
+      "rank": 4,
+      "code": "5803",
+      "name": "フジクラ",
+      "category": "Sector Alignment / Continuation",
+      "material": "AIインフラ需要の継続監視、米NVIDIA急落によるセクター逆風",
+      "source": "https://www.reuters.com/business/nasdaq-futures-fall-nvidia-turmoil-rattles-ai-stocks-2026-11-12/",
+      "directness": "medium",
+      "earningsSensitivity": "未検証",
+      "expectationGap": "未確認",
+      "pricedIn": "未確認",
+      "redTeam": [
+        "米AI株ショックの寄り天",
+        "既知テーマ材料出尽くし",
+        "戻り売り・空売り目線",
+        "AI設備投資の採算不透明"
+      ],
+      "probability": null,
+      "confidence": "low",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "未検証",
+      "buyCondition": "一次IR確認後、9:00-9:10 初動高値/安値、実測VWAP、出来高、売買代金、日経平均/TOPIX、日経先物、同業、板厚、スプレッドを確認。VWAP上かつ初動高値更新、同業追随、許容可能な板・スプレッド",
+      "skipCondition": "一次IR未確認、VWAP割れ、初動安値割れ、同業不一致、過大ギャップ、板薄・値幅制限で約定不能",
+      "invalidation": "出来高を伴う初動安値割れ、材料解釈の訂正",
+      "maxPlannedLoss": null,
+      "expectedProfit": null,
+      "rr": null
     }
   ],
-  "sourceActivity": "investment-company/hr/activity/2026-11-12/daytrade.json",
-  "freshness": {
-    "holdings": {
-      "asOf": "2026-10-14",
-      "status": "blocked"
-    },
-    "performance": {
-      "asOf": "2026-10-05",
-      "status": "blocked"
-    },
-    "watchlist": {
-      "asOf": "2026-10-02",
-      "status": "blocked"
-    },
-    "marketIntelligenceLatest": {
-      "asOf": "2026-11-02",
-      "status": "blocked"
-    }
-  },
   "evidenceGap": [
-    "11/12 7:30市場情報部の正規原本なし",
-    "11/12テーマ研究の独立原本なし",
-    "11/11朝4候補の確定四本値と執行条件は前日close-reviewで0/4",
-    "当日PTS/先物/機関実フロー/板/VWAP未確認",
-    "保有情報10/14・成績10/05・監視10/02・latest市場情報11/02はblocked",
-    "11/11米国市場確定終値を照合できていない",
-    "一次IR全文と市場コンセンサスの突合未完了"
-  ]
+    "7:30当日市場情報部正規原本未確認（latest.jsonは11/2）",
+    "11/13当日テーマ研究独立原本未取得",
+    "11/12候補3件の確定OHLCと9:00-9:10執行検証なし",
+    "11/13 PTS/先物/板/機関実フロー未検証",
+    "3556/6943/7122の会社一次IR全文・市場コンセンサス未確認",
+    "34名の独立実行未証明"
+  ],
+  "finalDecision": "user",
+  "activitySaveFailure": false
 }
