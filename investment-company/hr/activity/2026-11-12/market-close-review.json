@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-12",
+  "runType": "market_close_hr_audit",
+  "independentAgentExecutionVerified": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-11-12/daytrade.json",
+    "investment-company/decision-memos/2026-11-12/daytrade.md",
+    "investment-company/hr/process-improvements/current.json",
+    "investment-company/market-intelligence/2026-11-11-close-review.json",
+    "stock-dashboard/data/performance-summary.json"
+  ],
+  "backfilled": false,
+  "evidenceGap": [
+    "11/12候補3件の確定始値・終値と前日終値の独立照合未完了",
+    "9:00-9:10の実測VWAP・板・スプレッド・条件成立時刻なし",
+    "実注文・約定履歴なし",
+    "7:30市場情報部の当日原本とテーマ研究の独立原本未検証",
+    "No.31へのNo.1/2による別プロセスの独立監査なし"
+  ],
+  "agentsAudited": 34,
+  "morningRoleRecords": 23,
+  "verifiedFinalCloseCoverage": "0/3 (not independently verified)",
+  "verifiedExecutionCoverage": "0/3",
+  "assessment": "役割別分析記録は存在するが独立稼働は未証明。終値・執行条件の確認不足により個別採点は保留。",
+  "trials": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "status": "active_trial",
+      "verdict": "modify_handoff",
+      "observation": "朝の反対意見は条件変更へ反映、同一時点rankDeltaはnull",
+      "successMetricVerified": false
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "status": "active_trial",
+      "verdict": "modify_data_collection",
+      "observation": "方向と執行は分離済みだが3候補の実測執行検証なし",
+      "successMetricVerified": false
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "status": "active_trial",
+      "verdict": "keep_measure",
+      "observation": "古いholdings/performance/watchlistをblocked、誤用と過剰遮断の実測件数は未集計",
+      "successMetricVerified": false
+    }
+  ],
+  "candidates": [
+    {
+      "code": "5714",
+      "name": "DOWAホールディングス",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "evidenceGap": [
+        "11/12候補3件の確定始値・終値と前日終値の独立照合未完了",
+        "9:00-9:10の実測VWAP・板・スプレッド・条件成立時刻なし",
+        "実注文・約定履歴なし"
+      ]
+    },
+    {
+      "code": "5076",
+      "name": "インフロニアHD",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "evidenceGap": [
+        "11/12候補3件の確定始値・終値と前日終値の独立照合未完了",
+        "9:00-9:10の実測VWAP・板・スプレッド・条件成立時刻なし",
+        "実注文・約定履歴なし"
+      ]
+    },
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "evidenceGap": [
+        "11/12候補3件の確定始値・終値と前日終値の独立照合未完了",
+        "9:00-9:10の実測VWAP・板・スプレッド・条件成立時刻なし",
+        "実注文・約定履歴なし"
+      ]
+    }
+  ],
+  "signalAccuracy": "unverifiable",
+  "executionAccuracy": "unverifiable",
+  "falseAlarm": "unverifiable",
+  "brierScore": null,
+  "priceDataSourceStatus": "not_verified",
+  "method": "前日終値→当日終値と始値→当日終値は実測三価格が揃うまでnull。取引可能性は別検証。",
+  "reviewFocus": "market close evidence for HR, not trade recommendation"
+}
