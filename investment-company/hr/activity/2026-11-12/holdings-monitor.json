@@ -1727,6 +1727,194 @@
         "https://minkabu.jp/stock/5016/chart"
       ],
       "notificationSent": false
+    },
+    {
+      "scheduledAtJST": "2026-11-12T17:00:00+09:00",
+      "observedAtJST": "2026-11-12T16:59:24+09:00",
+      "status": "closing_quotes_unverified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST (iSPEED screenshots; after close)",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-12T16:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousClosePortfolioPnlYen": -289896,
+      "changeFromPreviousNotificationYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "previousCloseDate": "2026-11-11",
+          "previousCloseYen": 103,
+          "previousClosePnlYen": -16000,
+          "currentCloseYen": null,
+          "currentPnlYen": null,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "creditSupply": "11/6基準買残約42万株、減少（前回監査値）",
+          "volumeTurnoverVwap": "11/12確定終値・最終出来高・売買代金・VWAP未検証",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得",
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/12確定終値・VWAP・出来高伴う反転が未検証",
+            "支持線維持と需給改善の複合条件が未確認"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "previousCloseDate": "2026-11-11",
+          "previousCloseYen": 25,
+          "previousClosePnlYen": -10980,
+          "currentCloseYen": null,
+          "currentPnlYen": null,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "creditSupply": "11/6基準買残2173.32万株（+376.34万）、売残626.93万株、倍率3.47",
+          "volumeTurnoverVwap": "11/12確定終値・最終出来高・売買代金・VWAP未検証",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得",
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/12確定終値・VWAP・出来高伴う反転が未検証",
+            "信用買い残の増加・高止まり懸念"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "previousCloseDate": "2026-11-11",
+          "previousCloseYen": 2677,
+          "previousClosePnlYen": -203800,
+          "currentCloseYen": null,
+          "currentPnlYen": null,
+          "supportYen": 2597,
+          "resistanceYen": 2729.5,
+          "creditSupply": "11/6基準買残1653.26万株（-462.71万）、売残57万株、倍率29.00",
+          "volumeTurnoverVwap": "11/12確定終値・最終出来高・売買代金・VWAP未検証",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得",
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/6基準信用買残は減少したが倍率29倍",
+            "11/12前場は2729.5円から2640.5円へ反落",
+            "後場終値・VWAP・相対強度未検証"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "previousCloseDate": "2026-11-11",
+          "previousCloseYen": 730,
+          "previousClosePnlYen": -48996,
+          "currentCloseYen": null,
+          "currentPnlYen": null,
+          "supportYen": 710,
+          "resistanceYen": 736,
+          "creditSupply": "11/6基準買残約147.4万株、減少（前回監査値）",
+          "volumeTurnoverVwap": "11/12確定終値・最終出来高・売買代金・VWAP未検証",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得",
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/12確定終値・VWAP・出来高伴う反転が未検証",
+            "支持線維持と需給改善の複合条件が未確認"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "previousCloseDate": "2026-11-11",
+          "previousCloseYen": 126,
+          "previousClosePnlYen": -7200,
+          "currentCloseYen": null,
+          "currentPnlYen": null,
+          "supportYen": 126,
+          "resistanceYen": 131,
+          "creditSupply": "11/6基準買残約155.7万株、微減（前回監査値）",
+          "volumeTurnoverVwap": "11/12確定終値・最終出来高・売買代金・VWAP未検証",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得",
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/12確定終値・VWAP・出来高伴う反転が未検証",
+            "支持線維持と需給改善の複合条件が未確認"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "previousCloseDate": "2026-11-11",
+          "previousCloseYen": 162.2,
+          "previousClosePnlYen": -2920,
+          "currentCloseYen": null,
+          "currentPnlYen": null,
+          "supportYen": 162.2,
+          "resistanceYen": 165.7,
+          "creditSupply": "11/6基準買残8273.1万株、倍率10.84（前回監査値）",
+          "volumeTurnoverVwap": "11/12確定終値・最終出来高・売買代金・VWAP未検証",
+          "institutionalShortInterest": "未取得",
+          "sectorRelativeStrength": "未取得",
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/12確定終値・VWAP・出来高伴う反転が未検証",
+            "信用買い残の増加・高止まり懸念"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理進行中（暫定維持）",
+        "statusChange": false,
+        "currentCloseYen": null,
+        "currentPnlYen": null,
+        "lastVerifiedIntradayPriceYen": 2640.5,
+        "lastVerifiedIntradayAtJST": "2026-11-12T11:30:00+09:00",
+        "intradayHighYen": 2729.5,
+        "intradayLowYen": 2597,
+        "intradayVolumeSharesAt1130": 9200700,
+        "turnoverYen": null,
+        "vwapYen": null,
+        "creditReferenceDate": "2026-11-06",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16532600,
+        "creditSellShares": 570000,
+        "creditRatio": 29,
+        "creditBuyChangeShares": -4627100,
+        "creditUnchangedFromPreviousReport": true,
+        "forcedSellingAbsorption": "追証由来売りと特定不可。後場の吸収兆候未検証",
+        "trend": "前場は高値から反落、終値未確認で反転初動か判定保留",
+        "reasons": [
+          "信用買残462.71万株減少",
+          "信用倍率29倍で買い残負担が大きい",
+          "前場は高値から反落し後場反転未確認"
+        ]
+      },
+      "missingData": [
+        "11/12の全6銘柄の東証確定終値を信頼できるソースで検証不可",
+        "11/12最終出来高・売買代金・VWAP・相対強度・機関空売り未取得",
+        "保有情報10/14基準で古い",
+        "信用残正式公表日時未確認"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/5016/historical_prices/daily",
+        "https://minkabu.jp/stock/5016/chart",
+        "https://finance.yahoo.co.jp/quote/5016.T/history"
+      ],
+      "notificationSent": false
     }
   ]
 }
