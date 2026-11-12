@@ -1,0 +1,802 @@
+{
+  "date": "2026-11-13",
+  "asOf": "2026-11-13 08:03 JST",
+  "runType": "preopen_daytrade",
+  "independentAgentExecutionVerified": false,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "No.23/24/25/29の反対意見をconditional採用、同一時点の反対意見除外順位を取得できずrankDelta=null。一次IR未確認候補は条件付きに制限",
+      "novelContribution": "No.23/24/25/29の反対意見をconditional採用、同一時点の反対意見除外順位を取得できずrankDelta=null。一次IR未確認候補は条件付きに制限",
+      "decisionImpact": "No.23/24/25/29の反対意見をconditional採用、同一時点の反対意見除外順位を取得できずrankDelta=null。一次IR未確認候補は条件付きに制限",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "コンプライアンス",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "発注権限留保、確率・約定値の捏造禁止",
+      "novelContribution": "発注権限留保、確率・約定値の捏造禁止",
+      "decisionImpact": "発注権限留保、確率・約定値の捏造禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "古いholdings/performance/watchlistをblocked、7:30正規原本欠損を指摘",
+      "novelContribution": "古いholdings/performance/watchlistをblocked、7:30正規原本欠損を指摘",
+      "decisionImpact": "古いholdings/performance/watchlistをblocked、7:30正規原本欠損を指摘",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "マクロ",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "個別の独立証拠なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "個別の独立証拠なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "個別の独立証拠なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "個別の独立証拠なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "個別の独立証拠なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "個別の独立証拠なし",
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "価格行動",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "VWAP/初動高安が未観測のため寄り前エントリー断定禁止",
+      "novelContribution": "VWAP/初動高安が未観測のため寄り前エントリー断定禁止",
+      "decisionImpact": "VWAP/初動高安が未観測のため寄り前エントリー断定禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・板",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "板・スプレッド未観測のため流動性条件追加",
+      "novelContribution": "板・スプレッド未観測のため流動性条件追加",
+      "decisionImpact": "板・スプレッド未観測のため流動性条件追加",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "寄り付き値幅制限・約定不能を成功判定から除外",
+      "novelContribution": "寄り付き値幅制限・約定不能を成功判定から除外",
+      "decisionImpact": "寄り付き値幅制限・約定不能を成功判定から除外",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "価格構造と数量未確定のためRR/損失をnull",
+      "novelContribution": "価格構造と数量未確定のためRR/損失をnull",
+      "decisionImpact": "価格構造と数量未確定のためRR/損失をnull",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "米AI株変動と決算ギャップの複合リスク",
+      "novelContribution": "米AI株変動と決算ギャップの複合リスク",
+      "decisionImpact": "米AI株変動と決算ギャップの複合リスク",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "小型株の薄商いとスプレッド悪化時見送り",
+      "novelContribution": "小型株の薄商いとスプレッド悪化時見送り",
+      "decisionImpact": "小型株の薄商いとスプレッド悪化時見送り",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "寄り天・空売り目線を全候補に適用",
+      "novelContribution": "寄り天・空売り目線を全候補に適用",
+      "decisionImpact": "寄り天・空売り目線を全候補に適用",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り天・空売り"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "上方修正の一時要因と利益絶対額の弱点",
+      "novelContribution": "上方修正の一時要因と利益絶対額の弱点",
+      "decisionImpact": "上方修正の一時要因と利益絶対額の弱点",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "前日3件の実測執行検証0件を反復防止ゲート",
+      "novelContribution": "前日3件の実測執行検証0件を反復防止ゲート",
+      "decisionImpact": "前日3件の実測執行検証0件を反復防止ゲート",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "機関実フロー未取得のため加点なし",
+      "novelContribution": "機関実フロー未取得のため加点なし",
+      "decisionImpact": "機関実フロー未取得のため加点なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "市場コンセンサス不明、好決算でも期待差を推定しない",
+      "novelContribution": "市場コンセンサス不明、好決算でも期待差を推定しない",
+      "decisionImpact": "市場コンセンサス不明、好決算でも期待差を推定しない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "期待値不明"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "11/13 08:00決算速報と11/12修正一覧を発見",
+      "novelContribution": "11/13 08:00決算速報と11/12修正一覧を発見",
+      "decisionImpact": "11/13 08:00決算速報と11/12修正一覧を発見",
+      "candidatesPromoted": [
+        "3556"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "バリューチェーン",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "AIインフラ関連の連鎖は直接収益寄与未検証",
+      "novelContribution": "AIインフラ関連の連鎖は直接収益寄与未検証",
+      "decisionImpact": "AIインフラ関連の連鎖は直接収益寄与未検証",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需",
+      "taskPerformed": "担当領域の役割別検討（独立エージェント実行未確認）",
+      "keyFindings": "一次IRの実需・収益感応度未検証、Theme News独自推奨なし",
+      "novelContribution": "一次IRの実需・収益感応度未検証、Theme News独自推奨なし",
+      "decisionImpact": "一次IRの実需・収益感応度未検証、Theme News独自推奨なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "データ不足"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "個別独立実行未証明",
+        "当日寄り前の実測執行データなし"
+      ],
+      "sourcesUsed": [
+        "GitHub 2026-11-12-close-review",
+        "2026-11-13 公開市場記事"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "improvements": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "applied": true,
+      "affectedCandidates": [
+        "3556",
+        "6943",
+        "7122",
+        "5803"
+      ],
+      "rankDelta": null,
+      "conditionChanges": "反対意見をconditional採用し一次IR確認・ギャップ・流動性ゲートを追加",
+      "reason": "2026-11-12改善台帳のactive_trial。実測rankDelta/効果は未検証"
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "applied": true,
+      "affectedCandidates": [
+        "3556",
+        "6943",
+        "7122",
+        "5803"
+      ],
+      "rankDelta": null,
+      "conditionChanges": "方向と実約定可能性を分離し未確認値を成功としない",
+      "reason": "2026-11-12改善台帳のactive_trial。実測rankDelta/効果は未検証"
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "applied": true,
+      "affectedCandidates": [
+        "3556",
+        "6943",
+        "7122",
+        "5803"
+      ],
+      "rankDelta": null,
+      "conditionChanges": "古い入力をblockedとして現保有・実績判断に使用しない",
+      "reason": "2026-11-12改善台帳のactive_trial。実測rankDelta/効果は未検証"
+    }
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "code": "3556",
+      "name": "リネットジャパングループ",
+      "category": "Fresh Catalyst",
+      "material": "11/13 08:00決算速報: 前期経常11.9億円、今期予想15億円、初配当12円",
+      "source": "https://s.kabutan.jp/news/k202611130002/",
+      "directness": "high",
+      "earningsSensitivity": "high",
+      "expectationGap": "市場コンセンサス未取得",
+      "pricedIn": "発表直後だがPTS未確認",
+      "redTeam": [
+        "寄り付き買い殺到後の寄り天",
+        "今期成長・初配当の先取り",
+        "板薄・高スプレッドなら空売り優位",
+        "利益成長の持続性未検証"
+      ],
+      "probability": null,
+      "confidence": "low",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "未検証",
+      "buyCondition": "一次IR確認後、9:00-9:10 初動高値/安値、実測VWAP、出来高、売買代金、日経平均/TOPIX、日経先物、同業、板厚、スプレッドを確認。VWAP上かつ初動高値更新、同業追随、許容可能な板・スプレッド",
+      "skipCondition": "一次IR未確認、VWAP割れ、初動安値割れ、同業不一致、過大ギャップ、板薄・値幅制限で約定不能",
+      "invalidation": "出来高を伴う初動安値割れ、材料解釈の訂正",
+      "maxPlannedLoss": null,
+      "expectedProfit": null,
+      "rr": null
+    },
+    {
+      "rank": 2,
+      "code": "6943",
+      "name": "NKKスイッチズ",
+      "category": "Fresh Catalyst",
+      "material": "11/12通期営業利益予想340→1100百万円との二次集計",
+      "source": "https://tipleso.com/kaiji/joho-shusei/",
+      "directness": "high_if_primary_confirmed",
+      "earningsSensitivity": "high",
+      "expectationGap": "未確認",
+      "pricedIn": "未確認",
+      "redTeam": [
+        "薄商い・寄り天",
+        "上方修正の一時要因",
+        "値幅制限・約定不能",
+        "元の利益水準が低く伸び率を過大評価"
+      ],
+      "probability": null,
+      "confidence": "low",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "未検証",
+      "buyCondition": "一次IR確認後、9:00-9:10 初動高値/安値、実測VWAP、出来高、売買代金、日経平均/TOPIX、日経先物、同業、板厚、スプレッドを確認。VWAP上かつ初動高値更新、同業追随、許容可能な板・スプレッド",
+      "skipCondition": "一次IR未確認、VWAP割れ、初動安値割れ、同業不一致、過大ギャップ、板薄・値幅制限で約定不能",
+      "invalidation": "出来高を伴う初動安値割れ、材料解釈の訂正",
+      "maxPlannedLoss": null,
+      "expectedProfit": null,
+      "rr": null
+    },
+    {
+      "rank": 3,
+      "code": "7122",
+      "name": "近畿車輛",
+      "category": "Fresh Catalyst",
+      "material": "11/12通期営業利益予想100→400百万円との二次集計",
+      "source": "https://tipleso.com/kaiji/joho-shusei/",
+      "directness": "high_if_primary_confirmed",
+      "earningsSensitivity": "high",
+      "expectationGap": "未確認",
+      "pricedIn": "未確認",
+      "redTeam": [
+        "薄商いとギャップ寄り天",
+        "修正材料の出尽くし",
+        "短期売り優勢・スプレッド拡大",
+        "絶対利益規模が小さい"
+      ],
+      "probability": null,
+      "confidence": "low",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "未検証",
+      "buyCondition": "一次IR確認後、9:00-9:10 初動高値/安値、実測VWAP、出来高、売買代金、日経平均/TOPIX、日経先物、同業、板厚、スプレッドを確認。VWAP上かつ初動高値更新、同業追随、許容可能な板・スプレッド",
+      "skipCondition": "一次IR未確認、VWAP割れ、初動安値割れ、同業不一致、過大ギャップ、板薄・値幅制限で約定不能",
+      "invalidation": "出来高を伴う初動安値割れ、材料解釈の訂正",
+      "maxPlannedLoss": null,
+      "expectedProfit": null,
+      "rr": null
+    },
+    {
+      "rank": 4,
+      "code": "5803",
+      "name": "フジクラ",
+      "category": "Sector Alignment / Continuation",
+      "material": "AIインフラ需要の継続監視、米NVIDIA急落によるセクター逆風",
+      "source": "https://www.reuters.com/business/nasdaq-futures-fall-nvidia-turmoil-rattles-ai-stocks-2026-11-12/",
+      "directness": "medium",
+      "earningsSensitivity": "未検証",
+      "expectationGap": "未確認",
+      "pricedIn": "未確認",
+      "redTeam": [
+        "米AI株ショックの寄り天",
+        "既知テーマ材料出尽くし",
+        "戻り売り・空売り目線",
+        "AI設備投資の採算不透明"
+      ],
+      "probability": null,
+      "confidence": "low",
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": "未検証",
+      "buyCondition": "一次IR確認後、9:00-9:10 初動高値/安値、実測VWAP、出来高、売買代金、日経平均/TOPIX、日経先物、同業、板厚、スプレッドを確認。VWAP上かつ初動高値更新、同業追随、許容可能な板・スプレッド",
+      "skipCondition": "一次IR未確認、VWAP割れ、初動安値割れ、同業不一致、過大ギャップ、板薄・値幅制限で約定不能",
+      "invalidation": "出来高を伴う初動安値割れ、材料解釈の訂正",
+      "maxPlannedLoss": null,
+      "expectedProfit": null,
+      "rr": null
+    }
+  ],
+  "evidenceGap": [
+    "7:30当日市場情報部正規原本未確認（latest.jsonは11/2）",
+    "11/13当日テーマ研究独立原本未取得",
+    "11/12候補3件の確定OHLCと9:00-9:10執行検証なし",
+    "11/13 PTS/先物/板/機関実フロー未検証",
+    "3556/6943/7122の会社一次IR全文・市場コンセンサス未確認",
+    "34名の独立実行未証明"
+  ],
+  "backfilled": false,
+  "activitySaveFailure": false,
+  "sourceFreshness": {
+    "holdings": {
+      "asOf": "2026-10-14",
+      "status": "blocked"
+    },
+    "performance": {
+      "asOf": "2026-10-05",
+      "status": "blocked"
+    },
+    "watchlist": {
+      "asOf": "2026-10-02",
+      "status": "blocked"
+    },
+    "marketIntelligenceLatest": {
+      "asOf": "2026-11-02",
+      "status": "blocked"
+    }
+  },
+  "redTeamDecision": {
+    "status": "conditional",
+    "rankDelta": null,
+    "reason": "同一時点の警告前順位未記録",
+    "conditionChanges": "一次IR、初動VWAP、流動性確認を必須化"
+  },
+  "finalDecision": "user"
+}
