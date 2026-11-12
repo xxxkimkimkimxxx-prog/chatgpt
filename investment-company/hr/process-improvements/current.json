@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "asOf": "2026-11-06",
+  "asOf": "2026-11-12",
   "purpose": "人事評価を翌営業日の投資委員会へ閉ループ接続する",
   "maxActiveTrials": 3,
   "activeTrials": [
@@ -51,6 +51,14 @@
           "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
           "verdict": "modify_handoff",
           "nextAction": "No.1 must capture pre-warning and post-warning rank snapshots, not compare rankings across dates"
+        },
+        {
+          "date": "2026-11-12",
+          "stage": "post_effective_audit",
+          "finding": "朝の反対意見は条件変更へ反映、同一時点rankDeltaはnull",
+          "evidence": "investment-company/hr/activity/2026-11-12/daytrade.json",
+          "verdict": "modify_handoff",
+          "nextAction": "Capture same-time before/after ranks"
         }
       ]
     },
@@ -100,6 +108,14 @@
           "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
           "verdict": "modify_data_collection",
           "nextAction": "No.3/26 collect dated official OHLC after close; No.15/18 capture timestamped entry conditions or null"
+        },
+        {
+          "date": "2026-11-12",
+          "stage": "post_effective_audit",
+          "finding": "方向と執行は分離済みだが3候補の実測執行検証なし",
+          "evidence": "investment-company/hr/activity/2026-11-12/daytrade.json",
+          "verdict": "modify_data_collection",
+          "nextAction": "Capture verified OHLC and timestamped entry conditions"
         }
       ]
     },
@@ -146,6 +162,14 @@
           "evidence": "investment-company/hr/activity/2026-11-06/daytrade.json",
           "verdict": "keep_trial_measure",
           "nextAction": "No.3/31 count actual stale-input misuse and false blocks"
+        },
+        {
+          "date": "2026-11-12",
+          "stage": "post_effective_audit",
+          "finding": "古いholdings/performance/watchlistをblocked、誤用と過剰遮断の実測件数は未集計",
+          "evidence": "investment-company/hr/activity/2026-11-12/daytrade.json",
+          "verdict": "keep_measure",
+          "nextAction": "Count stale misuse and false blocks"
         }
       ]
     }
@@ -167,7 +191,7 @@
       "formal_hiring_demotion_merge_abolition"
     ]
   },
-  "lastReviewAt": "2026-11-06 afternoon audit",
-  "nextEvaluationDate": "2026-11-09",
-  "trialChangesThisRun": "No new trial; modify evidence handoffs for EXP-01/02, keep measuring EXP-03; no risk or authority changes"
+  "lastReviewAt": "2026-11-12 16:30 JST",
+  "nextEvaluationDate": "2026-11-13",
+  "trialChangesThisRun": "No new trial; modify evidence handoff only for EXP-01/02, measure EXP-03; no authority or risk changes"
 }
