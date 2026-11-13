@@ -905,6 +905,182 @@
         "https://s.kabutan.jp/stocks/9432/"
       ],
       "notificationSent": false
+    },
+    {
+      "scheduledAtJST": "2026-11-13T14:00:00+09:00",
+      "observedAtJST": "2026-11-13T13:59:21+09:00",
+      "status": "intraday_partial_jx_new_low",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-13T13:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "mixedReferencePnlYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "referencePriceYen": 103,
+          "referenceTime": "11/12 13:43",
+          "referencePnlYen": -16000,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "creditSupply": "買残419700 売残26000 倍率16.14 11/6",
+          "volumeTurnoverVwap": "11/13未取得",
+          "institutionalShortInterest": "11/13変化未確認",
+          "sectorRelativeStrength": "11/13同業比較未確認",
+          "reasons": [
+            "当日株価・VWAP・出来高・相対強度の検証不足",
+            "反転と需給改善の複数条件未確認"
+          ]
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "referencePriceYen": 26,
+          "referenceTime": "2026-11-13 09:28 Yahoo!ファイナンス",
+          "referencePnlYen": -7980,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "creditSupply": "買残21733200 売残6269300 倍率3.47 11/6",
+          "volumeTurnoverVwap": "11/13未取得",
+          "institutionalShortInterest": "11/13変化未確認",
+          "sectorRelativeStrength": "11/13同業比較未確認",
+          "reasons": [
+            "09:28時点26円まで上昇も直近の持続性未確認",
+            "11/6信用買い残2173万株、前週比376万株増加",
+            "13時台VWAP・出来高推移未検証"
+          ]
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "referencePriceYen": 2512.5,
+          "referenceTime": "2026-11-13 13:06 Yahoo!ファイナンス",
+          "referencePnlYen": -236700,
+          "supportYen": 2495,
+          "resistanceYen": 2590.64,
+          "averagingDecision": "ナンピン見送り",
+          "creditSupply": "週次11/6 買16,532,600 売570,000 倍率29.00。別系列の日次11/11 買16,289,600 売632,400 倍率25.76（トレーダーズ・ウェブ表示）。異なる系列を直接前週比比較しない",
+          "volumeTurnoverVwap": "12:51出来高8,900,800株、売買代金22,952,368千円、当日VWAP最新未取得（11:00値2590.64円は参考）",
+          "institutionalShortInterest": "11/13変化未確認",
+          "sectorRelativeStrength": "11/13同業比較未確認",
+          "reasons": [
+            "前日安値2533.5円を割り当日安値2495円へ更新",
+            "13:06株価2512.5円は11時VWAP2590.64円を下回る",
+            "信用買い残1653万株・倍率29倍（11/6週次）で需給負担継続"
+          ]
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "referencePriceYen": 724,
+          "referenceTime": "11/12終値",
+          "referencePnlYen": -52596,
+          "supportYen": 717,
+          "resistanceYen": 740,
+          "averagingDecision": "ナンピン見送り",
+          "creditSupply": "買残147.4万株 11/6",
+          "volumeTurnoverVwap": "11/13未取得",
+          "institutionalShortInterest": "11/13変化未確認",
+          "sectorRelativeStrength": "11/13同業比較未確認",
+          "reasons": [
+            "当日株価・VWAP・出来高・相対強度の検証不足",
+            "反転と需給改善の複数条件未確認"
+          ]
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "referencePriceYen": 125,
+          "referenceTime": "11/12終値",
+          "referencePnlYen": -7400,
+          "supportYen": 124,
+          "resistanceYen": 128,
+          "averagingDecision": "判定保留",
+          "creditSupply": "買残155.7万株 11/6",
+          "volumeTurnoverVwap": "11/13未取得",
+          "institutionalShortInterest": "11/13変化未確認",
+          "sectorRelativeStrength": "11/13同業比較未確認",
+          "reasons": [
+            "当日株価・VWAP・出来高・相対強度の検証不足",
+            "反転と需給改善の複数条件未確認"
+          ]
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "referencePriceYen": 168.4,
+          "referenceTime": "2026-11-13 12:36 Yahoo!ファイナンス",
+          "referencePnlYen": -1680,
+          "supportYen": 165.1,
+          "resistanceYen": 167.8,
+          "averagingDecision": "ナンピン見送り",
+          "creditSupply": "買残8273.1万株 倍率10.84 11/6",
+          "volumeTurnoverVwap": "11:30 出来高69,248,000株 売買代金約115.29億円 VWAP166.49円",
+          "institutionalShortInterest": "11/13変化未確認",
+          "sectorRelativeStrength": "11/13同業比較未確認",
+          "reasons": [
+            "12:36時点で前日終値167.5円を上回る",
+            "当日VWAP・出来高を伴う戻り高値突破は未検証",
+            "11/6信用倍率10.84倍と買い残高水準"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了（暫定・安値更新による悪化）",
+        "statusChange": true,
+        "referencePriceYen": 2512.5,
+        "referenceTime": "2026-11-13 13:06",
+        "referencePnlYen": -236700,
+        "previousCloseYen": 2551,
+        "changeYen": -38.5,
+        "highYen": 2621,
+        "lowYen": 2495,
+        "volumeShares": 8900800,
+        "turnoverYen": 22952368000,
+        "volumeTime": "12:51",
+        "vwapYen": null,
+        "olderVwapYen": 2590.64,
+        "creditReferenceDate": "2026-11-06",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16532600,
+        "creditSellShares": 570000,
+        "creditRatio": 29,
+        "creditBuyChangeShares": -4627100,
+        "creditUnchangedFromPreviousReport": true,
+        "forcedSellingAbsorption": "前日安値割れ・当日安値更新で吸収未確認。追証由来かは不明",
+        "trend": "下落継続優勢、反転未確認",
+        "reasons": [
+          "前日安値2533.5円を下抜け2495円まで下落",
+          "13:06株価2512.5円、前日比-1.51%",
+          "信用買い残高水準で、出来高伴うVWAP回復未確認"
+        ]
+      },
+      "missingData": [
+        "当日同時点6銘柄株価は未取得",
+        "2926,5027,8518は11/12参考値",
+        "JXの13時台VWAP、セクター相対強度、機関空売り変化未取得",
+        "信用残正式公表日時未確認",
+        "保有データ10/14以降更新なし"
+      ],
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://finance.yahoo.co.jp/quote/9432.T/history",
+        "https://finance.yahoo.co.jp/quote/4597.T"
+      ],
+      "notificationSent": false
     }
   ]
 }
