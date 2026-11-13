@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-13",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-11-13T09:00:00+09:00",
+      "observedAtJST": "2026-11-13T09:02:13+09:00",
+      "status": "intraday_unverified_previous_close_partial",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-12T17:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "previousNotificationChangeYen": null,
+      "portfolioPnlYen": null,
+      "mixedReferencePnlYen": -320836,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "referencePriceYen": 103,
+          "referenceTime": "11/12 13:43",
+          "referencePnlYen": -16000,
+          "averagingDecision": "判定保留",
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "creditSupply": "買残419700 売残26000 倍率16.14 11/6",
+          "volumeTurnoverVwap": "11/13 09:02 時点の検証済みデータなし",
+          "institutionalShortInterest": "未確認",
+          "sectorRelativeStrength": "未確認",
+          "reasons": [
+            "11/13場中の支持線維持・VWAP・出来高反転を検証できない",
+            "信用需給または価格行動が買い増し条件を満たしたと確認できない"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "referencePriceYen": 24,
+          "referenceTime": "11/12終値",
+          "referencePnlYen": -13980,
+          "averagingDecision": "ナンピン見送り",
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "creditSupply": "買残21733200 売残6269300 倍率3.47 11/6",
+          "volumeTurnoverVwap": "11/13 09:02 時点の検証済みデータなし",
+          "institutionalShortInterest": "未確認",
+          "sectorRelativeStrength": "未確認",
+          "reasons": [
+            "11/13場中の支持線維持・VWAP・出来高反転を検証できない",
+            "信用需給または価格行動が買い増し条件を満たしたと確認できない"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "referencePriceYen": 2551,
+          "referenceTime": "11/12終値",
+          "referencePnlYen": -229000,
+          "averagingDecision": "ナンピン見送り",
+          "supportYen": 2533.5,
+          "resistanceYen": 2729.5,
+          "creditSupply": "買残16532600 売残570000 倍率29.00 11/6",
+          "volumeTurnoverVwap": "11/13 09:02 時点の検証済みデータなし",
+          "institutionalShortInterest": "未確認",
+          "sectorRelativeStrength": "未確認",
+          "reasons": [
+            "11/13場中の支持線維持・VWAP・出来高反転を検証できない",
+            "信用需給または価格行動が買い増し条件を満たしたと確認できない"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "AnyMind",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "referencePriceYen": 724,
+          "referenceTime": "11/12終値",
+          "referencePnlYen": -52596,
+          "averagingDecision": "ナンピン見送り",
+          "supportYen": 717,
+          "resistanceYen": 740,
+          "creditSupply": "買残147.4万株 11/6",
+          "volumeTurnoverVwap": "11/13 09:02 時点の検証済みデータなし",
+          "institutionalShortInterest": "未確認",
+          "sectorRelativeStrength": "未確認",
+          "reasons": [
+            "11/13場中の支持線維持・VWAP・出来高反転を検証できない",
+            "信用需給または価格行動が買い増し条件を満たしたと確認できない"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "referencePriceYen": 125,
+          "referenceTime": "11/12終値",
+          "referencePnlYen": -7400,
+          "averagingDecision": "判定保留",
+          "supportYen": 124,
+          "resistanceYen": 128,
+          "creditSupply": "買残155.7万株 11/6",
+          "volumeTurnoverVwap": "11/13 09:02 時点の検証済みデータなし",
+          "institutionalShortInterest": "未確認",
+          "sectorRelativeStrength": "未確認",
+          "reasons": [
+            "11/13場中の支持線維持・VWAP・出来高反転を検証できない",
+            "信用需給または価格行動が買い増し条件を満たしたと確認できない"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "referencePriceYen": 167.5,
+          "referenceTime": "11/12終値",
+          "referencePnlYen": -1860,
+          "averagingDecision": "ナンピン見送り",
+          "supportYen": 163.2,
+          "resistanceYen": 167.5,
+          "creditSupply": "買残8273.1万株 倍率10.84 11/6",
+          "volumeTurnoverVwap": "11/13 09:02 時点の検証済みデータなし",
+          "institutionalShortInterest": "未確認",
+          "sectorRelativeStrength": "未確認",
+          "reasons": [
+            "11/13場中の支持線維持・VWAP・出来高反転を検証できない",
+            "信用需給または価格行動が買い増し条件を満たしたと確認できない"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理進行中（暫定維持）",
+        "statusChange": false,
+        "referencePriceYen": 2551,
+        "referenceDate": "2026-11-12",
+        "referencePnlYen": -229000,
+        "previousDayChangeYen": -126,
+        "previousDayHighYen": 2729.5,
+        "previousDayLowYen": 2533.5,
+        "previousDayVolumeShares": 18298000,
+        "previousDayTurnoverYen": 47816199000,
+        "previousDayApproxVwapYen": 2613.192644004809,
+        "creditReferenceDate": "2026-11-06",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16532600,
+        "creditSellShares": 570000,
+        "creditRatio": 29,
+        "creditBuyChangeShares": -4627100,
+        "creditUnchangedFromPreviousReport": true,
+        "forcedSellingAbsorption": "11/12安値圏引け。吸収確認できず、追証由来との断定不可",
+        "trend": "11/12は高値から下落、反転確認なし",
+        "reasons": [
+          "信用買残は11/6基準で前週比462.71万株減少",
+          "11/12終値2551円、前日比-4.70%、安値2533.5円で反発失速",
+          "11/13場中価格・VWAP・セクター比較未検証"
+        ]
+      },
+      "missingData": [
+        "11/13 09:02 時点の全6銘柄の検証可能な場中株価なし",
+        "2926の11/12確定終値未検証（13:43参考値）",
+        "10/14以降の保有更新なし",
+        "全銘柄の当日VWAP・相対強度・機関空売り変化未取得",
+        "信用残正式公表日時未確認"
+      ],
+      "sources": [
+        "https://finance.yahoo.co.jp/quote/5016.T",
+        "https://minkabu.jp/stock/5016/chart",
+        "https://finance.yahoo.co.jp/quote/4597.T/chart",
+        "https://jp.investing.com/equities/anymind-historical-data",
+        "https://s.kabutan.jp/stocks/8518/historical_prices/daily/",
+        "https://finance.yahoo.co.jp/quote/9432.T",
+        "https://finance.yahoo.co.jp/quote/2926.T"
+      ],
+      "notificationSent": false
+    }
+  ]
+}
