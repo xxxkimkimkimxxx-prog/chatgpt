@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "asOf": "2026-11-12",
+  "asOf": "2026-11-13",
   "purpose": "人事評価を翌営業日の投資委員会へ閉ループ接続する",
   "maxActiveTrials": 3,
   "activeTrials": [
@@ -59,6 +59,14 @@
           "evidence": "investment-company/hr/activity/2026-11-12/daytrade.json",
           "verdict": "modify_handoff",
           "nextAction": "Capture same-time before/after ranks"
+        },
+        {
+          "date": "2026-11-13",
+          "stage": "post_effective_audit",
+          "finding": "11/13 morning activity records conditional warnings but no same-time pre/post rank snapshot",
+          "verdict": "modify_handoff",
+          "evidence": "investment-company/hr/activity/2026-11-13/daytrade.json",
+          "nextAction": "Capture same-time pre/post ranking and reason"
         }
       ]
     },
@@ -116,6 +124,14 @@
           "evidence": "investment-company/hr/activity/2026-11-12/daytrade.json",
           "verdict": "modify_data_collection",
           "nextAction": "Capture verified OHLC and timestamped entry conditions"
+        },
+        {
+          "date": "2026-11-13",
+          "stage": "post_effective_audit",
+          "finding": "11/13 four candidates lack fully verified OHLC and timestamped execution evidence; signal and execution remain separated",
+          "verdict": "modify_data_collection",
+          "evidence": "investment-company/hr/activity/2026-11-13/daytrade.json",
+          "nextAction": "No.3/26 collect source-dated OHLC; No.15/18 log timestamped entry verification or explicit null"
         }
       ]
     },
@@ -170,6 +186,14 @@
           "evidence": "investment-company/hr/activity/2026-11-12/daytrade.json",
           "verdict": "keep_measure",
           "nextAction": "Count stale misuse and false blocks"
+        },
+        {
+          "date": "2026-11-13",
+          "stage": "post_effective_audit",
+          "finding": "Stale holdings/performance/watchlist blocked in morning memo; false-block and misuse counts unverified",
+          "verdict": "keep_trial_measure",
+          "evidence": "investment-company/hr/activity/2026-11-13/daytrade.json",
+          "nextAction": "Count blocked-input misuse and false blocks"
         }
       ]
     }
@@ -191,7 +215,7 @@
       "formal_hiring_demotion_merge_abolition"
     ]
   },
-  "lastReviewAt": "2026-11-12 16:30 JST",
-  "nextEvaluationDate": "2026-11-13",
-  "trialChangesThisRun": "No new trial; modify evidence handoff only for EXP-01/02, measure EXP-03; no authority or risk changes"
+  "lastReviewAt": "2026-11-13 16:30 JST",
+  "nextEvaluationDate": "2026-11-16",
+  "trialChangesThisRun": "No new trials; retain existing rules, modify handoff requirements for EXP-01/02; continue measurement for EXP-03"
 }
