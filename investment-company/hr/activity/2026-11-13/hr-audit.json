@@ -1,0 +1,409 @@
+{
+  "date": "2026-11-13",
+  "runType": "market_close_hr_audit",
+  "independentAgentExecutionVerified": false,
+  "backfilled": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-11-13/daytrade.json",
+    "investment-company/decision-memos/2026-11-13/daytrade.md",
+    "investment-company/market-intelligence/2026-11-12-close-review.json",
+    "investment-company/hr/process-improvements/current.json",
+    "stock-dashboard/data/performance-summary.json"
+  ],
+  "evidenceGap": [
+    "2026-11-13 4候補の確定始値・終値・前日終値の全件独立照合未完了",
+    "9:00-9:10実測VWAP/板/スプレッド/条件成立時刻未取得",
+    "実注文・約定履歴未取得",
+    "No.31に対するNo.1/No.2の独立した実行証跡なし",
+    "当日7:30市場情報原本・独立テーマ研究原本未確認"
+  ],
+  "candidates": [
+    {
+      "code": "3556",
+      "name": "リネットジャパンG",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "6943",
+      "name": "NKKスイッチズ",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "7122",
+      "name": "近畿車輛",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    }
+  ],
+  "agentsAudited": 34,
+  "morningRoleRecords": 23,
+  "verifiedFinalCloseCoverage": "0/4 fully independently verified",
+  "verifiedExecutionCoverage": "0/4",
+  "signalAccuracy": "unverifiable",
+  "executionAccuracy": "unverifiable",
+  "falseAlarm": "unverifiable",
+  "brierScore": null,
+  "scoreChanges": 0,
+  "formalPersonnelAction": "none",
+  "assessment": "役割別分析記録23件。独立稼働未証明。未検証を成功と計上せず34名の新規採点を保留。",
+  "agents": [
+    {
+      "agentId": 1,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Complete auditable handoff and evidence checks"
+    },
+    {
+      "agentId": 2,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 3,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Complete auditable handoff and evidence checks"
+    },
+    {
+      "agentId": 4,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 5,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 6,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 7,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 8,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 9,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 10,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 11,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 12,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 13,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 14,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 15,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Complete auditable handoff and evidence checks"
+    },
+    {
+      "agentId": 16,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Complete auditable handoff and evidence checks"
+    },
+    {
+      "agentId": 17,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 18,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Complete auditable handoff and evidence checks"
+    },
+    {
+      "agentId": 19,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 20,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 21,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 22,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 23,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 24,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 25,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 26,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Complete auditable handoff and evidence checks"
+    },
+    {
+      "agentId": 27,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 28,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 29,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 30,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 31,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": 1,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Complete auditable handoff and evidence checks"
+    },
+    {
+      "agentId": 32,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 33,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    },
+    {
+      "agentId": 34,
+      "assessment": "evaluation_deferred",
+      "activityOpportunity": null,
+      "verifiedEvidenceCount": null,
+      "independentExecutionVerified": false,
+      "contribution": "not_independently_verified",
+      "improvementInstruction": "Maintain role-specific evidence and no fabricated activity"
+    }
+  ],
+  "hrSelfAudit": {
+    "agentId": 31,
+    "reviewers": [
+      1,
+      2
+    ],
+    "independentReviewVerified": false
+  },
+  "morningImprovementCompliance": {
+    "EXP_01": "conditional recorded; rankDelta null",
+    "EXP_02": "signal and execution separated; execution not verified",
+    "EXP_03": "stale inputs blocked; false-block count missing"
+  }
+}
