@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-13",
+  "runType": "market_close_hr_audit",
+  "independentAgentExecutionVerified": false,
+  "backfilled": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-11-13/daytrade.json",
+    "investment-company/decision-memos/2026-11-13/daytrade.md",
+    "investment-company/market-intelligence/2026-11-12-close-review.json",
+    "investment-company/hr/process-improvements/current.json",
+    "stock-dashboard/data/performance-summary.json"
+  ],
+  "evidenceGap": [
+    "2026-11-13 4候補の確定始値・終値・前日終値の全件独立照合未完了",
+    "9:00-9:10実測VWAP/板/スプレッド/条件成立時刻未取得",
+    "実注文・約定履歴未取得",
+    "No.31に対するNo.1/No.2の独立した実行証跡なし",
+    "当日7:30市場情報原本・独立テーマ研究原本未確認"
+  ],
+  "candidates": [
+    {
+      "code": "3556",
+      "name": "リネットジャパンG",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "6943",
+      "name": "NKKスイッチズ",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "7122",
+      "name": "近畿車輛",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    },
+    {
+      "code": "5803",
+      "name": "フジクラ",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "actualTradeVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable"
+    }
+  ],
+  "agentsAudited": 34,
+  "morningRoleRecords": 23,
+  "verifiedFinalCloseCoverage": "0/4 fully independently verified",
+  "verifiedExecutionCoverage": "0/4",
+  "signalAccuracy": "unverifiable",
+  "executionAccuracy": "unverifiable",
+  "falseAlarm": "unverifiable",
+  "brierScore": null,
+  "scoreChanges": 0,
+  "formalPersonnelAction": "none",
+  "assessment": "役割別分析記録23件。独立稼働未証明。未検証を成功と計上せず34名の新規採点を保留。",
+  "activityType": "performance_review",
+  "method": "前日終値→当日終値と始値→当日終値を別々に検証。データ未確認のため両者null。約定可能性別判定。"
+}
