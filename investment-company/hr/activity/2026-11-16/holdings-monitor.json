@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-16",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-11-16T09:00:00+09:00",
+      "observedAtJST": "2026-11-16T08:57:11+09:00",
+      "status": "preopen_previous_close_partial",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-13T17:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "低流動性、最新の出来高・VWAP・反転未確認"
+          ],
+          "latestPriceYen": null,
+          "latestPriceDate": null,
+          "referencePnlYen": null,
+          "creditSupply": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "信用買い残負担と反転未確認"
+          ],
+          "latestPriceYen": null,
+          "latestPriceDate": null,
+          "referencePnlYen": null,
+          "creditSupply": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "supportYen": 2467.5,
+          "resistanceYen": 2544.31,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/13安値更新、終値VWAP下、信用倍率高水準"
+          ],
+          "latestPriceYen": 2483.5,
+          "latestPriceDate": "2026-11-13 15:30 JST",
+          "referencePnlYen": -242500,
+          "creditSupply": {
+            "referenceDate": "2026-11-06",
+            "buyShares": 16532600,
+            "sellShares": 570000,
+            "ratio": 29,
+            "buyChangeShares": -4627100,
+            "publicationDate": "未確認",
+            "unchangedFromPrevious": true
+          },
+          "volumeShares": 14879800,
+          "turnoverYen": 37858853000,
+          "vwapYen": 2544.31,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5027",
+          "name": "AnyMind",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "supportYen": 717,
+          "resistanceYen": 740,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "VWAP回復・需給改善未確認"
+          ],
+          "latestPriceYen": null,
+          "latestPriceDate": null,
+          "referencePnlYen": null,
+          "creditSupply": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "supportYen": 124,
+          "resistanceYen": 128,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "低流動性、最新価格・出来高未確認"
+          ],
+          "latestPriceYen": null,
+          "latestPriceDate": null,
+          "referencePnlYen": null,
+          "creditSupply": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "supportYen": 163.2,
+          "resistanceYen": 168.4,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "信用買残高止まり、反転確認不足"
+          ],
+          "latestPriceYen": null,
+          "latestPriceDate": null,
+          "referencePnlYen": null,
+          "creditSupply": null,
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了（暫定維持）",
+        "statusChange": false,
+        "referencePriceYen": 2483.5,
+        "referenceDate": "2026-11-13 15:30 JST",
+        "referencePnlYen": -242500,
+        "dayChangeYen": -67.5,
+        "highYen": 2621,
+        "lowYen": 2467.5,
+        "volumeShares": 14879800,
+        "turnoverYen": 37858853000,
+        "vwapYen": 2544.31,
+        "creditReferenceDate": "2026-11-06",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16532600,
+        "creditSellShares": 570000,
+        "creditRatio": 29,
+        "creditBuyChangeShares": -4627100,
+        "creditUnchangedFromPreviousReport": true,
+        "forcedSellingAbsorption": "安値更新後の終値はVWAP下、投げ売り吸収未確認。追証由来との断定不可",
+        "trend": "短期下落継続、反転未確認",
+        "reasons": [
+          "11/13安値2467.5円まで更新",
+          "終値2483.5円はVWAP2544.31円を下回る",
+          "11/6基準信用倍率29倍で買い残負担が大きい"
+        ]
+      },
+      "missingData": [
+        "11/16は寄付前のため当日場中価格・VWAPなし",
+        "5銘柄の11/13確定終値未検証",
+        "保有情報10/14以降未更新",
+        "信用残正式公表日時・最新値未確認",
+        "機関空売り・同業相対強度未確認"
+      ],
+      "sources": [
+        "https://finance.matsui.co.jp/stock/5016/index",
+        "https://s.kabutan.jp/stocks/5016/",
+        "https://github.com/xxxkimkimkimxxx-prog/chatgpt/blob/main/stock-dashboard/data/holdings.json"
+      ],
+      "notificationSent": false
+    }
+  ]
+}
