@@ -772,6 +772,96 @@
         "https://github.com/xxxkimkimkimxxx-prog/chatgpt/blob/main/stock-dashboard/data/holdings.json"
       ],
       "notificationSent": false
+    },
+    {
+      "observedAtJST": "2026-11-16T12:21:00+09:00",
+      "status": "manual_anymind_detail_analysis",
+      "code": "5027",
+      "name": "AnyMind Group",
+      "holding": {
+        "quantity": 600,
+        "averageCostYen": 811.66,
+        "source": "stock-dashboard/data/holdings.json",
+        "holdingsAsOf": "2026-10-14 21:47 JST"
+      },
+      "market": {
+        "latestVerifiedPriceYen": 628,
+        "latestVerifiedTimeJST": "2026-11-16 11:11:10",
+        "dayChangeYen": -89,
+        "dayChangePct": -12.41,
+        "dayHighYen": 720,
+        "dayLowYen": 624,
+        "intradayVolumeReferenceShares": 817800,
+        "intradayVolumeReferenceNote": "Investing.com current-day row; live display timestamp 11:11:10",
+        "vwapYen": null,
+        "pnlYenAtLatestVerifiedPrice": -110196,
+        "pnlPctVsAverageCost": -22.63
+      },
+      "technical": {
+        "sma5Yen": 722.8,
+        "sma10Yen": 720.5,
+        "sma20Yen": 748.6,
+        "supportsYen": [
+          624,
+          600,
+          "560-580"
+        ],
+        "resistancesYen": [
+          "655-668",
+          "685-702",
+          "713-720"
+        ],
+        "growth250FrontSessionPctApprox": -1.25,
+        "relativeUnderperformancePctPointsApprox": -11.16
+      },
+      "supplyDemand": {
+        "dailyCreditReferenceDate": "2026-11-12",
+        "dailyCreditBuyShares": 1477800,
+        "dailyCreditSellShares": 0,
+        "creditRatio": null,
+        "creditBuyChangeVs20261028Shares": -242900,
+        "creditBuyChangeVs20261028Pct": -14.12,
+        "institutionalShortReferenceDate": "2026-11-11",
+        "institutionalShortSeller": "モルガン・スタンレーMUFG証券",
+        "institutionalShortShares": 382500,
+        "institutionalShortPct": 0.62,
+        "institutionalShortChangeShares": 73700,
+        "institutionalShortChangePctPoints": 0.12
+      },
+      "earnings": {
+        "announcementDate": "2026-11-13",
+        "q3CumulativeRevenueMJPY": 59696,
+        "q3CumulativeOperatingProfitMJPY": 1941,
+        "q3CumulativeNetIncomeMJPY": 1101,
+        "fullYearRevenueForecastMJPY": 79110,
+        "fullYearOperatingProfitForecastMJPY": 3060,
+        "fullYearNetIncomeForecastMJPY": 1630,
+        "operatingProfitProgressPct": 63.4,
+        "q3StandaloneOperatingProfitMJPY": 886,
+        "q4OperatingProfitRequiredMJPY": 1119,
+        "q4OperatingProfitRequiredVsQ3Pct": 26.3,
+        "guidanceRaised": false
+      },
+      "averagingDecision": "ナンピン見送り",
+      "reasons": [
+        "決算翌営業日に前日比-12%超、出来高急増を伴う大幅安で安値更新中",
+        "価格は5日・10日・20日移動平均を大幅に下回り、短期下降トレンドが明確",
+        "信用買い残は減少傾向だが約148万株残存、かつ機関空売りが11/11に0.62%へ増加"
+      ],
+      "upgradeConditions": [
+        "624円近辺または600円近辺で安値更新が止まり、下ヒゲ・切り返しを確認",
+        "VWAP回復と655-668円帯の回復を出来高を伴って確認",
+        "信用買い残の追加減少と大口空売り増加停止を確認"
+      ],
+      "invalidation": "624円を明確に割り、600円も維持できない場合は下値模索継続として見送りを強化",
+      "sources": [
+        "https://jp.investing.com/equities/anymind-historical-data",
+        "https://finance.yahoo.co.jp/quote/5027.T/history",
+        "https://s.kabutan.jp/stocks/5027/historical_margins/daily/",
+        "https://karauri.net/5027/",
+        "https://s.kabutan.jp/news/k202611130395/",
+        "https://f.irbank.net/pdf/20261113/140120261113579517.pdf"
+      ]
     }
   ]
 }
