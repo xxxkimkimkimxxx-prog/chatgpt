@@ -1036,6 +1036,193 @@
         "https://s.kabutan.jp/stocks/5016/historical_margins/daily/",
         "https://kikan.watch/stocks/5016-JX金属"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-16T14:00:00+09:00",
+      "observedAtJST": "2026-11-16T14:05:00+09:00",
+      "status": "partial_quotes_four_of_six_stale_at_14",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-16T13:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "indicativePartialPnlYen": -398776,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "latestVerifiedPriceYen": 102,
+          "priceTimeJST": "2026-11-16 09:36",
+          "indicativePnlYen": -17000,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "14時時点の新規日時付き株価とVWAP・需給更新未確認"
+          ],
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "latestVerifiedPriceYen": null,
+          "priceTimeJST": null,
+          "indicativePnlYen": null,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "14時時点の新規日時付き株価とVWAP・需給更新未確認"
+          ],
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "latestVerifiedPriceYen": 2345.5,
+          "priceTimeJST": "2026-11-16 10:54",
+          "indicativePnlYen": -270100,
+          "supportYen": 2345.5,
+          "resistanceYen": 2497,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/16安値更新・前日安値割れ",
+            "信用買残1650.77万株（11/12）で高倍率、反転未確認"
+          ],
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "latestVerifiedPriceYen": 628,
+          "priceTimeJST": "2026-11-16 11:11",
+          "indicativePnlYen": -110196,
+          "supportYen": 624,
+          "resistanceYen": 668,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "決算翌営業日-12%超、機関空売り増加",
+            "信用買残147.78万株（11/12）、VWAP回復未確認"
+          ],
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "latestVerifiedPriceYen": null,
+          "priceTimeJST": null,
+          "indicativePnlYen": null,
+          "supportYen": 124,
+          "resistanceYen": 129,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "14時時点の新規日時付き株価とVWAP・需給更新未確認"
+          ],
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "latestVerifiedPriceYen": 169.4,
+          "priceTimeJST": "2026-11-16 10:59",
+          "indicativePnlYen": -1480,
+          "supportYen": 168.7,
+          "resistanceYen": 170.6,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "14時時点の新規日時付き株価とVWAP・需給更新未確認"
+          ],
+          "volumeShares": null,
+          "turnoverYen": null,
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "latestVerifiedPriceYen": 2345.5,
+        "priceTimeJST": "2026-11-16 10:54",
+        "dayChangeYen": -138,
+        "dayHighYen": 2497,
+        "dayLowYen": null,
+        "volumeShares": 6747100,
+        "volumeAsOfJST": "2026-11-16 10:29",
+        "turnoverYen": null,
+        "vwapYen": null,
+        "creditReferenceDate": "2026-11-12",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVs20261111Shares": 367900,
+        "creditBuyChangeVs20261106Shares": -24900,
+        "creditUnchangedFromPreviousReport": true,
+        "institutionalShortReferenceDate": "2026-11-11",
+        "institutionalShortReportedAggregateShares": 31124681,
+        "forcedSellingAbsorption": "安値更新で未確認、追証由来は断定不可",
+        "trend": "下落継続、反転未確認",
+        "reasons": [
+          "前日安値2467.5円割れ",
+          "信用買い残高止まり、倍率26.72倍",
+          "最新VWAP・反転価格行動は未確認"
+        ]
+      },
+      "missingData": [
+        "14時の新規株価6銘柄全て未取得",
+        "4597と8518は当日価格なし",
+        "当日VWAP・売買代金・相対強度は未検証",
+        "holdings.jsonが10月14日以降未更新"
+      ],
+      "sources": [
+        "https://minkabu.jp/stock/5016/chart",
+        "https://jp.investing.com/equities/anymind-historical-data",
+        "https://s.kabutan.jp/stocks/5016",
+        "https://github.com/xxxkimkimkimxxx-prog/chatgpt/blob/main/stock-dashboard/data/holdings.json"
+      ],
+      "notificationSent": false
     }
   ]
 }
