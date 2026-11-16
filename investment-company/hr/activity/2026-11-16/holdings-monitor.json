@@ -862,6 +862,180 @@
         "https://s.kabutan.jp/news/k202611130395/",
         "https://f.irbank.net/pdf/20261113/140120261113579517.pdf"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-16T13:00:00+09:00",
+      "observedAtJST": "2026-11-16T13:00:51+09:00",
+      "status": "partial_quotes_four_of_six_mixed_timestamps",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-16T12:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": 102,
+          "priceAtJST": "2026-11-16 09:36",
+          "indicativePnlYen": -17000,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "出来高43900株、薄商い。VWAPと信用需給未検証"
+          ],
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": null,
+          "priceAtJST": null,
+          "indicativePnlYen": null,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "当日価格・VWAP・信用需給未取得"
+          ],
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": 2345.5,
+          "priceAtJST": "2026-11-16 10:54",
+          "indicativePnlYen": -270100,
+          "supportYen": 2352,
+          "resistanceYen": 2497,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "前日安値2467.5円割れ、10:54株価2345.5円。信用買残高水準"
+          ],
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "5027",
+          "name": "AnyMind",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": 628,
+          "priceAtJST": "2026-11-16 11:11",
+          "indicativePnlYen": -110196,
+          "supportYen": 624,
+          "resistanceYen": 668,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "決算翌営業日-12.41%、信用買残147.78万株、機関空売り増"
+          ],
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": null,
+          "priceAtJST": null,
+          "indicativePnlYen": null,
+          "supportYen": 124,
+          "resistanceYen": 129,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/16時刻付き株価未確認。11/13終値124円、薄商い"
+          ],
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": 169.4,
+          "priceAtJST": "2026-11-16 10:59",
+          "indicativePnlYen": -1480,
+          "supportYen": 168.7,
+          "resistanceYen": 170.6,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "当日+0.59%だがVWAP・信用需給・上値突破未確認"
+          ],
+          "vwapYen": null,
+          "creditLatest": null,
+          "institutionalShortLatest": null,
+          "sectorRelativeStrength": null
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "latestVerifiedPriceYen": 2345.5,
+        "priceTimeJST": "2026-11-16 10:54",
+        "dayChangeYen": -138,
+        "highYen": 2497,
+        "lowYen": 2352,
+        "volumeShares": 6747100,
+        "volumeAsOfJST": "2026-11-16 10:29",
+        "turnoverYen": null,
+        "vwapYen": null,
+        "creditReferenceDate": "2026-11-12",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVs20261111Shares": 367900,
+        "creditBuyChangeVs20261106Shares": -24900,
+        "creditPublicationDate": "未確認",
+        "institutionalShortReferenceDate": "2026-11-11",
+        "institutionalShortReportedAggregateShares": 31124681,
+        "institutionalShortAggregatePct": 3.26,
+        "institutionalShortReportedAggregateChangeVs20261109Shares": -3633698,
+        "forcedSellingAbsorption": "安値更新・VWAP未取得で吸収確認できず。追証由来は断定不可",
+        "trend": "下落継続、反転未確認",
+        "reasons": [
+          "11/16前場に前営業日安値2467.5円を下抜け",
+          "信用買残1650.77万株（11/12基準）、倍率26.72倍",
+          "出来高674.71万株（10:29）だが反転とVWAP回復未確認"
+        ]
+      },
+      "missingData": [
+        "13時時点の同期した全6銘柄価格（4597と8518は当日未取得）",
+        "全銘柄の当日VWAP・最新売買代金・相対強度",
+        "信用残の正式公表日、機関空売りの直近更新",
+        "保有スナップショット10月14日以降未更新"
+      ],
+      "sources": [
+        "https://minkabu.jp/stock/2926/chart",
+        "https://s.minkabu.jp/stock/5016/daily_bar",
+        "https://jp.investing.com/equities/anymind-historical-data",
+        "https://minkabu.jp/stock/9432/chart",
+        "https://s.kabutan.jp/stocks/5016/historical_margins/daily/",
+        "https://kikan.watch/stocks/5016-JX金属"
+      ]
     }
   ]
 }
