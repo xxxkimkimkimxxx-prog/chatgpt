@@ -1,208 +1,250 @@
 {
-  "date": "2026-11-16",
-  "asOf": "2026-11-16 08:03 JST",
-  "status": "conditional_watch_no_orders",
+  "date": "2026-11-17",
+  "asOf": "2026-11-17 08:03 JST",
+  "marketContext": {
+    "usNasdaqCloseChangePct": -2.49,
+    "nvidiaCloseChangePct": -4.12,
+    "source": "AP/Investing.com 2026-11-16 US close",
+    "japanPreopenFutures": null
+  },
+  "status": "conditional_watch_only",
   "candidates": [
     {
       "rank": 1,
-      "code": "8306",
-      "name": "三菱UFJ FG",
-      "category": "Fresh Catalyst / Sector Alignment",
-      "material": "11/13自己株式取得決議、決算上方修正は二次資料で確認",
-      "primary": "https://www.mufg.jp/dam/pressrelease/2026/pdf/news-20261113-002_ja.pdf",
-      "directness": "high",
-      "earningsSensitivity": "銀行収益・株主還元に直接",
+      "code": "3323",
+      "name": "レカム",
+      "category": "Fresh Catalyst",
+      "catalyst": "今期最終83%増益予想・増配（二次集計）",
+      "catalystSource": "松井証券/株探 2026-11-16 18:03 earnings roundup",
+      "primaryIRVerified": false,
+      "themeNewsVerifiedBy34": false,
+      "directness": "direct earnings guidance (secondary only)",
+      "earningsSensitivity": "not quantified",
       "expectationGap": null,
       "pricedIn": null,
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "大型・実測板未確認",
-      "buy": "初動高値更新かつVWAP上、8316も同方向、銀行業指数・先物が悪化せずスプレッド正常",
-      "skip": "寄り天・VWAP割れ・銀行同業不一致・ギャップ過大",
-      "invalidation": "初動安値割れかつVWAP回復不能",
-      "redTeam": "決算と自社株買いの期待先行、上値の利益確定、金利上昇による債券評価損、同業失速で空売り優位",
+      "liquidity": null,
       "upProbability": null,
       "confidence": "low",
-      "maximumPlannedLoss": null,
+      "entry": "9:00-9:10 初動高値突破かつVWAP上、出来高・売買代金十分、指数/先物・同業整合、板厚とスプレッド許容、一次IR確認",
+      "skip": "一次IR未確認、ギャップ過大、VWAP下、同業逆行、板薄、スプレッド拡大",
+      "invalidation": "初動安値割れ・材料前提否定・セクター逆行",
+      "maxPlannedLoss": null,
       "expectedProfit": null,
-      "RR": null,
+      "rr": null,
+      "redTeam": {
+        "openingSpike": "ギャップアップ直後の利益確定と寄り天",
+        "sellTheNews": "業績材料が前日夜PTSで織り込み済みの可能性",
+        "shortThesis": "小型株の板薄・純利益の一過性",
+        "bullWeakness": "一次IR・市場期待値・実際の買い需要が未検証"
+      },
       "executionChecklist": [
-        "09:00-09:10 initial high/low",
+        "初動高値/安値",
         "VWAP",
-        "volume",
-        "trading value",
-        "Nikkei/TOPIX",
-        "futures",
-        "peers",
-        "order book",
-        "spread"
+        "出来高",
+        "売買代金",
+        "日経平均/TOPIX",
+        "先物",
+        "同業",
+        "板",
+        "スプレッド"
       ]
     },
     {
       "rank": 2,
-      "code": "8316",
-      "name": "三井住友FG",
-      "category": "Fresh Catalyst / Sector Alignment",
-      "material": "11/13上限2200億円の自社株買い、11/16取得開始、決算修正は二次資料で確認",
-      "primary": "https://www.smfg.co.jp/news/pdf/j20261113_02.pdf",
-      "directness": "high",
-      "earningsSensitivity": "株主還元・銀行収益に直接",
+      "code": "476A",
+      "name": "辻・本郷ITコンサルティング",
+      "category": "Fresh Catalyst",
+      "catalyst": "今期経常2.4倍予想（二次集計）",
+      "catalystSource": "松井証券/株探 2026-11-16 18:03 earnings roundup",
+      "primaryIRVerified": false,
+      "themeNewsVerifiedBy34": false,
+      "directness": "direct earnings guidance (secondary only)",
+      "earningsSensitivity": "not quantified",
       "expectationGap": null,
       "pricedIn": null,
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "大型・実測板未確認",
-      "buy": "初動高値更新、VWAP上、8306追随、銀行指数優位、板・スプレッド正常",
-      "skip": "発表済み材料の出尽くし、ギャップ上昇後VWAP割れ、同業不一致",
-      "invalidation": "初動安値割れ・銀行セクター反転",
-      "redTeam": "自社株買い上限は実買付保証ではない、決算訂正開示の検証不足、寄り天・売り方の戻り売り",
+      "liquidity": null,
       "upProbability": null,
       "confidence": "low",
-      "maximumPlannedLoss": null,
+      "entry": "9:00-9:10 初動高値突破かつVWAP上、出来高・売買代金十分、指数/先物・同業整合、板厚とスプレッド許容、一次IR確認",
+      "skip": "一次IR未確認、ギャップ過大、VWAP下、同業逆行、板薄、スプレッド拡大",
+      "invalidation": "初動安値割れ・材料前提否定・セクター逆行",
+      "maxPlannedLoss": null,
       "expectedProfit": null,
-      "RR": null,
+      "rr": null,
+      "redTeam": {
+        "openingSpike": "ギャップアップ直後の利益確定と寄り天",
+        "sellTheNews": "業績材料が前日夜PTSで織り込み済みの可能性",
+        "shortThesis": "流動性・上場後需給・予想前提",
+        "bullWeakness": "一次IR・市場期待値・実際の買い需要が未検証"
+      },
       "executionChecklist": [
-        "09:00-09:10 initial high/low",
+        "初動高値/安値",
         "VWAP",
-        "volume",
-        "trading value",
-        "Nikkei/TOPIX",
-        "futures",
-        "peers",
-        "order book",
-        "spread"
+        "出来高",
+        "売買代金",
+        "日経平均/TOPIX",
+        "先物",
+        "同業",
+        "板",
+        "スプレッド"
       ]
     },
     {
       "rank": 3,
-      "code": "1802",
-      "name": "大林組",
+      "code": "6176",
+      "name": "ブランジスタ",
       "category": "Fresh Catalyst",
-      "material": "11/13通期営業利益1800億→2050億円、売上2兆9450億→3兆1150億円、自己株式取得決議",
-      "primary": "https://ir.obayashi.co.jp/ja/ir/data/results/main/00/teaserItems1/01115/linkList/01/link/20261113presentation_note.pdf",
-      "directness": "high",
-      "earningsSensitivity": "営業利益予想+13.9%、工事進捗と海外M&Aが寄与",
+      "catalyst": "5期連続最高益予想（二次集計）",
+      "catalystSource": "松井証券/株探 2026-11-16 18:03 earnings roundup",
+      "primaryIRVerified": false,
+      "themeNewsVerifiedBy34": false,
+      "directness": "direct earnings guidance (secondary only)",
+      "earningsSensitivity": "not quantified",
       "expectationGap": null,
-      "pricedIn": "11/13日中発表で同日上昇、相当程度織り込み懸念",
+      "pricedIn": null,
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "実測未確認",
-      "buy": "11/13高値圏を出来高増で維持、初動高値突破・VWAP上、建設同業追随",
-      "skip": "既に11/13上昇後の材料出尽くし、VWAP割れ、建設同業不一致",
-      "invalidation": "11/13発表後の支持帯を下抜き、初動安値割れ",
-      "redTeam": "11/13に材料が反映済み、工程前倒しは持続的増益とは限らない、上値売り・空売りリスク",
+      "liquidity": null,
       "upProbability": null,
       "confidence": "low",
-      "maximumPlannedLoss": null,
+      "entry": "9:00-9:10 初動高値突破かつVWAP上、出来高・売買代金十分、指数/先物・同業整合、板厚とスプレッド許容、一次IR確認",
+      "skip": "一次IR未確認、ギャップ過大、VWAP下、同業逆行、板薄、スプレッド拡大",
+      "invalidation": "初動安値割れ・材料前提否定・セクター逆行",
+      "maxPlannedLoss": null,
       "expectedProfit": null,
-      "RR": null,
+      "rr": null,
+      "redTeam": {
+        "openingSpike": "ギャップアップ直後の利益確定と寄り天",
+        "sellTheNews": "業績材料が前日夜PTSで織り込み済みの可能性",
+        "shortThesis": "増益率6%と期待先行",
+        "bullWeakness": "一次IR・市場期待値・実際の買い需要が未検証"
+      },
       "executionChecklist": [
-        "09:00-09:10 initial high/low",
+        "初動高値/安値",
         "VWAP",
-        "volume",
-        "trading value",
-        "Nikkei/TOPIX",
-        "futures",
-        "peers",
-        "order book",
-        "spread"
+        "出来高",
+        "売買代金",
+        "日経平均/TOPIX",
+        "先物",
+        "同業",
+        "板",
+        "スプレッド"
       ]
     },
     {
       "rank": 4,
-      "code": "5803",
-      "name": "フジクラ",
-      "category": "Continuation Momentum / Theme News watch",
-      "material": "AI光配線需要の継続テーマ。ただし米国AI・半導体売りが逆風、当日一次実需新規材料なし",
-      "primary": null,
-      "directness": "medium thematic",
-      "earningsSensitivity": "AI投資と光ファイバー需要に依存、定量未検証",
+      "code": "8306",
+      "name": "三菱UFJ FG",
+      "category": "Sector Alignment",
+      "catalyst": "11/13の自社株買い・業績修正の継続監視",
+      "catalystSource": "2026-11-13 company IR referenced in 11/16 memo",
+      "primaryIRVerified": false,
+      "themeNewsVerifiedBy34": false,
+      "directness": "direct capital policy",
+      "earningsSensitivity": "not quantified",
       "expectationGap": null,
-      "pricedIn": "高期待の剥落懸念",
+      "pricedIn": null,
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "実測未確認",
-      "buy": "半導体・AIインフラ同業が反転し指数比優位、初動高値更新・VWAP上、出来高増",
-      "skip": "米半導体急落の連鎖、同業不一致、VWAP下、戻り売り",
-      "invalidation": "初動安値割れ・AI同業一斉失速",
-      "redTeam": "米AI資金調達懸念、材料出尽くし、寄り天、空売り圧力、需要拡大が利益率に直結する前提が弱い",
+      "liquidity": null,
       "upProbability": null,
       "confidence": "low",
-      "maximumPlannedLoss": null,
+      "entry": "9:00-9:10 初動高値突破かつVWAP上、出来高・売買代金十分、指数/先物・同業整合、板厚とスプレッド許容、一次IR確認",
+      "skip": "一次IR未確認、ギャップ過大、VWAP下、同業逆行、板薄、スプレッド拡大",
+      "invalidation": "初動安値割れ・材料前提否定・セクター逆行",
+      "maxPlannedLoss": null,
       "expectedProfit": null,
-      "RR": null,
+      "rr": null,
+      "redTeam": {
+        "openingSpike": "ギャップアップ直後の利益確定と寄り天",
+        "sellTheNews": "業績材料が前日夜PTSで織り込み済みの可能性",
+        "shortThesis": "米国株安の銀行株波及・材料織込み",
+        "bullWeakness": "一次IR・市場期待値・実際の買い需要が未検証"
+      },
       "executionChecklist": [
-        "09:00-09:10 initial high/low",
+        "初動高値/安値",
         "VWAP",
-        "volume",
-        "trading value",
-        "Nikkei/TOPIX",
-        "futures",
-        "peers",
-        "order book",
-        "spread"
+        "出来高",
+        "売買代金",
+        "日経平均/TOPIX",
+        "先物",
+        "同業",
+        "板",
+        "スプレッド"
       ]
     }
   ],
-  "evidenceGap": [
-    "2026-11-16 7:30市場情報部正規原本未確認（latest.jsonは11/2の補完版）",
-    "当日theme-research独立原本未確認、No.34の新規実需一次確認なし",
-    "11/13候補4件の確定OHLC・9:00-9:10条件・実約定未検証",
-    "11/16寄り前PTS・板・機関実フロー・先物同時刻価格未取得",
-    "holdings 10/14, performance 10/05, watchlist 10/02で現在判断に使用不可",
-    "統計校正済み上昇確率、実測価格構造とRR未取得"
-  ],
+  "freshness": {
+    "holdings": {
+      "asOf": "2026-10-14",
+      "status": "blocked"
+    },
+    "performance": {
+      "asOf": "2026-10-05",
+      "status": "blocked"
+    },
+    "watchlist": {
+      "asOf": "2026-10-02",
+      "status": "blocked"
+    },
+    "marketIntelligence": {
+      "asOf": "2026-11-02",
+      "status": "blocked"
+    }
+  },
   "improvements": [
     {
       "improvementId": "EXP-20261102-01",
       "applied": true,
       "affectedCandidates": [
-        "8306",
-        "8316",
-        "1802",
-        "5803"
+        "3323",
+        "476A",
+        "6176",
+        "8306"
       ],
       "rankDelta": null,
-      "conditionChanges": [
-        "No.1反対意見conditional採用",
-        "1802既織り込み警戒",
-        "5803米AI逆風で監視4位"
-      ],
-      "reason": "active_trial継続。実測不足の項目はevidenceGapとして保留"
+      "conditionChanges": "レッドチーム警告をconditionalで採用、同一時点の事前順位欠損を明記",
+      "reason": "既存active_trialを適用。定量効果は未検証"
     },
     {
       "improvementId": "EXP-20261102-02",
       "applied": true,
       "affectedCandidates": [
-        "8306",
-        "8316",
-        "1802",
-        "5803"
+        "3323",
+        "476A",
+        "6176",
+        "8306"
       ],
       "rankDelta": null,
-      "conditionChanges": [
-        "方向予測と実約定を分離",
-        "9:00-9:10未検証は売買成功に算入しない"
-      ],
-      "reason": "active_trial継続。実測不足の項目はevidenceGapとして保留"
+      "conditionChanges": "方向予測と約定可能性を別評価、条件未検証は取引成功に数えない",
+      "reason": "既存active_trialを適用。定量効果は未検証"
     },
     {
       "improvementId": "EXP-20261102-03",
       "applied": true,
       "affectedCandidates": [
-        "8306",
-        "8316",
-        "1802",
-        "5803"
+        "3323",
+        "476A",
+        "6176",
+        "8306"
       ],
       "rankDelta": null,
-      "conditionChanges": [
-        "holdings/performance/watchlist blocked",
-        "古い現保有情報を推奨根拠に使用しない"
-      ],
-      "reason": "active_trial継続。実測不足の項目はevidenceGapとして保留"
+      "conditionChanges": "陳腐化したholdings/performance/watchlistをblockedにして保有株を優遇しない",
+      "reason": "既存active_trialを適用。定量効果は未検証"
     }
   ],
-  "activitySaveFailure": false,
-  "finalDecisionMaker": "user"
+  "evidenceGap": [
+    "11/16 close-review 404（前日結果学習の定量検証不可）",
+    "11/17 7:30市場情報部原本未確認。latestは11/2",
+    "11/17 theme-research独立原本未確認",
+    "候補の11/16一次IR全文・市場コンセンサス・PTS・機関需給・寄り前板未確認",
+    "11/16候補の約定条件と確定四本値未検証",
+    "holdings 10/14・performance 10/05・watchlist 10/02で現在判断blocked"
+  ],
+  "finalDecisionMaker": "user",
+  "activitySaveFailure": null
 }
