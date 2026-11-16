@@ -1223,6 +1223,144 @@
         "https://github.com/xxxkimkimkimxxx-prog/chatgpt/blob/main/stock-dashboard/data/holdings.json"
       ],
       "notificationSent": false
+    },
+    {
+      "scheduledAtJST": "2026-11-16T15:00:00+09:00",
+      "observedAtJST": "2026-11-16T14:56:02+09:00",
+      "status": "partial_intraday_14_56",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRunRecord": "2026-11-16T14:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": 102,
+          "priceTime": "2026-11-16 09:36",
+          "pnlYen": -17000,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "新しい株価と需給情報未取得"
+          ]
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "当日株価・VWAP・信用残未確認"
+          ]
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": 2336.5,
+          "priceTime": "2026-11-16 13:35",
+          "pnlYen": -271900,
+          "supportYen": 2316.5,
+          "resistanceYen": 2467.5,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "13:11に安値2316.5円へ更新",
+            "信用買残1650.77万株・倍率26.72倍",
+            "VWAP回復未確認"
+          ]
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": 628,
+          "priceTime": "2026-11-16 11:11",
+          "pnlYen": -110196,
+          "supportYen": 624,
+          "resistanceYen": 668,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "決算後大幅安・信用買残147.78万株",
+            "空売り増加、反転未確認"
+          ]
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 124,
+          "resistanceYen": 129,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "当日株価・需給未取得"
+          ]
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": 169.4,
+          "priceTime": "2026-11-16 10:59",
+          "pnlYen": -1480,
+          "supportYen": 168.7,
+          "resistanceYen": 170.6,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "最新VWAP・反転確認なし"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceYen": 2336.5,
+        "priceTime": "2026-11-16 13:35",
+        "dayChangeYen": -147,
+        "dayHighYen": 2497,
+        "dayLowYen": 2316.5,
+        "volumeShares": 11878500,
+        "volumeTime": "2026-11-16 13:34",
+        "turnoverYen": null,
+        "vwapYen": null,
+        "creditReferenceDate": "2026-11-12",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVsPreviousDayShares": 367900,
+        "creditUnchangedFromPreviousReport": true,
+        "institutionalShortReferenceDate": "2026-11-11",
+        "institutionalShortReportedAggregateShares": 31124681,
+        "sector": "非鉄金属は11/16前場下落上位",
+        "forcedSellingAbsorption": "未確認",
+        "trend": "下落継続、反転未確認"
+      },
+      "missingData": [
+        "4597・8518の当日価格",
+        "14:56同時点の全銘柄株価",
+        "当日VWAP・売買代金・同業比較",
+        "信用残公表日時",
+        "holdings.jsonは10/14以降未更新"
+      ],
+      "sources": [
+        "https://minkabu.jp/stock/5016/chart",
+        "https://jp.investing.com/equities/anymind-historical-data",
+        "https://s.kabutan.jp/news/n202611160633/"
+      ],
+      "notificationSent": false
     }
   ]
 }
