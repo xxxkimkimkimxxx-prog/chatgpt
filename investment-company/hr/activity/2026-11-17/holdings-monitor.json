@@ -1,0 +1,147 @@
+{
+  "date": "2026-11-17",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-11-17T09:00:00+09:00",
+      "observedAtJST": "2026-11-17T09:00:23+09:00",
+      "status": "no_verified_2026-11-17_intraday_quotes",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRunRecord": "2026-11-16T17:00:00+09:00 not verified",
+      "previousScheduledRunMissing": "unverified",
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "latestVerified20261117PriceYen": null,
+          "pnlYen": null,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/17場中株価・VWAP・出来高・信用需給の同時点検証ができないため判定昇格不可"
+          ]
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "latestVerified20261117PriceYen": null,
+          "pnlYen": null,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/17場中株価・VWAP・出来高・信用需給の同時点検証ができないため判定昇格不可"
+          ]
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "latestVerified20261117PriceYen": null,
+          "pnlYen": null,
+          "supportYen": 2301,
+          "resistanceYen": 2467.5,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/17場中株価・VWAP・出来高・信用需給の同時点検証ができないため判定昇格不可"
+          ]
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "latestVerified20261117PriceYen": null,
+          "pnlYen": null,
+          "supportYen": 619,
+          "resistanceYen": 668,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/17場中株価・VWAP・出来高・信用需給の同時点検証ができないため判定昇格不可"
+          ]
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "latestVerified20261117PriceYen": null,
+          "pnlYen": null,
+          "supportYen": 124,
+          "resistanceYen": 129,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/17場中株価・VWAP・出来高・信用需給の同時点検証ができないため判定昇格不可"
+          ]
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "latestVerified20261117PriceYen": null,
+          "pnlYen": null,
+          "supportYen": 168.7,
+          "resistanceYen": 170.6,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/17場中株価・VWAP・出来高・信用需給の同時点検証ができないため判定昇格不可"
+          ]
+        }
+      ],
+      "priorCloseVerified": {
+        "5016": {
+          "date": "2026-11-16",
+          "closeYen": 2305.5,
+          "highYen": 2497,
+          "lowYen": 2301,
+          "volumeShares": 33244400
+        },
+        "5027": {
+          "date": "2026-11-16",
+          "closeYen": 641,
+          "highYen": 720,
+          "lowYen": 619,
+          "volumeShares": 1220000
+        }
+      },
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "latestVerified20261117PriceYen": null,
+        "previousCloseYen": 2305.5,
+        "previousCloseDate": "2026-11-16",
+        "previousCloseBasedPnlYen": -278100,
+        "creditReferenceDate": "2026-11-12",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVs20261111Shares": 367900,
+        "creditUnchangedFromPreviousReport": true,
+        "institutionalShortReferenceDate": "2026-11-11",
+        "institutionalShortReportedAggregateShares": 31124681,
+        "forcedSellingAbsorption": "11/16終値が安値付近で未確認",
+        "trend": "前営業日まで下落継続。11/17未判定",
+        "reasons": [
+          "11/16終値2305.5円、安値2301円と安値圏引け",
+          "信用買い残1650.77万株、倍率26.72倍",
+          "11/17のVWAP回復・反転を未確認"
+        ]
+      },
+      "missingData": [
+        "11/17 9時台の全銘柄日時付き株価",
+        "全銘柄の最新VWAP、出来高、売買代金、信用残、機関空売り、相対強度",
+        "11/16 17時予定実行記録の有無",
+        "holdings.json更新遅延"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/5016/historical_prices/weekly/",
+        "https://jp.investing.com/equities/anymind-historical-data"
+      ]
+    }
+  ]
+}
