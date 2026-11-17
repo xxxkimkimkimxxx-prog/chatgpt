@@ -363,6 +363,108 @@
         "https://s.kabutan.jp/stocks/5016/historical_prices/daily/",
         "https://s.kabutan.jp/news/n202611170512/"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-17T12:00:00+09:00",
+      "observedAtJST": "2026-11-17T11:55:43+09:00",
+      "status": "partial_verified_quotes_only",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reason": "当日株価・需給未取得"
+        },
+        {
+          "code": "4597",
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "当日株価・需給未取得"
+        },
+        {
+          "code": "5016",
+          "priceYen": 2271,
+          "priceTimestampJST": "2026-11-17 10:01",
+          "pnlYen": -285000,
+          "dayHighYen": 2286,
+          "dayLowYen": 2231.5,
+          "volumeShares": 6134000,
+          "supportYen": 2231.5,
+          "resistanceYen": 2301,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "前日安値割れ、信用買い残高止まり、反転未確認"
+        },
+        {
+          "code": "5027",
+          "priorCloseYen": 641,
+          "priorCloseDate": "2026-11-16",
+          "priorClosePnlYen": -102396,
+          "supportYen": 619,
+          "resistanceYen": 668,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "当日株価未取得、前営業日大幅安"
+        },
+        {
+          "code": "8518",
+          "supportYen": 124,
+          "resistanceYen": 129,
+          "averagingDecision": "判定保留",
+          "reason": "当日株価・需給未取得"
+        },
+        {
+          "code": "9432",
+          "supportYen": 168.7,
+          "resistanceYen": 170.6,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "当日株価・需給未取得"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceYen": 2271,
+        "priceTimestampJST": "2026-11-17 10:01",
+        "pnlYen": -285000,
+        "dayChangeYen": -34.5,
+        "dayHighYen": 2286,
+        "dayLowYen": 2231.5,
+        "volumeShares": 6134000,
+        "vwapYen": null,
+        "turnoverYen": null,
+        "creditReferenceDate": "2026-11-12",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVs20261111Shares": 367900,
+        "creditUnchangedFromPreviousReport": true,
+        "institutionalShortReferenceDate": "2026-11-11",
+        "forcedSellingAbsorption": "未確認",
+        "trend": "下落継続",
+        "reasons": [
+          "11/17前場に前日安値2301円割れ",
+          "信用買い残1650.77万株で直近日次増加",
+          "VWAP回復・相対強度改善未確認"
+        ]
+      },
+      "missingData": [
+        "11/17 11時台の全銘柄の更新株価（JXのみ10:01確認）",
+        "全銘柄の当日VWAP、売買代金、最新信用残・機関需給、同業相対強度",
+        "holdings.jsonの10/14以降の更新"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/5016/historical_prices/daily/",
+        "https://jp.investing.com/equities/anymind-historical-data",
+        "https://minkabu.jp/stock/285A/news/4666837"
+      ]
     }
   ]
 }
