@@ -271,6 +271,98 @@
         "https://finance.matsui.co.jp/stock/5016/index",
         "https://jp.investing.com/equities/anymind-historical-data"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-17T11:00:00+09:00",
+      "observedAtJST": "2026-11-17T11:02:02+09:00",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留"
+        },
+        {
+          "code": "4597",
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り"
+        },
+        {
+          "code": "5016",
+          "priceYen": 2271,
+          "priceTimestampJST": "2026-11-17 10:01",
+          "dayHighYen": 2286,
+          "dayLowYen": 2231.5,
+          "volumeShares": 6134000,
+          "pnlYen": -285000,
+          "supportYen": 2231.5,
+          "resistanceYen": 2301,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "前日安値2301円を割り込み",
+            "非鉄金属セクターも下落上位",
+            "信用買い残高止まり"
+          ]
+        },
+        {
+          "code": "5027",
+          "supportYen": 619,
+          "resistanceYen": 668,
+          "averagingDecision": "ナンピン見送り"
+        },
+        {
+          "code": "8518",
+          "supportYen": 124,
+          "resistanceYen": 129,
+          "averagingDecision": "判定保留"
+        },
+        {
+          "code": "9432",
+          "supportYen": 168.7,
+          "resistanceYen": 170.6,
+          "averagingDecision": "ナンピン見送り"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceYen": 2271,
+        "priceTimestampJST": "2026-11-17 10:01",
+        "dayChangeYen": -34.5,
+        "dayHighYen": 2286,
+        "dayLowYen": 2231.5,
+        "volumeShares": 6134000,
+        "pnlYen": -285000,
+        "creditReferenceDate": "2026-11-12",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVs20261111Shares": 367900,
+        "creditUnchangedFromPreviousReport": true,
+        "shortReferenceDate": "2026-11-11",
+        "forcedSellingAbsorption": "未確認",
+        "trend": "下落継続",
+        "vwapYen": null,
+        "turnoverYen": null,
+        "sectorRelativeStrength": "10時時点非鉄金属業種下落上位、個別比較未取得"
+      },
+      "missingData": [
+        "5銘柄の11/17日時付き場中株価",
+        "11/17の全銘柄VWAP・信用残・機関需給詳細",
+        "保有データ更新遅延"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/5016/historical_prices/daily/",
+        "https://s.kabutan.jp/news/n202611170512/"
+      ]
     }
   ]
 }
