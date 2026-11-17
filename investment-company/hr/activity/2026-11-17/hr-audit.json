@@ -1,0 +1,716 @@
+{
+  "date": "2026-11-17",
+  "asOf": "2026-11-17 16:30 JST",
+  "independentAgentExecutionVerified": false,
+  "backfilled": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-11-17/daytrade.json",
+    "investment-company/decision-memos/2026-11-17/daytrade.md",
+    "investment-company/hr/process-improvements/current.json",
+    "stock-dashboard/data/performance-summary.json"
+  ],
+  "evidenceGap": [
+    "11/17候補4件の確定前日終値・始値・終値未照合",
+    "9:00-9:10のVWAP/板/スプレッド・約定可能性未確認",
+    "11/16 close-review 404",
+    "7:30市場情報原本・独立テーマ研究原本欠損",
+    "No.31へのNo.1/2独立監査未確認"
+  ],
+  "candidates": [
+    {
+      "code": "3323",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "executionVerdict": "unverifiable",
+      "signalVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "476A",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "executionVerdict": "unverifiable",
+      "signalVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "6176",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "executionVerdict": "unverifiable",
+      "signalVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "8306",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "executionVerdict": "unverifiable",
+      "signalVerdict": "unverifiable",
+      "actualTradeVerified": false
+    }
+  ],
+  "verifiedOHLC": "0/4",
+  "verifiedExecution": "0/4",
+  "signalAccuracy": null,
+  "executionAccuracy": null,
+  "brierScore": null,
+  "falseAlarm": null,
+  "scoreChanges": 0,
+  "formalPersonnelAction": "none",
+  "runType": "hr_audit",
+  "agentsAudited": 34,
+  "morningRoleRecords": 23,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "4候補を暫定監視。No.23-25/29の反対意見はconditional、順位変更は測定不能",
+      "decisionImpact": "4候補を暫定監視。No.23-25/29の反対意見はconditional、順位変更は測定不能",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "反対意見前後の同時点順位を保存",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "最終決裁権留保、無根拠な確率/価格断定を禁止",
+      "decisionImpact": "最終決裁権留保、無根拠な確率/価格断定を禁止",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "No.31独立監査",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "11/16 close-review欠損、陳腐化入力を遮断",
+      "decisionImpact": "11/16 close-review欠損、陳腐化入力を遮断",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "確定四本値の照合",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "11/16決算二次集計の候補を一次IR未確認と区別",
+      "decisionImpact": "11/16決算二次集計の候補を一次IR未確認と区別",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 10,
+      "title": "決算・業績担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 11,
+      "title": "財務・キャッシュフロー担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 12,
+      "title": "業界構造・競争優位担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 13,
+      "title": "経営者・中期計画担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 14,
+      "title": "バリュエーション・資本政策担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "初動高安とVWAPを必須条件化",
+      "decisionImpact": "初動高安とVWAPを必須条件化",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "時刻付きVWAP検証",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "板・売買代金・スプレッド未確認は発注判断不可",
+      "decisionImpact": "板・売買代金・スプレッド未確認は発注判断不可",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "板・スプレッド検証",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 17,
+      "title": "スイング・相対強度担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "約定可能性未検証のため買値保留",
+      "decisionImpact": "約定可能性未検証のため買値保留",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "約定可能性の検証",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 19,
+      "title": "ポートフォリオ担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "撤退点と数量未定のため最大損失/利益/RRはnull",
+      "decisionImpact": "撤退点と数量未定のため最大損失/利益/RRはnull",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "米NASDAQ -2.49%とNVIDIA -4.12%をストレス条件に反映",
+      "decisionImpact": "米NASDAQ -2.49%とNVIDIA -4.12%をストレス条件に反映",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "小型候補の板薄・寄らず・スプレッドリスクを警告",
+      "decisionImpact": "小型候補の板薄・寄らず・スプレッドリスクを警告",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "寄り天/戻り売り仮説",
+      "decisionImpact": "寄り天/戻り売り仮説",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "決算期待と一次IR未確認の強気前提を破壊",
+      "decisionImpact": "決算期待と一次IR未確認の強気前提を破壊",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "材料出尽くしと薄商いの再発警戒",
+      "decisionImpact": "材料出尽くしと薄商いの再発警戒",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 26,
+      "title": "トレード日誌・成績分析担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "方向と執行の分離検証",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 27,
+      "title": "投資仮説・四半期レビュー担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "市場コンセンサス不明のため上振れ断定を阻止",
+      "decisionImpact": "市場コンセンサス不明のため上振れ断定を阻止",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 30,
+      "title": "オルタナティブデータ担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 31,
+      "title": "人事評価・組織開発担当",
+      "activityOpportunity": 0,
+      "confirmedEvidenceCount": 0,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "34役割と翌朝反映を監査",
+      "evidenceGap": [
+        "当日活動機会なし・減点なし"
+      ]
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": null,
+      "decisionImpact": null,
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "activityOpportunity": 1,
+      "confirmedEvidenceCount": 1,
+      "independentExecutionVerified": false,
+      "novelContribution": "テーマ連想候補を一次情報の実需確認がないため昇格させない",
+      "decisionImpact": "テーマ連想候補を一次情報の実需確認がないため昇格させない",
+      "errorsOrMisses": [],
+      "duplicationWith": [],
+      "score": null,
+      "grade": "evaluation_deferred",
+      "improvementAction": "次回機会に独自貢献と重複を記録",
+      "evidenceGap": [
+        "独立稼働未証明",
+        "実測成果未検証"
+      ]
+    }
+  ],
+  "hrSelfAudit": {
+    "reviewers": [
+      1,
+      2
+    ],
+    "independentReviewVerified": false
+  },
+  "morningImprovementCompliance": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "status": "active_trial",
+      "verdict": "modify_handoff",
+      "observation": "conditional警告は記録、同一時点rankDeltaなし",
+      "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "status": "active_trial",
+      "verdict": "modify_data_collection",
+      "observation": "方向と執行は分離、実測0/4",
+      "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "status": "active_trial",
+      "verdict": "keep_trial_measure",
+      "observation": "陳腐化入力をblocked、誤遮断率不明",
+      "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+    }
+  ]
+}
