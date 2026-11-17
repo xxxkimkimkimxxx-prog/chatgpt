@@ -832,6 +832,141 @@
         "https://finance.matsui.co.jp/stock/5016/index",
         "https://jp.investing.com/equities/anymind-historical-data"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-17T16:00:00+09:00",
+      "observedAtJST": "2026-11-17T16:04:32+09:00",
+      "status": "partial_close_unverified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": null,
+          "priceBasis": null,
+          "pnlYen": null,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/17終値・VWAP・信用需給の十分な検証なし"
+          ]
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": null,
+          "priceBasis": null,
+          "pnlYen": null,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/17終値・VWAP・信用需給の十分な検証なし"
+          ]
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": 2250.5,
+          "priceBasis": "2026-11-17 15:02 JST delayed quote; final close not verified",
+          "pnlYen": -289100,
+          "supportYen": 2198,
+          "resistanceYen": 2301,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "前日安値2301円を割り込み、当日安値2198円",
+            "信用買い残高止まり、反転確証なし"
+          ]
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": null,
+          "priceBasis": null,
+          "pnlYen": null,
+          "supportYen": 617,
+          "resistanceYen": 660,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "11/17終値・VWAP・信用需給の十分な検証なし"
+          ]
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": null,
+          "priceBasis": null,
+          "pnlYen": null,
+          "supportYen": 117,
+          "resistanceYen": 124,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/17終値・VWAP・信用需給の十分な検証なし"
+          ]
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": null,
+          "priceBasis": null,
+          "pnlYen": null,
+          "supportYen": 167.8,
+          "resistanceYen": 170.8,
+          "averagingDecision": "判定保留",
+          "reasons": [
+            "11/17終値・VWAP・信用需給の十分な検証なし"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceYen": 2250.5,
+        "priceTimestampJST": "2026-11-17 15:02",
+        "dayChangeYen": -55,
+        "dayHighYen": 2286,
+        "dayLowYen": 2198,
+        "volumeShares": 15811000,
+        "pnlYen": -289100,
+        "creditReferenceDate": "2026-11-12",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVs20261111Shares": 367900,
+        "creditUnchangedFromPreviousReport": true,
+        "forcedSellingAbsorption": "当日安値から反発も信用整理裏付けなし",
+        "trend": "下落継続・反転未確認",
+        "vwapYen": null,
+        "turnoverYen": null,
+        "reasons": [
+          "11/17安値2198円、前日安値2301円割れ",
+          "信用買い残1650.77万株、直近増加",
+          "終値・VWAP・同業相対強度未確認"
+        ]
+      },
+      "missingData": [
+        "6銘柄の11/17正式終値（JXは15:02遅延値のみ）",
+        "5銘柄の当日終値",
+        "最新VWAP・信用残・機関空売り・同業相対強度",
+        "holdings.jsonの10/14以降更新"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/5016/historical_prices/daily",
+        "https://finance.matsui.co.jp/stock/5016/index"
+      ]
     }
   ]
 }
