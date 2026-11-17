@@ -1,0 +1,122 @@
+{
+  "date": "2026-11-18",
+  "runs": [
+    {
+      "scheduledAtJST": "2026-11-18T09:00:00+09:00",
+      "observedAtJST": "2026-11-18T08:58:38+09:00",
+      "status": "preopen_no_current_session_quotes",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRun": "2026-11-17T17:00:00+09:00",
+      "previousScheduledRunRecord": "confirmed in 2026-11-17 holdings-monitor.json",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "priceYen": null,
+          "pnlYen": null,
+          "reason": "寄付前につき11/18の株価・VWAP・出来高・相対強度未確認。支持抵抗は前日までの暫定監視値"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "priceYen": null,
+          "pnlYen": null,
+          "reason": "寄付前につき11/18の株価・VWAP・出来高・相対強度未確認。支持抵抗は前日までの暫定監視値"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "supportYen": 2198,
+          "resistanceYen": 2301,
+          "averagingDecision": "ナンピン見送り",
+          "priceYen": null,
+          "pnlYen": null,
+          "reason": "寄付前につき11/18の株価・VWAP・出来高・相対強度未確認。支持抵抗は前日までの暫定監視値"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "supportYen": 617,
+          "resistanceYen": 660,
+          "averagingDecision": "ナンピン見送り",
+          "priceYen": null,
+          "pnlYen": null,
+          "reason": "寄付前につき11/18の株価・VWAP・出来高・相対強度未確認。支持抵抗は前日までの暫定監視値"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "supportYen": 117,
+          "resistanceYen": 124,
+          "averagingDecision": "判定保留",
+          "priceYen": null,
+          "pnlYen": null,
+          "reason": "寄付前につき11/18の株価・VWAP・出来高・相対強度未確認。支持抵抗は前日までの暫定監視値"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "supportYen": 167.8,
+          "resistanceYen": 170.8,
+          "averagingDecision": "判定保留",
+          "priceYen": null,
+          "pnlYen": null,
+          "reason": "寄付前につき11/18の株価・VWAP・出来高・相対強度未確認。支持抵抗は前日までの暫定監視値"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "previousCloseDate": "2026-11-17",
+        "previousCloseYen": 2245,
+        "previousCloseBasedPnlYen": -290200,
+        "previousDayHighYen": 2286,
+        "previousDayLowYen": 2198,
+        "creditReferenceDate": "2026-11-13",
+        "creditBuyShares": 16497600,
+        "creditSellShares": 593500,
+        "creditRatio": 27.8,
+        "creditBuyChangeVsPreviousWeekShares": -35000,
+        "creditUnchangedFromPreviousReport": false,
+        "creditPublicationDate": "未確認",
+        "institutionalShortReferenceDate": "2026-11-17 (aggregated carried forward)",
+        "institutionalShortReportedAggregateShares": 31278510,
+        "trend": "前日まで下落継続、当日寄付前",
+        "forcedSellingAbsorption": "未確認",
+        "reasons": [
+          "11/17終値2245円は前日終値2305.5円を下回る",
+          "11/13週次信用買残1649.76万株で依然高水準、週次減少は3.5万株にとどまる",
+          "11/18場中のVWAP回復と反発未確認"
+        ]
+      },
+      "missingData": [
+        "11/18場中株価は寄付前",
+        "6銘柄の11/17終値一式、当日VWAP・売買代金・相対強度",
+        "保有データ10/14から未更新",
+        "信用残の正式公表日時"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/5016/historical_margins/weekly",
+        "https://s.kabutan.jp/stocks/5016/historical_prices/weekly/",
+        "https://kikan.watch/stocks/5016-JX金属"
+      ]
+    }
+  ]
+}
