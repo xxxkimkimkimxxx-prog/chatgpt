@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-17",
+  "asOf": "2026-11-17 16:30 JST",
+  "independentAgentExecutionVerified": false,
+  "backfilled": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-11-17/daytrade.json",
+    "investment-company/decision-memos/2026-11-17/daytrade.md",
+    "investment-company/hr/process-improvements/current.json",
+    "stock-dashboard/data/performance-summary.json"
+  ],
+  "evidenceGap": [
+    "11/17候補4件の確定前日終値・始値・終値未照合",
+    "9:00-9:10のVWAP/板/スプレッド・約定可能性未確認",
+    "11/16 close-review 404",
+    "7:30市場情報原本・独立テーマ研究原本欠損",
+    "No.31へのNo.1/2独立監査未確認"
+  ],
+  "candidates": [
+    {
+      "code": "3323",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "executionVerdict": "unverifiable",
+      "signalVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "476A",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "executionVerdict": "unverifiable",
+      "signalVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "6176",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "executionVerdict": "unverifiable",
+      "signalVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "8306",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "executionVerdict": "unverifiable",
+      "signalVerdict": "unverifiable",
+      "actualTradeVerified": false
+    }
+  ],
+  "verifiedOHLC": "0/4",
+  "verifiedExecution": "0/4",
+  "signalAccuracy": null,
+  "executionAccuracy": null,
+  "brierScore": null,
+  "falseAlarm": null,
+  "scoreChanges": 0,
+  "formalPersonnelAction": "none",
+  "runType": "daily_hr",
+  "agentsAudited": 34,
+  "morningRoleRecords": 23,
+  "trials": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "status": "active_trial",
+      "verdict": "modify_handoff",
+      "observation": "conditional警告は記録、同一時点rankDeltaなし",
+      "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "status": "active_trial",
+      "verdict": "modify_data_collection",
+      "observation": "方向と執行は分離、実測0/4",
+      "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "status": "active_trial",
+      "verdict": "keep_trial_measure",
+      "observation": "陳腐化入力をblocked、誤遮断率不明",
+      "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+    }
+  ],
+  "assessment": "証拠不足のため新規採点保留"
+}
