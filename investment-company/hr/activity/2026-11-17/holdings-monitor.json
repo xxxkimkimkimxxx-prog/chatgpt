@@ -583,6 +583,132 @@
         "https://finance.matsui.co.jp/stock/5016/index",
         "https://jp.investing.com/equities/anymind-historical-data"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-17T14:00:00+09:00",
+      "observedAtJST": "2026-11-17T14:00:09+09:00",
+      "status": "no_newer_timestamped_quotes_than_previous_run",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": null,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "priceDataStatus": "未取得"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": null,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "priceDataStatus": "未取得"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": 2211.5,
+          "priceTimestampJST": "2026-11-17 11:14",
+          "pnlYen": -296900,
+          "supportYen": 2198,
+          "resistanceYen": 2248.8,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "前日安値2301円を下抜け",
+            "VWAP2248.8円以下",
+            "信用買い残高止まり"
+          ],
+          "priceDataStatus": "前回確認値（14時更新未確認）"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": 619,
+          "priceTimestampJST": "2026-11-17 11:20:06",
+          "pnlYen": -115596,
+          "supportYen": 617,
+          "resistanceYen": 660,
+          "averagingDecision": "ナンピン見送り",
+          "reasons": [
+            "前日終値641円を下回る",
+            "当日安値617円、反転未確認"
+          ],
+          "priceDataStatus": "前回確認値（14時更新未確認）"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": null,
+          "supportYen": 124,
+          "resistanceYen": 129,
+          "averagingDecision": "判定保留",
+          "priceDataStatus": "未取得"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": null,
+          "supportYen": 168.7,
+          "resistanceYen": 170.6,
+          "averagingDecision": "ナンピン見送り",
+          "priceDataStatus": "未取得"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceYen": 2211.5,
+        "priceTimestampJST": "2026-11-17 11:14",
+        "dayChangeYen": -94,
+        "dayHighYen": 2286,
+        "dayLowYen": 2198,
+        "volumeShares": 9748900,
+        "turnoverThousandYen": 21923617,
+        "vwapYen": 2248.8,
+        "pnlYen": -296900,
+        "creditReferenceDate": "2026-11-12",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVs20261111Shares": 367900,
+        "creditUnchangedFromPreviousReport": true,
+        "institutionalShortReferenceDate": "2026-11-11",
+        "forcedSellingAbsorption": "未確認",
+        "trend": "下落継続（14時更新未確認）",
+        "sectorRelativeStrength": "非鉄金属業種は11時時点下落上位、厳密な個別比較未取得",
+        "reasons": [
+          "安値2198円へ更新",
+          "VWAP2248.8円を下回る",
+          "信用買い残1650.77万株"
+        ],
+        "latestQuoteStatus": "11:14時点の前回確認値。14時時点の更新未確認"
+      },
+      "missingData": [
+        "14時時点の6銘柄の更新株価",
+        "4銘柄の当日価格",
+        "全銘柄の最新信用需給・機関空売り・相対強度",
+        "保有情報10/14から未更新"
+      ],
+      "sources": [
+        "https://finance.matsui.co.jp/stock/5016/index",
+        "https://jp.investing.com/equities/anymind-historical-data"
+      ]
     }
   ]
 }
