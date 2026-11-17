@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "asOf": "2026-11-13",
+  "asOf": "2026-11-17",
   "purpose": "人事評価を翌営業日の投資委員会へ閉ループ接続する",
   "maxActiveTrials": 3,
   "activeTrials": [
@@ -67,6 +67,13 @@
           "verdict": "modify_handoff",
           "evidence": "investment-company/hr/activity/2026-11-13/daytrade.json",
           "nextAction": "Capture same-time pre/post ranking and reason"
+        },
+        {
+          "date": "2026-11-17",
+          "stage": "post_effective_audit",
+          "finding": "conditional警告は記録、同一時点rankDeltaなし",
+          "verdict": "modify_handoff",
+          "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
         }
       ]
     },
@@ -132,6 +139,13 @@
           "verdict": "modify_data_collection",
           "evidence": "investment-company/hr/activity/2026-11-13/daytrade.json",
           "nextAction": "No.3/26 collect source-dated OHLC; No.15/18 log timestamped entry verification or explicit null"
+        },
+        {
+          "date": "2026-11-17",
+          "stage": "post_effective_audit",
+          "finding": "方向と執行は分離、実測0/4",
+          "verdict": "modify_data_collection",
+          "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
         }
       ]
     },
@@ -194,6 +208,13 @@
           "verdict": "keep_trial_measure",
           "evidence": "investment-company/hr/activity/2026-11-13/daytrade.json",
           "nextAction": "Count blocked-input misuse and false blocks"
+        },
+        {
+          "date": "2026-11-17",
+          "stage": "post_effective_audit",
+          "finding": "陳腐化入力をblocked、誤遮断率不明",
+          "verdict": "keep_trial_measure",
+          "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
         }
       ]
     }
@@ -215,7 +236,7 @@
       "formal_hiring_demotion_merge_abolition"
     ]
   },
-  "lastReviewAt": "2026-11-13 16:30 JST",
-  "nextEvaluationDate": "2026-11-16",
-  "trialChangesThisRun": "No new trials; retain existing rules, modify handoff requirements for EXP-01/02; continue measurement for EXP-03"
+  "lastReviewAt": "2026-11-17 16:30 JST",
+  "nextEvaluationDate": "2026-11-18",
+  "trialChangesThisRun": "No new trials; EXP-01/02 handoff modifications, EXP-03 measure"
 }
