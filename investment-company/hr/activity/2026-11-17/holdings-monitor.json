@@ -709,6 +709,129 @@
         "https://finance.matsui.co.jp/stock/5016/index",
         "https://jp.investing.com/equities/anymind-historical-data"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-17T15:00:00+09:00",
+      "observedAtJST": "2026-11-17T14:57:21+09:00",
+      "status": "partial_verified_quotes",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "supportYen": 101,
+          "resistanceYen": 104,
+          "averagingDecision": "判定保留",
+          "priceYen": null,
+          "priceTimestampJST": null,
+          "pnlYen": null,
+          "reason": "当日価格・信用需給・VWAP・相対強度の複合的な反転条件は未確認"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "supportYen": 23,
+          "resistanceYen": 26,
+          "averagingDecision": "ナンピン見送り",
+          "priceYen": null,
+          "priceTimestampJST": null,
+          "pnlYen": null,
+          "reason": "当日価格・信用需給・VWAP・相対強度の複合的な反転条件は未確認"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "supportYen": 2198,
+          "resistanceYen": 2248.8,
+          "averagingDecision": "ナンピン見送り",
+          "priceYen": 2253.5,
+          "priceTimestampJST": "2026-11-17 13:40",
+          "pnlYen": -288500,
+          "reason": "当日価格・信用需給・VWAP・相対強度の複合的な反転条件は未確認"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "supportYen": 617,
+          "resistanceYen": 660,
+          "averagingDecision": "ナンピン見送り",
+          "priceYen": 619,
+          "priceTimestampJST": "2026-11-17 11:20",
+          "pnlYen": -115596,
+          "reason": "当日価格・信用需給・VWAP・相対強度の複合的な反転条件は未確認"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "supportYen": 124,
+          "resistanceYen": 129,
+          "averagingDecision": "判定保留",
+          "priceYen": null,
+          "priceTimestampJST": null,
+          "pnlYen": null,
+          "reason": "当日価格・信用需給・VWAP・相対強度の複合的な反転条件は未確認"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "supportYen": 168.7,
+          "resistanceYen": 170.6,
+          "averagingDecision": "ナンピン見送り",
+          "priceYen": null,
+          "priceTimestampJST": null,
+          "pnlYen": null,
+          "reason": "当日価格・信用需給・VWAP・相対強度の複合的な反転条件は未確認"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceYen": 2253.5,
+        "priceTimestampJST": "2026-11-17 13:40",
+        "dayChangeYen": -52,
+        "dayHighYen": 2286,
+        "dayLowYen": 2198,
+        "volumeShares": 13466200,
+        "turnoverYen": null,
+        "vwapYen": 2248.8,
+        "vwapTimestampJST": "2026-11-17 11:14 (older than price)",
+        "pnlYen": -288500,
+        "creditReferenceDate": "2026-11-12",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16507700,
+        "creditSellShares": 617700,
+        "creditRatio": 26.72,
+        "creditBuyChangeVs20261111Shares": 367900,
+        "creditUnchangedFromPreviousReport": true,
+        "institutionalShortReferenceDate": "2026-11-11",
+        "forcedSellingAbsorption": "11:00安値2198円から13:40に2253.5円へ戻したが、信用整理とVWAPの同時点検証不可",
+        "trend": "下落トレンド継続、場中反発は暫定",
+        "reasons": [
+          "前日安値2301円を下回った",
+          "信用買い残1650.77万株で高止まり",
+          "安値から戻したが信用残減少・相対強度改善未確認"
+        ]
+      },
+      "missingData": [
+        "4銘柄の当日場中価格",
+        "JX・AnyMindの同時点最新VWAP、最新信用残・空売り・相対強度",
+        "保有データ更新遅延"
+      ],
+      "sources": [
+        "https://minkabu.jp/stock/5016/chart",
+        "https://finance.matsui.co.jp/stock/5016/index",
+        "https://jp.investing.com/equities/anymind-historical-data"
+      ]
     }
   ]
 }
