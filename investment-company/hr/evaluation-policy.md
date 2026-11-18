@@ -1,4 +1,4 @@
-# AI投資会社 人事評価方針 v1.2
+# AI投資会社 人事評価方針 v1.3
 
 ## 目的
 AI社員の人数を固定せず、実績に基づいて増員・統合・役割変更・廃止を判断する。評価は株価の事後結果だけではなく、当時利用可能だった情報に基づくプロセス品質と意思決定への貢献を重視する。
@@ -104,3 +104,42 @@ AI社員の人数を固定せず、実績に基づいて増員・統合・役割
 5. active_trial は原則3件以内とし、改善案の数より効果検証を優先する。
 6. 発注、最終決裁権限、リスク上限の緩和、コンプライアンス統制削除、正式な人員変更は自律改善の対象外で、ユーザー承認を必要とする。
 7. 有効性が複数営業日または十分な案件数で確認できた改善は、週次評価で標準化候補とする。
+
+
+## 投資家思考モデル研究室（No.35〜37）
+3モデルは「誰が一番賢そうか」を主観で競わせず、同一候補・同一時点・同一答え合わせルールで比較する。予測は寄り前に固定し、引け後に書き換えない。
+
+### No.35 初心者投資家モデル
+- 目立つニュース、分かりやすい材料、直近モメンタム、価格水準を中心に判断する。
+- 高度な専門知識を後付けしてはならない。
+- 単純なヒューリスティックが機能する相場局面と、材料追随・高値掴みが失敗する局面を分けて記録する。
+
+### No.36 玄人個人投資家モデル
+- 材料の新鮮度、需給、価格行動、期待との差、リスクリワードを統合する。
+- 機関のサイズ・ベンチマーク制約を持たない機動性を前提とする。
+- 逆張り・見送りを含め、どの情報が判断を変えたかを明示する。
+
+### No.37 機関投資家モデル
+- コンセンサス差、業績修正、流動性、時価総額、ポジショニング、指数・セクター、執行容量、ポートフォリオリスクを重視する。
+- 小型・薄商いは材料が良くても投資可能性を別判定する。
+- ベンチマーク・フロー要因と企業固有材料を分離する。
+
+### 共通ベンチマークKPI
+- directionHitRate：寄り前に固定したUP/DOWN予測と当日始値→終値の方向一致率。値動きが±0.5%未満はflatとして主成功率の母数から除外する。
+- relativeHitRate：TOPIXの始値→終値に対するアウト/アンダーパフォーム予測の一致率。差が±0.5%未満は母数から除外する。
+- topPickExcessReturn：各モデルのtopPickについて、当日始値→終値リターン－TOPIX始値→終値リターン。
+- peerContrarianHitRate：3モデルのうち1モデルだけ方向判断が異なる比較可能ケースで、その少数意見が正しかった割合。
+- preOpenContrarianHitRate：検証済みPTS・気配・ギャップ等の寄り前方向と逆の判断を出したケースのみを対象に、その逆張りが正しかった割合。寄り前シグナルが未確認ならnull。
+- noTradeQuality：NO_TRADE判断後に、実際に流動性不足・過大ギャップ・不利な方向変動等が発生した割合。主成功率とは分ける。
+- reasonTagHitRate：momentum / salient_news / fresh_catalyst / expectation_gap / supply_demand / valuation / price_action / positioning / liquidity / sector_flow / benchmark_flow / contrarian 等の理由タグ別成功率。
+- calibration：十分な標本がある場合のみBrier score等を計算する。根拠なく確率を埋めない。
+
+### 比較ルール
+1. 3モデルは8:00時点で同じ共通候補集合を受け取る。互いの出力を見る前に予測を固定する。
+2. 各モデルは共通候補ごとに direction=UP|DOWN|ABSTAIN、relative=OUTPERFORM|UNDERPERFORM|ABSTAIN、tradeability=TRADEABLE|WATCH|NO_TRADE、confidence、reasonTags、topPick、avoidPick、根拠を残す。
+3. 予測は investment-company/investor-models/predictions/YYYY-MM-DD.json に寄り前保存し、引け後は上書きしない。
+4. 引け後の答え合わせは別ファイル investment-company/investor-models/results/YYYY-MM-DD.json に保存する。始値・終値・TOPIX・約定可能性の出典を残す。
+5. 月曜に前週の成功率を investment-company/investor-models/weekly/YYYY-Www.json と .md に集計する。eligibleCalls、hits、率を必ず併記し、標本数を隠さない。
+6. 週5件未満の比較可能コールしかないモデルは「insufficient_sample」とし、勝者を断定しない。
+7. 「市場と違う答え」は、peerContrarian と preOpenContrarian を分けて測定し、単なる逆張り回数ではなく正答率と超過収益を確認する。
+8. 週次では各モデルの強かった相場局面・弱かった局面・成功したreasonTagを要約し、4週ローリングでも比較する。
