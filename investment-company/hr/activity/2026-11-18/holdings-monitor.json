@@ -761,8 +761,8 @@
       "previousScheduledRun": "2026-11-18T13:00:00+09:00",
       "previousScheduledRunMissing": false,
       "portfolioPnlYen": -498576,
-      "previousNotificationChangeYen": -498576,
-      "comparisonCaveat": "14時直前の確認値だが銘柄ごとに12:36-13:45の異時刻。13時枠は午前値を据置",
+      "previousNotificationChangeYen": -4320,
+      "comparisonCaveat": "14時直前の確認値だが銘柄ごとに12:36-13:45の異時刻。13時枠は午前値を据置; 13時枠の損益はnullのため、直近の数値確定12時枠と比較",
       "positions": [
         {
           "code": "2926",
@@ -910,7 +910,8 @@
         "https://s.kabutan.jp/stocks/5027",
         "https://s.kabutan.jp/stocks/8518",
         "https://s.kabutan.jp/stocks/9432"
-      ]
+      ],
+      "previousNotificationReference": "2026-11-18T12:00:00+09:00"
     }
   ]
 }
