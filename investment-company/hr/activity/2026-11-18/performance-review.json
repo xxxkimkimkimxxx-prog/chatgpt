@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-18",
+  "asOf": "2026-11-18 16:30 JST",
+  "runType": "performance_review",
+  "independentAgentExecutionVerified": false,
+  "sourcePaths": [
+    "investment-company/hr/activity/2026-11-18/daytrade.json",
+    "investment-company/decision-memos/2026-11-18/daytrade.md",
+    "investment-company/hr/process-improvements/current.json"
+  ],
+  "candidates": [
+    {
+      "code": "4972",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "3798",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "8086",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false
+    },
+    {
+      "code": "5803",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false
+    }
+  ],
+  "verifiedOHLC": "0/4",
+  "verifiedExecution": "0/4",
+  "signalAccuracy": null,
+  "executionAccuracy": null,
+  "brierScore": null,
+  "falseAlarm": null,
+  "evidenceGap": [
+    "11/18の4候補の確定前日終値・始値・終値を独立検証できていない",
+    "9:00-9:10のVWAP・板・スプレッド・約定条件未確認",
+    "No.31へのNo.1/2による独立監査未確認",
+    "7:30市場情報の正規原本・独立テーマ研究原本未確認",
+    "同時点rankDelta、false alarm、機会損失未測定"
+  ],
+  "backfilled": false,
+  "reviewerAgentId": 26,
+  "scoringDeferred": true
+}
