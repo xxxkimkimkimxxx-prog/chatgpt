@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "asOf": "2026-11-19",
+  "status": "tracking_new",
+  "minimumComparableCallsPerWeek": 5,
+  "models": [
+    {
+      "agentId": 35,
+      "title": "初心者投資家モデル",
+      "weeks": [],
+      "rolling4Weeks": null
+    },
+    {
+      "agentId": 36,
+      "title": "玄人個人投資家モデル",
+      "weeks": [],
+      "rolling4Weeks": null
+    },
+    {
+      "agentId": 37,
+      "title": "機関投資家モデル",
+      "weeks": [],
+      "rolling4Weeks": null
+    }
+  ],
+  "metrics": [
+    "directionHitRate",
+    "relativeHitRate",
+    "topPickAverageExcessReturn",
+    "peerContrarianHitRate",
+    "preOpenContrarianHitRate",
+    "noTradeQuality",
+    "reasonTagHitRate"
+  ]
+}
