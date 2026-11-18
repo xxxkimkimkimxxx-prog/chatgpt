@@ -1079,6 +1079,135 @@
         "https://s.minkabu.jp/news/4667964",
         "https://s.kabutan.jp/stocks/5016/historical_margins/weekly"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-18T16:00:00+09:00",
+      "observedAtJST": "2026-11-18T15:56:52+09:00",
+      "status": "pre_scheduled_time_close_quotes_unverified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRun": "2026-11-18T15:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "referencePortfolioPnlYen": -494876,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": 100,
+          "priceStatus": "carried_forward_from_15h_monitor_not_verified_16h_close",
+          "pnlYen": -19000,
+          "supportYen": 99,
+          "resistanceYen": 102,
+          "vwapYen": 100.43,
+          "averagingDecision": "判定保留",
+          "reason": "終値未検証。過去の支持抵抗と暫定判断を据え置き。信用残・機関需給・相対強度の新規確認なし"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": 23,
+          "priceStatus": "carried_forward_from_15h_monitor_not_verified_16h_close",
+          "pnlYen": -16980,
+          "supportYen": 22,
+          "resistanceYen": 24,
+          "vwapYen": 22.5,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "終値未検証。過去の支持抵抗と暫定判断を据え置き。信用残・機関需給・相対強度の新規確認なし"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": 2140,
+          "priceStatus": "carried_forward_from_15h_monitor_not_verified_16h_close",
+          "pnlYen": -311200,
+          "supportYen": 2085,
+          "resistanceYen": 2198,
+          "vwapYen": null,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "終値未検証。過去の支持抵抗と暫定判断を据え置き。信用残・機関需給・相対強度の新規確認なし"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": 583,
+          "priceStatus": "carried_forward_from_15h_monitor_not_verified_16h_close",
+          "pnlYen": -137196,
+          "supportYen": 575,
+          "resistanceYen": 610,
+          "vwapYen": 590.96,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "終値未検証。過去の支持抵抗と暫定判断を据え置き。信用残・機関需給・相対強度の新規確認なし"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": 116,
+          "priceStatus": "carried_forward_from_15h_monitor_not_verified_16h_close",
+          "pnlYen": -9200,
+          "supportYen": 115,
+          "resistanceYen": 117,
+          "vwapYen": 115.3,
+          "averagingDecision": "判定保留",
+          "reason": "終値未検証。過去の支持抵抗と暫定判断を据え置き。信用残・機関需給・相対強度の新規確認なし"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": 170.3,
+          "priceStatus": "carried_forward_from_15h_monitor_not_verified_16h_close",
+          "pnlYen": -1300,
+          "supportYen": 167.7,
+          "resistanceYen": 171.7,
+          "vwapYen": 169.68,
+          "averagingDecision": "判定保留",
+          "reason": "終値未検証。過去の支持抵抗と暫定判断を据え置き。信用残・機関需給・相対強度の新規確認なし"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceYen": 2140,
+        "priceAsOf": "2026-11-18 13:51 JST",
+        "pnlYen": -311200,
+        "highYen": 2300,
+        "lowYen": 2085,
+        "volumeShares": 20347700,
+        "creditReferenceDate": "2026-11-13",
+        "creditBuyShares": 16497600,
+        "creditSellShares": 593500,
+        "creditRatio": 27.8,
+        "creditBuyChangeVsPreviousWeekShares": -35000,
+        "creditUnchangedFromPreviousReport": true,
+        "creditPublicationDate": "未確認",
+        "institutionalShortChange": "未確認",
+        "sectorRelativeStrength": "未確認",
+        "forcedSellingAbsorption": "未確認",
+        "trend": "下落継続・反転未確認",
+        "reasons": [
+          "前日安値2198円割れ、当日安値2085円",
+          "信用買い残1649.76万株で高水準",
+          "終値・終値VWAP・同業相対強度が未確認"
+        ]
+      },
+      "missingData": [
+        "16時用11/18正式終値6銘柄",
+        "全銘柄最新VWAP/信用残/機関空売り/相対強度",
+        "holdings.jsonは10/14基準",
+        "信用残正式公表日時"
+      ],
+      "sources": [
+        "https://minkabu.jp/stock/5016/chart",
+        "https://finance.matsui.co.jp/stock/5016/index"
+      ]
     }
   ]
 }
