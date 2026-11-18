@@ -1,181 +1,104 @@
 {
-  "date": "2026-11-18",
-  "asOf": "2026-11-18 08:00 JST",
-  "committee": "daytrade",
-  "decision": "watch_only_user_final_authority",
+  "date": "2026-11-19",
+  "asOf": "2026-11-19 07:55 JST",
+  "session": "preopen",
+  "finalDecisionMaker": "user",
+  "independentAgentExecutionVerified": false,
   "candidates": [
     {
       "rank": 1,
-      "code": "4972",
-      "name": "綜研化学",
+      "code": "1383",
+      "name": "ベルグアース",
       "category": "Fresh Catalyst",
-      "catalyst": "11/17引け後、経常利益予想62→67.5億円、期末配当135円（前期75円）",
-      "source": "https://minkabu.jp/stock/4972/news/4667159",
-      "directness": "high",
-      "earningsSensitivity": "経常予想+8.9%、売上予想は別途照合",
-      "expectationGap": "市場コンセンサス未取得",
-      "pricedIn": "11/17引け後開示、PTS4,850円の21:52時点参考値は薄商いの可能性あり",
-      "pts": "11/17 21:52 4,850円（株探表示、出来高未確認）",
+      "material": "11/18前期経常利益予想2.4倍上方修正（二次報道）",
+      "directness": "直接",
+      "earningsSensitivity": "修正は直接、継続性不明",
+      "expectationGap": null,
+      "pricedIn": null,
+      "pts": null,
       "institutionalFlow": null,
-      "liquidity": "11/13出来高15,000株、当日未確認",
-      "upProbability": null,
+      "liquidity": null,
       "confidence": "low",
-      "buyCondition": "9:00-9:10初動高値更新、VWAP上、化学同業対比で強い、売買代金・板厚・スプレッド十分",
-      "skipCondition": "ギャップ過大・PTS乖離・初動安値割れ・VWAP割れ・板薄",
-      "invalidation": "上方修正後の収益改善評価が否定され、初動安値を回復できない",
+      "upProbability": null,
+      "buy": "一次IRと修正要因を確認、9:00-9:10初動高値更新・VWAP上・売買代金と板厚十分",
+      "skip": "IR未確認・寄らず・過大GU・薄商い・スプレッド拡大・初動安値割れ",
+      "invalid": "修正が一過性、同業不一致、VWAP回復失敗",
       "redTeam": {
-        "openingSpike": "増配材料で買い気配先行、寄り天",
-        "exhaustion": "PTSで先行織り込み",
-        "short": "原料コストと液晶需要低迷を重視",
-        "weakness": "価格転嫁・コスト削減頼みで数量増加が弱い"
-      },
-      "maxPlannedLoss": null,
-      "expectedProfit": null,
-      "rr": null,
-      "executionNote": "entry/stop/target/size未確定。価格構造とギャップ確認後に算定"
+        "openingSpike": "小型株の初動過熱",
+        "sellTheNews": "上方修正の先行織り込み",
+        "shortCase": "薄い買い板と急騰後の反落",
+        "bullWeakness": "利益修正の継続性不明"
+      }
     },
     {
       "rank": 2,
-      "code": "3798",
-      "name": "ULSグループ",
-      "category": "Theme News",
-      "catalyst": "11/17日本IBMとのAIエージェント活用基幹刷新支援を開始",
-      "source": "https://www.ulsconsulting.co.jp/news/press/2026-11-17.html",
-      "directness": "high:自社サービス開始を一次リリースで確認",
-      "earningsSensitivity": "売上・受注・利益寄与額非開示",
-      "expectationGap": "事前期待未確認",
-      "pricedIn": "11/17発表済み、株価反応・PTS未確認",
+      "code": "8306",
+      "name": "三菱UFJ FG",
+      "category": "Continuation Momentum",
+      "material": "11/13発表の自社株買い・業績修正の継続監視",
+      "directness": "直接",
+      "earningsSensitivity": "資本政策直接、当日増益寄与未確定",
+      "expectationGap": null,
+      "pricedIn": null,
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "当日未確認",
-      "upProbability": null,
+      "liquidity": null,
       "confidence": "low",
-      "buyCondition": "VWAP上、初動高値更新、実際の売買代金・板厚確保、ソフトウェア同業に相対強度",
-      "skipCondition": "AI連想のみで受注額不明、板薄、初動安値割れ",
-      "invalidation": "取引量が増えずVWAPを下回り継続",
+      "upProbability": null,
+      "buy": "銀行業指数・8316・TOPIXが追随し初動高値更新、VWAP上",
+      "skip": "銀行セクター逆行・金利急変・VWAP割れ・過大GU",
+      "invalid": "銀行同業失速と初動安値割れ",
       "redTeam": {
-        "openingSpike": "ニュース連想の短期資金で寄り天",
-        "exhaustion": "11/17発表の翌日で既に織り込み",
-        "short": "受注・利益額不明の期待先行を売る",
-        "weakness": "契約締結と収益化は別"
-      },
-      "maxPlannedLoss": null,
-      "expectedProfit": null,
-      "rr": null,
-      "executionNote": "entry/stop/target/size未確定。価格構造とギャップ確認後に算定"
+        "openingSpike": "銀行セクター寄り天",
+        "sellTheNews": "11/13材料の既織り込み",
+        "shortCase": "金利変動と利益確定",
+        "bullWeakness": "新規材料の鮮度低下"
+      }
     },
     {
       "rank": 3,
-      "code": "8086",
-      "name": "ニプロ",
-      "category": "Continuation Momentum",
-      "catalyst": "11/16ステミラック注の本承認、11/17株価反応済み",
-      "source": "https://www.nipro.co.jp/assets/document/newsrelease/261116.pdf",
-      "directness": "high:自社製品承認",
-      "earningsSensitivity": "承認後の販売増・利益額未確認",
-      "expectationGap": "市場期待未確認",
-      "pricedIn": "11/17に4日続伸と報道、織り込み警戒",
-      "pts": null,
-      "institutionalFlow": null,
-      "liquidity": "当日未確認",
-      "upProbability": null,
-      "confidence": "low",
-      "buyCondition": "11/17高値更新、VWAP維持、医療関連同業に対し相対強度",
-      "skipCondition": "寄り天、前日高値突破失敗、出来高減少",
-      "invalidation": "前日終値を割り、VWAP回復不能",
-      "redTeam": {
-        "openingSpike": "4日続伸後の利益確定",
-        "exhaustion": "承認材料が既に株価反映",
-        "short": "承認後の売上寄与が不明",
-        "weakness": "本承認は売上急増の証明ではない"
-      },
-      "maxPlannedLoss": null,
-      "expectedProfit": null,
-      "rr": null,
-      "executionNote": "entry/stop/target/size未確定。価格構造とギャップ確認後に算定"
-    },
-    {
-      "rank": 4,
       "code": "5803",
       "name": "フジクラ",
-      "category": "Sector Alignment conditional",
-      "catalyst": "AIデータセンターインフラ関連、米AI株下落を受けた相対強度検証",
-      "source": "https://apnews.com/article/ff6caef4d9289cf7f1e6ee48a706eddc",
-      "directness": "AIインフラ関連だが本日新規IRなし",
-      "earningsSensitivity": "本日新規定量材料なし",
-      "expectationGap": "未確認",
-      "pricedIn": "AI成長期待の織り込み大",
+      "category": "Sector Alignment",
+      "material": "AIデータセンター投資継続と米NVIDIA下落の綱引き",
+      "directness": "間接",
+      "earningsSensitivity": "需要関連、当日増分不明",
+      "expectationGap": null,
+      "pricedIn": null,
       "pts": null,
       "institutionalFlow": null,
-      "liquidity": "当日未確認",
-      "upProbability": null,
+      "liquidity": null,
       "confidence": "very_low",
-      "buyCondition": "日経・先物、AI関連同業の下げ止まり、VWAP回復、初動高値更新、売買代金確認",
-      "skipCondition": "半導体セクター不一致、米株逆風、VWAP下",
-      "invalidation": "初動安値更新かつ同業も弱い",
+      "upProbability": null,
+      "buy": "米AI逆風でも半導体・電線同業を上回り、初動高値更新とVWAP上",
+      "skip": "同業不一致・寄り天・指数弱含み・VWAP割れ",
+      "invalid": "AIインフラ関連の同時失速",
       "redTeam": {
-        "openingSpike": "自律反発から寄り天",
-        "exhaustion": "AI投資期待剥落",
-        "short": "米AI株下落と高い期待値",
-        "weakness": "テーマ継続と当日買い機会は別"
-      },
-      "maxPlannedLoss": null,
-      "expectedProfit": null,
-      "rr": null,
-      "executionNote": "entry/stop/target/size未確定。価格構造とギャップ確認後に算定"
+        "openingSpike": "自律反発の寄り天",
+        "sellTheNews": "AI期待先行",
+        "shortCase": "NVIDIA安と設備投資懸念",
+        "bullWeakness": "テーマ実需の当日新証拠なし"
+      }
     }
   ],
-  "improvements": [
-    {
-      "improvementId": "EXP-20261102-01",
-      "applied": true,
-      "affectedCandidates": [
-        "4972",
-        "3798",
-        "8086",
-        "5803"
-      ],
-      "rankDelta": null,
-      "conditionChanges": "反対意見をconditional採用し初動安値割れ・材料出尽くし・同業不一致を見送り条件に追加",
-      "reason": "既存active_trialを適用。実測順位差・効果は未検証"
-    },
-    {
-      "improvementId": "EXP-20261102-02",
-      "applied": true,
-      "affectedCandidates": [
-        "4972",
-        "3798",
-        "8086",
-        "5803"
-      ],
-      "rankDelta": null,
-      "conditionChanges": "方向と約定可能性を分離し確率とRRを未検証として保留",
-      "reason": "既存active_trialを適用。実測順位差・効果は未検証"
-    },
-    {
-      "improvementId": "EXP-20261102-03",
-      "applied": true,
-      "affectedCandidates": [
-        "4972",
-        "3798",
-        "8086",
-        "5803"
-      ],
-      "rankDelta": null,
-      "conditionChanges": "古いholdings/performance/watchlistをblockedに分類し現保有断定を禁止",
-      "reason": "既存active_trialを適用。実測順位差・効果は未検証"
-    }
+  "watchChecks": [
+    "9:00-9:10 high/low",
+    "VWAP",
+    "volume",
+    "turnover",
+    "Nikkei/TOPIX",
+    "futures",
+    "sector peers",
+    "order book",
+    "spread"
   ],
-  "evidenceGap": [
-    "11/18 7:30市場情報部の正規原本なし（latestは11/2）",
-    "11/18テーマ研究の独立原本未取得",
-    "11/17 close-reviewで4候補のOHLC・執行条件0/4",
-    "PTSは4972の遅延参考値のみ、全銘柄板・当日先物・機関フロー未取得",
-    "保有株2026-10-14、成績2026-10-05、監視2026-10-02で現在判断に使用不可",
-    "同時点のレッドチーム採用前順位なし、rankDelta計測不能",
-    "独立23エージェント稼働は未検証"
-  ],
-  "inputFreshness": {
+  "risk": {
+    "maxPlannedLoss": null,
+    "expectedProfit": null,
+    "rr": null,
+    "reason": "実測エントリー・撤退・数量未確定。価格構造/ボラ/ギャップで寄り後判定"
+  },
+  "staleData": {
     "holdings": {
       "asOf": "2026-10-14",
       "status": "blocked"
@@ -187,10 +110,736 @@
     "watchlist": {
       "asOf": "2026-10-02",
       "status": "blocked"
-    },
-    "marketIntelligence": {
-      "asOf": "2026-11-02",
-      "status": "blocked"
     }
-  }
+  },
+  "priorDay": {
+    "date": "2026-11-18",
+    "verifiedOHLC": "0/4",
+    "verifiedExecution": "0/4",
+    "lesson": "検証不能を成功と扱わず、材料と約定可能性を分離"
+  },
+  "improvements": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "applied": true,
+      "affectedCandidates": [
+        "1383",
+        "8306",
+        "5803"
+      ],
+      "rankDelta": null,
+      "conditionChanges": "反対意見をconditional採用、IR/流動性/同業確認を必須化",
+      "reason": "既存改善台帳に基づく。効果・純粋順位差は未検証"
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "applied": true,
+      "affectedCandidates": [
+        "1383",
+        "8306",
+        "5803"
+      ],
+      "rankDelta": null,
+      "conditionChanges": "方向予測と約定可能性を分離、実測欠損時は買い保留",
+      "reason": "既存改善台帳に基づく。効果・純粋順位差は未検証"
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "applied": true,
+      "affectedCandidates": [
+        "1383",
+        "8306",
+        "5803"
+      ],
+      "rankDelta": null,
+      "conditionChanges": "旧holdings/performance/watchlistをblocked、保有理由の順位加点なし",
+      "reason": "既存改善台帳に基づく。効果・純粋順位差は未検証"
+    }
+  ],
+  "agentActivities": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "候補統合・反対意見採否",
+      "keyFindings": [
+        "No.23-25/29の反対意見をconditional、同時点rankDeltaはnull"
+      ],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス",
+      "taskPerformed": "決裁権限とデータ制限",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": "発注・買値断定禁止",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証",
+      "taskPerformed": "データ鮮度・前日レビュー確認",
+      "keyFindings": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "旧入力blocked",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR",
+      "taskPerformed": "前日修正ニュース検証",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": "小型株の板・スプレッド確認まで買い保留",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド",
+      "taskPerformed": "ショート仮説",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "寄り天・戻り売り"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊",
+      "taskPerformed": "材料の収益寄与反証",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "一時的利益修正・収益感応度不明"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン",
+      "taskPerformed": "寄り天・出尽くし警戒",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "材料出尽くし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値",
+      "taskPerformed": "事前期待検証",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": "期待差未確認につき加点なし",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーン",
+      "taskPerformed": "担当領域の証拠確認・未取得事項の記録",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度",
+      "taskPerformed": "一次IR実需検証",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+        "当日独立テーマ研究summary.json 404",
+        "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+        "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+        "市場コンセンサス・確率校正・同時点rankDelta未測定",
+        "保有10/14、成績10/05、監視10/02はblocked"
+      ],
+      "sourcesUsed": [
+        "https://finance.matsui.co.jp/news/641477/index",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    }
+  ],
+  "chairOpposition": {
+    "from": [
+      23,
+      24,
+      25,
+      29
+    ],
+    "verdict": "conditional",
+    "rankDelta": null,
+    "conditionChanges": "IR、流動性、同業、VWAP確認の条件追加"
+  },
+  "evidenceGap": [
+    "2026-11-19 7:30市場情報部正規原本未確認、latest.jsonは11/02",
+    "当日独立テーマ研究summary.json 404",
+    "11/18 close-reviewで確定OHLC 0/4、執行検証0/4",
+    "11/19 PTS・寄り前板・機関実フロー・当日先物実測未確認",
+    "市場コンセンサス・確率校正・同時点rankDelta未測定",
+    "保有10/14、成績10/05、監視10/02はblocked"
+  ],
+  "backfilled": false,
+  "activitySaveFailure": null,
+  "sources": [
+    "https://finance.matsui.co.jp/news/641477/index",
+    "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/"
+  ]
 }
