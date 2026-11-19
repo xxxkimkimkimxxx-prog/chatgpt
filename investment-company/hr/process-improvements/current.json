@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "asOf": "2026-11-17",
+  "asOf": "2026-11-19",
   "purpose": "人事評価を翌営業日の投資委員会へ閉ループ接続する",
   "maxActiveTrials": 3,
   "activeTrials": [
@@ -23,7 +23,7 @@
         "daytrade_ranking",
         "hr_attribution"
       ],
-      "change": "No.1は主要な反対意見ごとにaccepted/rejected/conditional、rankDelta、条件変更を記録する",
+      "change": "No.1は主要な反対意見ごとにaccepted/rejected/conditional、rankDelta、条件変更を記録する。是正指示(2026-11-19): 翌営業日8:00の候補順位確定前に同一候補集合のpreWarningRankとpostWarningRank、採否理由、rankDelta、変更条件を記録。欠損時はattribution_unverified。",
       "effectiveFrom": "2026-11-04",
       "successMetric": "警告採否と順位変更が100%追跡可能で、同型の失敗反復率が低下",
       "rollbackCondition": "記録負荷のみ増え意思決定差分が生じない状態が5営業日継続",
@@ -74,6 +74,16 @@
           "finding": "conditional警告は記録、同一時点rankDeltaなし",
           "verdict": "modify_handoff",
           "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+        },
+        {
+          "date": "2026-11-19",
+          "stage": "management_intervention",
+          "finding": "既存改善の未達・検証不足に対する即時是正指示。改善成果は未確認。",
+          "evidence": "investment-company/hr/daily/2026-11-19.json",
+          "verdict": "modify",
+          "nextAction": "翌営業日8:00の候補順位確定前に同一候補集合のpreWarningRankとpostWarningRank、採否理由、rankDelta、変更条件を記録。欠損時はattribution_unverified。",
+          "acceptance": "反対意見の全採否に理由とbefore/after snapshotまたは明示的evidenceGapが存在",
+          "check": "翌営業日8:00記録と16:30監査"
         }
       ]
     },
@@ -95,7 +105,7 @@
         "execution_review",
         "performance_scoring"
       ],
-      "change": "entryConditionVerifiedが確認できない候補は取引成功と数えず、signal/execution/riskを別判定する",
+      "change": "entryConditionVerifiedが確認できない候補は取引成功と数えず、signal/execution/riskを別判定する。是正指示(2026-11-19): No.3は候補別OHLCの出典・取引日・取得時刻・欠損理由を記録。No.15/16/18は9:00-9:10実測の有無と条件成立・板・スプレッドの証拠を明示。No.26は前日終値→終値、始値→終値、約定可能性を別評価。",
       "effectiveFrom": "2026-11-04",
       "successMetric": "全候補でsignalVerdictとexecutionVerdictが分離され、未確認値を成功扱いしない",
       "rollbackCondition": "なし（統制強化のため原則維持、運用不能ならmodify）",
@@ -146,6 +156,16 @@
           "finding": "方向と執行は分離、実測0/4",
           "verdict": "modify_data_collection",
           "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+        },
+        {
+          "date": "2026-11-19",
+          "stage": "management_intervention",
+          "finding": "既存改善の未達・検証不足に対する即時是正指示。改善成果は未確認。",
+          "evidence": "investment-company/hr/daily/2026-11-19.json",
+          "verdict": "modify",
+          "nextAction": "No.3は候補別OHLCの出典・取引日・取得時刻・欠損理由を記録。No.15/16/18は9:00-9:10実測の有無と条件成立・板・スプレッドの証拠を明示。No.26は前日終値→終値、始値→終値、約定可能性を別評価。",
+          "acceptance": "全候補に実測値と出典、またはnullと欠損理由。未検証を成功扱いした件数0",
+          "check": "翌営業日引け後16:30監査"
         }
       ]
     },
@@ -164,7 +184,7 @@
         "data_validation",
         "holdings_review"
       ],
-      "change": "入力ごとにcurrent/usable_with_warning/blockedを判定し、blockedは現保有前提の判断根拠に使用しない",
+      "change": "入力ごとにcurrent/usable_with_warning/blockedを判定し、blockedは現保有前提の判断根拠に使用しない。是正指示(2026-11-19): holdings/performance/watchlistの鮮度をcurrent/usable_with_warning/blockedに分類し、blocked引用の誤用とfalse blockを別集計。No.31はNo.1/2による自身の独立監査と前日指示の反映可否を記録。",
       "effectiveFrom": "2026-11-04",
       "successMetric": "すべての主要入力にfreshnessStatusが付き、blockedデータ由来の断定が0件",
       "rollbackCondition": "分類基準が過度に厳しく有効データを継続的に遮断する場合はmodify",
@@ -215,6 +235,16 @@
           "finding": "陳腐化入力をblocked、誤遮断率不明",
           "verdict": "keep_trial_measure",
           "evidence": "investment-company/hr/activity/2026-11-17/daytrade.json"
+        },
+        {
+          "date": "2026-11-19",
+          "stage": "management_intervention",
+          "finding": "既存改善の未達・検証不足に対する即時是正指示。改善成果は未確認。",
+          "evidence": "investment-company/hr/daily/2026-11-19.json",
+          "verdict": "modify",
+          "nextAction": "holdings/performance/watchlistの鮮度をcurrent/usable_with_warning/blockedに分類し、blocked引用の誤用とfalse blockを別集計。No.31はNo.1/2による自身の独立監査と前日指示の反映可否を記録。",
+          "acceptance": "主要入力に利用可否判定が存在し、誤用件数と誤遮断件数が数値または検証不能理由で報告される",
+          "check": "翌営業日8:00と16:30監査"
         }
       ]
     }
@@ -236,7 +266,61 @@
       "formal_hiring_demotion_merge_abolition"
     ]
   },
-  "lastReviewAt": "2026-11-17 16:30 JST",
-  "nextEvaluationDate": "2026-11-18",
-  "trialChangesThisRun": "No new trials; EXP-01/02 handoff modifications, EXP-03 measure"
+  "lastReviewAt": "2026-11-19 22:07 JST",
+  "nextEvaluationDate": "2026-11-20",
+  "trialChangesThisRun": "3 existing trials strengthened with accountable corrective actions; no new trial",
+  "managementIntervention": {
+    "issuedAt": "2026-11-19 22:07 JST",
+    "type": "urgent_corrective_action",
+    "status": "instructions_recorded_execution_not_yet_verified",
+    "interventions": [
+      {
+        "trial": "EXP-20261102-01",
+        "owners": [
+          1,
+          23,
+          24,
+          25,
+          29,
+          31
+        ],
+        "instruction": "翌営業日8:00の候補順位確定前に同一候補集合のpreWarningRankとpostWarningRank、採否理由、rankDelta、変更条件を記録。欠損時はattribution_unverified。",
+        "acceptance": "反対意見の全採否に理由とbefore/after snapshotまたは明示的evidenceGapが存在",
+        "check": "翌営業日8:00記録と16:30監査"
+      },
+      {
+        "trial": "EXP-20261102-02",
+        "owners": [
+          3,
+          15,
+          16,
+          18,
+          26,
+          31
+        ],
+        "instruction": "No.3は候補別OHLCの出典・取引日・取得時刻・欠損理由を記録。No.15/16/18は9:00-9:10実測の有無と条件成立・板・スプレッドの証拠を明示。No.26は前日終値→終値、始値→終値、約定可能性を別評価。",
+        "acceptance": "全候補に実測値と出典、またはnullと欠損理由。未検証を成功扱いした件数0",
+        "check": "翌営業日引け後16:30監査"
+      },
+      {
+        "trial": "EXP-20261102-03",
+        "owners": [
+          3,
+          31
+        ],
+        "instruction": "holdings/performance/watchlistの鮮度をcurrent/usable_with_warning/blockedに分類し、blocked引用の誤用とfalse blockを別集計。No.31はNo.1/2による自身の独立監査と前日指示の反映可否を記録。",
+        "acceptance": "主要入力に利用可否判定が存在し、誤用件数と誤遮断件数が数値または検証不能理由で報告される",
+        "check": "翌営業日8:00と16:30監査"
+      }
+    ],
+    "oversight": {
+      "agents": [
+        1,
+        2
+      ],
+      "target": 31,
+      "rule": "No.31の自己評価禁止。No.1とNo.2による独立監査証拠を要求"
+    },
+    "restrictions": "No orders, no authority changes, no risk limit relaxation, no formal personnel actions"
+  }
 }
