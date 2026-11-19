@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-19",
+  "asOf": "2026-11-19 16:30 JST",
+  "independentAgentExecutionVerified": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-11-19/daytrade.json",
+    "investment-company/decision-memos/2026-11-19/daytrade.md",
+    "investment-company/hr/process-improvements/current.json"
+  ],
+  "evidenceGap": [
+    "11/19候補3件の前日終値・当日始値・終値の確定値を信頼できる同日資料で全件照合できず",
+    "9:00-9:10実測VWAP・板・スプレッド・約定可能性のログ未取得",
+    "11/19 7:30市場情報部原本と当日テーマ研究原本が未確認",
+    "No.1の反対意見採用前後の同一時点順位snapshotがない",
+    "No.31へのNo.1/2による別プロセス独立監査の実行証拠がない",
+    "11/19投資家モデル予測原本が存在せず寄り前固定の正式ベンチマークは対象外",
+    "10/05時点のperformance-summaryは現在の実績評価に利用不可"
+  ],
+  "backfilled": false,
+  "runType": "daily_hr",
+  "agentsAudited": 37,
+  "morningRoleRecords": 23,
+  "assessment": "全37役割の採点保留。23役割の記録は独立実行を証明しない。No.35-37は寄り前予測未登録のため対象外。",
+  "candidates": [
+    {
+      "code": "1383",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "tradeabilityVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false,
+      "source": null
+    },
+    {
+      "code": "8306",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "tradeabilityVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false,
+      "source": null
+    },
+    {
+      "code": "5803",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "tradeabilityVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false,
+      "source": null
+    }
+  ],
+  "verifiedOHLC": "0/3",
+  "verifiedExecution": "0/3",
+  "contributions": [
+    {
+      "agentId": 2,
+      "kind": "documented_role_contribution_not_independent_execution"
+    },
+    {
+      "agentId": 3,
+      "kind": "documented_role_contribution_not_independent_execution"
+    },
+    {
+      "agentId": 22,
+      "kind": "documented_role_contribution_not_independent_execution"
+    },
+    {
+      "agentId": 23,
+      "kind": "documented_role_contribution_not_independent_execution"
+    },
+    {
+      "agentId": 24,
+      "kind": "documented_role_contribution_not_independent_execution"
+    },
+    {
+      "agentId": 25,
+      "kind": "documented_role_contribution_not_independent_execution"
+    },
+    {
+      "agentId": 29,
+      "kind": "documented_role_contribution_not_independent_execution"
+    }
+  ],
+  "improvements": [
+    {
+      "id": "EXP-20261102-01",
+      "verdict": "modify",
+      "finding": "反対意見conditional採用は確認、同一時点rankDelta未記録",
+      "nextAction": "反対意見受領前と受領後の順位snapshotを必須化",
+      "evidence": "investment-company/hr/activity/2026-11-19/daytrade.json"
+    },
+    {
+      "id": "EXP-20261102-02",
+      "verdict": "modify",
+      "finding": "signal/execution分離は記録されるが、実測OHLCと執行条件が不足",
+      "nextAction": "No.3/26が確定OHLCの出典・取得時刻を記録。No.15/16/18が実測の可否を明記",
+      "evidence": "investment-company/decision-memos/2026-11-19/daytrade.md"
+    },
+    {
+      "id": "EXP-20261102-03",
+      "verdict": "keep_trial_measure",
+      "finding": "古いデータblockedを確認、誤遮断件数の実測なし",
+      "nextAction": "No.3/31がblocked引用の誤用と過剰遮断を独立件数化",
+      "evidence": "investment-company/hr/activity/2026-11-19/daytrade.json"
+    }
+  ],
+  "investorModelBenchmark": {
+    "predictionExists": false,
+    "eligibleCalls": 0,
+    "benchmarkEligible": false
+  },
+  "formalPersonnelAction": "none"
+}
