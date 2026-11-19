@@ -135,6 +135,143 @@
         "https://kabu.money-plan.net/detail/5016.htm",
         "https://s.kabutan.jp/stocks/5016/historical_margins/weekly/"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-19T10:00:00+09:00",
+      "observedAtJST": "2026-11-19T09:56:09+09:00",
+      "status": "intraday_quotes_not_time_verified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRun": "2026-11-19T09:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 99,
+          "resistanceYen": 102,
+          "averagingDecision": "判定保留",
+          "reason": "11/19 09:56時点の時刻整合する場中株価・VWAP・出来高を確認できず。支持抵抗は11/18の暫定値で再検証なし",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 22,
+          "resistanceYen": 24,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "11/19 09:56時点の時刻整合する場中株価・VWAP・出来高を確認できず。支持抵抗は11/18の暫定値で再検証なし",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 2085,
+          "resistanceYen": 2198,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "11/19 09:56時点の時刻整合する場中株価・VWAP・出来高を確認できず。支持抵抗は11/18の暫定値で再検証なし",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 575,
+          "resistanceYen": 610,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "11/19 09:56時点の時刻整合する場中株価・VWAP・出来高を確認できず。支持抵抗は11/18の暫定値で再検証なし",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 115,
+          "resistanceYen": 117,
+          "averagingDecision": "判定保留",
+          "reason": "11/19 09:56時点の時刻整合する場中株価・VWAP・出来高を確認できず。支持抵抗は11/18の暫定値で再検証なし",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 167.7,
+          "resistanceYen": 171.7,
+          "averagingDecision": "判定保留",
+          "reason": "11/19 09:56時点の時刻整合する場中株価・VWAP・出来高を確認できず。支持抵抗は11/18の暫定値で再検証なし",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "statusBasis": "11/19の検証可能な場中価格なし。前回状態を暫定維持",
+        "previousCloseDate": "2026-11-18",
+        "previousCloseYen": 2145.5,
+        "previousCloseVolumeShares": 25948100,
+        "previousCloseBasedPnlYen": -310100,
+        "previousDayLowYen": 2085,
+        "previousDayHighYen": 2300,
+        "creditReferenceDate": "2026-11-13",
+        "creditBuyShares": 16497600,
+        "creditSellShares": 593500,
+        "creditRatio": 27.8,
+        "creditBuyChangeVsPreviousWeekShares": -35000,
+        "creditUnchangedFromPreviousReport": true,
+        "creditPublicationDate": "未確認",
+        "institutionalShortChange": "未確認",
+        "sectorRelativeStrength": "未確認",
+        "forcedSellingAbsorption": "未確認",
+        "trend": "11/18終値2145.5円はVWAP2173.1円下、安値2085円。11/19の反転は未確認",
+        "reasons": [
+          "11/18終値2145.5円、VWAP2173.1円下で下落基調",
+          "11/13週次買い残16497600株、前週比35000株減のみ",
+          "11/19場中の時刻検証可能な価格・出来高未取得"
+        ],
+        "previousDayVWAPYen": 2173.1,
+        "previousDayTurnoverYen": 56387088000
+      },
+      "missingData": [
+        "11/19場中6銘柄の時刻検証済み株価・VWAP・出来高・売買代金",
+        "最新信用残と機関空売り変化、同業相対強度",
+        "保有データ10/14以降未更新",
+        "信用残の正式公表日時"
+      ],
+      "sources": [
+        "https://finance.matsui.co.jp/stock/5016/index",
+        "https://finance.yahoo.co.jp/quote/5016.T/history"
+      ]
     }
   ]
 }
