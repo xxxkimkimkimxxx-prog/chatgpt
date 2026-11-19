@@ -410,6 +410,143 @@
         "https://finance.matsui.co.jp/stock/5016/index",
         "https://finance.stockweather.co.jp/contents/stockdetail.aspx?cntcode=JP&contents=1&exctype=01&skubun=1&stkcode=5016"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-19T12:00:00+09:00",
+      "observedAtJST": "2026-11-19T12:04:06+09:00",
+      "status": "partial_intraday_quotes_only_jx_verified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRun": "2026-11-19T11:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 99,
+          "resistanceYen": 102,
+          "averagingDecision": "判定保留",
+          "reason": "11/19 12:04時点で当日場中の時刻検証済み株価・VWAP・出来高・相対強度を取得できず。支持抵抗は11/18以前の暫定水準",
+          "creditDataStatus": "最新未確認",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 22,
+          "resistanceYen": 24,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "11/19 12:04時点で当日場中の時刻検証済み株価・VWAP・出来高・相対強度を取得できず。支持抵抗は11/18以前の暫定水準",
+          "creditDataStatus": "最新未確認",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": 1987.5,
+          "pnlYen": -341700,
+          "supportYen": 2085,
+          "resistanceYen": 2198,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "11/19 10:30時点1987.5円、安値1967円に更新、VWAP2006.4円下。信用整理・反転未確認",
+          "creditDataStatus": "最新未確認",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 575,
+          "resistanceYen": 610,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "11/19 12:04時点で当日場中の時刻検証済み株価・VWAP・出来高・相対強度を取得できず。支持抵抗は11/18以前の暫定水準",
+          "creditDataStatus": "最新未確認",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 115,
+          "resistanceYen": 117,
+          "averagingDecision": "判定保留",
+          "reason": "11/19 12:04時点で当日場中の時刻検証済み株価・VWAP・出来高・相対強度を取得できず。支持抵抗は11/18以前の暫定水準",
+          "creditDataStatus": "最新未確認",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": null,
+          "pnlYen": null,
+          "supportYen": 167.7,
+          "resistanceYen": 171.7,
+          "averagingDecision": "判定保留",
+          "reason": "11/19 12:04時点で当日場中の時刻検証済み株価・VWAP・出来高・相対強度を取得できず。支持抵抗は11/18以前の暫定水準",
+          "creditDataStatus": "最新未確認",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "quoteAtJST": "2026-11-19T10:30:00+09:00",
+        "priceYen": 1987.5,
+        "changeYen": -158,
+        "highYen": 2052.5,
+        "lowYen": 1967,
+        "volumeShares": 15236400,
+        "turnoverYen": 30569966000,
+        "vwapYen": 2006.4,
+        "pnlYen": -341700,
+        "creditReferenceDate": "2026-11-13",
+        "creditBuyShares": 16497600,
+        "creditSellShares": 593500,
+        "creditRatio": 27.8,
+        "creditBuyChangeVsPreviousWeekShares": -35000,
+        "creditUnchangedFromPreviousReport": true,
+        "creditPublicationDate": "未確認",
+        "institutionalShortChange": "未確認",
+        "sectorRelativeStrength": "非鉄金属は11時時点下落上位、個別同業比未確認",
+        "forcedSellingAbsorption": "未確認",
+        "trend": "安値更新、VWAP下、反転未確認",
+        "reasons": [
+          "11/19安値1967円まで更新、10:30株価1987.5円はVWAP2006.4円未満",
+          "10:30時点出来高15236400株、売買代金305.7億円だが安値更新停止未確認",
+          "11/13信用買い残16497600株、前週比35000株減にとどまる"
+        ]
+      },
+      "missingData": [
+        "他5銘柄11/19時刻検証済み場中株価と出来高・VWAP・売買代金",
+        "11/19 10:30以降のJX最新値",
+        "信用残の正式公表日・機関空売り・個別同業比較",
+        "保有情報10/14以降未更新"
+      ],
+      "sources": [
+        "https://finance.matsui.co.jp/stock/5016/index",
+        "https://finance.matsui.co.jp/news/641715/index"
+      ]
     }
   ]
 }
