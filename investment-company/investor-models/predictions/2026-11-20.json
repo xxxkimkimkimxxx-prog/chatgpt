@@ -1,0 +1,207 @@
+{
+  "date": "2026-11-20",
+  "informationCutoff": "2026-11-20 08:08 JST",
+  "predictionLockedAt": "2026-11-20 08:08 JST",
+  "benchmarkEligible": true,
+  "benchmarkTiming": "pre_open_late_0800",
+  "independentAgentExecutionVerified": false,
+  "independenceNote": "同一推論実行で異なる役割の判断を別々に作成。独立プロセス実行ではない",
+  "commonCandidateSet": [
+    "8725",
+    "8766",
+    "2914",
+    "5803"
+  ],
+  "modelPredictions": [
+    {
+      "agentId": 35,
+      "title": "初心者投資家モデル",
+      "topPick": "8725",
+      "avoidPick": "2914",
+      "calls": [
+        {
+          "code": "8725",
+          "direction": "UP",
+          "relative": "OUTPERFORM",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news",
+            "fresh_catalyst"
+          ],
+          "thesis": "上方修正と自社株買いという理解しやすい好材料",
+          "invalidation": "寄り天・VWAP割れ"
+        },
+        {
+          "code": "8766",
+          "direction": "UP",
+          "relative": "OUTPERFORM",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news"
+          ],
+          "thesis": "大きな自社株買い金額が目立つ",
+          "invalidation": "材料出尽くし"
+        },
+        {
+          "code": "2914",
+          "direction": "DOWN",
+          "relative": "UNDERPERFORM",
+          "tradeability": "NO_TRADE",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news"
+          ],
+          "thesis": "巨額損失と減配という目立つ悪材料",
+          "invalidation": "売り一巡から反発"
+        },
+        {
+          "code": "5803",
+          "direction": "DOWN",
+          "relative": "UNDERPERFORM",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "momentum"
+          ],
+          "thesis": "米ハイテク株急落への連想",
+          "invalidation": "AI関連の相対強度回復"
+        }
+      ]
+    },
+    {
+      "agentId": 36,
+      "title": "玄人個人投資家モデル",
+      "topPick": "8725",
+      "avoidPick": "5803",
+      "calls": [
+        {
+          "code": "8725",
+          "direction": "UP",
+          "relative": "OUTPERFORM",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "fresh_catalyst",
+            "supply_demand",
+            "price_action"
+          ],
+          "thesis": "修正と還元の二重材料。ただし寄り後需給が必須",
+          "invalidation": "VWAP割れ・保険同業不一致"
+        },
+        {
+          "code": "8766",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "price_action"
+          ],
+          "thesis": "買戻し額と期待差不明、初動を見て判定",
+          "invalidation": "寄り天"
+        },
+        {
+          "code": "2914",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "NO_TRADE",
+          "confidence": "low",
+          "reasonTags": [
+            "contrarian",
+            "liquidity"
+          ],
+          "thesis": "巨額損失の会計性質と売り一巡を区別できない",
+          "invalidation": "実需悪化の追加開示"
+        },
+        {
+          "code": "5803",
+          "direction": "DOWN",
+          "relative": "UNDERPERFORM",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "sector_flow",
+            "price_action"
+          ],
+          "thesis": "米AIセクター急落が短期需給の逆風",
+          "invalidation": "同業追随の強い反転"
+        }
+      ]
+    },
+    {
+      "agentId": 37,
+      "title": "機関投資家モデル",
+      "topPick": "8725",
+      "avoidPick": "2914",
+      "calls": [
+        {
+          "code": "8725",
+          "direction": "UP",
+          "relative": "OUTPERFORM",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "benchmark_flow",
+            "liquidity"
+          ],
+          "thesis": "利益予想修正と還元策は大型金融株の再評価材料、コンセンサス差未確認",
+          "invalidation": "業種指数相対劣後"
+        },
+        {
+          "code": "8766",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "positioning",
+            "benchmark_flow"
+          ],
+          "thesis": "自社株買いの規模と既存株価への織り込みを分離",
+          "invalidation": "保険セクターの売り継続"
+        },
+        {
+          "code": "2914",
+          "direction": "DOWN",
+          "relative": "UNDERPERFORM",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "valuation",
+            "expectation_gap",
+            "positioning"
+          ],
+          "thesis": "ロシア事業の将来キャッシュフローと減配影響を重視、会計損失だけでは判断しない",
+          "invalidation": "減損が市場予想内で反発"
+        },
+        {
+          "code": "5803",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "sector_flow",
+            "benchmark_flow"
+          ],
+          "thesis": "AI需要はあるが市場全体のリスクオフと機関ポジション調整が優先",
+          "invalidation": "先物・同業を上回る継続買い"
+        }
+      ]
+    }
+  ],
+  "evidenceGap": [
+    "11/20 7:30市場情報部原本と独立テーマ研究原本未確認",
+    "11/19 close-reviewの確定OHLC 0/3・約定条件0/3",
+    "11/20のPTS・機関実フロー・板・先物実測なし",
+    "8725/8766の会社一次IR原本全文未突合",
+    "保有10/14・成績10/05・監視10/02は現在判断blocked",
+    "確率校正・コンセンサス・期待利益・実測RR未検証",
+    "8:00定刻ではなく8:08時点の予測作成。寄り前であり8:00厳密時点の情報同一性は未証明"
+  ],
+  "backfilled": false
+}
