@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-19",
+  "kind": "management_intervention",
+  "source": "investment-company/hr/process-improvements/current.json",
+  "interventions": [
+    {
+      "trial": "EXP-20261102-01",
+      "owners": [
+        1,
+        23,
+        24,
+        25,
+        29,
+        31
+      ],
+      "instruction": "翌営業日8:00の候補順位確定前に同一候補集合のpreWarningRankとpostWarningRank、採否理由、rankDelta、変更条件を記録。欠損時はattribution_unverified。",
+      "acceptance": "反対意見の全採否に理由とbefore/after snapshotまたは明示的evidenceGapが存在",
+      "check": "翌営業日8:00記録と16:30監査"
+    },
+    {
+      "trial": "EXP-20261102-02",
+      "owners": [
+        3,
+        15,
+        16,
+        18,
+        26,
+        31
+      ],
+      "instruction": "No.3は候補別OHLCの出典・取引日・取得時刻・欠損理由を記録。No.15/16/18は9:00-9:10実測の有無と条件成立・板・スプレッドの証拠を明示。No.26は前日終値→終値、始値→終値、約定可能性を別評価。",
+      "acceptance": "全候補に実測値と出典、またはnullと欠損理由。未検証を成功扱いした件数0",
+      "check": "翌営業日引け後16:30監査"
+    },
+    {
+      "trial": "EXP-20261102-03",
+      "owners": [
+        3,
+        31
+      ],
+      "instruction": "holdings/performance/watchlistの鮮度をcurrent/usable_with_warning/blockedに分類し、blocked引用の誤用とfalse blockを別集計。No.31はNo.1/2による自身の独立監査と前日指示の反映可否を記録。",
+      "acceptance": "主要入力に利用可否判定が存在し、誤用件数と誤遮断件数が数値または検証不能理由で報告される",
+      "check": "翌営業日8:00と16:30監査"
+    }
+  ],
+  "executionVerified": false,
+  "nextReview": "2026-11-20"
+}
