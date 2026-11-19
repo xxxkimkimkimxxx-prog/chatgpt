@@ -979,6 +979,150 @@
         "https://finance.matsui.co.jp/stock/5016/index",
         "https://github.com/xxxkimkimkimxxx-prog/chatgpt/blob/main/stock-dashboard/data/holdings.json"
       ]
+    },
+    {
+      "scheduledAtJST": "2026-11-19T16:00:00+09:00",
+      "observedAtJST": "2026-11-19T15:59:29+09:00",
+      "status": "closing_quotes_incomplete_provisional",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledRun": "2026-11-19T15:00:00+09:00",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlYen": null,
+      "previousNotificationChangeYen": null,
+      "positions": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCostYen": 119,
+          "priceYen": null,
+          "pnlYen": null,
+          "priceTimeJST": null,
+          "supportYen": 99,
+          "resistanceYen": 102,
+          "averagingDecision": "判定保留",
+          "reason": "当日15:30の確定価格と需給の同時検証不足。支持抵抗は過去の暫定値",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCostYen": 28.66,
+          "priceYen": null,
+          "pnlYen": null,
+          "priceTimeJST": null,
+          "supportYen": 22,
+          "resistanceYen": 24,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "当日15:30の確定価格と需給の同時検証不足。支持抵抗は過去の暫定値",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCostYen": 3696,
+          "priceYen": 1993,
+          "pnlYen": -340600,
+          "priceTimeJST": "2026-11-19 14:37 (delayed quotation, not verified closing)",
+          "supportYen": 1962.5,
+          "resistanceYen": 2052.5,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "11/19安値1962.5円に更新、14:37株価1993円は前日終値2145.5円を大きく下回る。信用買い残高止まり。",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCostYen": 811.66,
+          "priceYen": null,
+          "pnlYen": null,
+          "priceTimeJST": null,
+          "supportYen": 575,
+          "resistanceYen": 610,
+          "averagingDecision": "ナンピン見送り",
+          "reason": "当日15:30の確定価格と需給の同時検証不足。支持抵抗は過去の暫定値",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCostYen": 162,
+          "priceYen": null,
+          "pnlYen": null,
+          "priceTimeJST": null,
+          "supportYen": 115,
+          "resistanceYen": 117,
+          "averagingDecision": "判定保留",
+          "reason": "当日15:30の確定価格と需給の同時検証不足。支持抵抗は過去の暫定値",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCostYen": 176.8,
+          "priceYen": null,
+          "pnlYen": null,
+          "priceTimeJST": null,
+          "supportYen": 168.9,
+          "resistanceYen": 170.8,
+          "averagingDecision": "判定保留",
+          "reason": "当日15:30の確定価格と需給の同時検証不足。支持抵抗は過去の暫定値",
+          "creditDataStatus": "最新未検証",
+          "institutionalShortChange": "未確認",
+          "sectorRelativeStrength": "未確認"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceYen": 1993,
+        "priceObservedAtJST": "2026-11-19 14:37 delayed",
+        "previousCloseYen": 2145.5,
+        "dayHighYen": 2052.5,
+        "dayLowYen": 1962.5,
+        "volumeShares": 29263500,
+        "volumeSource": "株探 日次テーブル 11/19; 14:37 quotation context, final volume unverified",
+        "turnoverYen": null,
+        "vwapYen": null,
+        "referencePnlYen": -340600,
+        "creditReferenceDate": "2026-11-13",
+        "creditPublicationDate": "未確認",
+        "creditBuyShares": 16497600,
+        "creditSellShares": 593500,
+        "creditRatio": 27.8,
+        "creditBuyChangeVsPreviousWeekShares": -35000,
+        "creditUnchangedFromPreviousReport": true,
+        "institutionalShortChange": "未確認",
+        "sectorRelativeStrength": "未確認",
+        "forcedSellingAbsorption": "確認できず",
+        "trend": "下落継続、安値更新",
+        "reasons": [
+          "11/19安値1962.5円まで下落、14:37時点1993円",
+          "買い残16497600株で前週比35000株減のみ",
+          "VWAP回復・相対強度改善未確認"
+        ]
+      },
+      "missingData": [
+        "全6銘柄の当日15:30確定終値を統一ソースで確認できず",
+        "JXの売買代金、当日VWAP、機関空売り増減、同業相対強度",
+        "保有情報10/14基準で更新遅延",
+        "信用残正式公表日時"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/5016/historical_prices/daily/",
+        "https://finance.yahoo.co.jp/quote/5016.T/history"
+      ]
     }
   ]
 }
