@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-19",
+  "asOf": "2026-11-19 16:30 JST",
+  "independentAgentExecutionVerified": false,
+  "sourcePaths": [
+    "investment-company/organization/agents.json",
+    "investment-company/hr/evaluation-policy.md",
+    "investment-company/hr/agent-scorecard.json",
+    "investment-company/hr/activity/2026-11-19/daytrade.json",
+    "investment-company/decision-memos/2026-11-19/daytrade.md",
+    "investment-company/hr/process-improvements/current.json"
+  ],
+  "evidenceGap": [
+    "11/19候補3件の前日終値・当日始値・終値の確定値を信頼できる同日資料で全件照合できず",
+    "9:00-9:10実測VWAP・板・スプレッド・約定可能性のログ未取得",
+    "11/19 7:30市場情報部原本と当日テーマ研究原本が未確認",
+    "No.1の反対意見採用前後の同一時点順位snapshotがない",
+    "No.31へのNo.1/2による別プロセス独立監査の実行証拠がない",
+    "11/19投資家モデル予測原本が存在せず寄り前固定の正式ベンチマークは対象外",
+    "10/05時点のperformance-summaryは現在の実績評価に利用不可"
+  ],
+  "backfilled": false,
+  "runType": "market_close_review",
+  "candidates": [
+    {
+      "code": "1383",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "tradeabilityVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false,
+      "source": null
+    },
+    {
+      "code": "8306",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "tradeabilityVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false,
+      "source": null
+    },
+    {
+      "code": "5803",
+      "previousClose": null,
+      "open": null,
+      "close": null,
+      "previousCloseToClosePct": null,
+      "openToClosePct": null,
+      "entryConditionVerified": null,
+      "tradeabilityVerified": false,
+      "signalVerdict": "unverifiable",
+      "executionVerdict": "unverifiable",
+      "actualTradeVerified": false,
+      "source": null
+    }
+  ],
+  "verifiedOHLC": "0/3",
+  "verifiedExecution": "0/3",
+  "signalAccuracy": null,
+  "executionAccuracy": null,
+  "estimatedVWAP": null,
+  "MFE": null,
+  "MAE": null,
+  "brierScore": null,
+  "falseAlarm": null
+}
