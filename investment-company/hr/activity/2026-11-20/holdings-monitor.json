@@ -819,6 +819,200 @@
         "https://s.kabutan.jp/stocks/8518",
         "https://s.kabutan.jp/stocks/9432"
       ]
+    },
+    {
+      "observedAtJST": "2026-11-20T13:58:02+09:00",
+      "status": "verified_delayed_intraday_quotes",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRun": "13:00 run present",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlCurrent": -573456,
+      "previousVerifiedPnlYen": -580596,
+      "changeVsPreviousVerifiedPnlYen": 7140,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCost": 119,
+          "price": 99,
+          "quoteAsOfJST": "2026-11-20 13:43",
+          "pnlYen": -20000,
+          "support": 99,
+          "resistance": 102,
+          "vwap": 100.5,
+          "volume": 107600,
+          "turnoverMillionYen": 11,
+          "marginAsOf": "2026-11-13",
+          "marginDataFromPreviousRun": true,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP下",
+            "反転確認なし"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCost": 28.66,
+          "price": 26,
+          "quoteAsOfJST": "2026-11-20 13:41",
+          "pnlYen": -7980,
+          "support": 24,
+          "resistance": 27,
+          "vwap": 25.96,
+          "volume": 64840500,
+          "turnoverMillionYen": 1683,
+          "marginAsOf": "2026-11-13",
+          "marginDataFromPreviousRun": true,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP付近または上だが信用需給と反転条件の複合確認不足"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCost": 3696,
+          "price": 1843.5,
+          "quoteAsOfJST": "2026-11-20 13:17",
+          "pnlYen": -370500,
+          "support": 1824.5,
+          "resistance": 1940,
+          "vwap": 1873.04,
+          "volume": 20942200,
+          "turnoverMillionYen": 39226,
+          "marginAsOf": "2026-11-13",
+          "marginDataFromPreviousRun": true,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP下",
+            "反転確認なし"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCost": 811.66,
+          "price": 539,
+          "quoteAsOfJST": "2026-11-20 13:43",
+          "pnlYen": -163596,
+          "support": 530,
+          "resistance": 553,
+          "vwap": 540.59,
+          "volume": 415100,
+          "turnoverMillionYen": 224,
+          "marginAsOf": "2026-11-13",
+          "marginDataFromPreviousRun": true,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP下",
+            "反転確認なし"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCost": 162,
+          "price": 115,
+          "quoteAsOfJST": "2026-11-20 13:41",
+          "pnlYen": -9400,
+          "support": 113,
+          "resistance": 118,
+          "vwap": 115.02,
+          "volume": 20500,
+          "turnoverMillionYen": 2,
+          "marginAsOf": "2026-11-13",
+          "marginDataFromPreviousRun": true,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP下",
+            "反転確認なし"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCost": 176.8,
+          "price": 166.9,
+          "quoteAsOfJST": "2026-11-20 13:23",
+          "pnlYen": -1980,
+          "support": 166.1,
+          "resistance": 168.4,
+          "vwap": 167.39,
+          "volume": 91325100,
+          "turnoverMillionYen": 15287,
+          "marginAsOf": "2026-11-13",
+          "marginDataFromPreviousRun": true,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP下",
+            "反転確認なし"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "price": 1843.5,
+        "quoteAsOfJST": "2026-11-20 13:17",
+        "dayChange": -169,
+        "high": 1940,
+        "low": 1824.5,
+        "volume": 20942200,
+        "turnoverMillionYen": 39226,
+        "vwap": 1873.04,
+        "marginAsOf": "2026-11-13",
+        "marginLong": 16497600,
+        "marginShort": 593500,
+        "marginRatio": 27.8,
+        "marginLongChangeVsPriorWeek": -35000,
+        "marginUnchangedSinceLastVerifiedPublished": true,
+        "institutionalShortChange": null,
+        "sectorRelativeStrength": null,
+        "forcedLiquidationAbsorption": "not confirmed",
+        "trend": "downtrend",
+        "averaging": "見送り",
+        "reason": [
+          "前日安値1962.5円を大幅に割り1824.5円まで更新",
+          "株価1843.5円はVWAP1873.04円下",
+          "信用買い残16497600株と高水準"
+        ]
+      },
+      "missing": [
+        "東証リアルタイム株価（株探は15分遅延）",
+        "機関空売りの最新増減",
+        "定量的なセクター相対強度",
+        "信用残11/13より新しい確定値"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/2926",
+        "https://s.kabutan.jp/stocks/4597",
+        "https://s.kabutan.jp/stocks/5016",
+        "https://s.kabutan.jp/stocks/5027",
+        "https://s.kabutan.jp/stocks/8518",
+        "https://s.kabutan.jp/stocks/9432"
+      ]
     }
   ]
 }
