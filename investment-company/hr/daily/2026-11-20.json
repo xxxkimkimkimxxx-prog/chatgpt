@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-20",
+  "asOf": "2026-11-20 16:32 JST",
+  "runType": "daily_hr",
+  "agentsAudited": 37,
+  "morningRoleRecords": 26,
+  "independentAgentExecutionVerified": false,
+  "scoreUpdate": "deferred",
+  "contributions": [
+    {
+      "agentId": 1,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 2,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 3,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 22,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 23,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 24,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 25,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 29,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 35,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 36,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    },
+    {
+      "agentId": 37,
+      "evidence": "morning_role_record",
+      "independentExecutionVerified": false
+    }
+  ],
+  "priorityImprovementAgents": [
+    1,
+    3,
+    15,
+    16,
+    18,
+    26,
+    31
+  ],
+  "assessment": "朝の是正指示は反映。反対意見の順位記録と鮮度ゲートは改善。確定終値と執行証拠の連結は未達。",
+  "improvements": [
+    {
+      "id": "EXP-20261102-01",
+      "verdict": "keep",
+      "finding": "同一候補集合で反対意見conditional、rankDelta=0、pre/post同順位が記録された。順位変更の効果・反対意見の独立性は未実証",
+      "metric": "採否記録1/1、実際の順位変更0件"
+    },
+    {
+      "id": "EXP-20261102-02",
+      "verdict": "modify",
+      "finding": "方向/執行分離は反映。確定終値0/4、実測約定可能性0/4で答え合わせ不能",
+      "metric": "signal/execution分離4/4、確定終値0/4、執行0/4"
+    },
+    {
+      "id": "EXP-20261102-03",
+      "verdict": "keep",
+      "finding": "旧保有・成績・監視データをblockedと明示。誤遮断率は未検証",
+      "metric": "鮮度3/3分類、false block評価不能"
+    }
+  ],
+  "investorModelBenchmark": {
+    "predictionExists": true,
+    "predictionLockedAt": "2026-11-20 08:08 JST",
+    "strict0800Eligible": false,
+    "eligibleCalls": 0,
+    "verdict": "unverifiable"
+  },
+  "evidenceGap": [
+    "4銘柄とTOPIXの15:30確定終値を二系統照合できない。検索結果に場中時刻の表示と日足行が混在",
+    "9:00〜9:10のVWAP、板、スプレッド、条件成立、約定可能性の時刻付き原本なし",
+    "No.1/No.2がNo.31を別プロセスで独立監査した証拠なし",
+    "7:30市場情報原本と当日テーマ研究原本未確認",
+    "投資家モデルは8:08寄り前固定だが8:00厳密時点ではない"
+  ],
+  "formalPersonnelAction": "none",
+  "backfilled": false
+}
