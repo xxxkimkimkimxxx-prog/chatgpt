@@ -161,6 +161,100 @@
         "https://finance.matsui.co.jp/stock/5016/index",
         "https://mail.nikkeiyosoku.com/stock/margin/5016/"
       ]
+    },
+    {
+      "observedAtJST": "2026-11-20T09:55:58+09:00",
+      "status": "intraday_quotes_unverified",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousRunAudit": "08:58 record confirmed; 09:00 scheduled execution record not found in audit log",
+      "previousScheduledRunMissing": true,
+      "portfolioPnlCurrent": null,
+      "changeSincePreviousNotification": null,
+      "previousClosePnlYen": -522456,
+      "positions": [
+        {
+          "code": "2926",
+          "support": 99,
+          "resistance": 102,
+          "averaging": "判定保留",
+          "reason": "当日株価・出来高・VWAP・信用需給未確認"
+        },
+        {
+          "code": "4597",
+          "support": 22,
+          "resistance": 27,
+          "averaging": "見送り",
+          "reason": "寄前買い気配25円は約定値ではない。反転確認不足"
+        },
+        {
+          "code": "5016",
+          "support": 1962.5,
+          "resistance": 2052.5,
+          "averaging": "見送り",
+          "reason": "11/19安値更新と信用買い残高止まり。11/20反転未確認"
+        },
+        {
+          "code": "5027",
+          "support": 550,
+          "resistance": 584,
+          "averaging": "見送り",
+          "reason": "前日安値550円・下落トレンド。11/20反転未確認"
+        },
+        {
+          "code": "8518",
+          "support": 115,
+          "resistance": 117,
+          "averaging": "判定保留",
+          "reason": "当日需給・価格行動未確認"
+        },
+        {
+          "code": "9432",
+          "support": 167.7,
+          "resistance": 171.7,
+          "averaging": "判定保留",
+          "reason": "当日需給・価格行動未確認"
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "priceAsOf": "2026-11-19T15:30:00+09:00",
+        "previousClose": 2012.5,
+        "previousDayChange": -133,
+        "previousHigh": 2052.5,
+        "previousLow": 1962.5,
+        "previousVolume": 33995700,
+        "previousTurnoverThousandYen": 67936857,
+        "previousVWAP": 1998.4,
+        "marginAsOf": "2026-11-16",
+        "marginLong": 16340000,
+        "marginShort": 698900,
+        "marginRatio": 23.38,
+        "marginLongChangeVsNov13": -157600,
+        "marginShortChangeVsNov13": 105400,
+        "marginUnchangedSincePriorNotification": false,
+        "institutionalShortChange": null,
+        "relativeStrength": null,
+        "averaging": "見送り",
+        "reason": [
+          "11/16信用買い残は11/13比15.76万株減だが依然1634万株",
+          "11/19年初来安値を更新",
+          "11/20場中反転データ未確認"
+        ]
+      },
+      "missing": [
+        "11/20全6銘柄の時刻付き場中価格",
+        "全銘柄11/20出来高/VWAP",
+        "機関空売り・相対強度"
+      ],
+      "sources": [
+        "https://finance.matsui.co.jp/stock/5016/index",
+        "https://kabucho.com/stocks/5016.T",
+        "https://finance.matsui.co.jp/news/642025/index"
+      ]
     }
   ]
 }
