@@ -613,6 +613,212 @@
         "https://s.kabutan.jp/stocks/8518",
         "https://s.kabutan.jp/stocks/9432"
       ]
+    },
+    {
+      "observedAtJST": "2026-11-20T13:01:46+09:00",
+      "status": "verified_delayed_intraday_quotes",
+      "holdingsSource": "stock-dashboard/data/holdings.json",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "positionCount": 6,
+      "previousScheduledRun": "12:00 run present",
+      "previousScheduledRunMissing": false,
+      "portfolioPnlCurrent": -580596,
+      "changeVsPreviousVerifiedPnlYen": 1640,
+      "previousVerifiedPnlYen": -582236,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCost": 119,
+          "price": 100,
+          "quoteAsOfJST": "2026-11-20 12:39",
+          "pnlYen": -19000,
+          "support": 99,
+          "resistance": 102,
+          "vwap": 100.51,
+          "volume": 107200,
+          "turnoverMillionYen": 11,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 422200,
+          "marginShort": 29700,
+          "marginRatio": 14.22,
+          "marginLongWeeklyChange": 2500,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "99円安値をつけVWAP100.51円下、買い残前週比+2500株"
+          ]
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア",
+          "quantity": 3000,
+          "averageCost": 28.66,
+          "price": 25,
+          "quoteAsOfJST": "2026-11-20 12:46",
+          "pnlYen": -10980,
+          "support": 24,
+          "resistance": 27,
+          "vwap": 25.96,
+          "volume": 64826600,
+          "turnoverMillionYen": 1683,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 22441600,
+          "marginShort": 4599000,
+          "marginRatio": 4.88,
+          "marginLongWeeklyChange": 708400,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP25.96円下、信用買い残前週比+708400株"
+          ]
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCost": 3696,
+          "price": 1824.5,
+          "quoteAsOfJST": "2026-11-20 11:30",
+          "pnlYen": -374300,
+          "support": 1824.5,
+          "resistance": 1940,
+          "vwap": 1876.11,
+          "volume": 17718800,
+          "turnoverMillionYen": 33242,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 16497600,
+          "marginShort": 593500,
+          "marginRatio": 27.8,
+          "marginLongWeeklyChange": -35000,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "新安値1824.5円、VWAP1876.11円下、信用買い残1649万株"
+          ]
+        },
+        {
+          "code": "5027",
+          "name": "AnyMind",
+          "quantity": 600,
+          "averageCost": 811.66,
+          "price": 537,
+          "quoteAsOfJST": "2026-11-20 12:44",
+          "pnlYen": -164796,
+          "support": 530,
+          "resistance": 553,
+          "vwap": 540.09,
+          "volume": 323900,
+          "turnoverMillionYen": 175,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 1537000,
+          "marginShort": 0,
+          "marginRatio": null,
+          "marginLongWeeklyChange": 63000,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP540.09円下、信用買い残前週比+63000株"
+          ]
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCost": 162,
+          "price": 115,
+          "quoteAsOfJST": "2026-11-20 12:31",
+          "pnlYen": -9400,
+          "support": 114,
+          "resistance": 118,
+          "vwap": 115.4,
+          "volume": 13400,
+          "turnoverMillionYen": 2,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 1565100,
+          "marginShort": 0,
+          "marginRatio": null,
+          "marginLongWeeklyChange": 8000,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP115.4円下、薄商い、信用買い残前週比+8000株"
+          ]
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCost": 176.8,
+          "price": 166.2,
+          "quoteAsOfJST": "2026-11-20 12:46",
+          "pnlYen": -2120,
+          "support": 166.1,
+          "resistance": 168.4,
+          "vwap": 167.48,
+          "volume": 81523900,
+          "turnoverMillionYen": 13653,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 79058300,
+          "marginShort": 7896100,
+          "marginRatio": 10.01,
+          "marginLongWeeklyChange": -3672700,
+          "institutionalShortChange": null,
+          "sectorRelativeStrength": null,
+          "averaging": "見送り",
+          "reason": [
+            "当日安値166.1円近辺かつVWAP167.48円下、信用買い残依然7905万株"
+          ]
+        }
+      ],
+      "jx": {
+        "status": "信用整理未了",
+        "statusChange": false,
+        "price": 1824.5,
+        "quoteAsOfJST": "2026-11-20 11:30",
+        "dayChange": -188,
+        "high": 1940,
+        "low": 1824.5,
+        "volume": 17718800,
+        "turnoverMillionYen": 33242,
+        "vwap": 1876.11,
+        "marginAsOf": "2026-11-13",
+        "marginLong": 16497600,
+        "marginShort": 593500,
+        "marginRatio": 27.8,
+        "marginLongChangeVsPriorWeek": -35000,
+        "marginUnchangedSinceLastVerifiedPublished": true,
+        "institutionalShortChange": null,
+        "sectorRelativeStrength": "Nonferrous metals worst sector at 11:00; exact relative strength unverified",
+        "forcedLiquidationAbsorption": "not confirmed",
+        "trend": "downtrend",
+        "averaging": "見送り",
+        "reason": [
+          "安値1824.5円更新",
+          "11:30時点でVWAP1876.11円下",
+          "11/13信用買い残16497600株で高水準"
+        ]
+      },
+      "missing": [
+        "JX午後12:00以降の東証約定値（11:30が最終確認）",
+        "全銘柄機関空売り増減",
+        "個別セクター相対強度の定量比較"
+      ],
+      "sources": [
+        "https://s.kabutan.jp/stocks/2926",
+        "https://s.kabutan.jp/stocks/4597",
+        "https://s.kabutan.jp/stocks/5016",
+        "https://s.kabutan.jp/stocks/5027",
+        "https://s.kabutan.jp/stocks/8518",
+        "https://s.kabutan.jp/stocks/9432"
+      ]
     }
   ]
 }
