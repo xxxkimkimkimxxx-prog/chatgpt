@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-23",
+  "session": "JPX_HOLIDAY",
+  "holiday": "勤労感謝の日",
+  "nextTradingDate": "2026-11-24",
+  "benchmarkEligible": false,
+  "backfilled": false,
+  "informationCutoff": "2026-11-23 07:55 JST",
+  "predictionLockedAt": null,
+  "commonCandidateSet": [],
+  "modelPredictions": [
+    {
+      "agentId": 35,
+      "calls": [],
+      "topPick": null,
+      "avoidPick": null,
+      "reason": "JPX休場につき新規予測なし"
+    },
+    {
+      "agentId": 36,
+      "calls": [],
+      "topPick": null,
+      "avoidPick": null,
+      "reason": "JPX休場につき新規予測なし"
+    },
+    {
+      "agentId": 37,
+      "calls": [],
+      "topPick": null,
+      "avoidPick": null,
+      "reason": "JPX休場につき新規予測なし"
+    }
+  ],
+  "evidenceGap": [
+    "JPXは勤労感謝の日で休場。2026-11-23の始値・終値・9:00-9:10取引は存在しない",
+    "11/20 close-review: 4銘柄とTOPIXの確定終値が未照合、約定条件0/4",
+    "11/20 investor-model results.json未保存、正解率未確定",
+    "7:30市場情報部の11/23原本と当日テーマ研究原本なし",
+    "holdings=10/14、performance=10/05、watchlist=10/02、market-intelligence/latest=11/02で現在判断blocked"
+  ]
+}
