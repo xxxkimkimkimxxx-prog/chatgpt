@@ -1,179 +1,16 @@
 {
-  "date": "2026-11-20",
-  "asOf": "2026-11-20 08:08 JST",
-  "session": "pre_open",
-  "status": "conditional_watch_only",
-  "market": {
-    "usNasdaqPct": -2.3,
-    "usSP500Pct": -2,
-    "source": "https://apnews.com/article/2f178054aea79d282e5ccf8d62f26a28"
-  },
-  "candidates": [
-    {
-      "code": "8725",
-      "name": "MS&AD",
-      "category": "Fresh Catalyst",
-      "material": "通期純利益予想4250→4900億円、自己株買い上限1350億円",
-      "directness": "high",
-      "earningsSensitivity": "high",
-      "expectationGap": "未検証",
-      "pricedIn": "未検証",
-      "source": "https://www.gyokaidigest.com/disclosures/8725-tdnet-20261119-140120261119583086",
-      "sourceLevel": "TDnet由来の二次転載",
-      "rank": 1,
-      "confidence": "low",
-      "upProbability": null,
-      "pts": null,
-      "institutionalFlow": null,
-      "liquidity": "unverified",
-      "expectedProfit": null,
-      "plannedMaxLoss": null,
-      "rr": null,
-      "entryPrice": null,
-      "stopPrice": null,
-      "redTeam": [
-        "上方修正と還元策への買いが寄りで集中し寄り天",
-        "事前期待を下回れば材料出尽くし",
-        "空売り側は自然災害損失・利益質の弱さを重視",
-        "強気仮説は買付上限が即時需要ではない点に弱い"
-      ],
-      "buy": "IR原本確認、初動高値更新、VWAP上、8725と8766の同業整合、売買代金増加",
-      "skip": "初動安値割れ、保険セクター失速、過大GU、板/スプレッド不明",
-      "invalid": "上方修正を織り込んだ後の戻り売りでVWAP回復不能"
-    },
-    {
-      "code": "8766",
-      "name": "東京海上HD",
-      "category": "Fresh Catalyst",
-      "material": "修正純利益見通し引上げと自己株買い上限2800億円",
-      "directness": "high",
-      "earningsSensitivity": "medium",
-      "expectationGap": "未検証",
-      "pricedIn": "未検証",
-      "source": "https://yoribike.jp/a/2026-11-19-evening-4",
-      "sourceLevel": "二次報道",
-      "rank": 2,
-      "confidence": "low",
-      "upProbability": null,
-      "pts": null,
-      "institutionalFlow": null,
-      "liquidity": "unverified",
-      "expectedProfit": null,
-      "plannedMaxLoss": null,
-      "rr": null,
-      "entryPrice": null,
-      "stopPrice": null,
-      "redTeam": [
-        "大型還元ニュースの先回り買いで寄り天",
-        "還元額の既織り込み",
-        "空売り側は災害損害率・保険業界一斉売りを重視",
-        "強気仮説は実際の取得ペース未確定"
-      ],
-      "buy": "IR原本確認、VWAP上、初動高値更新、8725と保険指数の追随",
-      "skip": "同業不一致、VWAP割れ、初動安値更新",
-      "invalid": "還元発表にもかかわらず保険セクター相対劣後"
-    },
-    {
-      "code": "2914",
-      "name": "JT",
-      "category": "Fresh Catalyst / downside event",
-      "material": "ロシア子会社支配喪失による約1兆3770億円損失、業績・配当修正",
-      "directness": "high",
-      "earningsSensitivity": "very_high",
-      "expectationGap": "未検証",
-      "pricedIn": "未検証",
-      "source": "https://www.jti.co.jp/investors/library/press_releases/pdf/2026/20261119_02.pdf",
-      "sourceLevel": "会社一次IR",
-      "rank": 3,
-      "confidence": "low",
-      "upProbability": null,
-      "pts": null,
-      "institutionalFlow": null,
-      "liquidity": "unverified",
-      "expectedProfit": null,
-      "plannedMaxLoss": null,
-      "rr": null,
-      "entryPrice": null,
-      "stopPrice": null,
-      "redTeam": [
-        "悪材料織り込みで売り一巡後急反発",
-        "巨額損失は非現金会計要因もあり単純な売り材料ではない",
-        "空売り側は配当減額・ロシア事業利益喪失を重視",
-        "弱気仮説は過剰反応・買戻しに弱い"
-      ],
-      "buy": "原則ロング候補ではなく反発の確認のみ、初動高値とVWAP回復、出来高・板・同業確認",
-      "skip": "値幅・スプレッド過大、寄り付き売買不能、逆張り根拠不足",
-      "invalid": "支配喪失の経済影響が市場想定より軽いと判明"
-    },
-    {
-      "code": "5803",
-      "name": "フジクラ",
-      "category": "Continuation Momentum / Sector Alignment",
-      "material": "AI設備投資需要と米NASDAQ-2.3%の逆風を対比",
-      "directness": "medium",
-      "earningsSensitivity": "unquantified",
-      "expectationGap": "未検証",
-      "pricedIn": "未検証",
-      "source": "https://apnews.com/article/2f178054aea79d282e5ccf8d62f26a28",
-      "sourceLevel": "米市場報道",
-      "rank": 4,
-      "confidence": "low",
-      "upProbability": null,
-      "pts": null,
-      "institutionalFlow": null,
-      "liquidity": "unverified",
-      "expectedProfit": null,
-      "plannedMaxLoss": null,
-      "rr": null,
-      "entryPrice": null,
-      "stopPrice": null,
-      "redTeam": [
-        "AI株の寄り付き反発が寄り天",
-        "米AI投資懸念で材料出尽くし",
-        "空売り側は高バリュエーションと米半導体の下落を重視",
-        "強気仮説は実需増が株価上昇に直結する前提"
-      ],
-      "buy": "日経・TOPIXと先物を上回り、電線同業追随、VWAP回復後初動高値更新",
-      "skip": "同業不一致、VWAP下、米AI安の波及、初動安値割れ",
-      "invalid": "相対強度が回復せず売買代金を伴う安値更新"
-    }
-  ],
-  "checks0900to0910": [
-    "openingHighLow",
-    "VWAP",
-    "volume",
-    "turnover",
-    "Nikkei",
-    "TOPIX",
-    "futures",
-    "sectorPeers",
-    "orderBook",
-    "spread"
-  ],
-  "preWarningRank": {
-    "2914": 3,
-    "5803": 4,
-    "8725": 1,
-    "8766": 2
-  },
-  "postWarningRank": {
-    "2914": 3,
-    "5803": 4,
-    "8725": 1,
-    "8766": 2
-  },
-  "opposition": {
-    "agents": [
-      23,
-      24,
-      25,
-      29
-    ],
-    "verdict": "conditional",
-    "rankDelta": 0,
-    "conditionChanges": "全件VWAP・同業・板・初動安値条件を追加。JTはロング候補でなくイベント監視"
-  },
-  "staleInput": {
+  "date": "2026-11-23",
+  "session": "JPX_HOLIDAY",
+  "status": "no_trading_next_business_day_preparation",
+  "nextTradingDate": "2026-11-24",
+  "marketOpen": false,
+  "rankedCandidates": [],
+  "buyRecommendations": [],
+  "tradeAuthorization": false,
+  "investorModelBenchmarkEligible": false,
+  "previousTradingDay": "2026-11-20",
+  "previousCloseReviewStatus": "final_close_0_of_4_execution_0_of_4",
+  "freshness": {
     "holdings": {
       "asOf": "2026-10-14",
       "status": "blocked"
@@ -185,9 +22,13 @@
     "watchlist": {
       "asOf": "2026-10-02",
       "status": "blocked"
+    },
+    "marketIntelligence": {
+      "asOf": "2026-11-02",
+      "status": "blocked"
     }
   },
-  "improvements": [
+  "improvementsApplied": [
     {
       "improvementId": "EXP-20261102-01",
       "applied": true,
@@ -197,9 +38,12 @@
         "2914",
         "5803"
       ],
-      "rankDelta": 0,
-      "conditionChanges": "同時点pre/post順位と反対意見を記録",
-      "reason": "11/19監査の是正指示を適用"
+      "rankDelta": null,
+      "conditionChanges": [
+        "次回営業日のpreWarningRank/postWarningRankと反対意見採否を同一候補集合で記録"
+      ],
+      "reason": "休場日で順位付け・売買判断なし。過去記録の順位変更は再構成不可",
+      "evidenceGap": "11/20同一時点の採否前後スナップショット未確認"
     },
     {
       "improvementId": "EXP-20261102-02",
@@ -210,33 +54,32 @@
         "2914",
         "5803"
       ],
-      "rankDelta": 0,
-      "conditionChanges": "方向と執行可能性を分離",
-      "reason": "11/19監査の是正指示を適用"
+      "rankDelta": null,
+      "conditionChanges": [
+        "11/20確定終値とTOPIX終値の照合を優先",
+        "取引可能性の証拠なしなら勝率集計禁止"
+      ],
+      "reason": "11/20確定終値0/4、約定可能性0/4",
+      "evidenceGap": "15:30確定値および時刻付き板・VWAP・スプレッド欠損"
     },
     {
       "improvementId": "EXP-20261102-03",
       "applied": true,
-      "affectedCandidates": [
-        "8725",
-        "8766",
-        "2914",
-        "5803"
+      "affectedCandidates": [],
+      "rankDelta": null,
+      "conditionChanges": [
+        "holdings/performance/watchlist/latestをblocked"
       ],
-      "rankDelta": 0,
-      "conditionChanges": "旧データをblocked",
-      "reason": "11/19監査の是正指示を適用"
+      "reason": "保有10/14、成績10/05、監視10/02、市場情報11/02",
+      "evidenceGap": "現時点の保有・取引履歴は未照合"
     }
   ],
   "evidenceGap": [
-    "11/20 7:30市場情報部原本と独立テーマ研究原本未確認",
-    "11/19 close-reviewの確定OHLC 0/3・約定条件0/3",
-    "11/20のPTS・機関実フロー・板・先物実測なし",
-    "8725/8766の会社一次IR原本全文未突合",
-    "保有10/14・成績10/05・監視10/02は現在判断blocked",
-    "確率校正・コンセンサス・期待利益・実測RR未検証",
-    "8:00定刻ではなく8:08時点の予測作成。寄り前であり8:00厳密時点の情報同一性は未証明"
+    "JPXは勤労感謝の日で休場。2026-11-23の始値・終値・9:00-9:10取引は存在しない",
+    "11/20 close-review: 4銘柄とTOPIXの確定終値が未照合、約定条件0/4",
+    "11/20 investor-model results.json未保存、正解率未確定",
+    "7:30市場情報部の11/23原本と当日テーマ研究原本なし",
+    "holdings=10/14、performance=10/05、watchlist=10/02、market-intelligence/latest=11/02で現在判断blocked"
   ],
-  "finalDecisionAuthority": "user",
-  "activitySaveFailure": null
+  "activitySaveFailure": false
 }
