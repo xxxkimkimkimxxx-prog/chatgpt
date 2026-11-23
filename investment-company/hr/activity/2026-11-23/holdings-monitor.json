@@ -40,6 +40,48 @@
         "Previous run audit not independently checked",
         "Positions last updated 2026-10-14"
       ]
+    },
+    {
+      "date": "2026-11-23",
+      "time_jst": "17:02:49",
+      "market": "JPX",
+      "market_status": "closed",
+      "reason": "勤労感謝の日",
+      "notification": "suppressed_by_user_rule",
+      "holdings_source": "stock-dashboard/data/holdings.json",
+      "holdings_as_of": "2026-10-14 21:47 JST",
+      "holdings_stale": true,
+      "position_count": 6,
+      "position_codes": [
+        "2926",
+        "4597",
+        "5016",
+        "5027",
+        "8518",
+        "9432"
+      ],
+      "prices": null,
+      "portfolio_unrealized_pnl": null,
+      "previous_notification_delta": null,
+      "averaging_down_assessments": "not_run_market_holiday",
+      "jx_metals": {
+        "code": "5016",
+        "position_shares": 200,
+        "average_cost_jpy": 3696,
+        "price": null,
+        "credit_balances": null,
+        "credit_publication_date": null,
+        "state": "not_reassessed_market_holiday",
+        "state_changed": null
+      },
+      "previous_run_record_verified": false,
+      "previous_run_missing": null,
+      "previous_audit_record_found": "15:55:22",
+      "limitations": [
+        "JPX holiday",
+        "Holdings last updated 2026-10-14",
+        "Previous scheduled 16:00 record not verified"
+      ]
     }
   ]
 }
