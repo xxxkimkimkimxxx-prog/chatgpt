@@ -1,85 +1,145 @@
 {
-  "date": "2026-11-23",
-  "session": "JPX_HOLIDAY",
-  "status": "no_trading_next_business_day_preparation",
-  "nextTradingDate": "2026-11-24",
-  "marketOpen": false,
-  "rankedCandidates": [],
-  "buyRecommendations": [],
-  "tradeAuthorization": false,
-  "investorModelBenchmarkEligible": false,
-  "previousTradingDay": "2026-11-20",
-  "previousCloseReviewStatus": "final_close_0_of_4_execution_0_of_4",
-  "freshness": {
-    "holdings": {
-      "asOf": "2026-10-14",
-      "status": "blocked"
+  "date": "2026-11-25",
+  "candidates": [
+    {
+      "code": "4527",
+      "name": "ロート製薬",
+      "material": "12/1出荷分値上げ、目薬5–10%、ケア用品15–21%",
+      "directness": "高",
+      "sensitivity": "数量・原価次第",
+      "preWarningRank": 3,
+      "rank": 1,
+      "condition": "医薬品同業比優位、VWAP維持、初動高値突破",
+      "risk": "数量減・原価上昇・値上げ織込み、GU後失速",
+      "category": "Fresh Catalyst",
+      "rankDelta": 2,
+      "confidence": "low",
+      "upProbability": null,
+      "consensusGap": null,
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": null,
+      "entryConditionVerified": false,
+      "plannedLoss": null,
+      "expectedProfit": null,
+      "rr": null,
+      "skip": "初動安値割れ、VWAP失速、板薄・スプレッド拡大、過大GU、指数・同業不一致",
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224"
+      ]
     },
-    "performance": {
-      "asOf": "2026-10-05",
-      "status": "blocked"
+    {
+      "code": "4776",
+      "name": "サイボウズ",
+      "material": "10月売上前年比11.8%増",
+      "directness": "高",
+      "sensitivity": "利益率不明",
+      "preWarningRank": 4,
+      "rank": 2,
+      "condition": "ソフトウェア同業比優位、VWAP上、出来高増",
+      "risk": "成長織込み、AI株売り波及、月次は利益を保証しない",
+      "category": "Fresh Catalyst",
+      "rankDelta": 2,
+      "confidence": "low",
+      "upProbability": null,
+      "consensusGap": null,
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": null,
+      "entryConditionVerified": false,
+      "plannedLoss": null,
+      "expectedProfit": null,
+      "rr": null,
+      "skip": "初動安値割れ、VWAP失速、板薄・スプレッド拡大、過大GU、指数・同業不一致",
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224"
+      ]
     },
-    "watchlist": {
-      "asOf": "2026-10-02",
-      "status": "blocked"
+    {
+      "code": "3106",
+      "name": "クラボウ",
+      "material": "ToSTNeT-3上限4.4%、消却500万株",
+      "directness": "資本政策に直接",
+      "sensitivity": "営業利益への直接効果なし",
+      "preWarningRank": 1,
+      "rank": 3,
+      "condition": "立会外取得結果確認、VWAP上、初動高値更新",
+      "risk": "前日6.09%高、立会外買付は市場買いでない、寄り天",
+      "category": "Fresh Catalyst",
+      "rankDelta": -2,
+      "confidence": "low",
+      "upProbability": null,
+      "consensusGap": null,
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": null,
+      "entryConditionVerified": false,
+      "plannedLoss": null,
+      "expectedProfit": null,
+      "rr": null,
+      "skip": "初動安値割れ、VWAP失速、板薄・スプレッド拡大、過大GU、指数・同業不一致",
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224"
+      ]
     },
-    "marketIntelligence": {
-      "asOf": "2026-11-02",
-      "status": "blocked"
+    {
+      "code": "4661",
+      "name": "オリエンタルランド",
+      "material": "ToSTNeT-3上限0.96%、取得分消却",
+      "directness": "資本政策に直接",
+      "sensitivity": "営業利益への直接効果なし",
+      "preWarningRank": 2,
+      "rank": 4,
+      "condition": "取得結果確認、サービス株比優位、VWAP維持",
+      "risk": "比率小、立会外買付、売り手の存在、材料出尽くし",
+      "category": "Fresh Catalyst",
+      "rankDelta": -2,
+      "confidence": "low",
+      "upProbability": null,
+      "consensusGap": null,
+      "pts": null,
+      "institutionalFlow": null,
+      "liquidity": null,
+      "entryConditionVerified": false,
+      "plannedLoss": null,
+      "expectedProfit": null,
+      "rr": null,
+      "skip": "初動安値割れ、VWAP失速、板薄・スプレッド拡大、過大GU、指数・同業不一致",
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224"
+      ]
     }
+  ],
+  "market": {
+    "nikkeiPreviousClose": 58644.63,
+    "topixPreviousClose": 3764.88,
+    "soxIndicativePct": -7.43,
+    "soxTime": "04:11 JST",
+    "cmeIndicative": 57355,
+    "cmeTime": "05:21 report",
+    "usdJpy": "159.20台 07:21報道"
   },
-  "improvementsApplied": [
-    {
-      "improvementId": "EXP-20261102-01",
-      "applied": true,
-      "affectedCandidates": [
-        "8725",
-        "8766",
-        "2914",
-        "5803"
-      ],
-      "rankDelta": null,
-      "conditionChanges": [
-        "次回営業日のpreWarningRank/postWarningRankと反対意見採否を同一候補集合で記録"
-      ],
-      "reason": "休場日で順位付け・売買判断なし。過去記録の順位変更は再構成不可",
-      "evidenceGap": "11/20同一時点の採否前後スナップショット未確認"
-    },
-    {
-      "improvementId": "EXP-20261102-02",
-      "applied": true,
-      "affectedCandidates": [
-        "8725",
-        "8766",
-        "2914",
-        "5803"
-      ],
-      "rankDelta": null,
-      "conditionChanges": [
-        "11/20確定終値とTOPIX終値の照合を優先",
-        "取引可能性の証拠なしなら勝率集計禁止"
-      ],
-      "reason": "11/20確定終値0/4、約定可能性0/4",
-      "evidenceGap": "15:30確定値および時刻付き板・VWAP・スプレッド欠損"
-    },
-    {
-      "improvementId": "EXP-20261102-03",
-      "applied": true,
-      "affectedCandidates": [],
-      "rankDelta": null,
-      "conditionChanges": [
-        "holdings/performance/watchlist/latestをblocked"
-      ],
-      "reason": "保有10/14、成績10/05、監視10/02、市場情報11/02",
-      "evidenceGap": "現時点の保有・取引履歴は未照合"
-    }
-  ],
+  "holdingsStatus": "blocked 10/14",
+  "performanceStatus": "blocked 10/05",
+  "watchlistStatus": "blocked 10/02",
   "evidenceGap": [
-    "JPXは勤労感謝の日で休場。2026-11-23の始値・終値・9:00-9:10取引は存在しない",
-    "11/20 close-review: 4銘柄とTOPIXの確定終値が未照合、約定条件0/4",
-    "11/20 investor-model results.json未保存、正解率未確定",
-    "7:30市場情報部の11/23原本と当日テーマ研究原本なし",
-    "holdings=10/14、performance=10/05、watchlist=10/02、market-intelligence/latest=11/02で現在判断blocked"
+    "11/25 7:30原本・テーマsummary 404",
+    "11/24 close-review・daytrade activity・HR daily 404",
+    "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+    "独立プロセス未実証"
   ],
-  "activitySaveFailure": false
+  "sources": [
+    "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+    "https://s.minkabu.jp/news/4671224",
+    "https://fx.minkabu.jp/news/385338",
+    "https://fx.minkabu.jp/news/385329",
+    "https://zai.diamond.jp/articles/-/499621",
+    "https://s.kabutan.jp/news/n202611241060/",
+    "https://s.kabutan.jp/news/n202611241236/"
+  ],
+  "finalDecisionMaker": "user"
 }
