@@ -1,0 +1,195 @@
+{
+  "date": "2026-11-25",
+  "informationCutoff": "2026-11-25T08:00:00+09:00",
+  "predictionLockedAt": null,
+  "benchmarkEligible": false,
+  "eligibilityReason": "厳密な8時固定時刻および独立実行未証明。コミット時刻を別途監査し、原本は変更しない",
+  "commonCandidateSet": [
+    "4527",
+    "4776",
+    "3106",
+    "4661"
+  ],
+  "modelPredictions": [
+    {
+      "agentId": 35,
+      "topPick": "3106",
+      "avoidPick": "4776",
+      "predictions": [
+        {
+          "code": "4527",
+          "direction": "UP",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news"
+          ],
+          "thesis": "12/1出荷分値上げ、目薬5–10%、ケア用品15–21%",
+          "invalidation": "数量減・原価上昇・値上げ織込み、GU後失速"
+        },
+        {
+          "code": "4776",
+          "direction": "UP",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news"
+          ],
+          "thesis": "10月売上前年比11.8%増",
+          "invalidation": "成長織込み、AI株売り波及、月次は利益を保証しない"
+        },
+        {
+          "code": "3106",
+          "direction": "UP",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news"
+          ],
+          "thesis": "ToSTNeT-3上限4.4%、消却500万株",
+          "invalidation": "前日6.09%高、立会外買付は市場買いでない、寄り天"
+        },
+        {
+          "code": "4661",
+          "direction": "UP",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news"
+          ],
+          "thesis": "ToSTNeT-3上限0.96%、取得分消却",
+          "invalidation": "比率小、立会外買付、売り手の存在、材料出尽くし"
+        }
+      ]
+    },
+    {
+      "agentId": 36,
+      "topPick": "4527",
+      "avoidPick": "3106",
+      "predictions": [
+        {
+          "code": "4527",
+          "direction": "UP",
+          "relative": "OUTPERFORM",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "fresh_catalyst",
+            "price_action"
+          ],
+          "thesis": "医薬品同業比優位、VWAP維持、初動高値突破",
+          "invalidation": "数量減・原価上昇・値上げ織込み、GU後失速"
+        },
+        {
+          "code": "4776",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "fresh_catalyst",
+            "price_action"
+          ],
+          "thesis": "ソフトウェア同業比優位、VWAP上、出来高増",
+          "invalidation": "成長織込み、AI株売り波及、月次は利益を保証しない"
+        },
+        {
+          "code": "3106",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "fresh_catalyst",
+            "price_action"
+          ],
+          "thesis": "立会外取得結果確認、VWAP上、初動高値更新",
+          "invalidation": "前日6.09%高、立会外買付は市場買いでない、寄り天"
+        },
+        {
+          "code": "4661",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "fresh_catalyst",
+            "price_action"
+          ],
+          "thesis": "取得結果確認、サービス株比優位、VWAP維持",
+          "invalidation": "比率小、立会外買付、売り手の存在、材料出尽くし"
+        }
+      ]
+    },
+    {
+      "agentId": 37,
+      "topPick": null,
+      "avoidPick": "3106",
+      "predictions": [
+        {
+          "code": "4527",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "liquidity"
+          ],
+          "thesis": "期待差・執行容量未確認",
+          "invalidation": "数量減・原価上昇・値上げ織込み、GU後失速"
+        },
+        {
+          "code": "4776",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "liquidity"
+          ],
+          "thesis": "期待差・執行容量未確認",
+          "invalidation": "成長織込み、AI株売り波及、月次は利益を保証しない"
+        },
+        {
+          "code": "3106",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "liquidity"
+          ],
+          "thesis": "期待差・執行容量未確認",
+          "invalidation": "前日6.09%高、立会外買付は市場買いでない、寄り天"
+        },
+        {
+          "code": "4661",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "liquidity"
+          ],
+          "thesis": "期待差・執行容量未確認",
+          "invalidation": "比率小、立会外買付、売り手の存在、材料出尽くし"
+        }
+      ]
+    }
+  ],
+  "evidenceGap": [
+    "11/25 7:30原本・テーマsummary 404",
+    "11/24 close-review・daytrade activity・HR daily 404",
+    "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+    "独立プロセス未実証"
+  ],
+  "backfilled": false
+}
