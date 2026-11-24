@@ -1,0 +1,982 @@
+{
+  "date": "2026-11-25",
+  "executionMode": "role_based_analysis_not_independent",
+  "evidenceGap": [
+    "11/25 7:30原本・テーマsummary 404",
+    "11/24 close-review・daytrade activity・HR daily 404",
+    "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+    "独立プロセス未実証"
+  ],
+  "backfilled": false,
+  "activitySaveFailure": false,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "立会外買付2銘柄を降格、値上げと月次を上位へ",
+      "keyFindings": [
+        "立会外買付2銘柄を降格、値上げと月次を上位へ"
+      ],
+      "novelContribution": "立会外買付2銘柄を降格、値上げと月次を上位へ",
+      "decisionImpact": "立会外買付銘柄降格",
+      "candidatesPromoted": [
+        "4527",
+        "4776"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "taskPerformed": "発注なし、古い保有を判断から遮断",
+      "keyFindings": [
+        "発注なし、古い保有を判断から遮断"
+      ],
+      "novelContribution": "発注なし、古い保有を判断から遮断",
+      "decisionImpact": "発注なし、古い保有を判断から遮断",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "11/24終値と先物の時刻区別、欠損明示",
+      "keyFindings": [
+        "11/24終値と先物の時刻区別、欠損明示"
+      ],
+      "novelContribution": "11/24終値と先物の時刻区別、欠損明示",
+      "decisionImpact": "11/24終値と先物の時刻区別、欠損明示",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "taskPerformed": "米AI売り再燃",
+      "keyFindings": [
+        "米AI売り再燃"
+      ],
+      "novelContribution": "米AI売り再燃",
+      "decisionImpact": "米AI売り再燃",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "taskPerformed": "ドル円159円台、原油上昇報道",
+      "keyFindings": [
+        "ドル円159円台、原油上昇報道"
+      ],
+      "novelContribution": "ドル円159円台、原油上昇報道",
+      "decisionImpact": "ドル円159円台、原油上昇報道",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "taskPerformed": "SOX 4時台-7.43%で半導体警戒",
+      "keyFindings": [
+        "SOX 4時台-7.43%で半導体警戒"
+      ],
+      "novelContribution": "SOX 4時台-7.43%で半導体警戒",
+      "decisionImpact": "SOX 4時台-7.43%で半導体警戒",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "taskPerformed": "前日反発を底入れとみなさない",
+      "keyFindings": [
+        "前日反発を底入れとみなさない"
+      ],
+      "novelContribution": "前日反発を底入れとみなさない",
+      "decisionImpact": "前日反発を底入れとみなさない",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "taskPerformed": "4銘柄の開示速報抽出",
+      "keyFindings": [
+        "4銘柄の開示速報抽出"
+      ],
+      "novelContribution": "4銘柄の開示速報抽出",
+      "decisionImpact": "4銘柄の開示速報抽出",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "taskPerformed": "PTS未取得、候補は暫定",
+      "keyFindings": [
+        "PTS未取得、候補は暫定"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "PTS未取得、候補は暫定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "taskPerformed": "初動高安・VWAPゲート",
+      "keyFindings": [
+        "初動高安・VWAPゲート"
+      ],
+      "novelContribution": "初動高安・VWAPゲート",
+      "decisionImpact": "初動高安・VWAPゲート",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "taskPerformed": "板・出来高・スプレッドゲート",
+      "keyFindings": [
+        "板・出来高・スプレッドゲート"
+      ],
+      "novelContribution": "板・出来高・スプレッドゲート",
+      "decisionImpact": "板・出来高・スプレッドゲート",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "taskPerformed": "条件未成立なら発注見送り",
+      "keyFindings": [
+        "条件未成立なら発注見送り"
+      ],
+      "novelContribution": "条件未成立なら発注見送り",
+      "decisionImpact": "条件未成立なら発注見送り",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "taskPerformed": "価格未確定につきRR未算定",
+      "keyFindings": [
+        "価格未確定につきRR未算定"
+      ],
+      "novelContribution": "価格未確定につきRR未算定",
+      "decisionImpact": "価格未確定につきRR未算定",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "taskPerformed": "AI売り再燃のストレス",
+      "keyFindings": [
+        "AI売り再燃のストレス"
+      ],
+      "novelContribution": "AI売り再燃のストレス",
+      "decisionImpact": "AI売り再燃のストレス",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "taskPerformed": "立会外買付と市場流動性を区別",
+      "keyFindings": [
+        "立会外買付と市場流動性を区別"
+      ],
+      "novelContribution": "立会外買付と市場流動性を区別",
+      "decisionImpact": "立会外買付と市場流動性を区別",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "taskPerformed": "クラボウ前日上昇と寄り天リスク",
+      "keyFindings": [
+        "クラボウ前日上昇と寄り天リスク"
+      ],
+      "novelContribution": "クラボウ前日上昇と寄り天リスク",
+      "decisionImpact": "立会外買付銘柄降格",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "数量減・原価上昇・値上げ織込み、GU後失速",
+        "成長織込み、AI株売り波及、月次は利益を保証しない",
+        "前日6.09%高、立会外買付は市場買いでない、寄り天",
+        "比率小、立会外買付、売り手の存在、材料出尽くし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "taskPerformed": "立会外買付は市場買いでない",
+      "keyFindings": [
+        "立会外買付は市場買いでない"
+      ],
+      "novelContribution": "立会外買付は市場買いでない",
+      "decisionImpact": "立会外買付銘柄降格",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "数量減・原価上昇・値上げ織込み、GU後失速",
+        "成長織込み、AI株売り波及、月次は利益を保証しない",
+        "前日6.09%高、立会外買付は市場買いでない、寄り天",
+        "比率小、立会外買付、売り手の存在、材料出尽くし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "taskPerformed": "反発追随・材料出尽くし回避",
+      "keyFindings": [
+        "反発追随・材料出尽くし回避"
+      ],
+      "novelContribution": "反発追随・材料出尽くし回避",
+      "decisionImpact": "反発追随・材料出尽くし回避",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "数量減・原価上昇・値上げ織込み、GU後失速",
+        "成長織込み、AI株売り波及、月次は利益を保証しない",
+        "前日6.09%高、立会外買付は市場買いでない、寄り天",
+        "比率小、立会外買付、売り手の存在、材料出尽くし"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "taskPerformed": "機関実フロー未取得",
+      "keyFindings": [
+        "機関実フロー未取得"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "機関実フロー未取得",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "taskPerformed": "期待差未確認につき確信度低",
+      "keyFindings": [
+        "期待差未確認につき確信度低"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "期待差未確認につき確信度低",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "taskPerformed": "AI提携速報を検討",
+      "keyFindings": [
+        "AI提携速報を検討"
+      ],
+      "novelContribution": "AI提携速報を検討",
+      "decisionImpact": "AI提携速報を検討",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "taskPerformed": "提携から売上への経路未確認",
+      "keyFindings": [
+        "提携から売上への経路未確認"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "提携から売上への経路未確認",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "taskPerformed": "実需一次情報なしでTheme News不採用",
+      "keyFindings": [
+        "実需一次情報なしでTheme News不採用"
+      ],
+      "novelContribution": null,
+      "decisionImpact": "実需一次情報なしでTheme News不採用",
+      "candidatesPromoted": [],
+      "candidatesRejected": [
+        "2345",
+        "3452"
+      ],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 35,
+      "title": "初心者投資家モデル",
+      "taskPerformed": "見出し重視の役割別予測",
+      "keyFindings": [
+        "見出し重視の役割別予測"
+      ],
+      "novelContribution": "見出し重視の役割別予測",
+      "decisionImpact": "見出し重視の役割別予測",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 36,
+      "title": "玄人個人投資家モデル",
+      "taskPerformed": "値上げと価格行動重視",
+      "keyFindings": [
+        "値上げと価格行動重視"
+      ],
+      "novelContribution": "値上げと価格行動重視",
+      "decisionImpact": "値上げと価格行動重視",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 37,
+      "title": "機関投資家モデル",
+      "taskPerformed": "期待差・容量不足で方向保留",
+      "keyFindings": [
+        "期待差・容量不足で方向保留"
+      ],
+      "novelContribution": "期待差・容量不足で方向保留",
+      "decisionImpact": "期待差・容量不足で方向保留",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "11/25 7:30原本・テーマsummary 404",
+        "11/24 close-review・daytrade activity・HR daily 404",
+        "一次IR本文、PTS、機関実フロー、コンセンサス、板・分足未確認",
+        "独立プロセス未実証"
+      ],
+      "sourcesUsed": [
+        "https://finance.yahoo.co.jp/news/detail/de28a3f729251e97b52cfcd32f146631e103f00a",
+        "https://s.minkabu.jp/news/4671224",
+        "https://fx.minkabu.jp/news/385338",
+        "https://fx.minkabu.jp/news/385329",
+        "https://zai.diamond.jp/articles/-/499621",
+        "https://s.kabutan.jp/news/n202611241060/",
+        "https://s.kabutan.jp/news/n202611241236/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ],
+  "improvements": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "applied": true,
+      "affectedCandidates": [
+        "4527",
+        "4776",
+        "3106",
+        "4661"
+      ],
+      "rankDelta": [
+        {
+          "code": "4527",
+          "pre": 3,
+          "post": 1,
+          "delta": 2
+        },
+        {
+          "code": "4776",
+          "pre": 4,
+          "post": 2,
+          "delta": 2
+        },
+        {
+          "code": "3106",
+          "pre": 1,
+          "post": 3,
+          "delta": -2
+        },
+        {
+          "code": "4661",
+          "pre": 2,
+          "post": 4,
+          "delta": -2
+        }
+      ],
+      "conditionChanges": "立会外取得結果確認を追加",
+      "reason": "No.23/24 accepted、No.25/29 conditional"
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "applied": true,
+      "affectedCandidates": [
+        "4527",
+        "4776",
+        "3106",
+        "4661"
+      ],
+      "rankDelta": 0,
+      "conditionChanges": "方向と執行分離、未実測は成功にしない",
+      "reason": "分足なし"
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "applied": true,
+      "affectedCandidates": [],
+      "rankDelta": 0,
+      "conditionChanges": "古い保有・実績・監視をblocked",
+      "reason": "10/14、10/5、10/2"
+    }
+  ],
+  "dissent": [
+    {
+      "agents": [
+        23,
+        24
+      ],
+      "status": "accepted",
+      "reason": "立会外買付は市場需給と異なる",
+      "affectedCandidates": [
+        "3106",
+        "4661"
+      ]
+    },
+    {
+      "agents": [
+        25,
+        29
+      ],
+      "status": "conditional",
+      "reason": "材料出尽くし・期待差未確認",
+      "affectedCandidates": [
+        "4527",
+        "4776",
+        "3106",
+        "4661"
+      ]
+    }
+  ]
+}
