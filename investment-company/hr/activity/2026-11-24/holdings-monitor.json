@@ -204,6 +204,208 @@
         "信用残公表日未確認",
         "機関空売り・相対強度未確認"
       ]
+    },
+    {
+      "observedAtJST": "2026-11-24T11:00:28+09:00",
+      "holdingsAsOf": "2026-10-14 21:47 JST",
+      "holdingsStale": true,
+      "previousScheduledAuditMissing": true,
+      "positions": [
+        {
+          "code": "2926",
+          "name": "篠崎屋",
+          "quantity": 1000,
+          "averageCost": 119,
+          "price": 101,
+          "quoteAsOfJST": "2026-11-24 10:33",
+          "pnlYen": -18000,
+          "support": 99,
+          "resistance": 102,
+          "volume": 58500,
+          "turnoverYen": 5850000,
+          "vwap": 100,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 422200,
+          "marginShort": 29700,
+          "marginRatio": 14.22,
+          "marginLongChange": 2500,
+          "marginPublicationDate": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP上だが102円未突破",
+            "買い残増加"
+          ],
+          "source": "https://finance.yahoo.co.jp/quote/2926.T"
+        },
+        {
+          "code": "4597",
+          "name": "ソレイジア・ファーマ",
+          "quantity": 3000,
+          "averageCost": 28.66,
+          "price": 26,
+          "quoteAsOfJST": "2026-11-24 10:46",
+          "pnlYen": -7980,
+          "support": 26,
+          "resistance": 28,
+          "volume": 39228300,
+          "turnoverYen": 1059126000,
+          "vwap": 26.999028762398574,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 22441600,
+          "marginShort": 4599000,
+          "marginRatio": 4.88,
+          "marginLongChange": 708400,
+          "marginPublicationDate": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP下",
+            "買い残増加"
+          ],
+          "source": "https://finance.yahoo.co.jp/quote/4597.T"
+        },
+        {
+          "code": "5016",
+          "name": "JX金属",
+          "quantity": 200,
+          "averageCost": 3696,
+          "price": 2000.5,
+          "quoteAsOfJST": "2026-11-24 10:34",
+          "pnlYen": -339100,
+          "support": 1920.5,
+          "resistance": 2012.5,
+          "volume": 9760500,
+          "turnoverYen": 19186996000,
+          "vwap": 1965.780031760668,
+          "marginAsOf": "2026-11-19",
+          "marginLong": 15905800,
+          "marginShort": 687000,
+          "marginRatio": 23.15,
+          "marginLongChange": -110400,
+          "marginPublicationDate": null,
+          "averaging": "候補",
+          "reason": [
+            "前日高値突破",
+            "参考VWAP上、信用整理進行"
+          ],
+          "source": "https://finance.yahoo.co.jp/quote/5016.T"
+        },
+        {
+          "code": "5027",
+          "name": "ANYMIND GROUP",
+          "quantity": 600,
+          "averageCost": 811.66,
+          "price": 548,
+          "quoteAsOfJST": "2026-11-24 10:19",
+          "pnlYen": -158196,
+          "support": 535,
+          "resistance": 558,
+          "volume": 180200,
+          "turnoverYen": 99046000,
+          "vwap": 549.6448390677026,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 1537000,
+          "marginShort": 0,
+          "marginRatio": null,
+          "marginLongChange": 63000,
+          "marginPublicationDate": null,
+          "averaging": "見送り",
+          "reason": [
+            "参考VWAP下",
+            "買い残増加"
+          ],
+          "source": "https://finance.yahoo.co.jp/quote/5027.T"
+        },
+        {
+          "code": "8518",
+          "name": "日本アジア投資",
+          "quantity": 200,
+          "averageCost": 162,
+          "price": 116,
+          "quoteAsOfJST": "2026-11-24 09:46",
+          "pnlYen": -9200,
+          "support": 115,
+          "resistance": 118,
+          "volume": 14600,
+          "turnoverYen": 1706000,
+          "vwap": 116.84931506849315,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 1565100,
+          "marginShort": 0,
+          "marginRatio": null,
+          "marginLongChange": 8000,
+          "marginPublicationDate": null,
+          "averaging": "見送り",
+          "reason": [
+            "VWAP下",
+            "低流動性"
+          ],
+          "source": "https://finance.yahoo.co.jp/quote/8518.T"
+        },
+        {
+          "code": "9432",
+          "name": "NTT",
+          "quantity": 200,
+          "averageCost": 176.8,
+          "price": 165.8,
+          "quoteAsOfJST": "2026-11-24 10:56",
+          "pnlYen": -2200,
+          "support": 165.1,
+          "resistance": 167.4,
+          "volume": null,
+          "turnoverYen": null,
+          "vwap": null,
+          "marginAsOf": "2026-11-13",
+          "marginLong": 79058300,
+          "marginShort": 7896100,
+          "marginRatio": 10.01,
+          "marginLongChange": -3672700,
+          "marginPublicationDate": null,
+          "averaging": "見送り",
+          "reason": [
+            "前日安値割れ",
+            "当日VWAP未取得"
+          ],
+          "source": "https://finance.yahoo.co.jp/quote/9432.T"
+        }
+      ],
+      "portfolioPnlCurrent": -534676,
+      "changeSincePreviousNotification": 8820,
+      "jx": {
+        "status": "信用整理進行中",
+        "statusChange": false,
+        "price": 2000.5,
+        "high": 2010,
+        "low": 1920.5,
+        "volume": 9760500,
+        "turnoverYen": 19186996000,
+        "vwap": 1965.780031760668,
+        "volumeAsOf": "10:19",
+        "marginAsOf": "2026-11-19",
+        "marginPublicationDate": null,
+        "marginLong": 15905800,
+        "marginShort": 687000,
+        "marginRatio": 23.15,
+        "marginLongChange": -110400,
+        "institutionalShort": 23374376,
+        "institutionalShortAsOf": "2026-11-20",
+        "sectorComparison": {
+          "mitsui": 9.33,
+          "sumitomo": 5.74,
+          "mitsubishi": 5.55
+        },
+        "reason": [
+          "前日高値突破、参考VWAP上",
+          "機関空売り減少",
+          "信用残更新未確認、反転持続未確認"
+        ]
+      },
+      "limitations": [
+        "価格時刻不統一",
+        "信用残公表日未確認",
+        "10時監査記録欠落",
+        "NTT当日出来高未取得",
+        "JX等のVWAP時刻と価格時刻が異なる"
+      ]
     }
   ]
 }
