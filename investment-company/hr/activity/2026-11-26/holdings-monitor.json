@@ -132,6 +132,152 @@
         "価格と出来高時刻不一致",
         "他銘柄相対強度未取得"
       ]
+    },
+    {
+      "time": "15:00 JST",
+      "holdingsAsOf": "2026-10-14",
+      "holdingsSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "previousAuditMissing": true,
+      "previousReportExists": true,
+      "total": null,
+      "indicativeTotal": -548656,
+      "indicativeDelta": 6120,
+      "positions": [
+        {
+          "code": 2926,
+          "quantity": 1000,
+          "averageCost": 119,
+          "price": 100,
+          "priceTime": "14:54",
+          "low": 99,
+          "high": 101,
+          "volume": 95800,
+          "turnover": 9507000,
+          "volumeTime": "14:32",
+          "decision": "見送り",
+          "reason": "信用改善未確認",
+          "pnl": -19000,
+          "vwap": 99.23799582463465,
+          "stale": false,
+          "source": "https://finance.yahoo.co.jp/quote/2926.T"
+        },
+        {
+          "code": 4597,
+          "quantity": 3000,
+          "averageCost": 28.66,
+          "price": 27,
+          "priceTime": "14:45",
+          "low": 25,
+          "high": 28,
+          "volume": 98687600,
+          "turnover": 2673127000,
+          "volumeTime": "14:32",
+          "decision": "見送り",
+          "reason": "安値更新、VWAP下",
+          "pnl": -4980,
+          "vwap": 27.086756593533533,
+          "stale": false,
+          "source": "https://finance.yahoo.co.jp/quote/4597.T"
+        },
+        {
+          "code": 5016,
+          "quantity": 200,
+          "averageCost": 3696,
+          "price": 1850,
+          "priceTime": "15:00",
+          "low": 1742,
+          "high": 1900,
+          "volume": 18148800,
+          "turnover": 33182232000,
+          "volumeTime": "14:45",
+          "decision": "候補",
+          "reason": "後場高値更新、参考VWAP上",
+          "pnl": -369200,
+          "vwap": 1828.3430309441947,
+          "stale": false,
+          "source": "https://finance.yahoo.co.jp/quote/5016.T"
+        },
+        {
+          "code": 5027,
+          "quantity": 600,
+          "averageCost": 811.66,
+          "price": 571,
+          "priceTime": "09:38",
+          "low": 569,
+          "high": 587,
+          "volume": null,
+          "turnover": null,
+          "volumeTime": null,
+          "decision": "保留",
+          "reason": "最新価格取得不能",
+          "pnl": -144396,
+          "vwap": null,
+          "stale": true,
+          "source": "https://finance.yahoo.co.jp/quote/5027.T"
+        },
+        {
+          "code": 8518,
+          "quantity": 200,
+          "averageCost": 162,
+          "price": 114,
+          "priceTime": "13:18",
+          "low": 111,
+          "high": 114,
+          "volume": 6100,
+          "turnover": 689000,
+          "volumeTime": "13:18",
+          "decision": "見送り",
+          "reason": "低流動性",
+          "pnl": -9600,
+          "vwap": 112.95081967213115,
+          "stale": false,
+          "source": "https://finance.yahoo.co.jp/quote/8518.T"
+        },
+        {
+          "code": 9432,
+          "quantity": 200,
+          "averageCost": 176.8,
+          "price": 169.4,
+          "priceTime": "14:57",
+          "low": 167.5,
+          "high": 170,
+          "volume": 109822000,
+          "turnover": 18551877000,
+          "volumeTime": "14:25",
+          "decision": "保留",
+          "reason": "高値未突破、需給未更新",
+          "pnl": -1480,
+          "vwap": 168.9267815191856,
+          "stale": false,
+          "source": "https://finance.yahoo.co.jp/quote/9432.T"
+        }
+      ],
+      "jx": {
+        "state": "信用整理進行中",
+        "reason": "後場1900円到達、参考VWAP上、出来高同時刻比較と信用更新未確認",
+        "credit": {
+          "asOf": "2026-11-24",
+          "publicationDate": null,
+          "buy": 14596800,
+          "sell": 739800,
+          "ratio": 19.73,
+          "source": "previous report, not independently refreshed"
+        },
+        "shortBalance": 20869200,
+        "shortAsOf": "2026-11-25",
+        "shortSource": "previous report",
+        "peers": {
+          "5801": 7.1,
+          "5803": 1.62
+        },
+        "stateChanged": false
+      },
+      "limitations": [
+        "AnyMind最新価格未取得",
+        "信用残公表日・新規値未確認",
+        "価格と出来高時刻不一致",
+        "保有情報43日経過"
+      ]
     }
   ]
 }
