@@ -1,0 +1,764 @@
+{
+  "date": "2026-11-27",
+  "executionType": "role_based_analysis",
+  "independentExecutionVerified": false,
+  "evidenceGap": [
+    "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+    "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+    "厳密な8:00固定時刻と独立モデル実行は未証明"
+  ],
+  "improvements": [
+    {
+      "improvementId": "EXP-20261102-01",
+      "applied": true,
+      "affectedCandidates": [
+        "4450",
+        "7590",
+        "6857",
+        "285A"
+      ],
+      "rankDelta": {
+        "4450": 1,
+        "6857": -2,
+        "7590": 1,
+        "285A": 0
+      },
+      "preWarningRank": [
+        "6857",
+        "4450",
+        "7590",
+        "285A"
+      ],
+      "postWarningRank": [
+        "4450",
+        "7590",
+        "6857",
+        "285A"
+      ],
+      "conditionChanges": "半導体同業・先物一致必須",
+      "reason": "No.23/24 前日後場失速と買戻し一巡を重視",
+      "disposition": "accepted"
+    },
+    {
+      "improvementId": "EXP-20261102-02",
+      "applied": true,
+      "affectedCandidates": [
+        "4450",
+        "7590",
+        "6857",
+        "285A"
+      ],
+      "rankDelta": null,
+      "conditionChanges": "方向と執行可能性を分離",
+      "reason": "実測板・分足なし"
+    },
+    {
+      "improvementId": "EXP-20261102-03",
+      "applied": true,
+      "affectedCandidates": [],
+      "rankDelta": null,
+      "conditionChanges": "古い保有・実績・監視データblocked",
+      "reason": "10/14,10/5,10/2"
+    }
+  ],
+  "activitySaveFailure": false,
+  "agents": [
+    {
+      "agentId": 1,
+      "title": "投資委員会議長",
+      "taskPerformed": "半導体を暫定1位から3位へ変更",
+      "keyFindings": [
+        "半導体を暫定1位から3位へ変更"
+      ],
+      "novelContribution": "半導体を暫定1位から3位へ変更",
+      "decisionImpact": "6857降格",
+      "candidatesPromoted": [
+        "4450",
+        "7590"
+      ],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 2,
+      "title": "投資方針・コンプライアンス担当",
+      "taskPerformed": "発注なし、最終決裁ユーザー",
+      "keyFindings": [
+        "発注なし、最終決裁ユーザー"
+      ],
+      "novelContribution": "発注なし、最終決裁ユーザー",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 3,
+      "title": "データ検証責任者",
+      "taskPerformed": "前日終値と始値を確認、欠損明示",
+      "keyFindings": [
+        "前日終値と始値を確認、欠損明示"
+      ],
+      "novelContribution": "前日終値と始値を確認、欠損明示",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 4,
+      "title": "グローバルマクロ担当",
+      "taskPerformed": "米感謝祭による海外手掛かり不足",
+      "keyFindings": [
+        "米感謝祭による海外手掛かり不足"
+      ],
+      "novelContribution": "米感謝祭による海外手掛かり不足",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 5,
+      "title": "金利・為替・商品担当",
+      "taskPerformed": "証拠不足につき独自分析なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 6,
+      "title": "米国株・AI担当",
+      "taskPerformed": "AI懸念と買戻し一巡",
+      "keyFindings": [
+        "AI懸念と買戻し一巡"
+      ],
+      "novelContribution": "AI懸念と買戻し一巡",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 7,
+      "title": "日本市場・セクター担当",
+      "taskPerformed": "非鉄首位、医薬品弱い、指数上昇と市場幅乖離",
+      "keyFindings": [
+        "非鉄首位、医薬品弱い、指数上昇と市場幅乖離"
+      ],
+      "novelContribution": "非鉄首位、医薬品弱い、指数上昇と市場幅乖離",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 8,
+      "title": "TDnet・IR・イベント担当",
+      "taskPerformed": "4450・7590の決算速報抽出",
+      "keyFindings": [
+        "4450・7590の決算速報抽出"
+      ],
+      "novelContribution": "4450・7590の決算速報抽出",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 9,
+      "title": "スクリーニング・PTS担当",
+      "taskPerformed": "証拠不足につき独自分析なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 15,
+      "title": "デイトレ・価格行動担当",
+      "taskPerformed": "初動高値とVWAP条件",
+      "keyFindings": [
+        "初動高値とVWAP条件"
+      ],
+      "novelContribution": "初動高値とVWAP条件",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 16,
+      "title": "出来高・需給・板担当",
+      "taskPerformed": "板厚・売買代金確認まで保留",
+      "keyFindings": [
+        "板厚・売買代金確認まで保留"
+      ],
+      "novelContribution": "板厚・売買代金確認まで保留",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 18,
+      "title": "執行設計担当",
+      "taskPerformed": "条件成立まで注文なし",
+      "keyFindings": [
+        "条件成立まで注文なし"
+      ],
+      "novelContribution": "条件成立まで注文なし",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 20,
+      "title": "ポジション・RR担当",
+      "taskPerformed": "価格未確定につきRR算定保留",
+      "keyFindings": [
+        "価格未確定につきRR算定保留"
+      ],
+      "novelContribution": "価格未確定につきRR算定保留",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 21,
+      "title": "イベント・ストレス担当",
+      "taskPerformed": "AIニュースによる急変警戒",
+      "keyFindings": [
+        "AIニュースによる急変警戒"
+      ],
+      "novelContribution": "AIニュースによる急変警戒",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 22,
+      "title": "流動性・ギャップ担当",
+      "taskPerformed": "小型株スプレッドとギャップ警戒",
+      "keyFindings": [
+        "小型株スプレッドとギャップ警戒"
+      ],
+      "novelContribution": "小型株スプレッドとギャップ警戒",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 23,
+      "title": "空売りファンド担当",
+      "taskPerformed": "半導体買戻し一巡を警告",
+      "keyFindings": [
+        "半導体買戻し一巡を警告"
+      ],
+      "novelContribution": "半導体買戻し一巡を警告",
+      "decisionImpact": "6857降格",
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [
+        "買戻し一巡"
+      ],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 24,
+      "title": "前提破壊担当",
+      "taskPerformed": "増益速報と期待差を区別",
+      "keyFindings": [
+        "増益速報と期待差を区別"
+      ],
+      "novelContribution": "増益速報と期待差を区別",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 25,
+      "title": "失敗パターン担当",
+      "taskPerformed": "前日後場失速から追い買い警戒",
+      "keyFindings": [
+        "前日後場失速から追い買い警戒"
+      ],
+      "novelContribution": "前日後場失速から追い買い警戒",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 28,
+      "title": "機関投資家需給担当",
+      "taskPerformed": "証拠不足につき独自分析なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 29,
+      "title": "決算期待値担当",
+      "taskPerformed": "期待差未確認を明示",
+      "keyFindings": [
+        "期待差未確認を明示"
+      ],
+      "novelContribution": "期待差未確認を明示",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 32,
+      "title": "ニュース・技術トレンド発掘担当",
+      "taskPerformed": "証拠不足につき独自分析なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 33,
+      "title": "テーマ・バリューチェーンマッピング担当",
+      "taskPerformed": "証拠不足につき独自分析なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 34,
+      "title": "テーマ実需・収益感応度検証担当",
+      "taskPerformed": "証拠不足につき独自分析なし",
+      "keyFindings": [],
+      "novelContribution": null,
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [],
+      "duplicationWith": [],
+      "noMaterialContribution": true,
+      "backfilled": false
+    },
+    {
+      "agentId": 35,
+      "title": "初心者投資家モデル",
+      "taskPerformed": "ニュース重視の暫定予測",
+      "keyFindings": [
+        "ニュース重視の暫定予測"
+      ],
+      "novelContribution": "ニュース重視の暫定予測",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 36,
+      "title": "玄人個人投資家モデル",
+      "taskPerformed": "価格行動未確認で保留",
+      "keyFindings": [
+        "価格行動未確認で保留"
+      ],
+      "novelContribution": "価格行動未確認で保留",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    },
+    {
+      "agentId": 37,
+      "title": "機関投資家モデル",
+      "taskPerformed": "期待差・容量未確認で保留",
+      "keyFindings": [
+        "期待差・容量未確認で保留"
+      ],
+      "novelContribution": "期待差・容量未確認で保留",
+      "decisionImpact": null,
+      "candidatesPromoted": [],
+      "candidatesRejected": [],
+      "risksFlagged": [],
+      "errorsOrMisses": [],
+      "confidence": "low",
+      "dataLimitations": [
+        "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+        "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+        "厳密な8:00固定時刻と独立モデル実行は未証明"
+      ],
+      "sourcesUsed": [
+        "https://s.kabutan.jp/news/n202611261063/",
+        "https://s.kabutan.jp/news/n202611260984/",
+        "https://s.kabutan.jp/news/n202611260839/"
+      ],
+      "duplicationWith": [],
+      "noMaterialContribution": false,
+      "backfilled": false
+    }
+  ]
+}
