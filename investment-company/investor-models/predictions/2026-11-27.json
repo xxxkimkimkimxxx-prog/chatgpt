@@ -1,0 +1,193 @@
+{
+  "date": "2026-11-27",
+  "informationCutoff": "2026-11-27 08:00 JST以前に公開された資料に限定（厳密な情報集合の証明なし）",
+  "predictionLockedAt": null,
+  "benchmarkEligible": false,
+  "independentExecutionVerified": false,
+  "commonCandidateSet": [
+    "4450",
+    "7590",
+    "6857",
+    "285A"
+  ],
+  "modelPredictions": [
+    {
+      "agentId": 35,
+      "topPick": "4450",
+      "avoidPick": null,
+      "calls": [
+        {
+          "code": "4450",
+          "direction": "UP",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news"
+          ],
+          "thesis": "通期経常を一転微増益へ上方修正（速報）",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "7590",
+          "direction": "UP",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "salient_news"
+          ],
+          "thesis": "3Q累計経常70%増益、8-10月赤字縮小（速報）",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "6857",
+          "direction": "UP",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "momentum"
+          ],
+          "thesis": "前日日経押上げ寄与234.09円",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "285A",
+          "direction": "UP",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "momentum"
+          ],
+          "thesis": "前日日経押上げ寄与61.38円",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        }
+      ]
+    },
+    {
+      "agentId": 36,
+      "topPick": null,
+      "avoidPick": "285A",
+      "calls": [
+        {
+          "code": "4450",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "price_action",
+            "liquidity"
+          ],
+          "thesis": "寄り後価格行動と流動性未確認",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "7590",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "price_action",
+            "liquidity"
+          ],
+          "thesis": "寄り後価格行動と流動性未確認",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "6857",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "price_action",
+            "liquidity"
+          ],
+          "thesis": "寄り後価格行動と流動性未確認",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "285A",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "price_action",
+            "liquidity"
+          ],
+          "thesis": "寄り後価格行動と流動性未確認",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        }
+      ]
+    },
+    {
+      "agentId": 37,
+      "topPick": null,
+      "avoidPick": "285A",
+      "calls": [
+        {
+          "code": "4450",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "positioning"
+          ],
+          "thesis": "期待差・執行容量未確認",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "7590",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "positioning"
+          ],
+          "thesis": "期待差・執行容量未確認",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "6857",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "positioning"
+          ],
+          "thesis": "期待差・執行容量未確認",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        },
+        {
+          "code": "285A",
+          "direction": "ABSTAIN",
+          "relative": "ABSTAIN",
+          "tradeability": "WATCH",
+          "confidence": "low",
+          "reasonTags": [
+            "expectation_gap",
+            "positioning"
+          ],
+          "thesis": "期待差・執行容量未確認",
+          "invalidation": "初動安値割れ、VWAP失速、板薄・過大スプレッド、同業不一致"
+        }
+      ]
+    }
+  ],
+  "evidenceGap": [
+    "当日7:30原本・テーマsummary・前日close-review・前日活動・人事日次が404",
+    "一次IR、PTS、機関需給、最新先物・為替、個別OHLC・板未確認",
+    "厳密な8:00固定時刻と独立モデル実行は未証明"
+  ]
+}
