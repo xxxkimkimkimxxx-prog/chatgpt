@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-26",
+  "runs": [
+    {
+      "time": "10:00 JST",
+      "holdingsAsOf": "2026-10-14",
+      "holdingsSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "previousAuditMissing": true,
+      "previousReportExists": true,
+      "total": -555176,
+      "delta": 19360,
+      "positions": [
+        {
+          "code": 2926,
+          "quantity": 1000,
+          "averageCost": 119,
+          "price": 99,
+          "pnl": -20000,
+          "low": 99,
+          "high": 100,
+          "volume": 45900,
+          "turnover": 4544000,
+          "vwap": 98.99782135076252,
+          "priceTime": "09:37",
+          "volumeTime": "09:37",
+          "decision": "見送り",
+          "source": "https://finance.yahoo.co.jp/quote/2926.T"
+        },
+        {
+          "code": 4597,
+          "quantity": 3000,
+          "averageCost": 28.66,
+          "price": 28,
+          "pnl": -1980,
+          "low": 27,
+          "high": 28,
+          "volume": 52320600,
+          "turnover": 1464970000,
+          "vwap": 27.9998700320715,
+          "priceTime": "09:35",
+          "volumeTime": "09:21",
+          "decision": "候補",
+          "source": "https://finance.yahoo.co.jp/quote/4597.T"
+        },
+        {
+          "code": 5016,
+          "quantity": 200,
+          "averageCost": 3696,
+          "price": 1808,
+          "pnl": -377600,
+          "low": 1742,
+          "high": 1839.5,
+          "volume": 4353500,
+          "turnover": 7774783000,
+          "vwap": 1785.8695302630067,
+          "priceTime": "09:42",
+          "volumeTime": "09:27",
+          "decision": "候補",
+          "source": "https://finance.yahoo.co.jp/quote/5016.T"
+        },
+        {
+          "code": 5027,
+          "quantity": 600,
+          "averageCost": 811.66,
+          "price": 571,
+          "pnl": -144396,
+          "low": 569,
+          "high": 587,
+          "volume": 51100,
+          "turnover": 29557000,
+          "vwap": 578.4148727984344,
+          "priceTime": "09:38",
+          "volumeTime": "09:23",
+          "decision": "見送り",
+          "source": "https://finance.yahoo.co.jp/quote/5027.T"
+        },
+        {
+          "code": 8518,
+          "quantity": 200,
+          "averageCost": 162,
+          "price": 114,
+          "pnl": -9600,
+          "low": 111,
+          "high": 114,
+          "volume": 2500,
+          "turnover": 280000,
+          "vwap": 112,
+          "priceTime": "09:17",
+          "volumeTime": "09:17",
+          "decision": "見送り",
+          "source": "https://finance.yahoo.co.jp/quote/8518.T"
+        },
+        {
+          "code": 9432,
+          "quantity": 200,
+          "averageCost": 176.8,
+          "price": 168.8,
+          "pnl": -1600,
+          "low": 167.5,
+          "high": 170,
+          "volume": 34937800,
+          "turnover": 5910867000,
+          "vwap": 169.1825758920138,
+          "priceTime": "09:40",
+          "volumeTime": "09:25",
+          "decision": "見送り",
+          "source": "https://finance.yahoo.co.jp/quote/9432.T"
+        }
+      ],
+      "jx": {
+        "state": "信用整理進行中",
+        "reason": "前日高値と参考VWAP回復、同業も反発、出来高同時刻比較未確認",
+        "credit": {
+          "asOf": "2026-11-24",
+          "publicationDate": null,
+          "buy": 14596800,
+          "sell": 739800,
+          "ratio": 19.73,
+          "source": "previous report, not independently refreshed"
+        },
+        "shortBalance": 20869200,
+        "shortAsOf": "2026-11-25",
+        "shortSource": "previous report",
+        "peers": {
+          "5802": 5.15,
+          "5803": 4.02
+        }
+      },
+      "limitations": [
+        "信用残・空売り新規未確認",
+        "保有情報43日経過",
+        "価格と出来高時刻不一致",
+        "他銘柄相対強度未取得"
+      ]
+    }
+  ]
+}
