@@ -113,6 +113,151 @@
         "当日株価未取得",
         "前回監査ファイル404"
       ]
+    },
+    {
+      "executedAt": "2026-11-27T16:59:26+09:00",
+      "holdingsAsOf": "2026-10-14",
+      "holdingsSha": "14d004cb383a6088813bed3fca7f396cc4dc8059",
+      "previousScheduledAuditMissing": true,
+      "currentSessionPricesAvailable": true,
+      "priceBasis": "15:30 TSE close",
+      "pnl": -505696,
+      "previousReferencePnl": -509216,
+      "rows": [
+        {
+          "code": "2926",
+          "quantity": 1000,
+          "averageCost": 119,
+          "price": 101,
+          "low": 101,
+          "high": 102,
+          "volume": 102100,
+          "turnover": 10327000,
+          "vwap": 101.14593535749266,
+          "support": 99,
+          "resistance": 104,
+          "averaging": "見送り",
+          "reason": "安値引け・VWAP下",
+          "pnl": -18000,
+          "priceDate": "2026-11-27",
+          "source": "https://finance.yahoo.co.jp/quote/2926.T"
+        },
+        {
+          "code": "4597",
+          "quantity": 3000,
+          "averageCost": 28.66,
+          "price": 29,
+          "low": 27,
+          "high": 29,
+          "volume": 122563600,
+          "turnover": 3453860000,
+          "vwap": 28.180144839087625,
+          "support": 27,
+          "resistance": 29,
+          "averaging": "候補",
+          "reason": "高値引け・出来高前日比増、信用最新未確認",
+          "pnl": 1020,
+          "priceDate": "2026-11-27",
+          "source": "https://finance.yahoo.co.jp/quote/4597.T"
+        },
+        {
+          "code": "5016",
+          "quantity": 200,
+          "averageCost": 3696,
+          "price": 1979.5,
+          "low": 1808.5,
+          "high": 1982.5,
+          "volume": 21406100,
+          "turnover": 40745548000,
+          "vwap": 1903.4549964729679,
+          "support": 1900,
+          "resistance": 2010,
+          "averaging": "候補",
+          "reason": "安値切り上げ・VWAP上、出来高微減",
+          "pnl": -343300,
+          "priceDate": "2026-11-27",
+          "source": "https://finance.yahoo.co.jp/quote/5016.T"
+        },
+        {
+          "code": "5027",
+          "quantity": 600,
+          "averageCost": 811.66,
+          "price": 590,
+          "low": 573,
+          "high": 600,
+          "volume": 345400,
+          "turnover": 202003000,
+          "vwap": 584.8378691372322,
+          "support": 573,
+          "resistance": 600,
+          "averaging": "保留",
+          "reason": "VWAP上だが前日比下落、信用最新未確認",
+          "pnl": -132996,
+          "priceDate": "2026-11-27",
+          "source": "https://finance.yahoo.co.jp/quote/5027.T"
+        },
+        {
+          "code": "8518",
+          "quantity": 200,
+          "averageCost": 162,
+          "price": 108,
+          "low": 106,
+          "high": 113,
+          "volume": 154700,
+          "turnover": 16730000,
+          "vwap": 108.1447963800905,
+          "support": 106,
+          "resistance": 113,
+          "averaging": "見送り",
+          "reason": "年初来安値更新・出来高急増",
+          "pnl": -10800,
+          "priceDate": "2026-11-27",
+          "source": "https://finance.yahoo.co.jp/quote/8518.T"
+        },
+        {
+          "code": "9432",
+          "quantity": 200,
+          "averageCost": 176.8,
+          "price": 168.7,
+          "low": 168.7,
+          "high": 171,
+          "volume": 147323500,
+          "turnover": 24985612000,
+          "vwap": 169.59692106147355,
+          "support": 167.5,
+          "resistance": 171,
+          "averaging": "見送り",
+          "reason": "安値引け・VWAP下",
+          "pnl": -1620,
+          "priceDate": "2026-11-27",
+          "source": "https://finance.yahoo.co.jp/quote/9432.T"
+        }
+      ],
+      "jx": {
+        "state": "一巡兆候",
+        "previousState": "信用整理進行中",
+        "credit": {
+          "asOf": "2026-11-25",
+          "publicationDate": null,
+          "buy": 13962800,
+          "sell": 793500,
+          "ratio": 17.6,
+          "source": "https://ifaiai.jp/stocks/5016",
+          "verification": "二次情報、公式公表日未確認"
+        },
+        "reason": "安値切り上げ、戻り高値突破、終値VWAP超過、信用減少は前回情報。出来高微減、同業比較混在。",
+        "peers": {
+          "5706": 11.53,
+          "5801": 9.79,
+          "5802": 6.58,
+          "5803": 5.9
+        }
+      },
+      "warnings": [
+        "保有情報44日経過",
+        "16時監査記録欠落",
+        "信用公表日・機関空売り最新未確認"
+      ]
     }
   ]
 }
