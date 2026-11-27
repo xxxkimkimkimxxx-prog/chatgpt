@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-27",
+  "independentExecutionVerified": false,
+  "evidenceGap": [
+    "当日市場情報・テーマsummary、前日close-review・日次、W47週次が404",
+    "当日確定終値・9:00-9:10執行証拠未確認",
+    "予測固定時刻なし、benchmarkEligible=false",
+    "独立実行未証明"
+  ],
+  "backfilled": false,
+  "candidates": [
+    {
+      "code": "285A",
+      "previousClose": 7762,
+      "open": 7950,
+      "close": null,
+      "intradayReference": 8314,
+      "referenceTime": "12:54 JST",
+      "source": "https://s.kabutan.jp/stocks/285A/historical_prices/daily/"
+    },
+    {
+      "code": "4450",
+      "previousClose": null,
+      "open": null,
+      "close": null
+    },
+    {
+      "code": "7590",
+      "previousClose": null,
+      "open": null,
+      "close": null
+    },
+    {
+      "code": "6857",
+      "previousClose": null,
+      "open": null,
+      "close": null
+    }
+  ],
+  "topix": {
+    "previousClose": 3750.4,
+    "open": 3771.57,
+    "close": null,
+    "intradayReference": 3818.27,
+    "referenceTime": "13:33 JST",
+    "source": "https://jp.investing.com/indices/topix-historical-data"
+  },
+  "verifiedOHLC": 0,
+  "verifiedExecution": 0
+}
