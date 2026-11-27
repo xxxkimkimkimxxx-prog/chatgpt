@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-27",
+  "independentExecutionVerified": false,
+  "evidenceGap": [
+    "当日市場情報・テーマsummary、前日close-review・日次、W47週次が404",
+    "当日確定終値・9:00-9:10執行証拠未確認",
+    "予測固定時刻なし、benchmarkEligible=false",
+    "独立実行未証明"
+  ],
+  "backfilled": false,
+  "benchmarkEligible": false,
+  "predictionLockedAt": null,
+  "models": [
+    {
+      "agentId": 35,
+      "eligibleCalls": 0,
+      "directionHits": 0,
+      "directionHitRate": null,
+      "eligibleRelativeCalls": 0,
+      "relativeHits": 0,
+      "relativeHitRate": null,
+      "topPickExcessReturn": null,
+      "peerContrarianCases": 0,
+      "peerContrarianHits": 0,
+      "peerContrarianRate": null,
+      "preOpenContrarianCases": null,
+      "preOpenContrarianHits": null,
+      "preOpenContrarianRate": null,
+      "noTradeCases": null,
+      "noTradeQuality": null,
+      "reasonTagHitRate": {}
+    },
+    {
+      "agentId": 36,
+      "eligibleCalls": 0,
+      "directionHits": 0,
+      "directionHitRate": null,
+      "eligibleRelativeCalls": 0,
+      "relativeHits": 0,
+      "relativeHitRate": null,
+      "topPickExcessReturn": null,
+      "peerContrarianCases": 0,
+      "peerContrarianHits": 0,
+      "peerContrarianRate": null,
+      "preOpenContrarianCases": null,
+      "preOpenContrarianHits": null,
+      "preOpenContrarianRate": null,
+      "noTradeCases": null,
+      "noTradeQuality": null,
+      "reasonTagHitRate": {}
+    },
+    {
+      "agentId": 37,
+      "eligibleCalls": 0,
+      "directionHits": 0,
+      "directionHitRate": null,
+      "eligibleRelativeCalls": 0,
+      "relativeHits": 0,
+      "relativeHitRate": null,
+      "topPickExcessReturn": null,
+      "peerContrarianCases": 0,
+      "peerContrarianHits": 0,
+      "peerContrarianRate": null,
+      "preOpenContrarianCases": null,
+      "preOpenContrarianHits": null,
+      "preOpenContrarianRate": null,
+      "noTradeCases": null,
+      "noTradeQuality": null,
+      "reasonTagHitRate": {}
+    }
+  ]
+}
